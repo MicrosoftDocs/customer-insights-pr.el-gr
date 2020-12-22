@@ -1,0 +1,226 @@
+- name: Dynamics 365 Customer Insights
+  href: index.yml
+- name: Επισκόπηση προϊόντος
+  href: overview.md
+- name: Αποκτήστε πρόσβαση στο περιβάλλον σας
+  href: 'https://home.ci.ai.dynamics.com/'
+- name: Πληροφορίες ακροατηρίου
+  items:
+    - name: Κέντρο βοήθειας
+      href: audience-insights/index.yml
+    - name: Επισκόπηση δυνατοτήτων
+      href: audience-insights/overview.md
+    - name: Δωρεάν δοκιμαστική έκδοση
+      href: 'https://dynamics.microsoft.com/get-started/?appname=customerinsights'
+    - name: Νέες και ενημερωμένες δυνατότητες
+      href: audience-insights/whats-new-audience-insights.md
+    - name: Έναρξη
+      items:
+        - name: Δημιουργία περιβάλλοντος
+          href: audience-insights/home.md
+        - name: Λήψη δεδομένων
+          href: 'https://docs.microsoft.com/learn/modules/ingest-data-customer-insights/'
+        - name: Δημιουργία ενοποιημένου προφίλ πελάτη
+          href: 'https://docs.microsoft.com/learn/modules/unified-customer-profile/'
+        - name: Εργασία με την εφαρμογή
+          href: 'https://docs.microsoft.com/learn/modules/working-with-customer-insights/'
+        - name: Εμπλουτισμός δεδομένων και προβλέψεων
+          href: 'https://docs.microsoft.com/learn/modules/enrich-data/'
+    - name: Προελεύσεις δεδομένων
+      items:
+        - name: Επισκόπηση προελεύσεων δεδομένων
+          href: audience-insights/data-sources.md
+        - name: Προσθήκη προελεύσεων δεδομένων μέσω συνδέσμων Power Query
+          href: audience-insights/connect-power-query.md
+        - name: Προσθήκη φακέλου Common Data Model ως προέλευση δεδομένων
+          href: audience-insights/connect-common-data-model.md
+        - name: Προσθήκη διαχειριζόμενου data lake του Common Data Service
+          href: audience-insights/connect-common-data-service-lake.md
+        - name: Σταδιακή ανανέωση για προελεύσεις δεδομένων
+          href: audience-insights/incremental-refresh-data-sources.md
+        - name: Συγκέντρωση δεδομένων σε πραγματικό χρόνο
+          href: audience-insights/real-time-data-ingestion.md
+        - name: Κατανόηση οντοτήτων και συνόλων δεδομένων
+          href: audience-insights/entities.md
+    - name: Ενοποίηση δεδομένων
+      items:
+        - name: Επισκόπηση ενοποίησης
+          href: audience-insights/data-unification.md
+        - name: Αντιστοίχιση οντοτήτων και χαρακτηριστικών
+          href: audience-insights/map-entities.md
+        - name: Αντιστοίχιση οντοτήτων
+          href: audience-insights/match-entities.md
+        - name: Συγχώνευση οντοτήτων
+          href: audience-insights/merge-entities.md
+        - name: Έλεγχος ενοποιημένων προφίλ πελάτη
+          href: audience-insights/customer-profiles.md
+        - name: Φιλτράρισμα ενοποιημένων προφίλ πελάτη
+          href: audience-insights/search-filter-index.md
+        - name: Δημιουργία σχέσεων και συνδεδεμένων οντοτήτων
+          href: audience-insights/relationships.md
+        - name: Λίστα δραστηριοτήτων πελάτη
+          href: audience-insights/activities.md
+    - name: Εμπλουτισμός δεδομένων
+      items:
+        - name: Εμπλουτισμός προφίλ πελατών
+          href: audience-insights/enrichment-hub.md
+        - name: Συγγένειες επωνυμίας και ενδιαφέροντος
+          href: audience-insights/enrichment-microsoft-graph.md
+        - name: Εμπλουτισμός με το HERE Technologies
+          href: audience-insights/enrichment-here.md
+        - name: Εμπλουτισμός με Leadspace
+          href: audience-insights/enrichment-leadspace.md
+        - name: Εμπλουτισμός με Experian
+          href: audience-insights/enrichment-experian.md
+        - name: Εμπλουτισμός με προσαρμοσμένη εισαγωγή SFTP
+          href: audience-insights/enrichment-SFTP-custom-import.md
+    - name: Τμήματα και μετρήσεις
+      items:
+        - name: Δημιουργία τμημάτων αγοράς και ομάδων πελατών
+          href: audience-insights/segments.md
+        - name: Λήψη πληροφοριών σχετικά με τα τμήματα
+          href: audience-insights/segment-insights.md
+        - name: Εύρεση παρόμοιων πελατών
+          href: audience-insights/find-similar-customer-segments.md
+        - name: Καθορισμός μέτρων και KPI
+          href: audience-insights/measures.md
+    - name: Προβλέψεις
+      items:
+        - name: Συμπλήρωση δεδομένων χρησιμοποιώντας προβλέψεις τιμών
+          href: audience-insights/predictions.md
+        - name: Πρόβλεψη απώλειας συνδρομών
+          href: audience-insights/predict-subscription-churn.md
+        - name: Δείγμα οδηγού για την πρόβλεψη απώλειας συνδρομών
+          href: audience-insights/sample-guide-predict-subscription-churn.md
+        - name: Πρόβλεψη απώλειας συναλλαγών
+          href: audience-insights/predict-transactional-churn.md
+        - name: Δείγμα οδηγού για την πρόβλεψη απώλειας συναλλαγών
+          href: audience-insights/sample-guide-predict-transactional-churn.md
+        - name: Εφαρμογή προσαρμοσμένων μοντέλων εκμάθησης μηχανής
+          href: audience-insights/custom-models.md
+        - name: Πειράματα με εκμάθηση μηχανής Azure
+          href: audience-insights/azure-machine-learning-experiments.md
+        - name: Πειράματα με το Στούντιο εκμάθησης μηχανής Azure
+          href: audience-insights/machine-learning-studio-experiments.md
+    - name: Επιλογές εξαγωγής
+      items:
+        - name: Ανακάλυψη προορισμών εξαγωγής
+          href: audience-insights/export-destinations.md
+        - name: Χώρος αποθήκευσης αντικειμένων blob Azure
+          href: audience-insights/export-azure-blob-storage.md
+        - name: DotDigital
+          href: audience-insights/export-dotdigital.md
+        - name: Dynamics 365 Customer Service (Πρόσθετο)
+          href: audience-insights/customer-card-add-in.md
+        - name: Dynamics 365 Marketing
+          href: audience-insights/export-dynamics365-marketing.md
+        - name: Dynamics 365 Sales
+          href: audience-insights/export-dynamics365-sales.md
+        - name: Κέντρο πωλήσεων του Dynamics 365 (Πρόσθετο)
+          href: audience-insights/customer-card-add-in.md
+        - name: Facebook Ads Manager
+          href: audience-insights/export-facebook.md
+        - name: Google Ads
+          href: audience-insights/export-google-ads.md
+        - name: LiveRamp
+          href: audience-insights/export-liveramp.md
+        - name: Mailchimp
+          href: audience-insights/export-mailchimp.md
+        - name: Microsoft Teams (bot)
+          href: audience-insights/export-teams-bot.md
+        - name: Marketo
+          href: audience-insights/export-marketo.md
+        - name: Power BI
+          href: audience-insights/export-power-bi.md
+        - name: Power Apps
+          href: audience-insights/export-power-apps.md
+        - name: Power Automate
+          href: audience-insights/export-power-automate.md
+        - name: SFTP
+          href: audience-insights/export-sftp.md
+    - name: Διαχείριση
+      items:
+        - name: Ρύθμιση παραμέτρων συστήματος
+          href: audience-insights/system.md
+        - name: Ανάθεση δικαιωμάτων χρήστη
+          href: audience-insights/permissions.md
+        - name: Διαχείριση πολλών περιβαλλόντων
+          href: audience-insights/manage-environments.md
+        - name: Σύνδεση με έναν λογαριασμό αποθήκευσης ADLS χρησιμοποιώντας διευθυντή εξυπηρέτησης
+          href: audience-insights/connect-service-principal.md
+        - name: Υποστηριζόμενες γλώσσες
+          href: audience-insights/supported-languages.md
+    - name: Επεκτασιμότητα
+      items:
+        - name: Δείτε τα σχήματα οντοτήτων στο Common Data Model
+          href: audience-insights/entity-schemas.md
+        - name: Εργασία με API
+          href: audience-insights/apis.md
+        - name: Αναφορές API
+          href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
+    - name: Όρια εξυπηρέτησης
+      href: audience-insights/service-limits.md
+    - name: Αιτήσεις DSR στο ΓΚΠΔ
+      href: audience-insights/gdpr.md
+- name: Πληροφορίες δέσμευσης (προεπισκόπηση)
+  items:
+    - name: Κέντρο βοήθειας
+      href: engagement-insights/index.yml
+    - name: Επισκόπηση δυνατοτήτων
+      href: engagement-insights/overview.md
+    - name: Δωρεάν δοκιμαστική έκδοση
+      href: 'https://pi.dynamics.com/'
+    - name: Γρήγορη εκκίνηση
+      items:
+        - name: Γρήγορη εκκίνηση για δημόσια προεπισκόπηση
+          href: engagement-insights/quickstart.md
+    - name: Έναρξη
+      items:
+        - name: Έναρξη
+          href: engagement-insights/get-started.md
+        - name: Δημιουργία χώρου εργασίας
+          href: engagement-insights/create-workspace.md
+        - name: Εργαλειοποιήστε την τοποθεσία Web
+          href: engagement-insights/instrument-website.md
+        - name: Έννοιες και ορολογία
+          href: engagement-insights/glossary.md
+    - name: Συμβάντα
+      items:
+        - name: Δημιουργία και τροποποίηση συμβάντων
+          href: engagement-insights/refined-events.md
+        - name: Εξαγωγή συμβάντων
+          href: engagement-insights/export-events.md
+    - name: Αναφορές
+      items:
+        - name: Προβολή αναφορών
+          href: engagement-insights/view-reports.md
+        - name: Δημιουργία προσαρμοσμένων αναφορών
+          href: engagement-insights/custom-reports.md
+        - name: Δημιουργία αναφορών ενοποιημένων προφίλ
+          href: engagement-insights/profile-reports.md
+    - name: Πόροι για προγραμματιστές
+      items:
+        - name: Επισκόπηση πόρων για προγραμματιστές
+          href: engagement-insights/developer-resources.md
+        - name: Πρόγραμμα εκμάθησης Web SDK
+          href: engagement-insights/advanced-SDK-implementation.md
+        - name: Δείγμα Web SDK
+          href: engagement-insights/websdk-sample.md
+    - name: Διαχείριση
+      items:
+        - name: Ρόλοι και δικαιώματα
+          href: engagement-insights/user-roles.md
+        - name: Διαχείριση περιβαλλόντων και χώρων εργασίας
+          href: engagement-insights/manage-environments-workspaces.md
+        - name: Ρύθμιση συνδέσεων
+          href: engagement-insights/configure-connections.md
+        - name: Διαχείριση cookie και συναίνεση χρήστη
+          href: engagement-insights/user-consent-storage.md
+    - name: GDPR
+      items:
+        - name: Διαγραφή και εξαγωγή προσωπικών δεδομένων
+          href: engagement-insights/delete-export-personal-data.md
+    - name: Όρια εξυπηρέτησης
+      href: engagement-insights/quotas.md
+- name: Επικοινωνία με την υποστήριξη
+  href: 'https://go.microsoft.com/fwlink/?linkid=2145734'
