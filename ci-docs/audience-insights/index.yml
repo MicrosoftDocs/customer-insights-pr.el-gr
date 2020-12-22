@@ -1,0 +1,79 @@
+### YamlMime:Landing
+title: Δυνατότητα πληροφοριών κοινού στο Dynamics 365 Customer Insights
+summary: Πρόσληψη, ενοποίηση και οργάνωση δεδομένων πελατών από πολλαπλές προελεύσεις. Δημιουργία και διαχείριση προφίλ πελατών και κατάτμηση σε πραγματικό χρόνο. Ενσωματώστε τα δεδομένα των πελατών σας με άλλα συστήματα ώστε να είναι ακόμα πιο δυναμικά.
+metadata:
+  title: Τεκμηρίωση πληροφοριών κοινού
+  description: Κέντρο βοήθειας με βασικές συνδέσεις για πληροφορίες κοινού.
+  ms.service: customer-insights
+  ms.subservice: audience-insights
+  ms.topic: landing-page
+  author: m-hartmann
+  ms.author: mhart
+  ms.date: 10/16/2020
+  ms.openlocfilehash: 9dcbbecf793cca2ef1d79d6fad7f3b420f5a8806
+  ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+  ms.translationtype: HT
+  ms.contentlocale: el-GR
+  ms.lasthandoff: 11/03/2020
+  ms.locfileid: "4405843"
+landingContent:
+- title: Σχετικά με τις πληροφορίες κοινού
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Επισκόπηση προϊόντος
+      url: overview.md
+    - text: Νέες και ενημερωμένες δυνατότητες
+      url: whats-new-audience-insights.md
+    - text: Τοποθεσία κοινότητας
+      url: https://go.microsoft.com/fwlink/?linkid=2073991
+- title: Λήψη προελεύσεων δεδομένων
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Προσθήκη προελεύσεων δεδομένων
+      url: data-sources.md
+    - text: Τμηματική ανανέωση
+      url: incremental-refresh-data-sources.md
+    - text: Κατανόηση οντοτήτων
+      url: entities.md
+- title: Ενοποίηση δεδομένων
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Αντιστ.
+      url: map-entities.md
+    - text: Αντιστοίχιση
+      url: match-entities.md
+    - text: Συγχώνευση
+      url: merge-entities.md
+- title: Περιορισμός προφίλ πελατών
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Διαμόρφωση σχέσεων
+      url: relationships.md
+    - text: Λίστα δραστηριοτήτων πελάτη
+      url: activities.md
+    - text: Φέρτε τα δικά σας μοντέλα εκμάθησης μηχανής
+      url: custom-models.md
+- title: Εξαγωγή δεδομένων πελατών
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Ρύθμιση προορισμών εξαγωγής
+      url: export-destinations.md
+    - text: Κάρτες πελατών σε εφαρμογές Dynamics 365
+      url: customer-card-add-in.md
+    - text: Σύνδεσμος Power BI
+      url: export-power-bi.md
+- title: Διαχείριση της εφαρμογής
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Ρύθμιση παραμέτρων του συστήματος
+      url: system.md
+    - text: Ορισμός δικαιωμάτων χρήστη
+      url: permissions.md
+    - text: Διαχείριση πολλών περιβαλλόντων
+      url: manage-environments.md

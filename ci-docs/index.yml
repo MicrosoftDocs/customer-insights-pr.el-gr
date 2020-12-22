@@ -1,0 +1,108 @@
+### YamlMime:Landing
+metadata:
+  title: Κέντρο βοήθειας για Dynamics 365 Customer Insights
+  author: m-hartmann
+  description: Βρείτε σχετικά άρθρα για να ξεκινήσετε με το περιεχόμενο της βοήθειας.
+  ms.author: mhart
+  ms.date: 10/29/2020
+  ms.service: customer-insights
+  ms.topic: landing-page
+  ms.openlocfilehash: f175ea858213022afc87fce77213893c7d050d30
+  ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+  ms.translationtype: HT
+  ms.contentlocale: el-GR
+  ms.lasthandoff: 11/03/2020
+  ms.locfileid: "4405860"
+title: Τεκμηρίωση Dynamics 365 Customer Insights
+summary: Βρείτε χρήσιμους πόρους για να ξεκινήσετε και να ενημερωθείτε σχετικά με τις δυνατότητες και τις ικανότητες του Customer Insights.
+landingContent:
+- title: Γνωρίστε το Customer Insights
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Επισκόπηση Customer Insights
+      url: overview.md
+    - text: Προγράμματα έκδοσης
+      url: https://docs.microsoft.com/dynamics365-release-plan/2020wave2/customer-data-platform/dynamics365-customer-insights/planned-features
+    - text: Αποκτήστε πρόσβαση στο περιβάλλον σας
+      url: https://home.ci.ai.dynamics.com/
+- title: Έναρξη με τις πληροφορίες κοινού
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Εγγραφή για δωρεάν δοκιμή
+      url: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
+    - text: Τι νέο υπάρχει
+      url: audience-insights/whats-new-audience-insights.md
+    - text: Τεκμηρίωση πληροφοριών κοινού
+      url: audience-insights/index.yml
+- title: Επικοινωνήστε
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Συμμετοχή στην κοινότητα Dynamics 365
+      url: https://go.microsoft.com/fwlink/?linkid=2073991
+    - text: Μοιραστείτε τις ιδέες σας
+      url: https://go.microsoft.com/fwlink/?linkid=2074172
+    - text: Αναφορά προβλήματος
+      url: https://go.microsoft.com/fwlink/?linkid=2079641
+- title: Προγράμματα εκμάθησης πληροφοριών κοινού
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Δημιουργία περιβάλλοντος
+      url: audience-insights/home.md
+    - text: Δημιουργία ενοποιημένου προφίλ πελάτη
+      url: https://docs.microsoft.com/learn/modules/unified-customer-profile/
+    - text: Εργασία με την εφαρμογή
+      url: https://docs.microsoft.com/learn/modules/working-with-customer-insights/
+- title: Εξαγωγή δεδομένων πληροφοριών κοινού
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Ρύθμιση προορισμών εξαγωγής
+      url: audience-insights/export-destinations.md
+    - text: Κάρτες πελατών σε εφαρμογές Dynamics 365
+      url: audience-insights/customer-card-add-in.md
+    - text: Σύνδεσμος Power BI
+      url: audience-insights/export-power-bi.md
+- title: Διαχείριση πληροφοριών κοινού
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Ρύθμιση παραμέτρων του συστήματος
+      url: audience-insights/system.md
+    - text: Ορισμός δικαιωμάτων χρήστη
+      url: audience-insights/permissions.md
+    - text: Διαχείριση πολλών περιβαλλόντων
+      url: audience-insights/manage-environments.md
+- title: Σχετικά με τις πληροφορίες δέσμευσης (προεπισκόπηση)
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Επισκόπηση δυνατοτήτων
+      url: engagement-insights/overview.md
+    - text: Όροι και σκέψεις
+      url: engagement-insights/glossary.md
+    - text: Έναρξη
+      url: engagement-insights/get-started.md
+- title: Αναφορές για πληροφορίες δέσμευσης (προεπισκόπηση)
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Προβολή αναφορών
+      url: engagement-insights/view-reports.md
+    - text: Δημιουργία προσαρμοσμένων αναφορών
+      url: engagement-insights/custom-reports.md
+    - text: Προβολή ενοποιημένων προφίλ αναφοράς
+      url: engagement-insights/profile-reports.md
+- title: Συμβάντα για πληροφορίες δέσμευσης (προεπισκόπηση)
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Δημιουργία εκλεπτυσμένων συμβάντων
+      url: engagement-insights/refined-events.md
+    - text: Εξαγωγή συμβάντων
+      url: engagement-insights/export-events.md
+    - text: Διαγραφή και εξαγωγή προσωπικών δεδομένων
+      url: engagement-insights/delete-export-personal-data.md
