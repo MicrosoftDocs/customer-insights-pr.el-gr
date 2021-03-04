@@ -4,16 +4,16 @@ description: Εργασία με προσαρμοσμένα μοντέλα απ�
 ms.date: 11/19/2020
 ms.reviewer: zacook
 ms.service: dynamics-365-ai
-ms.topic: article
+ms.topic: tutorial
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: ef248086b30b870359970529a7bfb37792be62d5
-ms.sourcegitcommit: a9b2cf598f256d07a48bba8617347ee90024a1dd
+ms.openlocfilehash: 34489faaecc5da1ce3dd68d799b3e0e0d9672ab7
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4668903"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267234"
 ---
 # <a name="custom-machine-learning-models"></a>Προσαρμοσμένα μοντέλα εκμάθησης μηχανής
 
@@ -46,15 +46,15 @@ ms.locfileid: "4668903"
 
 1. Επιλέξτε την υπηρεσία web Στούντιο εκμάθησης μηχανής (κλασικό) ή τη διοχέτευση εκμάθησης μηχανής Azure στην αναπτυσσόμενη λίστα **Υπηρεσία web που περιέχει το μοντέλο σας**. Στη συνέχεια, επιλέξτε **Επόμενο**.
    - Μάθετε περισσότερα σχετικά με [τη δημοσίευση μιας υπηρεσίας web στο Στούντιο εκμάθησης μηχανής (κλασικό)](https://docs.microsoft.com/azure/machine-learning/studio/deploy-a-machine-learning-web-service#deploy-it-as-a-new-web-service)
-   - Μάθετε περισσότερα σχετικά με [τη δημοσίευση μιας διοχέτευσης στην Εκμάθηση μηχανής Azure χρησιμοποιώντας τη σχεδίαση](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) ή το [SDK](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk). 
-     > [!NOTE]
-     > Η διοχέτευσή σας πρέπει να δημοσιευτεί στο [τελικό σημείο διοχέτευσης](https://docs.microsoft.com/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run).
+   - Μάθετε περισσότερα σχετικά με [τη δημοσίευση μιας διοχέτευσης στην Εκμάθηση μηχανής Azure χρησιμοποιώντας τη σχεδίαση](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) ή το [SDK](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk). Η διοχέτευσή σας πρέπει να δημοσιευτεί στο [τελικό σημείο διοχέτευσης](https://docs.microsoft.com/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run).
 
 1. Για κάθε **Είσοδο στην υπηρεσία web**, επιλέξτε την αντίστοιχη **Οντότητα** από πληροφορίες κοινού και επιλέξτε **Επόμενο**.
+   > [!NOTE]
+   > Η ροή εργασίας προσαρμοσμένου μοντέλου θα εφαρμόσει ευρετικά για την αντιστοίχιση των πεδίων εισαγωγής της υπηρεσίας Web στα χαρακτηριστικά οντότητας με βάση το όνομα και τον τύπο δεδομένων του πεδίου. Θα δείτε ένα σφάλμα εάν ένα πεδίο υπηρεσίας Web δεν μπορεί να αντιστοιχιστεί σε μια οντότητα.
 
    > [!div class="mx-imgBorder"]
    > ![Ρύθμιση παραμέτρων μιας ροής εργασιών](media/intelligence-screen2-updated.png "Ρύθμιση παραμέτρων μιας ροής εργασιών")
-
+   
 1. Στο βήμα **Παράμετροι εξόδου μοντέλου**, ορίστε τις ακόλουθες ιδιότητες:
    - Στούντιο εκμάθησης μηχανής (κλασικό)
       1. Εισαγάγετε την έξοδο **Όνομα οντότητας** στην οποία θέλετε να ρέουν τα αποτελέσματα εξόδου υπηρεσίας Web.
@@ -112,3 +112,6 @@ ms.locfileid: "4668903"
 1. Επιλέξτε **Διαγραφή**, και, στη συνέχεια, επιβεβαιώστε τη διαγραφή.
 
 Η ροή εργασιών σας θα διαγραφεί. Η [οντότητα](entities.md) που δημιουργήθηκε κατά τη δημιουργία της ροής εργασιών παραμένει και μπορεί να προβληθεί από τη σελίδα **Οντότητες**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

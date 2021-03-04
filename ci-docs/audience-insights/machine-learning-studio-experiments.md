@@ -4,17 +4,17 @@ description: Χρησιμοποιήστε μοντέλα του Στούντιο
 ms.date: 12/03/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: tutorial
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: ameetj
 manager: shellyha
-ms.openlocfilehash: 556b6810db0ed2733a3f086291757bd85b77e371
-ms.sourcegitcommit: a9b2cf598f256d07a48bba8617347ee90024a1dd
+ms.openlocfilehash: 8a861d62bdfee6a3a82468fe1ab4a3fbbdad43d4
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4669018"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5270204"
 ---
 # <a name="use-models-based-on-azure-machine-learning-studio-classic"></a>Χρησιμοποιήστε μοντέλα με βάση το Στούντιο εκμάθησης μηχανών Azure (κλασικό)
 
@@ -171,3 +171,6 @@ ms.locfileid: "4669018"
 Για να χρησιμοποιήσετε αυτές τις προβλέψεις στο Customer Insights, θα πρέπει να **εξαγάγετε** τις προβλέψεις μαζί με τα αναγνωριστικά πελάτη. [Εξαγάγετέ τα στην ίδια θέση αποθήκευσης αντικειμένων blob Azure](https://docs.microsoft.com/azure/storage/common/storage-import-export-data-from-blobs) με αυτήν στην οποία εξάγετε τα δεδομένα προέλευσης. Η προγνωστική υπηρεσία Web μπορεί να προγραμματιστεί για την τακτική εκτέλεση και την ενημέρωση των βαθμολογιών.
 
 Τα δεδομένα που δημιουργούνται από το προσαρμοσμένο μοντέλο μπορούν να χρησιμοποιηθούν για τον περαιτέρω εμπλουτισμό των δεδομένων των πελατών σας. Για περισσότερες πληροφορίες, ανατρέξτε στην ενότητα [Προσαρμοσμένα μοντέλα εκμάθηση μηχανής](custom-models.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

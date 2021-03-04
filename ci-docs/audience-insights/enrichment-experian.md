@@ -1,20 +1,20 @@
 ---
 title: Εμπλουτισμός με τον εμπλουτισμό τρίτου μέρους Experian
 description: Γενικές πληροφορίες σχετικά με τον εμπλουτισμό τρίτου μέρους της Experian.
-ms.date: 09/17/2020
+ms.date: 12/10/2020
 ms.reviewer: kishorem
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 60fc49734e54740e83b47a7028be216a0eb81e49
-ms.sourcegitcommit: a9b2cf598f256d07a48bba8617347ee90024a1dd
+ms.openlocfilehash: baf3cc58a233b70c48fb94ac4a543d162f91bdd1
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4668812"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269560"
 ---
 # <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>Εμπλουτισμός προφίλ πελατών με δημογραφικά στοιχεία από το Experian (προεπισκόπηση)
 
@@ -41,7 +41,9 @@ ms.locfileid: "4668812"
 
 ## <a name="map-your-fields"></a>Αντιστοίχιση πεδίων
 
-1. Επιλέξτε **Προσθήκη δεδομένων** και επιλέξτε τα βασικά αναγνωριστικά σας από τα στοιχεία **Όνομα και διεύθυνση**, **Ηλεκτρονικό ταχυδρομείο** ή **Τηλέφωνο** για αποστολή στο Experian για επίλυση ταυτοποίησης.
+1.  Επιλέξτε **Προσθήκη δεδομένων** και επιλέξτε το **Σύνολο δεδομένων πελάτη** που θέλετε να εμπλουτίσετε με δημογραφικά δεδομένα θέσης από την Experian. Μπορείτε να επιλέξετε την οντότητα **Πελάτης** για να εμπλουτίσετε όλα τα προφίλ πελατών σας ή να επιλέξετε μια οντότητα τμήματος αγοράς για να εμπλουτίσετε μόνο τα προφίλ πελατών που περιέχονται σε αυτό το τμήμα αγοράς.
+
+1. Επιλέξτε τα βασικά αναγνωριστικά σας από **όνομα και διεύθυνση**, **ηλεκτρονικό ταχυδρομείο** ή **τηλέφωνο** για αποστολή στην Experian για επίλυση ταυτότητας.
 
    > [!TIP]
    > Περισσότερα βασικά χαρακτηριστικά αναγνωριστικού που στάλθηκαν στο Experian πιθανών αποδίδουν υψηλότερο ποσοστό αντιστοιχίας.
@@ -52,8 +54,8 @@ ms.locfileid: "4668812"
 
 1.  Επιλέξτε **Αποθήκευση** για να ολοκληρώσετε την αντιστοίχιση πεδίου.
 
-   > [!div class="mx-imgBorder"]
-   > ![Αντιστοίχιση πεδίων Experian](media/experian-field-mapping.png "Αντιστοίχιση πεδίων Experian")
+    > [!div class="mx-imgBorder"]
+    > ![Αντιστοίχιση πεδίων Experian](media/experian-field-mapping.png "Αντιστοίχιση πεδίων Experian")
 
 ## <a name="enrichment-results"></a>Αποτελέσματα εμπλουτισμού
 
@@ -71,3 +73,6 @@ ms.locfileid: "4668812"
 
 Όταν ενεργοποιείτε το Dynamics 365 Customer Insights για να μεταδίδετε δεδομένα στη Experian, επιτρέπετε τη μεταφορά δεδομένων εκτός του ορίου συμμόρφωσης για το Dynamics 365 Customer Insights, συμπεριλαμβανομένων των δυνητικά ευαίσθητων δεδομένων, όπως τα προσωπικά δεδομένα. Η Microsoft θα μεταβιβάσει τα εν λόγω δεδομένα με τη δική σας οδηγία, αλλά εσείς είστε υπεύθυνοι για να διασφαλίσετε ότι η Experian πληροί τυχόν υποχρεώσεις προστασίας προσωπικών δεδομένων ή ασφάλειας που ενδεχομένως διαθέτετε. Για περισσότερες πληροφορίες, ανατρέξτε στη [Δήλωση προστασίας προσωπικών δεδομένων της Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
 Ο διαχειριστής Dynamics 365 Customer Insights μπορεί να καταργήσει αυτόν τον εμπλουτισό οποιαδήποτε στιγμή, για να διακόψετε τη χρήση αυτής της λειτουργίας.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

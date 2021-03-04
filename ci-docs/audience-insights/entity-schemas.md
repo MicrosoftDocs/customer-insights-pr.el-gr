@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 2cf01029ef6b64fe566022d09ce65bca3603189c
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: 9e7a6e944d37d25f4c25846644278b39b3ddd08e
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643908"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269284"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>Σχήματα οντοτήτων σε Common Data Model
 
@@ -45,3 +45,6 @@ ms.locfileid: "4643908"
 Μπορείτε να προβάλετε οντότητες στον [Πλοηγό οντοτήτων του Common Data Model](https://microsoft.github.io/CDM/). Επιλέξτε **Φόρτωση από GitHub!** και μεταβείτε στα **foundationCommon** > **crmCommon** > **λύσεις** > **customerInsights** όπου θα βρείτε τη λίστα με τις οντότητες Customer Insights και τους ορισμούς τους.
 > [!div class="mx-imgBorder"]
 > ![Πλοηγός οντότητας CDM που δείχνει οντότητα CustomerActivity](media/CDM-entity-navigator.png "Πλοηγός οντότητας CDM που δείχνει οντότητα CustomerActivity")
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

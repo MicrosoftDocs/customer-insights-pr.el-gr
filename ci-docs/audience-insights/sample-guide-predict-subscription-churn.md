@@ -5,16 +5,16 @@ ms.date: 11/19/2020
 ms.reviewer: digranad
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: tutorial
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 2537cfb5dde0d1ce1af16f585f0bf91d15ea1870
-ms.sourcegitcommit: a6e7df90d61450e00886753eb5db116f2f35bb6c
+ms.openlocfilehash: 3f1019ace424f89320c5a0d5058e928f4cbc7e62
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "4653980"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269836"
 ---
 # <a name="subscription-churn-prediction-preview-sample-guide"></a>Δείγμα οδηγού πρόβλεψης απώλειας συνδρομών (προεπισκόπηση)
 
@@ -46,10 +46,9 @@ ms.locfileid: "4653980"
    - **DateOfBirth**: ημερομηνία
    - **CreatedOn**: ημερομηνία/ώρα/ζώνη
 
-   [!div class="mx-imgBorder"]
-   ![Μετατροπή DoB σε ημερομηνία](media/ecommerce-dob-date.PNG "μετασχηματισμός ημερομηνίας γέννησης σε ημερομηνία")
+   :::image type="content" source="media/ecommerce-dob-date.PNG" alt-text="Μετασχηματισμός ημερομηνίας γέννησης σε ημερομηνία.":::
 
-1. Στο πεδίο «Όνομα» στο δεξιό παράθυρο, μετονομάστε την προέλευση δεδομένων σας από **Ερώτημα** σε **eCommerceContacts**
+1. Στο πεδίο **Όνομα** στο δεξιό παράθυρο, μετονομάστε την προέλευση δεδομένων σας από **Ερώτημα** σε **eCommerceContacts**
 
 1. Αποθηκεύστε την προέλευση δεδομένων.
 
@@ -67,7 +66,7 @@ ms.locfileid: "4653980"
    - **RewardsPoints**: ακέραιος αριθμός
    - **CreatedOn**: ημερομηνία/ώρα
 
-1. Στο πεδίο «Όνομα» στο δεξιό παράθυρο, μετονομάστε την προέλευση δεδομένων σας από **Ερώτημα** σε **loyCustomers**.
+1. Στο πεδίο **Όνομα** στο δεξιό παράθυρο, μετονομάστε την προέλευση δεδομένων σας από **Ερώτημα** σε **loyCustomers**.
 
 1. Αποθηκεύστε την προέλευση δεδομένων.
 
@@ -90,7 +89,7 @@ ms.locfileid: "4653980"
    - **Is_auto_renew**: True/False
    - **RecurringFrequencyInMonths**: ακέριος αριθμός
 
-1. Στο πεδίο «Όνομα» στο δεξιό παράθυρο, μετονομάστε την προέλευση δεδομένων σας από **Ερώτημα** σε **SubscriptionHistory**.
+1. Στο πεδίο **Όνομα** στο δεξιό παράθυρο, μετονομάστε την προέλευση δεδομένων σας από **Ερώτημα** σε **SubscriptionHistory**.
 
 1. Αποθηκεύστε την προέλευση δεδομένων.
 
@@ -230,3 +229,6 @@ ms.locfileid: "4653980"
 Τώρα διαθέτετε ένα τμήμα που ενημερώνεται δυναμικά και προσδιορίζει τους πελάτες υψηλού κινδύνου απώλειας για αυτήν την επιχειρηματική συνδρομή.
 
 Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Δημιουργία και διαχείριση τμημάτων](segments.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

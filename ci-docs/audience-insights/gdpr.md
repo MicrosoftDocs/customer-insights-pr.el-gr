@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: f276a73feca52023391ad92fbc84359921b85328
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: ed9aa09fba938606611c6ce86c2b250c5e19c606
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4405838"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5268686"
 ---
 # <a name="data-subject-rights-dsr-requests-under-gdpr"></a>Αιτήματα δικαιωμάτων υποκειμένου δεδομένων (DSR) βάσει του ΓΚΠΔ
 
@@ -75,3 +75,6 @@ ms.locfileid: "4405838"
 1. Στείλτε ένα μήνυμα ηλεκτρονικού ταχυδρομείου στο D365CI@microsoft.com για να καθορίσετε τη διεύθυνση ηλεκτρονικού ταχυδρομείου του χρήστη στην αίτηση. Η ομάδα του Customer Insights θα στείλει ένα μήνυμα ηλεκτρονικού ταχυδρομείου στη διεύθυνση ηλεκτρονικού ταχυδρομείου που έχει καταχωρηθεί στη διεύθυνση διαχείρισης μισθωτών, ζητώντας επιβεβαίωση για εξαγωγή δεδομένων.
 2. Επιβεβαιώστε την επιβεβαίωση για εξαγωγή των δεδομένων για τον ζητούμενο χρήστη.
 3. Λάβετε τα δεδομένα που έχουν εξαχθεί μέσω της διεύθυνσης ηλεκτρονικού ταχυδρομείου του διαχειριστή μισθωτών.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

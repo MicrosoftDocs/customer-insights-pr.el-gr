@@ -5,16 +5,16 @@ ms.date: 09/29/2020
 ms.reviewer: adkuppa
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 8a170cc5b64b4b383501021232c83948e838a0e2
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: d51a7efa5fd9f7336d1662500eb804a674738493
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4405831"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267769"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>Σύνδεση σε προέλευση δεδομένων Power Query
 
@@ -28,7 +28,10 @@ ms.locfileid: "4405831"
 
 1. Επιλέξτε τη μέθοδο **Εισαγωγή δεδομένων** και επιλέξτε **Επόμενο**.
 
-1. Δώστε ένα **Όνομα** για την προέλευση δεδομένων και επιλέξτε **Επόμενο** για να δημιουργήσετε την προέλευση δεδομένων.
+1. Δώστε ένα **Όνομα** για την προέλευση δεδομένων και επιλέξτε **Επόμενο** για να δημιουργήσετε την προέλευση δεδομένων. Οδηγίες ονομάτων: 
+   - Ξεκινήστε με γράμμα.
+   - Χρησιμοποιήστε μόνο γράμματα και αριθμούς. Δεν επιτρέπονται ειδικοί χαρακτήρες και διαστήματα.
+   - Χρησιμοποιήστε μεταξύ 3 και 64 χαρακτήρων.
 
 1. Επιλέξτε έναν από τους [διαθέσιμους συνδέσμους](#available-power-query-data-sources). Για αυτό το παράδειγμα, επιλέγουμε τη σύνδεση **Κείμενο/CSV**.
 
@@ -77,3 +80,6 @@ ms.locfileid: "4405831"
 3. Εφαρμόστε τις αλλαγές και τους μετασχηματισμούς σας στο παράθυρο διαλόγου **Power Query - Επεξεργασία ερωτημάτων** όπως περιγράφεται στη [Δημιουργία νέας προέλευσης δεδομένων](#create-a-new-data-source).
 
 4. Επιλέξτε **Αποθήκευση** στο Power Query μετά την ολοκλήρωση της επεξεργασίας για να αποθηκεύσετε τις αλλαγές σας.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

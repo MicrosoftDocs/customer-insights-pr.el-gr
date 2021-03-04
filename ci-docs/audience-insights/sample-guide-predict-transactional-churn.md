@@ -5,16 +5,16 @@ ms.date: 11/19/2020
 ms.reviewer: digranad
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: tutorial
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 055708ed3f9f468cad83ecf976a460814bf05199
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: 81540ad2f490cf566f031233543b3cb6aa838033
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643593"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269790"
 ---
 # <a name="transactional-churn-prediction-preview-sample-guide"></a>Δείγμα οδηγού πρόβλεψης απώλειας συναλλαγών (προεπισκόπηση)
 
@@ -49,7 +49,7 @@ ms.locfileid: "4643593"
    [!div class="mx-imgBorder"]
    ![Μετατροπή DoB σε ημερομηνία](media/ecommerce-dob-date.PNG "μετασχηματισμός ημερομηνίας γέννησης σε ημερομηνία")
 
-1. Στο πεδίο «Όνομα» στο δεξιό παράθυρο, μετονομάστε την προέλευση δεδομένων σας από **Ερώτημα** σε **eCommerceContacts**
+1. Στο πεδίο **Όνομα** στο δεξιό παράθυρο, μετονομάστε την προέλευση δεδομένων σας από **Ερώτημα** σε **eCommerceContacts**
 
 1. Αποθηκεύστε την προέλευση δεδομένων.
 
@@ -66,7 +66,7 @@ ms.locfileid: "4643593"
    - **PurchasedOn**: ημερομηνία/ώρα
    - **TotalPrice**: νομισματική μονάδα
    
-1. Στο πεδίο «Όνομα» στο δεξιό παράθυρο, μετονομάστε την προέλευση δεδομένων σας από **Ερώτημα** σε **eCommercePurchases**.
+1. Στο πεδίο **Όνομα** στο δεξιό παράθυρο, μετονομάστε την προέλευση δεδομένων σας από **Ερώτημα** σε **eCommercePurchases**.
 
 1. Αποθηκεύστε την προέλευση δεδομένων.
 
@@ -84,7 +84,7 @@ ms.locfileid: "4643593"
    - **RewardsPoints**: ακέραιος αριθμός
    - **CreatedOn**: ημερομηνία/ώρα
 
-1. Στο πεδίο «Όνομα» στο δεξιό παράθυρο, μετονομάστε την προέλευση δεδομένων σας από **Ερώτημα** σε **loyCustomers**.
+1. Στο πεδίο **Όνομα** στο δεξιό παράθυρο, μετονομάστε την προέλευση δεδομένων σας από **Ερώτημα** σε **loyCustomers**.
 
 1. Αποθηκεύστε την προέλευση δεδομένων.
 
@@ -166,7 +166,7 @@ ms.locfileid: "4643593"
 
      :::image type="content" source="media/model-levers.PNG" alt-text="Επιλέξτε τους μοχλούς μοντέλου Παράθυρο πρόβλεψης και Ορισμός απώλειας.":::
 
-1. Επιλέξτε **Ιστορικό αγορών (απαιτείται)** και επιλέξτε **Προσθήκη δεδομένων** για το ιστορικό συνδρομών.
+1. Επιλέξτε **Ιστορικό αγορών (απαιτείται)** και επιλέξτε **Προσθήκη δεδομένων** για το ιστορικό αγορών.
 
 1. Προσθέστε την οντότητα **eCommercePurchases: eCommerce** και αντιστοιχίστε τα πεδία από το eCommerce στα αντίστοιχα πεδία που απαιτούνται από το μοντέλο.
 
@@ -204,3 +204,6 @@ ms.locfileid: "4643593"
 Τώρα διαθέτετε ένα τμήμα που ενημερώνεται δυναμικά και προσδιορίζει τους πελάτες υψηλού κινδύνου απώλειας για αυτήν την επιχειρηματική συνδρομή.
 
 Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Δημιουργία και διαχείριση τμημάτων](segments.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

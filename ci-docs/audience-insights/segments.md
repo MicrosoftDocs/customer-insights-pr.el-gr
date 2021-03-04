@@ -4,17 +4,17 @@ description: Δημιουργήστε τμήματα πελατών για να 
 ms.date: 10/15/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: jimsonc
 manager: shellyha
-ms.openlocfilehash: 6931110c2ae93cd2792d319aa5a34f0df3088552
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: a1308f07ac3ba7d4b09931bab3d19b6dfaf479ee
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4405859"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5270356"
 ---
 # <a name="create-and-manage-segments"></a>Δημιουργία και διαχείριση τμημάτων
 
@@ -222,3 +222,6 @@ ms.locfileid: "4405859"
 ## <a name="next-steps"></a>Επόμενα βήματα
 
 [Εξαγάγετε ένα τμήμα αγοράς](export-destinations.md) και εξερευνήστε την [Καρτέλα πελάτη](customer-card-add-in.md) και τους [Συνδέσμους](export-power-bi.md) για να λάβετε πληροφορίες σχετικά με το επίπεδο του πελάτη.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

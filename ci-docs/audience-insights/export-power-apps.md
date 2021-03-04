@@ -1,20 +1,20 @@
 ---
 title: Σύνδεσμος Power Apps
 description: Συνδεθείτε με το Power Apps και το Power Automate.
-ms.date: 08/21/2020
+ms.date: 01/19/2021
 ms.reviewer: nikeller
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: b6ec103e29e218b2f27bfc1193300ea793a6b30b
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: 5a8bbb9a09218d54228589d43c21c8894680b56e
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4405809"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5268916"
 ---
 # <a name="microsoft-power-apps-connector-preview"></a>Σύνδεση Microsoft Power Apps (προεπισκόπηση)
 
@@ -31,7 +31,7 @@ ms.locfileid: "4405809"
 Αφού προσθέσετε το Customer Insights ως σύνδεση δεδομένων, μπορείτε να επιλέξετε τις ακόλουθες οντότητες στο Power Apps:
 
 - Πελάτης: για να χρησιμοποιήσετε δεδομένα από το [ενοποιημένο προφίλ πελάτη](customer-profiles.md).
-- Ενοποιημένη δραστηριότητα πελάτη: για την εμφάνιση της [λωρίδας χρόνου δραστηριότητας](activities.md) στην εφαρμογή.
+- UnifiedActivity: για την εμφάνιση της [λωρίδας χρόνου δραστηριότητας](activities.md) στην εφαρμογή.
 
 ## <a name="limitations"></a>Περιορισμοί
 
@@ -72,3 +72,6 @@ ms.locfileid: "4405809"
 1. Για να εμφανίσετε την ενοποιημένη λωρίδα χρόνου για έναν πελάτη, προσθέστε ένα στοιχείο Συλλογής και προσθέστε την ιδιότητα Στοιχεία: **Filter('Ενοποιημένη δραστηριότητα πελάτη', CustomerId = {Customer_Id})**
 
     Παράδειγμα: Filter('UnifiedActivity', CustomerId = Gallery1.Selected.CustomerId)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

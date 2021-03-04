@@ -1,20 +1,20 @@
 ---
 title: Εξαγωγή δεδομένων Customer Insights στο Dynamics 365 Sales
 description: Μάθετε πώς μπορείτε να ρυθμίσετε τις παραμέτρους της σύνδεσης με το Dynamics 365 Sales.
-ms.date: 08/21/2020
+ms.date: 02/01/2021
 ms.reviewer: philk
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: af0824e69dfdf620a0ac756e32a9bd3dd85e5151
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: 0013c4e6a96401d6cdbea55ed38f85f5e10dcc56
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643818"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269008"
 ---
 # <a name="connector-for-dynamics-365-sales-preview"></a>Σύνδεσμος για το Dynamics 365 Sales (προεπισκόπηση)
 
@@ -24,7 +24,10 @@ ms.locfileid: "4643818"
 
 ## <a name="prerequisite"></a>Προαπαιτούμενα στοιχεία
 
-Καρτέλες επαφών [από το Dynamics 365 Sales που λαμβάνονται με χρήση του Common Data Service](connect-power-query.md).
+1. Οι καρτέλες επαφών πρέπει να υπάρχουν στο Dynamics 365 Sales για να μπορείτε να εξαγάγετε ένα τμήμα από το Customer Insights στις Πωλήσεις. Διαβάστε περισσότερα σχετικά με το πώς μπορείτε να χρησιμοποιήσετε τις επαφές στο [Dynamics 365 Sales χρησιμοποιώντας το Common Data Services](connect-power-query.md).
+
+   > [!NOTE]
+   > Η εξαγωγή τμημάτων από τις πληροφορίες κοινού στις Πωλήσεις δεν θα δημιουργήσει νέες καρτέλες επαφών στις παρουσίες των Πωλήσεων. Οι καρτέλες επαφών από τις Πωλήσεις πρέπει να ενοποιηθούν με τις πληροφορίες κοινού και να χρησιμοποιούνται ως προέλευση δεδομένων. Πρέπει επίσης να συμπεριληφθούν στην ενοποιημένη οντότητα πελάτη για να αντιστοιχίσετε τα αναγνωριστικά των πελατών σε αναγνωριστικά επαφών πριν είναι δυνατή η εξαγωγή τμημάτων.
 
 ## <a name="configure-the-connector-for-sales"></a>Ρύθμιση παραμέτρων του συνδέσμου για το Sales
 
@@ -49,3 +52,6 @@ ms.locfileid: "4643818"
 ## <a name="export-the-data"></a>Εξαγωγή δεδομένων
 
 Μπορείτε να [εξαγάγετε δεδομένα κατόπιν απαίτησης](export-destinations.md). Η εξαγωγή θα εκτελεστεί επίσης με κάθε [προγραμματισμένη ανανέωση](system.md#schedule-tab).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 295c372bb452e7c40aa950506dc494d4a2de1108
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: 292da986faa7f62d8aa73ed7214075612178e2e1
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4405853"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269876"
 ---
 # <a name="relationships-between-entities"></a>Σχέσεις μεταξύ οντοτήτων
 
@@ -28,8 +28,8 @@ ms.locfileid: "4405853"
 > ![Δημιουργία σχέσης](media/relationships-entities-merge.png "Δημιουργία σχέσης")
 
 - Δημιουργήθηκε μια **σχέση *CustomerToContact*** μεταξύ της οντότητας Πελάτης και της οντότητας Επαφή. Η οντότητα πελάτη λαμβάνει το πεδίο κλειδιού **Contact_contactId** που σχετίζεται με το πεδίο κλειδιού οντότητας Επαφής **contactId**.
-- Δημιουργήθηκε μια **σχέση _CustomerToAccount_** μεταξύ της οντότητας Πελάτης και της οντότητας Λογαριασμός. Η οντότητα πελάτη λαμβάνει το πεδίο κλειδιού **Account_accountId** που σχετίζεται με το πεδίο κλειδιού οντότητας Λογαριασμού **accountId**.
-- Δημιουργήθηκε μια **σχέση _CustomerToWebAccount_** μεταξύ της οντότητας Πελάτης και της οντότητας WebAccount. Η οντότητα πελάτη λαμβάνει το πεδίο κλειδιού **WebAccount_webaccountId** που σχετίζεται με το πεδίο κλειδιού οντότητας WebAccount **webaccountId**.
+- Δημιουργήθηκε μια **σχέση *CustomerToAccount*** μεταξύ της οντότητας Πελάτης και της οντότητας Λογαριασμός. Η οντότητα πελάτη λαμβάνει το πεδίο κλειδιού **Account_accountId** που σχετίζεται με το πεδίο κλειδιού οντότητας Λογαριασμού **accountId**.
+- Δημιουργήθηκε μια **σχέση *CustomerToWebAccount*** μεταξύ της οντότητας Πελάτης και της οντότητας WebAccount. Η οντότητα πελάτη λαμβάνει το πεδίο κλειδιού **WebAccount_webaccountId** που σχετίζεται με το πεδίο κλειδιού οντότητας WebAccount **webaccountId**.
 
 ## <a name="create-a-relationship"></a>Δημιουργία σχέσης
 
@@ -69,3 +69,6 @@ ms.locfileid: "4405853"
 ## <a name="next-step"></a>Επόμενο βήμα
 
 Οι σχέσεις συστήματος και οι προσαρμοσμένες χρησιμοποιούνται για τη δημιουργία τμημάτων αγοράς που βασίζονται σε πολλαπλές προελεύσεις δεδομένων, οι οποίες δεν είναι πλέον διαθέσιμες σε σιλό. Για περισσότερες πληροφορίες, δείτε [Τμήματα αγοράς](segments.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

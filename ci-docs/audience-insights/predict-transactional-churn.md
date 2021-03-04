@@ -5,16 +5,16 @@ ms.date: 11/12/2020
 ms.reviewer: zacook
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: f3cbbf99a6cecba2aab2cf85428d53e5df8346e4
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: af461d290c69687fb47bacfcff446a0c62978383
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644403"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5268318"
 ---
 # <a name="transactional-churn-prediction-preview"></a>Πρόβλεψη απώλειας συναλλαγών (προεπισκόπηση)
 
@@ -96,6 +96,8 @@ ms.locfileid: "4644403"
 1. Προαιρετικά, επιλέξτε **Προσθήκη δεδομένων** για **Δραστηριότητες πελατών**. Επιλέξτε την οντότητα που παρέχει τις πληροφορίες δραστηριότητας του πελάτη, όπως περιγράφεται στις προϋποθέσεις.
 
 1. Αντιστοιχίστε τα σημασιολογικά πεδία σε χαρακτηριστικά εντός της οντότητας δραστηριότητας πελάτη και επιλέξτε **Επόμενο**. Για περιγραφές των πεδίων, ανατρέξτε στις [προϋποθέσεις](#prerequisites).
+
+   :::image type="content" source="media/map-transaction-data-fields.png" alt-text="Αντιστοίχιση πεδίων πελατών για δεδομένα συναλλαγών.":::
 
 1. Επιλέξτε έναν τύπο δραστηριότητας που να ταιριάζει με τον τύπο της δραστηριότητας πελάτη που ρυθμίζετε. Επιλέξτε **Δημιουργία νέου** και επιλέξτε έναν διαθέσιμο τύπο δραστηριότητας ή δημιουργήστε έναν νέο τύπο.
 
@@ -185,3 +187,6 @@ ms.locfileid: "4644403"
 1. Επιλέξτε τις κατακόρυφες ελλείψεις δίπλα στην πρόβλεψη που θέλετε να διαγράψετε.
 
 1. Επιλέξτε **Διαγραφή**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

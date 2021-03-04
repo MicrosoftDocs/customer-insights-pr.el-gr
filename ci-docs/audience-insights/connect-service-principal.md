@@ -1,20 +1,20 @@
 ---
 title: Σύνδεση με έναν λογαριασμό Azure Data Lake Storage Gen2 με έναν διευθυντή εξυπηρέτησης
-description: χρησιμοποιήστε έναν διευθυντή εξυπηρέτησης Azure για πληροφορίες κοινού για να συνδεθείτε με τη δική σας λίμνη δεδομένων όταν την επισυνάπτετε σε πληροφορίες κοινού.
-ms.date: 11/24/2020
+description: Χρησιμοποιήστε έναν διευθυντή εξυπηρέτησης Azure για πληροφορίες κοινού για να συνδεθείτε με τη δική σας λίμνη δεδομένων όταν την επισυνάπτετε σε πληροφορίες κοινού.
+ms.date: 02/10/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c2fae278d34fa02b9168ac70dfa8dd351653245e
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: eebbac1370a847869d98beaf70db49b809d762e7
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644088"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267722"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-gen2-account-with-an-azure-service-principal-for-audience-insights"></a>Σύνδεση με έναν λογαριασμό Azure Data Lake Storage Gen2 με έναν κύριο υπηρεσίας Azure για πληροφορίες κοινού
 
@@ -22,7 +22,9 @@ ms.locfileid: "4644088"
 
 Μπορείτε να χρησιμοποιήσετε τον διευθυντή εξυπηρέτησης για να [προσθέσετε ή να επεξεργαστείτε με ασφάλεια έναν φάκελο Common Data Model ως προέλευση δεδομένων](connect-common-data-model.md) ή να [δημιουργήσετε ένα νέο ή να ενημερώσετε ένα υπάρχον περιβάλλον](manage-environments.md#create-an-environment-in-an-existing-organization).
 
-Χρειάζεστε δικαιώματα διαχειριστή για τη συνδρομή σας Azure για τη δημιουργία της αρχής εξυπηρέτησης.
+> [!IMPORTANT]
+> - Ο λογαριασμός αποθήκευσης Azure Data Lake Gen2 που σκοπεύει να χρησιμοποιήσει την αρχή της υπηρεσίας πρέπει να έχει [ενεργοποιημένο τον Ιεραρχικό χώρο ονομάτων (HNS)](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-namespace).
+> - Χρειάζεστε δικαιώματα διαχειριστή για τη συνδρομή σας Azure για τη δημιουργία της αρχής εξυπηρέτησης.
 
 ## <a name="create-azure-service-principal-for-audience-insights"></a>Δημιουργία της αρχής εξυπηρέτησης Azure για πληροφορίες κοινού
 
@@ -83,7 +85,7 @@ ms.locfileid: "4644088"
 
 Ακολουθήστε τα παρακάτω βήματα για να παράσχετε τις απαιτούμενες πληροφορίες σχετικά με την επιλεγμένη προσέγγιση.
 
-### <a name="resounce-based-storage-account-connection"></a>Σύνδεση λογαριασμού χώρου αποθήκευσης βάσει πόρων
+### <a name="resource-based-storage-account-connection"></a>Σύνδεση λογαριασμού χώρου αποθήκευσης βάσει πόρων
 
 1. Μεταβείτε στην [πύλη διαχείρισης Azure](https://portal.azure.com), συνδεθείτε στη συνδρομή σας και ανοίξτε τον λογαριασμό χώρου αποθήκευσης.
 
@@ -108,7 +110,8 @@ ms.locfileid: "4644088"
 1. Επανεξετάστε τη **Συνδρομή**, την **Ομάδα πόρων** και το **Όνομα** του λογαριασμού χώρου αποθήκευσης, για να βεβαιωθείτε ότι έχετε επιλέξει τις σωστές τιμές στις πληροφορίες κοινού.
 
 1. Στις πληροφορίες κοινού, επιλέξτε τις τιμές ή τα αντίστοιχα πεδία κατά την προσάρτηση του λογαριασμού χώρου αποθήκευσης.
-
-   :::image type="content" source="media/ADLS-SP-SubscriptionConnection.png" alt-text="Εισαγάγετε τις πληροφορίες αναγνωριστικού πόρου του λογαριασμού αποθήκευσης.":::
    
 1. Συνεχίστε με τα υπόλοιπα βήματα στις πληροφορίες κοινού για να επισυνάψετε τον λογαριασμό χώρου αποθήκευσης.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

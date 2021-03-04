@@ -5,16 +5,16 @@ ms.date: 06/05/2020
 ms.reviewer: philk
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 8260e3b5e529f3d54678d9d6e11aebb2795e27fd
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: c839f9dc7e403412c0e3d936392d45a43bc63545
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643683"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269974"
 ---
 # <a name="connector-for-facebook-ads-manager-preview"></a>Σύνδεση για το Facebook Ads Manager (έκδοση προεπισκόπησης)
 
@@ -62,7 +62,16 @@ ms.locfileid: "4643683"
 
 Μπορείτε να [εξαγάγετε δεδομένα κατόπιν απαίτησης](export-destinations.md). Η εξαγωγή θα εκτελεστεί επίσης με κάθε [προγραμματισμένη ανανέωση](system.md#schedule-tab).
 
+## <a name="known-limitations"></a>Γνωστοί περιορισμοί
+
+- Έως και 10 εκατομμύρια προφίλ πελατών ανά εξαγωγή στη διαχείριση διαφημίσεων του Facebook 
+- Η εξαγωγή στη διαχείριση διαφημίσεων του Facebook περιορίζεται σε τμήματα
+- Η εξαγωγή τμημάτων με σύνολο 10 εκατομμυρίων προφίλ μπορεί να χρειαστεί έως και 90 λεπτά για να ολοκληρωθεί
+
 ## <a name="data-privacy-and-compliance"></a>Απόρρητο δεδομένων και συμμόρφωση
 
 Όταν ενεργοποιείτε το Dynamics 365 Customer Insights για να μεταδίδετε δεδομένα στο Facebook Ads Manager, επιτρέπετε τη μεταφορά δεδομένων εκτός του ορίου συμμόρφωσης για το Dynamics 365 Customer Insights, συμπεριλαμβανομένων των δυνητικά ευαίσθητων δεδομένων, όπως τα προσωπικά δεδομένα. Η Microsoft θα μεταβιβάσει τα εν λόγω δεδομένα με τη δική σας οδηγία, αλλά εσείς είστε υπεύθυνοι για να διασφαλίσετε ότι το Facebook πληροί τυχόν υποχρεώσεις προστασίας προσωπικών δεδομένων ή ασφάλειας που ενδεχομένως διαθέτετε. Για περισσότερες πληροφορίες, ανατρέξτε στη [Δήλωση προστασίας προσωπικών δεδομένων της Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
 Ο διαχειριστής του Dynamics 365 Customer Insights μπορεί να καταργήσει αυτόν τον προορισμό εξαγωγής οποιαδήποτε στιγμή, για να διακόψετε τη χρήση αυτής της λειτουργίας.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
