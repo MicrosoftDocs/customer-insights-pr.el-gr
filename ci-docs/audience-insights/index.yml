@@ -6,16 +6,16 @@ metadata:
   description: Κέντρο βοήθειας με βασικές συνδέσεις για πληροφορίες κοινού.
   ms.service: customer-insights
   ms.subservice: audience-insights
-  ms.topic: landing-page
+  ms.topic: hub-page
   author: m-hartmann
   ms.author: mhart
   ms.date: 10/16/2020
-  ms.openlocfilehash: 9dcbbecf793cca2ef1d79d6fad7f3b420f5a8806
-  ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+  ms.openlocfilehash: ba5229067c7c338b4f8d0503aaf80f25b6c4002c
+  ms.sourcegitcommit: a8f7d5d0008b2d7d0ff0daeb746126abfc82c253
   ms.translationtype: HT
   ms.contentlocale: el-GR
-  ms.lasthandoff: 11/03/2020
-  ms.locfileid: "4405843"
+  ms.lasthandoff: 12/17/2020
+  ms.locfileid: "4745721"
 landingContent:
 - title: Σχετικά με τις πληροφορίες κοινού
   linkLists:
@@ -27,36 +27,36 @@ landingContent:
       url: whats-new-audience-insights.md
     - text: Τοποθεσία κοινότητας
       url: https://go.microsoft.com/fwlink/?linkid=2073991
-- title: Λήψη προελεύσεων δεδομένων
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Προσθήκη προελεύσεων δεδομένων
-      url: data-sources.md
-    - text: Τμηματική ανανέωση
-      url: incremental-refresh-data-sources.md
-    - text: Κατανόηση οντοτήτων
-      url: entities.md
 - title: Ενοποίηση δεδομένων
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Αντιστ.
-      url: map-entities.md
-    - text: Αντιστοίχιση
-      url: match-entities.md
-    - text: Συγχώνευση
-      url: merge-entities.md
-- title: Περιορισμός προφίλ πελατών
+    - text: Επισκόπηση προελεύσεων δεδομένων
+      url: data-sources.md
+    - text: Επισκόπηση ενοποίησης
+      url: data-unification.md
+    - text: Κατανόηση οντοτήτων
+      url: entities.md
+- title: Εμπλουτισμός και περιορισμός δεδομένων
   linkLists:
   - linkListType: how-to-guide
     links:
+    - text: Εμπλουτισμός προφίλ πελατών
+      url: enrichment-hub.md
     - text: Διαμόρφωση σχέσεων
       url: relationships.md
     - text: Λίστα δραστηριοτήτων πελάτη
       url: activities.md
-    - text: Φέρτε τα δικά σας μοντέλα εκμάθησης μηχανής
-      url: custom-models.md
+- title: Λήψη πληροφοριών
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Δημιουργία τμημάτων
+      url: segments.md
+    - text: Δημιουργία μέτρων
+      url: measures.md
+    - text: Ολοκλήρωση δεδομένων με προβλέψεις
+      url: predictions.md
 - title: Εξαγωγή δεδομένων πελατών
   linkLists:
   - linkListType: how-to-guide
