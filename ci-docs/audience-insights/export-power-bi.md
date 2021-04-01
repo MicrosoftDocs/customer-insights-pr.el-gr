@@ -2,19 +2,19 @@
 title: Σύνδεσμος Power BI
 description: Μάθετε πώς μπορείτε να χρησιμοποιείτε τον σύνδεσμο του Dynamics 365 Customer Insights στο Power BI.
 ms.date: 09/21/2020
-ms.reviewer: sthe
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: stefanie-msft
+ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 0607a4644ac7d7beb19e4faecf012efcd197d48c
-ms.sourcegitcommit: 0260ed244b97c2fd0be5e9a084c4c489358e8d4f
+ms.openlocfilehash: e43e2f9dbc84ebfbf2154990a752740f973296cb
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "5477088"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596039"
 ---
 # <a name="connector-for-power-bi-preview"></a>Σύνδεση για το Power BI (προεπισκόπηση)
 
@@ -23,7 +23,7 @@ ms.locfileid: "5477088"
 ## <a name="prerequisites"></a>Προϋποθέσεις
 
 - Έχετε ενοποιημένα προφίλ πελάτη.
-- Η πιο πρόσφατη έκδοση του [Microsoft Power BI Desktop](https://powerbi.microsoft.com/desktop/) έχει εγκατασταθεί στον υπολογιστή σας. [Μάθετε περισσότερα για το Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-what-is-desktop).
+- Η πιο πρόσφατη έκδοση του [Microsoft Power BI Desktop](https://powerbi.microsoft.com/desktop/) είναι εγκατεστημένη στον υπολογιστή σας. [Μάθετε περισσότερα για το Power BI Desktop](/power-bi/desktop-what-is-desktop).
 
 ## <a name="configure-the-connector-for-power-bi"></a>Ρυθμίστε τις παραμέτρους της σύνδεσης για το Power BI
 
@@ -47,7 +47,7 @@ ms.locfileid: "5477088"
 
 ## <a name="large-data-sets"></a>Μεγάλα σύνολα δεδομένων
 
-Ο σύνδεσμος Customer Insights για το Power BI έχει σχεδιαστεί ώστε να λειτουργεί για σύνολα δεδομένων που περιέχουν έως 1 εκατομμύριο προφίλ πελατών. Η εισαγωγή μεγαλύτερων σετ δεδομένων μπορεί να λειτουργήσει, αλλά απαιτεί πολύ χρόνο. Επιπρόσθετα, η διαδικασία θα μπορούσε να καταλήξει σε λήξη χρονικού ορίου λόγω περιορισμών του Power BI. Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Power BI : Συστάσεις για μεγάλα σύνολα δεδομένων](https://docs.microsoft.com/power-bi/admin/service-premium-what-is#large-datasets). 
+Ο σύνδεσμος Customer Insights για το Power BI έχει σχεδιαστεί ώστε να λειτουργεί για σύνολα δεδομένων που περιέχουν έως 1 εκατομμύριο προφίλ πελατών. Η εισαγωγή μεγαλύτερων σετ δεδομένων μπορεί να λειτουργήσει, αλλά απαιτεί πολύ χρόνο. Επιπρόσθετα, η διαδικασία θα μπορούσε να καταλήξει σε λήξη χρονικού ορίου λόγω περιορισμών του Power BI. Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Power BI : Συστάσεις για μεγάλα σύνολα δεδομένων](/power-bi/admin/service-premium-what-is#large-datasets). 
 
 ### <a name="work-with-a-subset-of-data"></a>Εργασία με ένα υποσύνολο δεδομένων
 
@@ -70,4 +70,3 @@ ms.locfileid: "5477088"
 Μετά την κατάργηση των διπλότυπων σχέσεων, προσπαθήστε να ρυθμίσετε ξανά τις παραμέτρους του συνδέσμου Power BI. Το περιβάλλον θα πρέπει να είναι τώρα διαθέσιμο.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
-

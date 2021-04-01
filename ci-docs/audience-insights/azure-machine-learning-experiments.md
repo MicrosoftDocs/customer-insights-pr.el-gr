@@ -6,15 +6,15 @@ ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: naravill
-ms.author: mhart
-ms.reviewer: m-hartmann
+ms.author: naravill
+ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c166015b92596da0c6097e3d25e89579a5186ce0
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: edd2cf488b52cef87b09b90336e48fdc7f470a68
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267906"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5597419"
 ---
 # <a name="use-azure-machine-learning-based-models"></a>Χρησιμοποιήστε μοντέλα που βασίζονται σε εκμάθηση μηχανών Azure
 
@@ -29,9 +29,9 @@ ms.locfileid: "5267906"
 
 ## <a name="set-up-azure-machine-learning-workspace"></a>Ρύθμιση χώρου εργασίας εκμάθησης μηχανής Azure
 
-1. Ανατρέξτε στο θέμα [δημιουργία χώρου εργασίας εκμάθησης μηχανής Azure](https://docs.microsoft.com/azure/machine-learning/concept-workspace#-create-a-workspace) για διαφορετικές επιλογές για τη δημιουργία του χώρου εργασίας. Για βέλτιστη απόδοση, δημιουργήστε τον χώρο εργασίας σε μια περιοχή Azure που βρίσκεται πλησιέστερα γεωγραφικά στο περιβάλλον Customer Insights.
+1. Ανατρέξτε στο θέμα [δημιουργία χώρου εργασίας εκμάθησης μηχανής Azure](/azure/machine-learning/concept-workspace#-create-a-workspace) για διαφορετικές επιλογές για τη δημιουργία του χώρου εργασίας. Για βέλτιστη απόδοση, δημιουργήστε τον χώρο εργασίας σε μια περιοχή Azure που βρίσκεται πλησιέστερα γεωγραφικά στο περιβάλλον Customer Insights.
 
-1. Αποκτήστε πρόσβαση στον χώρο εργασίας σας μέσω του [Στούντιο εκμάθησης μηχανής Azure](https://ml.azure.com/). Υπάρχουν διάφοροι [τρόποι αλληλεπίδρασης](https://docs.microsoft.com/azure/machine-learning/concept-workspace#tools-for-workspace-interaction) με τον χώρο εργασίας σας.
+1. Αποκτήστε πρόσβαση στον χώρο εργασίας σας μέσω του [Στούντιο εκμάθησης μηχανής Azure](https://ml.azure.com/). Υπάρχουν διάφοροι [τρόποι αλληλεπίδρασης](/azure/machine-learning/concept-workspace#tools-for-workspace-interaction) με τον χώρο εργασίας σας.
 
 ## <a name="work-with-azure-machine-learning-designer"></a>Εργασία με τη σχεδίαση εκμάθησης μηχανής Azure
 
@@ -39,13 +39,13 @@ ms.locfileid: "5267906"
    
 ## <a name="working-with-azure-machine-learning-sdk"></a>Εργασία με την Εκμάθηση μηχανής Azure SDK
 
-Οι επιστήμονες δεδομένων και οι προγραμματιστές AI χρησιμοποιούν την [Εκμάθηση μηχανής Azure SDK](https://docs.microsoft.com/python/api/overview/azure/ml/?view=azure-ml-py&preserve-view=true) για τη δημιουργία ροών εργασίας εκμάθησης μηχανής. Προς το παρόν, τα μοντέλα που εκπαιδεύονται με χρήση του SDK δεν είναι δυνατό να ενσωματωθούν απευθείας με στο Customer Insights. Μια διοχέτευση συμπερασματικής λογικής δέσμης που καταναλώνει αυτό το μοντέλο απαιτείται για την ενοποίηση με το Customer Insights.
+Οι επιστήμονες δεδομένων και οι προγραμματιστές AI χρησιμοποιούν την [Εκμάθηση μηχανής Azure SDK](/python/api/overview/azure/ml/?preserve-view=true&view=azure-ml-py) για τη δημιουργία ροών εργασίας εκμάθησης μηχανής. Προς το παρόν, τα μοντέλα που εκπαιδεύονται με χρήση του SDK δεν είναι δυνατό να ενσωματωθούν απευθείας με στο Customer Insights. Μια διοχέτευση συμπερασματικής λογικής δέσμης που καταναλώνει αυτό το μοντέλο απαιτείται για την ενοποίηση με το Customer Insights.
 
 ## <a name="batch-pipeline-requirements-to-integrate-with-customer-insights"></a>Απαιτήσεις διοχέτευσης δέσμης για ενοποίηση με το Customer Insights
 
 ### <a name="dataset-configuration"></a>Ρύθμιση παραμέτρων συνόλου δεδομένων
 
-Πρέπει να δημιουργήσετε σύνολα δεδομένων για να χρησιμοποιήσετε δεδομένα οντοτήτων από το Customer Insights στη διοχέτευση συμπερασματικής λογικής δέσμης. Αυτά τα σύνολα δεδομένων πρέπει να καταχωρηθούν στον χώρο εργασίας. Προς το παρόν, υποστηρίζουμε μόνο [σύνολα δεδομένων πινάκων](https://docs.microsoft.com/azure/machine-learning/how-to-create-register-datasets#tabulardataset) σε μορφή .csv. Τα σύνολα δεδομένων που αντιστοιχούν στα δεδομένα οντότητας πρέπει να παραμετροποιηθούν ως παράμετρος διοχέτευσης.
+Πρέπει να δημιουργήσετε σύνολα δεδομένων για να χρησιμοποιήσετε δεδομένα οντοτήτων από το Customer Insights στη διοχέτευση συμπερασματικής λογικής δέσμης. Αυτά τα σύνολα δεδομένων πρέπει να καταχωρηθούν στον χώρο εργασίας. Προς το παρόν, υποστηρίζουμε μόνο [σύνολα δεδομένων πινάκων](/azure/machine-learning/how-to-create-register-datasets#tabulardataset) σε μορφή .csv. Τα σύνολα δεδομένων που αντιστοιχούν στα δεδομένα οντότητας πρέπει να παραμετροποιηθούν ως παράμετρος διοχέτευσης.
    
 * Παράμετροι συνόλου δεδομένων στη σχεδίαση
    
@@ -76,7 +76,7 @@ ms.locfileid: "5267906"
 
 ### <a name="import-pipeline-data-into-customer-insights"></a>Εισαγωγή δεδομένων διοχέτευσης στο Customer Insights
 
-* Η σχεδίαση παρέχει τη [λειτουργική μονάδα δεδομένων εξαγωγής](https://docs.microsoft.com/azure/machine-learning/algorithm-module-reference/export-data) που επιτρέπει την έξοδο μιας διοχέτευσης για εξαγωγή σε χώρο αποθήκευσης Azure. Προς το παρόν, η λειτουργική μονάδα πρέπει να χρησιμοποιεί τον τύπο χώρου αποθήκευσης δεδομένων **Χώρο αποθήκευσης αντικειμένων Blob Azure** και να παραμετροποιεί τον **Χώρο αποθήκευσης** και τη σχετική **διαδρομή**. Το Customer Insights παρακάμπτει και τις δύο αυτές παραμέτρους κατά την εκτέλεση διοχέτευσης με έναν χώρο αποθήκευσης και μια διαδρομή η οποία είναι προσβάσιμη στο προϊόν.
+* Η σχεδίαση παρέχει τη [λειτουργική μονάδα δεδομένων εξαγωγής](/azure/machine-learning/algorithm-module-reference/export-data) που επιτρέπει την έξοδο μιας διοχέτευσης για εξαγωγή σε χώρο αποθήκευσης Azure. Προς το παρόν, η λειτουργική μονάδα πρέπει να χρησιμοποιεί τον τύπο χώρου αποθήκευσης δεδομένων **Χώρο αποθήκευσης αντικειμένων Blob Azure** και να παραμετροποιεί τον **Χώρο αποθήκευσης** και τη σχετική **διαδρομή**. Το Customer Insights παρακάμπτει και τις δύο αυτές παραμέτρους κατά την εκτέλεση διοχέτευσης με έναν χώρο αποθήκευσης και μια διαδρομή η οποία είναι προσβάσιμη στο προϊόν.
    > [!div class="mx-imgBorder"]
    > ![Εξαγωγή ρύθμισης παραμέτρων μονάδας δεδομένων](media/intelligence-designer-importdata.png "Εξαγωγή ρύθμισης παραμέτρων μονάδας δεδομένων")
    

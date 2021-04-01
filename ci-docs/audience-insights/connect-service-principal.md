@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: eebbac1370a847869d98beaf70db49b809d762e7
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: c670b0065a2833a6dc311d9e86d2b351140382ce
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267722"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596499"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-gen2-account-with-an-azure-service-principal-for-audience-insights"></a>Σύνδεση με έναν λογαριασμό Azure Data Lake Storage Gen2 με έναν κύριο υπηρεσίας Azure για πληροφορίες κοινού
 
@@ -23,7 +23,7 @@ ms.locfileid: "5267722"
 Μπορείτε να χρησιμοποιήσετε τον διευθυντή εξυπηρέτησης για να [προσθέσετε ή να επεξεργαστείτε με ασφάλεια έναν φάκελο Common Data Model ως προέλευση δεδομένων](connect-common-data-model.md) ή να [δημιουργήσετε ένα νέο ή να ενημερώσετε ένα υπάρχον περιβάλλον](manage-environments.md#create-an-environment-in-an-existing-organization).
 
 > [!IMPORTANT]
-> - Ο λογαριασμός αποθήκευσης Azure Data Lake Gen2 που σκοπεύει να χρησιμοποιήσει την αρχή της υπηρεσίας πρέπει να έχει [ενεργοποιημένο τον Ιεραρχικό χώρο ονομάτων (HNS)](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-namespace).
+> - Ο λογαριασμός αποθήκευσης Azure Data Lake Gen2 που σκοπεύει να χρησιμοποιήσει την αρχή της υπηρεσίας πρέπει να έχει [ενεργοποιημένο τον Ιεραρχικό χώρο ονομάτων (HNS)](/azure/storage/blobs/data-lake-storage-namespace).
 > - Χρειάζεστε δικαιώματα διαχειριστή για τη συνδρομή σας Azure για τη δημιουργία της αρχής εξυπηρέτησης.
 
 ## <a name="create-azure-service-principal-for-audience-insights"></a>Δημιουργία της αρχής εξυπηρέτησης Azure για πληροφορίες κοινού
@@ -48,7 +48,7 @@ ms.locfileid: "5267722"
 
 ### <a name="create-a-new-service-principal"></a>Δημιουργία μιας νέας αρχής εξυπηρέτησης
 
-1. Εγκαταστήστε την πιο πρόσφατη έκδοση του **Azure Active Directory PowerShell για Graph**. Για περισσότερες πληροφορίες, ανατρέξτε στην ενότητα [Εγκατάσταση Azure Active Directory PowerShell για Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2).
+1. Εγκαταστήστε την πιο πρόσφατη έκδοση του **Azure Active Directory PowerShell για Graph**. Για περισσότερες πληροφορίες, ανατρέξτε στην ενότητα [Εγκατάσταση Azure Active Directory PowerShell για Graph](/powershell/azure/active-directory/install-adv2).
    - Στον υπολογιστή σας, επιλέξτε το πλήκτρο Windows στο πληκτρολόγιό σας και πραγματοποιήστε αναζήτηση για **Windows PowerShell** και **Εκτέλεση ως Διαχειριστής**.
    
    - Στο παράθυρο PowerShell που ανοίγει, καταχωρείστε `Install-Module AzureAD`.

@@ -1,14 +1,14 @@
 ---
-ms.openlocfilehash: 133555881fcbb0bcecb0749343d0aef970405af2
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: a953b35b7299500471457d826332563e007a28e3
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643353"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5595610"
 ---
 > [!NOTE]
-> Ισχύει από τον Νοέμβριο 2020:
+> Έναρξη ισχύος από τον Νοέμβριο του 2020:
 > - Το Common Data Service έχει μετονομαστεί σε Microsoft Dataverse. [Μάθετε περισσότερα](https://aka.ms/PAuAppBlog)
-> - Κάποια ορολογία στο Microsoft Dataverse έχει ενημερωθεί. Για παράδειγμα, η *οντότητα* είναι τώρα *πίνακας* και το *πεδίο* είναι τώρα *στήλη*. [Μάθετε περισσότερα](https://go.microsoft.com/fwlink/?linkid=2147247)
+> - Κάποια ορολογία στο Microsoft Dataverse έχει αλλάξει. Για παράδειγμα, η *οντότητα* είναι πλέον *πίνακας* και το *πεδίο* είναι πλέον *στήλη*. [Μάθετε περισσότερα](/powerapps/maker/data-platform/data-platform-intro)
 >
-> Αυτό το άρθρο θα ενημερωθεί σύντομα για να αντικατοπτρίζει την τελευταία ορολογία.
+> Αυτό το άρθρο θα ενημερωθεί σύντομα ώστε να αντικατοπτρίζει την πιο πρόσφατη ορολογία.

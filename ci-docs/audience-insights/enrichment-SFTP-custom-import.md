@@ -2,19 +2,19 @@
 title: Εμπλουτισμός με προσαρμοσμένη εισαγωγή SFTP
 description: Γενικές πληροφορίες σχετικά με τον εμπλουτισμό προσαρμοσμένων εισαγωγών SFTP.
 ms.date: 11/18/2020
-ms.reviewer: kishorem
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: jdahl
-ms.author: mhart
+author: jodahlMSFT
+ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: f25dcc08d96d36507e47af0d7b184003ae095819
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: d9e095ef793cbd25415864f76a541dce68fafe47
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5269606"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5595855"
 ---
 # <a name="enrich-customer-profiles-with-custom-data-preview"></a>Εμπλουτισμός προφίλ πελατών με προσαρμοσμένα δεδομένα (προεπισκόπηση)
 
@@ -50,7 +50,7 @@ ms.locfileid: "5269606"
 
 ## <a name="defining-field-mappings"></a>Ορισμός αντιστοιχίσεων πεδίων 
 
-Ο κατάλογος που περιέχει το αρχείο που πρόκειται να εισαχθεί στον διακομιστή SFTP πρέπει επίσης να περιέχει ένα αρχείο *model.json*. Αυτό το αρχείο καθορίζει το σχήμα που θα χρησιμοποιηθεί για την εισαγωγή των δεδομένων. Το σχήμα πρέπει να χρησιμοποιεί [το Common Data Model](https://docs.microsoft.com/common-data-model/) για τον καθορισμό της αντιστοίχισης πεδίων. Ένα απλό παράδειγμα ενός αρχείου model.json μοιάζει με αυτό:
+Ο κατάλογος που περιέχει το αρχείο που πρόκειται να εισαχθεί στον διακομιστή SFTP πρέπει επίσης να περιέχει ένα αρχείο *model.json*. Αυτό το αρχείο καθορίζει το σχήμα που θα χρησιμοποιηθεί για την εισαγωγή των δεδομένων. Το σχήμα πρέπει να χρησιμοποιεί [το Common Data Model](/common-data-model/) για τον καθορισμό της αντιστοίχισης πεδίων. Ένα απλό παράδειγμα ενός αρχείου model.json μοιάζει με αυτό:
 
 ```
 {
