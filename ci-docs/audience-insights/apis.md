@@ -1,20 +1,20 @@
 ---
 title: Εργασία με API
 description: Χρησιμοποιήστε API και κατανοήστε τους περιορισμούς.
-ms.date: 12/04/2020
+ms.date: 03/10/2021
 ms.reviewer: wimohabb
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
-ms.author: mhart
+ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 966db1a22e7dece1bcd89733880bce059151157f
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 011fa700563c53534554a6b73e87c2391bfdf714
+ms.sourcegitcommit: a872f59e6febe4d4bd678ddd0b60a1660acca0f3
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267524"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "5710460"
 ---
 # <a name="work-with-customer-insights-apis"></a>Εργασία με API Customer Insights
 
@@ -36,7 +36,7 @@ ms.locfileid: "5267524"
 
    :::image type="content" source="media/enable-apis.gif" alt-text="Ενεργοποίηση API Customer Insights":::
 
-1. Επιλέξτε **Εξερεύνηση των API μας** για να δοκιμάσετε τα API.
+1. Επιλέξτε **Εξερεύνηση των API μας** για να [δοκιμάσετε τα API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
 
 1. Επιλέξτε μια λειτουργία API και επιλέξτε **Δοκιμή**.
 
@@ -47,6 +47,9 @@ ms.locfileid: "5267524"
 1. Μεταβείτε στο κάτω μέρος του πλαϊνού τμήματος παραθύρου και επιλέξτε **Αποστολή**.
 
 Η απόκριση HTTP θα εμφανιστεί σύντομα παρακάτω.
+
+
+   :::image type="content" source="media/try-apis.gif" alt-text="Κινούμενο Gif που δείχνει πώς να επιλέξετε τη δοκιμή των API.":::
 
 ## <a name="create-a-new-app-registration-in-the-azure-portal"></a>Δημιουργήστε μια νέα καταχώρησης εφαρμογής στην πύλη Azure
 
@@ -61,6 +64,8 @@ ms.locfileid: "5267524"
 
 1. Στη νέα καταχώρηση εφαρμογής, μεταβείτε στη διεύθυνση **Άδειες API**.
 
+   :::image type="content" source="media/app-registration-1.gif" alt-text="Κινούμενο gif για να ορίσετε το δικαίωμα API σε καταχώρηση εφαρμογών.":::
+
 1. Επιλέξτε **Προσθήκη δικαιώματος** και επιλέξτε **Customer Insights** στο πλευρικό τμήμα παραθύρου.
 
 1. Για τον **Τύπο δικαιωμάτων**, επιλέξτε **Εκχωρημένα δικαιώματα** και επιλέξτε το δικαίωμα **user_impersonation** .
@@ -71,9 +76,11 @@ ms.locfileid: "5267524"
 
 Μπορείτε να χρησιμοποιήσετε το Αναγνωριστικό εφαρμογής/πελάτη για αυτήν την καταχώρηση εφαρμογής στη Βιβλιοθήκη ελέγχου ταυτότητας της Microsoft (MSAL) για να αποκτήσετε ένα διακριτικό φορέα για αποστολή με το αίτημά σας στο API.
 
+:::image type="content" source="media/grant-admin-consent.gif" alt-text="Κινούμενο Gif για εκχώρηση συγκατάθεσης του διαχειριστή.":::
+
 Για περισσότερες πληροφορίες σχετικά με το MSAL, δείτε [Επισκόπηση της Βιβλιοθήκης ελέγχου ταυτότητας της Microsoft (MSAL)](https://docs.microsoft.com/azure/active-directory/develop/msal-overview).
 
-Για περισσότερες πληροφορίες σχετικά με την καταχώρηση εφαρμογών στο Azure, δείτε [Η νέα εμπειρία καταχώρησης εφαρμογών της πύλης Azure](https://docs.microsoft.com/azure/active-directory/develop/app-registration-portal-training-guide).
+Για περισσότερες πληροφορίες σχετικά με την καταχώρηση εφαρμογών στο Azure, δείτε [Η νέα εμπειρία καταχώρησης εφαρμογών της πύλης Azure](/azure/active-directory/develop/app-registration-portal-training-guide).
 
 Για πληροφορίες σχετικά με τη χρήση των API των βιβλιοθηκών πελατών μας, δείτε [Βιβλιοθήκες πελατών Customer Insights](#customer-insights-client-libraries).
 
@@ -101,6 +108,8 @@ ms.locfileid: "5267524"
 
 1. Επιλέξτε **Παραχώρηση συναίνεσης διαχειριστή για...** για να ολοκληρώσετε την καταχώρηση της εφαρμογής.
 
+   :::image type="content" source="media/grant-admin-consent.gif" alt-text="Κινούμενο Gif για εκχώρηση συγκατάθεσης του διαχειριστή.":::
+
 1. Συμπερασματικά, πρέπει να προσθέσουμε το όνομα της καταχώρησης εφαρμογής ως χρήστης στο Customer Insights.    
    Ανοίξτε το Customer Insights, μεταβείτε στο **Διαχειριστής** > **Δικαιώματα** και επιλέξτε **Προσθήκη χρήστη**.
 
@@ -108,7 +117,7 @@ ms.locfileid: "5267524"
 
 ## <a name="customer-insights-client-libraries"></a>Βιβλιοθήκες πελατών Customer Insights
 
-Αυτή η ενότητα σάς βοηθά να ξεκινήσετε να χρησιμοποιείτε τις βιβλιοθήκες πελατών που είναι διαθέσιμες για τα API Customer Insights.
+Αυτή η ενότητα σάς βοηθά να ξεκινήσετε να χρησιμοποιείτε τις βιβλιοθήκες πελατών που είναι διαθέσιμες για τα API Customer Insights. Μπορείτε να βρείτε ολόκληρο τον κώδικα προέλευσης βιβλιοθήκης και όλες τις εφαρμογές δειγμάτων στη σελίδα [Customer Insights GitHub](https://github.com/microsoft/Dynamics365-CustomerInsights-Client-Libraries). 
 
 ### <a name="c-nuget"></a>C# NuGet
 
@@ -127,7 +136,7 @@ ms.locfileid: "5267524"
 
 #### <a name="use-the-c-client-library"></a>Χρησιμοποιήστε τη βιβλιοθήκη πελάτη C#
 
-1. Χρησιμοποιήστε τη [Βιβλιοθήκη ελέγχου ταυτότητας της Microsoft (MSAL)](https://docs.microsoft.com/azure/active-directory/develop/msal-overview) για να λάβετε ένα `AccessToken` χρησιμοποιώντας την υπάροχυσα [Καταχώρηση εφαρμογής Azure](#create-a-new-app-registration-in-the-azure-portal).
+1. Χρησιμοποιήστε τη [Βιβλιοθήκη ελέγχου ταυτότητας της Microsoft (MSAL)](/azure/active-directory/develop/msal-overview) για να λάβετε ένα `AccessToken` χρησιμοποιώντας την υπάροχυσα [Καταχώρηση εφαρμογής Azure](#create-a-new-app-registration-in-the-azure-portal).
 
 1. Αφού ελέγξετε με επιτυχία την ταυτότητα και αποκτήσετε ένα διακριτικό, δημιουργήστε ένα νέο ή χρησιμοποιήστε ένα υπάρχον `HttpClient` με τον πρόσθετο **Έλεγχο ταυτότητας DefaultRequestHeaders** ορισμένο σε **Φορέας <access token>** και το **Ocp-Apim-Subscription-Key** ορισμένο σε [**κλειδί συνδρομής** από το περιβάλλον του Customer Insights](#get-started-trying-the-customer-insights-apis).    
    Επαναφέρετε την κεφαλίδα **Έλεγχος ταυτότητας** όταν χρειάζεται. Για παράδειγμα, όταν έληξε το διακριτικό.
@@ -141,5 +150,12 @@ ms.locfileid: "5267524"
 1. Η απάντηση πιθανότατα θα είναι του τύπου `object` επειδή η μέθοδος μπορεί να επιστρέψει πολλούς τύπους (για παράδειγμα, `IList<InstanceInfo>` και `ApiErrorResult`). Για να ελέγξετε τον τύπο επιστροφής, μπορείτε να ρίξετε με ασφάλεια τα αντικείμενα στους τύπους απόκρισης που καθορίζονται στη [σελίδα λεπτομερειών API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights) για αυτή τη λειτουργία.    
    Εάν χρειάζονται περισσότερες πληροφορίες σχετικά με την αίτηση, χρησιμοποιήστε τις **μεθόδους μηνυμάτων http** για πρόσβαση στο αντικείμενο ακατέργαστης απόκρισης.
 
+### <a name="nodejs-package"></a>Πακέτο NodeJS
+
+Χρησιμοποιήστε τις βιβλιοθήκες υπολογιστών-πελατών NodeJS που είναι διαθέσιμες μέσω NPM: https://www.npmjs.com/package/@microsoft/customerinsights
+
+### <a name="python-package"></a>Πακέτο Python
+
+Χρησιμοποιήστε τις βιβλιοθήκες υπολογιστών-πελατών Python που είναι διαθέσιμες μέσω PyPi: https://pypi.org/project/customerinsights/
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

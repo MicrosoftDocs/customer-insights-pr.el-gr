@@ -2,19 +2,19 @@
 title: Λήψη και περιορισμοί δεδομένων σε πραγματικό χρόνο
 description: Γενικές πληροφορίες σχετικά με τις δυνατότητες σε πραγματικό χρόνο σε πληροφορίες κοινού.
 ms.date: 10/27/2020
-ms.reviewer: nikeller
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+author: Nils-2m
+ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: 7421ed9d2cb399d546815b2d1b0ea5ec51ca6b6d
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 3c84cfe7441eb026c1fd45eda1f72421388d01d7
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5270280"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5598569"
 ---
 # <a name="real-time-data-ingestion-preview"></a>Συγκέντρωση δεδομένων σε πραγματικό χρόνο (προεπισκόπηση)
 
@@ -54,7 +54,7 @@ ms.locfileid: "5270280"
 
 Υπάρχουν δύο τρόποι για να συνδεθείτε στο API πραγματικού χρόνου:
 
-- [έμμεσα](#connect-via-the-dynamics-365-customer-insights-connector), χρησιμοποιώντας τη [σύνδεση Dynamics 365 Customer Insights](https://docs.microsoft.com/connectors/customerinsights/)
+- [έμμεσα](#connect-via-the-dynamics-365-customer-insights-connector), χρησιμοποιώντας τη [σύνδεση Dynamics 365 Customer Insights](/connectors/customerinsights/)
 - [απευθείας](#connect-directly-to-the-real-time-api), με κωδικό
 
 Οι ακόλουθες προϋποθέσεις ισχύουν και για τους δύο τρόπους:
@@ -66,13 +66,13 @@ ms.locfileid: "5270280"
 
 ## <a name="connect-via-the-dynamics-365-customer-insights-connector"></a>Σύνδεση μέσω του Dynamics 365 Customer Insights συνδέσμου
 
-Το API πραγματικού χρόνου μπορεί να λάβει δεδομένα από μια ειδική Power Platform σύνδεση, τη [σύνδεση Dynamics 365 Customer Insights](https://docs.microsoft.com/connectors/customerinsights/), χωρίς να χρειάζεται να γράψουν και να αναπτύξουν οποιονδήποτε κώδικα.    
-Ο σύνδεσμος μπορεί να κάνει τις ίδιες ενέργειες πραγματικού χρόνου με το API. Χρειάζεστε μια έγκυρη άδεια χρήσης για τους premium συνδέσμους. Για περισσότερες πληροφορίες δείτε [Συχνές ερωτήσεις για τις άδειες χρήσης των Power Apps και Power Automate](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq).
+Το API πραγματικού χρόνου μπορεί να λάβει δεδομένα από μια ειδική Power Platform σύνδεση, τη [σύνδεση Dynamics 365 Customer Insights](/connectors/customerinsights/), χωρίς να χρειάζεται να γράψουν και να αναπτύξουν οποιονδήποτε κώδικα.    
+Ο σύνδεσμος μπορεί να κάνει τις ίδιες ενέργειες πραγματικού χρόνου με το API. Χρειάζεστε μια έγκυρη άδεια χρήσης για τους premium συνδέσμους. Για περισσότερες πληροφορίες δείτε [Συχνές ερωτήσεις για τις άδειες χρήσης των Power Apps και Power Automate](/power-platform/admin/powerapps-flow-licensing-faq).
 
-- Power Platform [Power Apps ή/και Power Automate](https://docs.microsoft.com/connectors/)
-- Azure [λογικές εφαρμογές](https://docs.microsoft.com/azure/connectors/apis-list)
+- Power Platform [Power Apps ή/και Power Automate](/connectors/)
+- Azure [λογικές εφαρμογές](/azure/connectors/apis-list)
 
-Για λεπτομέρειες σχετικά με τη δημιουργία ροών, ανατρέξτε στην [τεκμηρίωση του Power Automate](https://docs.microsoft.com/power-automate/).
+Για λεπτομέρειες σχετικά με τη δημιουργία ροών, ανατρέξτε στην [τεκμηρίωση του Power Automate](/power-automate/).
 
 ## <a name="connect-directly-to-the-real-time-api"></a>Απευθείας σύνδεση στο API πραγματικού χρόνου
 

@@ -2,19 +2,19 @@
 title: Επισκόπηση πληροφοριών κοινού για Dynamics 365 Customer Insights
 description: Επισκόπηση πληροφοριών κοινού για Dynamics 365 Customer Insights.
 ms.date: 01/18/2021
-ms.reviewer: nimagen
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: overview
-author: m-hartmann
-ms.author: mhart
+author: NimrodMagen
+ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 735aae12abebd2d6d9b6aedb5835164834f480c0
-ms.sourcegitcommit: 0260ed244b97c2fd0be5e9a084c4c489358e8d4f
+ms.openlocfilehash: 146994b739748c615ca002add4e64216da6c1dea
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "5476995"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5598630"
 ---
 # <a name="audience-insights-for-dynamics-365-customer-insights-overview"></a>Επισκόπηση πληροφοριών κοινού για Dynamics 365 Customer Insights
 
@@ -25,7 +25,7 @@ ms.locfileid: "5476995"
 - **Να εξαλείψουν τα σιλό δεδομένων και να ενοποιήσουν τα δεδομένα πελατών**
 
   - Να συνδέσουν και να ενοποιήσουν τα δεδομένα σας με ευκολία-φέρτε τα δεδομένα συναλλαγών, παρατηρητικότητας και συμπεριφοράς από δημοφιλείς [προελεύσεις δεδομένων αξιοποιώντας προενσωματωμένες συνδέσεις](data-sources.md).
-  - Μετατρέψτε τα δεδομένα των πελατών με έξυπνο τρόπο — δημιουργήστε ενοποιημένα προφίλ πελατών στο [Common Data Model](https://docs.microsoft.com/common-data-model/). Επιλύστε τις ταυτότητες πελατών με συστάσεις που βασίζονται σε AI/ML.
+  - Μετατρέψτε τα δεδομένα των πελατών με έξυπνο τρόπο — δημιουργήστε ενοποιημένα προφίλ πελατών στο [Common Data Model](/common-data-model/). Επιλύστε τις ταυτότητες πελατών με συστάσεις που βασίζονται σε AI/ML.
 
 - **Εμπλουτισμός με νοημοσύνη κοινού που περιέχεται στο Microsoft Graph**
 
@@ -42,7 +42,7 @@ ms.locfileid: "5476995"
 - **Αναλυτές / διαχειριστές δεδομένων:**
 
   - Αποκτήστε πρόσβαση σε μια πλούσια συλλογή συνδέσεων για την ενοποίηση όλων των δεδομένων των πελατών σας.
-  - Δυνατότητα ενοποίησης των δεδομένων του πελάτη και μετατροπή τους σε μορφή [Common Data Model](https://docs.microsoft.com/common-data-model/).
+  - Δυνατότητα ενοποίησης των δεδομένων του πελάτη και μετατροπή τους σε μορφή [Common Data Model](/common-data-model/).
   - Εμπλουτίστε τις πληροφορίες των πελατών σας με πληροφορίες από νοημοσύνη κοινού που περιέχεται στο Microsoft Graph, όπως η συγγένεια και τα ενδιαφέροντα της επωνυμίας.
   - Η ρύθμιση παραμέτρων «Clicks-not-code» και η εμπειρία εντοπισμού σφαλμάτων για την εύκολη ρύθμιση παραμέτρων των πληροφοριών κοινού και τον προσδιορισμό πιθανών ζητημάτων.
   - Καθαρίστε και τυποποιήστε τα δεδομένα των πελατών μέσω διαφορετικών προελεύσεων με συστάσεις που υποστηρίζονται από AI.  
