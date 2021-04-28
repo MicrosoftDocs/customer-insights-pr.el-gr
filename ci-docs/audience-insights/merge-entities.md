@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 737c593353878a5e322488d00de5dc5db5befda9
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 4ad06a0baf57e612fc0e0214dfd23d28e7d2b6be
+ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597833"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5896511"
 ---
 # <a name="merge-entities"></a>Συγχώνευση οντοτήτων
 
@@ -83,7 +83,7 @@ ms.locfileid: "5597833"
 
 ## <a name="next-step"></a>Επόμενο βήμα
 
-Ρυθμίστε τις παραμέτρους [Δραστηριότητες](activities.md) [Εμπλουτισμός,](enrichment-microsoft-graph.md) ή [Σχέσεις](relationships.md) σε περισσότερες πληροφορίες σχετικά με τους πελάτες σας.
+Ρυθμίστε τις παραμέτρους [Δραστηριότητες](activities.md) [Εμπλουτισμός,](enrichment-hub.md) ή [Σχέσεις](relationships.md) σε περισσότερες πληροφορίες σχετικά με τους πελάτες σας.
 
 Εάν έχετε ήδη ρυθμίσει τις παραμέτρους των δραστηριοτήτων, του εμπλουτισμού ή των σχέσεων ή εάν έχετε καθορίσει τμήματα αγοράς, θα γίνεται αυτόματα η επεξεργασία τους ώστε να χρησιμοποιούν τα πιο πρόσφατα δεδομένα πελατών.
 

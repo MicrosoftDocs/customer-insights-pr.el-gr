@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 011fa700563c53534554a6b73e87c2391bfdf714
-ms.sourcegitcommit: a872f59e6febe4d4bd678ddd0b60a1660acca0f3
+ms.openlocfilehash: 59161456914df84d7e72402ed1f5faf70a5119ba
+ms.sourcegitcommit: a39e00a50ad3eda820fd756c5611081f0ca04662
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "5710460"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "5873662"
 ---
 # <a name="work-with-customer-insights-apis"></a>Εργασία με API Customer Insights
 
@@ -78,7 +78,7 @@ ms.locfileid: "5710460"
 
 :::image type="content" source="media/grant-admin-consent.gif" alt-text="Κινούμενο Gif για εκχώρηση συγκατάθεσης του διαχειριστή.":::
 
-Για περισσότερες πληροφορίες σχετικά με το MSAL, δείτε [Επισκόπηση της Βιβλιοθήκης ελέγχου ταυτότητας της Microsoft (MSAL)](https://docs.microsoft.com/azure/active-directory/develop/msal-overview).
+Για περισσότερες πληροφορίες σχετικά με το MSAL, δείτε [Επισκόπηση της Βιβλιοθήκης ελέγχου ταυτότητας της Microsoft (MSAL)](/azure/active-directory/develop/msal-overview).
 
 Για περισσότερες πληροφορίες σχετικά με την καταχώρηση εφαρμογών στο Azure, δείτε [Η νέα εμπειρία καταχώρησης εφαρμογών της πύλης Azure](/azure/active-directory/develop/app-registration-portal-training-guide).
 
