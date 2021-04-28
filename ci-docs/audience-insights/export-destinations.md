@@ -1,7 +1,7 @@
 ---
-title: Προορισμοί εξαγωγής
-description: Εξαγωγή δεδομένων και διαχείριση προορισμών εξαγωγών.
-ms.date: 07/21/2020
+title: Εξαγωγή δεδομένων από το Customer Insights
+description: 'Διαχειριστείτε εξαγωγές για κοινή χρήση δεδομένων. '
+ms.date: 03/25/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,102 +9,73 @@ ms.topic: conceptual
 author: phkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 5557442983f8c48cd46387009e0060beb6e764bb
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 354ce9ef30fe918975d06290430996c84f8bd3f7
+ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596085"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5896143"
 ---
-# <a name="export-destinations-preview-overview"></a><span data-ttu-id="d1f8c-103">Επισκόπηση προορισμών εξαγωγής (έκδοση προεπισκόπησης)</span><span class="sxs-lookup"><span data-stu-id="d1f8c-103">Export destinations (preview) overview</span></span>
+# <a name="exports-preview-overview"></a><span data-ttu-id="ccf00-103">Επισκόπηση εξαγωγών (έκδοση προεπισκόπησης)</span><span class="sxs-lookup"><span data-stu-id="ccf00-103">Exports (preview) overview</span></span>
 
-<span data-ttu-id="d1f8c-104">Στη σελίδα **Εξαγωγή προορισμών** εμφανίζονται όλες οι θέσεις που έχετε ορίσει για την εξαγωγή δεδομένων.</span><span class="sxs-lookup"><span data-stu-id="d1f8c-104">The **Export destinations** page shows you all locations you've set up to export data to.</span></span> <span data-ttu-id="d1f8c-105">Μπορείτε, επίσης, να προσθέσετε νέους προορισμούς για εξαγωγή.</span><span class="sxs-lookup"><span data-stu-id="d1f8c-105">You can also add new destinations for export.</span></span> <span data-ttu-id="d1f8c-106">Επιπλέον, εμφανίζει επιλογές εξαγωγής που είναι διαθέσιμες τη δεδομένη στιγμή.</span><span class="sxs-lookup"><span data-stu-id="d1f8c-106">Additionally, it shows export currently available options.</span></span> <span data-ttu-id="d1f8c-107">Λάβετε μια γρήγορη επισκόπηση, περιγραφή και μάθετε τι μπορείτε να κάνετε με την επιλογή κάθε επεκτασιμότητας.</span><span class="sxs-lookup"><span data-stu-id="d1f8c-107">Get a quick overview, description, and find out what you can do with each extensibility option.</span></span> <span data-ttu-id="d1f8c-108">Εξαγάγετε ενοποιημένα προφίλ, μέτρα και τμήματα αγοράς σε υποστηριζόμενες εφαρμογές που σχετίζονται με την επιχείρησή σας.</span><span class="sxs-lookup"><span data-stu-id="d1f8c-108">Export unified profiles, measures, and segments to supported apps relevant for your business.</span></span>
+<span data-ttu-id="ccf00-104">Η σελίδα **Εξαγωγές** εμφανίζει όλες τις ρυθμισμένες εξαγωγές.</span><span class="sxs-lookup"><span data-stu-id="ccf00-104">The **Exports** page shows you all configured exports.</span></span> <span data-ttu-id="ccf00-105">Οι εξαγωγές μοιράζονται συγκεκριμένα δεδομένα με διάφορες εφαρμογές.</span><span class="sxs-lookup"><span data-stu-id="ccf00-105">Exports share specific data with various applications.</span></span> <span data-ttu-id="ccf00-106">Μπορούν να περιλαμβάνουν προφίλ πελατών ή οντότητες, σχήματα και λεπτομέρειες αντιστοίχισης.</span><span class="sxs-lookup"><span data-stu-id="ccf00-106">They can include customer profiles or entities, schemas, and mapping details.</span></span> <span data-ttu-id="ccf00-107">Κάθε εξαγωγή απαιτεί μια [σύνδεση, που έχει ρυθμιστεί από έναν διαχειριστή, για τη διαχείριση του ελέγχου ταυτότητας και την πρόσβαση](connections.md).</span><span class="sxs-lookup"><span data-stu-id="ccf00-107">Each export requires a [connection, set up by an administrator, to manage authentication and access](connections.md).</span></span>
 
-<span data-ttu-id="d1f8c-109">Μεταβείτε στα στοιχεία **Διαχείριση** > **Εξαγωγή προορισμών** για να βρείτε τις παρακάτω επιλογές επεκτασιμότητας:</span><span class="sxs-lookup"><span data-stu-id="d1f8c-109">Go to **Admin** > **Export destinations** to find the following extensibility options:</span></span>
+> [!NOTE]
+> <span data-ttu-id="ccf00-108">Έως τον Μάρτιο του 2021, οι εξαγωγές δημιούργησαν αυτόματα μια σύνδεση στην αντίστοιχη υπηρεσία.</span><span class="sxs-lookup"><span data-stu-id="ccf00-108">Until March 2021, exports created a connection to the corresponding service automatically.</span></span> <span data-ttu-id="ccf00-109">Οι εξαγωγές τώρα απαιτούν μια [σύνδεση, που έχει δημιουργηθεί και κοινοποιηθεί από έναν διαχειριστή](connections.md) για να μπορείτε να τις δημιουργήσετε.</span><span class="sxs-lookup"><span data-stu-id="ccf00-109">Exports now require a [connection, created and shared by an administrator](connections.md) before you can create them.</span></span>
 
-- [<span data-ttu-id="d1f8c-110">Adobe Campaign Standard</span><span class="sxs-lookup"><span data-stu-id="d1f8c-110">Adobe Campaign Standard</span></span>](export-adobe-campaign-standard.md)
-- [<span data-ttu-id="d1f8c-111">Adobe Experience Platform</span><span class="sxs-lookup"><span data-stu-id="d1f8c-111">Adobe Experience Platform</span></span>](export-adobe-experience-platform.md)
-- [<span data-ttu-id="d1f8c-112">AdRoll</span><span class="sxs-lookup"><span data-stu-id="d1f8c-112">AdRoll</span></span>](export-adroll.md)
-- [<span data-ttu-id="d1f8c-113">Αυτόματος Πιλότος</span><span class="sxs-lookup"><span data-stu-id="d1f8c-113">Autopilot</span></span>](export-autopilot.md)
-- [<span data-ttu-id="d1f8c-114">Χώρος αποθήκευσης αντικειμένου Blob Azure</span><span class="sxs-lookup"><span data-stu-id="d1f8c-114">Azure Blob Storage</span></span>](export-azure-blob-storage.md)
-- [<span data-ttu-id="d1f8c-115">Azure Data Lake Storage Gen2</span><span class="sxs-lookup"><span data-stu-id="d1f8c-115">Azure Data Lake Storage Gen2</span></span>](export-azure-data-lake-storage-gen2.md)
-- [<span data-ttu-id="d1f8c-116">Bot για Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="d1f8c-116">Bot for Microsoft Teams</span></span>](export-teams-bot.md)
-- [<span data-ttu-id="d1f8c-117">Customer Insights API</span><span class="sxs-lookup"><span data-stu-id="d1f8c-117">Customer Insights API</span></span>](apis.md)
-- [<span data-ttu-id="d1f8c-118">DotDigital</span><span class="sxs-lookup"><span data-stu-id="d1f8c-118">DotDigital</span></span>](export-dotdigital.md)
-- [<span data-ttu-id="d1f8c-119">Dynamics 365 Customer Service (Πρόσθετο κάρτας πελάτη)</span><span class="sxs-lookup"><span data-stu-id="d1f8c-119">Dynamics 365 Customer Service (Customer Card Add-in)</span></span>](customer-card-add-in.md)
-- [<span data-ttu-id="d1f8c-120">Dynamics 365 Marketing</span><span class="sxs-lookup"><span data-stu-id="d1f8c-120">Dynamics 365 Marketing</span></span>](export-dynamics365-marketing.md)
-- [<span data-ttu-id="d1f8c-121">Dynamics 365 Sales</span><span class="sxs-lookup"><span data-stu-id="d1f8c-121">Dynamics 365 Sales</span></span>](export-dynamics365-sales.md)
-- [<span data-ttu-id="d1f8c-122">Dynamics 365 Sales Hub (Πρόσθετο κάρτας πελάτη)</span><span class="sxs-lookup"><span data-stu-id="d1f8c-122">Dynamics 365 Sales Hub (Customer Card Add-in)</span></span>](customer-card-add-in.md)
-- [<span data-ttu-id="d1f8c-123">Facebook Ads Manager</span><span class="sxs-lookup"><span data-stu-id="d1f8c-123">Facebook Ads Manager</span></span>](export-facebook.md)
-- [<span data-ttu-id="d1f8c-124">Google Ads</span><span class="sxs-lookup"><span data-stu-id="d1f8c-124">Google Ads</span></span>](export-google-ads.md)
-- [<span data-ttu-id="d1f8c-125">LiveRamp&reg;</span><span class="sxs-lookup"><span data-stu-id="d1f8c-125">LiveRamp&reg;</span></span>](export-liveramp.md)
-- [<span data-ttu-id="d1f8c-126">Mailchimp</span><span class="sxs-lookup"><span data-stu-id="d1f8c-126">Mailchimp</span></span>](export-mailchimp.md)
-- [<span data-ttu-id="d1f8c-127">Marketo</span><span class="sxs-lookup"><span data-stu-id="d1f8c-127">Marketo</span></span>](export-marketo.md)
-- [<span data-ttu-id="d1f8c-128">Power Automate</span><span class="sxs-lookup"><span data-stu-id="d1f8c-128">Power Automate</span></span>](export-power-automate.md)
-- [<span data-ttu-id="d1f8c-129">Power Apps</span><span class="sxs-lookup"><span data-stu-id="d1f8c-129">Power Apps</span></span>](export-power-apps.md)
-- [<span data-ttu-id="d1f8c-130">Power BI</span><span class="sxs-lookup"><span data-stu-id="d1f8c-130">Power BI</span></span>](export-power-bi.md)
-- [<span data-ttu-id="d1f8c-131">SendGrid</span><span class="sxs-lookup"><span data-stu-id="d1f8c-131">SendGrid</span></span>](export-sendgrid.md)
-- [<span data-ttu-id="d1f8c-132">SFTP</span><span class="sxs-lookup"><span data-stu-id="d1f8c-132">SFTP</span></span>](export-sftp.md)
+<span data-ttu-id="ccf00-110">Μεταβείτε στα **Δεδομένα** > **Εξαγωγές** για να δείτε τη σελίδα εξαγωγών.</span><span class="sxs-lookup"><span data-stu-id="ccf00-110">Go to **Data** > **Exports** to view the exports page.</span></span> <span data-ttu-id="ccf00-111">Όλοι οι ρόλοι χρηστών έχουν πρόσβαση για προβολή ρυθμισμένες εξαγωγές.</span><span class="sxs-lookup"><span data-stu-id="ccf00-111">All user roles have access to view configured exports.</span></span> <span data-ttu-id="ccf00-112">Χρήση του πεδίου αναζήτησης στη γραμμή εντολών για την εύρεση εξαγωγών σύμφωνα με το όνομα, το όνομα σύνδεσης ή τον τύπο σύνδεσης.</span><span class="sxs-lookup"><span data-stu-id="ccf00-112">Use of the search field in the command bar to find exports by their name, connection name, or connection type.</span></span>
 
-## <a name="add-a-new-export-destination"></a><span data-ttu-id="d1f8c-133">Προσθήκη νέου προορισμού εξαγωγής</span><span class="sxs-lookup"><span data-stu-id="d1f8c-133">Add a new export destination</span></span>
+## <a name="set-up-a-new-export"></a><span data-ttu-id="ccf00-113">Ρύθμιση νέας εξαγωγής</span><span class="sxs-lookup"><span data-stu-id="ccf00-113">Set up a new export</span></span>
 
-<span data-ttu-id="d1f8c-134">Για να προσθέσετε προορισμούς εξαγωγών, έχετε [δικαιώματα διαχειριστής](permissions.md).</span><span class="sxs-lookup"><span data-stu-id="d1f8c-134">To add export destinations, you have [administrator permissions](permissions.md).</span></span> <span data-ttu-id="d1f8c-135">Εάν κάνετε εξαγωγή στις υπηρεσίες της Microsoft, θεωρούμε ότι και οι δύο υπηρεσίες βρίσκονται στον ίδιο οργανισμό.</span><span class="sxs-lookup"><span data-stu-id="d1f8c-135">If you export to Microsoft services, we assume both services are in the same organization.</span></span>
+<span data-ttu-id="ccf00-114">Για να ρυθμίσετε ή να επεξεργαστείτε μια εξαγωγή, θα πρέπει να έχετε διαθέσιμες συνδέσεις.</span><span class="sxs-lookup"><span data-stu-id="ccf00-114">To set up or edit an export, you need to have connections available to you.</span></span> <span data-ttu-id="ccf00-115">Οι συνδέσεις εξαρτώνται από τον [ρόλο του χρήστη](permissions.md):</span><span class="sxs-lookup"><span data-stu-id="ccf00-115">Connections depend on your [user role](permissions.md):</span></span>
+- <span data-ttu-id="ccf00-116">Οι διαχειριστές έχουν πρόσβαση σε όλες τις συνδέσεις.</span><span class="sxs-lookup"><span data-stu-id="ccf00-116">Administrators have access to all connections.</span></span> <span data-ttu-id="ccf00-117">Επίσης, μπορούν να δημιουργήσουν νέες συνδέσεις κατά τη ρύθμιση μιας εξαγωγής.</span><span class="sxs-lookup"><span data-stu-id="ccf00-117">They can also create new connections when setting up an export.</span></span>
+- <span data-ttu-id="ccf00-118">Οι συμβάλλοντες μπορούν να έχουν πρόσβαση σε συγκεκριμένες συνδέσεις.</span><span class="sxs-lookup"><span data-stu-id="ccf00-118">Contributors can have access to specific connections.</span></span> <span data-ttu-id="ccf00-119">Εξαρτώνται από τους διαχειριστές για τη ρύθμιση παραμέτρων και την κοινή χρήση συνδέσεων.</span><span class="sxs-lookup"><span data-stu-id="ccf00-119">They depend on administrators to configure and share connections.</span></span> <span data-ttu-id="ccf00-120">Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Να επιτρέπεται στους συμβαλλόντων η χρήση σύνδεσης για εξαγωγές](connections.md#allow-contributors-to-use-a-connection-for-exports).</span><span class="sxs-lookup"><span data-stu-id="ccf00-120">For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).</span></span>
+- <span data-ttu-id="ccf00-121">Οι χρήστες μπορούν μόνο να προβάλλουν τις υπάρχουσες εξαγωγές, αλλά όχι να τις δημιουργήσουν.</span><span class="sxs-lookup"><span data-stu-id="ccf00-121">Viewers can only view existing exports but not create them.</span></span>
 
-1. <span data-ttu-id="d1f8c-136">Μεταβείτε στα στοιχεία **Διαχειριστής** > **Εξαγωγή προορισμών**.</span><span class="sxs-lookup"><span data-stu-id="d1f8c-136">Go to **Admin** > **Export destinations**.</span></span>
+1. <span data-ttu-id="ccf00-122">Μεταβείτε στα **Δεδομένα** > **Εξαγωγές**.</span><span class="sxs-lookup"><span data-stu-id="ccf00-122">Go to **Data** > **Exports**.</span></span>
 
-1. <span data-ttu-id="d1f8c-137">Μεταβείτε στην καρτέλα **Οι προορισμοί εξαγωγής μου**.</span><span class="sxs-lookup"><span data-stu-id="d1f8c-137">Switch to the **My export destinations** tab.</span></span>
+1. <span data-ttu-id="ccf00-123">Επιλέξτε **Προσθήκη εξαγωγής** για να δημιουργήσετε έναν νέο προορισμό εξαγωγής.</span><span class="sxs-lookup"><span data-stu-id="ccf00-123">Select **Add export** to create a new export destination.</span></span>
 
-1. <span data-ttu-id="d1f8c-138">Επιλέξτε **Προσθήκη προορισμού** για να δημιουργήσετε έναν νέο προορισμό εξαγωγής.</span><span class="sxs-lookup"><span data-stu-id="d1f8c-138">Select **Add destination** to create a new export destination.</span></span>
+1. <span data-ttu-id="ccf00-124">Στο τμήμα παραθύρου **Ρύθμιση εξαγωγής**, επιλέξτε τη σύνδεση που θα χρησιμοποιήσετε.</span><span class="sxs-lookup"><span data-stu-id="ccf00-124">In the **Set up export** pane, select which connection to use.</span></span> <span data-ttu-id="ccf00-125">Η διαχείριση των [συνδεων](connections.md) γίνεται από τους διαχειριστές.</span><span class="sxs-lookup"><span data-stu-id="ccf00-125">[Connections](connections.md) are managed by administrators.</span></span> 
 
-1. <span data-ttu-id="d1f8c-139">Στο παράθυρο διαλόγου **Προσθήκη προορισμού**, επιλέξτε τον **τύπο** του προορισμού εξαγωγής στην αναπτυσσόμενη λίστα.</span><span class="sxs-lookup"><span data-stu-id="d1f8c-139">In the **Add destination** pane, select the **Type** of export destination in the drop-down.</span></span>
+1. <span data-ttu-id="ccf00-126">Δώστε τις απαιτούμενες λεπτομέρειες και επιλέξτε **Αποθήκευση** για να δημιουργήσετε την εξαγωγή.</span><span class="sxs-lookup"><span data-stu-id="ccf00-126">Provide the required details and select **Save** to create the export.</span></span>
 
-1. <span data-ttu-id="d1f8c-140">Δώστε τις απαιτούμενες λεπτομέρειες και επιλέξτε **Επόμενο** για να δημιουργήσετε τον προορισμό εξαγωγής.</span><span class="sxs-lookup"><span data-stu-id="d1f8c-140">Provide the required details and select **Next** to create the export destination.</span></span>
+### <a name="edit-an-export"></a><span data-ttu-id="ccf00-127">Επεξεργασία μιας εξαγωγής</span><span class="sxs-lookup"><span data-stu-id="ccf00-127">Edit an export</span></span>
 
-<span data-ttu-id="d1f8c-141">Μπορείτε, επίσης, να επιλέξετε **Εγκατάσταση** σε ένα πλακίδιο στην καρτέλα **Ανακάλυψη**.</span><span class="sxs-lookup"><span data-stu-id="d1f8c-141">You can also select **Set up** on a tile on the **Discover** tab.</span></span>
+1. <span data-ttu-id="ccf00-128">Επιλέξτε τα κατακόρυφα αποσιωπητικά για τον προορισμό εξαγωγής που θέλετε να επεξεργαστείτε.</span><span class="sxs-lookup"><span data-stu-id="ccf00-128">Select the vertical ellipsis for the export destination you want to edit.</span></span>
 
-## <a name="view-export-destinations"></a><span data-ttu-id="d1f8c-142">Προβολή προορισμών εξαγωγής</span><span class="sxs-lookup"><span data-stu-id="d1f8c-142">View Export destinations</span></span>
+1. <span data-ttu-id="ccf00-129">Επιλέξτε **Επεξεργασία** από το αναπτυσσόμενο μενού.</span><span class="sxs-lookup"><span data-stu-id="ccf00-129">Select **Edit** from the drop-down menu.</span></span>
 
-<span data-ttu-id="d1f8c-143">Αφού δημιουργήσετε προορισμούς εξαγωγών, θα τους βρείτε σε έναν πίνακα στην καρτέλα **Οι προορισμοί εξαγωγής μου**. Αυτός ο πίνακας έχει τρεις στήλες:</span><span class="sxs-lookup"><span data-stu-id="d1f8c-143">After creating export destinations, you'll find them in a table on the **My export destinations** tab. This table has three columns:</span></span>
+1. <span data-ttu-id="ccf00-130">Αλλάξτε τις τιμές που θέλετε να ενημερώσετε κι επιλέξτε **Αποθήκευση**.</span><span class="sxs-lookup"><span data-stu-id="ccf00-130">Change the values you want to update and select **Save**.</span></span>
 
-- <span data-ttu-id="d1f8c-144">**Εμφανιζόμενο όνομα**: το όνομα που πληκτρολογήσατε κατά τη δημιουργία του προορισμού.</span><span class="sxs-lookup"><span data-stu-id="d1f8c-144">**Display name**: The name you entered when creating the destination.</span></span>
-- <span data-ttu-id="d1f8c-145">**Τύπος**: Ο τύπος προορισμού εξαγωγής που ορίζετε κατά τη δημιουργία του προορισμού.</span><span class="sxs-lookup"><span data-stu-id="d1f8c-145">**Type**: The export destination type you set when creating the destination.</span></span>
-- <span data-ttu-id="d1f8c-146">**Δημιουργήθηκε**: η ημερομηνία δημιουργίας του προορισμού.</span><span class="sxs-lookup"><span data-stu-id="d1f8c-146">**Created**: The date you created the destination.</span></span>
+## <a name="view-exports-and-export-details"></a><span data-ttu-id="ccf00-131">Προβολή εξαγωγών και λεπτομερειών εξαγωγής</span><span class="sxs-lookup"><span data-stu-id="ccf00-131">View Exports and export details</span></span>
 
-## <a name="edit-an-export-destination"></a><span data-ttu-id="d1f8c-147">Επεξεργασία προορισμού εξαγωγής</span><span class="sxs-lookup"><span data-stu-id="d1f8c-147">Edit an export destination</span></span>
+<span data-ttu-id="ccf00-132">Μετά τη δημιουργία προορισμών εξαγωγής, εμφανίζονται στην περιοχή **Δεδομένα** > **Εξαγωγές**.</span><span class="sxs-lookup"><span data-stu-id="ccf00-132">After creating export destinations, they are listed on **Data** > **Exports**.</span></span> <span data-ttu-id="ccf00-133">Όλοι οι χρήστες μπορούν να δουν ποια δεδομένα κοινοποιούνται και την πιο πρόσφατη κατάστασή τους.</span><span class="sxs-lookup"><span data-stu-id="ccf00-133">All users can see which data is shared and its latest status.</span></span>
 
-1. <span data-ttu-id="d1f8c-148">Επιλέξτε την κατακόρυφη έλλειψη για τον προορισμό εξαγωγής που θέλετε να επεξεργαστείτε.</span><span class="sxs-lookup"><span data-stu-id="d1f8c-148">Select the vertical ellipsis for the Export destination you want to edit.</span></span>
+1. <span data-ttu-id="ccf00-134">Μεταβείτε στα **Δεδομένα** > **Εξαγωγές**.</span><span class="sxs-lookup"><span data-stu-id="ccf00-134">Go to **Data** > **Exports**.</span></span>
 
-   > [!div class="mx-imgBorder"]
-   > <span data-ttu-id="d1f8c-149">![Κατακόρυφη έλλειψη](media/export-destinations-page-ellipsis.png "Κατακόρυφη έλλειψη")</span><span class="sxs-lookup"><span data-stu-id="d1f8c-149">![Vertical ellipsis](media/export-destinations-page-ellipsis.png "Vertical ellipsis")</span></span>
+1. <span data-ttu-id="ccf00-135">Οι χρήστες χωρίς δικαιώματα επεξεργασίας επιλέγουν **Προβολή** αντί για **Επεξεργασία**, δείτε τις λεπτομέρειες της εξαγωγής.</span><span class="sxs-lookup"><span data-stu-id="ccf00-135">Users without edit permissions select **View** instead of **Edit** see the export details.</span></span>
 
-1. <span data-ttu-id="d1f8c-150">Από το αναπτυσσόμενο μενού επιλέξτε **Επεξεργασία**.</span><span class="sxs-lookup"><span data-stu-id="d1f8c-150">Select **Edit** from the dropdown menu.</span></span>
+1. <span data-ttu-id="ccf00-136">Αυτό το πλαϊνό τμήμα παραθύρου εμφανίζει τη ρύθμιση αυτής της εξαγωγής.</span><span class="sxs-lookup"><span data-stu-id="ccf00-136">This side pane shows the set up of this export.</span></span> <span data-ttu-id="ccf00-137">Χωρίς δικαιώματα επεξεργασίας, δεν μπορείτε να αλλάξετε τις τιμές.</span><span class="sxs-lookup"><span data-stu-id="ccf00-137">Without edit permissions, you can't change values.</span></span> <span data-ttu-id="ccf00-138">Επιλέξτε **Κλείσιμο** για να επιστρέψετε στη σελίδα "Εξαγωγές".</span><span class="sxs-lookup"><span data-stu-id="ccf00-138">Select **Close** to return to the exports page.</span></span>
 
-1. <span data-ttu-id="d1f8c-151">Αλλάξτε τις τιμές που απαιτούν ενημέρωση και επιλέξτε **Αποθήκευση**.</span><span class="sxs-lookup"><span data-stu-id="d1f8c-151">Change the values that require update and select **Save**.</span></span>
+## <a name="run-exports-on-demand"></a><span data-ttu-id="ccf00-139">Εκτέλεση εξαγωγών κατ' απαίτηση</span><span class="sxs-lookup"><span data-stu-id="ccf00-139">Run exports on demand</span></span>
 
-## <a name="export-data-on-demand"></a><span data-ttu-id="d1f8c-152">Εξαγωγή δεδομένων κατόπιν απαίτησης</span><span class="sxs-lookup"><span data-stu-id="d1f8c-152">Export data on demand</span></span>
+<span data-ttu-id="ccf00-140">Μετά τη ρύθμιση των παραμέτρων μιας εξαγωγής, θα εκτελείται κάθε [προγραμματισμένη ανανέωση](system.md#schedule-tab), εφόσον έχει μια σύνδεση εργασίας.</span><span class="sxs-lookup"><span data-stu-id="ccf00-140">After configuring an export, it will run with every [scheduled refresh](system.md#schedule-tab) as long as it has a working connection.</span></span>
 
-<span data-ttu-id="d1f8c-153">Μετά τη ρύθμιση παραμέτρων μιας σύνδεσης για έναν προορισμό εξαγωγής, οι εξαγωγές θα εκτελούνται με κάθε [προγραμματισμένη ανανέωση](system.md#schedule-tab).</span><span class="sxs-lookup"><span data-stu-id="d1f8c-153">After configuring a connector for an export destination, exports will run with every [scheduled refresh](system.md#schedule-tab).</span></span>
+<span data-ttu-id="ccf00-141">Για να εξαγάγετε δεδομένα χωρίς να περιμένετε την προγραμματισμένη ανανέωση, μεταβείτε στα **Δεδομένα** > **Εξαγωγές**.</span><span class="sxs-lookup"><span data-stu-id="ccf00-141">To export data without waiting for a scheduled refresh, go to **Data** > **Exports**.</span></span> <span data-ttu-id="ccf00-142">Έχετε δύο επιλογές:</span><span class="sxs-lookup"><span data-stu-id="ccf00-142">You have two options:</span></span>
 
-<span data-ttu-id="d1f8c-154">Για να εξαγάγετε δεδομένα χωρίς να περιμένετε να γίνει προγραμματισμένη ανανέωση, μεταβείτε στην καρτέλα **Οι προορισμοί εξαγωγής μου** στη **Διαχείριση** > **Εξαγωγή προορισμών**.</span><span class="sxs-lookup"><span data-stu-id="d1f8c-154">To export data without waiting for a scheduled refresh, go the **My export destinations** tab on **Admin** > **Export destinations**.</span></span>
+- <span data-ttu-id="ccf00-143">Για να εκτελέσετε όλες τις εξαγωγές, επιλέξτε **Εκτέλεση όλων** στη γραμμή εντολών.</span><span class="sxs-lookup"><span data-stu-id="ccf00-143">To run all exports, select **Run all** in the command bar.</span></span> 
+- <span data-ttu-id="ccf00-144">Για να εκτελέσετε μία μεμονωμένη εξαγωγή, επιλέξτε τα αποσιωπητικά (...) σε ένα στοιχείο λίστας και, στη συνέχεια, επιλέξτε **Εκτέλεση**.</span><span class="sxs-lookup"><span data-stu-id="ccf00-144">To run a single export, select the ellipsis (...) on a list item and then choose **Run**.</span></span>
 
-> [!div class="mx-imgBorder"]
-> <span data-ttu-id="d1f8c-155">![Κατακόρυφη έλλειψη](media/export-destinations-page-ellipsis.png "Κατακόρυφη έλλειψη")</span><span class="sxs-lookup"><span data-stu-id="d1f8c-155">![Vertical ellipsis](media/export-destinations-page-ellipsis.png "Vertical ellipsis")</span></span>
+## <a name="remove-an-export"></a><span data-ttu-id="ccf00-145">Κατάργηση εξαγωγής</span><span class="sxs-lookup"><span data-stu-id="ccf00-145">Remove an Export</span></span>
 
-- <span data-ttu-id="d1f8c-156">Επιλέξτε **Εξαγωγή** πάνω από τη λίστα για να εκτελεστεί ταυτόχρονα η εξαγωγή σε όλους τους προορισμούς εξαγωγών.</span><span class="sxs-lookup"><span data-stu-id="d1f8c-156">Select **Export** above the list to run the export to all export destinations simultaneously.</span></span>
-- <span data-ttu-id="d1f8c-157">Επιλέξτε την έλλειψη (...) μετά από ένα στοιχείο λίστας και, στη συνέχεια, επιλέξτε την επιλογή **Εξαγωγή** για να εκτελεστεί η εξαγωγή για έναν μόνο προορισμό εξαγωγής.</span><span class="sxs-lookup"><span data-stu-id="d1f8c-157">Select the ellipsis (...) after a list item and then choose the **Export** option to run the export for a single export destination.</span></span>
+1. <span data-ttu-id="ccf00-146">Μεταβείτε στα **Δεδομένα** > **Εξαγωγές**.</span><span class="sxs-lookup"><span data-stu-id="ccf00-146">Go to **Data** > **Exports**.</span></span>
 
-## <a name="remove-an-export-destination"></a><span data-ttu-id="d1f8c-158">Κατάργηση ενός προορισμού εξαγωγής</span><span class="sxs-lookup"><span data-stu-id="d1f8c-158">Remove an Export destination</span></span>
+1. <span data-ttu-id="ccf00-147">Επιλέξτε τα κατακόρυφη αποσιωπητικά για την εξαγωγή που θέλετε να καταργήσετε.</span><span class="sxs-lookup"><span data-stu-id="ccf00-147">Select the vertical ellipsis for the Export you want to remove.</span></span>
 
-<span data-ttu-id="d1f8c-159">Για να καταργήσετε έναν προορισμό εξαγωγής, ξεκινήστε από την κύρια σελίδα **Προορισμοί εξαγωγής**.</span><span class="sxs-lookup"><span data-stu-id="d1f8c-159">To remove an Export destination, start from the main **Export destinations** page.</span></span>
+1. <span data-ttu-id="ccf00-148">Από την αναπτυσσόμενη λίστα , επιλέξτε το στοιχείο **Κατάργηση**.</span><span class="sxs-lookup"><span data-stu-id="ccf00-148">Select **Remove** from the dropdown menu.</span></span>
 
-1. <span data-ttu-id="d1f8c-160">Επιλέξτε την κατακόρυφη έλλειψη για τον προορισμό εξαγωγής που θέλετε να καταργήσετε.</span><span class="sxs-lookup"><span data-stu-id="d1f8c-160">Select the vertical ellipsis for the Export destination you want to remove.</span></span>
-
-   > [!div class="mx-imgBorder"]
-   > <span data-ttu-id="d1f8c-161">![Κατακόρυφη έλλειψη](media/export-destinations-page-ellipsis.png "Κατακόρυφη έλλειψη")</span><span class="sxs-lookup"><span data-stu-id="d1f8c-161">![Vertical ellipsis](media/export-destinations-page-ellipsis.png "Vertical ellipsis")</span></span>
-
-2. <span data-ttu-id="d1f8c-162">Από την αναπτυσσόμενη λίστα , επιλέξτε το στοιχείο **Κατάργηση**.</span><span class="sxs-lookup"><span data-stu-id="d1f8c-162">Select **Remove** from the dropdown menu.</span></span>
-
-3. <span data-ttu-id="d1f8c-163">Επιβεβαιώστε την κατάργηση επιλέγοντας **Κατάργηση** στην οθόνη επιβεβαίωσης.</span><span class="sxs-lookup"><span data-stu-id="d1f8c-163">Confirm the removal by selecting **Remove** on the confirmation screen.</span></span>
+1. <span data-ttu-id="ccf00-149">Επιβεβαιώστε την κατάργηση επιλέγοντας **Κατάργηση** στην οθόνη επιβεβαίωσης.</span><span class="sxs-lookup"><span data-stu-id="ccf00-149">Confirm the removal by selecting **Remove** on the confirmation screen.</span></span>
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
