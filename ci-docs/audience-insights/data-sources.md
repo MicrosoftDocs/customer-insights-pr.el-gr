@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 0fc13d3ac0a5176637b6fe481dabe0b2aec11649
-ms.sourcegitcommit: d89b19b2a3497722b78362aeee688ae7e94915d9
+ms.openlocfilehash: 3c0b4690e18285aa37eef481b3cfac951884ead6
+ms.sourcegitcommit: fcc94f55dc2dce84eae188d582801dc47696c9cc
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5887894"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "6085530"
 ---
 # <a name="data-sources-overview"></a>Επισκόπηση προελεύσεων δεδομένων
 
@@ -36,11 +36,9 @@ ms.locfileid: "5887894"
 
 Η λήψη δεδομένων από προελεύσεις δεδομένων εσωτερικής εγκατάστασης στο Audience Insights υποστηρίζεται με βάση τις ροές δεδομένων του Power Platform. Οι ροές δεδομένων μπορούν να ενεργοποιηθούν στο Customer Insights [παρέχοντας τη διεύθυνση URL του περιβάλλοντος Microsoft Dataverse](manage-environments.md#create-an-environment-in-an-existing-organization) κατά τη ρύθμιση του περιβάλλοντος.
 
-Οι προελεύσεις δεδομένων που δημιουργούνται μετά τη συσχέτιση ενός περιβάλλοντος Dataverse με το Customer Insights θα χρησιμοποιήσουν [ροές δεδομένων του Power Platform](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) από προεπιλογή. Οι ροές δεδομένων υποστηρίζουν τη σύνδεση εσωτερικής εγκατάστασης, χρησιμοποιώντας τις πύλες δεδομένων. Καταργήστε και δημιουργήστε εκ νέου προελεύσεις δεδομένων που υπήρχαν πριν συσχετιστεί ένα περιβάλλον Dataverse για να χρησιμοποιηθούν οι πύλες δεδομένων εσωτερικής εγκατάστασης.
+Οι προελεύσεις δεδομένων που δημιουργούνται μετά τη συσχέτιση ενός περιβάλλοντος Dataverse με το Customer Insights θα χρησιμοποιήσουν [ροές δεδομένων του Power Platform](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) από προεπιλογή. Οι ροές δεδομένων υποστηρίζουν τη σύνδεση εσωτερικής εγκατάστασης, χρησιμοποιώντας την πύλη δεδομένων. Καταργήστε και δημιουργήστε εκ νέου προελεύσεις δεδομένων που υπήρχαν πριν συσχετιστεί ένα περιβάλλον Dataverse για να [χρησιμοποιηθούν οι πύλες δεδομένων εσωτερικής εγκατάστασης](/powerapps/maker/data-platform/using-dataflows-with-on-premises-data.md).
 
 Οι πύλες δεδομένων από ένα υπάρχον περιβάλλον Power BI ή Power Apps θα είναι ορατές και μπορείτε να τις χρησιμοποιήσετε ξανά στο Customer Insights. Η σελίδα προέλευσης δεδομένων εμφανίζει συνδέσεις για μετάβαση στο περιβάλλον Power Platform όπου μπορείτε να προβάλετε και να ρυθμίσετε τις πύλες δεδομένων εσωτερικής εγκατάστασης.
-
-:::image type="content" source="media/data-sources-onpremises-gateways.png" alt-text="Στιγμιότυπο οθόνης της σελίδας προελεύσεων δεδομένων που δείχνει συνδέσεις που δείχνουν προς το περιβάλον του Power Platform.":::
 
 ## <a name="review-ingested-data"></a>Έλεγχος δεδομένων που έχουν ληφθεί
 

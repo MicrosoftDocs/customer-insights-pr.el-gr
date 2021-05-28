@@ -6,15 +6,15 @@ ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: phkieffer
+author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 01290d5fae7af1737b73373d75e334ae1ed67d37
-ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
+ms.openlocfilehash: b5a644e286bd44d4ebf7d1837255326c005b48d6
+ms.sourcegitcommit: 74cd4fa9cbb784d9dff174c0eec7b4dcb408d66b
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5759821"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6059316"
 ---
 # <a name="export-segments-to-marketo-preview"></a>Εξαγωγή τμημάτων στο Marketo (έκδοση προεπισκόπησης)
 
@@ -44,7 +44,7 @@ ms.locfileid: "5759821"
 
 1. Επιλέξτε κάποιον που μπορεί να χρησιμοποιήσει αυτήν τη σύνδεση. Εάν δεν κάνετε καμία ενέργεια, η προεπιλογή θα είναι οι Διαχειριστές. Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Να επιτρέπεται στους συμβαλλόντων η χρήση σύνδεσης για εξαγωγές](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Εισαγάγετε το **[αναγνωριστικό πελάτη Marketo, τον μυστικό κωδικό πελάτη και το όνομα κεντρικού υπολογιστή τελικού σημείου REST](https://developers.marketo.com/rest-api/authentication/)**.
+1. Εισαγάγετε το **[αναγνωριστικό πελάτη Marketo, τον μυστικό κωδικό πελάτη και το όνομα κεντρικού υπολογιστή τελικού σημείου REST](https://developers.marketo.com/rest-api/authentication/)**. Το όνομα κεντρικού υπολογιστή τελικού σημείου REST είναι μόνο το όνομα κεντρικού υπολογιστή, χωρίς `https://`. Παράδειγμα: `xyz-abc-123.mktorest.com`. 
 
 1. Επιλέξτε **Συμφωνώ** για να επιβεβαιώσετε την **Προστασία προσωπικών δεδομένων και τη συμμόρφωση** και επιλέξτε **Σύνδεση** για να προετοιμάσετε τη σύνδεση στο Marketo.
 
@@ -62,7 +62,7 @@ ms.locfileid: "5759821"
 
 1. Στο πεδίο **Σύνδεση για εξαγωγή**, επιλέξτε μια σύνδεση από την ενότητα Marketo. Εάν δεν βλέπετε αυτό το όνομα ενότητας, δεν υπάρχουν διαθέσιμες συνδέσεις αυτού του τύπου.
 
-1. Εισαγάγετε το **[αναγνωριστικό λίστας Marketo](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)** 
+1. Εισαγάγετε το **[αναγνωριστικό λίστας Marketo](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)**. Το αναγνωριστικό λίστας είναι μια αμιγώς αριθμητική τιμή. Για παράδειγμα, εάν το αναγνωριστικό λίστας Marketo είναι ST12345A7, καταργήστε το χαρακτήρα πριν και μετά τα αριθμητικά και πληκτρολογήστε `12345`. 
 
 1. Στην ενότητα **Αντιστοίχιση δεδομένων**, στο πεδίο **Ηλεκτρονικό ταχυδρομείο**, επιλέξτε το πεδίο στο ενοποιημένο προφίλ πελάτη που αντιπροσωπεύει τη διεύθυνση ηλεκτρονικού ταχυδρομείου ενός πελάτη. 
 
@@ -74,7 +74,7 @@ ms.locfileid: "5759821"
 
 Η αποθήκευση μιας εξαγωγής δεν εκτελεί αμέσως την εξαγωγή.
 
-Η εξαγωγή εκτελείται με κάθε [προγραμματισμένη ανανέωση](system.md#schedule-tab). Μπορείτε επίσης να [εξαγάγετε δεδομένα κατ' απαίτηση](export-destinations.md#run-exports-on-demand). Στο Marketo, μπορείτε πλέον να βρείτε τα τμήματά σας στις [λίστες Marketo](ttps://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists).
+Η εξαγωγή εκτελείται με κάθε [προγραμματισμένη ανανέωση](system.md#schedule-tab). Μπορείτε επίσης να [εξαγάγετε δεδομένα κατ' απαίτηση](export-destinations.md#run-exports-on-demand). Στο Marketo, μπορείτε πλέον να βρείτε τα τμήματά σας στις [λίστες Marketo](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists).
 
 
 ## <a name="data-privacy-and-compliance"></a>Απόρρητο δεδομένων και συμμόρφωση
