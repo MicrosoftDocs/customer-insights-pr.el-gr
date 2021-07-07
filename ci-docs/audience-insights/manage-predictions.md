@@ -9,12 +9,12 @@ ms.topic: how-to
 author: diegogranados117
 ms.author: digranad
 manager: shellyha
-ms.openlocfilehash: b935be08199f20e83bceb3317985b0e1dc120016
-ms.sourcegitcommit: 6b07c9c3102761be162e4842f3c9fbc19f948a9b
+ms.openlocfilehash: dccb8dcca8f65f64973e46fed9d83034d58282e2
+ms.sourcegitcommit: bcc47d15d4f0eacf008e4dbc09baac7f062b3ca8
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "6095712"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "6315878"
 ---
 # <a name="manage-predictions"></a>Διαχείριση προβλέψεων
 
@@ -35,9 +35,6 @@ ms.locfileid: "6095712"
 Η αναφορά χρηστικότητας δεδομένων εισόδου παρέχει μια ενοποιημένη προβολή των σφαλμάτων και των προειδοποιήσεων που ενδέχεται να δημιουργούνται από τις πρώτες σας προβλέψεις. Επίσης, παρέχει συστάσεις σχετικά με τον τρόπο βελτίωσης της απόδοσης του μοντέλου.
 
 Η αναφορά είναι διαθέσιμη αφού ένα μοντέλο ολοκληρώσει τη διαδικασία εκπαίδευσης. Δημιουργείται για κάθε μοντέλο ξεχωριστά, ανεξάρτητα από το αν έχει ολοκληρωθεί με επιτυχία ή όχι.
-
-> [!NOTE]
-> Αυτήν τη στιγμή, αυτή η δυνατότητα λειτουργεί μόνο για το μοντέλο Transaction Churn.
 
 ### <a name="view-the-input-data-usability-report"></a>Προβολή της αναφοράς χρηστικότητας δεδομένων εισόδου
 

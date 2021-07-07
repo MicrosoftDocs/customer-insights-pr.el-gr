@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 2155042d86cda0cffee1588760a06d6c7eb7077e
-ms.sourcegitcommit: fcc94f55dc2dce84eae188d582801dc47696c9cc
+ms.openlocfilehash: 50b11e7d6f62d7a25eb25a0f2b1c4ad7d859def1
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "6085622"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306028"
 ---
 # <a name="match-entities"></a>Αντιστοίχιση οντοτήτων
 
@@ -209,7 +209,7 @@ ms.locfileid: "6085622"
 
 Μπορείτε να ρυθμίσετε εκ νέου τις παραμέτρους της αντιστοίχισης και να τις ρυθμίσετε με ακρίβεια.
 
-:::image type="content" source="media/match-rules-management.png" alt-text="Στιγμιότυπο οθόνης του αναπτυσσόμενου μενού με τις επιλογές κανόνων αντιστοίχισης.":::
+:::image type="content" source="media/match-rules-management.png" alt-text="Στιγμιότυπο οθόνης του αναπτυσσόμενου μενού με τις επιλογές κανόνα αντιστοίχισης.":::
 
 - **Αλλάξτε τη σειρά των κανόνων σας** εάν έχετε ορίσει πολλούς κανόνες. Μπορείτε να αλλάξετε τη σειρά των κανόνων αντιστοίχισης επιλέγοντας **Μετακίνηση επάνω** και  **Μετακίνηση κάτω** ή κάνοντας μεταφορά και απόθεση.
 

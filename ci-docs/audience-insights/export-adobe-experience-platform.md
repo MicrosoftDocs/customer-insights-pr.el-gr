@@ -1,6 +1,6 @@
 ---
 title: Εξαγωγή δεδομένων του Customer Insights στο Adobe Experience Platform
-description: Μάθετε πώς να χρησιμοποιείτε τμήματα πληροφοριών κοινού στο Adobe Experience Platform.
+description: Μάθετε πώς να χρησιμοποιείτε τμήματα στατιστικών κοινού στην πλατφόρμα Adobe Experience.
 ms.date: 03/29/2021
 ms.reviewer: mhart
 ms.service: customer-insights
@@ -9,16 +9,16 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: 884f4d30f354bed29909d57be84dce4c8e46965a
-ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
+ms.openlocfilehash: 1045d0e373fd5ea8987684e51bd9a07b7b535ee3
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5760101"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305524"
 ---
 # <a name="use-customer-insights-segments-in-adobe-experience-platform-preview"></a>Χρησιμοποιήστε τμήματα Customer Insights στο Adobe Experience Platform (έκδοση προεπισκόπησης)
 
-Ως χρήστης των πληροφοριών κοινού για Dynamics 365 Customer Insights, ενδέχεται να έχετε δημιουργήσει τμήματα για να κάνετε τις εκστρατείες μάρκετινγκ πιο αποτελεσματικές στοχεύοντας σε σχετικά κοινά. Για να χρησιμοποιήσετε ένα τμήμα από πληροφορίες κοινού στο Adobe Experience Platform και σε εφαρμογές όπως το Adobe Campaign Standard, θα πρέπει να ακολουθήσετε μερικά βήματα που περιγράφονται σε αυτό το άρθρο.
+Ως χρήστης των στατιστικών κοινού στο Dynamics 365 Customer Insights, ενδέχεται να έχετε δημιουργήσει τμήματα για να κάνετε τις εκστρατείες μάρκετινγκ πιο αποτελεσματικές στοχεύοντας σε σχετικά κοινά. Για να χρησιμοποιήσετε ένα τμήμα από πληροφορίες κοινού στο Adobe Experience Platform και σε εφαρμογές όπως το Adobe Campaign Standard, θα πρέπει να ακολουθήσετε μερικά βήματα που περιγράφονται σε αυτό το άρθρο.
 
 :::image type="content" source="media/AEP-flow.png" alt-text="Διάγραμμα διεργασίας των βημάτων που περιγράφονται σε αυτό το άρθρο.":::
 
@@ -55,19 +55,19 @@ ms.locfileid: "5760101"
 
 1. Μετάβαση στον **Διαχειριστή** > **Συνδέσεις**.
 
-1. Επιλέξτε **Προσθήκη σύνδεσης** και επιλέξτε **Χώρος αποθήκευσης αντικειμένου blob Azure** ή επιλέξτε **Ρύθμιση** στο πλακίδιο **Χώρος αποθήκευσης αντικειμένου blob Azure**:
+1. Επιλέξτε **Προσθήκη σύνδεσης** και επιλέξτε **Χώρος αποθήκευσης αντικειμένου Blob Azure** ή επιλέξτε **Ρύθμιση** στο πλακίδιο **Χώρος αποθήκευσης αντικειμένου Blob Azure** για να διαμορφώσετε τη σύνδεση.
 
-   :::image type="content" source="media/export-azure-blob-storage-tile.png" alt-text="Πλακίδιο ρύθμισης παραμέτρων για χώρο αποθήκευσης αντικειμένων blob Azure."::: για να ρυθμίσετε τη σύνδεση.
+   :::image type="content" source="media/export-azure-blob-storage-tile.png" alt-text="Πλακίδιο ρύθμισης παραμέτρων για χώρο αποθήκευσης αντικειμένων blob Azure."::: 
 
 1. Δώστε στη σύνδεσή σας ένα αναγνωρίσιμο όνομα στο πεδίο **Εμφανιζόμενο όνομα**. Το όνομα και ο τύπος της σύνδεσης περιγράφουν αυην τη σύνδεση. Συνιστούμε να επιλέξετε ένα όνομα που να εξηγεί τον σκοπό και τον προορισμό της σύνδεσης.
 
 1. Επιλέξτε κάποιον που μπορεί να χρησιμοποιήσει αυτήν τη σύνδεση. Εάν δεν κάνετε καμία ενέργεια, η προεπιλογή θα είναι οι Διαχειριστές. Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Να επιτρέπεται στους συμβαλλόντων η χρήση σύνδεσης για εξαγωγές](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Εισαγάγετε **Όνομα λογαριασμού**, **Κλειδί λογαριασμού** και **Κοντέινερ** για τον λογαριασμό χώρου αποθήκευσης αντικειμένου blob Azure όπου θέλετε να εξαγάγετε το τμήμα.  
+1. Εισαγάγετε **Όνομα λογαριασμού**, **Κλειδί λογαριασμού** και **Κοντέινερ** για τον λογαριασμό χώρου αποθήκευσης αντικειμένου blob όπου θέλετε να εξαγάγετε το τμήμα.  
       
    :::image type="content" source="media/azure-blob-configuration.png" alt-text="Στιγμιότυπο οθόνης της ρύθμισης παραμέτρων λογαριασμού χώρου αποθήκευσης."::: 
    
-    - Για να μάθετε περισσότερα σχετικά με τον τρόπο εύρεσης του ονόματος λογαριασμού και του κλειδιού λογαριασμού χώρου αποθήκευσης αντικειμένων Blob, ανατρέξτε στο θέμα [Διαχείριση ρυθμίσεων λογαριασμών χώρου αποθήκευσης στην πύλη Azure](/azure/storage/common/storage-account-manage).
+    - Για να μάθετε περισσότερα σχετικά με τον τρόπο εύρεσης του ονόματος λογαριασμού και του κλειδιού λογαριασμού χώρου αποθήκευσης αντικειμένων Blob, ανατρέξτε στη [Διαχείριση ρυθμίσεων λογαριασμού χώρου αποθήκευσης στην πύλη Azure](/azure/storage/common/storage-account-manage).
     - Για να μάθετε πώς να δημιουργείτε ένα κοντέινερ, δείτε [Δημιουργία κοντέινερ](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
 
 1. Επιλέξτε **Αποθήκευση** για να ολοκληρώσετε τη σύνδεση. 
@@ -80,7 +80,7 @@ ms.locfileid: "5760101"
 
 1. Για να δημιουργήσετε μια νέα εξαγωγή, επιλέξτε **Προσθήκη εξαγωγής**.
 
-1. Στο πεδίο **Σύνδεση για εξαγωγή**, επιλέξτε μια σύνδεση από την ενότητα χώρος αποθήκευσης αντικειμένων blob Azure. Εάν δεν βλέπετε αυτό το όνομα ενότητας, δεν υπάρχουν διαθέσιμες συνδέσεις αυτού του τύπου.
+1. Στο πεδίο **Σύνδεση για εξαγωγή**, επιλέξτε μια σύνδεση από την ενότητα χώρος αποθήκευσης αντικειμένων blob Azure. Εάν δεν βλέπετε αυτό το όνομα ενότητας, τότε δεν είναι διαθέσιμες συνδέσεις αυτού του τύπου για εσάς.
 
 1. Επιλέξτε το τμήμα που θέλετε να εξαγάγετε. Σε αυτό το παράδειγμα, είναι **ChurnProneCustomers**.
 
@@ -95,7 +95,7 @@ ms.locfileid: "5760101"
 > [!NOTE]
 > Βεβαιωθείτε ότι ο αριθμός των καρτελών στο εξαχθέν τμήμα βρίσκεται εντός του επιτρεπόμενου ορίου της άδειας χρήσης που έχετε για το Adobe Campaign Standard.
 
-Τα δεδομένα που έχουν εξαχθεί αποθηκεύονται στο κοντέινερ του χώρου αποθήκευσης αντικειμένων blob Azure που ρυθμίσατε παραπάνω. Η παρακάτω διαδρομή φακέλου δημιουργείται αυτόματα στο κοντέινερ σας:
+Τα δεδομένα που έχουν εξαχθεί αποθηκεύονται στο κοντέινερ του χώρου αποθήκευσης αντικειμένων blob Azure που διαμορφώσατε παραπάνω. Η παρακάτω διαδρομή φακέλου δημιουργείται αυτόματα στο κοντέινερ σας:
 
 *%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv*
 
@@ -121,9 +121,10 @@ ms.locfileid: "5760101"
 
 ## <a name="create-an-audience-in-adobe-campaign-standard"></a>Δημιουργία ενός κοινού στο Adobe Campaign Standard
 
-Για να στείλουμε το μήνυμα ηλεκτρονικού ταχυδρομείου για αυτήν την εκστρατεία, θα χρησιμοποιήσουμε το Adobe Campaign Standard. Μετά την εισαγωγή των δεδομένων στο Adobe Experience Platform, θα πρέπει να [δημιουργήσουμε ένα κοινό](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/get-started-profiles-and-audiences.html#permission) στο Adobe Campaign Standard χρησιμοποιώντας τα δεδομένα στο Adobe Experience Platform.
+Για να στείλετε το μήνυμα ηλεκτρονικού ταχυδρομείου για αυτήν την εκστρατεία, θα χρησιμοποιήσουμε το Adobe Campaign Standard. Μετά την εισαγωγή των δεδομένων στο Adobe Experience Platform, θα πρέπει να [δημιουργήσουμε ένα κοινό](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/get-started-profiles-and-audiences.html#permission) στο Adobe Campaign Standard χρησιμοποιώντας τα δεδομένα στο Adobe Experience Platform.
 
-Μάθετε πώς να [χρησιμοποιείτε το εργαλείο δόμησης τμημάτων](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/working-with-adobe-experience-platform/aep-using-segment-builder.html#building-a-segment) στο Adobe Campaign Standard για να ορίσετε ένα κοινό με βάση τα δεδομένα στο Adobe Experience Platform.
+
+Μάθετε πώς να [χρησιμοποιείτε το εργαλείο δόμησης τμημάτων](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/audience-destinations/aep-using-segment-builder.html) στο Adobe Campaign Standard για να ορίσετε ένα κοινό με βάση τα δεδομένα στο Adobe Experience Platform.
 
 ## <a name="create-and-send-the-email-using-adobe-campaign-standard"></a>Δημιουργία και αποστολή του μηνύματος ηλεκτρονικού ταχυδρομείου χρησιμοποιώντας το Adobe Campaign Standard
 

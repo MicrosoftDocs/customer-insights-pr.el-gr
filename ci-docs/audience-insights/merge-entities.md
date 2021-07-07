@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 2cab702509596dd87c0c9b9769d1af8ba8387f9d
-ms.sourcegitcommit: fcc94f55dc2dce84eae188d582801dc47696c9cc
+ms.openlocfilehash: 86ab3cefa70e5fab4bdb27cde363adee26efee4c
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "6085576"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305637"
 ---
 # <a name="merge-entities"></a>Συγχώνευση οντοτήτων
 
@@ -34,7 +34,7 @@ ms.locfileid: "6085576"
 
 Μπορείτε να αλλάξετε τον τρόπο με τον οποίο το σύστημα επεξεργάζεται τα συγχωνευμένα χαρακτηριστικά, ώστε να δημιουργήσει το ενοποιημένο προφίλ πελάτη. Επιλέξτε **Εμφάνιση περισσότερων** και επιλέξτε τι θέλετε να αλλάξετε.
 
-:::image type="content" source="media/manage-merged-attributes.png" alt-text="Επιλογές στο αναπτυσσόμενο μενού Εμφάνιση περισσότερων για διαχείριση των συγχωνευμένων χαρακτηριστικών.":::
+:::image type="content" source="media/manage-merged-attributes.png" alt-text="Επιλογές στο αναπτυσσόμενο μενού &quot;Εμφάνιση περισσότερων&quot; για διαχείριση συγχωνευμένων χαρακτηριστικών.":::
 
 Για περισσότερες πληροφορίες, ανατρέξτε στις ακόλουθες ενότητες.
 

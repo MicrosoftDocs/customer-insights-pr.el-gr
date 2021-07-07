@@ -9,12 +9,12 @@ author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 87bf8d7b9c23633ebdc929e15ac645c55cc21e4a
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 09d449e51a3a47ec916ab3d017419c9d9be1ffcf
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595380"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305710"
 ---
 # <a name="system-configuration"></a>Ρύθμιση παραμέτρων συστήματος
 
@@ -94,7 +94,7 @@ ms.locfileid: "5595380"
 
 ## <a name="api-usage-tab"></a>Καρτέλα χρήσης API
 
-Βρείτε λεπτομέρειες σχετικά με τη χρήση API σε πραγματικό χρόνο και δείτε ποια συμβάντα συνέβησαν σε δεδομένο χρονικό πλαίσιο. Επιλέγετε το χρονικό πλαίσιο στο αναπτυσσόμενο μενού **Επιλογή χρονικού πλαισίου**. 
+Βρείτε λεπτομέρειες σχετικά με τη χρήση API σε πραγματικό χρόνο και δείτε ποια συμβάντα συνέβησαν σε δεδομένο χρονικό πλαίσιο. Επιλέξτε το χρονικό πλαίσιο στο αναπτυσσόμενο μενού **Επιλογή χρονικού πλαισίου**. 
 
 Η **χρήση API** περιέχει τρεις ενότητες: 
 - **Κλήσεις API** - ένα γράφημα που απεικονίζει τον συγκεντρωτικό αριθμό κλήσεων στο API στο επιλεγμένο χρονικό πλαίσιο.

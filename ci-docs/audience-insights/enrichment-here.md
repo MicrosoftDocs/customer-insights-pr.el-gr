@@ -1,5 +1,5 @@
 ---
-title: Εμπλουτισμός με τον εμπλουτισμό τρίτου μέρους HERE Technologies
+title: Εμπλουτισμός με εμπλουτισμό τρίτων HERE Technologies
 description: Γενικές πληροφορίες σχετικά με τον εμπλουτισμό τρίτου μέρους της HERE Technologies.
 ms.date: 04/09/2021
 ms.reviewer: mhart
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 5d1f037377010153045c9255d2d01f98ebf1fdfd
-ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
+ms.openlocfilehash: b3c1da0f541efb85b2ca9d87a2e3b97bbfb6ca7f
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5896051"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305294"
 ---
 # <a name="enrichment-of-customer-profiles-with-here-technologies-preview"></a>Εμπλουτισμός προφίλ πελατών με την HERE Technologies (προεπισκόπηση)
 
@@ -24,9 +24,9 @@ ms.locfileid: "5896051"
 
 Για να ρυθμίσετε τις παραμέτρους του εμπλουτισμού HERE Technologies, θα πρέπει να πληρούνται οι ακόλουθες προϋποθέσεις:
 
-- Έχετε ενεργή συνδρομή HERE Technologies. Για να λάβετε μια συνδρομή, μπορείτε να [εγγραφείτε εδώ](https://developer.here.com/sign-up?utm_medium=referral&utm_source=Microsoft-Dynamics-CI&create=Freemium-Basic) ή να [επικοινωνήσετε νε τη HERE Technologies](https://developer.here.com/help?utm_medium=referral&utm_source=Microsoft-Dynamics-CI#how-can-we-help-you). [Μάθετε περισσότερα σχετικά με τον εμπλουτισμό τοποθεσίας της HERE Technologies.](https://developer.here.com/location-enrichment?cid=Dev-MicrosoftDynamics-DB-0-Dev-&utm_source=MicrosoftDynamics&utm_medium=referral&utm_campaign=Online_Dev_ReferralMicrosoft)
+- Έχετε ενεργή συνδρομή HERE Technologies. Για να αποκτήσετε μια συνδρομή, μπορείτε να [εγγραφείτε εδώ](https://developer.here.com/sign-up?utm_medium=referral&utm_source=Microsoft-Dynamics-CI&create=Freemium-Basic) ή να [επικοινωνήσετε με τη HERE Technologies](https://developer.here.com/help?utm_medium=referral&utm_source=Microsoft-Dynamics-CI#how-can-we-help-you). [Μάθετε περισσότερα σχετικά με τον εμπλουτισμό τοποθεσίας της HERE Technologies.](https://developer.here.com/location-enrichment?cid=Dev-MicrosoftDynamics-DB-0-Dev-&utm_source=MicrosoftDynamics&utm_medium=referral&utm_campaign=Online_Dev_ReferralMicrosoft)
 
-- Υπάρχει διαθέσιμη μια [σύνδεση](connections.md) HERE *ή* έχετε δικαιώματα [διαχειριστή](permissions.md#administrator) και το κλειδί API της HERE Technologies.
+- Διατίθεται μια [σύνδεση](connections.md) HERE *ή* έχετε have δικαιώματα [διαχειριστή](permissions.md#administrator) και το κλειδί API HERE Technologies.
 
 ## <a name="configure-the-enrichment"></a>Ρύθμιση παραμέτρων του εμπλουτισμού
 
@@ -58,7 +58,7 @@ ms.locfileid: "5896051"
 
 1. Επιλέξτε **Αποθήκευση εμπλουτισμού** αφού αναθεωρήσετε τις επιλογές σας.
 
-## <a name="configure-the-connection-for-here-technologies"></a>Ρύθμιση παραμέτρων της σύνδεσης για τη HERE technologies 
+## <a name="configure-the-connection-for-here-technologies"></a>Ρύθμιση της σύνδεσης για τη HERE Technologies 
 
 Για να ρυθμίσετε τις παραμέτρους των συνδέσεων, θα πρέπει να είστε διαχειριστής. Επιλέξτε **Προσθήκη σύνδεσης** κατά τη ρύθμιση παραμέτρων ενός εμπλουτισμού *ή* μεταβείτε στο **Διαχειριστής** > **Συνδέσεις** και επιλέξτε **Ρύθμιση** στο πλακίδιο HERE technologies.
 
@@ -66,13 +66,13 @@ ms.locfileid: "5896051"
 
 1. Δώστε ένα έγκυρο κλειδί API για τη HERE technologies.
 
-1. Ελέγξτε και δώστε τη συγκατάθεσή σας για το **Απόρρητο και τη συμμόρφωση των δεδομένων** επιλέγοντας το πλαίσιο ελέγχου **Συμφωνώ**
+1. Ελέγξτε και δώστε τη συγκατάθεσή σας για το **Απόρρητο δεδομένων και συμμόρφωση** επιλέγοντας **Συμφωνώ**.
 
 1. Επιλέξτε **Επαλήθευση** για να επικυρώσετε τη ρύθμιση παραμέτρων.
 
 1. Αφού ολοκληρώσετε την επαλήθευση, επιλέξτε **Αποθήκευση**.
 
-> [!div class="mx-imgBorder"]
+   > [!div class="mx-imgBorder"]
    > ![Σελίδα ρύθμισης παραμέτρων σύνδεσης HERE Technologies](media/enrichment-HERE-connection.png "Σελίδα ρύθμισης παραμέτρων σύνδεσης HERE Technologies")
 
 ## <a name="enrichment-results"></a>Αποτελέσματα εμπλουτισμού
@@ -85,12 +85,12 @@ ms.locfileid: "5896051"
 
 ## <a name="next-steps"></a>Επόμενα βήματα
 
-Δημιουργήστε τα εμπλουτισμένα δεδομένα των πελατών σας. Δημιουργήστε [τμήματα](segments.md), [μέτρα](measures.md) και κάντε [εξαγωγή των δεδομένων](export-destinations.md) για την παροχή εξατομικευμένων εμπειριών στους πελάτες σας.
+Δημιουργήστε τα εμπλουτισμένα δεδομένα των πελατών σας. Δημιουργήστε [τμήματα](segments.md)και [μέτρα](measures.md) και, επιπλέον, [εξαγάγετε τα δεδομένα](export-destinations.md) για να παραδώσετε εξατομικευμένες εμπειρίες στους πελάτες σας.
 
 ## <a name="data-privacy-and-compliance"></a>Απόρρητο δεδομένων και συμμόρφωση
 
 Όταν ενεργοποιείτε το Dynamics 365 Customer Insights για να μεταδίδετε δεδομένα στη HERE Technologies, επιτρέπετε τη μεταφορά δεδομένων εκτός του ορίου συμμόρφωσης για το Dynamics 365 Customer Insights, συμπεριλαμβανομένων των δυνητικά ευαίσθητων δεδομένων, όπως τα προσωπικά δεδομένα. Η Microsoft θα μεταβιβάσει τα εν λόγω δεδομένα με τη δική σας οδηγία, αλλά εσείς είστε υπεύθυνοι για να διασφαλίσετε ότι η HERE Technologies πληροί τυχόν υποχρεώσεις προστασίας προσωπικών δεδομένων ή ασφάλειας που ενδεχομένως διαθέτετε. Για περισσότερες πληροφορίες, ανατρέξτε στη [Δήλωση προστασίας προσωπικών δεδομένων της Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
-Ο διαχειριστής Dynamics 365 Customer Insights μπορεί να καταργήσει αυτόν τον εμπλουτισό οποιαδήποτε στιγμή, για να διακόψετε τη χρήση αυτής της λειτουργίας.
+Ο διαχειριστής σας για το Dynamics 365 Customer Insights μπορεί να καταργήσει αυτόν τον εμπλουτισό ανά πάσα στιγμή, ώστε να διακοπεί η χρήση αυτής της λειτουργικότητας.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
