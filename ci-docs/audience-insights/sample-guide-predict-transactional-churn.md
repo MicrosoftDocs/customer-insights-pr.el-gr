@@ -9,12 +9,12 @@ ms.topic: tutorial
 author: diegogranados117
 ms.author: digranad
 manager: shellyha
-ms.openlocfilehash: 49dad45c951f3c00d77ddd99faec48bfccada8b0
-ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
+ms.openlocfilehash: 72f3bd1f32b813fef04dc14618331e3d707b5052
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6306120"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6556261"
 ---
 # <a name="transactional-churn-prediction-preview-sample-guide"></a>Δείγμα οδηγού πρόβλεψης απώλειας συναλλαγών (προεπισκόπηση)
 
@@ -47,7 +47,7 @@ ms.locfileid: "6306120"
    - **CreatedOn**: ημερομηνία/ώρα/ζώνη
 
    [!div class="mx-imgBorder"]
-   ![Μετατροπή DoB σε ημερομηνία](media/ecommerce-dob-date.PNG "μετασχηματισμός ημερομηνίας γέννησης σε ημερομηνία")
+   ![Μετατροπή DoB σε ημερομηνία.](media/ecommerce-dob-date.PNG "μετασχηματισμός ημερομηνίας γέννησης σε ημερομηνία")
 
 1. Στο πεδίο **Όνομα** στο δεξιό παράθυρο, μετονομάστε την προέλευση δεδομένων σας από **Ερώτημα** σε **eCommerceContacts**
 

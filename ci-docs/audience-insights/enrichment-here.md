@@ -1,5 +1,5 @@
 ---
-title: Εμπλουτισμός με εμπλουτισμό τρίτων HERE Technologies
+title: Εμπλουτισμός με εμπλουτισμό τρίτου μέρους της HERE Technologies
 description: Γενικές πληροφορίες σχετικά με τον εμπλουτισμό τρίτου μέρους της HERE Technologies.
 ms.date: 04/09/2021
 ms.reviewer: mhart
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: b3c1da0f541efb85b2ca9d87a2e3b97bbfb6ca7f
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: 00be15367001a5f4342d60bb284726ef7154d05c
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305294"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555307"
 ---
 # <a name="enrichment-of-customer-profiles-with-here-technologies-preview"></a>Εμπλουτισμός προφίλ πελατών με την HERE Technologies (προεπισκόπηση)
 
@@ -35,7 +35,7 @@ ms.locfileid: "6305294"
 1. Επιλέξτε **Εμπλουτισμός των δεδομένω μου** στο πλακίδιο HERE Technologies και επιλέξτε **Γρήγορα αποτελέσματα**.
 
    > [!div class="mx-imgBorder"]
-   > ![Πλακίδιο HERE Technologies](media/HERE-tile.png "Πλακίδιο HERE Technologies")
+   > ![Πλακίδιο HERE Technologies.](media/HERE-tile.png "Πλακίδιο HERE Technologies")
 
 1. Επιλέξτε μια [σύνδεση](connections.md) από την αναπτυσσόμενη λίστα. Επικοινωνήστε με έναν διαχειριστή εάν δεν υπάρχει διαθέσιμη σύνδεση. Εάν είστε ένας διαχειριστής, μπορείτε να δημιουργήσετε μια σύνδεση επιλέγοντας **Προσθήκη σύνδεσης**. Επιλέξτε **HERE Technologies** από την αναπτυσσόμενη λίστα. 
 
@@ -50,7 +50,7 @@ ms.locfileid: "6305294"
 1. Καθορίστε ποια πεδία από τα ενοποιημένα προφίλ σας θα πρέπει να χρησιμοποιηθούν για την αναζήτηση αντιστοίχισης δεδομένων τοποθεσίας από τη HERE Technologies. Τα πεδία **Οδός 1** και **Ταχυδρομικός Κώδικας** είναι απαραίτητα για την επιλεγμένη κύρια ή/και δευτερεύουσα διεύθυνση. Για μεγαλύτερη ακρίβεια αντιστοίχισης, είναι δυνατή η προσθήκη περισσότερων πεδίων.
 
    > [!div class="mx-imgBorder"]
-   > ![Σελίδα ρύθμισης παραμέτρων εμπλουτισμού HERE Technologies](media/enrichment-HERE-configuration.png "Σελίδα ρύθμισης παραμέτρων εμπλουτισμού HERE Technologies")
+   > ![Σελίδα ρύθμισης παραμέτρων εμπλουτισμού HERE Technologies.](media/enrichment-HERE-configuration.png "Σελίδα ρύθμισης παραμέτρων εμπλουτισμού HERE Technologies")
 
 1. Επιλέξτε **Επόμενο** για να ολοκληρώσετε την αντιστοίχιση πεδίων.
 
@@ -73,7 +73,7 @@ ms.locfileid: "6305294"
 1. Αφού ολοκληρώσετε την επαλήθευση, επιλέξτε **Αποθήκευση**.
 
    > [!div class="mx-imgBorder"]
-   > ![Σελίδα ρύθμισης παραμέτρων σύνδεσης HERE Technologies](media/enrichment-HERE-connection.png "Σελίδα ρύθμισης παραμέτρων σύνδεσης HERE Technologies")
+   > ![Σελίδα ρύθμισης παραμέτρων σύνδεσης HERE Technologies.](media/enrichment-HERE-connection.png "Σελίδα ρύθμισης παραμέτρων σύνδεσης HERE Technologies")
 
 ## <a name="enrichment-results"></a>Αποτελέσματα εμπλουτισμού
 
@@ -85,7 +85,7 @@ ms.locfileid: "6305294"
 
 ## <a name="next-steps"></a>Επόμενα βήματα
 
-Δημιουργήστε τα εμπλουτισμένα δεδομένα των πελατών σας. Δημιουργήστε [τμήματα](segments.md)και [μέτρα](measures.md) και, επιπλέον, [εξαγάγετε τα δεδομένα](export-destinations.md) για να παραδώσετε εξατομικευμένες εμπειρίες στους πελάτες σας.
+Δημιουργήστε τα εμπλουτισμένα δεδομένα των πελατών σας. Δημιουργήστε [τμήματα](segments.md) και [μέτρα](measures.md) και, επιπλέον, [εξαγάγετε τα δεδομένα](export-destinations.md) για να παραδώσετε εξατομικευμένες εμπειρίες στους πελάτες σας.
 
 ## <a name="data-privacy-and-compliance"></a>Απόρρητο δεδομένων και συμμόρφωση
 

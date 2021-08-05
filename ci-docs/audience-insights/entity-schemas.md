@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 6667e411a1b56e13105a6b59b7b5d249bc8141ea
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: e21f8a9422357fbc5c9425f91f3ba241c9dec9d8
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596361"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692305"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>Σχήματα οντοτήτων σε Common Data Model
 
@@ -24,7 +24,7 @@ ms.locfileid: "5596361"
 
 Πρόκειται για ένα μοντέλο κοινόχρηστων δεδομένων που επιτρέπει την ευκολότερη συνεργασία των εφαρμογών και των ολοκληρωμένων δεδομένων, παρέχοντας έναν ενοποιημένο ορισμό των δεδομένων. Το Common Data Model περιλαμβάνει ένα εμπλουτισμένο σύστημα μεταδεδομένων με τυπικές οντότητες, σχέσεις, ιεραρχίες, χαρακτηριστικά και πολλά άλλα. Προήλθε από εφαρμογές Dynamics 365 και είναι ανοιχτού κώδικα στο GitHub με πάνω από 260 τυπικές οντότητες. Ένα μεγάλο σύστημα εσωτερικών και εξωτερικών συνεργατών συμβάλλει στις συγκεκριμένες έννοιες της βιομηχανίας στο Common Data Model.
 
-Πολλά συστήματα και πλατφόρμες υλοποιούν σήμερα το Common Data Model, συμπεριλαμβανομένων των ροών δεδομένων Power BI και των υπηρεσιών δεδομένων Azure. Υποστηρίζεται στα Common Data Service, Dynamics 365, Power Apps, Power BI και σε προσεχείς υπηρεσίες δεδομένων Azure που συγκεντρώνει άμεσα την τιμή προς την [πρωτοβουλία ανοιχτών δεδομένων](https://www.microsoft.com/open-data-initiative).
+Πολλά συστήματα και πλατφόρμες υλοποιούν σήμερα το Common Data Model, συμπεριλαμβανομένων ροών δεδομένων Power BI και υπηρεσιών δεδομένων Azure. Υποστηρίζεται ήδη στις υπηρεσίες δεδομένων Microsoft Dataverse, Dynamics 365, Power Apps, Power BI και στις επερχόμενες υπηρεσίες δεδομένων Azure, οι οποίες θα παρέχονται απευθείας στην [Πρωτοβουλία ανοιχτών δεδομένων](https://www.microsoft.com/open-data-initiative).
 
 ## <a name="customer-insights-entity-schemas"></a>Σχήματα οντοτήτων Customer Insights
 
@@ -44,7 +44,7 @@ ms.locfileid: "5596361"
 
 Μπορείτε να προβάλετε οντότητες στον [Πλοηγό οντοτήτων του Common Data Model](https://microsoft.github.io/CDM/). Επιλέξτε **Φόρτωση από GitHub!** και μεταβείτε στα **foundationCommon** > **crmCommon** > **λύσεις** > **customerInsights** όπου θα βρείτε τη λίστα με τις οντότητες Customer Insights και τους ορισμούς τους.
 > [!div class="mx-imgBorder"]
-> ![Πλοηγός οντότητας CDM που δείχνει οντότητα CustomerActivity](media/CDM-entity-navigator.png "Πλοηγός οντότητας CDM που δείχνει οντότητα CustomerActivity")
+> ![Πλοηγός οντότητας CDM που δείχνει την οντότητα CustomerActivity.](media/CDM-entity-navigator.png "Πλοηγός οντότητας CDM που δείχνει οντότητα CustomerActivity")
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

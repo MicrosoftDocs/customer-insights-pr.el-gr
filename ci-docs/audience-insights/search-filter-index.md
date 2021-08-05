@@ -9,19 +9,19 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: b6cc0ad1a47a6c00e3bf220271f42870fc53621b
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: a6131d4dddce48b0fba153bcefe5631e0d22d808
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597143"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554021"
 ---
 # <a name="customer-profiles-search--filter-index"></a>Προφίλ πελατών: Αναζήτηση και φιλτράρισμα ευρετηρίου
 
 Το αποτέλεσμα της ενοποίησης των δεδομένων των πελατών σας είναι μια οντότητα Προφίλ πελάτη η οποία παρέχει μια ενοποιημένη προβολή στη συνολική βάση πελατών σας. Για να [βρείτε πληροφορίες για έναν συγκεκριμένο πελάτη ή μια ομάδα πελατών](customer-profiles.md) γρήγορα, μπορείτε να ρυθμίσετε τις δυνατότητες **Αναζήτησης** και **Φιλτραρίσματος** στη σελίδα **Πελάτες**. Διαβάστε παρακάτω για να μάθετε τον τρόπο με τον οποίο οι διαχειριστές μπορούν να επεξεργαστούν τα χαρακτηριστικά στη σελίδα **Ευρετήριο αναζήτησης και φίλτρων**, τα οποία είναι διαθέσιμα στους χρήστες για αναζήτηση και φιλτράρισμα.
 
 > [!div class="mx-imgBorder"]
-> ![Φίλτρο αναζήτησης](media/search-filter.png "Φίλτρο αναζήτησης")
+> ![Φίλτρο αναζήτησης.](media/search-filter.png "Φίλτρο αναζήτησης")
 
 ## <a name="add-fields-and-specify-attributes"></a>Προσθήκη πεδίων και καθορισμός χαρακτηριστικών
 

@@ -9,12 +9,12 @@ ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: 50c231070ff9930c1ea82971bf4f8541a89d5027
-ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
+ms.openlocfilehash: b37bb5dfeed2326784ef276a93a04bec626aaf6e
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305891"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554683"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>Σύνδεση σε προέλευση δεδομένων Power Query
 
@@ -42,7 +42,7 @@ ms.locfileid: "6305891"
 1. Το παράθυρο διαλόγου **Power Query - Επεξεργασία ερωτημάτων** σάς δίνει τη δυνατότητα να αναθεωρήσετε και να βελτιώσετε τα δεδομένα. Οι οντότητες που αναγνωρίζονται από τα συστήματα στην επιλεγμένη προέλευση δεδομένων εμφανίζονται στο αριστερό τμήμα παραθύρου.
 
    > [!div class="mx-imgBorder"]
-   > ![Παράθυρο διαλόγου επεξεργασίας ερωτημάτων](media/data-manager-configure-edit-queries.png "Παράθυρο διαλόγου επεξεργασίας ερωτημάτων")
+   > ![Παράθυρο διαλόγου επεξεργασίας ερωτημάτων.](media/data-manager-configure-edit-queries.png "Παράθυρο διαλόγου επεξεργασίας ερωτημάτων")
 
 1. Μπορείτε επίσης να μετασχηματίσετε τα δεδομένα σας. Επιλέξτε μια οντότητα για επεξεργασία ή μετατροπή. Χρησιμοποιήστε τις επιλογές στο παράθυρο του Power Query για να εφαρμόσετε μετασχηματισμούς. Κάθε μετασχηματισμός εμφανίζεται στην περιοχή **Εφαρμοσμένα βήματα**. Το Power Query παρέχει πολυάριθμες προ-ενσωματωμένες επιλογές μετασχηματισμού. Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Μετασχηματισμοί Power Query](/power-query/power-query-what-is-power-query#transformations).
 
@@ -75,7 +75,7 @@ ms.locfileid: "6305891"
 2. Επιλέξτε την κατακόρυφη έλλειψη δίπλα στην προέλευση δεδομένων που θέλετε να αλλάξετε και επιλέξτε **Επεξεργασία** από το αναπτυσσόμενο μενού.
 
    > [!div class="mx-imgBorder"]
-   > ![Επιλογή επεξεργασίας](media/edit-option-data-sources.png "Επιλογή επεξεργασίας")
+   > ![Επιλογή επεξεργασίας.](media/edit-option-data-sources.png "Επιλογή επεξεργασίας")
 
 3. Εφαρμόστε τις αλλαγές και τους μετασχηματισμούς σας στο παράθυρο διαλόγου **Power Query - Επεξεργασία ερωτημάτων** όπως περιγράφεται στη [Δημιουργία νέας προέλευσης δεδομένων](#create-a-new-data-source).
 

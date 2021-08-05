@@ -1,5 +1,5 @@
 ---
-title: Εμπλουτισμός με εμπλουτισμού τρίτων Experian
+title: Εμπλουτισμός με το Experian εμπλουτισμού τρίτου μέρους
 description: Γενικές πληροφορίες σχετικά με τον εμπλουτισμό τρίτων Experian.
 ms.date: 04/09/2021
 ms.reviewer: mhart
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 7c82fe92b3351a782a4fa6510300d870b742d042
-ms.sourcegitcommit: 42b3bce1e20e7cc707d232844dacfeed3d6fc096
+ms.openlocfilehash: abe9ee447745081e3c462d44e5901b6dac919adf
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "6309820"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555353"
 ---
 # <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>Εμπλουτισμός προφίλ πελατών με δημογραφικά στοιχεία από το Experian (έκδοση προεπισκόπησης)
 
@@ -39,7 +39,7 @@ H Experian είναι μια παγκοσμίως κορυφαία εταιρε�
 1. Επιλέξτε **Εμπλουτισμός των δεδομένων μου** στο πλακίδιο Experian.
 
    > [!div class="mx-imgBorder"]
-   > ![Experian πλακίδια](media/experian-tile.png "Experian tile")
+   > ![Πλακίδιο Experian.](media/experian-tile.png "Experian tile")
    > 
 
 1. Επιλέξτε μια [σύνδεση](connections.md) από την αναπτυσσόμενη λίστα. Επικοινωνήστε με έναν διαχειριστή εάν δεν υπάρχει διαθέσιμη σύνδεση. Αν είστε διαχειριστής, μπορείτε να δημιουργήσετε μια σύνδεση επιλέγοντας **Προσθήκη σύνδεσης** και επιλέγοντας Experian από την αναπτυσσόμενη λίστα. 
@@ -91,7 +91,7 @@ H Experian είναι μια παγκοσμίως κορυφαία εταιρε�
 
 ## <a name="next-steps"></a>Επόμενα βήματα
 
-Δημιουργήστε τα εμπλουτισμένα δεδομένα των πελατών σας. Δημιουργήστε [τμήματα](segments.md)και [μέτρα](measures.md) και, επιπλέον, [εξαγάγετε τα δεδομένα](export-destinations.md) για να παραδώσετε εξατομικευμένες εμπειρίες στους πελάτες σας.
+Δημιουργήστε τα εμπλουτισμένα δεδομένα των πελατών σας. Δημιουργήστε [τμήματα](segments.md) και [μέτρα](measures.md) και, επιπλέον, [εξαγάγετε τα δεδομένα](export-destinations.md) για να παραδώσετε εξατομικευμένες εμπειρίες στους πελάτες σας.
 
 ## <a name="data-privacy-and-compliance"></a>Απόρρητο δεδομένων και συμμόρφωση
 

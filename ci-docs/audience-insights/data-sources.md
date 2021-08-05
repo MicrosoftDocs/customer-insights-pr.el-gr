@@ -9,12 +9,13 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 54dd7b629d4b4e7f640b932b0f9246e0602f46bd
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.custom: intro-internal
+ms.openlocfilehash: 0a017a37777adaaf7de079cf481ec10c70c7adba
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304696"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692435"
 ---
 # <a name="data-sources-overview"></a>Επισκόπηση προελεύσεων δεδομένων
 
@@ -30,13 +31,13 @@ ms.locfileid: "6304696"
 
 - [Μέσω δεκάδων συνδέσεων Power Query](connect-power-query.md)
 - [Από έναν φάκελο Common Data Model](connect-common-data-model.md)
-- [Από το δικό σας Microsoft Dataverse lake](connect-common-data-service-lake.md)
+- [Από το δικό σας Microsoft Dataverse lake](connect-dataverse-managed-lake.md)
 
 ## <a name="add-data-from-on-premises-data-sources"></a>Προσθήκη δεδομένων από προελεύσεις δεδομένων εσωτερικής εγκατάστασης
 
-Η λήψη δεδομένων από προελεύσεις δεδομένων εσωτερικής εγκατάστασης στα στατιστικά κοινού υποστηρίζεται με βάση τις ροές δεδομένων του Microsoft Power Platform. Οι ροές δεδομένων μπορούν να ενεργοποιηθούν στο Customer Insights [παρέχοντας τη διεύθυνση URL του περιβάλλοντος Microsoft Dataverse](manage-environments.md#create-an-environment-in-an-existing-organization) κατά τη ρύθμιση του περιβάλλοντος.
+Η λήψη δεδομένων από προελεύσεις δεδομένων εσωτερικής εγκατάστασης στα στατιστικά κοινού υποστηρίζεται με βάση τις ροές δεδομένων του Microsoft Power Platform. Οι ροές δεδομένων μπορούν να ενεργοποιηθούν στο Customer Insights [παρέχοντας τη διεύθυνση URL του περιβάλλοντος Microsoft Dataverse](get-started-paid.md) κατά τη ρύθμιση του περιβάλλοντος.
 
-Οι προελεύσεις δεδομένων που δημιουργούνται μετά τη συσχέτιση ενός περιβάλλοντος Dataverse με το Customer Insights θα χρησιμοποιήσουν [ροές δεδομένων του Power Platform](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) από προεπιλογή. Οι ροές δεδομένων υποστηρίζουν τη σύνδεση εσωτερικής εγκατάστασης, χρησιμοποιώντας την πύλη δεδομένων. Καταργήστε και δημιουργήστε εκ νέου προελεύσεις δεδομένων που υπήρχαν πριν συσχετιστεί ένα περιβάλλον Dataverse για να [χρησιμοποιηθούν οι πύλες δεδομένων εσωτερικής εγκατάστασης](/data-integration/gateway/service-gateway-app.md).
+Οι προελεύσεις δεδομένων που δημιουργούνται μετά τη συσχέτιση ενός περιβάλλοντος Dataverse με το Customer Insights θα χρησιμοποιήσουν [ροές δεδομένων του Power Platform](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) από προεπιλογή. Οι ροές δεδομένων υποστηρίζουν τη σύνδεση εσωτερικής εγκατάστασης, χρησιμοποιώντας την πύλη δεδομένων. Καταργήστε και δημιουργήστε εκ νέου προελεύσεις δεδομένων που υπήρχαν πριν συσχετιστεί ένα περιβάλλον Dataverse για να [χρησιμοποιηθούν οι πύλες δεδομένων εσωτερικής εγκατάστασης](/data-integration/gateway/service-gateway-app).
 
 Οι πύλες δεδομένων από ένα υπάρχον περιβάλλον Power BI ή Power Apps θα είναι ορατές και μπορείτε να τις χρησιμοποιήσετε ξανά στο Customer Insights. Η σελίδα προέλευσης δεδομένων εμφανίζει τις συνδέσεις για μετάβαση στο περιβάλλον του Microsoft Power Platform όπου μπορείτε να προβάλετε και να διαμορφώσετε τις πύλες δεδομένων εσωτερικής εγκατάστασης.
 
@@ -45,7 +46,7 @@ ms.locfileid: "6304696"
 Θα δείτε το όνομα κάθε προέλευσης δεδομένων που ελήφθη, η κατάστασή της και την τελευταία φορά που ανανεώθηκαν τα δεδομένα για αυτήν την προέλευση. Μπορείτε να ταξινομήσετε τη λίστα των προελεύσεων δεδομένων με βάση κάθε στήλη.
 
 > [!div class="mx-imgBorder"]
-> ![Προστέθηκε μια προέλευση δεδομένων](media/configure-data-datasource-added.png "Προστέθηκε μια προέλευση δεδομένων")
+> ![Προστέθηκε μια προέλευση δεδομένων.](media/configure-data-datasource-added.png "Προστέθηκε μια προέλευση δεδομένων")
 
 |Κατάσταση  |Περιγραφή  |
 |---------|---------|

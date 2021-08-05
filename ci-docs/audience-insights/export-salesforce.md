@@ -1,7 +1,7 @@
 ---
 title: Εξαγωγή δεδομένων του Customer Insights στο Salesforce Marketing Cloud
 description: Μάθετε πώς να ρυθμίζετε τις παραμέτρους της σύνδεσης και της εξαγωγής στο Salesforce Marketing Cloud.
-ms.date: 06/24/2021
+ms.date: 07/23/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 123f8b2dbb6140785dec6c1b4164d2f513f66a53
-ms.sourcegitcommit: 057079532e31c12bac36f374857ba3dc847d6ad0
+ms.openlocfilehash: 8ce243918c2388e931a98df3bbe576ddf692f707
+ms.sourcegitcommit: 4823684a1399fd66ffecfce21735f2bc90a1733c
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "6314615"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "6660267"
 ---
 # <a name="export-segments-and-other-data-to-salesforce-marketing-cloud-preview"></a>Εξαγωγή τμημάτων και άλλων δεδομένων στο Salesforce Marketing Cloud (έκδοση προεπισκόπησης)
 
@@ -23,11 +23,6 @@ ms.locfileid: "6314615"
 ## <a name="prerequisites-for-connection"></a>Προϋποθέσεις για σύνδεση
 
 - Διαθεσιμότητα κεντρικού υπολογιστή SFTP και των αντίστοιχων διαπιστευτηρίων διαχειριστή. [Πώς να ρυθμίσετε θέσεις SFTP για το Salesforce Marketing Cloud](https://help.salesforce.com/articleView?id=sf.mc_es_configure_enhanced_ftp.htm&type=5) 
-
-## <a name="known-limitations"></a>Γνωστοί περιορισμοί
-
-- Ο χρόνος εκτέλεσης μιας εξαγωγής εξαρτάται από την απόδοση του συστήματός σας. Συνιστούμε δύο πυρήνες CPU και 1 Gb μνήμης ως ελάχιστη διαμόρφωση του διακομιστή σας. 
-- Η εξαγωγή οντοτήτων με έως 100 εκατομμύρια προφίλ πελατών μπορεί να διαρκέσει 90 λεπτά όταν χρησιμοποιείται η συνιστώμενη ελάχιστη ρύθμιση παραμέτρων. 
 
 ## <a name="set-up-the-connection-to-salesforce-marketing-cloud"></a>Ρύθμιση της σύνδεσης στο Salesforce Marketing Cloud
 
@@ -78,7 +73,7 @@ ms.locfileid: "6314615"
 
 3. Ρυθμίστε την αυτοματοποίηση, ώστε να εισαγάγετε τα δεδομένα στις επεκτάσεις δεδομένων. Μάθετε περισσότερα σχετικά με [τις αυτοματοποιήσεις απόθεσης αρχείων και τις προγραμματισμένες αυτοματοποιήσεις](https://help.salesforce.com/articleView?id=sf.mc_as_triggered_automations.htm&type=5).
 
-   Καθορίστε [μια αυτοματοποίηση απόθεσης αρχείων](https://help.salesforce.com/articleView?id=sf.mc_as_define_a_triggered_automation.htm&type=5)ή μια [προγραμματισμένη αυτοματοποίηση](https://help.salesforce.com/articleView?id=sf.mc_as_define_a_scheduled_automation.htm&type=5). 
+   Καθορίστε [μια αυτοματοποίηση απόθεσης αρχείων](https://help.salesforce.com/articleView?id=sf.mc_as_define_a_triggered_automation.htm&type=5) ή μια  [προγραμματισμένη αυτοματοποίηση](https://help.salesforce.com/articleView?id=sf.mc_as_define_a_scheduled_automation.htm&type=5). 
 
 Ακολουθεί ένα παράδειγμα [αυτοματοποίησης με SFTP](https://help.salesforce.com/articleView?id=sf.mc_as_ftp_and_triggered_automation_scenario.htm&type=5).
 

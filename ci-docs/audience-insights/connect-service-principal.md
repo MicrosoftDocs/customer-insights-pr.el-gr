@@ -1,5 +1,5 @@
 ---
-title: Σύνδεση με έναν λογαριασμό Azure Data Lake Storage Gen2 με έναν διευθυντή εξυπηρέτησης
+title: Σύνδεση σε έναν λογαριασμό Azure Data Lake Storage Gen2 με μια αρχή εξυπηρέτησης
 description: Χρησιμοποιήστε έναν διευθυντή εξυπηρέτησης Azure για πληροφορίες κοινού για να συνδεθείτε με τη δική σας λίμνη δεδομένων όταν την επισυνάπτετε σε πληροφορίες κοινού.
 ms.date: 02/10/2021
 ms.service: customer-insights
@@ -9,18 +9,18 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c670b0065a2833a6dc311d9e86d2b351140382ce
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: cc94ad49f12067d513db4663bff60620d6501eb0
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596499"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692113"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-gen2-account-with-an-azure-service-principal-for-audience-insights"></a>Σύνδεση με έναν λογαριασμό Azure Data Lake Storage Gen2 με έναν κύριο υπηρεσίας Azure για πληροφορίες κοινού
 
 Τα αυτοματοποιημένα εργαλεία που χρησιμοποιούν υπηρεσίες Azure θα πρέπει να έχουν πάντοτε περιορισμένα δικαιώματα. Αντί να συνδέεστε με εφαρμογές ως πλήρως προνομιούχος χρήστης, το Azure προσφέρει τις αρχές εξυπηρέτησης. Διαβάστε παρακάτω για να μάθετε πώς να συνδέσετε πληροφορίες κοινού με έναν λογαριασμό Azure Data Lake Storage Gen2 χρησιμοποιώντας έναν διευθυντή εξυπηρέτησης Azure αντί για κλειδιά λογαριασμών αποθήκευσης. 
 
-Μπορείτε να χρησιμοποιήσετε τον διευθυντή εξυπηρέτησης για να [προσθέσετε ή να επεξεργαστείτε με ασφάλεια έναν φάκελο Common Data Model ως προέλευση δεδομένων](connect-common-data-model.md) ή να [δημιουργήσετε ένα νέο ή να ενημερώσετε ένα υπάρχον περιβάλλον](manage-environments.md#create-an-environment-in-an-existing-organization).
+Μπορείτε να χρησιμοποιήσετε τον διευθυντή εξυπηρέτησης για να [προσθέσετε ή να επεξεργαστείτε με ασφάλεια έναν φάκελο Common Data Model ως προέλευση δεδομένων](connect-common-data-model.md) ή να [δημιουργήσετε ένα νέο ή να ενημερώσετε ένα υπάρχον περιβάλλον](get-started-paid.md).
 
 > [!IMPORTANT]
 > - Ο λογαριασμός αποθήκευσης Azure Data Lake Gen2 που σκοπεύει να χρησιμοποιήσει την αρχή της υπηρεσίας πρέπει να έχει [ενεργοποιημένο τον Ιεραρχικό χώρο ονομάτων (HNS)](/azure/storage/blobs/data-lake-storage-namespace).
@@ -81,7 +81,7 @@ ms.locfileid: "5596499"
 
 ## <a name="enter-the-azure-resource-id-or-the-azure-subscription-details-in-the-storage-account-attachment-to-audience-insights"></a>Εισαγάγετε το αναγνωριστικό πόρου Azure ή τις λεπτομέρειες συνδρομής Azure μέσα στο συνημμένο λογαριασμού χώρου αποθήκευσης σε Πληροφορίες κοινού.
 
-Επισυνάψτε έναν λογαριασμό αποθήκευσης Azure Data Lake στις πληροφορίες κοινού για να [αποθηκεύσετε δεδομένα εξόδου](manage-environments.md) ή να [τα χρησιμοποιήσετε ως προέλευση δεδομένων](connect-common-data-service-lake.md). Με την επιλογή της δυνατότητας Azure Data Lake μπορείτε να επιλέξετε μεταξύ μιας προσέγγισης βασισμένης σε πόρους ή μιας προσέγγισης βασισμένης σε συνδρομή.
+Επισυνάψτε έναν λογαριασμό αποθήκευσης Azure Data Lake στις πληροφορίες κοινού για να [αποθηκεύσετε δεδομένα εξόδου](manage-environments.md) ή να [τα χρησιμοποιήσετε ως προέλευση δεδομένων](connect-dataverse-managed-lake.md). Με την επιλογή της δυνατότητας Azure Data Lake μπορείτε να επιλέξετε μεταξύ μιας προσέγγισης βασισμένης σε πόρους ή μιας προσέγγισης βασισμένης σε συνδρομή.
 
 Ακολουθήστε τα παρακάτω βήματα για να παράσχετε τις απαιτούμενες πληροφορίες σχετικά με την επιλεγμένη προσέγγιση.
 

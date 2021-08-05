@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 2856888d6ac64d5daabcc5a234f13bc6f88bb3df
-ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
+ms.openlocfilehash: 0803be651662480ddf1fd22952f6a69ee1603001
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6306074"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554985"
 ---
 # <a name="segment-insights-preview"></a>Πληροφορίες τμήματος (έκδοση προεπισκόπησης)
 
@@ -44,7 +44,7 @@ ms.locfileid: "6306074"
 Μετά την ολοκλήρωση της ανάλυσης, βρείτε λεπτομέρειες σχετικά με αυτές τις δεδομενικές πληροφορίες στα **Τμήματα** > **Δεδομενικές πληροφορίες (έκδοση προεπισκόπησης)**.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="media/segment-overlap.png" alt-text="Λεπτομέρειες δεδομενικών πληροφοριών επικάλυψης τμήματος":::
+> :::image type="content" source="media/segment-overlap.png" alt-text="Λεπτομέρειες δεδομενικών πληροφοριών επικάλυψης τμήματος.":::
 
 Επιλέξτε δεδομενικές πληροφορίες για να δείτε τα αποτελέσματα της ανάλυσης:
 
@@ -77,7 +77,7 @@ ms.locfileid: "6306074"
 Μετά την ολοκλήρωση της ανάλυσης, βρείτε λεπτομέρειες σχετικά με αυτές τις δεδομενικές πληροφορίες στα **Τμήματα** > **Δεδομενικές πληροφορίες (έκδοση προεπισκόπησης)**.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="media/segment-differentiators.png" alt-text="Λεπτομέρειες δεδομενικών πληροφοριών παραγόντων διαφοροποίησης τμήματος":::
+> :::image type="content" source="media/segment-differentiators.png" alt-text="Λεπτομέρειες δεδομενικών πληροφοριών παραγόντων διαφοροποίησης τμήματος.":::
 
 Επιλέξτε δεδομενικές πληροφορίες για να δείτε τα αποτελέσματα της ανάλυσης. Μια ανάλυση παραγόντων διαφοροποίησης περιλαμβάνει δύο καρτέλες. Η καρτέλα **Χαρακτηριστικά** παραθέτει τα χαρακτηριστικά προφίλ που θεωρούνται ως παράγοντες διαφοροποίησης. Η καρτέλα **Μετρήσεις** παραθέτει παράγοντες διαφοροποίησης. Κάθε καρτέλα περιλαμβάνει τις εξής λεπτομέρειες:
 

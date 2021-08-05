@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: f92b36ac5364ea8586f9cbba7ba03178641555c0
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: 9331cf8057850e2fbe03622831f388e73056d938
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304650"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555399"
 ---
 # <a name="enrich-customer-profiles-with-custom-data-preview"></a>Εμπλουτισμός προφίλ πελατών με προσαρμοσμένα δεδομένα (προεπισκόπηση)
 
@@ -64,7 +64,7 @@ ms.locfileid: "6304650"
 1. Όταν ολοκληρωθεί η επαλήθευση, η σύνδεση μπορεί να αποθηκευτεί επιλέγοντας **Αποθήκευση**.
 
    > [!div class="mx-imgBorder"]
-   > ![Τμήμα παραθύρου ρύθμισης παραμέτρων σύνδεσης του Experian](media/enrichment-SFTP-connection.png "Τμήμα παραθύρου ρύθμισης παραμέτρων σύνδεσης του Experian")
+   > ![Σελίδα ρύθμισης παραμέτρων σύνδεσης του Experian.](media/enrichment-SFTP-connection.png "Τμήμα παραθύρου ρύθμισης παραμέτρων σύνδεσης του Experian")
 
 
 ## <a name="defining-field-mappings"></a>Ορισμός αντιστοιχίσεων πεδίων 
@@ -123,6 +123,6 @@ ms.locfileid: "6304650"
 
 ## <a name="next-steps"></a>Επόμενα βήματα
 
-Δημιουργήστε τα εμπλουτισμένα δεδομένα των πελατών σας. Δημιουργήστε [τμήματα](segments.md)και [μέτρα](measures.md) και, επιπλέον, [εξαγάγετε τα δεδομένα](export-destinations.md) για να παραδώσετε εξατομικευμένες εμπειρίες στους πελάτες σας.
+Δημιουργήστε τα εμπλουτισμένα δεδομένα των πελατών σας. Δημιουργήστε [τμήματα](segments.md) και [μέτρα](measures.md) και, επιπλέον, [εξαγάγετε τα δεδομένα](export-destinations.md) για να παραδώσετε εξατομικευμένες εμπειρίες στους πελάτες σας.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

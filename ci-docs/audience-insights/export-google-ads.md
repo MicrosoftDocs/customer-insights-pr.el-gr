@@ -9,12 +9,12 @@ author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c23c8b4e6758df08e04bf1e3ae0cba4dee06fe2b
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: c16967bf8ea1fd02b3f991d7b7d3715a71fa8681
+ms.sourcegitcommit: 9a99e48e96dfb3d895db428f37c30ae55eea66b7
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305340"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "6604277"
 ---
 # <a name="export-segments-to-google-ads-preview"></a>Εξαγωγή τμημάτων στο Google Ads (έκδοση προεπισκόπησης)
 
@@ -71,7 +71,7 @@ ms.locfileid: "6305340"
 
 1. Πληκτρολογήστε το **[αναγνωριστικό κοινού Google Ads](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.)** και επιλέξτε **Σύνδεση** για να προετοιμάσετε τη σύνδεση με το Google Ads.
 
-1. Στην ενότητα **Αντιστοίχιση δεδομένων**, στο πεδίο **Ηλεκτρονικό ταχυδρομείο**, επιλέξτε το πεδίο στο ενοποιημένο προφίλ πελάτη που αντιπροσωπεύει τη διεύθυνση ηλεκτρονικού ταχυδρομείου ενός πελάτη. Επαναλάβετε τα ίδια βήματα για τα πεδία '**Ονομα** και **Επώνυμο**.
+1. Στην ενότητα **Αντιστοίχιση δεδομένων**, στο πεδίο **Ηλεκτρονικό ταχυδρομείο**, επιλέξτε το πεδίο στο ενοποιημένο προφίλ πελάτη που αντιπροσωπεύει τη διεύθυνση ηλεκτρονικού ταχυδρομείου ενός πελάτη.
 
 1. Επιλέξτε τα τμήματα που θέλετε να εξαγάγετε. Μπορείτε να εξαγάγετε έως και 1000000 προφίλ πελατών συνολικά στο Google Ads.
 

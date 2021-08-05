@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 9326f821f9970ba2254ab804814e369abb677eb0
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: f98af8fb1c1d1ae050a5273286d35cf276d9fb17
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304742"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554481"
 ---
 # <a name="work-with-customer-insights-apis"></a>Εργασία με API Customer Insights
 
@@ -35,7 +35,7 @@ ms.locfileid: "6304742"
  
    Η ενεργοποίηση των API δημιουργεί ένα πρωτεύον και δευτερεύον κλειδί συνδρομής για την παρουσία σας που χρησιμοποιείται στις αιτήσεις API. Μπορείτε να αναδημιουργήσετε τα κλειδιά επιλέγοντας την **Αναδημιουργία πρωτεύοντος** ή την **Αναδημιουργία δευτερευόντος** στα **Διαχειριστής** > **Δικαιώματα** > **API**.
 
-   :::image type="content" source="media/enable-apis.gif" alt-text="Ενεργοποίηση API Customer Insights":::
+   :::image type="content" source="media/enable-apis.gif" alt-text="Ενεργοποίηση Customer Insights API.":::
 
 1. Επιλέξτε **Εξερεύνηση των API μας** για να [δοκιμάσετε τα API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
 
@@ -129,7 +129,7 @@ ms.locfileid: "6304742"
  
    Εναλλακτικά, εκτελέστε αυτήν την εντολή στην **Κονσόλα διαχειριστή πακέτων NuGet**: `Install-Package -Id Microsoft.Dynamics.CustomerInsights.Api -Source nuget.org -ProjectName <project name> [-Version <version>]`
 
-   :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Προσθήκ πακέτου NuGet σε έργο Visual Studio":::
+   :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Προσθήκη πακέτου NuGet σε έργο Visual Studio.":::
 
 #### <a name="use-the-c-client-library"></a>Χρησιμοποιήστε τη βιβλιοθήκη πελάτη C#
 
@@ -141,7 +141,7 @@ ms.locfileid: "6304742"
 
 1. Περάστε αυτό το `HttpClient` στην κατασκευή του πελάτη `CustomerInsights`.
 
-   :::image type="content" source="media/httpclient-sample.png" alt-text="Δείγμα httpclient":::
+   :::image type="content" source="media/httpclient-sample.png" alt-text="Δείγμα httpclient.":::
 
 1. Πραγματοποιήστε κλήσεις με το πρόγραμμα-πελάτη στις «μεθόδους επέκτασης», για παράδειγμα, `GetAllInstancesAsync`. Εάν προτιμάτε την πρόσβαση στο υποκείμενο `Microsoft.Rest.HttpOperationResponse`, χρησιμοποιήστε τις «μεθόδους μηνυμάτων http», για παράδειγμα `GetAllInstancesWithHttpMessagesAsync`.
 

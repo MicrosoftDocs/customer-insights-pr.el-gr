@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: c9adb4d7db74573d0512ae7a68a0e7ab51c994a0
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: 8ab55d101f98169b8f794ce580ddd0a71ede6642
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304604"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554618"
 ---
 # <a name="customer-profiles"></a>Προφίλ πελατών
 
@@ -23,11 +23,11 @@ ms.locfileid: "6304604"
 Οι πελάτες μπορούν να είναι μεμονωμένα άτομα ή οργανισμοί (προεπισκόπηση). Κάθε προφίλ πελάτη ή οργανισμού αντιπροσωπεύεται από ένα πλακίδιο. Επιλέξτε ένα πλακίδιο για να δείτε πρόσθετες πληροφορίες σχετικά με το συγκεκριμένο πελάτη ή οργανισμό. Χρησιμοποιήστε τα στοιχεία ελέγχου σελιδοποίησης που βρίσκονται στο κάτω μέρος της σελίδας για να δείτε πρόσθετες καρτέλες.
 
 > [!div class="mx-imgBorder"] 
-> ![Προφίλ πελατών B2C](media/profiles-customers.png "Προφίλ πελατών B2C")
+> ![Προφίλ πελατών B2C.](media/profiles-customers.png "Προφίλ πελατών B2C")
 
 Οργανισμοί (προεπισκόπηση)
 > [!div class="mx-imgBorder"] 
-> ![Προφίλ πελατών B2B](media/profile-customers-b2b.png "Προφίλ πελατών B2B")
+> ![Προφίλ πελατών B2B.](media/profile-customers-b2b.png "Προφίλ πελατών B2B")
 
 > [!NOTE]
 > Εάν δεν μπορείτε να δείτε τα πλακίδια όταν επιλέγετε **Πελάτες** στην περιήγηση, ο Διαχειριστής σας πρέπει να [καθορίσει τουλάχιστον ένα χαρακτηριστικό με δυνατότητα αναζήτησης](search-filter-index.md) στο **Ευρετήριο φίλτρων και αναζήτησης**.
@@ -47,7 +47,7 @@ ms.locfileid: "6304604"
 2. Επιλέξτε τα πλαίσια δίπλα στα χαρακτηριστικά με τα οποία θέλετε να φιλτράρετε τους πελάτες.
 
    > [!div class="mx-imgBorder"] 
-   > ![Προφίλ πελατών](media/profiles-customers3.png "Προφίλ πελατών")
+   > ![Προφίλ πελατών.](media/profiles-customers3.png "Προφίλ πελατών")
 
 3. Καταργήστε τα φίλτρα σας επιλέγοντας **Απαλοιφή φίλτρων** στη σελίδα **Πελάτες**.
 

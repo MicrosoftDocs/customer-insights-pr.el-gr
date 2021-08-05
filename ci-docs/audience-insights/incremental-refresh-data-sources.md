@@ -9,12 +9,12 @@ ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: 03f76bcfc7336d8430146e8a26ffa649c6a17db0
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 1af2e4c42dc5890556c90bb3e5ef1aeb0621fda0
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596821"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554159"
 ---
 # <a name="incremental-refresh-for-data-sources-based-on-power-query"></a>Σταδιακή ανανέωση για προελεύσεις δεδομένων βασισμένες στο Power Query
 
@@ -45,7 +45,7 @@ ms.locfileid: "5596821"
 1. Στις **Ρυθμίσεις τμηματικής ανανέωσης** θα ρυθμίσετε τις παραμέτρους της στοιχειώδους ανανέωσης για όλες τις οντότητες που επιλέξατε κατά τη δημιουργία της προέλευσης δεδομένων.
 
    > [!div class="mx-imgBorder"]
-   > ![Ρύθμιση παραμέτρων οντοτήτων σε προέλευση δεδομένων για σταδιακή ανανέωση](media/incremental-refresh-settings.png "Ρύθμιση παραμέτρων οντοτήτων σε προέλευση δεδομένων για σταδιακή ανανέωση")
+   > ![Ρύθμιση παραμέτρων οντοτήτων σε προέλευση δεδομένων για σταδιακή ανανέωση.](media/incremental-refresh-settings.png "Ρύθμιση παραμέτρων οντοτήτων σε προέλευση δεδομένων για σταδιακή ανανέωση")
 
 1. Επιλέξτε μια οντότητα και δώστε τις εξής λεπτομέρειες:
 

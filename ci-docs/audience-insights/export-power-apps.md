@@ -9,12 +9,12 @@ ms.topic: how-to
 author: Nils-2m
 ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: 3fa91553fd50a22ab62b5a2b1e3f13b9483776a8
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 2ab5a9059991611a2959a19cc688d232ec782e1e
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5598155"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554113"
 ---
 # <a name="microsoft-power-apps-connector-preview"></a>Σύνδεση Microsoft Power Apps (προεπισκόπηση)
 
@@ -56,12 +56,12 @@ ms.locfileid: "5598155"
 1. Προσθέστε ένα στοιχείο ελέγχου **Συλλογή** σε μια εφαρμογή που δημιουργείτε.
 
 > [!div class="mx-imgBorder"]
-> ![Προσθήκη στοιχείου συλλογής](media/connector-powerapps9.png "Προσθήκη στοιχείου συλλογής")
+> ![Προσθήκη στοιχείου συλλογής.](media/connector-powerapps9.png "Προσθήκη στοιχείου συλλογής")
 
 1. Επιλέξτε **Πελάτης** ως προέλευση δεδομένων για τα στοιχεία.
 
     > [!div class="mx-imgBorder"]
-    > ![Επιλογή μιας προέλευσης δεδομένων](media/choose-datasource-powerapps.png "Επιλογή μιας προέλευσης δεδομένων")
+    > ![Επιλογή μιας προέλευσης δεδομένων.](media/choose-datasource-powerapps.png "Επιλογή μιας προέλευσης δεδομένων")
 
 1. Μπορείτε να αλλάξετε τον πίνακα δεδομένων στα δεξιά για να επιλέξετε το πεδίο για την οντότητα Πελάτη που θα εμφανίζεται στη συλλογή.
 

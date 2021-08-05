@@ -9,21 +9,21 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 03299610fd41a7e142e3c9723fad56ce7f90e083
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: e563619f40be859f3f02638adbd60b80423182b3
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267952"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554374"
 ---
 # <a name="teams-bot-for-dynamics-365-customer-insights-preview"></a>Bot του Teams για το Dynamics 365 Customer Insights (προεπισκόπηση)
 
 Συνδεθείτε με το Microsoft Teams για να επιτρέψετε σε ένα bot να αναζητήσει ενοποιημένα προφίλ πελατών στα κανάλια Teams.
 
 > [!div class="mx-imgBorder"]
-> ![Bot Teams που εμφανίζουν μια καρτέλα πελάτη](media/teams-bot.png "Bot Teams που εμφανίζουν μια καρτέλα πελάτη")
+> ![Bot Teams που εμφανίζουν μια καρτέλα πελάτη.](media/teams-bot.png "Bot Teams που εμφανίζουν μια καρτέλα πελάτη")
 
-## <a name="prerequisites"></a>Προαπαιτούμενα στοιχεία
+## <a name="prerequisites"></a>Προϋποθέσεις
 
 Για να ρυθμίσετε και να ρυθμίσετε τις παραμέτρους του bot, πρέπει να πληρούνται οι ακόλουθες προϋποθέσεις:
 

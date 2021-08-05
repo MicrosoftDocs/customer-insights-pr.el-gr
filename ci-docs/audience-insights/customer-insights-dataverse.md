@@ -1,5 +1,5 @@
 ---
-title: Δεδομένα Customer Insights στο Microsoft Dataverse
+title: Δεδομένα του Customer Insights στο Microsoft Dataverse
 description: Χρήση οντοτήτων Customer Insights ως πίνακες στο Microsoft Dataverse.
 ms.date: 06/15/2021
 ms.reviewer: mhart
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 7157ad930f3cea17c12bd4f95028d291483329d3
-ms.sourcegitcommit: e5425f060c8d80f9510283dc610ce70a4e709b1e
+ms.openlocfilehash: 220e01a06711a5d35b8df09e265017a6d8fd0490
+ms.sourcegitcommit: 5c9c54ffe045017c19f0042437ada2c101dcaa0f
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "6259191"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "6650042"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>Εργασία με δεδομένα Customer Insights στο Microsoft Dataverse
 
@@ -24,11 +24,11 @@ ms.locfileid: "6259191"
 
 **Οργανισμοί με υπάρχοντα περιβάλλοντα Dataverse**
 
-Οι οργανισμοί που χρησιμοποιούν ήδη το Dataverse μπορούν [να χρησιμοποιήσουν ένα από τα υπάρχοντα περιβάλλοντα τους Dataverse](manage-environments.md#create-an-environment-in-an-existing-organization) όταν ένας διαχειριστής δημιουργεί πληροφορίες κοινού. Παρέχοντας τη διεύθυνση URL στο περιβάλλον Dataverse, επισυνάπτεται στο νέο περιβάλλον πληροφοριών κοινού. Για να εξασφαλιστεί η καλύτερη δυνατή απόδοση, τα περιβάλλοντα Customer Insights και Dataverse πρέπει να φιλοξενούνται στην ίδια περιοχή.
+Οι οργανισμοί που χρησιμοποιούν ήδη το Dataverse μπορούν [να χρησιμοποιήσουν ένα από τα υπάρχοντα περιβάλλοντα τους Dataverse](get-started-paid.md) όταν ένας διαχειριστής δημιουργεί πληροφορίες κοινού. Παρέχοντας τη διεύθυνση URL στο περιβάλλον Dataverse, επισυνάπτεται στο νέο περιβάλλον πληροφοριών κοινού. Για να εξασφαλιστεί η καλύτερη δυνατή απόδοση, τα περιβάλλοντα Customer Insights και Dataverse πρέπει να φιλοξενούνται στην ίδια περιοχή.
 
 Για να επισυνάψετε ένα περιβάλλον Dataverse, αναπτύξτε το στοιχείο **Ρυθμίσεις για προχωρημένους** κατά τη δημιουργία πληροφοριών κοινού. Δώστε τη **Διεύθυνση URL περιβάλλοντος Microsoft Dataverse** και επιλέξτε το πλαίσιο ελέγχου για να **Ενεργοποιήσετε την κοινή χρήση δεδομένων**.
 
-:::image type="content" source="media/Datasharing-with-DataverseMDL.png" alt-text="alt":::
+:::image type="content" source="media/Datasharing-with-DataverseMDL.png" alt-text="alt.":::
 
 **Νέος οργανισμός**
 

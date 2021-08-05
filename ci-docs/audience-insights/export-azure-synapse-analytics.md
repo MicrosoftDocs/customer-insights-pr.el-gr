@@ -9,12 +9,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 822082d661863e737ea3d3a749a6c878db766967
-ms.sourcegitcommit: e8e03309ba2515374a70c132d0758f3e1e1851d0
+ms.openlocfilehash: 7ee57aa9e86ebf9bd1989d88750642f0b01bd4bf
+ms.sourcegitcommit: f18635c29bb25d9e424a3f5825dc2696278450cf
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5977377"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "6327364"
 ---
 # <a name="export-data-to-azure-synapse-analytics-preview"></a>Εξαγωγή δεδομένων σε Azure Synapse Analytics (έκδοση προεπισκόπησης)
 
@@ -74,8 +74,10 @@ ms.locfileid: "5977377"
 1. Παράσχετε ένα αναγνωρίσιμο **εμφανιζόμενο όνομα** για την εξαγωγή σας και ένα **όνομα βάσης δεδομένων**.
 
 1. Επιλέξτε ποιες οντότητες θέλετε να εξαγάγετε στο Azure Synapse Analytics.
+   > [!NOTE]
+   > Οι προελεύσεις δεδομένων που βασίζονται σε έναν [φάκελο Common Data Model](connect-common-data-model.md) δεν υποστηρίζονται.
 
-1. Επιλέξτε **Αποθήκευση**.
+2. Επιλέξτε **Αποθήκευση**.
 
 Η αποθήκευση μιας εξαγωγής δεν εκτελεί αμέσως την εξαγωγή.
 

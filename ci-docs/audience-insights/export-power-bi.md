@@ -1,7 +1,7 @@
 ---
 title: Σύνδεσμος Power BI
 description: Μάθετε πώς μπορείτε να χρησιμοποιείτε τον σύνδεσμο του Dynamics 365 Customer Insights στο Power BI.
-ms.date: 09/21/2020
+ms.date: 07/23/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: e43e2f9dbc84ebfbf2154990a752740f973296cb
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: faeb95bd7d2fe3cb220308cdee559b3347c5af54
+ms.sourcegitcommit: f98b6b2058f384365f222d1f9ba0cc9ce801f09d
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596039"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "6661102"
 ---
 # <a name="connector-for-power-bi-preview"></a>Σύνδεση για το Power BI (προεπισκόπηση)
 
@@ -39,7 +39,7 @@ ms.locfileid: "5596039"
 
 1. Στο πλαίσιο διαλόγου **Navigator**. βλέπετε τη λίστα όων των περιβαλλόντων στα οποία έχετε πρόσβαση. Αναπτύξτε ένα περιβάλλον και ανοίξτε οποιονδήποτε από τους φακέλους (οντότητες, μέτρα, τμήματα, εμπλουτισμοί). Για παράδειγμα, ανοίξτε τον φάκελο **Οντότητες** για να δείτε όλες τις οντότητες που μπορείτε να εισαγάγετε.
 
-   ![Power BI Πλοηγός συνδέσμων](media/power-bi-navigator.png "Πλοηγός συνδέσμων Power BI")
+   ![Power BI Πλοηγός συνδέσμων.](media/power-bi-navigator.png "Πλοηγός συνδέσμων Power BI")
 
 1. Επιλέξτε τα πλαίσια ελέγχου που βρίσκονται δίπλα στις οντότητες για να συμπεριλάβετε και να **φορτώσετε**. Μπορείτε να επιλέξετε πολλές οντότητες από πολλά περιβάλλοντα.
 
@@ -68,5 +68,11 @@ ms.locfileid: "5596039"
 3. Καταργήστε τυχόν διπλότυπες σχέσεις που έχουν αναγνωριστεί.
 
 Μετά την κατάργηση των διπλότυπων σχέσεων, προσπαθήστε να ρυθμίσετε ξανά τις παραμέτρους του συνδέσμου Power BI. Το περιβάλλον θα πρέπει να είναι τώρα διαθέσιμο.
+
+### <a name="errors-on-date-fields-when-loading-entities-in-power-bi-desktop"></a>Σφάλματα στα πεδία ημερομηνίας κατά τη φόρτωση οντοτήτων στο Power BI Desktop
+
+Κατά τη φόρτωση οντοτήτων που περιέχουν πεδία με μορφή ημερομηνίας όπως η ΜΜ/ΗΗ/ΕΕΕΕ, μπορείτε να βρείτε σφάλματα λόγω ασυμφωνίας των μορφών τοπικών ρυθμίσεων. Αυτή η αναντιστοιχία προκύπτει όταν το αρχείο σας Power BI Desktop έχει διαφορετικές τοπικές ρυθμίσεις από τα Αγγλικά (Ηνωμένων Πολιτειών), επειδή τα πεδία ημερομηνίας στις πληροφορίες κοινού αποθηκεύονται σε μορφή ΗΠΑ.
+
+Το αρχείο Power BI Desktop έχει μια τοπική ρύθμιση, η οποία εφαρμόζεται κατά την ανάκτηση δεδομένων. Εάν αυτά τα πεδία ημερομηνίας ερμηνεύονται σωστά, ορίστε τις τοπικές ρυθμίσεις στο αρχείο .BPI στα Αγγλικά (Ηνωμένων Πολιτειών). [Μάθετε πώς να αλλάζετε τις τοπικές ρυθμίσεις ενός αρχείου Power BI desktop](/power-bi/fundamentals/supported-languages-countries-regions.md#choose-the-locale-for-importing-data-into-power-bi-desktop).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: f588f45ed11efffbb335003642a4b92810153017
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 96fbd18a20e0df7abd4e79ff77e2c3a396e33ccc
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596775"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554205"
 ---
 # <a name="similar-customers-preview"></a>Παρόμοιοι πελάτες (έκδοση προεπισκόπησης)
 
@@ -50,7 +50,7 @@ ms.locfileid: "5596775"
 Μετά την επεξεργασία του αντίστοιχου τμήματος, θα βρείτε το νέο τμήμα που περιλαμβάνεται στη σελίδα **Τμήματα**.
 
 > [!div class="mx-imgBorder"]
-> ![Τμήμα παρόμοιων πελατών](media/expanded-segment.png "Τμήμα παρόμοιων πελατών")
+> ![Τμήμα παρόμοιων πελατών.](media/expanded-segment.png "Τμήμα παρόμοιων πελατών")
 
 Επιλέξτε **Προβολή** στη γραμμή ενεργειών για να ανοίξετε τις λεπτομέρειες του τμήματος. Αυτή η προβολή περιέχει πληροφορίες σχετικά με τη διανομή των αποτελεσμάτων στις [βαθμολογίες ομοιότητας](#about-similarity-scores). Επίσης, θα βρείτε τις τιμές της βαθμολογίας ομοιότητας στην **Προεπισκόπηση μέλη τμήματος**.
 
