@@ -4,17 +4,17 @@ metadata:
   author: m-hartmann
   description: Βρείτε σχετικά άρθρα για να ξεκινήσετε με το περιεχόμενο της βοήθειας.
   ms.author: mhart
-  ms.date: 10/29/2020
+  ms.date: 07/30/2021
   ms.service: customer-insights
   ms.topic: landing-page
-  ms.openlocfilehash: e9c4aa3347d6f477751804790bd3dc9b20eb5dbe
-  ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+  ms.openlocfilehash: 1446a2bcb24739187a37b2024c9a6070ab008989d722ebf84ef5259ec2ee4d5c
+  ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
   ms.translationtype: HT
   ms.contentlocale: el-GR
-  ms.lasthandoff: 03/15/2021
-  ms.locfileid: "5598460"
+  ms.lasthandoff: 08/10/2021
+  ms.locfileid: "7036557"
 title: Τεκμηρίωση Dynamics 365 Customer Insights
-summary: Βρείτε χρήσιμους πόρους για να ξεκινήσετε και να ενημερωθείτε σχετικά με τις δυνατότητες και τις ικανότητες του Customer Insights.
+summary: Βρείτε χρήσιμους πόρους για να ξεκινήσετε και να μάθετε για τα χαρακτηριστικά και τις δυνατότητες του Customer Insights.
 landingContent:
 - title: Γνωρίστε το Customer Insights
   linkLists:
@@ -23,16 +23,16 @@ landingContent:
     - text: Επισκόπηση Customer Insights
       url: overview.md
     - text: Προγράμματα έκδοσης
-      url: /dynamics365-release-plan/2020wave2/customer-data-platform/dynamics365-customer-insights/planned-features
-    - text: Αποκτήστε πρόσβαση στο περιβάλλον σας
-      url: https://home.ci.ai.dynamics.com/
+      url: /dynamics365-release-plan/
+    - text: Ανακαλύψτε το CDP
+      url: https://dynamics.microsoft.com/ai/customer-insights/
 - title: Έναρξη με τις πληροφορίες κοινού
   linkLists:
   - linkListType: get-started
     links:
     - text: Εγγραφή για δωρεάν δοκιμή
       url: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
-    - text: Τι νέο υπάρχει
+    - text: Τι νέα υπάρχουν
       url: audience-insights/whats-new-audience-insights.md
     - text: Τεκμηρίωση πληροφοριών κοινού
       url: audience-insights/index.yml

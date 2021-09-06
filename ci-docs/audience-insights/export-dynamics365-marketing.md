@@ -1,7 +1,7 @@
 ---
 title: Εξαγωγή δεδομένων Customer Insights στο Dynamics 365 Marketing
 description: Μάθετε πώς να ρυθμίσετε τις παραμέτρους της σύνδεσης και της εξαγωγής στο Dynamics 365 Marketing.
-ms.date: 03/03/2021
+ms.date: 08/24/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,18 +9,20 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: bd8189f8daee1a6aea75e75e116186f62a360ba4
-ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
+ms.openlocfilehash: b8e63a738abaf4fbb902e3edbf83f5a815978478
+ms.sourcegitcommit: 8e89575fe2acb4b289fc157fa7c4c29caf9be967
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "6692481"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7417205"
 ---
 # <a name="use-segments-in-dynamics-365-marketing-preview"></a>Χρήση τμημάτων στο Dynamics 365 Marketing (έκδοση προεπισκόπησης)
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-Χρησιμοποιήστε τα [τμήματα](segments.md) για τη δημιουργία εκστρατειών και την επικοινωνία με συγκεκριμένες ομάδες πελατών με το Dynamics 365 Marketing. Για περισσότερες πληροφορίες, ανατρέξτε στην ενότητα [Χρήση τμημάτων από το Dynamics 365 Customer Insights με το Dynamics 365 Marketing](/dynamics365/marketing/customer-insights-segments)
+Χρησιμοποιήστε τα [τμήματα](segments.md) για τη δημιουργία εκστρατειών και την επικοινωνία με συγκεκριμένες ομάδες πελατών με το Dynamics 365 Marketing. Για περισσότερες πληροφορίες, ανατρέξτε στην ενότητα [Χρήση τμημάτων από το Dynamics 365 Customer Insights με το Dynamics 365 Marketing](/dynamics365/marketing/customer-insights-segments).
+
+Εάν χρησιμοποιείτε τις νέες δυνατότητες του Dynamics 365 Marketing για ενορχήστρωση διαδρομής πελάτη σε πραγματικό σε έναν οργανισμό Dataverse, δεν χρειάζεται να δημιουργήσετε μια τυπική εξαγωγή στο Dynamics 365 Marketing. Οι επαφές και τα τμήματα από πληροφορίες κοινού είναι διαθέσιμες απευθείας στο Dynamics 365 Marketing μετά τη σύνδεση του Marketing και του Customer Insights. Πριν διαγράψετε τις υπάρχουσες εξαγωγές, εξετάστε την τεκμηρίωση σχετικά με τον [τρόπο σύνδεσης πληροφοριών κοινού και την ενορχήστρωση διαδρομής πελάτη του Dynamics 365 Marketing](/dynamics365/marketing/real-time-marketing-ci-profile).
 
 ## <a name="prerequisite-for-a-connection"></a>Προϋπόθεση για μια σύνδεση
 

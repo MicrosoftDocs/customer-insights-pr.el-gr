@@ -3,21 +3,21 @@ title: Επισκόπηση προϊόντος
 author: m-hartmann
 description: Αποκτήστε μια επισκόπηση για το Dynamics 365 Customer Insights και τις δυνατότητές του.
 ms.author: mhart
-ms.date: 02/16/2021
+ms.date: 07/30/2021
 ms.service: customer-insights
 ms.topic: overview
 ms.manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 1bc75959229fd2ffef9a5fd5617889888eb72e55
-ms.sourcegitcommit: b78c9680b213204e6b0ed47f0147205083f6a98f
+ms.openlocfilehash: 651bd151a77b9d7f44d5fcca15da0f131b9fb3f07ffc89bfac9c0aa6f799e9b1
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "6539389"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7036511"
 ---
 # <a name="product-overview-for-dynamics-365-customer-insights"></a>Επισκόπηση προϊόντος για το Dynamics 365 Customer Insights
 
-Το Dynamics 365 Customer Insights είναι ένα μέρος της πλατφόρμας δεδομένων πελατών (CDP) της Microsoft που βοηθά στην παροχή εξατομικευμένων εμπειριών πελατών. Οι δυνατότητες της πλατφόρμας παρέχουν πληροφορίες σχετικά με το ποιοι είναι οι πελάτες σας και πώς εμπλέκονται με την πλατφόρμα σας. Ενοποιήστε τα δεδομένα των πελατών από πολλαπλές πηγές για να αποκτήσετε μια ενιαία προβολή των πελατών.
+Το [Dynamics 365 Customer Insights](https://dynamics.microsoft.com/ai/customer-insights/) είναι ένα μέρος της πλατφόρμας δεδομένων πελατών (CDP) της Microsoft που βοηθά στην παροχή εξατομικευμένων εμπειριών πελατών. Οι δυνατότητες της πλατφόρμας παρέχουν πληροφορίες σχετικά με το ποιοι είναι οι πελάτες σας και πώς εμπλέκονται με την πλατφόρμα σας. Ενοποιήστε τα δεδομένα των πελατών από πολλαπλές πηγές για να αποκτήσετε μια ενιαία προβολή των πελατών.
 
 
 - Οι [πληροφορίες κοινού](audience-insights/overview.md) σάς βοηθούν να μετατρέψετε την επιχείρησή σας σε έναν οργανισμό με επίκεντρο τον πελάτη. Οι επαγγελματίες μάρκετινγκ, πωλήσεων και εξυπηρέτησης έχουν τις πληροφορίες που χρειάζονται για να εξατομικεύουν τις εμπειρίες. Συνδέστε δεδομένα από πηγές συναλλαγών, συμπεριφοράς και παρατήρησης, για να δημιουργήσετε μια σφαιρική προβολή πελατών. Δείτε τα αποτελέσματα πιο γρήγορα με ένα CDP σχεδιασμένο για να παρέχει πληροφορίες που μπορούν να εφαρμοστούν. 
