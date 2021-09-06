@@ -1,6 +1,6 @@
 ---
-title: Εξαγωγή δεδομένων του Customer Insights στο Adobe Experience Platform
-description: Μάθετε πώς να χρησιμοποιείτε τμήματα στατιστικών κοινού στην πλατφόρμα Adobe Experience.
+title: Εξαγωγή δεδομένων Customer Insights στο Adobe Experience Platform
+description: Μάθετε πώς να χρησιμοποιείτε τμήματα πληροφοριών κοινού στο Adobe Experience Platform.
 ms.date: 03/29/2021
 ms.reviewer: mhart
 ms.service: customer-insights
@@ -9,16 +9,16 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: 1045d0e373fd5ea8987684e51bd9a07b7b535ee3
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: fac976a49b1b5c5485b75e1262135738c913bd2230be7df8aa0ec12c59734053
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305524"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7032117"
 ---
-# <a name="use-customer-insights-segments-in-adobe-experience-platform-preview"></a>Χρησιμοποιήστε τμήματα Customer Insights στο Adobe Experience Platform (έκδοση προεπισκόπησης)
+# <a name="use-customer-insights-segments-in-adobe-experience-platform-preview"></a>Χρήση τμημάτων του Customer Insights στο Adobe Experience Platform (έκδοση προεπισκόπησης)
 
-Ως χρήστης των στατιστικών κοινού στο Dynamics 365 Customer Insights, ενδέχεται να έχετε δημιουργήσει τμήματα για να κάνετε τις εκστρατείες μάρκετινγκ πιο αποτελεσματικές στοχεύοντας σε σχετικά κοινά. Για να χρησιμοποιήσετε ένα τμήμα από πληροφορίες κοινού στο Adobe Experience Platform και σε εφαρμογές όπως το Adobe Campaign Standard, θα πρέπει να ακολουθήσετε μερικά βήματα που περιγράφονται σε αυτό το άρθρο.
+Ως χρήστης των στατιστικών κοινού στο Dynamics 365 Customer Insights, ενδέχεται να έχετε δημιουργήσει τμήματα για να κάνετε τις εκστρατείες μάρκετινγκ πιο αποτελεσματικές στοχεύοντας σε σχετικά κοινά. Για να χρησιμοποιήσετε ένα τμήμα από πληροφορίες κοινού στο Adobe Experience Platform και εφαρμογές όπως το Adobe Campaign Standard, πρέπει να ακολουθήσετε μερικά βήματα που περιγράφονται σε αυτό το άρθρο.
 
 :::image type="content" source="media/AEP-flow.png" alt-text="Διάγραμμα διεργασίας των βημάτων που περιγράφονται σε αυτό το άρθρο.":::
 
@@ -26,12 +26,12 @@ ms.locfileid: "6305524"
 
 -   Άδεια χρήσης του Dynamics 365 Customer Insights
 -   Άδεια χρήσης του Adobe Experience Platform
--   Άδεια χρήσης του Adobe Campaign Standard
+-   Άδεια χρήσης Adobe Campaign Standard
 -   Λογαριασμό χώρου αποθήκευσης αντικειμένων Blob Azure
 
 ## <a name="campaign-overview"></a>Επισκόπηση εκστρατείας
 
-Για να κατανοήσετε καλύτερα πώς μπορείτε να χρησιμοποιήσετε τμήματα από πληροφορίες κοινού στο Adobe Experience Platform, δείτε ένα φανταστικό δείγμα εκστρατείας.
+Για να κατανοήσετε καλύτερα τον τρόπο με τον οποίο μπορείτε να χρησιμοποιήσετε πληροφορίες κοινού στο Adobe Experience Platform, ας δούμε φαντατικό δείγμα εκστρατείας.
 
 Ας υποθέσουμε ότι η εταιρεία σας προσφέρει μια μηνιαία υπηρεσία βάσει συνδρομής στους πελάτες σας στις Ηνωμένες Πολιτείες. Θέλετε να προσδιορίσετε τους πελάτες, των οποίων οι συνδρομές πρέπει να ανανεωθούν μέσα στις επόμενες οκτώ ημέρες, αλλά δεν έχουν ανανεώσει ακόμα τη συνδρομή τους. Για να διατηρήσετε αυτούς τους πελάτες, θέλετε να τους στείλετε μια διαφημιστική προσφορά μέσω ηλεκτρονικού ταχυδρομείου, χρησιμοποιώντας το Adobe Experience Platform.
 
@@ -93,7 +93,7 @@ ms.locfileid: "6305524"
 Τώρα μπορείτε να [εξαγάγετε το τμήμα κατ' απαίτηση](export-destinations.md#run-exports-on-demand). Η εξαγωγή θα εκτελεστεί επίσης με κάθε [προγραμματισμένη ανανέωση](system.md).
 
 > [!NOTE]
-> Βεβαιωθείτε ότι ο αριθμός των καρτελών στο εξαχθέν τμήμα βρίσκεται εντός του επιτρεπόμενου ορίου της άδειας χρήσης που έχετε για το Adobe Campaign Standard.
+> Βεβαιωθείτε ότι ο αριθμός των καρτελών στο τμήμα που έχει εξαχθεί βρίσκεται εντός του επιτρεπόμενου ορίου της άδειας χρήσης του Adobe Campaign Standard.
 
 Τα δεδομένα που έχουν εξαχθεί αποθηκεύονται στο κοντέινερ του χώρου αποθήκευσης αντικειμένων blob Azure που διαμορφώσατε παραπάνω. Η παρακάτω διαδρομή φακέλου δημιουργείται αυτόματα στο κοντέινερ σας:
 
@@ -107,21 +107,21 @@ ms.locfileid: "6305524"
 
 ## <a name="define-experience-data-model-xdm-in-adobe-experience-platform"></a>Καθορισμός μοντέλου δεδομένων εμπειρίας (XDM) στο Adobe Experience Platform
 
-Για να μπορούν να χρησιμοποιηθούν τα εξαχθέντα δεδομένα από τις πληροφορίες κοινού στο Adobe Experience Platform, πρέπει να ορίσουμε το σχήμα του μοντέλου δεδομένων εμπειρίας και [να ρυθμίσουμε τα δεδομένα για το προφίλ πελάτη σε πραγματικό χρόνο](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/dataset-configuration.html#tutorials).
+Για να είναι δυνατή η χρήση των δεδομένων που έχουν εξαχθεί από πληροφορίες κοινού εντός του Adobe Experience Platform, θα πρέπει να ορίσουμε το σχήμα του μοντέλου δεδομένων εμπειρίας και [να ρυθμίσουμε τις παραμέτρους των δεδομένων για το προφίλ πελάτη σε πραγματικό χρόνο](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/dataset-configuration.html#tutorials).
 
 Μάθετε [τι είναι το XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) και κατανοήστε τα [βασικά στοιχεία της σύνθεσης σχημάτων](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#schema).
 
 ## <a name="import-data-into-adobe-experience-platform"></a>Εισαγωγή δεδομένων στο Adobe Experience Platform
 
-Τώρα που όλα είναι έτοιμα, θα πρέπει να εισαγάγετε τα προετοιμασμένα δεδομένα κοινού ααπό τις πληροφορίες κοινού στο Adobe Experience Platform.
+Τώρα που όλα είναι έτοιμα, θα πρέπει να εισαγάγετε τα προετοιμασμένα δεδομένα κοινού από πληροφορίες κοινού στο Adobe Experience Platform.
 
 Πρώτα, [δημιουργήστε μια σύνδεση προέλευσης χώρου αποθήκευσης αντικειμένων Blob Azure](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/blob.html#getting-started).    
 
-Αφού καθορίσετε τη σύνδεση προέλευσης, [ρυθμίστε τις παραμέτρους μιας ροής δεδομένων](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html#ui-tutorials) για μια σύνδεση δέσμης χώρου αποθήκευσης cloud για την εισαγωγή της εξόδου του τμήματος από πληροφορίες κοινού στο Adobe Experience Platform.
+Αφού καθορίσετε τη σύνδεση προέλευσης, [ρυθμίστε τις παραμέτρους μιας ροής δεδομένων](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html#ui-tutorials) για μια σύνδεση δέσμης χώρου αποθήκευσης cloud για να εισαγάγετε το αποτέλεσμα του τμήματος από πληροφορίες κοινού στο Adobe Experience Platform.
 
-## <a name="create-an-audience-in-adobe-campaign-standard"></a>Δημιουργία ενός κοινού στο Adobe Campaign Standard
+## <a name="create-an-audience-in-adobe-campaign-standard"></a>Δημιουργήστε ένα κοινό στο Adobe Campaign Standard
 
-Για να στείλετε το μήνυμα ηλεκτρονικού ταχυδρομείου για αυτήν την εκστρατεία, θα χρησιμοποιήσουμε το Adobe Campaign Standard. Μετά την εισαγωγή των δεδομένων στο Adobe Experience Platform, θα πρέπει να [δημιουργήσουμε ένα κοινό](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/get-started-profiles-and-audiences.html#permission) στο Adobe Campaign Standard χρησιμοποιώντας τα δεδομένα στο Adobe Experience Platform.
+Για να στείλουμε το μήνυμα ηλεκτρονικού ταχυδρομείου για αυτήν την εκστρατεία, θα χρησιμοποιήσουμε το Adobe Campaign Standard. Μετά την εισαγωγή των δεδομένων στο Adobe Experience Platform, θα πρέπει να [δημιουργήσουμε ένα κοινό](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/get-started-profiles-and-audiences.html#permission) στο Adobe Campaign Standard χρησιμοποιώντας τα δεδομένα στο Adobe Experience Platform.
 
 
 Μάθετε πώς να [χρησιμοποιείτε το εργαλείο δόμησης τμημάτων](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/audience-destinations/aep-using-segment-builder.html) στο Adobe Campaign Standard για να ορίσετε ένα κοινό με βάση τα δεδομένα στο Adobe Experience Platform.
@@ -130,4 +130,4 @@ ms.locfileid: "6305524"
 
 Δημιουργήστε το περιεχόμενο του μηνύματος ηλεκτρονικού ταχυδρομείου και, στη συνέχεια, [δοκιμάστε και στείλτε](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/get-started-sending-messages.html#preparing-and-testing-messages) το μήνυμα ηλεκτρονικού ταχυδρομείου σας.
 
-:::image type="content" source="media/contoso-sample-email.jpg" alt-text="Δείγμα μηνύματος ηλεκτρονικού ταχυδρομείου με προσφορά ανανέωσης από το Adobe Campaign Standard.":::
+:::image type="content" source="media/contoso-sample-email.jpg" alt-text="Δείγμα μηνύματος ηλεκτρονικού ταχυδρομείου με προσφορά ανανέωσης από Adobe Campaign Standard.":::

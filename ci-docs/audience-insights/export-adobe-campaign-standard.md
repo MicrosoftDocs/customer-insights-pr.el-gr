@@ -9,28 +9,28 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: 917ab9559416f3ee0ffd66e471e590e8da3faffc
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: d301b4f0cb875303fb3d373b77177acd1c1f5219cd6f23c2a1d29ce67a222eab
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305386"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7032163"
 ---
-# <a name="use-customer-insights-segments-in-adobe-campaign-standard-preview"></a>Χρησιμοποιήστε τμήματα Customer Insights στο Adobe Campaign Standard (έκδοση προεπισκόπησης)
+# <a name="use-customer-insights-segments-in-adobe-campaign-standard-preview"></a>Χρήση τμημάτων του Customer Insights στο Adobe Campaign Standard (έκδοση προεπισκόπησης)
 
-Ως χρήστης των στατιστικών κοινού στο Dynamics 365 Customer Insights, ενδέχεται να έχετε δημιουργήσει τμήματα για να κάνετε τις εκστρατείες μάρκετινγκ πιο αποτελεσματικές στοχεύοντας σε σχετικά κοινά. Για να χρησιμοποιήσετε ένα τμήμα από πληροφορίες κοινού στο Adobe Experience Platform και σε εφαρμογές όπως το Adobe Campaign Standard, θα πρέπει να ακολουθήσετε μερικά βήματα που περιγράφονται σε αυτό το άρθρο.
+Ως χρήστης των στατιστικών κοινού στο Dynamics 365 Customer Insights, ενδέχεται να έχετε δημιουργήσει τμήματα για να κάνετε τις εκστρατείες μάρκετινγκ πιο αποτελεσματικές στοχεύοντας σε σχετικά κοινά. Για να χρησιμοποιήσετε ένα τμήμα από πληροφορίες κοινού στο Adobe Experience Platform και εφαρμογές όπως το Adobe Campaign Standard, πρέπει να ακολουθήσετε μερικά βήματα που περιγράφονται σε αυτό το άρθρο.
 
 :::image type="content" source="media/ACS-flow.png" alt-text="Διάγραμμα διεργασίας των βημάτων που περιγράφονται σε αυτό το άρθρο.":::
 
 ## <a name="prerequisites"></a>Προϋποθέσεις
 
 -   Άδεια χρήσης του Dynamics 365 Customer Insights
--   Άδεια χρήσης του Adobe Campaign Standard
+-   Άδεια χρήσης Adobe Campaign Standard
 -   Λογαριασμό χώρου αποθήκευσης αντικειμένων Blob Azure
 
 ## <a name="campaign-overview"></a>Επισκόπηση εκστρατείας
 
-Για να κατανοήσετε καλύτερα πώς μπορείτε να χρησιμοποιήσετε τμήματα από πληροφορίες κοινού στο Adobe Experience Platform, δείτε ένα φανταστικό δείγμα εκστρατείας.
+Για να κατανοήσετε καλύτερα τον τρόπο με τον οποίο μπορείτε να χρησιμοποιήσετε πληροφορίες κοινού στο Adobe Experience Platform, ας δούμε φαντατικό δείγμα εκστρατείας.
 
 Ας υποθέσουμε ότι η εταιρεία σας προσφέρει μια μηνιαία υπηρεσία βάσει συνδρομής στους πελάτες σας στις Ηνωμένες Πολιτείες. Θέλετε να προσδιορίσετε τους πελάτες, των οποίων οι συνδρομές πρέπει να ανανεωθούν μέσα στις επόμενες οκτώ ημέρες, αλλά δεν έχουν ανανεώσει ακόμα τη συνδρομή τους. Για να διατηρήσετε αυτούς τους πελάτες, θέλετε να τους στείλετε μια διαφημιστική προσφορά μέσω ηλεκτρονικού ταχυδρομείου, χρησιμοποιώντας το Adobe Campaign Standard.
 
@@ -54,9 +54,9 @@ ms.locfileid: "6305386"
 
 1. Στις πληροφορίες κοινού, μεταβείτε στο **Διαχειριστής** > **Συνδέσεις**.
 
-1. Επιλέξτε **Προσθήκη σύνδεσης** και επιλέξτε **Εκστρατεία Adobe**, για να ρυθμίσετε τις παραμέτρους της σύνδεσης ή επιλέξτε **Ρύθμιση** στο πλακίδιο **Εκστρατεία Adobe**.
+1. Επιλέξτε **Προσθήκη σύνδεσης** και επιλέξτε **Adobe Campaign** για να ρυθμίσετε τις παραμέτρους της σύνδεσης ή επιλέξτε **Ρύθμιση** στο πλακίδιο **Εκστρατεία Adobe**.
 
-   :::image type="content" source="media/adobe-campaign-standard-tile.png" alt-text="Πλακίδιο ρύθμισης παραμέτρων για το Adobe Campaign Standard.":::
+   :::image type="content" source="media/adobe-campaign-standard-tile.png" alt-text="Πλακίδιο ρύθμισης παραμέτρων για Adobe Campaign Standard.":::
 
 1. Δώστε στη σύνδεσή σας ένα αναγνωρίσιμο όνομα στο πεδίο **Εμφανιζόμενο όνομα**. Το όνομα και ο τύπος της σύνδεσης περιγράφουν αυην τη σύνδεση. Συνιστούμε να επιλέξετε ένα όνομα που να εξηγεί τον σκοπό και τον προορισμό της σύνδεσης.
 
@@ -80,7 +80,7 @@ ms.locfileid: "6305386"
 
 1. Για να δημιουργήσετε μια νέα εξαγωγή, επιλέξτε **Προσθήκη εξαγωγής**.
 
-1. Στο πεδίο **Σύνδεση για εξαγωγή**, επιλέξτε μια σύνδεση από την ενότητα "Εκστρατεία Adobe". Εάν δεν βλέπετε αυτό το όνομα ενότητας, τότε δεν είναι διαθέσιμες συνδέσεις αυτού του τύπου για εσάς.
+1. Στο πεδίο **Σύνδεση για εξαγωγή**, επιλέξτε μια σύνδεση από την ενότητα Adobe Campaign. Εάν δεν βλέπετε αυτό το όνομα ενότητας, τότε δεν είναι διαθέσιμες συνδέσεις αυτού του τύπου για εσάς.
 
 1. Επιλέξτε το τμήμα που θέλετε να εξαγάγετε. Σε αυτό το παράδειγμα, είναι **ChurnProneCustomers**.
 
@@ -88,14 +88,14 @@ ms.locfileid: "6305386"
 
 1. Επιλέξτε **Επόμενο**.
 
-1. Τώρα αντιστοιχουμε τα πεδία **προέλευσης** από το τμήμα πληροφοριών κοινού στα ονόματα πεδίων **προορισμού** του σχήματος προφίλ "Adobe Campaign Standard".
+1. Τώρα αντιστοιχούμε τα πεδία **Προέλευση** από το τμήμα πληροφοριών κοινού με τα ονόματα πεδίων **Προορισμός** στο σχήμα προφίλ Adobe Campaign Standard.
 
    :::image type="content" source="media/ACS-field-mapping.png" alt-text="Αντιστοίχιση πεδίου για τη σύνδεση Adobe Campaign Standard.":::
 
-   Εάν θέλετε να προσθέσετε περισσότερα χαρακτηριστικά, επιλέξτε **Προσθήκη χαρακτηριστικού**. Το όνομα προορισμού μπορεί να είναι διαφορετικό από το όνομα του πεδίου προέλευσης, ώστε να εξακολουθείτε να μπορείτε να αντιστοιχίσετε έξοδο τμημάτων από πληροφορίες κοινού στο Adobe Campaign Standard, εάν τα πεδία δεν έχουν το ίδιο όνομα στα δύο συστήματα.
+   Εάν θέλετε να προσθέσετε περισσότερα χαρακτηριστικά, επιλέξτε **Προσθήκη χαρακτηριστικού**. Το όνομα προορισμού μπορεί να διαφέρει από το όνομα του πεδίου προέλευσης, ώστε να εξακολουθείτε να μπορείτε να αντιστοιχίσετε πληροφορίες κοινού στο Adobe Campaign Standard, εάν τα πεδία δεν έχουν το ίδιο όνομα στα δύο συστήματα.
 
    > [!NOTE]
-   > Η διεύθυνση ηλεκτρονικού ταχυδρομείου χρησιμοποιείται ως πεδίο ταυτότητας, αλλά μπορείτε να χρησιμοποιήσετε οποιοδήποτε άλλο αναγνωριστικό από το προφίλ πελάτη πληροφοριών κοινού για την αντιστοίχιση δεδομένων στο Adobe Campaign Standard.
+   > Η διεύθυνση ηλεκτρονικού ταχυδρομείου χρησιμοποιείται ως πεδίο ταυτότητας, αλλά μπορείτε να χρησιμοποιήσετε οποιοδήποτε άλλο αναγνωριστικό από το προφίλ πελάτη πληροφοριών κονιού για την αντιστοίχιση δεδομένων στο Adobe Campaign Standard.
 
 1. Επιλέξτε **Αποθήκευση**.
 
@@ -104,7 +104,7 @@ ms.locfileid: "6305386"
 Τώρα μπορείτε να [εξαγάγετε το τμήμα κατ' απαίτηση](export-destinations.md#run-exports-on-demand). Η εξαγωγή θα εκτελεστεί επίσης με κάθε [προγραμματισμένη ανανέωση](system.md).
 
 > [!NOTE]
-> Βεβαιωθείτε ότι ο αριθμός των καρτελών στο εξαχθέν τμήμα βρίσκεται εντός του επιτρεπόμενου ορίου της άδειας χρήσης που έχετε για το Adobe Campaign Standard.
+> Βεβαιωθείτε ότι ο αριθμός των καρτελών στο τμήμα που έχει εξαχθεί βρίσκεται εντός του επιτρεπόμενου ορίου της άδειας χρήσης του Adobe Campaign Standard.
 
 Τα δεδομένα που έχουν εξαχθεί αποθηκεύονται στο κοντέινερ του χώρου αποθήκευσης αντικειμένων blob Azure που διαμορφώσατε παραπάνω. Η παρακάτω διαδρομή φακέλου δημιουργείται αυτόματα στο κοντέινερ σας:
 
@@ -116,28 +116,28 @@ ms.locfileid: "6305386"
 
 Όταν εξάγεται ένα τμήμα από πληροφορίες κοινού, περιέχει τις στήλες που επιλέξατε κατά τον ορισμό του προορισμού εξαγωγής στο προηγούμενο βήμα. Αυτά τα δεδομένα μπορούν να χρησιμοποιηθούν για [τη δημιουργία προφίλ στο Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/managing-profiles/about-profiles.html#managing-profiles).
 
-Για να χρησιμοποιήσετε το τμήμα στο Adobe Campaign Standard, θα πρέπει να επεκτείνουμε το σχήμα προφίλ στο Adobe Campaign Standard και να συμπεριλάβουμε δύο επιπλέον πεδία. Μάθετε πώς να [επεκτείνετε τον πόρο προφίλ](https://experienceleague.adobe.com/docs/campaign-standard/using/developing/use-cases--extending-resources/extending-the-profile-resource-with-a-new-field.html#developing) με νέα πεδία στο Adobe Campaign Standard.
+Για να χρησιμοποιήσετε το τμήμα στο Adobe Campaign Standard, θα πρέπει να επεκτείνουμε το σχήμα του προφίλ στο Adobe Campaign Standard για να συμπεριλάβουμε δύο επιπλέον πεδία. Μάθετε πώς να [επεκτείνετε τον πόρο προφίλ](https://experienceleague.adobe.com/docs/campaign-standard/using/developing/use-cases--extending-resources/extending-the-profile-resource-with-a-new-field.html#developing) με νέα πεδία στο Adobe Campaign Standard.
 
 Στο παράδειγμά μας, τα πεδία αυτά είναι τα *Όνομα τμήματος και Ημερομηνία τμήματος (προαιρετικά)*.
 
-Θα χρησιμοποιήσουμε αυτά τα πεδία για να εντοπίσουμε τα προφίλ στο Adobe Campaign Standard που θέλουμε να στοχεύσετε για αυτήν την εκστρατεία.
+Θα χρησιμοποιήσουμε αυτά τα πεδία για να προσδιορίσουμε τα προφίλ στο Adobe Campaign Standard που θέλουμε να στοχεύσετε για αυτήν την εκστρατεία.
 
-Εάν δεν υπάρχουν άλλες καρτέλες στο Adobe Campaign Standard, εκτός από τις καρτέλες που πρόκειται να εισαγάγετε, μπορείτε να παραλείψετε αυτό το βήμα.
+Εάν δεν υπάρχουν άλλες καρτέλες στο Adobe Campaign Standard εκτός από τις καρτέλες που πρόκειται να εισαγάγετε, μπορείτε να παραλείψετε αυτό το βήμα.
 
 ## <a name="import-data-into-adobe-campaign-standard"></a>Εισαγωγή δεδομένων στο Adobe Campaign Standard
 
-Τώρα που όλα είναι έτοιμα, θα πρέπει να εισαγάγετε τα προετοιμασμένα δεδομένα κοινού ααπό τις πληροφορίες κοινού στο Adobe Campaign Standard για τη δημιουργία προφίλ. Μάθετε [πώς να εισάγετε προφίλ στο Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/managing-profiles/creating-profiles.html#profiles-and-audiences) χρησιμοποιώντας μια ροή εργασιών.
+Τώρα που όλα είναι έτοιμα, θα πρέπει να εισαγάγετε τα προετοιμασμένα δεδομένα κοινού από πληροφορίες κοινού στο Adobe Campaign Standard για να δημιουργήσουμε προφίλ. Μάθετε [πώς να εισάγετε προφίλ στο Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/managing-profiles/creating-profiles.html#profiles-and-audiences) χρησιμοποιώντας μια ροή εργασίας.
 
-Η ροή εργασίας εισαγωγής στην παρακάτω εικόνα έχει ρυθμιστεί ώστε να εκτελείται κάθε οκτώ ώρες και να αναζητήσουν τμήματα των στατιστικών κοινού που έχουν εξαχθεί (αρχείο .csv στον χώρο αποθήκευσης αντικειμένων Blob Azure). Η ροή εργασιών εξάγει το περιεχόμενο του αρχείου .csv σε μια καθορισμένη σειρά στηλών. Αυτή η ροή εργασιών έχει δημιουργηθεί για την εκτέλεση βασικού χειρισμού σφαλμάτων και τη διασφάλιση ότι κάθε καρτέλα έχει μια διεύθυνση ηλεκτρονικού ταχυδρομείου πριν από την ανασύνθεση των δεδομένων στο Adobe Campaign Standard. Η ροή εργασίας εξάγει επίσης το όνομα του τμήματος από το όνομα αρχείου πριν να μετατραπεί σε δεδομένα προφίλ Adobe Campaign Standard.
+Η ροή εργασίας εισαγωγής στην παρακάτω εικόνα έχει ρυθμιστεί ώστε να εκτελείται κάθε οκτώ ώρες και να αναζητήσουν τμήματα των στατιστικών κοινού που έχουν εξαχθεί (αρχείο .csv στον χώρο αποθήκευσης αντικειμένων Blob Azure). Η ροή εργασιών εξάγει το περιεχόμενο του αρχείου .csv σε μια καθορισμένη σειρά στηλών. Αυτή η ροή εργασίας έχει δημιουργηθεί για την εκτέλεση βασικού χειρισμού σφαλμάτων και τη διασφάλιση ότι κάθε καρτέλα έχει μια διεύθυνση ηλεκτρονικού ταχυδρομείου πριν από τη διόρθωση των δεδομένων στο Adobe Campaign Standard. Η ροή εργασίας εξάγει επίσης το όνομα του τμήματος από το όνομα αρχείου πριν να μετατραπεί σε δεδομένα προφίλ Adobe Campaign Standard.
 
-:::image type="content" source="media/ACS-import-workflow.png" alt-text="Στιγμιότυπο οθόνης μιας ροής εργασιών εισαγωγής στο περιβάλλον εργασίας χρήστη Adobe Campaign Standard.":::
+:::image type="content" source="media/ACS-import-workflow.png" alt-text="Στιγμιότυπο οθόνης μιας ροής εργασίας εισαγωγής στο περιβάλλον εργασίας χρήστη Adobe Campaign Standard.":::
 
-## <a name="retrieve-the-audience-in-adobe-campaign-standard"></a>Ανάκτηση του κοινού στο Adobe Campaign Standard
+## <a name="retrieve-the-audience-in-adobe-campaign-standard"></a>Ανάκτηση του κοινού Adobe Campaign Standard
 
-Μετά την εισαγωγή των δεδομένων στο Adobe Campaign Standard, [μπορείτε να δημιουργήσετε μια ροή εργασιών](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/workflow-general-operation/building-a-workflow.html#managing-processes-and-data) και [να υποβάλετε ερωτήματα](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/targeting-activities/query.html#managing-processes-and-data) στους πελάτες με βάση το *όνομα τμήματος* και την *ημερομηνία τμήματος*, για να επιλέξουν τα προφίλ που έχουν αναγνωριστεί για το δείγμα εκστρατείας μας.
+Μετά την εισαγωγή των δεδομένων στο Adobe Campaign Standard, μπορείτε [να δημιουργήσετε μια ροή εργασίας](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/workflow-general-operation/building-a-workflow.html#managing-processes-and-data) και [να υποβάλετε ερωτήματα](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/targeting-activities/query.html#managing-processes-and-data) στους πελάτες με βάση το *Όνομα τμήματος* και την *Ημερομηνία τμήματος*, για να επιλέξετε τα προφίλ που έχουν αναγνωριστεί για το δείγμα εκστρατείας μας.
 
 ## <a name="create-and-send-the-email-using-adobe-campaign-standard"></a>Δημιουργία και αποστολή του μηνύματος ηλεκτρονικού ταχυδρομείου χρησιμοποιώντας το Adobe Campaign Standard
 
 Δημιουργήστε το περιεχόμενο του μηνύματος ηλεκτρονικού ταχυδρομείου και, στη συνέχεια, [δοκιμάστε και στείλτε](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/get-started-sending-messages.html#preparing-and-testing-messages) το μήνυμα ηλεκτρονικού ταχυδρομείου σας.
 
-:::image type="content" source="media/contoso-sample-email.jpg" alt-text="Δείγμα μηνύματος ηλεκτρονικού ταχυδρομείου με προσφορά ανανέωσης από το Adobe Campaign Standard.":::
+:::image type="content" source="media/contoso-sample-email.jpg" alt-text="Δείγμα μηνύματος ηλεκτρονικού ταχυδρομείου με προσφορά ανανέωσης από Adobe Campaign Standard.":::

@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 8ab55d101f98169b8f794ce580ddd0a71ede6642
-ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
+ms.openlocfilehash: 87323d15c44ef82ae8bc3cc971be6c36356121571cb9a9630be699ac2d157bf6
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6554618"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7032804"
 ---
 # <a name="customer-profiles"></a>Προφίλ πελατών
 
@@ -69,7 +69,7 @@ ms.locfileid: "6554618"
 
 ## <a name="next-steps"></a>Επόμενα βήματα
 
-[Προσθέστε περισσότερες προελεύσεις δεδομένων](data-sources.md) ή [Δημιουργήστε τμήματα πελατών](segments.md).
+[Προσθέστε περισσότερες προελεύσεις δεδομένων](data-sources.md), [εμπλουτίτε τα ενοποιημένα προφίλ](enrichment-hub.md) ή [δημιουργήστε τμήματα αγοράς](segments.md) για να εργαστείτε με ενοποιημένα προφίλ σε άλλες εφαρμογές.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
