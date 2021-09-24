@@ -10,12 +10,12 @@ author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 15cc495359af1faefe32225ae490fd7e7b6b08cc7a411e0a9804da6ec704099c
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 925cb5c2ccb4279ae5db2eb927a356708d310360
+ms.sourcegitcommit: 048d65bded22abadcbbad1e22f15b05828bb977b
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034360"
+ms.lasthandoff: 09/06/2021
+ms.locfileid: "7474057"
 ---
 # <a name="audience-insights-for-dynamics-365-customer-insights-overview"></a>Επισκόπηση πληροφοριών κοινού για Dynamics 365 Customer Insights
 
@@ -57,11 +57,5 @@ ms.locfileid: "7034360"
 
   - Δημιουργήστε προφίλ με δυνατότητα προσαρμογής, καθορίστε μεγέθη, δημιουργήστε τμήματα και επωφεληθείτε από προγνωστικές αναλύσεις για να αποκτήσετε μια σφαιρική προβολή του πελάτη σας, ειδικά για τον οργανισμό σας.  
   - Χρησιμοποιήστε έτοιμες συνδέσεις για πολλές εφαρμογές της Microsoft και εφαρμογές τρίτων ή API για την επεξεργασία των πληροφοριών.
-
-## <a name="pricing-and-licensing"></a>Τιμολόγηση και άδειες χρήσης
-
-Το Customer Insights διαθέτει άδεια χρήσης ανά μισθωτή και περιλαμβάνει πολλαπλές δυνατότητες. Οι δυνατότητες που δικαιούνται περιλαμβάνουν ένα σύνολο προφίλ, καθημερινές ανανεώσεις, αιτήσεις  Power Platform και δύο περιβάλλοντα. Μπορείτε να αγοράσετε επιπλέον χωρητικότητα και άδεια χρήσης για να αυξήσετε τον προεπιλεγμένο στόχο πωλήσεων. 
-- Λεπτομερής χωρητικότητα και δικαιώματα: [Οδηγός εκχώρησης αδειών χρήσης του Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=866544)
-- Επισκόπηση τιμολόγησης: [Τιμολόγηση Dynamics 365](https://dynamics.microsoft.com/pricing/#CustomerDataPlatform)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

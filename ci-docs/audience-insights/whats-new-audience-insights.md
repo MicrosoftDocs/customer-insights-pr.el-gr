@@ -1,7 +1,7 @@
 ---
 title: Νέες και επερχόμενες δυνατότητες
 description: Πληροφορίες σχετικά με τις νέες δυνατότητες, τις βελτιώσεις και τις επιδιορθώσεις σφαλμάτων.
-ms.date: 07/19/2021
+ms.date: 08/31/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: 3412213bcf3a4174baf28c6b4d38f5febded18707c355d236d5082698c4c0db7
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: fcc45c24e9d89516dba9964ee16f57caf439eff0
+ms.sourcegitcommit: 2abe9b661b8c3c01e9730c629e383402e3f6a655
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035963"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7465205"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>Τι νέο υπάρχει στη δυνατότητα πληροφοριών κοινού του Dynamics 365 Customer Insights
 
@@ -26,6 +26,15 @@ ms.locfileid: "7035963"
 
 > [!TIP]
 > ια υποβολή και ψήφο σε αιτήματα δυνατοτήτων και προτάσεις προϊόντων, μεταβείτε στην [πύλη ιδεών εφαρμογής Dynamics 365](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## <a name="august-2021-updates"></a>Ενημερώσεις Αυγούστου 2021
+
+Οι ενημερώσεις τον Ιούλιο και τον Αύγουστο του 2021 περιλαμβάνουν μια νέα δυνατότητα, αναβαθμίσεις επιδόσεων και επιδιορθώσεις σφαλμάτων.
+
+### <a name="extensibility"></a>Επεκτασιμότητα
+
+- **Εξαγωγή τμημάτων στο Klaviyo** Έχουμε επεκτείνει τους [προορισμούς εξαγωγής μας για να συμπεριλάβουμε το Klaviyo](export-klaviyo.md). Μπορείτε τώρα να εξαγάγετε τμήματα για να δημιουργήσετε εκστρατείες, να υλοποιήσετε πρακτικές μάρκετινγκ μέσω ηλεκτρονικού ταχυδρομείου και να χρησιμοποιήσετε ειδικές ομάδες πελατών με το Klaviyo. 
+
 
 ## <a name="june-2021-updates"></a>Ενημερώσεις Ιουνίου 2021
 

@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-MS
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 726edb19a9fd97d80ae357103dc7d48ed38b005131ad44137b47d629a1c60b12
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 45c81a037258e42d8975e0372c104865a9d4cbfe
+ms.sourcegitcommit: 2acda3c5adf40bc3f5bbb4b2b4b6c22f84371da7
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033861"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "7466624"
 ---
 # <a name="enrich-customer-profiles-with-brand-and-interest-affinities-preview"></a>Εμπλουτίστε τα προφίλ πελατών με τις συγγένειες επωνυμίας και ενδιαφέροντος (προεπισκόπηση)
 
@@ -126,6 +126,8 @@ ms.locfileid: "7033861"
 :::image type="content" source="media/my-enrichments.png" alt-text="Προεπισκόπηση αποτελεσμάτων μετά την εκτέλεση της διαδικασίας εμπλουτισμού.":::
 
 Εξετάστε τα εμπλουτισμένα δεδομένα επιλέγοντας **Προβολή εμπλουτισμένων δεδομένων** στο γράφημα. Τα εμπλουτισμένα δεδομένα για εμπορικές επωνυμίες πηγαίνουν στην οντότητα **BrandAffinityFromMicrosoft**. Τα δεδομένα για τα ενδιαφέροντα βρίσκονται στην οντότητα **InterestAffinityFromMicrosoft**. Επίσης, θα βρείτε αυτές τις οντότητες που περιλαμβάνονται στην ομάδα **Εμπλουτισμός** στα **Δεδομένα** > **Οντότητες**.
+
+Θα δείτε ένα γράφημα με τον αριθμό των εμπλουτισμένων προφίλ πελατών με την πάροδο του χρόνου και μια προεπισκόπηση της εμπλουτισμένης οντότητας. Επιλέξτε **Εμφάνιση περισσότερων** στο πλακίδιο προεπισκόπησης για να ανοίξετε την εμπλουτισμένη οντότητα.
 
 ## <a name="see-enrichment-data-on-the-customer-card"></a>Δείτε τα δεδομένα εμπλουτισμού στην καρτέλα πελάτη
 

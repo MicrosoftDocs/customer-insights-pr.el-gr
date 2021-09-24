@@ -1,24 +1,23 @@
 ---
-title: Υποστηριζόμενες γλώσσες για πληροφορίες κοινού
+title: Υποστηριζόμενες γλώσσες για το Dynamics 365 Customer Insights
 description: Κατανοήστε και ρυθμίστε τις παραμέτρους της υποστήριξης γλώσσας.
-ms.date: 02/26/2021
+ms.date: 09/01/2021
 ms.service: customer-insights
-ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: e9161ebbfdf3ae6c48c12cdf7515b77ca49ae8055ae9a69f9ec314bc1247aeaf
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: f80c3019df9b5d82273842ca6f6f18bef0239687
+ms.sourcegitcommit: 5704002484cdf85ebbcf4e7e4fd12470fd8e259f
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035139"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483342"
 ---
-# <a name="supported-languages-for-audience-insights-capability"></a>Υποστηριζόμενες γλώσσες για δυνατότητα πληροφοριών κοινού
+# <a name="supported-languages-for-dynamics-365-customer-insights"></a>Υποστηριζόμενες γλώσσες για το Dynamics 365 Customer Insights
 
-Πληροφορίες κοινού για Dynamics 365 Customer Insights μεταφράζονται σε πολλές γλώσσες. Η παρακάτω λίστα περιέχει διαθέσιμες γλώσσες και πληροφορίες σχετικά με το τι είναι μεταφρασμένο. Επίσης, μπορείτε να μάθετε περισσότερα σχετικά με τον τρόπο αλλαγής των ρυθμίσεων γλώσσας. 
+Dynamics 365 Customer Insights έχει μεταφραστεί σε πολλές γλώσσες. Η παρακάτω λίστα περιέχει διαθέσιμες γλώσσες και πληροφορίες σχετικά με το τι είναι μεταφρασμένο. Επίσης, μπορείτε να μάθετε περισσότερα σχετικά με τον τρόπο αλλαγής των ρυθμίσεων γλώσσας. 
 
 ## <a name="languages"></a>Γλώσσες
 
@@ -69,7 +68,7 @@ ms.locfileid: "7035139"
 
 ## <a name="whats-translated"></a>Τι είναι μεταφρασμένο
 
-Η εφαρμογή χρησιμοποιεί την προτίμηση γλώσσας για την εμφάνιση στοιχείων όπως το μενού, το κείμενο ετικέτας και μηνύματα συστήματος στην προτιμώμενη γλώσσα.
+Το Customer Insights χρησιμοποιεί την προτίμηση γλώσσας για την εμφάνιση στοιχείων όπως το μενού, το κείμενο ετικέτας και τα μηνύματα συστήματος στην προτιμώμενη γλώσσα.
 
 Επειδή οι περισσότερες δυνατότητες βασίζονται στα δεδομένα σας, ορισμένα στοιχεία παραμένουν στην αρχική τους γλώσσα. Για παράδειγμα:
 

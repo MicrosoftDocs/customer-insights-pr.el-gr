@@ -4,17 +4,17 @@ description: Μάθετε πως να εξατομικεύετε και να ε�
 author: britl
 ms.reviewer: mhart
 ms.author: britl
-ms.date: 06/23/2021
+ms.date: 09/15/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: de8291fc429ae6433301a47bfdf9a3271b1b77294fd58448c7aa6bd0783edc97
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: f05929435eeee9cf3f891ab18842c5861e39d5ba
+ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7036873"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7494230"
 ---
 # <a name="get-started-with-the-ios-sdk"></a>Ξεκινήστε με το iOS SDK
 
@@ -45,11 +45,36 @@ ms.locfileid: "7036873"
 
 - Εάν δεν έχετε έναν υπάρχοντα χώρο εργασίας, επιλέξτε **Νέος χώρος εργασίας** και ακολουθήστε τα βήματα για τη δημιουργία ενός [νέου χώρου εργασίας](create-workspace.md).
 
+- Αφού δημιουργήσετε έναν χώρο εργασίας, μεταβείτε στο μενού **Διαχείριση** > **Χώρος εργασίας** και, έπειτα, επιλέξτε **Οδηγός εγκατάστασης**.
+
 ## <a name="configure-the-sdk"></a>Ρύθμιση παραμέτρων του SDK
 
-Αφού κάνετε λήψη του SDK, μπορείτε να εργαστείτε με αυτό στο Xcode για να ενεργοποιήσετε και να καθορίσετε συμβάντα.
+Αφού κάνετε λήψη του SDK, μπορείτε να εργαστείτε με αυτό στο Xcode για να ενεργοποιήσετε και να καθορίσετε συμβάντα. Υπάρχουν δύο τρόποι για να το κάνετε αυτό
 
-1. Αφού δημιουργήσετε έναν χώρο εργασίας, μεταβείτε στο μενού **Διαχείριση** > **Χώρος εργασίας** και, έπειτα, επιλέξτε **Οδηγός εγκατάστασης**.
+### <a name="option-1-using-cocoapods-recommended"></a>Επιλογή 1: Χρήση του CocoaPods (συνιστάται)
+Ο CocoaPods είναι ένας διαχειριστής εξάρτησης για έργα Swift και Objective-C Cocoa. Η χρήση του κάνει την ενοποίηση του SDK πληροφοριών δέσμευσης για iOS πιο εύκολο. Το CocoaPods σας επιτρέπει επίσης να αναβαθμίσετε στην πιο πρόσφατη έκδοση του SDK πληροφοριών δέσμευσης. Δείτε πώς μπορείτε να χρησιμοποιήσετε CocoaPods για να ενσωματώσετε το SDK πληροφοριών δέσμευσης στο έργο Xcode που κάνετε. 
+
+1. Εγκαταστήστε το CocoaPods 
+
+1. Δημιουργήστε ένα νέο αρχείο με όνομα Podfile μέσα στον ριζικό κατάλογο του έργου σας και προσθέστε τις παρακάτω δηλώσεις.Αντικαταστήστε YOUR_TARGET_PROJECT_NAME με το όνομα του έργου Xcode. 
+```objectivec
+platform :ios, '9.0'  
+
+ target '${YOUR_TARGET_PROJECT_NAME}' do 
+
+     use_frameworks!   
+
+     pod 'EIObjC.framework.debug' 
+
+     pod 'EIObjC.framework.release' 
+
+ end 
+```
+Η παραπάνω ρύθμιση παραμέτρων περιλαμβάνει τόσο την έκδοση εντοπισμού σφαλμάτων όσο και την έκδοση του SDK. Επιλέξτε όποιο από τα δύο είναι καλύτερο για το έργο σας.
+
+1. Εγκαταστήστε το παρακολουθείτε εκτελώντας την ακόλουθη εντολή: `pod install --repo-update `
+
+### <a name="option-2-using-download-link"></a>Επιλογή 2: Χρήση της σύνδεσης λήψης
 
 1. Πραγματοποιήστε λήψη των [iOS SDK](https://download.pi.dynamics.com/sdk/EI-SDKs/ei-ios-sdk.zip) και τοποθετήστε το αρχείο `EIObjC.xcframework` στον φάκελο `Frameworks`.
 

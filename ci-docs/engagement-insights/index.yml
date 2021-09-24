@@ -1,8 +1,8 @@
 ### YamlMime:Landing
-title: Δυνατότητα πληροφοριών δέσμευσης (προεπισκόπηση) στο Dynamics 365 Customer Insights
+title: Δυνατότητα πληροφοριών δέσμευσης στο Dynamics 365 Customer Insights (προεπισκόπηση)
 summary: Συγκεντρώστε δεδομένα για τις τοποθεσίες Web σας. Κατανοήστε τις αλληλεπιδράσεις των πελατών και τη χρήση στις τοποθεσίες σας, αλληλεπιδραστικά. Χρησιμοποιήστε την εις βάθος ενοποίηση μεταξύ των πληροφοριών δέσμευσης και των πληροφοριών κοινού για να εμπλουτίσετε την συμπεριφορική ανάλυση σε πραγματικό χρόνο με αναφορές προφίλ πελατών. Εμπλουτίστε τα προφίλ πελατών με δραστηριότητες web, για να λάβετε συμπεριφορικά δεδομένα πραγματικού χρόνου μαζί με τα σχετικά δεδομένα πελατών. Μετασχηματίσετε την επιχείρησή σας ώστε να εξάγει άμεση αξία από τα δεδομένα των πελατών σας.
 metadata:
-  title: Τεκμηρίωση πληροφοριών δέσμευσης (προεπισκόπηση)
+  title: Τεκμηρίωση πληροφοριών (προεπισκόπηση) δέσμευσης
   description: Κέντρο βοήθειας με βασικές συνδέσεις για πληροφορίες δέσμευσης.
   ms.service: customer-insights
   ms.subservice: engagement-insights
@@ -10,24 +10,24 @@ metadata:
   author: m-hartmann
   ms.author: mhart
   ms.reviewer: mhart
-  ms.date: 07/30/2021
-  ms.openlocfilehash: 9951b1834d18acf0c4961a776d9d6247d4ae3505b5721a41314266e41f8ae928
-  ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+  ms.date: 09/15/2021
+  ms.openlocfilehash: bf2e40b1ca304e7b26687eaff298d2e70615cd2b
+  ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
   ms.translationtype: HT
   ms.contentlocale: el-GR
-  ms.lasthandoff: 08/10/2021
-  ms.locfileid: "7036238"
+  ms.lasthandoff: 09/15/2021
+  ms.locfileid: "7494184"
 landingContent:
 - title: Πληροφορίες
   linkLists:
   - linkListType: overview
     links:
-    - text: Επισκόπηση δυνατοτήτων
+    - text: Πλεονεκτήματα δυνατοτήτων
       url: overview.md
-    - text: Όροι και σκέψεις
+    - text: Γλωσσάριο όρων
       url: glossary.md
-    - text: Ανακαλύψτε πληροφορίες δέσμευσης
-      url: https://dynamics.microsoft.com/ai/customer-insights/engagement-insights-capability/
+    - text: Νέες και ενημερωμένες δυνατότητες
+      url: /dynamics365-release-plan/2021wave1/customer-data-platform/engagement-insights/planned-features
 - title: Προσθήκη λογαριασμών
   linkLists:
   - linkListType: how-to-guide
@@ -38,33 +38,35 @@ landingContent:
       url: create-workspace.md
     - text: Εργαλειοποιήστε την τοποθεσία Web
       url: instrument-website.md
-- title: Αναφορές
+- title: Εμφάνιση και φιλτράρισμα αναφορών
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: Προβολή αναφορών
       url: view-reports.md
-    - text: Δημιουργία προσαρμοσμένων αναφορών
-      url: custom-reports.md
     - text: Προβολή ενοποιημένων προφίλ αναφοράς
       url: profile-reports.md
-    - text: Δημιουργία αναφορών ομαδοποίησης
-      url: funnel-reports.md
-- title: Συμβάντα
+    - text: Χρήση τμημάτων ελέγχου για το φιλτράρισμα αναφορών
+      url: integrate-audience-insights-segments.md
+- title: Ανάλυση
   linkLists:
   - linkListType: how-to-guide
     links:
+    - text: Δημιουργία αναφορών ομαδοποίησης
+      url: funnel-reports.md
+    - text: Ανάλυση δεδομένων συμπεριφοράς
+      url: curate-dimensions.md
+    - text: Δημιουργία προσαρμοσμένων αναφορών
+      url: custom-reports.md
     - text: Δημιουργία εκλεπτυσμένων συμβάντων
       url: refined-events.md
     - text: Εξαγωγή συμβάντων
       url: export-events.md
-    - text: Διαγραφή και εξαγωγή προσωπικών δεδομένων
-      url: delete-export-personal-data.md
-- title: Πόροι προγραμματιστή
+- title: Πόροι για προγραμματιστές
   linkLists:
   - linkListType: reference
     links:
-    - text: Πόροι προγραμματιστή
+    - text: Πόροι για προγραμματιστές
       url: developer-resources.md
     - text: Δείγμα WebSDK
       url: websdk-sample.md
@@ -81,6 +83,10 @@ landingContent:
     - text: Διαχείριση περιβαλλόντων και χώρων εργασίας
       url: manage-environments-workspaces.md
     - text: Σύνδεση με στατιστικά κοινού
-      url: configure-connections.md
+      url: integrate-audience-insights-engagement-insights.md
     - text: Διαχείριση cookie και συναίνεση χρήστη
       url: user-consent-storage.md
+    - text: Διαγραφή και εξαγωγή προσωπικών δεδομένων
+      url: delete-export-personal-data.md
+    - text: Όρια εξυπηρέτησης
+      url: ../service-limits.md

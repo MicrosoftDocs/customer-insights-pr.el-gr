@@ -9,12 +9,12 @@ ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: 3aa9599fc780098a2f7f31f0210d76ed2ef27ece774dd6212b5cb2a599ad537e
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: bf2ec67c9fb99918b87841d3c0b131934e31b58b
+ms.sourcegitcommit: 0ceb46c4f57ab49d3a2ebb1c8a816bbafe979e3d
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033952"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7486120"
 ---
 # <a name="out-of-box-profile-reports"></a>Έτοιμες για χρήση αναφορές προφίλ
 
@@ -31,7 +31,7 @@ ms.locfileid: "7033952"
 
 ## <a name="enable-the-customer-profile-report"></a>Ενεργοποίηση της αναφοράς προφίλ πελάτη
 
-Ένας διαχειριστής περιβάλλοντος πρέπει να [δημιουργήσει μια σύνδεση στις πληροφορίες κοινού](configure-connections.md).
+Ένας διαχειριστής περιβάλλοντος πρέπει [να συνδέει πληροφορίες δέσμευσης κοινό πληροφορίες σχετικά με τις πληροφορίες κοινού](integrate-audience-insights-engagement-insights.md).
 
 Αφού καθορίσει τις λεπτομέρειες σύνδεσης, ο διαχειριστής μπορεί να εκχωρήσει δικαίωμα πρόσβασης σε άλλα άτομα στον οργανισμό για να δουν την αναφορά. Ο διαχειριστής περιβάλλοντος που ρυθμίζει τη σύνδεση διαθέτει αυτόματα πρόσβαση στην αναφορά. 
 

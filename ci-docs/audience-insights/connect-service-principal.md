@@ -1,7 +1,7 @@
 ---
 title: Σύνδεση σε έναν λογαριασμό Azure Data Lake Storage χρησιμοποιώντας μια αρχή υπηρεσίας
 description: Χρησιμοποιήστε μια αρχή υπηρεσίας Azure για να συνδεθείτε στη δική σας λίμνη δεδομένων.
-ms.date: 07/23/2021
+ms.date: 09/08/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,21 +9,21 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 845d1f55eb99f2adf9b437124addec4f6d016fec
-ms.sourcegitcommit: 1c396394470df8e68c2fafe3106567536ff87194
+ms.openlocfilehash: b96c7f580b4067e059e00a9cdb4e872e9acd4a5c
+ms.sourcegitcommit: 5704002484cdf85ebbcf4e7e4fd12470fd8e259f
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "7461148"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483525"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-account-by-using-an-azure-service-principal"></a>Σύνδεση σε έναν λογαριασμό Azure Data Lake Storage χρησιμοποιώντας μια αρχή υπηρεσίας Azure
-<!--note from editor: The Cloud Style Guide would have us just use "Azure Data Lake Storage" to mean the current version, unless the old version (Gen1) is mentioned. I've followed this guidance, even though it seems that our docs and Azure docs are all over the map on this.-->
+
 Τα αυτοματοποιημένα εργαλεία που χρησιμοποιούν υπηρεσίες Azure θα πρέπει να έχουν πάντοτε περιορισμένα δικαιώματα. Αντί να συνδέεστε με εφαρμογές ως πλήρως προνομιούχος χρήστης, το Azure προσφέρει τις αρχές εξυπηρέτησης. Διαβάστε στη συνέχεια για να μάθετε πώς να συνδέετε το Dynamics 365 Customer Insights με έναν λογαριασμό Azure Data Lake Storage χρησιμοποιώντας μια αρχή υπηρεσίας Azure αντί για κλειδιά λογαριασμού χώρου αποθήκευσης. 
 
-Μπορείτε να χρησιμοποιήσετε την αρχή υπηρεσίας για [να προσθέσετε ή να επεξεργαστείτε με ασφάλεια έναν φάκελο του Common Data Model ως προέλευση δεδομένων](connect-common-data-model.md) ή [να δημιουργήσετε ή να ενημερώσετε ένα περιβάλλον](get-started-paid.md).<!--note from editor: Suggested. Or it could be ", or create a new environment or update an existing one". I think "new" is implied with "create". The comma is necessary.-->
+Μπορείτε να χρησιμοποιήσετε την αρχή υπηρεσίας για [να προσθέσετε ή να επεξεργαστείτε με ασφάλεια έναν φάκελο του Common Data Model ως προέλευση δεδομένων](connect-common-data-model.md) ή [να δημιουργήσετε ή να ενημερώσετε ένα περιβάλλον](get-started-paid.md).
 
 > [!IMPORTANT]
-> - Ο λογαριασμός Data Lake Storage που θα χρησιμοποιήσει<!--note from editor: Suggested. Or perhaps it could be "The Data Lake Storage account to which you want to give access to the service principal..."--> την αρχή υπηρεσίας πρέπει να έχει [ενεργοποιημένο τον ιεραρχικό χώρο ονομάτων](/azure/storage/blobs/data-lake-storage-namespace).
+> - Ο λογαριασμός Data Lake Storage που θα χρησιμοποιήσει την αρχή υπηρεσίας πρέπει να έχει ενεργοποιημένο τον [ιεραρχικό χώρο ονομάτων](/azure/storage/blobs/data-lake-storage-namespace).
 > - Χρειάζεστε δικαιώματα διαχειριστή για τη συνδρομή σας Azure για τη δημιουργία της αρχής εξυπηρέτησης.
 
 ## <a name="create-an-azure-service-principal-for-customer-insights"></a>Δημιουργία μιας αρχής υπηρεσίας Azure για Customer Insights
@@ -38,7 +38,7 @@ ms.locfileid: "7461148"
 
 3. Στην περιοχή **Διαχείριση**, επιλέξτε **Εταιρικές εφαρμογές**.
 
-4. Αναζήτησης για τη Microsoft<!--note from editor: Via Microsoft Writing Style Guide.--> αναγνωριστικό εφαρμογής:
+4. Αναζητήστε το αναγνωριστικό της εφαρμογής Microsoft:
    - Πληροφορίες κοινού: `0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff` με το όνομα `Dynamics 365 AI for Customer Insights`
    - Πληροφορίες δέσμευσης: `ffa7d2fe-fc04-4599-9f6d-7ca06dd0c4fd` με το όνομα `Dynamics 365 AI for Customer Insights engagement insights`
 
@@ -49,23 +49,23 @@ ms.locfileid: "7461148"
 6. Εάν δεν επιστραφούν αποτελέσματα, δημιουργήστε έναν νέο διευθυντή εξυπηρέτησης.
 
 >[!NOTE]
->Για να κάνετε χρήση της πλήρους ισχύος του Dynamics 365 Customer Insights, προτείνουμε να προσθέσετε και τις δύο εφαρμογές στην αρχή υπηρεσίας.<!--note from editor: Using the note format is suggested, just so this doesn't get lost by being tucked up in the step.-->
+>Για να κάνετε χρήση της πλήρους ισχύος του Dynamics 365 Customer Insights, προτείνουμε να προσθέσετε και τις δύο εφαρμογές στην αρχή υπηρεσίας.
 
 ### <a name="create-a-new-service-principal"></a>Δημιουργία μιας νέας αρχής εξυπηρέτησης
-<!--note from editor: Some general formatting notes: The MWSG wants bold for text the user enters (in addition to UI strings and the settings users select), but there's plenty of precedent for using code format for entering text in PowerShell so I didn't change that. Note that italic should be used for placeholders, but not much else.-->
+
 1. Εγκαταστήστε την πιο πρόσφατη έκδοση του Azure Active Directory PowerShell for Graph. Για περισσότερες πληροφορίες, μεταβείτε στην [Eγκατάσταση του Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
 
-   1. Στον υπολογιστή σας, επιλέξτε το πλήκτρο των Windows στο πληκτρολόγιό σας και αναζητήστε το **Windows PowerShell** και επιλέξτε **Εκτέλεση ως Διαχειριστής**.<!--note from editor: Or should this be something like "search for **Windows PowerShell** and, if asked, select **Run as administrator**."?-->
+   1. Στον υπολογιστή σας, επιλέξτε το πλήκτρο των Windows στο πληκτρολόγιό σας και αναζητήστε το **Windows PowerShell** και επιλέξτε **Εκτέλεση ως Διαχειριστής**.
    
    1. Στο παράθυρο PowerShell που ανοίγει, καταχωρείστε `Install-Module AzureAD`.
 
 2. Δημιουργήστε την αρχή υπηρεσίας για Customer Insights με τη λειτουργική μονάδα Azure AD PowerShell.
 
-   1. Στο παράθυρο PowerShell, καταχωρείστε `Connect-AzureAD -TenantId "[your tenant ID]" -AzureEnvironmentName Azure`. Αντικαταστήστε το *"[αναγνωριστικό του μισθωτή σας]"*<!--note from editor: Edit okay? Or should the quotation marks stay in the command line, in which case it would be "Replace *[your tenant ID]* --> με το πραγματικό αναγνωριστικό του μισθωτή σας, στο οποίο θέλετε να δημιουργήσετε την αρχή υπηρεσίας. Η παράμετρος ονόματος περιβάλλοντος, `AzureEnvironmentName`, είναι προαιρετική.
+   1. Στο παράθυρο PowerShell, καταχωρείστε `Connect-AzureAD -TenantId "[your tenant ID]" -AzureEnvironmentName Azure`. Αντικαταστήστε το *[αναγνωριστικό μισθωτή σας]* με το πραγματικό αναγνωριστικό του μισθωτή σας, στον οποίο θέλετε να δημιουργήσετε τον διευθυντή εξυπηρέτησης. Η παράμετρος ονόματος περιβάλλοντος, `AzureEnvironmentName`, είναι προαιρετική.
   
    1. Εισαγάγετε `New-AzureADServicePrincipal -AppId "0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff" -DisplayName "Dynamics 365 AI for Customer Insights"`. Αυτή η εντολή δημιουργεί τον διευθυντή εξυπηρέτησης για πληροφορίες κοινού σχετικά με τον επιλεγμένο μισθωτή. 
 
-   1. Εισαγάγετε `New-AzureADServicePrincipal -AppId "ffa7d2fe-fc04-4599-9f6d-7ca06dd0c4fd" -DisplayName "Dynamics 365 AI for Customer Insights engagement insights"`. Αυτή η εντολή δημιουργεί την αρχή υπηρεσίας για πληροφορίες δέσμευσης<!--note from editor: Edit okay?--> στον επιλεγμένο μισθωτή.
+   1. Εισαγάγετε `New-AzureADServicePrincipal -AppId "ffa7d2fe-fc04-4599-9f6d-7ca06dd0c4fd" -DisplayName "Dynamics 365 AI for Customer Insights engagement insights"`. Αυτή η εντολή δημιουργεί την αρχή υπηρεσίας για πληροφορίες δέσμευσης στον επιλεγμένο μισθωτή.
 
 ## <a name="grant-permissions-to-the-service-principal-to-access-the-storage-account"></a>Εκχώρηση δικαιωμάτων στον διευθυντή εξυπηρέτησης για πρόσβαση στον λογαριασμό αποθήκευσης
 
@@ -90,7 +90,7 @@ ms.locfileid: "7461148"
 
 ## <a name="enter-the-azure-resource-id-or-the-azure-subscription-details-in-the-storage-account-attachment-to-audience-insights"></a>Εισαγάγετε το αναγνωριστικό πόρου Azure ή τις λεπτομέρειες συνδρομής Azure μέσα στο συνημμένο λογαριασμού χώρου αποθήκευσης στις πληροφορίες κοινού
 
-Μπορείτε να<!--note from editor: Edit suggested only if this section is optional.--> επισυνάψτε έναν λογαριασμό Data Lake Storage στις πληροφορίες κοινού για να [αποθηκεύσετε δεδομένα εξόδου](manage-environments.md) ή [να τα χρησιμοποιήσετε ως προέλευση δεδομένων](connect-common-data-service-lake.md). Αυτή η επιλογή σάς επιτρέπει να επιλέξετε μεταξύ μιας προσέγγισης που βασίζεται σε πόρους ή μιας προσέγγισης που βασίζεται σε συνδρομή. Ανάλογα με την προσέγγιση που επιλέγετε, ακολουθήστε τη διαδικασία σε μία από τις ακόλουθες ενότητες.<!--note from editor: Suggested.-->
+Μπορείτε να επισυνάψτε έναν λογαριασμό Data Lake Storage στις πληροφορίες κοινού για να [αποθηκεύσετε δεδομένα εξόδου](manage-environments.md) ή [να τα χρησιμοποιήσετε ως προέλευση δεδομένων](connect-common-data-service-lake.md). Αυτή η επιλογή σάς επιτρέπει να επιλέξετε μεταξύ μιας προσέγγισης που βασίζεται σε πόρους ή μιας προσέγγισης που βασίζεται σε συνδρομή. Ανάλογα με την προσέγγιση που επιλέγετε, ακολουθήστε τη διαδικασία σε μία από τις ακόλουθες ενότητες.
 
 ### <a name="resource-based-storage-account-connection"></a>Σύνδεση λογαριασμού χώρου αποθήκευσης βάσει πόρων
 
