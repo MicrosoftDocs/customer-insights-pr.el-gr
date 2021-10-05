@@ -8,12 +8,12 @@ author: mkisel
 ms.author: mkisel
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 0fdbc93292291814b2e1a62fee2c5ff796ae14e2
-ms.sourcegitcommit: 4e5b7ec50c7612765a9ec2c8673e0cc43b357abb
+ms.openlocfilehash: 8d93a49a29c29103e189a6d4a42294c18dc28abd
+ms.sourcegitcommit: f1e3cc51ea4cf68210eaf0210ad6e14b15ac4fe8
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "7487107"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "7559018"
 ---
 # <a name="create-a-link-between-audience-insights-and-engagement-insights"></a>Δημιουργία σύνδεσης μεταξύ των πληροφοριών κοινού και των πληροφοριών δέσμευσης
 
@@ -54,6 +54,9 @@ ms.locfileid: "7487107"
 ## <a name="enable-audience-insights-unified-profiles-attributes-and-segments"></a>Ενεργοποίηση χαρακτηριστικών και τμημάτων ενοποιημένων προφίλ πληροφοριών κοινού
 
 Μετά τη σύνδεησ περιβαλλόντων, μπορείτε να επιλέξετε προαιρετικές δυνατότητες για τα συνδεδεμένα περιβάλλοντα. Αυτές οι δυνατότητες επιτρέπουν τα ενοποιημένα χαρακτηριστικά προφίλ και τα τμήματα πληροφορίες κοινού για αλληλεπιδραστική ανάλυση στα δεδομένα των πελατών.
+
+> [!IMPORTANT]
+> Για να εμφανιστούν πληροφορίες κοινού στις πληροφορίες δέσμευσης, πρέπει πρώτα [να εκτελέσετε διαδικασίες συγχώνευσης και καθοδικές διεργασίες](../audience-insights/merge-entities.md). Οι καθοδικές διεργασίες είναι σημαντικές επειδή δημιουργούν έναν μοναδικό πίνακα που προετοιμάζει τις πληροφορίες κοινού για κοινή χρήση με τις πληροφορίες δέσμευσης. (Εάν έχει προγραμματιστεί ανανέωση του συστήματος, θα συμπεριλάβει αυτόματα καθοδικές διεργασίες.)
 
 **Για την ανάλυση δεδομένων web σε πληροφορίες δέσμευσης**
 

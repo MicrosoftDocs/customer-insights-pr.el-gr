@@ -4,27 +4,27 @@ description: Βρείτε πληροφορίες σχετικά με τα SDK κ
 author: britl
 ms.reviewer: mhart
 ms.author: britl
-ms.date: 06/23/2021
+ms.date: 09/27/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: how-to
 ms.manager: shellyha
-ms.openlocfilehash: 5880e9507cc192424989c7fc9c2733ac5d770a7be8a2b42a446ffd8681fa7612
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 2e2df207802f8de501661d247bd80d6cc792636f
+ms.sourcegitcommit: f1e3cc51ea4cf68210eaf0210ad6e14b15ac4fe8
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7036283"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "7558746"
 ---
 # <a name="developer-resources-overview"></a>Επισκόπηση πόρων για προγραμματιστές
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Σε αυτό το άρθρο παρατίθενται όλα τα διαθέσιμα τμήματα κώδικα και δείγματα για γρήγορη αναφορά. Λάβετε τον κώδικα για έναν αποστολέα συμβάντων για την πλατφόρμα σας και παρακολουθήστε τα προγράμματα εκμάθησης. 
+Σε αυτό το άρθρο παρατίθενται όλα τα διαθέσιμα τμήματα κώδικα του κιτ εργαλείων ανάπτυξης λογισμικού (SDK) και τα δείγματα για προγραμματιστές με σκοπό την κοινή χρήση δεδομένων με το Dynamics 365 Customer Insights. Αποκτήστε τον κωδικό για συμβάντα ειδικά για την πλατφόρμα σας, ακολουθώντας τα προγράμματα εκμάθησης.
 
 ## <a name="capture-events-from-websites"></a>Καταγραφή συμβάντων από τοποθεσίες web
 
-- [Τρόπος προσθήκης τμημάτων κώδικα σε μια τοποθεσία Web](instrument-website.md)
+- [Χρήση οργάνων μιας τοποθεσίας Web](instrument-website.md)
 - [Δείγμα Web SDK](websdk-sample.md)
 - [Σύνθετα εργαλεία SDK web](advanced-SDK-implementation.md)
 

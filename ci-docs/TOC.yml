@@ -242,7 +242,7 @@
   items:
     - name: Κέντρο βοήθειας
       href: engagement-insights/index.yml
-    - name: Επισκόπηση δυνατοτήτων
+    - name: Σχετικά με τις πληροφορίες δέσμευσης
       href: engagement-insights/overview.md
     - name: Έναρξη
       items:
@@ -306,7 +306,7 @@
           href: engagement-insights/user-consent-storage.md
     - name: Διαθεσιμότητα περιοχής
       href: engagement-insights/regional-availability.md
-- name: Ενοποίηση πληροφοριών κοινού και δέσμευσης
+- name: Κοινή χρήση δεδομένων μεταξύ δυνατοτήτων
   items:
     - name: Σύνδεση πληροφοριών κοινού και πληροφοριών δέσμευσης
       href: engagement-insights/integrate-audience-insights-engagement-insights.md
@@ -318,5 +318,3 @@
   href: service-limits.md
 - name: Δικαιώματα και αιτήσεις DSR
   href: dsr-rights-requests.md
-- name: Λήψη υποστήριξης
-  href: 'https://dynamics.microsoft.com/support/'

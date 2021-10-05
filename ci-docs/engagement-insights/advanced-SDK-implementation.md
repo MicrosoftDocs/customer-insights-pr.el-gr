@@ -4,17 +4,17 @@ description: Σύνθετα σενάρια που πρέπει να ληφθού
 author: britl
 ms.reviewer: mhart
 ms.author: britl
-ms.date: 11/12/2020
+ms.date: 09/27/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: 7455d276035bfaf1f8a93d0e3b0b0884353a4010715c05d1d696309f7eb4b233
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 4c6646ecadbb604000d6c95b685cf6e420969a6d
+ms.sourcegitcommit: f1e3cc51ea4cf68210eaf0210ad6e14b15ac4fe8
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7036328"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "7558702"
 ---
 # <a name="advanced-web-sdk-instrumentation"></a>Σύνθετα εργαλεία SDK web
 
@@ -33,20 +33,20 @@ ms.locfileid: "7036328"
 - **authType**: Ο τύπος ελέγχου ταυτότητας που χρησιμοποιείται για τη λήψη του αναγνωριστικού χρήστη που έχει υποβληθεί σε έλεγχο ταυτότητας.
 - **name**: Το όνομα του χρήστη.
 - **email**: Η διεύθυνση ηλεκτρονικού ταχυδρομείου του χρήστη.
-    
-Το παρακάτω παράδειγμα παρουσιάζει ένα τμήμα κώδικα που στέλνει πληροφορίες χρήστη. Όπου βλέπετε λειτουργίες που επισημαίνονται με *, αντικαταστήστε τις με κλήση αυτών των τιμών:  
+
+Το παρακάτω παράδειγμα παρουσιάζει ένα τμήμα κώδικα που στέλνει πληροφορίες χρήστη. Όταν βλέπετε λειτουργίες στις οποίες προηγείται ένα σύμβολο αστερίσκου *, αντικαταστήστε τη λειτουργία με την προσαρμοσμένη υλοποίησή σας:
 
 ```
 […]
-window, document 
+window, document
 {
-    src:"https://download.pi.dynamics.com/sdk/web/mspi-0.min.js", 
-    name:"myproject",      
-    cfg:{ 
-      ingestionKey:<paste your ingestion key>", 
-      autoCapture:{ 
-        view:true, 
-        click:true 
+    src:"https://download.pi.dynamics.com/sdk/web/msei-1.min.js",
+    name:"myproject",
+    cfg:{
+      ingestionKey:<paste your ingestion key>",
+      autoCapture:{
+        view:true,
+        click:true
       }
     },
     user:{
@@ -58,25 +58,25 @@ window, document
 […]
 ```
 
-Μπορείτε επίσης να καθορίσετε πληροφορίες χρήστη καλώντας το `setUser(user: IUser)` API στο SDK. Η τηλεμετρία που αποστέλλεται μετά την κλήση του `setUser API` θα περιέχει τις πληροφορίες χρήστη.
+Μπορείτε επίσης να καθορίσετε πληροφορίες χρήστη καλώντας το API `setUser(user: IUser)`. Η τηλεμετρία που αποστέλλεται μετά την κλήση του API `setUser` θα περιέχει τις πληροφορίες χρήστη.
 
 ## <a name="adding-custom-properties-for-each-event"></a>Προσθήκη προσαρμοσμένων ιδιοτήτων για κάθε συμβάν
 
-Το SDK σάς επιτρέπει να προσδιορίσετε προσαρμοσμένες ιδιότητες που μπορούν να αποστέλλονται με κάθε συμβάν. Μπορείτε να καθορίσετε τις προσαρμοσμένες ιδιότητες ως αντικείμενο που περιέχει ζεύγη τιμών-κλειδιών (η τιμή μπορεί να είναι τύπου `string | number | boolean`). Το αντικείμενο μπορεί να προστεθεί σε μια ιδιότητα που ονομάζεται `props`, παρόμοια με τα `src`, `name` και `cfg` στη ρύθμιση παραμέτρων τμήματος κώδικα. 
+Το SDK σάς επιτρέπει να προσδιορίσετε προσαρμοσμένες ιδιότητες που μπορούν να αποστέλλονται με κάθε συμβάν. Μπορείτε να καθορίσετε τις προσαρμοσμένες ιδιότητες ως αντικείμενο που περιέχει ζεύγη τιμών-κλειδιών (η τιμή μπορεί να είναι τύπου `string | number | boolean`). Μπορείτε να προσθέσετε το αντικείμενο σε μια ιδιότητα που ονομάζεται `props`, παρόμοια με τα `src`, `name`, και `cfg` στη διαμόρφωση τμήματος κώδικα.
 
 Το παρακάτω παράδειγμα παρουσιάζει ένα τμήμα κώδικα που στέλνει προσαρμοσμένες ιδιότητες:
 
 ```
 […]
-window, document 
+window, document
 {
-    src:"https://download.pi.dynamics.com/sdk/web/mspi-0.min.js", 
-    name:"myproject",      
-    cfg:{ 
-      ingestionKey:<paste your ingestion key>", 
-      autoCapture:{ 
-        view:true, 
-        click:true 
+    src:"https://download.pi.dynamics.com/sdk/web/msei-1.min.js",
+    name:"myproject",
+    cfg:{
+      ingestionKey:<paste your ingestion key>",
+      autoCapture:{
+        view:true,
+        click:true
       }
     },
     props:{
@@ -87,7 +87,7 @@ window, document
 […]
 ```
 
-Μπορείτε επίσης να καθορίσετε προσαρμοσμένες ιδιότητες μεμονωμένα καλώντας το `setProperty(name: string, value: string | number | boolean)` στο SDK.
+Μπορείτε επίσης να καθορίσετε προσαρμοσμένες ιδιότητες μεμονωμένα καλώντας το API `setProperty(name: string, value: string | number | boolean)`.
 
 ## <a name="sending-custom-events"></a>Αποστολή προσαρμοσμένων συμβάντων
 

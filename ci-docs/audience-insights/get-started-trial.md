@@ -10,12 +10,12 @@ author: MichelleDevaney
 ms.author: midevane
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: f038dedd369ac9e623146b66528efa87c47a8c23769037d8709fa9b804a0b723
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 3a235e924395a606b9332de3d205289288a597a9
+ms.sourcegitcommit: f1e3cc51ea4cf68210eaf0210ad6e14b15ac4fe8
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035415"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "7558823"
 ---
 # <a name="set-up-a-trial-environment"></a>Δημιουργήστε ένα δοκιμαστικό περιβάλλον 
 
@@ -95,7 +95,7 @@ ms.locfileid: "7035415"
 
 - Οι δοκιμαστικές δοκιμές είναι ενεργές για 30 ημέρες από προεπιλογή. Ωστόσο, μπορείτε να τα πραγματοποιήσετε επέκταση και μετά την 23η ημέρα κατά τη σύνδεσή σας στη δοκιμαστική έκδοση.
 - Δεν μπορείτε να χρησιμοποιήσετε το δικό σας λογαριασμό Azure Data Lake Storage για την αποθήκευση δεδομένων εξόδου κατά τη διάρκεια μιας δοκιμαστικής έκδοσης. Ωστόσο, μπορείτε να προσλάβετε δεδομένα από ένα λογαριασμό Data Lake Storage.
-- Μπορείτε να αποθηκεύσετε δεδομένα έως και 3 GB στο περιβάλλον Dataverse, τα οποία θα ενημερώνονται αυτόματα όταν ξεκινάτε μια δοκιμαστική έκδοση του Customer Insights.
+- Μπορείτε να αποθηκεύσετε δεδομένα έως και 3 GB στο περιβάλλον του Dataverse που παρέχεται αυτόματα όταν ξεκινάτε μια δοκιμαστική έκδοση του Customer Insights.
 
 ## <a name="copy-data-from-a-trial-to-a-paid-subscription"></a>Αντιγραφή δεδομένων από μια δοκιμαστική έκδοση σε συνδρομή επί πληρωμή
 
