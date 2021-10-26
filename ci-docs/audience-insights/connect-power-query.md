@@ -9,16 +9,18 @@ ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: 3be417845a41c8f25c71bfc0823f42571157759b224e46d5e114037ee3df8329
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: ab6edc3f33ebacb81f55c0882a78c5827b4384ed
+ms.sourcegitcommit: 1565f4f7b4e131ede6ae089c5d21a79b02bba645
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033264"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "7643494"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>Σύνδεση σε προέλευση δεδομένων Power Query
 
 Το Power Query προσφέρει ένα ευρύ σύνολο συνδέσεων για λήψη δεδομένων. Οι περισσότερες από αυτές τις συνδέσεις υποστηρίζονται από το Dynamics 365 Customer Insights. Η προσθήκη προελεύσεων δεδομένων με βάση τις συνδέσεις Power Query γενικά ακολουθεί τα βήματα που περιγράφονται στην επόμενη ενότητα. Ωστόσο, ανάλογα με τη σύνδεση που χρησιμοποιείτε, απαιτούνται διαφορετικές πληροφορίες. Για περισσότερες πληροφορίες, ανατρέξτε στην τεκμηρίωση σχετικά με μεμονωμένες συνδέσεις στην [αναφορά σύνδεσης Power Query](/power-query/connectors/).
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWN6EK]
 
 ## <a name="create-a-new-data-source"></a>Δημιουργήστε μια νέα προέλευση δεδομένων
 

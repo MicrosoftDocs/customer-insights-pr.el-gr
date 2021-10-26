@@ -10,12 +10,12 @@ ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 75d597158233f75f0eb5f94389f9dba199d81719f2bbe4e5cc58d2a3afc7dcf8
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: de31e1f25c08d0bcb5341c5f465b1999de48acf3
+ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032850"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645355"
 ---
 # <a name="data-sources-overview"></a>Επισκόπηση προελεύσεων δεδομένων
 
@@ -35,7 +35,7 @@ ms.locfileid: "7032850"
 
 ## <a name="add-data-from-on-premises-data-sources"></a>Προσθήκη δεδομένων από προελεύσεις δεδομένων εσωτερικής εγκατάστασης
 
-Η λήψη δεδομένων από προελεύσεις δεδομένων εσωτερικής εγκατάστασης στα στατιστικά κοινού υποστηρίζεται με βάση τις ροές δεδομένων του Microsoft Power Platform. Οι ροές δεδομένων μπορούν να ενεργοποιηθούν στο Customer Insights [παρέχοντας τη διεύθυνση URL του περιβάλλοντος Microsoft Dataverse](get-started-paid.md) κατά τη ρύθμιση του περιβάλλοντος.
+Η λήψη δεδομένων από προελεύσεις δεδομένων εσωτερικής εγκατάστασης στα στατιστικά κοινού υποστηρίζεται με βάση τις ροές δεδομένων του Microsoft Power Platform. Οι ροές δεδομένων μπορούν να ενεργοποιηθούν στο Customer Insights [παρέχοντας τη διεύθυνση URL του περιβάλλοντος Microsoft Dataverse](create-environment.md) κατά τη ρύθμιση του περιβάλλοντος.
 
 Οι προελεύσεις δεδομένων που δημιουργούνται μετά τη συσχέτιση ενός περιβάλλοντος Dataverse με το Customer Insights θα χρησιμοποιήσουν [ροές δεδομένων του Power Platform](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) από προεπιλογή. Οι ροές δεδομένων υποστηρίζουν τη σύνδεση εσωτερικής εγκατάστασης, χρησιμοποιώντας την πύλη δεδομένων. Καταργήστε και δημιουργήστε εκ νέου προελεύσεις δεδομένων που υπήρχαν πριν συσχετιστεί ένα περιβάλλον Dataverse για να [χρησιμοποιηθούν οι πύλες δεδομένων εσωτερικής εγκατάστασης](/data-integration/gateway/service-gateway-app).
 

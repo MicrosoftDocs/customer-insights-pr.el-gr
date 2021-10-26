@@ -1,7 +1,7 @@
 ---
 title: Εξαγωγή δεδομένων του Customer Insights στο Campaign Monitor
 description: Μάθετε πώς να ρυθμίσετε τις παραμέτρους της σύνδεσης και της εξαγωγής στο Campaign Monitor.
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: d2cc3ec944faa1d77ffb44e8abb422d753c5625d0ccef75cbb7efb14cb7c3741
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 063de14c4ffd51b3afd89786606d7b37626695dc
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7031887"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618981"
 ---
 # <a name="export-segments-to-campaign-monitor-preview"></a>Εξαγωγή τμημάτων στο Campaign Monitor (έκδοση προεπισκόπησης)
 
@@ -28,10 +28,10 @@ ms.locfileid: "7031887"
 
 ## <a name="known-limitations"></a>Γνωστοί περιορισμοί
 
-- Μπορείτε να εξαγάγετε έως και 1000000 προφίλ ανά εξαγωγή στο Campaign Monitor.
+- Μπορείτε να εξαγάγετε έως και 1 εκατομμύριο προφίλ πελατών ανά εξαγωγή στο Campaign Monitor.
 - Η εξαγωγή στο Campaign Monitor περιορίζεται σε τμήματα.
-- Η εξαγωγή έως 1 εκατομμυρίων προφίλ στο Campaign Monitor μπορεί να χρειαστεί έως και 20 λεπτά για να ολοκληρωθεί. 
-- Ο αριθμός των προφίλ που μπορείτε να εξαγάγετε στην Εποπτεία εκστρατείας εξαρτάται και περιορίζεται από τη σύμβαση με την Εποπτεία εκστρατείας.
+- Η εξαγωγή έως 1 εκατομμυρίου προφίλ πελατών στο Campaign Monitor μπορεί να διαρκέσει έως και 20 λεπτά μέχρι να ολοκληρωθεί. 
+- Ο αριθμός των προφίλ πελατών που μπορείτε να εξαγάγετε στο Campaign Monitor εξαρτάται και περιορίζεται από τη σύμβαση με το Campaign Monitor.
 
 ## <a name="set-up-connection-to-campaign-monitor"></a>Ρύθμιση σύνδεσης στο Campaign Monitor
 
@@ -66,7 +66,7 @@ ms.locfileid: "7031887"
 1. Εισαγάγετε το [**Αναγνωριστικό λίστας Campaign Monitor**](https://www.campaignmonitor.com/api/getting-started/#your-list-id).    
    [Δημιουργήστε το κλειδί API](https://www.campaignmonitor.com/api/getting-started/) από τις **Ρυθμίσεις λογαριασμού** στο Campaign Monitor πρώτα για να προβάλετε το αναγνωριστικό λίστας API.  
 
-3. Στην ενότητα **Αντιστοίχιση δεδομένων**, στο πεδίο **Ηλεκτρονικό ταχυδρομείο**, επιλέξτε το πεδίο στο ενοποιημένο προφίλ πελάτη που αντιπροσωπεύει τη διεύθυνση ηλεκτρονικού ταχυδρομείου ενός πελάτη. Απαιτείται η εξαγωγή τμημάτων στο Campaign Monitor.
+1. Στην ενότητα **Δεδομένα που αντιστοιχούν**, στο πεδίο **Ηλεκτρονικό ταχυδρομείο**, επιλέξτε το πεδίο που αντιπροσωπεύει τη διεύθυνση ηλεκτρονικού ταχυδρομείου ενός πελάτη. Απαιτείται η εξαγωγή τμημάτων στο Campaign Monitor.
 
 1. Επιλέξτε **Αποθήκευση**.
 

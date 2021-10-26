@@ -1,7 +1,7 @@
 ---
 title: Εξαγωγή δεδομένων του Customer Insights στο LinkedIn Ads
 description: Μάθετε πώς να ρυθμίσετε τις παραμέτρους της σύνδεσης και της εξαγωγής στο LinkedIn Ads.
-ms.date: 05/12/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 2cfaa37fd0ac697f29665792bab27a925d8ea1eede0519d424524a7e5accbfeb
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 948a7e980df5714034009c92282e78cf2bdcb231
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034223"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618291"
 ---
 # <a name="export-segments-to-linkedin-ads-preview"></a>Εξαγωγή τμημάτων στο LinkedIn Ads (έκδοση προεπισκόπησης)
 
@@ -28,9 +28,9 @@ ms.locfileid: "7034223"
 
 ## <a name="known-limitations"></a>Γνωστοί περιορισμοί
 
-- Μπορείτε να εξαγάγετε έως και 100 χιλιάδες προφίλ ανά εξαγωγή στο LinkedIn Ads.
+- Μπορείτε να εξαγάγετε έως και 100.000 προφίλ πελατών ανά εξαγωγή στο LinkedIn Ads.
 - Η εξαγωγή στο LinkedIn Ads περιορίζεται σε τμήματα.
-- Η εξαγωγή έως 100 χιλιάδων προφίλ στο LinkedIn Ads μπορεί να χρειαστεί έως και 10 λεπτά για να ολοκληρωθεί. 
+- Η εξαγωγή έως 100.000 προφίλ πελατών στο LinkedIn Ads μπορεί να διαρκέσει έως και 10 λεπτά μέχρι να ολοκληρωθεί. 
 
 ## <a name="set-up-the-connection-to-linkedin-ads"></a>Ρυθμίστε τη σύνδεση στο LinkedIn Ads
 
@@ -66,7 +66,7 @@ ms.locfileid: "7034223"
 
 1. Επιλέξτε αν θέλετε να εξαγάγετε δεδομένα για να κάνετε [στόχευση επαφών](https://business.linkedin.com/marketing-solutions/ad-targeting/contact-targeting) ή [στόχευση εταιρείας](https://business.linkedin.com/marketing-solutions/ad-targeting/account-targeting) στο LinkedIn. 
 
-1. Στην ενότητα **Αντιστοίχιση δεδομένων**, επιλέξτε το πεδίο στο ενοποιημένο προφίλ πελάτη που αναπαριστά τη διεύθυνση email ενός πελάτη. Απαιτείται για την εξαγωγή τμημάτων στο LinkedIn Ads.
+1. Στην ενότητα **αντιστοίχισης δεδομένων**, για στόχευση επαφών, επιλέξτε τουλάχιστον ένα πεδίο που αντιπροσωπεύει τη διεύθυνση ηλεκτρονικού ταχυδρομείου ενός πελάτη, το αναγνωριστικό διαφήμισης Apple, το αναγνωριστικό διαφήμισης Google, το αναγνωριστικό χρήστη Google ή το όνομα και το επώνυμο. Εάν επιλέξετε στόχευση εταιρείας, επιλέξτε τουλάχιστον ένα πεδίο που να αντιπροσωπεύει μια επωνυμία εταιρείας, έναν τομέα ηλεκτρονικού ταχυδρομείου, μια διεύθυνση URL σελίδας LinkedIn, ένα σύμβολο Stock ή μια τοποθεσία web. Μπορείτε να επιλέξετε επιπλέον πεδία για να καθορίσετε περαιτέρω την εξαγωγή σας. 
 
 1. Επιλέξτε τα τμήματα που θέλετε να εξαγάγετε. Τα κοινά που έχουν αντιστοιχιστεί στο LinkedIn Campaign Manager θα δημιουργηθούν αυτόματα με το όνομα των τμημάτων που επιλέξατε να εξαγάγετε. Κάθε τμήμα θα έχει ως αποτέλεσμα ένα ξεχωριστό αντιστοιχισμένο κοινό. 
 

@@ -10,12 +10,12 @@ ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: aaaf1848df175469d8af07754ac153b777781ffb
-ms.sourcegitcommit: 971716c761871cee390519cacef617dac21ecd60
+ms.openlocfilehash: 5e8545bc9bf0d953150248fa859c6ca71a12f9cf
+ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 09/01/2021
-ms.locfileid: "7466577"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645264"
 ---
 # <a name="get-started-with-dynamics-365-customer-insights-audience-insights-capability"></a>Γρήγορα αποτελέσματα με τις πληροφορίες κοινού Dynamics 365 Customer Insights
 
@@ -23,7 +23,7 @@ ms.locfileid: "7466577"
 
 ## <a name="step-1-create-an-environment"></a>Βήμα 1: Δημιουργία περιβάλλοντος
 
-Για να ξεκινήσετε, πρέπει πρώτα να δημιουργήσετε ένα περιβάλλον στο οποίο θα εργαστείτε. Εάν ο οργανισμός σας έχει ήδη αγοράσει μια άδεια χρήσης, ανατρέξτε στο θέμα [Γρήγορα αποτελέσματα με μια συνδρομή επί πληρωμή](get-started-paid.md). Για να ξεκινήσετε μια δοκιμαστική έκδοση για κοινό πληροφορίες, ανατρέξτε στο θέμα [Ρύθμιση ενός δοκιμαστικού περιβάλλοντος](get-started-trial.md). 
+Για να ξεκινήσετε, πρέπει πρώτα να δημιουργήσετε ένα περιβάλλον στο οποίο θα εργαστείτε. Εάν ο οργανισμός σας έχει ήδη αγοράσει μια άδεια χρήσης, ανατρέξτε στο θέμα [Δημιουργία περιβάλλοντος](create-environment.md). Για να ξεκινήσετε μια δοκιμαστική έκδοση για κοινό πληροφορίες, ανατρέξτε στο θέμα [Ρύθμιση ενός δοκιμαστικού περιβάλλοντος](../trial-signup.md). 
 
 ## <a name="step-2-explore-audience-insights"></a>Βήμα 2: Εξερεύνηση πληροφοριών κοινού
 

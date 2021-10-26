@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 34dc753aa9d2420ef8780d436e14c3c27377e4779eda0f83ca6b5424f2328f22
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 4403c6f535f5dc60919be3717073d52640bbe61a
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7031427"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7619211"
 ---
 # <a name="export-segments-list-to-facebook-ads-manager-preview"></a>Εξαγωγή λίστας τμημάτων στο Facebook Ads Manager (έκδοση προεπισκόπησης)
 
@@ -30,7 +30,7 @@ ms.locfileid: "7031427"
 - Έως 10 εκατομμύρια προφίλ πελατών ανά εξαγωγή στη διαχείριση διαφημίσεων Facebook.
 - Η εξαγωγή στο Ads Manager του Facebook περιορίζεται σε τμήματα.
 - Δημιουργήστε ή ενημερώστε προσαρμοσμένα κοινά μόνο στο Facebook του τύπου *λίστα πελατών*.
-- Η εξαγωγή τμημάτων με σύνολο 10 εκατομμυρίων προφίλ μπορεί να χρειαστεί έως και 90 λεπτά για να ολοκληρωθεί.
+- Η εξαγωγή τμημάτων της αγοράς με συνολικά 10 εκατομμύρια προφίλ πελατών μπορεί να διαρκέσει έως και 90 λεπτά για την ολοκλήρωσή της.
 
 ## <a name="set-up-connection-to-facebook-ads-manager"></a>Ρύθμιση σύνδεσης στο Ads Manager του Facebook
 

@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: b67aa7477033222b0bc9512a962a1580edd973b4882ce925620ff5ec14f83fe3
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: fa1d4ffd9f77e128b5d804e4562e964561f4684f
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032712"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618682"
 ---
 # <a name="enrich-customer-profiles-with-custom-data-preview"></a>Εμπλουτισμός προφίλ πελατών με προσαρμοσμένα δεδομένα (προεπισκόπηση)
 
@@ -44,6 +44,8 @@ ms.locfileid: "7032712"
 1.  Επιλέξτε **Επόμενο** και εισαγάγετε τη **Διαδρομή** και το **Όνομα αρχείου** του αρχείου δεδομένων που θέλετε να εισαγάγετε.
 
     :::image type="content" source="media/enrichment-SFTP-path-and-filename.png" alt-text="Στιγμιότυπο οθόνης κατά την εισαγωγή της θέσης δεδομένων.":::
+
+1. Επιλέξτε **Επόμενο** και επιλέξτε το σύνολο δεδομένων πελατών. Μπορεί να είναι είτε όλα τα προφίλ πελατών είτε ένα τμήμα.
 
 1. Επιλέξτε **Επόμενο** και δώστε ένα όνομα για τον εμπλουτισμό και ένα όνομα για την οντότητα εξόδου. 
 
@@ -123,6 +125,6 @@ ms.locfileid: "7032712"
 
 ## <a name="next-steps"></a>Επόμενα βήματα
 
-Δημιουργήστε τα εμπλουτισμένα δεδομένα των πελατών σας. Δημιουργήστε [τμήματα](segments.md) και [μέτρα](measures.md) και, επιπλέον, [εξαγάγετε τα δεδομένα](export-destinations.md) για να παραδώσετε εξατομικευμένες εμπειρίες στους πελάτες σας.
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Εμπλουτισμός ενοποιημένων προφίλ πελάτη
 description: Χρησιμοποιήστε τις δυνατότητες για να εμπλουτίσετε τα δεδομένα των πελατών σας.
-ms.date: 08/31/2021
+ms.date: 09/30/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 992c45e30e2dff00f5207290940b56b2fe1c08ad
-ms.sourcegitcommit: b9a81c2acd42d774669d2db3d0430c7d81de991c
+ms.openlocfilehash: 5d5e12ee44dfa40c470738eaee5c68fdf23d1b2d
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "7469976"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617555"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>Εμπλουτισμός για προφίλ πελατών (προεπισκόπηση)
 
@@ -27,16 +27,26 @@ ms.locfileid: "7469976"
 
 Πρέπει να έχετε ρόλο Συμμετέχων ή Διαχειριστής για να δημιουργήσετε ή να επεξεργαστείτε εμπλουτισμούς. Για περισσότερες πληροφορίες, δείτε [Δικαιώματα](permissions.md).
 
-Στην καρτέλα **Ανακάλυψη**, θα βρείτε τους παρακάτω εμπλουτισμούς:
+Στην καρτέλα **Ανακάλυψη**, θα βρείτε όλες τις υποστηριζόμενες επιλογές εμπλουτισμού.
 
-- [Χάρτες Azure](enrichment-azure-maps.md) παρέχονται από την Microsoft
+# <a name="individual-customers-b2c"></a>[Μεμονωμένοι πελάτες (B2C)](#tab/b2c)
+
 - [Επωνυμίες](enrichment-microsoft.md) που παρέχονται από τη Microsoft
 - [Ενδιαφέροντα](enrichment-microsoft.md) που παρέχονται από τη Microsoft
-- [Βελτιωμένες διευθύνσεις](enrichment-enhanced-addresses.md) που παρέχονται από τη Microsoft
-- [Εταιρικά δεδομένα](enrichment-leadspace.md) που παρέχονται από το Leadspace
+- [Βελτιωμένες διευθύνσεις](enrichment-enhanced-addresses.md) που παρέχονται από τη Microsoft 
 - [Δημογραφικά στοιχεία](enrichment-experian.md) που παρέχονται από την Experian
-- [Δεδομένα θέσης](enrichment-here.md) παρέχονται από τις τεχνολογίες HERE
-- [Προσαρμοσμένα δεδομένα](enrichment-SFTP-custom-import.md) μέσω πρωτοκόλλου ασφαλούς μεταφοράς αρχείων (SFTP)
+- [Προσαρμοσμένα δεδομένα](enrichment-SFTP-custom-import.md) μέσω πρωτοκόλλου ασφαλούς μεταφοράς αρχείων (SFTP) 
+- [Χάρτες Azure](enrichment-azure-maps.md) παρέχονται από την Microsoft
+
+# <a name="business-accounts-b2b"></a>[Επιχειρηματικοί λογαριασμοί (B2B)](#tab/b2b)
+
+- [Εταιρικά δεδομένα](enrichment-leadspace.md) που παρέχονται από το Leadspace
+- [Βελτιωμένες διευθύνσεις](enrichment-enhanced-addresses.md) που παρέχονται από τη Microsoft 
+- [Δεδομένα θέσης](enrichment-here.md) παρέχονται από τις τεχνολογίες HERE 
+- [Προσαρμοσμένα δεδομένα](enrichment-SFTP-custom-import.md) μέσω πρωτοκόλλου ασφαλούς μεταφοράς αρχείων (SFTP) 
+- [Χάρτες Azure](enrichment-azure-maps.md) παρέχονται από την Microsoft
+
+---
 
 Στην καρτέλα **Οι εμπλουτισμοί μου**, μπορείτε να δείτε τους εμπλουτισμούς που έχετε ρυθμίσει και να επεξεργαστείτε τις ιδιότητές τους.
 
@@ -58,7 +68,7 @@ ms.locfileid: "7469976"
 
 ## <a name="enrichments-and-connections"></a>Εμπλουτισμοί και συνδέσεις
 
-Οι παράμετροι των εμπλουτισμών τρίτων ρυθμίζονται με τη [χρήση συνδέσεων](connections.md), τις οποίες ένας διαχειριστής δημιουργεί με διαπιστευτήρια και παρέχει τη συγκατάθεσή του για τη μεταφορά δεδομένων. Η σύνδεση μπορεί να χρησιμοποιηθεί από διαχειριστές και συμβάλλοντες για τη ρύθμιση παραμέτρων εμπλουτισμών.  
+Οι παράμετροι των εμπλουτισμών τρίτων ρυθμίζονται με τη [χρήση συνδέσεων](connections.md), τις οποίες ένας διαχειριστής δημιουργεί με διαπιστευτήρια και παρέχει τη συγκατάθεσή του για τη μεταφορά δεδομένων. Οι συνδέσεις μπορούν να χρησιμοποιηθεί από διαχειριστές και συνεισφέροντες για τη διαμόρφωση των εμπλουτισμών.  
 
 ## <a name="multiple-enrichments-of-the-same-type"></a>Πολλαπλοί εμπλουτισμοί του ίδιου τύπου
 

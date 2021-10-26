@@ -9,18 +9,18 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: b96c7f580b4067e059e00a9cdb4e872e9acd4a5c
-ms.sourcegitcommit: 5704002484cdf85ebbcf4e7e4fd12470fd8e259f
+ms.openlocfilehash: b901d799dbd73841a6ddbae754c4e4275f61146a
+ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483525"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645172"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-account-by-using-an-azure-service-principal"></a>Σύνδεση σε έναν λογαριασμό Azure Data Lake Storage χρησιμοποιώντας μια αρχή υπηρεσίας Azure
 
 Τα αυτοματοποιημένα εργαλεία που χρησιμοποιούν υπηρεσίες Azure θα πρέπει να έχουν πάντοτε περιορισμένα δικαιώματα. Αντί να συνδέεστε με εφαρμογές ως πλήρως προνομιούχος χρήστης, το Azure προσφέρει τις αρχές εξυπηρέτησης. Διαβάστε στη συνέχεια για να μάθετε πώς να συνδέετε το Dynamics 365 Customer Insights με έναν λογαριασμό Azure Data Lake Storage χρησιμοποιώντας μια αρχή υπηρεσίας Azure αντί για κλειδιά λογαριασμού χώρου αποθήκευσης. 
 
-Μπορείτε να χρησιμοποιήσετε την αρχή υπηρεσίας για [να προσθέσετε ή να επεξεργαστείτε με ασφάλεια έναν φάκελο του Common Data Model ως προέλευση δεδομένων](connect-common-data-model.md) ή [να δημιουργήσετε ή να ενημερώσετε ένα περιβάλλον](get-started-paid.md).
+Μπορείτε να χρησιμοποιήσετε την αρχή υπηρεσίας για [να προσθέσετε ή να επεξεργαστείτε με ασφάλεια έναν φάκελο του Common Data Model ως προέλευση δεδομένων](connect-common-data-model.md) ή [να δημιουργήσετε ή να ενημερώσετε ένα περιβάλλον](create-environment.md).
 
 > [!IMPORTANT]
 > - Ο λογαριασμός Data Lake Storage που θα χρησιμοποιήσει την αρχή υπηρεσίας πρέπει να έχει ενεργοποιημένο τον [ιεραρχικό χώρο ονομάτων](/azure/storage/blobs/data-lake-storage-namespace).
