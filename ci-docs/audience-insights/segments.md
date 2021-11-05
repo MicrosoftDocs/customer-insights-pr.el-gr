@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 6840f4bc345b0821fb2349666130b39d542878e7
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: ac33a6dcde4c710cecd3c6836aad3e26ce5c7de6
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7617375"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673833"
 ---
 # <a name="segments-overview"></a>Επισκόπηση τμημάτων
 
@@ -26,7 +26,7 @@ ms.locfileid: "7617375"
 
 Υπάρχουν πολλοί τρόποι για τη δημιουργία ενός νέου τμήματος: 
 
-# <a name="individual-customers-b2c"></a>[Μεμονωμένοι πελάτες (B2C)](#tab/b2c)
+# <a name="individual-consumers-b-to-c"></a>[Μεμονωμένοι πελάτες (B2C)](#tab/b2c)
 
 - Πολύπλοκο τμήμα με εργαλείο δόμησης τμημάτων: [Δημιουργήστε το δικό σας](segment-builder.md#create-a-new-segment) 
 - Απλά τμήματα με έναν τελεστή: [Γρήγορο τμήμα](segment-builder.md#quick-segments) 
@@ -34,7 +34,7 @@ ms.locfileid: "7617375"
 - Προτάσεις με υποστήριξη AI βάσει των μέτρων ή των χαρακτηριστικών: [Προτεινόμενα τμήματα της αγοράς για τη βελτίωση των μέτρων](suggested-segments.md) 
 - Προτάσεις βάσει δραστηριοτήτων: [Προτεινόμενα τμήματα αγοράς βάσει της δραστηριότητας του πελάτη](suggested-segments-activity.md) 
 
-# <a name="business-accounts-b2b"></a>[Επιχειρηματικοί λογαριασμοί (B2B)](#tab/b2b)
+# <a name="business-accounts-b-to-b"></a>[Λογαριασμοί επιχειρήσεων (B2B)](#tab/b2b)
 
 - Πολύπλοκο τμήμα με εργαλείο δόμησης τμημάτων: [Δημιουργήστε το δικό σας](segment-builder.md#create-a-new-segment)
 

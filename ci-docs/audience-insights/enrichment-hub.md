@@ -10,12 +10,12 @@ author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 5d5e12ee44dfa40c470738eaee5c68fdf23d1b2d
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: bc0128c222c032e8cfe35e6f3baa0ea722bce7cb
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7617555"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7672999"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>Εμπλουτισμός για προφίλ πελατών (προεπισκόπηση)
 
@@ -29,7 +29,7 @@ ms.locfileid: "7617555"
 
 Στην καρτέλα **Ανακάλυψη**, θα βρείτε όλες τις υποστηριζόμενες επιλογές εμπλουτισμού.
 
-# <a name="individual-customers-b2c"></a>[Μεμονωμένοι πελάτες (B2C)](#tab/b2c)
+# <a name="individual-consumers-b-to-c"></a>[Μεμονωμένοι πελάτες (B2C)](#tab/b2c)
 
 - [Επωνυμίες](enrichment-microsoft.md) που παρέχονται από τη Microsoft
 - [Ενδιαφέροντα](enrichment-microsoft.md) που παρέχονται από τη Microsoft
@@ -38,7 +38,7 @@ ms.locfileid: "7617555"
 - [Προσαρμοσμένα δεδομένα](enrichment-SFTP-custom-import.md) μέσω πρωτοκόλλου ασφαλούς μεταφοράς αρχείων (SFTP) 
 - [Χάρτες Azure](enrichment-azure-maps.md) παρέχονται από την Microsoft
 
-# <a name="business-accounts-b2b"></a>[Επιχειρηματικοί λογαριασμοί (B2B)](#tab/b2b)
+# <a name="business-accounts-b-to-b"></a>[Λογαριασμοί επιχειρήσεων (B2B)](#tab/b2b)
 
 - [Εταιρικά δεδομένα](enrichment-leadspace.md) που παρέχονται από το Leadspace
 - [Βελτιωμένες διευθύνσεις](enrichment-enhanced-addresses.md) που παρέχονται από τη Microsoft 

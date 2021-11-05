@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: 5262ad20019e90e73ab121a5ab90e602c1a32b7e
-ms.sourcegitcommit: 693458e13e4b4d94b6205093559912f6a4dc4a1c
+ms.openlocfilehash: e501df8701493a1c5b83c4d06da3a73fd226165f
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7606074"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673840"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>Τι νέο υπάρχει στη δυνατότητα πληροφοριών κοινού του Dynamics 365 Customer Insights
 
@@ -166,7 +166,7 @@ ms.locfileid: "7606074"
 - **Εξαγάγετε τμήματα στο Constant Contact** Έχουμε επεκτείνει τους προορισμούς εξαγωγής για να συμπεριλάβουμε το Constant Contact. Τώρα μπορείτε να εξαγάγετε τμήματα από το Customer Insights σε λίστες του Constant Contact και να τα χρησιμοποιήσετε ως βάση για τις εκστρατείες μάρκετινγκ της εταιρείας σας.   
    Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Εξαγωγή στο Constant Contact](export-constant-contact.md).
 
-- **Εξαγάγετε τμήματα στο RollWorks** Έχουμε επεκτείνει τους προορισμούς εξαγωγής για να συμπεριλάβουμε το RollWorks. Τώρα μπορείτε να εξαγάγετε τμήματα από το Customer Insights σε κοινά του RollWorks και να τα χρησιμοποιήσετε ως βάση για τη διαφήμιση B2B σας.    
+- **Εξαγάγετε τμήματα στο RollWorks** Έχουμε επεκτείνει τους προορισμούς εξαγωγής για να συμπεριλάβουμε το RollWorks. Τώρα μπορείτε να εξαγάγετε τμήματα από το Customer Insights στα κοινά των RollWorks και να τα χρησιμοποιήσετε ως βασική βάση για τις διαφημίσεις B2B.    
    Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Εξαγωγή στο RollWorks ](export-rollworks.md).
 
 - **Εξαγάγετε τμήματα στο Snapchat** Έχουμε επεκτείνει τους προορισμούς εξαγωγής για να συμπεριλάβουμε το Snapchat. Τώρα μπορείτε να εξαγάγετε τμήματα από το Customer Insights σε κοινά του Snapchat και να τα χρησιμοποιήσετε ως βάση για τη διαφήμισή σας.     

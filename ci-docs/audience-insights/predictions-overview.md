@@ -10,12 +10,12 @@ author: zacookmsft
 ms.author: zacook
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: be452e4f1515f637f6edbc3ae3aaf6a3d3471489
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: 63e22bf9a457ea43c65132643681cffb295ae7e5
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7618843"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673962"
 ---
 # <a name="predictions-overview"></a>Επισκόπηση προβλέψεων
 
@@ -25,14 +25,14 @@ ms.locfileid: "7618843"
 
 Ο πιο εύκολος τρόπος για να ξεκινήσετε την πρόβλεψη δεδομένων είναι τα προκαθορισμένα μοντέλα, τα οποία συχνά αναφέρονται ως έτοιμα για χρήση μοντέλα. Απαιτούν μόνο συγκεκριμένα δεδομένα και δομή για να δημιουργήσουν γρήγορα πληροφορίες. Προς το παρόν, διατίθενται τα παρακάτω μοντέλα: 
 
-# <a name="individual-customers-b2c"></a>[Μεμονωμένοι πελάτες (B2C)](#tab/b2c)
+# <a name="individual-consumers-b-to-c"></a>[Μεμονωμένοι πελάτες (B2C)](#tab/b2c)
 
 - [Αξία διάρκειας ζωής πελάτη](predict-customer-lifetime-value.md): Μπορεί να αποτιμά τα πιθανά έσοδα ενός πελάτη σε ολόκληρη τη διάρκεια της αλληλεπίδρασης με μια επιχείρηση.
 - [Σύσταση προϊόντος](predict-product-recommendation.md): Προτείνει σύνολα συστάσεων πρόβλεψης προϊόντων με βάση τη συμπεριφορά αγοράς και πελάτες με παρόμοια μοτίβα αγοράς.
 - [Απώλεια συνδρομής](predict-subscription-churn.md): Προβλέπει εάν ένας πελάτης κινδυνεύει να μην χρησιμοποιεί πλέον τα συνδρομητικά προϊόντα ή τις υπηρεσίες της εταιρείας σας.
 - [Απώλεια συναλλαγής](predict-transactional-churn.md): Προβλέπει κατά πόσο ένας πελάτης θα σταματήσει να αγοράζει τα προϊόντα ή τις υπηρεσίες σας εντός καθορισμένου χρονικού πλαισίου.
 
-# <a name="business-accounts-b2b"></a>[Επιχειρηματικοί λογαριασμοί (B2B)](#tab/b2b)
+# <a name="business-accounts-b-to-b"></a>[Λογαριασμοί επιχειρήσεων (B2B)](#tab/b2b)
 
 - [Απώλεια συναλλαγής](predict-transactional-churn.md): Προβλέπει κατά πόσο ένας πελάτης θα σταματήσει να αγοράζει τα προϊόντα ή τις υπηρεσίες σας εντός καθορισμένου χρονικού πλαισίου.
 
