@@ -1,7 +1,7 @@
 ---
 title: Εμπλουτισμός προφίλ πελατών με δεδομένα από τη Microsoft
 description: Χρησιμοποιήστε ιδιόκτητα δεδομένα από τη Microsoft για να εμπλουτίσετε τα δεδομένα των πελατών σας με συγγένειες επωνυμίας και συμφέροντος.
-ms.date: 06/14/2021
+ms.date: 11/01/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-MS
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 51b150cbf5d9cfb3a5df42e680bcfa57ec5496cb
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: c25dbb7a877da2d3fccc1a4e5b219b9792bc6402
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7617878"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732542"
 ---
 # <a name="enrich-customer-profiles-with-brand-and-interest-affinities-preview"></a>Εμπλουτίστε τα προφίλ πελατών με τις συγγένειες επωνυμίας και ενδιαφέροντος (προεπισκόπηση)
 
@@ -116,8 +116,7 @@ ms.locfileid: "7617878"
 
 Ανάλογα με το μέγεθος των δεδομένων των πελατών σας, ενδέχεται να χρειαστούν αρκετά λεπτά για την ολοκλήρωση μιας εκτέλεσης εμπλουτισμού.
 
-> [!TIP]
-> Υπάρχουν [έξι τύποι κατάστασης](system.md#status-types) για εργασίες/διεργασίες. Επιπλέον, οι περισσότερες διεργασίες [εξαρτώνται από άλλες διεργασίες κατάντη](system.md#refresh-policies). Μπορείτε να επιλέξετε την κατάσταση μιας διεργασίας για να δείτε λεπτομέρειες σχετικά με την πρόοδο ολόκληρου του έργου. Αφού επιλέξετε το στοιχείο **Προβολή λεπτομερειών** για μια από τις εργασίες της εργασίας, θα βρείτε πρόσθετες πληροφορίες: τον χρόνο επεξεργασίας, την τελευταία ημερομηνία επεξεργασίας και όλα τα σφάλματα και τις προειδοποιήσεις που σχετίζονται με την εργασία.
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="enrichment-results"></a>Αποτελέσματα εμπλουτισμού
 

@@ -1,7 +1,7 @@
 ---
 title: Ολοκλήρωση μερικών δεδομένων με χρήση προβλέψεων
 description: Χρήση των προβλέψεων για τη συμπλήρωση μη ολοκληρωμένων δεδομένων πελατών.
-ms.date: 05/05/2020
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,16 +9,17 @@ author: zacookmsft
 ms.author: zacook
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 7ca42334420a27a8739d7c28bb72606c3ed91f3c
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: 3100acf383d85c00a6ff0a8ebc54e038bd813427
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645034"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732404"
 ---
-# <a name="complete-your-partial-data-with-predictions"></a>Ολοκληρώστε τα μερικά δεδομένα σας με προβλέψεις
+# <a name="complete-your-partial-data-with-predictions-deprecated"></a>Ολοκληρώστε τα μερικά δεδομένα σας με προβλέψεις (υπό απόσυρση)
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+> [!IMPORTANT]
+> Αυτή η δυνατότητα θα είναι **υπό απόσυρση** από τις **5 Νοεμβρίου 2021**. Οι τρέχουσες υλοποιήσεις θα συνεχίσουν να λειτουργούν έως ότου καταργηθεί η δυνατότητα, αλλά δεν θα μπορείτε να δημιουργήσετε νέες ενσωματώσεις χρησιμοποιώντας τις παρακάτω οδηγίες.
 
 Οι προβλέψεις σάς επιτρέπουν να δημιουργείτε εύκολα προβλέψιμες τιμές που μπορούν να βελτιώσουν την κατανόησή σας για έναν πελάτη. Στη σελίδα **Ευφυΐα** > **Προβλέψεις**, μπορείτε να επιλέξετε **Οι προβλέψις μου** για να δείτε τις προβλέψεις που έχετε ρυθμίσει σε άλλα τμήματα των πληροφοριών κοινού και σας επιτρέπουν να τις προσαρμόσετε περαιτέρω.
 
@@ -60,6 +61,8 @@ ms.locfileid: "7645034"
    > ![Παράδειγμα εμφάνισης αντιστοιχισμένων τιμών πεδίων σε κατηγορίες.](media/intelligence-categorymapping.png "Παράδειγμα εμφάνισης αντιστοιχισμένων τιμών πεδίων σε κατηγορίες")
 
 8. Επιλέξτε **Τέλος** και θα γίνει επεξεργασία της πρόβλεψης. Η επεξεργασία θα διαρκέσει αρκετό χρόνο, ανάλογα με το μέγεθος και την πολυπλοκότητα των δεδομένων. Τα αποτελέσματα θα είναι διαθέσιμα σε μια νέα οντότητα με βάση το **Όνομα της οντότητας εξόδου** της πρόβλεψης που δημιουργήσατε.
+
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="create-a-prediction-while-creating-a-segment"></a>Δημιουργία πρόβλεψης κατά τη δημιουργία ενός τμήματος
 

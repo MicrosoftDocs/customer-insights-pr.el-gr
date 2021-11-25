@@ -4,17 +4,17 @@ description: Μάθετε πως να εξατομικεύετε και να ε�
 author: britl
 ms.reviewer: mhart
 ms.author: britl
-ms.date: 09/15/2021
+ms.date: 10/19/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: a060ac60db71a7b0fb8c0d7a3b0e266004fbee6a
-ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
+ms.openlocfilehash: c678c2dafbb77926269b5602bca363c678ec6b3f
+ms.sourcegitcommit: ef823f3d7fa28d3a90cfde9409be9465ffa2cf09
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7494275"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "7655342"
 ---
 # <a name="get-started-with-the-android-sdk"></a>Ξεκινήστε με το Android SDK
 
@@ -42,12 +42,12 @@ ms.locfileid: "7494275"
 
 - Εάν δεν έχετε έναν υπάρχοντα χώρο εργασίας, επιλέξτε **Νέος χώρος εργασίας** και ακολουθήστε τα βήματα για τη δημιουργία ενός [νέου χώρου εργασίας](create-workspace.md).
 
-- Αφού δημιουργήσετε έναν χώρο εργασίας, μεταβείτε στο μενού **Διαχείριση** > **Χώρος εργασίας** και, έπειτα, επιλέξτε **Οδηγός εγκατάστασης**. 
+- Αφού δημιουργήσετε έναν χώρο εργασίας, μεταβείτε στο μενού **Διαχείριση** > **Χώρος εργασίας** και, έπειτα, επιλέξτε **Οδηγός εγκατάστασης**.
 
 ## <a name="configure-the-sdk"></a>Ρύθμιση παραμέτρων του SDK
 
 Αφού κάνετε λήψη του SDK, μπορείτε να εργαστείτε με αυτό στο Android Studio για να ενεργοποιήσετε και να καθορίσετε συμβάντα. Υπάρχουν δύο τρόποι για να το κάνετε αυτό:
-### <a name="option-1-using-jitpack-recommended"></a>Επιλογή 1: Χρήση του JitPack (συνιστάται)
+### <a name="option-1-use-jitpack-recommended"></a>Επιλογή 1: Χρήση JitPack (συνιστάται)
 1. Προσθέστε την αποθήκη JitPack στη ρίζα `build.gradle` σας:
     ```gradle
     allprojects {
@@ -61,12 +61,12 @@ ms.locfileid: "7494275"
 1. Προσθέστε την εξάρτηση:
     ```gradle
     dependencies {
-        implementation 'com.github.microsoft:engagementinsights-sdk-android:1.0.0'
+        implementation 'com.github.microsoft:engagementinsights-sdk-android:v1.0.0'
         api 'com.google.code.gson:gson:2.8.1'
     }
     ```
 
-### <a name="option-2-using-download-link"></a>Επιλογή 2: Χρήση της σύνδεσης λήψης
+### <a name="option-2-use-download-link"></a>Επιλογή 2. Χρήση σύνδεσης λήψης
 1. Πραγματοποιήστε λήψη [των στατιστικών αφοσίωσης του Android SDK](https://download.pi.dynamics.com/sdk/EI-SDKs/ei-android-sdk.zip) και τοποθετήστε το αρχείο στο `eiandroidsdk-debug.aar` στον φάκελο `libs`.
 
 1. Ανοίξτε το αρχείο `build.gradle` σε επίπεδο έργου και προσθέστε τα ακόλουθα τμήματα:
@@ -83,22 +83,23 @@ ms.locfileid: "7494275"
     }
     ```
 
-1. Προσθέστε δικαιώματα για το δίκτυο και το internet στο αρχείο `AndroidManifest.xml` σας που βρίσκεται κάτω από τον φάκελο `manifests`. 
+## <a name="enable-auto-instrumentation"></a>Ενεργοποίηση αυτόματης ενοργάνωσης
+
+1. Προσθέστε δικαιώματα για το δίκτυο και το internet στο αρχείο `AndroidManifest.xml` σας που βρίσκεται κάτω από τον φάκελο `manifests`.
     ```xml
     <manifest>
         ...
         <uses-permission android:name="android.permission.INTERNET" />
         <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     ```
-    
-1. Διαμορφώστε τη ρύθμιση παραμέτρων στατιστικών αφοσίωσης SDK μέσω του αρχείου `AndroidManifest.xml` σας. 
 
-## <a name="enable-auto-instrumentation"></a>Ενεργοποίηση αυτόματης ενοργάνωσης
+1. Διαμορφώστε τη ρύθμιση παραμέτρων στατιστικών αφοσίωσης SDK μέσω του αρχείου `AndroidManifest.xml` σας.
+
 1. Αντιγράψτε το τμήμα κώδικα XML από τον **Οδηγό εγκατάστασης**. Το `Your-Ingestion-Key` πρέπει να συμπληρωθεί αυτόματα.
 
    > [!NOTE]
    > Δεν χρειάζεται να αντικαταστήσετε την ενότητα `${applicationId}`. Συμπληρώνεται αυτόματα.
-   
+
 
    ```xml
    <application>
@@ -116,20 +117,24 @@ ms.locfileid: "7494275"
    </application>
    ```
 
-1. Ενεργοποιήστε ή απενεργοποιήστε την αυτόματη καταγραφή των συμβάντων `View` ορίζοντας το παραπάνω πεδίο `autoCapture` σε `true` ή `false`. Προς το παρόν, τα συμβάντα `Action` πρέπει να προστεθούν με μη αυτόματο τρόπο.
+1. Ενεργοποιήστε ή απενεργοποιήστε την αυτόματη καταγραφή των συμβάντων `View` ορίζοντας το παραπάνω πεδίο `autoCapture` σε `true` ή `false`. 
 
-1. (Προαιρετικό) Άλλες ρυθμίσεις παραμέτρων περιλαμβάνουν τη ρύθμιση της διεύθυνσης URL τελικού σημείου. Μπορούν να προστεθούν στα μεταδεδομένα κλειδιών πρόσληψης στην ενότητα `AndroidManifest.xml`:
-    ```xml
+   >[!NOTE]
+   >Τα συμβάντα `Action` πρέπει να προστεθούν με μη αυτόματο τρόπο.
+
+1. (Προαιρετικό) Άλλες ρυθμίσεις παραμέτρων περιλαμβάνουν τη ρύθμιση της διεύθυνσης URL τελικού σημείου. Μπορούν να προστεθούν στα μεταδεδομένα κλειδιών πρόσληψης στην ενότητα `AndroidManifest.xml`.
+
+   ```xml
         <meta-data
             android:name="com.microsoft.engagementinsights.endpointUrl"
             android:value="https://some-endpoint-url.com" />
-    ```
+   ```
 
 ## <a name="implement-custom-events"></a>Υλοποίηση προσαρμοσμένων συμβάντων
 
 Μετά την αρχικοποίηση του SDK, μπορείτε να εργαστείτε με συμβάντα και τις ιδιότητές τους στο περιβάλλον `MainActivity`.
 
-    
+
 Java:
 ```java
 Analytics analytics = new Analytics();
@@ -141,7 +146,7 @@ var analytics = Analytics()
 ```
 
 ### <a name="set-property-for-all-events-optional"></a>Ορισμός ιδιότητας για όλα τα συμβάντα (προαιρετικό)
-    
+
 Java:
 ```java
 analytics.setProperty("year", 2021);

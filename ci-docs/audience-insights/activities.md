@@ -1,7 +1,7 @@
 ---
 title: Δραστηριότητες πελάτη
 description: Να καθορίσετε δραστηριότητες πελατών και να τις προβάλετε σε χρονοδιάγραμμα των προφίλ πελατών.
-ms.date: 09/27/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: mhart
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
 manager: shellyha
-ms.openlocfilehash: bcb8d42963719f5d225556c31b3fc06db8573e5b
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: c99ec2e7d5e4bf32a509bbe4c0c53999129b2305
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673137"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732450"
 ---
 # <a name="customer-activities"></a>Δραστηριότητες πελάτη
 
@@ -82,9 +82,7 @@ ms.locfileid: "7673137"
 
 1. Στη σελίδα **Δραστηριότητες**, επιλέξτε **Εκτέλεση** για να επεξεργαστείτε τη δραστηριότητα. 
 
-> [!TIP]
-> Υπάρχουν [έξι τύποι κατάστασης](system.md#status-types) για εργασίες/διεργασίες. Επιπλέον, οι περισσότερες διεργασίες [εξαρτώνται από άλλες διεργασίες κατάντη](system.md#refresh-policies). Μπορείτε να επιλέξετε την κατάσταση μιας διεργασίας για να δείτε λεπτομέρειες σχετικά με την πρόοδο ολόκληρου του έργου. Αφού επιλέξετε **Προβολή λεπτομερειών** για μία από τις εργασίες του έργου, μπορείτε να βρείτε πρόσθετες πληροφορίες: χρόνος επεξεργασίας, ημερομηνία τελευταίας επεξεργασίας και όλα τα σφάλματα και τις προειδοποιήσεις που σχετίζονται με την εργασία.
-
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="manage-existing-activities"></a>Διαχείριση υπαρχουσών δραστηριοτήτων
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: c9c7cfbf9f47cca53e5543e2cda2584e25ad855d
-ms.sourcegitcommit: 1565f4f7b4e131ede6ae089c5d21a79b02bba645
+ms.openlocfilehash: dbcdcbea8ffd1755b58c322233c08c70a065db36
+ms.sourcegitcommit: 31a9b531dacd3a6465b3030c704ff5c085b7e122
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "7643390"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7792027"
 ---
 # <a name="customer-card-add-in-preview"></a>Πρόσθετο κάρτας πελάτη (προεπισκόπηση)
 
@@ -34,7 +34,7 @@ ms.locfileid: "7643390"
   - **Στοιχείο ελέγχου μέτρησης**: Απαιτεί [ρυθμισμένα μέτρα](measures.md) για χαρακτηριστικά πελάτη τύπου.
   - **Στοιχείο ελέγχου ευφυΐας**: απαιτεί δεδομένα που δημιουργούνται χρησιμοποιώντας [προβλέψεις](predictions.md) ή [προσαρμοσμένα μοντέλα](custom-models.md).
   - **Στοιχείο ελέγχου λεπτομερειών πελάτη**: όλα τα πεδία από το προφίλ είναι διαθέσιμα στο ενοποιημένο προφίλ πελάτη.
-  - **Στοιχείο ελέγχου εμπλουτισμού**: απαιτεί ενεργούς [εμπλουτισμούς](enrichment-hub.md) εφαρμοσμένους στα προφίλ πελατών.
+  - **Στοιχείο ελέγχου εμπλουτισμού**: απαιτεί ενεργούς [εμπλουτισμούς](enrichment-hub.md) εφαρμοσμένους στα προφίλ πελατών. Το πρόσθετο κάρτας υποστηρίζει αυτούς τους εμπλουτισμούς: [Επωνυμίες](enrichment-microsoft.md) που παρέχονται από τη Microsoft, [Ενδιαφέροντα](enrichment-microsoft.md) που παρέχονται από τη Microsoft.
   - **Στοιχείο ελέγχου Επαφές**: απαιτεί ορισμό της σημασιολογικής οντότητας των επαφών τύπου.
   - **Στοιχείο ελέγχου λωρίδας χρόνου**: απαιτεί [ρυθμισμένες δραστηριότητες](activities.md).
 

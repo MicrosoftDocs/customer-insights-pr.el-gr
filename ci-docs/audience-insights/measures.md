@@ -1,7 +1,7 @@
 ---
 title: Δημιουργία και διαχείριση μεγεθών
 description: Καθορίστε μεγέθη για να αναλύσετε και να απεικονίσετε την απόδοση της επιχείρησής σας.
-ms.date: 09/30/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: wameng
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: d77d1901fee4771537554c05d3963316d0fb37cb
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: f6be11bd97be71bc0c3a58eaee4d8ed45f535877
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673459"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732726"
 ---
 # <a name="define-and-manage-measures"></a>Καθορισμός και διαχείριση μέτρων
 
@@ -238,8 +238,7 @@ ms.locfileid: "7673459"
 - **Διαγράψτε** τη μέτρηση.
 - **Ενεργοποίηση** ή **Απενεργοποίηση**. Τα ανενεργά μεγέθη δεν θα ανανεώνονται κατά τη διάρκεια μιας [προγραμματισμένης ανανέωσης](system.md#schedule-tab).
 
-> [!TIP]
-> Υπάρχουν [έξι τύποι κατάστασης](system.md#status-types) για εργασίες/διεργασίες. Επιπλέον, οι περισσότερες διεργασίες [εξαρτώνται από άλλες διεργασίες κατάντη](system.md#refresh-policies). Μπορείτε να επιλέξετε την κατάσταση μιας διεργασίας για να δείτε λεπτομέρειες σχετικά με την πρόοδο ολόκληρου του έργου. Αφού επιλέξετε το στοιχείο **Προβολή λεπτομερειών** για μια από τις εργασίες της εργασίας, θα βρείτε πρόσθετες πληροφορίες: τον χρόνο επεξεργασίας, την τελευταία ημερομηνία επεξεργασίας και όλα τα σφάλματα και τις προειδοποιήσεις που σχετίζονται με την εργασία.
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="next-step"></a>Επόμενο βήμα
 

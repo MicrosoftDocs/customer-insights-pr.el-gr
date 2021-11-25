@@ -1,7 +1,7 @@
 ---
 title: Αναζήτηση και φιλτράρισμα προφίλ πελατών
 description: Βρείτε γρήγορα πληροφορίες σχετικά με τα ενοποιημένα προφίλ πελατών και φιλτράρετε με βάση συγκεκριμένα χαρακτηριστικά.
-ms.date: 01/19/2021
+ms.date: 11/01/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,19 +9,20 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 9eaeb0c93481283324f21122c9528ff5896b9866
-ms.sourcegitcommit: b9a81c2acd42d774669d2db3d0430c7d81de991c
+ms.openlocfilehash: e17d745974958b73683f1f9406c5ae95f2cbcb3c
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "7469977"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732034"
 ---
 # <a name="customer-profiles-search--filter-index"></a>Προφίλ πελατών: Αναζήτηση και φιλτράρισμα ευρετηρίου
 
 Το αποτέλεσμα της ενοποίησης των δεδομένων των πελατών σας είναι μια οντότητα Προφίλ πελάτη η οποία παρέχει μια ενοποιημένη προβολή στη συνολική βάση πελατών σας. Για να [βρείτε πληροφορίες για έναν συγκεκριμένο πελάτη ή μια ομάδα πελατών](customer-profiles.md) γρήγορα, μπορείτε να ρυθμίσετε τις δυνατότητες **Αναζήτησης** και **Φιλτραρίσματος** στη σελίδα **Πελάτες**. Διαβάστε παρακάτω για να μάθετε τον τρόπο με τον οποίο οι διαχειριστές μπορούν να επεξεργαστούν τα χαρακτηριστικά στη σελίδα **Ευρετήριο αναζήτησης και φίλτρων**, τα οποία είναι διαθέσιμα στους χρήστες για αναζήτηση και φιλτράρισμα.
 
-> [!div class="mx-imgBorder"]
-> ![Φίλτρο αναζήτησης.](media/search-filter.png "Φίλτρο αναζήτησης")
+   :::image type="content" source="media/search-filter.png" alt-text="Φίλτρο αναζήτησης":::
+
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="add-fields-and-specify-attributes"></a>Προσθήκη πεδίων και καθορισμός χαρακτηριστικών
 

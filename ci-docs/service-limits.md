@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: eba7871faf304d5945191b5b9bc215243b4f8a05
-ms.sourcegitcommit: 5704002484cdf85ebbcf4e7e4fd12470fd8e259f
+ms.openlocfilehash: eb25e050b8aa768e6e1d8d4c5adce6095cccc346
+ms.sourcegitcommit: 31a9b531dacd3a6465b3030c704ff5c085b7e122
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483669"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7791981"
 ---
 # <a name="service-limits-in-customer-insights-capabilities"></a>Δυνατότητες ορίων εξυπηρέτησης στο Customer Insights
 
@@ -26,7 +26,7 @@ ms.locfileid: "7483669"
 
 | Περιοχή  | Όρια  | Σημειώσεις |
 |-------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
-| Τμήματα και μετρήσεις | 100 τμήματα ή μετρήσεις. | Ο συνολικός αριθμός ενεργών [τμημάτων](audience-insights/segments.md) και [μετρήσεων](audience-insights/measures.md) σε συνδυασμό δεν μπορεί να υπερβαίνει το 100.  |
+| Τμήματα αγοράς, μέτρα και προβλέψεις | 300  | Ο συνολικός αριθμός των [τμημάτων](audience-insights/segments.md), των [μέτρων](audience-insights/measures.md) και των [προβλέψεων](audience-insights/predictions.md) σε συνδυασμό, δεν μπορεί να υπερβαίνει τα 300.  |
 | Σχέσεις | 20 επίπεδα βάθους στις σχέσεις μεταξύ των διαδρομών οντοτήτων. | Όταν δημιουργείτε [τμήματα](audience-insights/segments.md) ή [μέτρα](audience-insights/measures.md) χρησιμοποιώντας το περιβάλλον εργασίας του προγράμματος δημιουργίας, οι διαδρομές οντοτήτων μπορούν να έχουν έως και 20 μεταπηδήσεις σχέσης μεταξύ της οντότητας έναρξης και της οντότητας προορισμού.  |
 
 

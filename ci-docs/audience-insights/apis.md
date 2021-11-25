@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 8404515a20529c00708d84813f3a022ad98c45362a2f1e68d7aa890d085071a9
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 7201ed9e5315d73e6b9c25b4bc4c4e4ed839a215
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033585"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732264"
 ---
 # <a name="work-with-customer-insights-apis"></a>Εργασία με API Customer Insights
 
@@ -135,7 +135,7 @@ ms.locfileid: "7033585"
 
 1. Χρησιμοποιήστε τη [Βιβλιοθήκη ελέγχου ταυτότητας της Microsoft (MSAL)](/azure/active-directory/develop/msal-overview) για να λάβετε ένα `AccessToken` χρησιμοποιώντας την υπάροχυσα [Καταχώρηση εφαρμογής Azure](#create-a-new-app-registration-in-the-azure-portal).
 
-1. Αφού ελέγξετε με επιτυχία την ταυτότητα και αποκτήσετε ένα διακριτικό, δημιουργήστε ένα νέο ή χρησιμοποιήστε ένα υπάρχον `HttpClient` με τον πρόσθετο **Έλεγχο ταυτότητας DefaultRequestHeaders** ορισμένο σε **Φορέας <access token>** και το **Ocp-Apim-Subscription-Key** ορισμένο σε [**κλειδί συνδρομής** από το περιβάλλον του Customer Insights](#get-started-trying-the-customer-insights-apis).   
+1. Αφού ολοκληρωθεί με επιτυχία ο έλεγχος ταυτότητας και η απόκτηση ενός διακριτικού, δόμησης ενός νέου ή της χρήσης ενός υπάρχοντος `HttpClient` με το πρόσθετο **DefaultRequestHeaders "Εξουσιοδότηση"** να έχει οριστεί σε **Φορέας "διακριτικού πρόσβασης"** και **Ocp-Apim-Subscription-Key**, το οποίο έχει οριστεί στο [**κλειδί συνδρομής** από το περιβάλλον Customer Insights που έχετε](#get-started-trying-the-customer-insights-apis).   
  
    Επαναφέρετε την κεφαλίδα **Έλεγχος ταυτότητας** όταν χρειάζεται. Για παράδειγμα, όταν έληξε το διακριτικό.
 
