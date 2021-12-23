@@ -1,7 +1,7 @@
 ---
 title: Σταδιακή ανανέωση για προελεύσεις δεδομένων βασισμένες σε Power Query
 description: Ανανέωση νέων και ενημερωμένων δεδομένων για μεγάλες προελεύσεις δεδομένων που βασίζονται στο Power Query.
-ms.date: 09/28/2020
+ms.date: 12/06/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,14 +9,16 @@ ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: d204228f8d6881cbf0e7fac6609bf50dd5296610
-ms.sourcegitcommit: 42692a815695b9fdc93b9358eae09f2c3e97293c
+ms.openlocfilehash: f614d701aeb06720a60b14549a7fe666f8fe0617
+ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7377834"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900268"
 ---
 # <a name="incremental-refresh-for-data-sources-based-on-power-query"></a>Σταδιακή ανανέωση για προελεύσεις δεδομένων βασισμένες στο Power Query
+
+Αυτό το άρθρο ασχολείται με τον τρόπο ρύθμισης παραμέτρων της τμηματικής ανανέωσης για προελεύσεις δεδομένων βάσει Power Query.
 
 Η σταδιακή ανανέωση για τις προελεύσεις δεδομένων παρέχει τα ακόλουθα πλεονεκτήματα:
 
@@ -30,9 +32,9 @@ ms.locfileid: "7377834"
 
 1. [Δημιουργήστε μια νέα προέλευση δεδομένων με βάση το Power Query](connect-power-query.md).
 
-1. Πληκτρολογήστε ένα όνομα για την προέλευση δεδομένων.
+1. Πληκτρολογήστε ένα **όνομα** για την προέλευση δεδομένων.
 
-1. Επιλέξτε μια προέλευση δεδομένων που υποστηρίζει σταδιακή ανανέωση, όπως τη βάση δεδομένων δημιουργήστε μια βάση δεδομένων Azure SQL.
+1. Επιλέξτε μια προέλευση δεδομένων που υποστηρίζει τμηματική ανανέωση, όπως τη [βάση δεδομένων Azure SQL](/power-query/connectors/azuresqldatabase).
 
 1. Επιλέξτε τις οντότητες ή τους πίνακες που θα συγκεντρωθούν.
 

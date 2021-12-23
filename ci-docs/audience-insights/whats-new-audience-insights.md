@@ -1,7 +1,7 @@
 ---
 title: Νέες και επερχόμενες δυνατότητες
 description: Πληροφορίες σχετικά με τις νέες δυνατότητες, τις βελτιώσεις και τις επιδιορθώσεις σφαλμάτων.
-ms.date: 11/04/2021
+ms.date: 12/02/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: f7e2645e1608ea83b5d3af1073a5d6f6e97eec8f
-ms.sourcegitcommit: 2a0947cffb52eaf885aa2e50c95b3693f7e4c589
+ms.openlocfilehash: 346ef93e8471580b782618550ca4eb71b3f3c921
+ms.sourcegitcommit: 48d799535fad84e8b63c80aef48b5c5e87628f58
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7753117"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7884262"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>Τι νέο υπάρχει στη δυνατότητα πληροφοριών κοινού του Dynamics 365 Customer Insights
 
@@ -26,6 +26,18 @@ ms.locfileid: "7753117"
 
 > [!TIP]
 > ια υποβολή και ψήφο σε αιτήματα δυνατοτήτων και προτάσεις προϊόντων, μεταβείτε στην [πύλη ιδεών εφαρμογής Dynamics 365](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## <a name="november-2021-updates"></a>Ενημερώσεις Νοεμβρίου 2021
+
+Οι ενημερώσεις του Νοεμβρίου 2021 περιλαμβάνουν νέες δυνατότητες, αναβαθμίσεις επιδόσεων και επιδιορθώσεις σφαλμάτων.
+
+### <a name="segment-membership-now-available-in-dataverse"></a>Η ιδιότητα μέλους τμήματος είναι πλέον διαθέσιμη στο Dataverse
+
+Οι πληροφορίες ιδιότητας μέλους τμήματος για προφίλ πελατών είναι πλέον διαθέσιμες στο Dataverse μαζί με τα προφίλ και τις πληροφορίες για τους πελάτες. Οι εφαρμογές ενεργειών Dynamics 365 και οι εφαρμογές βάσει μοντέλου μπορούν να χρησιμοποιήσουν αυτά τα δεδομένα για να αναζητήσουν τις λεπτομέρειες της ιδιότητας μέλους τμήματος για ένα δεδομένο πελάτη.
+
+### <a name="activities-support-contact-level-details-for-business-accounts"></a>Οι δραστηριότητες υποστηρίζουν λεπτομέρειες επιπέδου επαφής για επιχειρηματικούς λογαριασμούς
+
+Τώρα μπορείτε να ρυθμίσετε τις παραμέτρους, να εμφανίσετε και να φιλτράρετε δραστηριότητες για επαφές στα χρονοδιαγράμματα δραστηριοτήτων του επιχειρηματικού λογαριασμού σας, για να κατανοήσετε καλύτερα ποιες επαφές λογαριασμών έλαβαν μέρος σε συγκεκριμένες δραστηριότητες.
 
 ## <a name="october-2021-updates"></a>Ενημερώσεις Οκτωβρίου 2021
 

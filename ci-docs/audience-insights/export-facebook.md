@@ -1,5 +1,5 @@
 ---
-title: Εξαγωγή δεδομένων Customer Insights στο Facebook Ads Manager
+title: Εξαγωγή δεδομένων Customer Insights στο Facebook Ads Manager (Βίντεο)
 description: Μάθετε πώς να ρυθμίσετε τις παραμέτρους της σύνδεσης και της εξαγωγής στο Facebook Ads Manager.
 ms.date: 04/15/2021
 ms.reviewer: mhart
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: bb74e35799410b92b64e48e065b45efda82490ca
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: 4b2dc2ff8e5286209bd2ec94df42e82f0944715c
+ms.sourcegitcommit: 12910882ca990ec0e890ed4deaf3dac7e01621e5
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7672953"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "7904164"
 ---
 # <a name="export-segments-list-to-facebook-ads-manager-preview"></a>Εξαγωγή λίστας τμημάτων στο Facebook Ads Manager (έκδοση προεπισκόπησης)
 

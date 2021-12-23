@@ -1,7 +1,7 @@
 ---
 title: Πειράματα εκμάθησης μηχανής Azure
 description: Χρησιμοποιήστε μοντέλα που βασίζονται σε εκμάθηση μηχανών Azure στο Dynamics 365 Customer Insights.
-ms.date: 11/30/2020
+ms.date: 12/02/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -9,18 +9,18 @@ author: naravill
 ms.author: naravill
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 4c04a1d08aba152ce91d452ae2300c1ce0fc79e5d6980ac506dc40d9914c9fca
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: e37eec503c9df83ef72497e22afa1266296e642c
+ms.sourcegitcommit: 58651d33e0a7d438a2587c9ceeaf7ff58ae3b648
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033172"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "7881738"
 ---
 # <a name="use-azure-machine-learning-based-models"></a>Χρησιμοποιήστε μοντέλα που βασίζονται σε εκμάθηση μηχανών Azure
 
-Τα ενοποιημένα δεδομένα στο Dynamics 365 Customer Insights είναι μια προέλευση για τη δημιουργία μοντέλων εκμάθησης μηχανής που μπορούν να δημιουργήσουν πρόσθετες επιχειρηματικές πληροφορίες. Το Customer Insights ενσωματώνεται στο Στούντιο εκμάθησης μηχανής (κλασικό) και την Εκμάθηησ μηχανής Azure για να χρησιμοποιήσετε τα δικά σας προσαρμοσμένα μοντέλα. Ανατρέξτε στα [πειράματα Στούντιο εκμάθησης μηχανής (κλασικά)](machine-learning-studio-experiments.md) για παραδείγματα πειραμάτων που έχουν δομηθεί στο Στούντιο εκμάθησης μηχανής (κλασικό). 
+Τα ενοποιημένα δεδομένα στο Dynamics 365 Customer Insights είναι μια προέλευση για τη δημιουργία μοντέλων εκμάθησης μηχανής που μπορούν να δημιουργήσουν πρόσθετες επιχειρηματικές πληροφορίες. Το Customer Insights ενσωματώνεται στο Azure Machine Learning για να χρησιμοποιήσει τα δικά σας προσαρμοσμένα μοντέλα.
 
-## <a name="prerequisites"></a>Προϋποθέσεις
+## <a name="prerequisites"></a>Προαπαιτούμενα στοιχεία
 
 - Πρόσβαση στο Customer Insights
 - Ενεργή συνδρομή Azure Enterprise
@@ -35,7 +35,7 @@ ms.locfileid: "7033172"
 
 ## <a name="work-with-azure-machine-learning-designer"></a>Εργασία με τη σχεδίαση εκμάθησης μηχανής Azure
 
-Η σχεδίαση Εκμάθησης μηχανής Azure παρέχει έναν οπτικό καμβά όπου μπορείτε να μεταφέρετε και να αποσύρετε σύνολα δεδομένων και λειτουργικές μονάδες, παρόμοιες με το Στούντιο εκμάθησης μηχανής (κλασικό). Μια διοχέτευση δέσμης που έχει δημιουργηθεί από τη σχεδίαση μπορεί να ενσωματωθεί στο Customer Insights, εάν έχουν ρυθμιστεί ανάλογα. 
+Η Εκμάθηση μηχανής Azure παρέχει έναν οπτικό καμβά όπου μπορείτε να μεταφέρετε και να αποθέσετε σύνολα δεδομένων και μονάδες. Μια διοχέτευση δέσμης που έχει δημιουργηθεί από τη σχεδίαση μπορεί να ενσωματωθεί στο Customer Insights, εάν έχουν ρυθμιστεί ανάλογα. 
    
 ## <a name="working-with-azure-machine-learning-sdk"></a>Εργασία με την Εκμάθηση μηχανής Azure SDK
 

@@ -84,7 +84,7 @@
           href: audience-insights/enrichment-microsoft.md
         - name: Βελτιωμένες διευθύνσεις
           href: audience-insights/enrichment-enhanced-addresses.md
-        - name: Βελτίωση εταιρικών δεδομένων
+        - name: Βελτιωμένα εταιρικά δεδομένα
           href: audience-insights/enrichment-enhanced-company-data.md
         - name: Εμπλουτισμός με Χάρτες Azure
           href: audience-insights/enrichment-azure-maps.md
@@ -94,6 +94,8 @@
           href: audience-insights/enrichment-leadspace.md
         - name: Εμπλουτισμός με Experian
           href: audience-insights/enrichment-experian.md
+        - name: Εμπλουτισμός με δεδομένα του Office 365
+          href: audience-insights/enrichment-office.md
         - name: Εμπλουτισμός με προσαρμοσμένη εισαγωγή SFTP
           href: audience-insights/enrichment-SFTP-custom-import.md
     - name: Τμήματα
@@ -144,8 +146,6 @@
               href: audience-insights/sample-guide-predict-product-recommendation.md
             - name: Πειράματα με εκμάθηση μηχανής Azure
               href: audience-insights/azure-machine-learning-experiments.md
-            - name: Πειράματα με το Στούντιο εκμάθησης μηχανής Azure
-              href: audience-insights/machine-learning-studio-experiments.md
         - name: Διαχείριση προβλέψεων
           href: audience-insights/manage-predictions.md
         - name: Δημιουργία τμημάτων βάσει προβλέψεων
@@ -240,6 +240,8 @@
               href: audience-insights/use-azure-key-vault.md
             - name: Σύνδεση με έναν λογαριασμό αποθήκευσης ADLS χρησιμοποιώντας διευθυντή εξυπηρέτησης
               href: audience-insights/connect-service-principal.md
+            - name: Εξαγωγή αρχείων καταγραφής διαγνωστικών
+              href: audience-insights/diagnostics.md
     - name: Επεκτασιμότητα
       items:
         - name: Ενοποίηση δεδομένων web από πληροφορίες δέσμευσης

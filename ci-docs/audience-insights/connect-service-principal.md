@@ -1,7 +1,7 @@
 ---
 title: Σύνδεση σε έναν λογαριασμό Azure Data Lake Storage χρησιμοποιώντας μια αρχή υπηρεσίας
 description: Χρησιμοποιήστε μια αρχή υπηρεσίας Azure για να συνδεθείτε στη δική σας λίμνη δεδομένων.
-ms.date: 09/08/2021
+ms.date: 12/06/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,26 +9,26 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: b901d799dbd73841a6ddbae754c4e4275f61146a
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: faef3583337fd495e7baf40b0a208f1d9f10281a
+ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645172"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900258"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-account-by-using-an-azure-service-principal"></a>Σύνδεση σε έναν λογαριασμό Azure Data Lake Storage χρησιμοποιώντας μια αρχή υπηρεσίας Azure
 
-Τα αυτοματοποιημένα εργαλεία που χρησιμοποιούν υπηρεσίες Azure θα πρέπει να έχουν πάντοτε περιορισμένα δικαιώματα. Αντί να συνδέεστε με εφαρμογές ως πλήρως προνομιούχος χρήστης, το Azure προσφέρει τις αρχές εξυπηρέτησης. Διαβάστε στη συνέχεια για να μάθετε πώς να συνδέετε το Dynamics 365 Customer Insights με έναν λογαριασμό Azure Data Lake Storage χρησιμοποιώντας μια αρχή υπηρεσίας Azure αντί για κλειδιά λογαριασμού χώρου αποθήκευσης. 
+Αυτό το άρθρο ασχολείται με το πώς να συνδέσετε το Dynamics 365 Customer Insights με έναν λογαριασμό Azure Data Lake Storage χρησιμοποιώντας μια αρχή υπηρεσίας Azure αντί για κλειδιά λογαριασμού υπηρεσίας αποθήκευσης. 
 
-Μπορείτε να χρησιμοποιήσετε την αρχή υπηρεσίας για [να προσθέσετε ή να επεξεργαστείτε με ασφάλεια έναν φάκελο του Common Data Model ως προέλευση δεδομένων](connect-common-data-model.md) ή [να δημιουργήσετε ή να ενημερώσετε ένα περιβάλλον](create-environment.md).
+Τα αυτοματοποιημένα εργαλεία που χρησιμοποιούν υπηρεσίες Azure θα πρέπει να έχουν πάντοτε περιορισμένα δικαιώματα. Αντί να συνδέεστε με εφαρμογές ως πλήρως προνομιούχος χρήστης, το Azure προσφέρει τις αρχές εξυπηρέτησης. Μπορείτε να χρησιμοποιήσετε τις αρχές εξυπηρέτησης για να [προσθέσετε ή να επεξεργαστείτε με ασφάλεια ένα φάκελο του Common Data Model ως προέλευση δεδομένων](connect-common-data-model.md) ή [να δημιουργήσετε ή να ενημερώσετε ένα περιβάλλον](create-environment.md).
 
 > [!IMPORTANT]
 > - Ο λογαριασμός Data Lake Storage που θα χρησιμοποιήσει την αρχή υπηρεσίας πρέπει να έχει ενεργοποιημένο τον [ιεραρχικό χώρο ονομάτων](/azure/storage/blobs/data-lake-storage-namespace).
-> - Χρειάζεστε δικαιώματα διαχειριστή για τη συνδρομή σας Azure για τη δημιουργία της αρχής εξυπηρέτησης.
+> - Χρειάζεστε δικαιώματα διαχειριστή για τη συνδρομή σας στο Azure για να δημιουργήσετε μια αρχή υπηρεσίας.
 
 ## <a name="create-an-azure-service-principal-for-customer-insights"></a>Δημιουργία μιας αρχής υπηρεσίας Azure για Customer Insights
 
-Πριν δημιουργήσετε μια νέα αρχή υπηρεσίας για πληροφορίες κοινού ή πληροφορίες δέσμευσης, ελέγξτε αν υπάρχει ήδη στον οργανισμό σας.
+Πριν δημιουργήσετε μια νέα αρχή εξυπηρέτησης για το Customer Insights, ελέγξτε εάν υπάρχει ήδη στον οργανισμό σας.
 
 ### <a name="look-for-an-existing-service-principal"></a>Αναζήτηση υπάρχουσας αρχής εξυπηρέτησης
 

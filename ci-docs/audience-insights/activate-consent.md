@@ -1,7 +1,7 @@
 ---
 title: Ενεργοποίηση κανόνων συγκατάθεσης για τμήματα αγοράς
 description: Ακολουθήστε αυτά τα βήματα για τη σύνδεση δεδομένων συγκατάθεσης και την ενεργοποίηση ελέγχων συγκατάθεσης πληροφοριών κοινού. Ένας διαχειριστής μπορεί επίσης να απενεργοποιήσει τους ελέγχους συγκατάθεσης.
-ms.date: 11/03/2021
+ms.date: 11/12/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,12 +9,12 @@ author: smithy7
 ms.author: smithc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 45899738d39bd5caa433e123f9fe59020e831998
-ms.sourcegitcommit: 79b09498d1328e5551fb8684c44af1fb149f9881
+ms.openlocfilehash: 552cb0739c4d17266dd028638df067f3384b738a
+ms.sourcegitcommit: 48d799535fad84e8b63c80aef48b5c5e87628f58
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7790776"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7884074"
 ---
 # <a name="activate-consent-rules"></a>Ενεργοποίηση κανόνων συγκατάθεσης
 
@@ -49,3 +49,6 @@ ms.locfileid: "7790776"
 1. Επιλέξτε την καρτέλα **Συγκατάθεση (προεπισκόπηση)**.
 
 1. Στην ενότητα **Ενεργοποίηση ελέγχου συγκατάθεσης**, ορίστε την εναλλαγή σε **Απενεργοποιημένη**.
+
+> [!TIP]
+> Για να διακόψετε τη χρήση της δυνατότητας διαχείρισης συναινέσης, ανατρέξτε στις [ρυθμίσεις συστήματος στο Κέντρο συναινέσεων (έκδοση προεπισκόπησης)](../consent-management/system-settings.md).

@@ -10,12 +10,12 @@ author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: de27da92118b83dafa0742b6a1e10ee315750c61
-ms.sourcegitcommit: 6efcba688d1db1a5d6343c229f292a26c48fc007
+ms.openlocfilehash: e44e973bf7713ed5c31dfb9849419decd4ad1c78
+ms.sourcegitcommit: 48d799535fad84e8b63c80aef48b5c5e87628f58
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7770122"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7884216"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>Εμπλουτισμός για προφίλ πελατών (προεπισκόπηση)
 
@@ -46,6 +46,7 @@ ms.locfileid: "7770122"
 - [Δεδομένα θέσης](enrichment-here.md) παρέχονται από τις τεχνολογίες HERE 
 - [Προσαρμοσμένα δεδομένα](enrichment-SFTP-custom-import.md) μέσω πρωτοκόλλου ασφαλούς μεταφοράς αρχείων (SFTP) 
 - [Χάρτες Azure](enrichment-azure-maps.md) παρέχονται από την Microsoft
+- [Δεδομένα δέσμευσης λογαριασμού](enrichment-office.md) που παρέχονται από τη Microsoft
 
 ---
 

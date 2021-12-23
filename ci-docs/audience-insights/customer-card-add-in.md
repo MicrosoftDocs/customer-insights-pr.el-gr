@@ -1,20 +1,20 @@
 ---
-title: Πρόσθετο κάρτας πελάτη για εφαρμογές Dynamics 365
+title: Πρόσθετο κάρτας πελάτη για εφαρμογές Dynamics 365 (Βίντεο)
 description: Εμφάνιση δεδομένων από πληροφορίες κοινού στις εφαρμογές Dynamics 365 με αυτό το πρόσθετο.
-ms.date: 09/30/2021
+ms.date: 12/07/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: pkieffer
-ms.author: philk
+author: Nils-2m
+ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: dbcdcbea8ffd1755b58c322233c08c70a065db36
-ms.sourcegitcommit: 31a9b531dacd3a6465b3030c704ff5c085b7e122
+ms.openlocfilehash: e15d73bfc7af2cd9c8b5d983f01922459ec4a2ee
+ms.sourcegitcommit: 12910882ca990ec0e890ed4deaf3dac7e01621e5
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7792027"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "7904013"
 ---
 # <a name="customer-card-add-in-preview"></a>Πρόσθετο κάρτας πελάτη (προεπισκόπηση)
 
@@ -34,7 +34,7 @@ ms.locfileid: "7792027"
   - **Στοιχείο ελέγχου μέτρησης**: Απαιτεί [ρυθμισμένα μέτρα](measures.md) για χαρακτηριστικά πελάτη τύπου.
   - **Στοιχείο ελέγχου ευφυΐας**: απαιτεί δεδομένα που δημιουργούνται χρησιμοποιώντας [προβλέψεις](predictions.md) ή [προσαρμοσμένα μοντέλα](custom-models.md).
   - **Στοιχείο ελέγχου λεπτομερειών πελάτη**: όλα τα πεδία από το προφίλ είναι διαθέσιμα στο ενοποιημένο προφίλ πελάτη.
-  - **Στοιχείο ελέγχου εμπλουτισμού**: απαιτεί ενεργούς [εμπλουτισμούς](enrichment-hub.md) εφαρμοσμένους στα προφίλ πελατών. Το πρόσθετο κάρτας υποστηρίζει αυτούς τους εμπλουτισμούς: [Επωνυμίες](enrichment-microsoft.md) που παρέχονται από τη Microsoft, [Ενδιαφέροντα](enrichment-microsoft.md) που παρέχονται από τη Microsoft.
+  - **Στοιχείο ελέγχου εμπλουτισμού**: απαιτεί ενεργούς [εμπλουτισμούς](enrichment-hub.md) εφαρμοσμένους στα προφίλ πελατών. Το πρόσθετο κάρτας υποστηρίζει αυτούς τους εμπλουτισμού: [Επωνυμίες](enrichment-microsoft.md) που παρέχονται από τη Microsoft, [Ενδιαφέροντα](enrichment-microsoft.md) που παρέχονται από τη Microsoft και [δεδομένα δέσμευσης του Office](enrichment-office.md) που παρέχονται από τη Microsoft.
   - **Στοιχείο ελέγχου Επαφές**: απαιτεί ορισμό της σημασιολογικής οντότητας των επαφών τύπου.
   - **Στοιχείο ελέγχου λωρίδας χρόνου**: απαιτεί [ρυθμισμένες δραστηριότητες](activities.md).
 

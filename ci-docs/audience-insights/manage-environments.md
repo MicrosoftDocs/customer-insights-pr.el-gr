@@ -1,7 +1,7 @@
 ---
 title: Δημιουργία και διαχείριση περιβαλλόντων
 description: Μάθετε πώς να εγγράφεστε στην υπηρεσία και πώς να διαχειρίζεστε περιβάλλοντα.
-ms.date: 11/12/2021
+ms.date: 12/06/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,12 +9,12 @@ ms.reviewer: mhart
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 65c6a68f550c2873ec30c6ac54f1752d880ce12c
-ms.sourcegitcommit: fb9f118b4e16b5aabb3e503463efca21718f5d72
+ms.openlocfilehash: 309b2a900e50727ffa655fc6b5fe728ea55ba5bf
+ms.sourcegitcommit: 626d485dae1e001e63e4d4bf78f6770766822ba0
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "7799636"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7892384"
 ---
 # <a name="manage-environments"></a>Διαχείριση περιβαλλόντων
 
@@ -45,6 +45,9 @@ ms.locfileid: "7799636"
 Το βήμα **Microsoft Dataverse** σάς επιτρέπει να συνδέσετε το Customer Insights με το περιβάλλον Dataverse σας.
 
 Για να χρησιμοποιήσετε [έτοιμα μοντέλα πρόβλεψης](predictions-overview.md#out-of-box-models), ρυθμίστε τις παραμέτρους κοινής χρήσης δεδομένων με το Dataverse. Εναλλακτικά, μπορείτε να ενεργοποιήσετε την πρόσληψη δεδομένων από εσωτερικής εγκατάστασης προελεύσεις δεδομένων, παρέχοντας τη διεύθυνση URL περιβάλλοντος Microsoft Dataverse που διαχειρίζεται ο οργανισμός σας. Επιλέξτε **Ενεργοποίηση κοινής χρήσης δεδομένων** για κοινή χρήση δεδομένων εξόδου του Customer Insights με μια διαχειριζόμενη λίμνη δεδομένων Dataverse.
+
+> [!IMPORTANT]
+> Τα Customer Insights και Dataverse πρέπει να βρίσκονται στην ίδια περιοχή για να είναι δυνατή η κοινή χρήση δεδομένων.
 
 :::image type="content" source="media/dataverse-data-sharing.png" alt-text="Επιλογές ρύθμισης παραμέτρων για ενεργοποίηση της κοινής χρήσης δεδομένων με το Microsoft Dataverse.":::
 

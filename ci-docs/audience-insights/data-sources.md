@@ -1,7 +1,7 @@
 ---
 title: Χρησιμοποιήστε προελεύσεις δεδομένων για λήψη δεδομένων
 description: Μάθετε πώς να εισαγάγετε δεδομένα από διάφορες προελεύσεις.
-ms.date: 11/01/2021
+ms.date: 12/06/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 27cbd0346b1219c7812f4b90327dd27b645c2b8e
-ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.openlocfilehash: 6846c73cb156aaa049e2656c8e327bcba1f73abc
+ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7732142"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900342"
 ---
 # <a name="data-sources-overview"></a>Επισκόπηση προελεύσεων δεδομένων
 
@@ -25,19 +25,22 @@ ms.locfileid: "7732142"
 
 ## <a name="add-a-data-source"></a>Προσθήκη προέλευσης δεδομένων
 
-Ανατρέξτε στα αναλυτικά άρθρα σχετικά με τον τρόπο προσθήκης μιας προέλευσης δεδομένων, ανάλογα με το τι θα επιλέξετε.
+Ανατρέξτε στα αναλυτικά άρθρα για τον τρόπο προσθήκης προέλευσης δεδομένων, ανάλογα με την επιλογή που επιλέγετε.
 
-Μπορείτε να προσθέσετε μια προέλευση δεδομένων με τρεις βασικούς τρόπους:
+Μπορείτε να προσθέσετε τις ακόλουθες προελεύσεις δεδομένων:
 
-- [Μέσω δεκάδων συνδέσεων Power Query](connect-power-query.md)
-- [Από έναν φάκελο Common Data Model](connect-common-data-model.md)
-- [Από το δικό σας Microsoft Dataverse lake](connect-dataverse-managed-lake.md)
+- [Συνδέσεις Power Query](connect-power-query.md)
+- [Κοινό μοντέλο δεδομένων](connect-common-data-model.md)
+- [Λίμνη Microsoft Dataverse](connect-dataverse-managed-lake.md)
+
+> [!NOTE]
+> Αν χρησιμοποιείτε τη δοκιμαστική έκδοση, η ενότητα Μέθοδοι εισαγωγής περιλαμβάνει μια επιλογή **Βιβλιοθήκη δεδομένων Customer Insights**. Ενεργοποιήστε αυτήν την επιλογή για να επιλέξετε ένα σύνολο δεδομένων δείγμα διαθέσιμο για διάφορα κλάδους. Για περισσότερες πληροφορίες, ανατρέξτε στο [Δοκιμαστική έκδοση του Dynamics 365 Customer Insights](../trial-signup.md).
 
 ## <a name="add-data-from-on-premises-data-sources"></a>Προσθήκη δεδομένων από προελεύσεις δεδομένων εσωτερικής εγκατάστασης
 
-Η λήψη δεδομένων από προελεύσεις δεδομένων εσωτερικής εγκατάστασης στα στατιστικά κοινού υποστηρίζεται με βάση τις ροές δεδομένων του Microsoft Power Platform. Οι ροές δεδομένων μπορούν να ενεργοποιηθούν στο Customer Insights [παρέχοντας τη διεύθυνση URL του περιβάλλοντος Microsoft Dataverse](create-environment.md) κατά τη ρύθμιση του περιβάλλοντος.
+Η λήψη δεδομένων από προελεύσεις δεδομένων εσωτερικής εγκατάστασης στα στατιστικά κοινού υποστηρίζεται με βάση τις ροές δεδομένων του Microsoft Power Platform. Μπορείτε να ενεργοποιήσετε τις ροές δεδομένων στο Customer Insights [παρέχοντας τη διεύθυνση URL του περιβάλλοντος Microsoft Dataverse](create-environment.md) κατά τη ρύθμιση του περιβάλλοντος.
 
-Οι προελεύσεις δεδομένων που δημιουργούνται μετά τη συσχέτιση ενός περιβάλλοντος Dataverse με το Customer Insights θα χρησιμοποιήσουν [ροές δεδομένων του Power Platform](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) από προεπιλογή. Οι ροές δεδομένων υποστηρίζουν τη σύνδεση εσωτερικής εγκατάστασης, χρησιμοποιώντας την πύλη δεδομένων. Καταργήστε και δημιουργήστε εκ νέου προελεύσεις δεδομένων που υπήρχαν πριν συσχετιστεί ένα περιβάλλον Dataverse για να [χρησιμοποιηθούν οι πύλες δεδομένων εσωτερικής εγκατάστασης](/data-integration/gateway/service-gateway-app).
+Οι προελεύσεις δεδομένων που δημιουργούνται μετά τη συσχέτιση ενός περιβάλλοντος Dataverse με το Customer Insights χρησιμοποιούν [ροές δεδομένων Power Platform](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) από προεπιλογή. Οι ροές δεδομένων υποστηρίζουν τη σύνδεση εσωτερικής εγκατάστασης, χρησιμοποιώντας την πύλη δεδομένων. Μπορείτε να καταργήσετε και να δημιουργήσετε εκ νέου προελεύσεις δεδομένων που υπήρχαν πριν συσχετιστεί ένα περιβάλλον Dataverse [χρησιμοποιώντας πύλες δεδομένων εσωτερικής εγκατάστασης](/data-integration/gateway/service-gateway-app).
 
 Οι πύλες δεδομένων από ένα υπάρχον περιβάλλον Power BI ή Power Apps θα είναι ορατές και μπορείτε να τις χρησιμοποιήσετε ξανά στο Customer Insights. Η σελίδα προέλευσης δεδομένων εμφανίζει τις συνδέσεις για μετάβαση στο περιβάλλον του Microsoft Power Platform όπου μπορείτε να προβάλετε και να διαμορφώσετε τις πύλες δεδομένων εσωτερικής εγκατάστασης.
 
