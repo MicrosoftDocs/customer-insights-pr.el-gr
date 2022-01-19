@@ -80,7 +80,7 @@
       items:
         - name: Εμπλουτισμός προφίλ πελατών
           href: audience-insights/enrichment-hub.md
-        - name: Συγγένειες επωνυμίας και ενδιαφέροντος
+        - name: Επωνυμίες και ενδιαφέροντα
           href: audience-insights/enrichment-microsoft.md
         - name: Βελτιωμένες διευθύνσεις
           href: audience-insights/enrichment-enhanced-addresses.md
@@ -130,6 +130,8 @@
               href: audience-insights/predict-subscription-churn.md
             - name: Πρόβλεψη απώλειας συναλλαγής
               href: audience-insights/predict-transactional-churn.md
+            - name: Ανάλυση του συναισθήματος στα σχόλια των πελατών
+              href: audience-insights/sentiment-analysis.md
             - name: Χρήση προσαρμοσμένων μοντέλων από το Azure Machine Learning
               href: audience-insights/custom-models.md
             - name: Συμπλήρωση ημιτελών δεδομένων

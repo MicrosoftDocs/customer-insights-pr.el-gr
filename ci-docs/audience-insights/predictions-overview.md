@@ -1,21 +1,20 @@
 ---
 title: Επισκόπηση σχετικά με τα υποστηριζόμενα σενάρια πρόβλεψης
 description: Σενάρια πρόβλεψης και επιλογές που καλύπτονται από την εφαρμογή Dynamics 365 Customer Insights.
-ms.date: 09/06/2021
+ms.date: 12/21/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: get-started
+ms.topic: overview
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.custom: intro-internal
-ms.openlocfilehash: 63e22bf9a457ea43c65132643681cffb295ae7e5
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: 5972d5b191ded7db14e2ebe9a4a26570a8ea60ba
+ms.sourcegitcommit: bb1ca84bc38e81fb2ff2961c457384b7beb5b5fa
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673962"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7978013"
 ---
 # <a name="predictions-overview"></a>Επισκόπηση προβλέψεων
 
@@ -31,6 +30,7 @@ ms.locfileid: "7673962"
 - [Σύσταση προϊόντος](predict-product-recommendation.md): Προτείνει σύνολα συστάσεων πρόβλεψης προϊόντων με βάση τη συμπεριφορά αγοράς και πελάτες με παρόμοια μοτίβα αγοράς.
 - [Απώλεια συνδρομής](predict-subscription-churn.md): Προβλέπει εάν ένας πελάτης κινδυνεύει να μην χρησιμοποιεί πλέον τα συνδρομητικά προϊόντα ή τις υπηρεσίες της εταιρείας σας.
 - [Απώλεια συναλλαγής](predict-transactional-churn.md): Προβλέπει κατά πόσο ένας πελάτης θα σταματήσει να αγοράζει τα προϊόντα ή τις υπηρεσίες σας εντός καθορισμένου χρονικού πλαισίου.
+- [Ανάλυση συναισθήματος](sentiment-analysis.md): Ανάλυση του συναισθήματος των σχολίων των πελατών και προσδιορισμός επιχειρηματικών πτυχών που αναφέρονται συχνά.
 
 # <a name="business-accounts-b-to-b"></a>[Λογαριασμοί επιχειρήσεων (B2B)](#tab/b2b)
 
