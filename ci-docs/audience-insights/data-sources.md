@@ -9,16 +9,11 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 78379c827e132b3b172aa7381f4c5ef2c70b9771
-ms.sourcegitcommit: bb1ca84bc38e81fb2ff2961c457384b7beb5b5fa
-ms.translationtype: HT
-ms.contentlocale: el-GR
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7977829"
 ---
+
 # <a name="data-sources-overview"></a>Επισκόπηση προελεύσεων δεδομένων
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 
 Η δυνατότητα πληροφοριών κοινού στο Dynamics 365 Customer Insights συνδέεται με δεδομένα από ένα ευρύ σύνολο προελεύσεων. Η σύνδεση με μια προέλευση δεδομένων αναφέρεται συχνά ως διεργασία της *πρόσληψης δεδομένων*. Μετά από τη λήψη των δεδομένων, μπορείτε να [ενοποιήσετε](data-unification.md) και να προβείτε σε ενέργειες.
 

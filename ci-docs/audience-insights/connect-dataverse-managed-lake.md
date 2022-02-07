@@ -9,16 +9,11 @@ author: adkuppa
 ms.author: adkuppa
 manager: shellyha
 ms.reviewer: mhart
-ms.openlocfilehash: fecf3e33b5bc1eec17006fc196004be902c03b40
-ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
-ms.translationtype: HT
-ms.contentlocale: el-GR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "7900151"
 ---
+
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>Σύνδεση με δεδομένα σε μια διαχειριζόμενη λίμνη δεδομένων του Microsoft Dataverse
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 
 Αυτό το άρθρο παρέχει πληροφορίες σχετικά με τον τρόπο με τον οποίο οι χρήστες Dataverse μπορούν γρήγορα να συνδεθούν σε αναλυτικές οντότητες σε μια διαχειριζόμενη λίμνη Microsoft Dataverse. 
 

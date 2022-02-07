@@ -1,7 +1,7 @@
 ---
 title: Σύνδεση δεδομένων Common Data Model σε έναν λογαριασμό Azure Data Lake
 description: Εργασία με δεδομένα του Common Data Model χρησιμοποιώντας το Azure Data Lake Storage.
-ms.date: 12/06/2021
+ms.date: 01/25/2022
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,13 +9,8 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 5f9010f78ea4c24094e0df4f8e153fb832e05cc8
-ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
-ms.translationtype: HT
-ms.contentlocale: el-GR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "7900197"
 ---
+
 # <a name="connect-to-a-common-data-model-folder-using-an-azure-data-lake-account"></a>Σύνδεση σε φάκελο του Common Data Model με χρήση ενός λογαριασμού Azure Data Lake
 
 Αυτό το άρθρο παρέχει πληροφορίες σχετικά με τον τρόπο λήψης δεδομένων από έναν φάκελο Common Data Model χρησιμοποιώντας τον λογαριασμό σας στο Azure Data Lake Storage Gen2.
@@ -25,6 +20,8 @@ ms.locfileid: "7900197"
 - Τα δεδομένα στο Azure Data Lake πρέπει να ακολουθούν το πρότυπο του Common Data Model. Άλλες μορφές δεν υποστηρίζονται αυτήν τη στιγμή.
 
 - Η λήψη δεδομένων υποστηρίζει αποκλειστικά λογαριασμούς αποθήκευσης Azure Data Lake *Gen2*. Δεν μπορείτε να χρησιμοποιήσετε λογαριασμούς αποθήκευσης Azure Data Lake Gen1 για λήψη δεδομένων.
+
+- Ο λογαριασμός Azure Data Lake Storage πρέπει να έχει [ενεργοποιημένο ιεραρχικό χώρο ονομάτων](/azure/storage/blobs/data-lake-storage-namespace).
 
 - Για να ελέγξετε την ταυτότητά σας με έναν διευθυντή εξυπηρέτησης Azure, βεβαιωθείτε ότι έχει ρυθμιστεί στον μισθωτή σας. Για περισσότερες πληροφορίες, δείτε [Σύνδεση πληροφοριών κοινού σε έναν λογαριασμό Azure Data Lake Storage Gen2 με έναν διευθυντή εξυπηρέτησης Azure](connect-service-principal.md).
 
