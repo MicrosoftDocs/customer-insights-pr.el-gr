@@ -2,6 +2,22 @@
   href: index.yml
 - name: Επισκόπηση προϊόντος
   href: overview.md
+- name: Κατάλογος εκμάθησης
+  items:
+    - name: Έναρξη
+      href: /learn/modules/get-started-customer-data-platform/
+    - name: Λήψη δεδομένων
+      href: /learn/modules/ingest-data-customer-insights/
+    - name: Δημιουργία ενοποιημένου προφίλ πελάτη
+      href: /learn/modules/unified-customer-profile/
+    - name: Εργασία με πληροφορίες κοινού
+      href: /learn/modules/working-with-customer-insights/
+    - name: Εμπλουτισμός δεδομένων και εκτέλεση προβλέψεων
+      href: /learn/modules/enrich-data/
+    - name: Διαχείριση εξωτερικών συνδέσεων
+      href: /learn/modules/configure-third-party-connections/
+    - name: Διαχείριση του Customer Insights
+      href: /learn/modules/administer-customer-data-platform/
 - name: Δωρεάν δοκιμαστική έκδοση
   items:
     - name: Εγγραφή για δωρεάν δοκιμή
@@ -30,16 +46,6 @@
           href: audience-insights/home.md
     - name: Εργασία με επιχειρηματικούς λογαριασμούς
       href: audience-insights/work-with-business-accounts.md
-    - name: Λειτουργικές μονάδες εκμάθησης
-      items:
-        - name: Λήψη δεδομένων
-          href: /learn/modules/ingest-data-customer-insights/
-        - name: Δημιουργία ενοποιημένου προφίλ πελάτη
-          href: /learn/modules/unified-customer-profile/
-        - name: Εργασία με την εφαρμογή
-          href: /learn/modules/working-with-customer-insights/
-        - name: Εμπλουτισμός δεδομένων και προβλέψεων
-          href: /learn/modules/enrich-data/
     - name: Προελεύσεις δεδομένων
       items:
         - name: Επισκόπηση προελεύσεων δεδομένων
@@ -372,3 +378,5 @@
   href: service-limits.md
 - name: Δικαιώματα και αιτήσεις DSR
   href: dsr-rights-requests.md
+- name: Λήψη υποστήριξης
+  href: /power-platform/admin/get-help-support

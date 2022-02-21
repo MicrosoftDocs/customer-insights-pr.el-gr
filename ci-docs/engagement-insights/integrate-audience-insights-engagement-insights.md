@@ -8,12 +8,12 @@ author: mkisel
 ms.author: mkisel
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: db38778c0da862e119f9b374e07c82ead0d3a4f2
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: 6aadd6b5018f63362f86c0e3e3ce085e94c47391
+ms.sourcegitcommit: 5dd32dc2b18027cf2aa954356dded4bc6aab9801
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645582"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8116014"
 ---
 # <a name="create-a-link-between-audience-insights-and-engagement-insights"></a>Δημιουργία σύνδεσης μεταξύ των πληροφοριών κοινού και των πληροφοριών δέσμευσης
 
@@ -25,7 +25,7 @@ ms.locfileid: "7645582"
 
 ## <a name="prerequisites"></a>Προϋποθέσεις
 
-- Τα προφίλ πληροφοριών κοινού πρέπει να αποθηκεύονται σε έναν λογαριασμό Azure Data Lake Storage που σας ανήκει ή σε μια διαχειριζόμενη λίμνη δεδομένων [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro.md)&ndash;. 
+- Τα προφίλ πληροφοριών κοινού πρέπει να αποθηκεύονται σε έναν λογαριασμό Azure Data Lake Storage που σας ανήκει ή σε μια διαχειριζόμενη λίμνη δεδομένων [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro)&ndash;. 
 - Το περιβάλλον πληροφοριών κοινού σας θα πρέπει να έχει ένα συσχετισμένο περιβάλλον Dataverse. Επίσης, εάν σε αυτό το περιβάλλον χρησιμοποιείται Dataverse επίσης για αποθήκευση δεδομένων, βεβαιωθείτε ότι έχετε ελέγξει την επιλογή **Ενεργοποίηση κοινής χρήσης δεδομένων** κοινό πληροφορίες. Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Δημιουργία και ρύθμιση παραμέτρων ενός περιβάλλοντος πληροφοριών κοινού](../audience-insights/create-environment.md).
 - Χρειάζεστε δικαιώματα διαχειριστή τόσο για τις πληροφορίες δέσμευσης όσο και για τις πληροφορίες δέσμευσης κοινού.
 - Τα συνδεδεμένα περιβάλλοντα πρέπει να είναι στην ίδια γεωγραφική περιοχή.

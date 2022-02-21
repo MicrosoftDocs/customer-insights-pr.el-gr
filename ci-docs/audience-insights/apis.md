@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 7201ed9e5315d73e6b9c25b4bc4c4e4ed839a215
-ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.openlocfilehash: 413746e1896928d2c648ba59d67d4247a173da57
+ms.sourcegitcommit: 21854bb66ffa53948f659886f2e131236539ae88
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7732264"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "8100140"
 ---
 # <a name="work-with-customer-insights-apis"></a>Εργασία με API Customer Insights
 
@@ -35,7 +35,7 @@ ms.locfileid: "7732264"
  
    Η ενεργοποίηση των API δημιουργεί ένα πρωτεύον και δευτερεύον κλειδί συνδρομής για την παρουσία σας που χρησιμοποιείται στις αιτήσεις API. Μπορείτε να αναδημιουργήσετε τα κλειδιά επιλέγοντας την **Αναδημιουργία πρωτεύοντος** ή την **Αναδημιουργία δευτερευόντος** στα **Διαχειριστής** > **Δικαιώματα** > **API**.
 
-   :::image type="content" source="media/enable-apis.gif" alt-text="Ενεργοποίηση Customer Insights API.":::
+<!--  :::image type="content" source="media/enable-apis.gif" alt-text="Enable Customer Insights APIs."::: -->
 
 1. Επιλέξτε **Εξερεύνηση των API μας** για να [δοκιμάσετε τα API](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
 
@@ -49,7 +49,7 @@ ms.locfileid: "7732264"
 
 Η απόκριση HTTP θα εμφανιστεί σύντομα παρακάτω.
 
-   :::image type="content" source="media/try-apis.gif" alt-text="Πώς να δοκιμάσετε τα API.":::
+<!--   :::image type="content" source="media/try-apis.gif" alt-text="How to test the APIs."::: -->
 
 ## <a name="create-a-new-app-registration-in-the-azure-portal"></a>Δημιουργήστε μια νέα καταχώρησης εφαρμογής στην πύλη Azure
 
@@ -65,7 +65,7 @@ ms.locfileid: "7732264"
 
 1. Στη νέα καταχώρηση εφαρμογής, μεταβείτε στη διεύθυνση **Άδειες API**.
 
-   :::image type="content" source="media/app-registration-1.gif" alt-text="Πώς να ορίσετε δικαιώματα API σε μια καταχώρηση εφαρμογής.":::
+<!--   :::image type="content" source="media/app-registration-1.gif" alt-text="How to set API permissions in App registration."::: -->
 
 1. Επιλέξτε **Προσθήκη δικαιώματος** και επιλέξτε **Customer Insights** στο πλευρικό τμήμα παραθύρου.
 
@@ -77,7 +77,7 @@ ms.locfileid: "7732264"
 
 Μπορείτε να χρησιμοποιήσετε το Αναγνωριστικό εφαρμογής/πελάτη για αυτήν την καταχώρηση εφαρμογής στη Βιβλιοθήκη ελέγχου ταυτότητας της Microsoft (MSAL) για να αποκτήσετε ένα διακριτικό φορέα για αποστολή με το αίτημά σας στο API.
 
-:::image type="content" source="media/grant-admin-consent.gif" alt-text="Πώς να εκχωρήσετε συγκατάθεση διαχειριστή.":::
+<!-- :::image type="content" source="media/grant-admin-consent.gif" alt-text="How to grant admin consent."::: -->
 
 Για περισσότερες πληροφορίες σχετικά με το MSAL, δείτε [Επισκόπηση της Βιβλιοθήκης ελέγχου ταυτότητας της Microsoft (MSAL)](/azure/active-directory/develop/msal-overview).
 
@@ -103,7 +103,7 @@ ms.locfileid: "7732264"
 
 1. Επιλέξτε **Παραχώρηση συναίνεσης διαχειριστή για...** για να ολοκληρώσετε την καταχώρηση της εφαρμογής.
 
-   :::image type="content" source="media/grant-admin-consent.gif" alt-text="Πώς να εκχωρήσετε συγκατάθεση διαχειριστή.":::
+ <!--  :::image type="content" source="media/grant-admin-consent.gif" alt-text="How to grant admin consent."::: -->
 
 1. Συμπερασματικά, πρέπει να προσθέσουμε το όνομα της καταχώρησης εφαρμογής ως χρήστης στο Customer Insights.  
    
@@ -129,7 +129,7 @@ ms.locfileid: "7732264"
  
    Εναλλακτικά, εκτελέστε αυτήν την εντολή στην **Κονσόλα διαχειριστή πακέτων NuGet**: `Install-Package -Id Microsoft.Dynamics.CustomerInsights.Api -Source nuget.org -ProjectName <project name> [-Version <version>]`
 
-   :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Προσθήκη πακέτου NuGet σε έργο Visual Studio.":::
+ <!--  :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Add NuGet package to Visual Studio project."::: -->
 
 #### <a name="use-the-c-client-library"></a>Χρησιμοποιήστε τη βιβλιοθήκη πελάτη C#
 
@@ -141,7 +141,7 @@ ms.locfileid: "7732264"
 
 1. Περάστε αυτό το `HttpClient` στην κατασκευή του πελάτη `CustomerInsights`.
 
-   :::image type="content" source="media/httpclient-sample.png" alt-text="Δείγμα httpclient.":::
+<!--   :::image type="content" source="media/httpclient-sample.png" alt-text="Sample of httpclient."::: -->
 
 1. Πραγματοποιήστε κλήσεις με το πρόγραμμα-πελάτη στις «μεθόδους επέκτασης», για παράδειγμα, `GetAllInstancesAsync`. Εάν προτιμάτε την πρόσβαση στο υποκείμενο `Microsoft.Rest.HttpOperationResponse`, χρησιμοποιήστε τις «μεθόδους μηνυμάτων http», για παράδειγμα `GetAllInstancesWithHttpMessagesAsync`.
 

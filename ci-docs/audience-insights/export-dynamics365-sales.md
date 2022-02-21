@@ -9,13 +9,23 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
+ms.openlocfilehash: d8a35424f4271b350b8d84e72a01deb6d69652a0
+ms.sourcegitcommit: 08a5dfcc4f9d293c8e7ac4fef604bc52985b1b78
+ms.translationtype: HT
+ms.contentlocale: el-GR
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8090923"
 ---
-
 # <a name="use-segments-in-dynamics-365-sales-preview"></a>Χρήση τμημάτων στο Dynamics 365 Sales (έκδοση προεπισκόπησης)
 
 
 
 Χρησιμοποιήστε τα δεδομένα πελατών σας για να δημιουργήσετε λίστες μάρκετινγκ, ροές εργασιών παρακολούθησης και να στείλετε προσφορές με το Dynamics 365 Sales.
+
+## <a name="known-limitations"></a>Γνωστοί περιορισμοί
+
+- Οι εξαγωγές στο Dynamics 365 Sales περιορίζονται σε 100.000 μέλη ανά τμήμα αγοράς.
+- Οι εξαγωγές τμήματος αγοράς στο Dynamics 365 Sales μπορούν να διαρκέσουν έως και 3 ώρες. 
 
 ## <a name="prerequisite-for-connection"></a>Προϋπόθεση για σύνδεση
 

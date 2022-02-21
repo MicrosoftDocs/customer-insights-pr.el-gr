@@ -10,12 +10,12 @@ author: MichelleDevaney
 ms.author: midevane
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 4f26220f6ba7f5b5ae00c11216129f9ad814b77d
-ms.sourcegitcommit: 626d485dae1e001e63e4d4bf78f6770766822ba0
+ms.openlocfilehash: d29992c88bd54fcfcf5e6429a89a34b6f73148c8
+ms.sourcegitcommit: b7189b8621e66ee738e4164d4b3ce2af0def3f51
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "7892338"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "8088113"
 ---
 # <a name="create-an-environment-in-audience-insights"></a>Δημιουργία περιβάλλοντος στις πληροφορίες κοινού
 
@@ -28,7 +28,7 @@ ms.locfileid: "7892338"
 
 ## <a name="create-a-new-environment"></a>Δημιουργία νέου περιβάλλοντος
 
-Αφού αγοράσετε μια άδεια χρήσης συνδρομής για το Customer Insights, ο καθολικός διαχειριστής του μισθωτή Microsoft 365 λαμβάνει ένα μήνυμα ηλεκτρονικού ταχυδρομείου που τον προσκαλεί να δημιουργήσει το περιβάλλον. Μεταβείτε στη σελίδα [https://home.ci.ai.dynamics.com/start](https://home.ci.ai.dynamics.com/start) για να ξεκινήσετε. 
+Αφού αγοράσει μια άδεια χρήσης συνδρομής για το Customer Insights, ο καθολικός διαχειριστής του μισθωτή Microsoft 365 λαμβάνει ένα μήνυμα ηλεκτρονικού ταχυδρομείου που τον προσκαλεί να δημιουργήσει το περιβάλλον. Μεταβείτε στη σελίδα [https://home.ci.ai.dynamics.com/start](https://home.ci.ai.dynamics.com/start) για να ξεκινήσετε. 
 
 Μια καθοδηγούμενη εμπειρία σάς βοηθάει να διεκπεραιώσετε τα βήματα για τη συγκέντρωση όλων των απαιτούμενων πληροφοριών για ένα νέο περιβάλλον. Θα χρειαστείτε [δικαιώματα διαχειριστή](permissions.md) στις πληροφορίες κοινού να δημιουργήσετε ή να διαχειριστείτε περιβάλλοντα.
 
@@ -64,7 +64,7 @@ ms.locfileid: "7892338"
 > Προς το παρόν, το Customer Insights υποστηρίζει τα εξής:
 > - Οντότητες που έχουν αφομοιωθεί από ροές δεδομένων Power BI που αποθηκεύονται σε μια διαχειριζόμενη από Microsoft Dataverse λίμνη δεδομένων.  
 > - Λογαριασμοί Azure Data Lake Storage από την ίδια περιοχή Azure που επιλέξατε κατά τη δημιουργία του περιβάλλοντος.
-> - Λογαριασμοί Azure Data Lake Storage που έχουν ενεργοποιημένο τον ιεραρχικό *χώρο ονομάτων*.
+> - Λογαριασμοί Azure Data Lake Storage που είναι Gen2 και έχουν ενεργοποιημένο τον *ιεραρχικό χώρο ονομάτων*. Οι λογαριασμοί αποθήκευσης Azure Data Lake Gen1 δεν υποστηρίζονται.
 
 Για την επιλογή Azure Data Lake Storage, μπορείτε να επιλέξετε μεταξύ μιας επιλογής που βασίζεται σε πόρους και μιας επιλογής που βασίζεται σε συνδρομή για τον έλεγχο ταυτότητας. Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Σύνδεση σε ένα λογαριασμό Azure Data Lake Storage χρησιμοποιώντας μια αρχή υπηρεσίας Azure](connect-service-principal.md). Το όνομα του **Περιέκτη** θα είναι `customerinsights` και δεν μπορεί να αλλάξει.
 

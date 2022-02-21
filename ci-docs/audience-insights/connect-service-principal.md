@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: faef3583337fd495e7baf40b0a208f1d9f10281a
-ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
+ms.openlocfilehash: 1af01e5579f85d7c8bc8976a003f53ef2dd280d1
+ms.sourcegitcommit: b7189b8621e66ee738e4164d4b3ce2af0def3f51
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "7900258"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "8088147"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-account-by-using-an-azure-service-principal"></a>Σύνδεση σε έναν λογαριασμό Azure Data Lake Storage χρησιμοποιώντας μια αρχή υπηρεσίας Azure
 
@@ -23,7 +23,7 @@ ms.locfileid: "7900258"
 Τα αυτοματοποιημένα εργαλεία που χρησιμοποιούν υπηρεσίες Azure θα πρέπει να έχουν πάντοτε περιορισμένα δικαιώματα. Αντί να συνδέεστε με εφαρμογές ως πλήρως προνομιούχος χρήστης, το Azure προσφέρει τις αρχές εξυπηρέτησης. Μπορείτε να χρησιμοποιήσετε τις αρχές εξυπηρέτησης για να [προσθέσετε ή να επεξεργαστείτε με ασφάλεια ένα φάκελο του Common Data Model ως προέλευση δεδομένων](connect-common-data-model.md) ή [να δημιουργήσετε ή να ενημερώσετε ένα περιβάλλον](create-environment.md).
 
 > [!IMPORTANT]
-> - Ο λογαριασμός Data Lake Storage που θα χρησιμοποιήσει την αρχή υπηρεσίας πρέπει να έχει ενεργοποιημένο τον [ιεραρχικό χώρο ονομάτων](/azure/storage/blobs/data-lake-storage-namespace).
+> - Ο λογαριασμός αποθήκευσης Data Lake που θα χρησιμοποιήσει την αρχή υπηρεσίας πρέπει να είναι Gen2 και να έχει [ενεργοποιημένο τον ιεραρχικό χώρο ονομάτων](/azure/storage/blobs/data-lake-storage-namespace). Οι λογαριασμοί αποθήκευσης Azure Data Lake Gen1 δεν υποστηρίζονται.
 > - Χρειάζεστε δικαιώματα διαχειριστή για τη συνδρομή σας στο Azure για να δημιουργήσετε μια αρχή υπηρεσίας.
 
 ## <a name="create-an-azure-service-principal-for-customer-insights"></a>Δημιουργία μιας αρχής υπηρεσίας Azure για Customer Insights

@@ -1,7 +1,7 @@
 ---
 title: Εμπλουτισμός ενοποιημένων προφίλ πελάτη
 description: Χρησιμοποιήστε τις δυνατότητες για να εμπλουτίσετε τα δεδομένα των πελατών σας.
-ms.date: 11/05/2021
+ms.date: 02/07/2022
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: e44e973bf7713ed5c31dfb9849419decd4ad1c78
-ms.sourcegitcommit: 48d799535fad84e8b63c80aef48b5c5e87628f58
+ms.openlocfilehash: 5c3dda3b9bae828857258025ff79958ee22bdb6f
+ms.sourcegitcommit: a399bd17523c8d06afd7d78af4fc711f93c0e8be
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7884216"
+ms.lasthandoff: 02/07/2022
+ms.locfileid: "8098789"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>Εμπλουτισμός για προφίλ πελατών (προεπισκόπηση)
 
@@ -37,6 +37,7 @@ ms.locfileid: "7884216"
 - [Δημογραφικά στοιχεία](enrichment-experian.md) που παρέχονται από την Experian
 - [Προσαρμοσμένα δεδομένα](enrichment-SFTP-custom-import.md) μέσω πρωτοκόλλου ασφαλούς μεταφοράς αρχείων (SFTP) 
 - [Χάρτες Azure](enrichment-azure-maps.md) παρέχονται από την Microsoft
+- [Δεδομένα θέσης](enrichment-here.md) παρέχονται από τις τεχνολογίες HERE 
 
 # <a name="business-accounts-b-to-b"></a>[Λογαριασμοί επιχειρήσεων (B2B)](#tab/b2b)
 
