@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: fa1d4ffd9f77e128b5d804e4562e964561f4684f
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: f92b36ac5364ea8586f9cbba7ba03178641555c0
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7618682"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6304650"
 ---
 # <a name="enrich-customer-profiles-with-custom-data-preview"></a>Εμπλουτισμός προφίλ πελατών με προσαρμοσμένα δεδομένα (προεπισκόπηση)
 
@@ -45,8 +45,6 @@ ms.locfileid: "7618682"
 
     :::image type="content" source="media/enrichment-SFTP-path-and-filename.png" alt-text="Στιγμιότυπο οθόνης κατά την εισαγωγή της θέσης δεδομένων.":::
 
-1. Επιλέξτε **Επόμενο** και επιλέξτε το σύνολο δεδομένων πελατών. Μπορεί να είναι είτε όλα τα προφίλ πελατών είτε ένα τμήμα.
-
 1. Επιλέξτε **Επόμενο** και δώστε ένα όνομα για τον εμπλουτισμό και ένα όνομα για την οντότητα εξόδου. 
 
 1. Επιλέξτε **Αποθήκευση εμπλουτισμού** αφού αναθεωρήσετε τις επιλογές σας.
@@ -66,7 +64,7 @@ ms.locfileid: "7618682"
 1. Όταν ολοκληρωθεί η επαλήθευση, η σύνδεση μπορεί να αποθηκευτεί επιλέγοντας **Αποθήκευση**.
 
    > [!div class="mx-imgBorder"]
-   > ![Σελίδα ρύθμισης παραμέτρων σύνδεσης του Experian.](media/enrichment-SFTP-connection.png "Τμήμα παραθύρου ρύθμισης παραμέτρων σύνδεσης του Experian")
+   > ![Τμήμα παραθύρου ρύθμισης παραμέτρων σύνδεσης του Experian](media/enrichment-SFTP-connection.png "Τμήμα παραθύρου ρύθμισης παραμέτρων σύνδεσης του Experian")
 
 
 ## <a name="defining-field-mappings"></a>Ορισμός αντιστοιχίσεων πεδίων 
@@ -125,6 +123,6 @@ ms.locfileid: "7618682"
 
 ## <a name="next-steps"></a>Επόμενα βήματα
 
-[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
+Δημιουργήστε τα εμπλουτισμένα δεδομένα των πελατών σας. Δημιουργήστε [τμήματα](segments.md)και [μέτρα](measures.md) και, επιπλέον, [εξαγάγετε τα δεδομένα](export-destinations.md) για να παραδώσετε εξατομικευμένες εμπειρίες στους πελάτες σας.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

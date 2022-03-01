@@ -1,20 +1,21 @@
 ---
 title: Επισκόπηση σχετικά με τα υποστηριζόμενα σενάρια πρόβλεψης
 description: Σενάρια πρόβλεψης και επιλογές που καλύπτονται από την εφαρμογή Dynamics 365 Customer Insights.
-ms.date: 12/21/2021
+ms.date: 05/18/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: overview
+ms.topic: get-started
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 5972d5b191ded7db14e2ebe9a4a26570a8ea60ba
-ms.sourcegitcommit: bb1ca84bc38e81fb2ff2961c457384b7beb5b5fa
+ms.custom: intro-internal
+ms.openlocfilehash: 57c61895d636273fc90a0ac5a942fd0c9abf583c687ae20621949554e581cdf8
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7978013"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7036009"
 ---
 # <a name="predictions-overview"></a>Επισκόπηση προβλέψεων
 
@@ -23,21 +24,10 @@ ms.locfileid: "7978013"
 ## <a name="out-of-box-models"></a>Έτοιμα προς χρήση μοντέλα
 
 Ο πιο εύκολος τρόπος για να ξεκινήσετε την πρόβλεψη δεδομένων είναι τα προκαθορισμένα μοντέλα, τα οποία συχνά αναφέρονται ως έτοιμα για χρήση μοντέλα. Απαιτούν μόνο συγκεκριμένα δεδομένα και δομή για να δημιουργήσουν γρήγορα πληροφορίες. Προς το παρόν, διατίθενται τα παρακάτω μοντέλα: 
-
-# <a name="individual-consumers-b-to-c"></a>[Μεμονωμένοι πελάτες (B2C)](#tab/b2c)
-
-- [Αξία διάρκειας ζωής πελάτη](predict-customer-lifetime-value.md): Μπορεί να αποτιμά τα πιθανά έσοδα ενός πελάτη σε ολόκληρη τη διάρκεια της αλληλεπίδρασης με μια επιχείρηση.
+- [Αξία διάρκειας ζωής πελάτη](predict-customer-lifetime-value.md): Μπορεί να αποτιμά τα πιθανά έσοδα ενός πελάτη σε ολόκληρη τη διάρκεια της αλληλεπίδρασης με μια επιχείρηση. 
 - [Σύσταση προϊόντος](predict-product-recommendation.md): Προτείνει σύνολα συστάσεων πρόβλεψης προϊόντων με βάση τη συμπεριφορά αγοράς και πελάτες με παρόμοια μοτίβα αγοράς.
 - [Απώλεια συνδρομής](predict-subscription-churn.md): Προβλέπει εάν ένας πελάτης κινδυνεύει να μην χρησιμοποιεί πλέον τα συνδρομητικά προϊόντα ή τις υπηρεσίες της εταιρείας σας.
 - [Απώλεια συναλλαγής](predict-transactional-churn.md): Προβλέπει κατά πόσο ένας πελάτης θα σταματήσει να αγοράζει τα προϊόντα ή τις υπηρεσίες σας εντός καθορισμένου χρονικού πλαισίου.
-- [Ανάλυση συναισθήματος](sentiment-analysis.md): Ανάλυση του συναισθήματος των σχολίων των πελατών και προσδιορισμός επιχειρηματικών πτυχών που αναφέρονται συχνά.
-
-# <a name="business-accounts-b-to-b"></a>[Λογαριασμοί επιχειρήσεων (B2B)](#tab/b2b)
-
-- [Απώλεια συναλλαγής](predict-transactional-churn.md): Προβλέπει κατά πόσο ένας πελάτης θα σταματήσει να αγοράζει τα προϊόντα ή τις υπηρεσίες σας εντός καθορισμένου χρονικού πλαισίου.
-
----
-
 
 ## <a name="azure-machine-learning-integration"></a>Ενσωμάτωση εκμάθησης μηχανής Azure
 

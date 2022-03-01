@@ -1,7 +1,7 @@
 ---
 title: Εξαγωγή δεδομένων του Customer Insights στο Constant Contact
 description: Μάθετε πώς να ρυθμίσετε τις παραμέτρους της σύνδεσης και της εξαγωγής στο Constant Contact.
-ms.date: 10/08/2021
+ms.date: 03/22/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: b25e4f11e21d059c2d867e925c0ae5635a87addc
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: 29f4320c798db62609283e3c48f0b47a4f0b982f
+ms.sourcegitcommit: 831765a55775d358447cb7ffa56f2c3b85459084
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7619119"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "6124273"
 ---
 # <a name="export-segments-to-constant-contact-preview"></a>Εξαγωγή τμημάτων στο Constant Contact (έκδοση προεπισκόπησης)
 
@@ -28,10 +28,10 @@ ms.locfileid: "7619119"
 
 ## <a name="known-limitations"></a>Γνωστοί περιορισμοί
 
-- Μπορείτε να εξαγάγετε έως και 1 εκατομμύριο προφίλ πελατών ανά εξαγωγή στο Constant Contact.
+- Μπορείτε να εξαγάγετε έως και 1000000 προφίλ ανά εξαγωγή στο Constant Contact.
 - Η εξαγωγή sto Constant Contact περιορίζεται σε τμήματα.
-- Η εξαγωγή έως 1 εκατομμυρίου προφίλ πελατών στο Constant Contact μπορεί να διαρκέσει έως και 1 ώρα μέχρι να ολοκληρωθεί. 
-- Ο αριθμός των προφίλ πελατών που μπορείτε να εξαγάγετε στο Constant Contact εξαρτάται και περιορίζεται από τη σύμβαση με το Constant Contact.
+- Η εξαγωγή έως 1 εκατομμυρίων προφίλ στο Constant Contact μπορεί να χρειαστεί έως και 1 ώρα για να ολοκληρωθεί. 
+- Ο αριθμός των προφίλ που μπορείτε να εξαγάγετε στο Constant Contact εξαρτάται και περιορίζεται από τη σύμβαση με το Constant Contact.
 
 ## <a name="set-up-connection-to-constant-contact"></a>Ρύθμιση σύνδεση με το Constant Contact
 
@@ -47,7 +47,7 @@ ms.locfileid: "7619119"
 
 1. Επιλέξτε **Σύνδεση** για προετοιμασία της σύνδεσης στο Constant Contact.
 
-1. Επιλέξτε **Έλεγχος ταυτότητας με το Constant Contact** και δώστε τα διαπιστευτήρια διαχειριστή σας για το Constant Contact. 
+1. Επιλέξτε **Έλεγχος ταυτότητας με το AdRoll** και δώστε τα διαπιστευτήρια διαχειριστή σας για το Constant Contact. 
 
 1. Επιλέξτε **Προσθήκη ιδίου ως χρήστη εξαγωγής** και δώστε τα διαπιστευτήρια του Customer Insights.
 
@@ -65,7 +65,7 @@ ms.locfileid: "7619119"
 
 1. Εισαγάγετε το [**Αναγνωριστικό λίστας Constant Contact**](https://app.constantcontact.com/pages/contacts/ui#lists). Ανοίξτε μια λίστα στο Constant Contact για να βρείτε το αναγνωριστικό λίστας στη διεύθυνση URL.
 
-1. Στην ενότητα **Δεδομένα που αντιστοιχούν**, στο πεδίο **Ηλεκτρονικό ταχυδρομείο**, επιλέξτε το πεδίο που αντιπροσωπεύει τη διεύθυνση ηλεκτρονικού ταχυδρομείου ενός πελάτη. Απαιτείται η εξαγωγή τμημάτων στο Constant Contact.
+1. Στην ενότητα **Αντιστοίχιση δεδομένων**, στο πεδίο **Ηλεκτρονικό ταχυδρομείο**, επιλέξτε το πεδίο στο ενοποιημένο προφίλ πελάτη που αντιπροσωπεύει τη διεύθυνση ηλεκτρονικού ταχυδρομείου ενός πελάτη. Απαιτείται η εξαγωγή τμημάτων στο Constant Contact.
 
 1. Προαιρετικά, μπορείτε να εξαγάγετε το Όνομα και το Επώνυμο ως πρόσθετα πεδία για τη δημιουργία πιο εξατομικευμένων μηνυμάτων ηλεκτρονικού ταχυδρομείου. Επιλέξτε **Προσθήκη χαρακτηριστικού** για να αντιστοιχίσετε αυτά τα πεδία.
 

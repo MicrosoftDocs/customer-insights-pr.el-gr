@@ -1,5 +1,5 @@
 ---
-title: Εξαγωγή δεδομένων Customer Insights σε κεντρικούς υπολογιστές SFTP (περιέχει βίντεο)
+title: Εξαγωγή δεδομένων Customer Insights σε κεντρικούς υπολογιστές SFTP
 description: Μάθετε πώς να ρυθμίσετε τις παραμέτρους της σύνδεσης και της εξαγωγής σε μια τοποθεσία SFTP.
 ms.date: 03/03/2021
 ms.reviewer: mhart
@@ -9,18 +9,16 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 542bd908010cf0a8ccc12f15d54e0a3d5b72f189
-ms.sourcegitcommit: 9132fdf54070cc551ab878378078e6285852818f
+ms.openlocfilehash: b19ca6b8085846785682046f83d0ed4758269e5b98303692c703d995407ca7dd
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "7934887"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7035461"
 ---
 # <a name="export-segments-and-other-data-to-sftp-preview"></a>Εξαγωγή τμημάτων και άλλων δεδομένων σε SFTP (έκδοση προεπισκόπησης)
 
 Χρησιμοποιήστε τα δεδομένα πελατών σας σε εφαρμογές τρίτων, εξάγοντάς τα σε μια θέση πρωτοκόλλου ασφαλούς μεταφοράς αρχείων (SFTP).
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWO94X]
 
 ## <a name="prerequisites-for-connection"></a>Προϋποθέσεις για σύνδεση
 
@@ -28,7 +26,6 @@ ms.locfileid: "7934887"
 
 ## <a name="known-limitations"></a>Γνωστοί περιορισμοί
 
-- Προς το παρόν, οι προορισμοί SFTP που βρίσκονται πίσω από τείχη προστασίας δεν υποστηρίζονται. 
 - Ο χρόνος εκτέλεσης μιας εξαγωγής εξαρτάται από την απόδοση του συστήματός σας. Συνιστούμε δύο πυρήνες CPU και 1 Gb μνήμης ως ελάχιστη διαμόρφωση του διακομιστή σας. 
 - Η εξαγωγή οντοτήτων με έως 100 εκατομμύρια προφίλ πελατών μπορεί να διαρκέσει 90 λεπτά με τη χρήση της συνιστώμενης ελάχιστης διαμόρφωσης δύο πυρήνων CPU και 1 Gb μνήμης. 
 

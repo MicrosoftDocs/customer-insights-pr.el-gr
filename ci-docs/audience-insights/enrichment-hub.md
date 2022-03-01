@@ -1,7 +1,7 @@
 ---
 title: Εμπλουτισμός ενοποιημένων προφίλ πελάτη
 description: Χρησιμοποιήστε τις δυνατότητες για να εμπλουτίσετε τα δεδομένα των πελατών σας.
-ms.date: 02/07/2022
+ms.date: 09/30/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 5c3dda3b9bae828857258025ff79958ee22bdb6f
-ms.sourcegitcommit: a399bd17523c8d06afd7d78af4fc711f93c0e8be
+ms.openlocfilehash: bc0128c222c032e8cfe35e6f3baa0ea722bce7cb
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 02/07/2022
-ms.locfileid: "8098789"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7672999"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>Εμπλουτισμός για προφίλ πελατών (προεπισκόπηση)
 
@@ -37,17 +37,14 @@ ms.locfileid: "8098789"
 - [Δημογραφικά στοιχεία](enrichment-experian.md) που παρέχονται από την Experian
 - [Προσαρμοσμένα δεδομένα](enrichment-SFTP-custom-import.md) μέσω πρωτοκόλλου ασφαλούς μεταφοράς αρχείων (SFTP) 
 - [Χάρτες Azure](enrichment-azure-maps.md) παρέχονται από την Microsoft
-- [Δεδομένα θέσης](enrichment-here.md) παρέχονται από τις τεχνολογίες HERE 
 
 # <a name="business-accounts-b-to-b"></a>[Λογαριασμοί επιχειρήσεων (B2B)](#tab/b2b)
 
 - [Εταιρικά δεδομένα](enrichment-leadspace.md) που παρέχονται από το Leadspace
 - [Βελτιωμένες διευθύνσεις](enrichment-enhanced-addresses.md) που παρέχονται από τη Microsoft 
-- [Βελτιωμένα εταιρικά δεδομένα](enrichment-enhanced-company-data.md) που παρέχονται από τη Microsoft
 - [Δεδομένα θέσης](enrichment-here.md) παρέχονται από τις τεχνολογίες HERE 
 - [Προσαρμοσμένα δεδομένα](enrichment-SFTP-custom-import.md) μέσω πρωτοκόλλου ασφαλούς μεταφοράς αρχείων (SFTP) 
 - [Χάρτες Azure](enrichment-azure-maps.md) παρέχονται από την Microsoft
-- [Δεδομένα δέσμευσης λογαριασμού](enrichment-office.md) που παρέχονται από τη Microsoft
 
 ---
 

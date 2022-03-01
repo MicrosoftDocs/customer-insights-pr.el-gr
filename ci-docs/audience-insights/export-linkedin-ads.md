@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 867a6541734746f75a35faaa8d3861e0479d6114
-ms.sourcegitcommit: 9558ff772ee6c944fcb8db4bfc8cda13b38a1bff
+ms.openlocfilehash: 948a7e980df5714034009c92282e78cf2bdcb231
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "7866888"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618291"
 ---
 # <a name="export-segments-to-linkedin-ads-preview"></a>Εξαγωγή τμημάτων στο LinkedIn Ads (έκδοση προεπισκόπησης)
 
@@ -28,7 +28,6 @@ ms.locfileid: "7866888"
 
 ## <a name="known-limitations"></a>Γνωστοί περιορισμοί
 
-- Το τμήμα σας στο Customer Insights πρέπει να περιέχει τουλάχιστον 300 μοναδικά προφίλ. 
 - Μπορείτε να εξαγάγετε έως και 100.000 προφίλ πελατών ανά εξαγωγή στο LinkedIn Ads.
 - Η εξαγωγή στο LinkedIn Ads περιορίζεται σε τμήματα.
 - Η εξαγωγή έως 100.000 προφίλ πελατών στο LinkedIn Ads μπορεί να διαρκέσει έως και 10 λεπτά μέχρι να ολοκληρωθεί. 

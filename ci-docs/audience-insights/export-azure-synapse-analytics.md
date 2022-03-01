@@ -1,7 +1,7 @@
 ---
 title: Εξαγωγή δεδομένων του Customer Insights στο Azure Synapse Analytics
 description: Μάθετε πώς να ρυθμίσετε τις παραμέτρους της σύνδεσης στο Azure Synapse Analytics.
-ms.date: 01/05/2022
+ms.date: 04/12/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 6f630b8fb03bf615ada6d40fe27a91975d0c856e
-ms.sourcegitcommit: cb71e39de9b891c24bd5cd9c014eb3eeb537ac24
+ms.openlocfilehash: 7ee57aa9e86ebf9bd1989d88750642f0b01bd4bf
+ms.sourcegitcommit: f18635c29bb25d9e424a3f5825dc2696278450cf
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7951042"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "6327364"
 ---
 # <a name="export-data-to-azure-synapse-analytics-preview"></a>Εξαγωγή δεδομένων σε Azure Synapse Analytics (έκδοση προεπισκόπησης)
 
@@ -49,8 +49,6 @@ ms.locfileid: "7951042"
 
 ### <a name="configure-a-connection"></a>Ρύθμιση παραμέτρων μιας σύνδεσης
 
-Για να δημιουργήσετε μια σύνδεση, η αρχή υπηρεσίας και ο λογαριασμός χρήστη στο Customer Insights χρειάζονται δικαιώματα **Αναγνώστη** στην *ομάδα πόρων* όπου βρίσκεται ο χώρος εργασίας Synapse Analytics. Επιπλέον, η αρχή υπηρεσίας και ο χρήστης στον χώρο εργασίας Synapse Analytics πρέπει να έχουν δικαιώματα **Διαχειριστή Synapse**. 
-
 1. Μετάβαση στον **Διαχειριστή** > **Συνδέσεις**.
 
 1. Επιλέξτε **Προσθήκη σύνδεσης** κι επιλέξτε **Azure Synapse Analytics** ή επιλέξτε **Ρύθμιση** στο πλακίδιο **Azure Synapse Analytics** για τη ρύθμιση παραμέτρων της σύνδεσης.
@@ -65,7 +63,7 @@ ms.locfileid: "7951042"
 
 ### <a name="configure-an-export"></a>Ρύθμιση παραμέτρων εξαγωγής
 
-Μπορείτε να ρυθμίσετε τις παραμέτρους αυτής της εξαγωγής, εάν έχετε πρόσβαση σε μια σύνδεση αυτού του τύπου. Για να ρυθμίσετε τις παραμέτρους της εξαγωγής με μια κοινόχρηστη σύνδεση, χρειάζεστε τουλάχιστον δικαιώματα **Συμβάλλοντα** στο Customer Insights. Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [δικαιώματα που απαιτούνται για τη ρύθμιση των παραμέτρων μιας εξαγωγής](export-destinations.md#set-up-a-new-export).
+Μπορείτε να ρυθμίσετε τις παραμέτρους αυτής της εξαγωγής, εάν έχετε πρόσβαση σε μια σύνδεση αυτού του τύπου. Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [δικαιώματα που απαιτούνται για τη ρύθμιση των παραμέτρων μιας εξαγωγής](export-destinations.md#set-up-a-new-export).
 
 1. Μεταβείτε στα **Δεδομένα** > **Εξαγωγές**.
 
@@ -84,8 +82,6 @@ ms.locfileid: "7951042"
 Η αποθήκευση μιας εξαγωγής δεν εκτελεί αμέσως την εξαγωγή.
 
 Η εξαγωγή εκτελείται με κάθε [προγραμματισμένη ανανέωση](system.md#schedule-tab). Μπορείτε επίσης να [εξαγάγετε δεδομένα κατ' απαίτηση](export-destinations.md#run-exports-on-demand).
-
-Για να υποβάλετε ερωτήματα σχετικά με τα δεδομένα που έχουν εξαχθεί στο Synapse Analytics, χρειάζεστε πρόσβαση στο **Πρόγραμμα ανάγνωσης δεδομένων χώρου αποθήκευσης αντικειμένων Blob** στον χώρο αποθήκευσης προορισμού στον χώρο εργασίας εξαγωγής. 
 
 ### <a name="update-an-export"></a>Ενημέρωση εξαγωγής
 
