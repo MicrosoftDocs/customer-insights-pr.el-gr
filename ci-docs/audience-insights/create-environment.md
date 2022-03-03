@@ -1,21 +1,23 @@
 ---
 title: Δημιουργία περιβαλλόντων στο Customer Insights
 description: Βήματα για τη δημιουργία περιβαλλόντων με συνδρομή με άδεια χρήσης για Dynamics 365 Customer Insights.
-ms.date: 12/06/2021
+ms.date: 02/24/2022
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: MichelleDevaney
 ms.author: midevane
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: d29992c88bd54fcfcf5e6429a89a34b6f73148c8
-ms.sourcegitcommit: b7189b8621e66ee738e4164d4b3ce2af0def3f51
+searchScope:
+- ci-home
+- customerInsights
+ms.openlocfilehash: c37afd5649f8cf40d5379f3d39d0cbd96cde3bd3
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "8088113"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354095"
 ---
 # <a name="create-an-environment-in-audience-insights"></a>Δημιουργία περιβάλλοντος στις πληροφορίες κοινού
 
@@ -76,12 +78,14 @@ ms.locfileid: "8088113"
    
 Το βήμα **Microsoft Dataverse** σάς επιτρέπει να συνδέσετε το Customer Insights με το περιβάλλον Dataverse σας.
 
-Για να χρησιμοποιήσετε [έτοιμα μοντέλα πρόβλεψης](predictions-overview.md#out-of-box-models), ρυθμίστε τις παραμέτρους κοινής χρήσης δεδομένων με το Dataverse. Εναλλακτικά, μπορείτε να ενεργοποιήσετε την πρόσληψη δεδομένων από εσωτερικής εγκατάστασης προελεύσεις δεδομένων, παρέχοντας τη διεύθυνση URL περιβάλλοντος Microsoft Dataverse που διαχειρίζεται ο οργανισμός σας. Επιλέξτε **Ενεργοποίηση κοινής χρήσης δεδομένων** για κοινή χρήση δεδομένων εξόδου του Customer Insights με μια διαχειριζόμενη λίμνη δεδομένων Dataverse.
+Παρέχετε το δικό σας περιβάλλον Microsoft Dataverse για κοινή χρήση δεδομένων (προφίλ και πληροφορίες) με επιχειρηματικές εφαρμογές που βασίζονται στο Dataverse, όπως εφαρμογές Dynamics 365 Marketing ή εφαρμογές βάσει μοντέλου στο Power Apps. Αφήστε αυτό το πεδίο κενό, εάν δεν έχετε το δικό σας περιβάλλον Dataverse και εμείς θα σας προσφέρουμε ένα.
+
+Η σύνδεση στο περιβάλλον σας Dataverse σάς επιτρέπει επίσης να [προσλαμβάνετε δεδομένα από προελεύσεις δεδομένων εσωτερικής εγκατάστασης χρησιμοποιώντας ροές δεδομένων και πύλες Power Platform](data-sources.md#add-data-from-on-premises-data-sources). Μπορείτε επίσης να χρησιμοποιήσετε [έτοιμα μοντέλα πρόβλεψης](predictions-overview.md?tabs=b2c#out-of-box-models) συνδεόμενοι σε ένα περιβάλλον Dataverse.
 
 > [!IMPORTANT]
 > Τα Customer Insights και Dataverse πρέπει να βρίσκονται στην ίδια περιοχή για να είναι δυνατή η κοινή χρήση δεδομένων.
 
-:::image type="content" source="media/dataverse-data-sharing.png" alt-text="Επιλογές ρύθμισης παραμέτρων για ενεργοποίηση της κοινής χρήσης δεδομένων με το Microsoft Dataverse.":::
+:::image type="content" source="media/dataverse-provisioning.png" alt-text="κοινή χρήση δεδομένων με Microsoft Dataverse που ενεργοποιείται αυτόματα για νέες παρουσίες δικτύου.":::
 
 > [!NOTE]
 > Το περιβάλλον Customer Insights δεν υποστηρίζει τα παρακάτω σενάρια κοινής χρήσης δεδομένων:

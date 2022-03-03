@@ -3,18 +3,17 @@ title: Εμπλουτισμός με προσαρμοσμένη εισαγωγή
 description: Γενικές πληροφορίες σχετικά με τον εμπλουτισμό προσαρμοσμένων εισαγωγών SFTP.
 ms.date: 04/09/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: f92b36ac5364ea8586f9cbba7ba03178641555c0
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: e4b9a65eb50f75e0243fabfc10b501cf7acf4490
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304650"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8229638"
 ---
 # <a name="enrich-customer-profiles-with-custom-data-preview"></a>Εμπλουτισμός προφίλ πελατών με προσαρμοσμένα δεδομένα (προεπισκόπηση)
 
@@ -45,6 +44,8 @@ ms.locfileid: "6304650"
 
     :::image type="content" source="media/enrichment-SFTP-path-and-filename.png" alt-text="Στιγμιότυπο οθόνης κατά την εισαγωγή της θέσης δεδομένων.":::
 
+1. Επιλέξτε **Επόμενο** και επιλέξτε το σύνολο δεδομένων πελατών. Μπορεί να είναι είτε όλα τα προφίλ πελατών είτε ένα τμήμα.
+
 1. Επιλέξτε **Επόμενο** και δώστε ένα όνομα για τον εμπλουτισμό και ένα όνομα για την οντότητα εξόδου. 
 
 1. Επιλέξτε **Αποθήκευση εμπλουτισμού** αφού αναθεωρήσετε τις επιλογές σας.
@@ -64,7 +65,7 @@ ms.locfileid: "6304650"
 1. Όταν ολοκληρωθεί η επαλήθευση, η σύνδεση μπορεί να αποθηκευτεί επιλέγοντας **Αποθήκευση**.
 
    > [!div class="mx-imgBorder"]
-   > ![Τμήμα παραθύρου ρύθμισης παραμέτρων σύνδεσης του Experian](media/enrichment-SFTP-connection.png "Τμήμα παραθύρου ρύθμισης παραμέτρων σύνδεσης του Experian")
+   > ![Σελίδα ρύθμισης παραμέτρων σύνδεσης του Experian.](media/enrichment-SFTP-connection.png "Τμήμα παραθύρου ρύθμισης παραμέτρων σύνδεσης του Experian")
 
 
 ## <a name="defining-field-mappings"></a>Ορισμός αντιστοιχίσεων πεδίων 
@@ -123,6 +124,6 @@ ms.locfileid: "6304650"
 
 ## <a name="next-steps"></a>Επόμενα βήματα
 
-Δημιουργήστε τα εμπλουτισμένα δεδομένα των πελατών σας. Δημιουργήστε [τμήματα](segments.md)και [μέτρα](measures.md) και, επιπλέον, [εξαγάγετε τα δεδομένα](export-destinations.md) για να παραδώσετε εξατομικευμένες εμπειρίες στους πελάτες σας.
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

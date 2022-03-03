@@ -3,18 +3,17 @@ title: Εξαγωγή δεδομένων Customer Insights στο SendGrid
 description: Μάθετε πώς να ρυθμίσετε τις παραμέτρους της σύνδεσης και της εξαγωγής στο SendGrid.
 ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: da3da5ea68d178deab3b9ab31dd810dee610f607
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: 65d60e7e70e3444b0695b905431bab9a0269ceef
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7617831"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8231572"
 ---
 # <a name="export-segments-to-sendgrid-preview"></a>Εξαγωγή τμημάτων στο SendGrid (έκδοση προεπισκόπησης)
 

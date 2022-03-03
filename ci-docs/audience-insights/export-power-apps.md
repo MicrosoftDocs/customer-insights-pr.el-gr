@@ -1,20 +1,19 @@
 ---
 title: Σύνδεσμος Power Apps
 description: Συνδεθείτε με το Power Apps και το Power Automate.
-ms.date: 08/21/2020
-ms.reviewer: nikeller
-ms.service: customer-insights
+ms.date: 10/01/2021
+ms.reviewer: mhart
 ms.subservice: audience-insights
-ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+ms.topic: how-to
+author: Nils-2m
+ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: b6ec103e29e218b2f27bfc1193300ea793a6b30b
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: ae2a3b7c05e9ed860da31853c47af2aec8634e7a
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4405809"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8229031"
 ---
 # <a name="microsoft-power-apps-connector-preview"></a>Σύνδεση Microsoft Power Apps (προεπισκόπηση)
 
@@ -22,53 +21,55 @@ ms.locfileid: "4405809"
 
 ## <a name="connect-power-apps-and-dynamics-365-customer-insights"></a>Σύνδεση Power Apps και Dynamics 365 Customer Insights
 
-Το Customer Insights είναι μία από τις πολλές [διαθέσιμες προελεύσεις για δεδομένα στο Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-data-sources).
+Το Customer Insights είναι μία από τις πολλές [διαθέσιμες προελεύσεις για δεδομένα στο Power Apps](/powerapps/maker/canvas-apps/working-with-data-sources).
 
-Ανατρέξτε στην Power Apps τεκμηρίωση για να μάθετε πώς μπορείτε να [προσθέσετε μια σύνδεση δεδομένων σε μια εφαρμογή](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-data-connection). Συνιστάται επίσης να εξετάσετε τον [τρόπο με τον οποίο το Power Apps χρησιμοποιεί την ανάθεση για τη διαχείριση μεγάλων συνόλων δεδομένων σε Εφαρμογές καμβά](https://docs.microsoft.com/powerapps/maker/canvas-apps/delegation-overview).
+Ανατρέξτε στην Power Apps τεκμηρίωση για να μάθετε πώς μπορείτε να [προσθέσετε μια σύνδεση δεδομένων σε μια εφαρμογή](/powerapps/maker/canvas-apps/add-data-connection). Συνιστάται επίσης να εξετάσετε τον [τρόπο με τον οποίο το Power Apps χρησιμοποιεί την ανάθεση για τη διαχείριση μεγάλων συνόλων δεδομένων σε Εφαρμογές καμβά](/powerapps/maker/canvas-apps/delegation-overview).
 
 ## <a name="available-entities"></a>Διαθέσιμες οντότητες
 
 Αφού προσθέσετε το Customer Insights ως σύνδεση δεδομένων, μπορείτε να επιλέξετε τις ακόλουθες οντότητες στο Power Apps:
 
-- Πελάτης: για να χρησιμοποιήσετε δεδομένα από το [ενοποιημένο προφίλ πελάτη](customer-profiles.md).
-- Ενοποιημένη δραστηριότητα πελάτη: για την εμφάνιση της [λωρίδας χρόνου δραστηριότητας](activities.md) στην εφαρμογή.
+- **Πελάτης**: για να χρησιμοποιήσετε δεδομένα από το [ενοποιημένο προφίλ πελάτη](customer-profiles.md).
+- **UnifiedActivity**: για εμφάνιση του [χρονοδιαγράμματος δραστηριοτήτων](activities.md) στην εφαρμογή.
+- **ContactProfile**: για εμφάνιση των επαφών ενός πελάτη. Αυτή η οντότητα είναι διαθέσιμη μόνο σε περιβάλλοντα πληροφοριών κοινού για επιχειρηματικούς λογαριασμούς.
 
 ## <a name="limitations"></a>Περιορισμοί
 
 ### <a name="retrievable-entities"></a>Οντότητες με δυνατότητα ανάκτησης
 
-Μπορείτε να ανακτήσετε μόνο τις οντότητες **Πελάτης**, **UnivifedActivity** και **Τμήματα** μέσω της σύνδεσης Power Apps. Εμφανίζονται άλλες οντότητες επειδή τις υποστηρίζει η υποκείμενη σύνδεση μέσω εναυσμάτων στο Power Automate.  
+Μπορείτε να ανακτήσετε μόνο τις οντότητες **Πελάτης**, **UnifiedActivity**, **Τμήματα** και **ContactProfile** μέσω της σύνδεσης Power Apps. Το ContactProfile είναι διαθέσιμο μόνο σε παρουσία πληροφοριών κοινού για επιχειρηματικούς λογαριασμούς. Εμφανίζονται άλλες οντότητες επειδή τις υποστηρίζει η υποκείμενη σύνδεση μέσω εναυσμάτων στο Power Automate.
 
 ### <a name="delegation"></a>Ανάθεση
 
-Η ανάθεση λειτουργεί για την οντότητα Πελάτης και την οντότητα UnifiedActivity. 
+Η ανάθεση λειτουργεί για την οντότητα **Πελάτης** και την οντότητα **UnifiedActivity**. 
 
 - Ανάθεση για την οντότητα **Πελάτης**: για να χρησιμοποιήσετε την ανάθεση για αυτήν την οντότητα, τα πεδία πρέπει να καταχωρούνται σε ευρετήριο στην [Αναζήτηση και ευρετήριο φίλτρων](search-filter-index.md).  
-
 - Ανάθεση για **UnifiedActivity**: Η ανάθεση για αυτή την οντότητα λειτουργεί μόνο για τα πεδία **ActivityId** και **CustomerId**.  
+- Ανάθεση για **ContactProfile**: Η ανάθεση για αυτήν την οντότητα λειτουργεί μόνο για τα πεδία **ContactId** και **CustomerId**. Το ContactProfile είναι διαθέσιμο μόνο σε περιβάλλοντα πληροφοριών κοινού για επιχειρηματικούς λογαριασμούς.
 
-- Για περισσότερες πληροφορίες σχετικά με την ανάθεση, ανατρέξτε στο θέμα [Λειτουργίες με δυνατότητα ανάθεσης στο Power Apps](https://docs.microsoft.com/connectors/commondataservice/#power-apps-delegable-functions-and-operations-for-the-cds-for-apps). 
+Για περισσότερες πληροφορίες σχετικά με την ανάθεση, μεταβείτε σε [λειτουργίες με δυνατότητα ανάθεσης Power Apps και εργασίες](/powerapps/maker/canvas-apps/delegation-overview). 
 
 ## <a name="example-gallery-control"></a>Δείγμα στοιχείου ελέγχου συλλογής
 
-Για παράδειγμα, μπορείτε να προσθέσετε προφίλ πελατών σε ένα [στοιχείο ελέγχου συλλογής](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-gallery).
+Μπορείτε να προσθέσετε προφίλ πελατών σε ένα [στοιχείο ελέγχου συλλογής](/powerapps/maker/canvas-apps/add-gallery).
 
-1. Προσθέστε ένα στοιχείο ελέγχου **Συλλογή** σε μια εφαρμογή που δημιουργείτε.
-
-> [!div class="mx-imgBorder"]
-> ![Προσθήκη στοιχείου συλλογής](media/connector-powerapps9.png "Προσθήκη στοιχείου συλλογής")
-
-1. Επιλέξτε **Πελάτης** ως προέλευση δεδομένων για τα στοιχεία.
+1. Προσθέστε ένα στοιχείο ελέγχου **συλλογή** σε μια εφαρμογή που δημιουργείτε.
 
     > [!div class="mx-imgBorder"]
-    > ![Επιλογή μιας προέλευσης δεδομένων](media/choose-datasource-powerapps.png "Επιλογή μιας προέλευσης δεδομένων")
+    > ![Προσθήκη στοιχείου συλλογής.](media/connector-powerapps9.png "Προσθήκη στοιχείου συλλογής.")
 
-1. Μπορείτε να αλλάξετε τον πίνακα δεδομένων στα δεξιά για να επιλέξετε το πεδίο για την οντότητα Πελάτη που θα εμφανίζεται στη συλλογή.
+2. Επιλέξτε **Πελάτης** ως προέλευση δεδομένων για τα στοιχεία.
 
-1. Εάν θέλετε να εμφανίσετε οποιοδήποτε πεδίο από τον επιλεγμένο πελάτη στη συλλογή, συμπληρώστε την ιδιότητα Κείμενο μιας ετικέτας:  **{Name_of_the_gallery}.Επιλεγμένο.{property_name}**
+    > [!div class="mx-imgBorder"]
+    > ![Επιλογή μιας προέλευσης δεδομένων.](media/choose-datasource-powerapps.png "Επιλογή μιας προέλευσης δεδομένων.")
 
-    Παράδειγμα: Gallery1.Selected.address1_city
+3. Μπορείτε να αλλάξετε τον πίνακα δεδομένων στα δεξιά για να επιλέξετε το πεδίο για την οντότητα Πελάτη που θα εμφανίζεται στη συλλογή.
 
-1. Για να εμφανίσετε την ενοποιημένη λωρίδα χρόνου για έναν πελάτη, προσθέστε ένα στοιχείο Συλλογής και προσθέστε την ιδιότητα Στοιχεία: **Filter('Ενοποιημένη δραστηριότητα πελάτη', CustomerId = {Customer_Id})**
+4. Εάν θέλετε να εμφανίσετε οποιοδήποτε πεδίο από τον επιλεγμένο πελάτη στη συλλογή, συμπληρώστε την ιδιότητα **Κείμενο** μιας ετικέτας χρησιμοποιώντας το **{Name_of_the_gallery}.Selected.{property_name}**  
+    - Για παράδειγμα: _Gallery1.Selected.address1_city_
 
-    Παράδειγμα: Filter('UnifiedActivity', CustomerId = Gallery1.Selected.CustomerId)
+5. Για να εμφανίσετε την ενοποιημένη λωρίδα χρόνου για έναν πελάτη, προσθέστε ένα στοιχείο συλλογής και προσθέστε την ιδιότητα **Στοιχεία** χρησιμοποιώντας το **Filter('UnifiedActivity', CustomerId = {Customer_Id})**  
+    - Για παράδειγμα: _Filter('UnifiedActivity', CustomerId = Gallery1.Selected.CustomerId)_
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,29 +1,28 @@
 ---
 title: Bot για Microsoft Teams
 description: Αναζητήστε ενοποιημένα προφίλ πελατών στο Microsoft Teams με τη βοήθεια ενός bot.
-ms.date: 04/21/2020
+ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 45ea23fbefe5f1d44c3961183b76d2cc5c45355e
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: d6b016c1ec35e26ce6449333234edfd218bc9354
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4405840"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8232102"
 ---
 # <a name="teams-bot-for-dynamics-365-customer-insights-preview"></a>Bot του Teams για το Dynamics 365 Customer Insights (προεπισκόπηση)
 
 Συνδεθείτε με το Microsoft Teams για να επιτρέψετε σε ένα bot να αναζητήσει ενοποιημένα προφίλ πελατών στα κανάλια Teams.
 
 > [!div class="mx-imgBorder"]
-> ![Bot Teams που εμφανίζουν μια καρτέλα πελάτη](media/teams-bot.png "Bot Teams που εμφανίζουν μια καρτέλα πελάτη")
+> ![Bot Teams που εμφανίζουν μια καρτέλα πελάτη.](media/teams-bot.png "Bot Teams που εμφανίζουν μια καρτέλα πελάτη")
 
-## <a name="prerequisites"></a>Προαπαιτούμενα στοιχεία
+## <a name="prerequisites"></a>Προϋποθέσεις
 
 Για να ρυθμίσετε και να ρυθμίσετε τις παραμέτρους του bot, πρέπει να πληρούνται οι ακόλουθες προϋποθέσεις:
 
@@ -31,7 +30,10 @@ ms.locfileid: "4405840"
 - Η [διαδικασία ενοποίησης](data-unification.md) να έχει ολοκληρωθεί.
 - Τα πεδία να έχουν προστεθεί στο [ευρετήριο αναζήτησης και φιλτραρίσματος](search-filter-index.md).
 - Το Customer Insights και το Teams να βρίσκονται στον ίδιο οργανισμό.
+- Το περιβάλλον σας έχει ορίσει το κύριο κοινό στόχο σε μεμονωμένους πελάτες. Οι επιχειρηματικοί λογαριασμοί δεν υποστηρίζονται.
 
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRElj]
 ## <a name="configure-the-bot"></a>Ρυθμίστε τις παραμέτρους του bot
 
 1. Στις πληροφορίες κοινού, μεταβείτε στην επιλογή **Διαχειριστής** > **Εξαγωγή προορισμών**.
@@ -52,3 +54,6 @@ ms.locfileid: "4405840"
 - Εάν ο οργανισμός σας διατηρεί πολλά περιβάλλοντα Customer Insights στον ίδιο οργανισμό, μπορείτε να εισαγάγετε **switchinstance** για να επιλέξετε σε ποιο περιβάλλον θέλετε να συνδέσετε το bot.
 
 - Εισάγετε **βοήθεια** για να δείτε μια λίστα με τις διαθέσιμες εντολές για το bot.  
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

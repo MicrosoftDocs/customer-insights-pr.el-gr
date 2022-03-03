@@ -3,18 +3,20 @@ title: Συνδέσεις σε άλλες υπηρεσίες του Customer Ins
 description: Κοινή χρήση δεδομένων σε άλλες υπηρεσίες.
 ms.date: 04/09/2021
 ms.reviewer: nikeller
-ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: overview
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 17e04b243e9b3d4375c86f5a890a18be35956835
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+searchScope:
+- ci-connections
+- customerInsights
+ms.openlocfilehash: ccad090d3bf6eab96eff37f7a96289ca2882d369
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304972"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354384"
 ---
 # <a name="connections-preview-overview"></a>Επισκόπηση συνδέσεων (έκδοση προεπισκόπησης)
 
@@ -47,6 +49,7 @@ ms.locfileid: "6304972"
 1. Στο τμήμα παραθύρου **Ρύθμιση σύνδεσης** παράσχετε τις απαιτούμενες λεπτομέρειες. 
    1. Το **εμφανιζόμενο όνομα** και ο τύπος της σύνδεσης περιγράφουν μια σύνδεση. Συνιστούμε να επιλέξετε ένα όνομα που να εξηγεί τον σκοπό και τον προορισμό αυτής της σύνδεσης.
    1. Τα ακριβή πεδία εξαρτώνται από την υπηρεσία στην οποία συνδέεστε. Μπορείτε να μάθετε για τις λεπτομέρειες ενός συγκεκριμένου τύπου σύνδεσης στο άρθρο σχετικά με την υπηρεσία προορισμού.
+   1. Εάν [χρησιμοποιείτε το δικό σας Key Vault](use-azure-key-vault.md) για να αποθηκεύσετε μυστικά, ενεργοποιήστε την επιλογή **Use Key Vault** και επιλέξτε το μυστικό από τη λίστα.
 
 1. Για να δημιουργήσετε τη σύνδεση, επιλέξτε **Αποθήκευση**.
 
@@ -93,3 +96,6 @@ ms.locfileid: "6304972"
 
 1. Για να επιβεβαιώσετε τη διαγραφή, επιλέξτε **Κατάργηση**.
 
+## <a name="set-up-connections-with-secrets-managed-by-your-own-key-vault"></a>Ρύθμιση συνδέσεων με μυστικά που διαχειρίζεται το δικό σας Key Vault
+
+Ορισμένες συνδέσεις χρειάζονται μυστικά όπως κλειδιά API ή κωδικούς πρόσβασης. Ορισμένες συνδέσεις υποστηρίζουν μυστικά που είναι αποθηκευμένα στο δικό σας Key Vault. Μάθετε περισσότερα σχετικά με τις υποστηριζόμενες συνδέσεις και πώς μπορείτε να τις ρυθμίσετε στο [δικό σας Key Vault για πληροφορίες κοινού](use-azure-key-vault.md).

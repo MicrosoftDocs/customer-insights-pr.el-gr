@@ -4,17 +4,16 @@ metadata:
   author: m-hartmann
   description: Βρείτε σχετικά άρθρα για να ξεκινήσετε με το περιεχόμενο της βοήθειας.
   ms.author: mhart
-  ms.date: 10/29/2020
-  ms.service: customer-insights
+  ms.date: 03/02/2022
   ms.topic: landing-page
-  ms.openlocfilehash: e9c4aa3347d6f477751804790bd3dc9b20eb5dbe
-  ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+  ms.openlocfilehash: 5efa266dfe8d70812f4c668b04cee2f93f206f7b
+  ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
   ms.translationtype: HT
   ms.contentlocale: el-GR
-  ms.lasthandoff: 03/15/2021
-  ms.locfileid: "5598460"
+  ms.lasthandoff: 02/25/2022
+  ms.locfileid: "8350469"
 title: Τεκμηρίωση Dynamics 365 Customer Insights
-summary: Βρείτε χρήσιμους πόρους για να ξεκινήσετε και να ενημερωθείτε σχετικά με τις δυνατότητες και τις ικανότητες του Customer Insights.
+summary: Βρείτε χρήσιμους πόρους για να ξεκινήσετε και να μάθετε για τα χαρακτηριστικά και τις δυνατότητες του Customer Insights.
 landingContent:
 - title: Γνωρίστε το Customer Insights
   linkLists:
@@ -23,19 +22,41 @@ landingContent:
     - text: Επισκόπηση Customer Insights
       url: overview.md
     - text: Προγράμματα έκδοσης
-      url: /dynamics365-release-plan/2020wave2/customer-data-platform/dynamics365-customer-insights/planned-features
-    - text: Αποκτήστε πρόσβαση στο περιβάλλον σας
-      url: https://home.ci.ai.dynamics.com/
-- title: Έναρξη με τις πληροφορίες κοινού
+      url: /dynamics365/release-plans/
+    - text: Ανακαλύψτε το CDP
+      url: https://dynamics.microsoft.com/ai/customer-insights/
+  - linkListType: learn
+    links:
+    - text: Διαδρομή εκμάθησης Customer Insights
+      url: /learn/paths/build-customer-insights/
+- title: Έναρξη με το Customer Insights
   linkLists:
   - linkListType: get-started
     links:
     - text: Εγγραφή για δωρεάν δοκιμή
       url: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
-    - text: Τι νέο υπάρχει
+    - text: Τι νέο υπάρχει στις πληροφορίες κοινού
       url: audience-insights/whats-new-audience-insights.md
-    - text: Τεκμηρίωση πληροφοριών κοινού
-      url: audience-insights/index.yml
+    - text: Οδηγός γρήγορης εκκίνησης
+      url: audience-insights/get-started.md
+  - linkListType: learn
+    links:
+    - text: Έναρξη
+      url: /learn/modules/get-started-customer-data-platform/
+- title: Διαχείριση του Customer Insights
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Ρύθμιση παραμέτρων του συστήματος
+      url: audience-insights/system.md
+    - text: Ορισμός δικαιωμάτων χρήστη
+      url: audience-insights/permissions.md
+    - text: Διαχείριση πολλών περιβαλλόντων
+      url: audience-insights/manage-environments.md
+  - linkListType: learn
+    links:
+    - text: Διαχείριση του Customer Insights
+      url: /learn/modules/administer-customer-data-platform/
 - title: Επικοινωνήστε
   linkLists:
   - linkListType: overview
@@ -46,63 +67,3 @@ landingContent:
       url: https://go.microsoft.com/fwlink/?linkid=2074172
     - text: Αναφορά προβλήματος
       url: https://go.microsoft.com/fwlink/?linkid=2079641
-- title: Προγράμματα εκμάθησης πληροφοριών κοινού
-  linkLists:
-  - linkListType: tutorial
-    links:
-    - text: Δημιουργία περιβάλλοντος
-      url: audience-insights/home.md
-    - text: Δημιουργία ενοποιημένου προφίλ πελάτη
-      url: /learn/modules/unified-customer-profile/
-    - text: Εργασία με την εφαρμογή
-      url: /learn/modules/working-with-customer-insights/
-- title: Εξαγωγή δεδομένων πληροφοριών κοινού
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Ρύθμιση προορισμών εξαγωγής
-      url: audience-insights/export-destinations.md
-    - text: Κάρτες πελατών σε εφαρμογές Dynamics 365
-      url: audience-insights/customer-card-add-in.md
-    - text: Σύνδεσμος Power BI
-      url: audience-insights/export-power-bi.md
-- title: Διαχείριση πληροφοριών κοινού
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Ρύθμιση παραμέτρων του συστήματος
-      url: audience-insights/system.md
-    - text: Ορισμός δικαιωμάτων χρήστη
-      url: audience-insights/permissions.md
-    - text: Διαχείριση πολλών περιβαλλόντων
-      url: audience-insights/manage-environments.md
-- title: Σχετικά με τις πληροφορίες δέσμευσης (προεπισκόπηση)
-  linkLists:
-  - linkListType: overview
-    links:
-    - text: Επισκόπηση δυνατοτήτων
-      url: engagement-insights/overview.md
-    - text: Όροι και σκέψεις
-      url: engagement-insights/glossary.md
-    - text: Έναρξη
-      url: engagement-insights/get-started.md
-- title: Αναφορές για πληροφορίες δέσμευσης (προεπισκόπηση)
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Προβολή αναφορών
-      url: engagement-insights/view-reports.md
-    - text: Δημιουργία προσαρμοσμένων αναφορών
-      url: engagement-insights/custom-reports.md
-    - text: Προβολή ενοποιημένων προφίλ αναφοράς
-      url: engagement-insights/profile-reports.md
-- title: Συμβάντα για πληροφορίες δέσμευσης (προεπισκόπηση)
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Δημιουργία εκλεπτυσμένων συμβάντων
-      url: engagement-insights/refined-events.md
-    - text: Εξαγωγή συμβάντων
-      url: engagement-insights/export-events.md
-    - text: Διαγραφή και εξαγωγή προσωπικών δεδομένων
-      url: engagement-insights/delete-export-personal-data.md

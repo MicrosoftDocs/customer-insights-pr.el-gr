@@ -4,22 +4,21 @@ author: m-hartmann
 description: Εξοικειωθείτε με την εμπειρία πρώτης εκτέλεσης στο Dynamics 365 Customer Insights και εξερευνήστε τις δυνατότητές του.
 ms.author: mhart
 ms.date: 10/05/2021
-ms.service: customer-insights
-ms.topic: overview
+ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: b4228a36069f4adb8098ea96cefec0eef81a6560
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: c9517ed2b50ff37e361a27538dfb9f9ccbf3df8f
+ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645689"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8350131"
 ---
 # <a name="get-started-after-purchasing-customer-insights"></a>Έναρξη μετά την αγορά του Customer Insights
 
 Αυτό το άρθρο εξηγεί τον τρόπο με τον οποίο μπορείτε να κάνετε τα πρώτα σας βήματα στο Dynamics 365 Customer Insights μετά την αγορά μιας συνδρομής από τον οργανισμό σας. Εάν θέλετε να αγοράσετε το Customer Insights, οι επιλογές επικοινωνίας μας αναφέρονται στην [ιστοσελίδα Dynamics 365 Customer Insights](https://dynamics.microsoft.com/ai/customer-insights/). 
 
-Αφού αγοράσετε μια άδεια χρήσης συνδρομής για το Customer Insights, ο καθολικός διαχειριστής του μισθωτή Microsoft 365 λαμβάνει ένα μήνυμα ηλεκτρονικού ταχυδρομείου που τον προσκαλεί να δημιουργήσει το περιβάλλον. 
+Αφού αγοράσει μια άδεια χρήσης συνδρομής για το Customer Insights, ο καθολικός διαχειριστής του μισθωτή Microsoft 365 λαμβάνει ένα μήνυμα ηλεκτρονικού ταχυδρομείου που τον προσκαλεί να δημιουργήσει το περιβάλλον. 
 
 Το Customer Insights διαθέτει άδεια χρήσης ανά μισθωτή και περιλαμβάνει πολλαπλές δυνατότητες. Μπορείτε να αγοράσετε περισσότερη παραγωγική ικανότητα και άδειες χρήσης για να αυξήσετε τον προεπιλεγμένο στόχο πωλήσεων. 
 - [Διαστάσεις τιμολόγησης](https://dynamics.microsoft.com/ai/customer-insights/pricing/)
@@ -40,10 +39,7 @@ ms.locfileid: "7645689"
 
 ## <a name="create-your-own-environment"></a>Δημιουργήστε το δικό σας περιβάλλον
 
-Μετά την πρώτη σας είσοδο, θα δείτε ένα περιβάλλον με δείγματα δεδομένων. Μπορείτε να χρησιμοποιήσετε αυτά τα δεδομένα για να εξερευνήσετε τις δυνατότητες και να εξοικειωθείτε με την εφαρμογή. Για να χρησιμοποιήσετε τα δικά σας δεδομένα, πρέπει να δημιουργήσετε ένα περιβάλλον στην δυνατότητα με την οποία θέλετε να εργαστείτε.
-
-- [Δημιουργία περιβάλλοντος στις πληροφορίες κοινού.](audience-insights/get-started-paid.md)
-- [Δημιουργία περιβάλλοντος στις πληροφορίες δέσμευσης.](engagement-insights/create-new-environment.md) 
+Μετά την πρώτη σας είσοδο, θα δείτε ένα περιβάλλον με δείγματα δεδομένων. Μπορείτε να χρησιμοποιήσετε αυτά τα δεδομένα για να εξερευνήσετε τις δυνατότητες και να εξοικειωθείτε με την εφαρμογή. Για να χρησιμοποιήσετε τα δικά σας δεδομένα, πρέπει να [δημιουργήσετε ένα περιβάλλον](audience-insights/get-started-paid.md).
 
 
 

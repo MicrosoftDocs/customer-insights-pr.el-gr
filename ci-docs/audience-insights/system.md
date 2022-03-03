@@ -2,19 +2,25 @@
 title: Ρύθμιση παραμέτρων συστήματος σε πληροφορίες κοινού
 description: Ενημερωθείτε σχετικά με τις ρυθμίσεις συστήματος στη δυνατότητα πληροφοριών κοινού του Dynamics 365 Customer Insights.
 ms.date: 11/01/2021
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 1b790106f8b9617d0c1f244e1d15a74c7ef9a82b
-ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+searchScope:
+- ci-system-status
+- ci-system-schedule
+- ci-system-about
+- ci-system-general
+- ci-system-api-usage
+- customerInsights
+ms.openlocfilehash: 2c52f7b8a7d41ae4a985745c7b79bbc62f59bb5a
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7732361"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354229"
 ---
 # <a name="system-configuration"></a>Ρύθμιση παραμέτρων συστήματος
 
@@ -85,6 +91,10 @@ ms.locfileid: "7732361"
 ## <a name="schedule-tab"></a>Καρτέλα "Χρονοδιάγραμμα"
 
 Χρησιμοποιήστε την καρτέλα **Χρονοδιάγραμμα** για να προγραμματίσετε αυτόματες ανανεώσεις όλων των [προελεύσεων δεδομένων που έχετε ληφθεί](data-sources.md). Οι αυτόματες ανανεώσεις σάς βοηθούν να διασφαλίσετε ότι οι ενημερώσεις από τις προελεύσεις δεδομένων σας αντικατοπτρίζονται στο Ενοποιημένο προφίλ πελατών σας.
+
+> [!NOTE]
+> Τις προελεύσεις δεδομένων που διαχειρίζετστε εσείς ανανεώνονται στα δικά τους χρονοδιαγράμματα. Για να προγραμματίσετε την ανανέωση των προελεύσεων δεδομένων που διαχειρίζεστε, ρυθμίστε τις παραμέτρους ανανέωσης στη συγκεκριμένη προέλευση δεδομένων από τη σελίδα **Προελεύσεις δεδομένων**.
+> :::image type="content" source="media/PPDF-edit-refresh.png" alt-text="Power Platform ρυθμίσεις ανανέωσης ροής δεδομένων.":::
 
 1. Στις πληροφορίες κοινού, μεταβείτε στο **Διαχειριστής** > **Σύστημα** και επιλέξτε την καρτέλα **Χρονοδιάγραμμα**.
 

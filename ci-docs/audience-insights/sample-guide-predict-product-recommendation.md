@@ -3,26 +3,29 @@ title: Δείγμα οδηγού για πρόβλεψη προτάσεων πρ
 description: Χρησιμοποιήστε αυτό το δείγμα οδηγού για να δοκιμάσετε το έτοιμο μοντέλο πρόβλεψης προτάσεων προϊόντων.
 ms.date: 02/10/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
-author: diegogranados117
-ms.author: digranad
+author: m-hartmann
+ms.author: wameng
 manager: shellyha
-ms.openlocfilehash: b219935dfbd9f7acc1104d83e2ca281801a1a4251ae4c19fc03d4b1ce46f4613
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+searchScope:
+- ci-predictions
+- ci-create-prediction
+- customerInsights
+ms.openlocfilehash: 8ba54cfd466049c8df99c15f34626ab1914234f1
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035185"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354647"
 ---
-# <a name="product-recommendation-prediction-preview-sample-guide"></a>Δείγμα οδηγού πρόβλεψης προτάσεων προϊόντων (προεπισκόπηση)
+# <a name="product-recommendation-prediction-sample-guide"></a>Δείγμα οδηγού για πρόβλεψη προτάσεων προϊόντων
 
 Θα σας εξηγήσουμε ένα παράδειγμα από άκρη σε άκρη της πρόβλεψης πρότασης προϊόντων χρησιμοποιώντας το δείγμα δεδομένων που παρέχεται παρακάτω.
 
 ## <a name="scenario"></a>Σενάριο
 
-Η Contoso είναι μια εταιρεία που παράγει μηχανές καφέ και καφέ υψηλής ποιότητας, τις οποίες πουλάει μέσω της ιστοσελίδας της Contoso Coffee. Ο στόχος τους είναι να κατανοήσετε ποια προϊόντα θα πρέπει να συνιστούν στους περιοδικούς πελάτες τους. Γνωρίζοντας τι είναι **πιθανότερο να αγοράσουν οι πελάτες**, μπορείτε να τους βοηθήσετε να κάνουν λιγότερες προσπάθειες μάρκετινγκ, εστιάζοντας σε συγκεκριμένα στοιχεία.
+Η Contoso είναι μια εταιρεία που παράγει υψηλής ποιότητας καφέ και καφετιέρες, τα οποία πωλούν μέσω της τοποθεσίας Web της Contoso Coffee. Ο στόχος τους είναι να κατανοήσετε ποια προϊόντα θα πρέπει να συνιστούν στους περιοδικούς πελάτες τους. Γνωρίζοντας τι είναι **πιθανότερο να αγοράσουν οι πελάτες**, μπορείτε να τους βοηθήσετε να κάνουν λιγότερες προσπάθειες μάρκετινγκ, εστιάζοντας σε συγκεκριμένα στοιχεία.
 
 ## <a name="prerequisites"></a>Προϋποθέσεις
 
@@ -31,7 +34,7 @@ ms.locfileid: "7035185"
 
 ## <a name="task-1---ingest-data"></a>Εργασία 1 - Λήψη δεδομένων
 
-Εξετάστε τα άρθρα [σχετικά με τη λήψη δεδομένων](data-sources.md) και την [εισαγωγή προελεύσεων δεδομένων χρησιμοποιώντας συγκεκριμένα συνδέσεις Power Query](connect-power-query.md). Οι παρακάτω πληροφορίες προϋποθέτουν ότι έχετε εξοικειωθεί με τη λήψη δεδομένων γενικά.
+Εξετάστε τα άρθρα [σχετικά με την πρόσληψη δεδομένων](data-sources.md) και [την εισαγωγή προελεύσεων δεδομένων χρησιμοποιώντας συνδέσεις Power Query](connect-power-query.md) συγκεκριμένα. Οι παρακάτω πληροφορίες προϋποθέτουν ότι έχετε εξοικειωθεί με τη λήψη δεδομένων γενικά.
 
 ### <a name="ingest-customer-data-from-ecommerce-platform"></a>Λήψη δεδομένων πελατών από την πλατφόρμα eCommerce
 

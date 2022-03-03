@@ -1,22 +1,21 @@
 ---
-title: Εξαγωγή δεδομένων του Customer Insights στο Azure Synapse Analytics
-description: Μάθετε πώς να ρυθμίσετε τις παραμέτρους της σύνδεσης στο Azure Synapse Analytics.
-ms.date: 04/12/2021
+title: Εξαγωγή δεδομένων Customer Insights στο Azure Synapse Analytics
+description: Μάθετε πώς να ρυθμίσετε τη σύνδεση στο Azure Synapse Analytics.
+ms.date: 01/05/2022
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 7ee57aa9e86ebf9bd1989d88750642f0b01bd4bf
-ms.sourcegitcommit: f18635c29bb25d9e424a3f5825dc2696278450cf
+ms.openlocfilehash: 289c8d545f057b3f70679b485cf4350545c0587b
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "6327364"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8231312"
 ---
-# <a name="export-data-to-azure-synapse-analytics-preview"></a>Εξαγωγή δεδομένων σε Azure Synapse Analytics (έκδοση προεπισκόπησης)
+# <a name="export-data-to-azure-synapse-analytics-preview"></a>Εξαγωγή δεδομένων στο Azure Synapse Analytics (έκδοση προεπισκόπησης)
 
 Το Azure Synapse είναι μια υπηρεσία ανάλυσης που επιταχύνει το χρόνο λήψης πληροφοριών σε αποθήκες δεδομένων και συστήματα μαζικών δεδομένων. Μπορείτε να συγκεντρώνετε και να χρησιμοποιείτε δεδομένα του Customer Insights στο [Azure Synapse](/azure/synapse-analytics/overview-what-is).
 
@@ -49,9 +48,11 @@ ms.locfileid: "6327364"
 
 ### <a name="configure-a-connection"></a>Ρύθμιση παραμέτρων μιας σύνδεσης
 
+Για να δημιουργήσετε μια σύνδεση, η αρχή υπηρεσίας και ο λογαριασμός χρήστη στο Customer Insights χρειάζονται δικαιώματα **Αναγνώστη** στην *ομάδα πόρων* όπου βρίσκεται ο χώρος εργασίας Synapse Analytics. Επιπλέον, η αρχή υπηρεσίας και ο χρήστης στον χώρο εργασίας Synapse Analytics πρέπει να έχουν δικαιώματα **Διαχειριστή Synapse**. 
+
 1. Μετάβαση στον **Διαχειριστή** > **Συνδέσεις**.
 
-1. Επιλέξτε **Προσθήκη σύνδεσης** κι επιλέξτε **Azure Synapse Analytics** ή επιλέξτε **Ρύθμιση** στο πλακίδιο **Azure Synapse Analytics** για τη ρύθμιση παραμέτρων της σύνδεσης.
+1. Επιλέξτε **Προσθήκη σύνδεσης** και επιλέξτε **Azure Synapse Analytics** ή επιλέξτε **Ρύθμιση** στο πλαίδιο **Azure Synapse Analytics** για να ρυθμίσετε τη σύνδεση.
 
 1. Δώστε στη σύνδεσή σας ένα αναγνωρίσιμο όνομα στο πεδίο Εμφανιζόμενο όνομα. Το όνομα και ο τύπος της σύνδεσης περιγράφουν αυτήν τη σύνδεση. Συνιστούμε να επιλέξετε ένα όνομα που να εξηγεί τον σκοπό και τον προορισμό της σύνδεσης.
 
@@ -63,7 +64,7 @@ ms.locfileid: "6327364"
 
 ### <a name="configure-an-export"></a>Ρύθμιση παραμέτρων εξαγωγής
 
-Μπορείτε να ρυθμίσετε τις παραμέτρους αυτής της εξαγωγής, εάν έχετε πρόσβαση σε μια σύνδεση αυτού του τύπου. Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [δικαιώματα που απαιτούνται για τη ρύθμιση των παραμέτρων μιας εξαγωγής](export-destinations.md#set-up-a-new-export).
+Μπορείτε να ρυθμίσετε τις παραμέτρους αυτής της εξαγωγής, εάν έχετε πρόσβαση σε μια σύνδεση αυτού του τύπου. Για να ρυθμίσετε τις παραμέτρους της εξαγωγής με μια κοινόχρηστη σύνδεση, χρειάζεστε τουλάχιστον δικαιώματα **Συμβάλλοντα** στο Customer Insights. Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [δικαιώματα που απαιτούνται για τη ρύθμιση των παραμέτρων μιας εξαγωγής](export-destinations.md#set-up-a-new-export).
 
 1. Μεταβείτε στα **Δεδομένα** > **Εξαγωγές**.
 
@@ -82,6 +83,8 @@ ms.locfileid: "6327364"
 Η αποθήκευση μιας εξαγωγής δεν εκτελεί αμέσως την εξαγωγή.
 
 Η εξαγωγή εκτελείται με κάθε [προγραμματισμένη ανανέωση](system.md#schedule-tab). Μπορείτε επίσης να [εξαγάγετε δεδομένα κατ' απαίτηση](export-destinations.md#run-exports-on-demand).
+
+Για να υποβάλετε ερωτήματα σχετικά με τα δεδομένα που έχουν εξαχθεί στο Synapse Analytics, χρειάζεστε πρόσβαση στο **Πρόγραμμα ανάγνωσης δεδομένων χώρου αποθήκευσης αντικειμένων Blob** στον χώρο αποθήκευσης προορισμού στον χώρο εργασίας εξαγωγής. 
 
 ### <a name="update-an-export"></a>Ενημέρωση εξαγωγής
 

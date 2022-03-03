@@ -1,20 +1,22 @@
 ---
 title: Δεδομένα του Customer Insights στο Microsoft Dataverse
 description: Χρήση οντοτήτων Customer Insights ως πίνακες στο Microsoft Dataverse.
-ms.date: 10/14/2021
+ms.date: 11/25/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 9855ff6908001dd18bc19a286fc56620d0a127e5
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+searchScope:
+- ci-system-diagnostic
+- customerInsights
+ms.openlocfilehash: 9f730f5856221592cddf34b714beeaca24c52130
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645218"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355429"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>Εργασία με δεδομένα Customer Insights στο Microsoft Dataverse
 
@@ -45,6 +47,7 @@ ms.locfileid: "7645218"
 - [CustomerMeasure](#customermeasure)
 - [Εμπλουτισμός](#enrichment)
 - [Πρόβλεψη](#prediction)
+- [Ιδιότητα μέλους τμήματος](#segment-membership)
 
 
 ### <a name="customerprofile"></a>CustomerProfile
@@ -121,3 +124,16 @@ ms.locfileid: "7645218"
 | Τιμές               | Συμβολοσειρά JSON | Λίστα χαρακτηριστικών που δημιουργήθηκε από το μοντέλο |
 | msdynci_predictionid | GUID        | Προσδιοριστικό GUID που δημιουργήθηκε από το msdynci_identifier | 
 | msdynci_identifier   | String      |  `Model|ModelProvider|CustomerId`                      |
+
+### <a name="segment-membership"></a>Ιδιότητα μέλους τμήματος
+
+Αυτός ο πίνακας περιέχει τις πληροφορίες ιδιότητας μέλους τμήματος των προφίλ πελατών.
+
+| Column        | Type | Description                        |
+|--------------------|--------------|-----------------------------|
+| CustomerId        | String       | Αναγνωριστικό προφίλ πελάτη        |
+| SegmentProvider      | String       | Εφαρμογή που δημοσιεύει τα τμήματα. Προεπιλογή: πληροφορίες κοινού         |
+| SegmentMembershipType | String       | Τύπος του πελάτη για αυτήν την καρτέλα ιδιότητας μέλους τμήματος. Υποστηρίζει πολλούς τύπους, όπως Πελάτης, Επαφή ή Λογαριασμός. Προεπιλογή: Πελάτης  |
+| Τμήματα       | Συμβολοσειρά JSON  | Λίστα μοναδικών τμημάτων, στα οποία είναι μέλος το προφίλ πελάτη      |
+| msdynci_identifier  | String   | Μοναδικό αναγνωριστικό της καρτέλας ιδιότητας μέλους τμήματος. `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
+| msdynci_segmentmembershipid | GUID      | Προσδιοριστικό GUID που δημιουργείται από `msdynci_identifier`          |

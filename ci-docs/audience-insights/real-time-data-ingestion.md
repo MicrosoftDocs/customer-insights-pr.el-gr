@@ -2,19 +2,21 @@
 title: Λήψη και περιορισμοί δεδομένων σε πραγματικό χρόνο
 description: Γενικές πληροφορίες σχετικά με τις δυνατότητες σε πραγματικό χρόνο σε πληροφορίες κοινού.
 ms.date: 10/27/2020
-ms.reviewer: nikeller
-ms.service: customer-insights
+ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+author: Nils-2m
+ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: b00a72e6a67e33c8e70ccc6139c5e62020f9d3e1
-ms.sourcegitcommit: b50c754481d0af6d0cf4b550775d7b31d95846ef
+searchScope:
+- ci-system-api-usage
+- customerInsights
+ms.openlocfilehash: 2fe5279eee1b3b30f5bc21464c85fe5f86d342a0
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 12/06/2020
-ms.locfileid: "4689175"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355475"
 ---
 # <a name="real-time-data-ingestion-preview"></a>Συγκέντρωση δεδομένων σε πραγματικό χρόνο (προεπισκόπηση)
 
@@ -54,7 +56,7 @@ ms.locfileid: "4689175"
 
 Υπάρχουν δύο τρόποι για να συνδεθείτε στο API πραγματικού χρόνου:
 
-- [έμμεσα](#connect-via-the-dynamics-365-customer-insights-connector), χρησιμοποιώντας τη [σύνδεση Dynamics 365 Customer Insights](https://docs.microsoft.com/connectors/customerinsights/)
+- [έμμεσα](#connect-via-the-dynamics-365-customer-insights-connector), χρησιμοποιώντας τη [σύνδεση Dynamics 365 Customer Insights](/connectors/customerinsights/)
 - [απευθείας](#connect-directly-to-the-real-time-api), με κωδικό
 
 Οι ακόλουθες προϋποθέσεις ισχύουν και για τους δύο τρόπους:
@@ -66,13 +68,13 @@ ms.locfileid: "4689175"
 
 ## <a name="connect-via-the-dynamics-365-customer-insights-connector"></a>Σύνδεση μέσω του Dynamics 365 Customer Insights συνδέσμου
 
-Το API πραγματικού χρόνου μπορεί να λάβει δεδομένα από μια ειδική Power Platform σύνδεση, τη [σύνδεση Dynamics 365 Customer Insights](https://docs.microsoft.com/connectors/customerinsights/), χωρίς να χρειάζεται να γράψουν και να αναπτύξουν οποιονδήποτε κώδικα.    
-Ο σύνδεσμος μπορεί να κάνει τις ίδιες ενέργειες πραγματικού χρόνου με το API. Χρειάζεστε μια έγκυρη άδεια χρήσης για τους premium συνδέσμους. Για περισσότερες πληροφορίες δείτε [Συχνές ερωτήσεις για τις άδειες χρήσης των Power Apps και Power Automate](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq).
+Το API πραγματικού χρόνου μπορεί να λάβει δεδομένα από μια ειδική Power Platform σύνδεση, τη [σύνδεση Dynamics 365 Customer Insights](/connectors/customerinsights/), χωρίς να χρειάζεται να γράψουν και να αναπτύξουν οποιονδήποτε κώδικα.    
+Ο σύνδεσμος μπορεί να κάνει τις ίδιες ενέργειες πραγματικού χρόνου με το API. Χρειάζεστε μια έγκυρη άδεια χρήσης για τους premium συνδέσμους. Για περισσότερες πληροφορίες δείτε [Συχνές ερωτήσεις για τις άδειες χρήσης των Power Apps και Power Automate](/power-platform/admin/powerapps-flow-licensing-faq).
 
-- Power Platform [Power Apps ή/και Power Automate](https://docs.microsoft.com/connectors/)
-- Azure [λογικές εφαρμογές](https://docs.microsoft.com/azure/connectors/apis-list)
+- Power Platform [Power Apps ή/και Power Automate](/connectors/)
+- Azure [λογικές εφαρμογές](/azure/connectors/apis-list)
 
-Για λεπτομέρειες σχετικά με τη δημιουργία ροών, ανατρέξτε στην [τεκμηρίωση του Power Automate](https://docs.microsoft.com/power-automate/).
+Για λεπτομέρειες σχετικά με τη δημιουργία ροών, ανατρέξτε στην [τεκμηρίωση του Power Automate](/power-automate/).
 
 ## <a name="connect-directly-to-the-real-time-api"></a>Απευθείας σύνδεση στο API πραγματικού χρόνου
 
@@ -83,6 +85,7 @@ ms.locfileid: "4689175"
 
 ## <a name="understand-your-real-time-usage-with-telemetry"></a>Κατανόηση της χρήσης σε πραγματικό χρόνο με τηλεμετρία
 
-Δείτε μια επισκόπηση του όγκου των αιτήσεων στο API πραγματικού χρόνου και των πληροφοριών σχετικά με τα ζητήματα που ενδέχεται να αντιμετωπίσει το σύστημα. Μπορείτε να [αποκτήσετε πρόσβαση στην τηλεμετρία πραγματικού χρόνου](system.md#api-usage-tab) με τη μετάβαση στη **Διαχείριση** > **Σύστημα** > **Χρήση API**. Στον πίνακα **Λειτουργίες**, οι γραμμές για τις λειτουργίες API που χρησιμοποιούν τις μεθόδους πραγματικού χρόνου περιέχουν ένα κουμπί για την προβολή χρήσης API σε πραγματικό χρόνο. Το κουμπί οπτικοποιείται με ένα σύμβολο κιαλιών. Επιλέξτε το κουμπί για να ανοίξετε ένα πλευρικό παράθυρο που περιέχει λεπτομέρειες χρήσης για τη χρήση API πραγματικού χρόνου στο τρέχον περιβάλλον.
+Δείτε μια επισκόπηση του όγκου των αιτήσεων στο API πραγματικού χρόνου και των πληροφοριών σχετικά με τα ζητήματα που ενδέχεται να αντιμετωπίσει το σύστημα. Μπορείτε να έχετε [πρόσβαση στην τηλεμετρία σε πραγματικό χρόνο](system.md#api-usage-tab). 
 
-Χρησιμοποιήστε τον επιλογέα **Ομαδοποίηση κατά** για να επιλέξετε τον τρόπο με τον οποίο θα παρουσιάσετε τις αλληλεπιδράσεις σας σε πραγματικό χρόνο σε ένα χρονοδιάγραμμα που κυμαίνεται από τις τελευταίες 24 ώρες έως τις τελευταίες 30 ημέρες. Μπορείτε να ομαδοποιήσετε τα δεδομένα με βάση τη μέθοδο API, το αναγνωρισμένο όνομα οντότητας (ληφθείσα οντότητας), το οποίο έχει δημιουργηθεί από (προέλευση του συμβάντος), το αποτέλεσμα (επιτυχία ή αποτυχία) ή τους κωδικούς σφαλμάτων. Τα δεδομένα είναι διαθέσιμα ως γράφημα ιστορικού και ως πίνακας.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

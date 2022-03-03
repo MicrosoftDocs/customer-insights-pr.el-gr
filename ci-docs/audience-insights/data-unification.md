@@ -3,21 +3,20 @@ title: Δημιουργία ενοποιημένης προβολής των π�
 description: Μεταβείτε στη διεργασία ενοποίησης δεδομένων με τα δεδομένα σας για να δημιουργήσετε ένα μοναδικό κύριο σύνολο δεδομένων προφίλ πελατών.
 ms.date: 10/18/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: overview
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.custom: intro-internal
 searchScope:
-- ci-unify
-ms.openlocfilehash: 694bfd0e407975af64ca0971a73fe4c3f5ba5a23
-ms.sourcegitcommit: 37182127b93b90846cc91fbeb26dd7a18cf5610a
+- ci-map
+- customerInsights
+ms.openlocfilehash: 2012d32494ccd4639cbffbb81d4f6eac1258e23b
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7648071"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8353819"
 ---
 # <a name="data-unification-overview"></a>Επισκόπηση ενοποίησης δεδομένων
 

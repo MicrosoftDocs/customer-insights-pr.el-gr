@@ -1,20 +1,19 @@
 ---
 title: Σύνδεσμος Power Automate | Microsoft Docs
-description: Δημιουργήστε ροές στο Microsoft Power Automate από το Dynamics 365 Customer Insights.
-ms.date: 08/03/2020
-ms.service: customer-insights
+description: Δημιουργία ροών στο Microsoft Power Automate από Dynamics 365 Customer Insights .
+ms.date: 06/24/2021
+ms.reviewer: mhart
 ms.subservice: audience-insights
-ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
-ms.reviewer: philk
+ms.topic: how-to
+author: pkieffer
+ms.author: philk
 manager: shellyha
-ms.openlocfilehash: ffe92414365b0b777691a4a2d585100e4fbea591
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: dc9bbe22b7f10cf92f06cae18fbece9808b87dce
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4405807"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8226714"
 ---
 # <a name="power-automate-connector-preview"></a>Σύνδεση Power Automate (προεπισκόπηση)
 
@@ -22,28 +21,35 @@ ms.locfileid: "4405807"
 
 ## <a name="power-automate-triggers"></a>Ενεργοποιήσεις Power Automate
 
-Μπορείτε να χρησιμοποιήσετε μια ποικιλία εναυσμάτων που σας επιτρέπουν να δημιουργείτε ροές για την αυτοματοποίηση επαναλαμβανόμενων εργασιών, όπως ειδοποιήσεις ή πιο προηγμένες ενέργειες. 
+Χρησιμοποιήστε εναύσματα για να δημιουργήσετε ροές cloud και να αυτοματοποιήσετε επαναλαμβανόμενες εργασίες, όπως ειδοποιήσεις ή πιο προηγμένες ενέργειες. 
 
 - Ενεργοποιείται όταν αποτύχει μια προέλευση δεδομένων ανανέωσης. 
 - Ενεργοποιείται όταν επιτύχει μια προέλευση δεδομένων ανανέωσης.
 - Ενεργοποιείται όταν διασταυρώνεται ένα όριο σε ένα τμήμα αγοράς. Η ενεργοποίηση περιορίζεται στη διάβαση πάνω από το κατώφλι.
-- Ενεργοποιείται όταν διασταυρώνεται ένα όριο σε μια επιχειρηματική μέτρηση. Η ενεργοποίηση περιορίζεται στη διάβαση πάνω από το κατώφλι.
-- Ενεργοποίηση κατά την ολοκλήρωση μιας πλήρους ανανέωσης (προελεύσεις δεδομένων, τμήματα, μέτρα,...).
+- Ενεργοποιείται όταν διασταυρώνεται ένα όριο σε μια επιχειρηματική μέτρηση. Μόνο επιχειρηματικά μέτρα χωρίς διάσταση υποστηρίζονται. Η ενεργοποίηση περιορίζεται στη διάβαση πάνω από το κατώφλι.
+- Ενεργοποίηση κατά την ολοκλήρωση μιας πλήρους ανανέωσης (προελεύσεις δεδομένων, τμήματα, μέτρα, ...).
 - Ενεργοποιείται όταν ολοκληρώνεται η ανανέωση της διαδικασίας ενοποίησης (αντιστοίχιση, ταίριασμα, συγχώνευση).
 
-[Ρυθμίστε τις παραμέτρους των εναυσμάτων στο Power Automate](https://flow.microsoft.com/connectors/shared_customerinsights/dynamics-365-customer-insights-connector/).
+[Ρυθμίστε τις παραμέτρους στο Power Automate.](https://flow.microsoft.com/connectors/shared_customerinsights/dynamics-365-customer-insights-connector/)
 
 ## <a name="power-automate-actions"></a>Ενέργειες Power Automate
-Η Power Automate σύνδεση παρέχει άλλες ενέργειες σε σχέση με τα διαθέσιμα εναύσματα. Για περισσότερες πληροφορίες, διαβάστε το θέμα [Dynamics 365 Customer Insights Connector](https://docs.microsoft.com/connectors/customerinsights/).
 
-## <a name="create-a-power-automate-flow-in-audience-insights"></a>Δημιουργία ροής Power Automate σε πληροφορίες κοινού
+Η Power Automate σύνδεση παρέχει άλλες ενέργειες σε σχέση με τα διαθέσιμα εναύσματα. Για περισσότερες πληροφορίες, διαβάστε το θέμα [Dynamics 365 Customer Insights Connector](/connectors/customerinsights/).
 
-1. Στις πληροφορίες κοινού, μεταβείτε στο **Διαχειριστής** > **Σύστημα**.
+## <a name="create-a-power-automate-flow"></a>Δημιουργία μιας ροής Power Automate
 
-1. Στη σελίδα **Σύστημα**, επιλέξτε την καρτέλα **Κατάσταση**.
+1. Στις πληροφορίες κοινού, μεταβείτε στην επιλογή **Διαχειριστής** > **Εξαγωγή προορισμών**.
 
-1. Στην ενότητα **Προελεύσεις δεδομένων**, επιλέξτε **Ροές** και επιλέξτε **Δημιουργία ροής** από την αναπτυσσόμενη λίστα.
-   > [!div class="mx-imgBorder"]
-   > ![Η σύνδεση Power Automate που δείχνει μια ενέργεια "Δημιουργία μιας ροής"](media/power-automate-connector-create-flow.png "Η σύνδεση Power Automate που δείχνει μια ενέργεια &quot;Δημιουργία μιας ροής&quot;")
+1. Στο πλακίδιο **Power Automate**, επιλέξτε **Ρύθμιση**.
 
-1. Στο στοιχείο Power Automate, επιλέξτε ένα από τα διαθέσιμα εναύσματα για να δημιουργήσετε τη ροή που προτιμάτε. Εάν δημιουργείτε την πρώτη σας ροή, θα πρέπει πρώτα να πραγματοποιήσετε έλεγχο ταυτότητας με τη σύνδεση του Power Automate.
+1. Ανοίγει η σύνδεση του Customer Insights (προεπισκόπηση) στο Power Automate. **Συνδεθείτε** στο Power Automate.
+
+1. Επιλέξτε ένα από τα διαθέσιμα εναύσματα και προσθέστε περισσότερα βήματα στη νέα σας ροή. Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Δημιουργία ροής cloud στο Power Automate](/power-automate/get-started-logic-flow).
+
+Παραδείγματα του πώς να χρησιμοποιήσετε ροές: 
+- Δημοσιεύστε ένα μήνυμα σε ένα κανάλι Microsoft Teams εάν αποτύχει μια ανανέωση προέλευσης δεδομένων. 
+- Αποστολή μηνύματος ηλεκτρονικού ταχυδρομείου στους κατόχους δεδομένων όταν ξεπεραστεί ένα όριο σε ένα τμήμα.
+
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

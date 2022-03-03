@@ -1,20 +1,19 @@
 ---
 title: Εξαγωγή δεδομένων του Customer Insights στο ActiveCampaign
 description: Μάθετε πώς να ρυθμίζετε τις παραμέτρους της σύνδεσης και της εξαγωγής στο ActiveCampaign.
-ms.date: 06/29/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 6d85fa9836618e27f7f3da6ce17c07b4bc89e187
-ms.sourcegitcommit: 057079532e31c12bac36f374857ba3dc847d6ad0
+ms.openlocfilehash: 089b9b0d76437e695f797f941ed384734d8f772e
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "6314617"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8227809"
 ---
 # <a name="export-segments-to-activecampaign-preview"></a>Εξαγωγή τμημάτων στο ActiveCampaign (έκδοση προεπισκόπησης)
 
@@ -28,9 +27,9 @@ ms.locfileid: "6314617"
 
 ## <a name="known-limitations"></a>Γνωστοί περιορισμοί
 
-- Μπορείτε να εξαγάγετε έως και 1 εκατομμύριο προφίλ ανά εξαγωγή στο ActiveCampaign και για να ολοκληρωθεί μπορεί να χρειαστούν έως και 90 λεπτά.
+- Μπορείτε να εξαγάγετε έως και 1 εκ. προφίλ πελατών ανά εξαγωγή στο ActiveCampaign και για να ολοκληρωθεί μπορεί να διαρκέσει έως και 90 λεπτά.
 - Η εξαγωγή στο ActiveCampaign περιορίζεται σε τμήματα.
-- Ο αριθμός των προφίλ που μπορείτε να εξαγάγετε στο ActiveCampaign εξαρτάται από τη σύμβαση με το ActiveCampaign.
+- Ο αριθμός των προφίλ πελατών που μπορείτε να εξαγάγετε στο ActiveCampaign εξαρτάται από τη σύμβασή σας με το ActiveCampaign.
 
 ## <a name="set-up-connection-to-activecampaign"></a>Ρυθμίστε τη σύνδεση στο ActiveCampaign
 
@@ -64,7 +63,7 @@ ms.locfileid: "6314617"
 
 1. Εισαγάγετε το [**αναγνωριστικό λίστας ActiveCampaign**](https://help.activecampaign.com/hc/articles/360000030559-How-to-create-a-list-in-ActiveCampaign).    
 
-3. Στην ενότητα **Αντιστοίχιση δεδομένων**, στο πεδίο **Ηλεκτρονικό ταχυδρομείο**, επιλέξτε το πεδίο στο ενοποιημένο προφίλ πελάτη που αντιπροσωπεύει τη διεύθυνση ηλεκτρονικού ταχυδρομείου ενός πελάτη. Απαιτείται εξαγωγή τμημάτων στο ActiveCampaign. Προαιρετικά, μπορείτε να εξαγάγετε το Όνομα, το Επώνυμο και το Τηλέφωνο, για να δημιουργήσετε πιο εξατομικευμένα μηνύματα ηλεκτρονικού ταχυδρομείου. Επιλέξτε Προσθήκη χαρακτηριστικού για να αντιστοιχίσετε αυτά τα πεδία.
+1. Στην ενότητα **Δεδομένα που αντιστοιχούν**, στο πεδίο **Ηλεκτρονικό ταχυδρομείο**, επιλέξτε το πεδίο που αντιπροσωπεύει τη διεύθυνση ηλεκτρονικού ταχυδρομείου ενός πελάτη. Απαιτείται εξαγωγή τμημάτων στο ActiveCampaign. Προαιρετικά, μπορείτε να εξαγάγετε το Όνομα, το Επώνυμο και το Τηλέφωνο, για να δημιουργήσετε πιο εξατομικευμένα μηνύματα ηλεκτρονικού ταχυδρομείου. Επιλέξτε Προσθήκη χαρακτηριστικού για να αντιστοιχίσετε αυτά τα πεδία.
 
 1. Επιλέξτε **Αποθήκευση**.
 

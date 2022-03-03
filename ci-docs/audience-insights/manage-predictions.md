@@ -3,18 +3,17 @@ title: Κοινόχρηστες εργασίες για σενάρια πρόβ�
 description: Μάθετε πώς να διαχειρίζεστε, να αντιμετωπίζετε προβλήματα και να βελτιώνετε τις προβλέψεις.
 ms.date: 11/01/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: diegogranados117
 ms.author: digranad
 manager: shellyha
-ms.openlocfilehash: 4e7e21a610564b30463b27ab703c291275725895
-ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.openlocfilehash: 8c5d8b0395452c8da1631f09cffeddfc811e6d29
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7731988"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8230792"
 ---
 # <a name="manage-predictions"></a>Διαχείριση προβλέψεων
 

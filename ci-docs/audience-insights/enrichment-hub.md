@@ -1,21 +1,25 @@
 ---
 title: Εμπλουτισμός ενοποιημένων προφίλ πελάτη
 description: Χρησιμοποιήστε τις δυνατότητες για να εμπλουτίσετε τα δεδομένα των πελατών σας.
-ms.date: 09/30/2021
+ms.date: 02/07/2022
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: bc0128c222c032e8cfe35e6f3baa0ea722bce7cb
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+searchScope:
+- ci-enrichments
+- ci-enrichment-details
+- ci-enrichment-wizard
+- customerInsights
+ms.openlocfilehash: e8cac35ccf7012524dc22cb4a499dc605dd66346
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7672999"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355383"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>Εμπλουτισμός για προφίλ πελατών (προεπισκόπηση)
 
@@ -37,14 +41,17 @@ ms.locfileid: "7672999"
 - [Δημογραφικά στοιχεία](enrichment-experian.md) που παρέχονται από την Experian
 - [Προσαρμοσμένα δεδομένα](enrichment-SFTP-custom-import.md) μέσω πρωτοκόλλου ασφαλούς μεταφοράς αρχείων (SFTP) 
 - [Χάρτες Azure](enrichment-azure-maps.md) παρέχονται από την Microsoft
+- [Δεδομένα θέσης](enrichment-here.md) παρέχονται από τις τεχνολογίες HERE 
 
 # <a name="business-accounts-b-to-b"></a>[Λογαριασμοί επιχειρήσεων (B2B)](#tab/b2b)
 
 - [Εταιρικά δεδομένα](enrichment-leadspace.md) που παρέχονται από το Leadspace
 - [Βελτιωμένες διευθύνσεις](enrichment-enhanced-addresses.md) που παρέχονται από τη Microsoft 
+- [Βελτιωμένα εταιρικά δεδομένα](enrichment-enhanced-company-data.md) που παρέχονται από τη Microsoft
 - [Δεδομένα θέσης](enrichment-here.md) παρέχονται από τις τεχνολογίες HERE 
 - [Προσαρμοσμένα δεδομένα](enrichment-SFTP-custom-import.md) μέσω πρωτοκόλλου ασφαλούς μεταφοράς αρχείων (SFTP) 
 - [Χάρτες Azure](enrichment-azure-maps.md) παρέχονται από την Microsoft
+- [Δεδομένα δέσμευσης λογαριασμού](enrichment-office.md) που παρέχονται από τη Microsoft
 
 ---
 

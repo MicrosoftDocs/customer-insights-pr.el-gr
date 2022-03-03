@@ -5,16 +5,15 @@ author: m-hartmann
 ms.author: mhart
 ms.date: 09/30/2021
 ms.topic: get-started
-ms.service: customer-insights
 ms.custom: template-trial-setup
 ms.reviewer: jeffhar
 manager: shellyha
-ms.openlocfilehash: dc1ea94ad55886c605d27caea031e00964f6f7c8
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: 1b50da077cb0584ca9f277b276d0e9ebb46b2c5d
+ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645491"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8350223"
 ---
 # <a name="sign-up-for-a-free-dynamics-365-customer-insights-trial"></a>Εγγραφή για δωρεάν δοκιμαστική έκδοση του Dynamics 365 Customer Insights
 
@@ -32,23 +31,12 @@ ms.locfileid: "7645491"
 
 Το περιβάλλον της δοκιμαστικής έκδοσης περιλαμβάνει τις ίδιες δυνατότητες όπως η έκδοση επί πληρωμή. Οι παρακάτω συνδέσεις σας καθοδηγούν σε ορισμένες από τις βασικές δυνατότητες.
 
-### <a name="audience-insights"></a>Πληροφορίες κοινού
-
 - [Γρήγορη εκκίνηση για πληροφορίες κοινού.](audience-insights/get-started.md)
 - [Προσθήκη περισσότερων χρηστών και ανάθεση δικαιωμάτων.](audience-insights/permissions.md)
 - Πραγματοποιήστε [Λήψη των προελεύσεων δεδομένων σας](audience-insights/data-sources.md) και εκτελέστε τες με τη [διαδικασία ενοποίησης δεδομένων](audience-insights/data-unification.md) για να λάβετε [ενοποιημένα προφίλ πελατών](audience-insights/customer-profiles.md).
 - [Εμπλουτίστε τα ενοποιημένα προφίλ πελατών](audience-insights/enrichment-hub.md) ή [εκτελέστε μοντέλα πρόβλεψης](audience-insights/predictions-overview.md).
 - Δημιουργήστε [τμήματα](audience-insights/segments.md) για την ομαδοποίηση πελατών και [μέτρα](audience-insights/measures.md) για κριτική KPI.
 - Ρυθμίστε τις [συνδέσεις](audience-insights/connections.md) και τις [εξαγωγές](audience-insights/export-destinations.md) για να επεξεργαστείτε υποσύνολα των δεδομένων σας σε άλλες εφαρμογές.
-
-### <a name="engagement-insights"></a>Πληροφορίες δέσμευσης
-
-- [Γρήγορη εκκίνηση για πληροφορίες δέσμευσης.](engagement-insights/get-started.md)
-- [Δημιουργήστε έναν χώρο εργασίας](engagement-insights/create-workspace.md) και προσθέστε μέλη.
-- [Προσθήκη κώδικα στην τοποθεσία Web σας](engagement-insights/instrument-website.md) ή την [εφαρμογή για κινητές συσκευές](engagement-insights/developer-resources.md#capture-events-from-mobile-apps).
-- Προβολή [αναφοράς σε πραγματικό χρόνο](engagement-insights/view-reports.md) ή δημιουργία [προσαρμοσμένων αναφορών](engagement-insights/custom-reports.md).
-- [Δημιουργία περιορισμένων συμβάντων](engagement-insights/refined-events.md) για εξαγωγή.
-- [Εξαγωγή δεδομένων](engagement-insights/export-events.md) σε Azure Data Lake Storage.
 
 ## <a name="additional-resources"></a>Πρόσθετοι πόροι
 

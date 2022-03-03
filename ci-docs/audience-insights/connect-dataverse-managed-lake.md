@@ -1,30 +1,35 @@
 ---
 title: Σύνδεση σε πίνακες στο Microsoft Dataverse
 description: Εισαγωγή δεδομένων από ένα Microsoft Dataverse διαχειριζόμενο data lake.
-ms.date: 07/23/2021
-ms.service: customer-insights
+ms.date: 12/06/2021
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
 ms.reviewer: mhart
-ms.openlocfilehash: f92d64723e6a4d2fcebdbb3758519d4bfd4aeaf4
-ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
+searchScope:
+- ci-dataverse
+- customerInsights
+ms.openlocfilehash: 8e11b60295fa5c187b1ac4877fb347e2d9bb41a1
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "6692574"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354141"
 ---
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>Σύνδεση με δεδομένα σε μια διαχειριζόμενη λίμνη δεδομένων του Microsoft Dataverse
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-Αυτό το άρθρο παρέχει πληροφορίες σχετικά με τον τρόπο με τον οποίο οι χρήστες του Dataverse μπορούν να συνδεθούν γρήγορα στις αναλυτικές οντότητες τους σε μια διαχειριζόμενη λίμνη Dataverse. Πρέπει να είστε διαχειριστής στον οργανισμό Dataverse για να συνεχίσετε και να δείτε τη λίστα των οντοτήτων που είναι διαθέσιμες στο διαχειριζόμενο lake.
+
+Αυτό το άρθρο παρέχει πληροφορίες σχετικά με τον τρόπο με τον οποίο οι χρήστες Dataverse μπορούν γρήγορα να συνδεθούν σε αναλυτικές οντότητες σε μια διαχειριζόμενη λίμνη Microsoft Dataverse. 
+
+> [!NOTE]
+> Πρέπει να είστε διαχειριστής στον οργανισμό Dataverse για να συνεχίσετε και να προβάλετε τη λίστα των οντοτήτων που είναι διαθέσιμες στη διαχειριζόμενη λίμνη.
 
 ## <a name="important-considerations"></a>Σημαντικές επισημάνσεις
 
-Τα δεδομένα που είναι αποθηκευμένα σε ηλεκτρονικές υπηρεσίες όπως η Azure Data Lake Storage, είναι δυνατό να αποθηκευτούν σε μια διαφορετική θέση από αυτήν όπου τα δεδομένα τίθενται σε επεξεργασία ή αποθηκεύονται στο Dynamics 365 Customer Insights. Με την εισαγωγή ή τη σύνδεση των δεδομένων που είναι αποθηκευμένα σε ηλεκτρονικές υπηρεσίες συμφωνείτε ότι τα δεδομένα μπορούν να μεταφερθούν και να αποθηκευτούν στο Dynamics 365 Customer Insights. [Μάθετε περισσότερα στο Κέντρο αξιοπιστίας της Microsoft.](https://www.microsoft.com/trust-center)
+Τα δεδομένα που είναι αποθηκευμένα σε ηλεκτρονικές υπηρεσίες όπως η Azure Data Lake Storage, είναι δυνατό να αποθηκευτούν σε μια διαφορετική θέση από αυτήν όπου τα δεδομένα τίθενται σε επεξεργασία ή αποθηκεύονται στο Dynamics 365 Customer Insights. Με την εισαγωγή ή τη σύνδεση των δεδομένων που είναι αποθηκευμένα σε ηλεκτρονικές υπηρεσίες συμφωνείτε ότι τα δεδομένα μπορούν να μεταφερθούν και να αποθηκευτούν στο Dynamics 365 Customer Insights. [Μάθετε περισσότερα στο Κέντρο αξιοπιστίας της Microsoft](https://www.microsoft.com/trust-center).
 
 ## <a name="connect-to-a-dataverse-managed-lake"></a>Σύνδεση σε διαχειριζόμενο lake Dataverse
 
@@ -32,12 +37,9 @@ ms.locfileid: "6692574"
 
 2. Επιλέξτε **Προσθήκη προέλευσης δεδομένων**.
 
-3. Επιλέξτε **Σύνδεση στη διαχειριζόμενη λίμνη Microsoft Dataverse** και επιλέξτε **Επόμενο**.
+3. Επιλέξτε το **Microsoft Dataverse** και επιλέξτε **Επόμενο**.
 
-4. Καταχωρήστε ένα **Όνομα** για την προέλευση δεδομένων και επιλέξτε **Επόμενο**. Οδηγίες ονομάτων: 
-   - Ξεκινήστε με γράμμα.
-   - Χρησιμοποιήστε μόνο γράμματα και αριθμούς. Δεν επιτρέπονται ειδικοί χαρακτήρες και διαστήματα.
-   - Χρησιμοποιήστε μεταξύ 3 και 64 χαρακτήρων.
+4. Καταχωρήστε ένα **Όνομα** για την προέλευση δεδομένων και επιλέξτε **Επόμενο**. 
 
 5. Δώστε τη **Διεύθυνση διακομιστή** για τον οργανισμό Dataverse και επιλέξτε **Σύνδεση**.
 

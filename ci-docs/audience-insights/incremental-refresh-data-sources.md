@@ -1,22 +1,24 @@
 ---
-title: Σταδιακή ανανέωση για προελεύσεις δεδομένων βασισμένες σε Power Query
-description: Ανανέωση νέων και ενημερωμένων δεδομένων για μεγάλες προελεύσεις δεδομένων που βασίζονται στο Power Query.
+title: Τμηματική ανανέωση για προελεύσεις δεδομένων που βασίζονται σε Power Query
+description: Ανανέωση νέων και ενημερωμένων δεδομένων για μεγάλες προελεύσεις δεδομένων με βάση το Power Query.
 ms.date: 12/06/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: f614d701aeb06720a60b14549a7fe666f8fe0617
-ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
+searchScope:
+- ci-system-schedule
+- customerInsights
+ms.openlocfilehash: 62632efda3c0c7e53fcdd8864b053ba93e2918bc
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "7900268"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8353682"
 ---
-# <a name="incremental-refresh-for-data-sources-based-on-power-query"></a>Σταδιακή ανανέωση για προελεύσεις δεδομένων βασισμένες στο Power Query
+# <a name="incremental-refresh-for-data-sources-based-on-power-query"></a>Τμηματική ανανέωση για προελεύσεις δεδομένων που βασίζονται σε Power Query
 
 Αυτό το άρθρο ασχολείται με τον τρόπο ρύθμισης παραμέτρων της τμηματικής ανανέωσης για προελεύσεις δεδομένων βάσει Power Query.
 
@@ -28,7 +30,7 @@ ms.locfileid: "7900268"
 
 ## <a name="configure-incremental-refresh"></a>Ρύθμιση παραμέτρων σταδιακής ανανέωσης
 
-Οι πληροφορίες κοινού σας επιτρέπουν τη σταδιακή ανανέωση για προελεύσεις δεδομένων που εισάγονται μέσω Power Query που υποστηρίζουν σταδιακή λήψη. Για παράδειγμα, οι βάσεις δεδομένων Azure SQL με πεδία ημερομηνίας και ώρας, τα οποία υποδεικνύουν την ημερομηνία τελευταίας ενημέρωσης των καρτελών δεδομένων.
+Οι πληροφορίες κοινού επιτρέπουν την τμηματική ανανέωση για προελεύσεις δεδομένων που εισάγονται μέσω του Power Query που υποστηρίζουν την τμηματική πρόσληψη. Για παράδειγμα, οι βάσεις δεδομένων Azure SQL με πεδία ημερομηνίας και ώρας, τα οποία υποδεικνύουν την ημερομηνία τελευταίας ενημέρωσης των καρτελών δεδομένων.
 
 1. [Δημιουργήστε μια νέα προέλευση δεδομένων με βάση το Power Query](connect-power-query.md).
 

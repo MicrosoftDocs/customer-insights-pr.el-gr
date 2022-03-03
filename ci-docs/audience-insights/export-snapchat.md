@@ -1,20 +1,19 @@
 ---
 title: Εξαγωγή δεδομένων του Customer Insights στο Snapchat
 description: Μάθετε πώς να ρυθμίσετε τις παραμέτρους της σύνδεσης και της εξαγωγής στο Snapchat.
-ms.date: 03/22/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 6565ab81599abcc0f94465e1153f08e0bc119839
-ms.sourcegitcommit: 831765a55775d358447cb7ffa56f2c3b85459084
+ms.openlocfilehash: 7eac3307b3f82b6c5ebc3d66d6563ae50696ed65
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6124043"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8227248"
 ---
 # <a name="export-segments-to-snapchat-preview"></a>Εξαγωγή τμημάτων στο Snapchat (έκδοση προεπισκόπησης)
 
@@ -29,7 +28,7 @@ ms.locfileid: "6124043"
 ## <a name="known-limitations"></a>Γνωστοί περιορισμοί
 
 - Η εξαγωγή στο Snapchat περιορίζεται σε τμήματα.
-- Η εξαγωγή έως 1 εκατομμυρίων προφίλ στο Snapchat μπορεί να χρειαστεί έως και 15 λεπτά για να ολοκληρωθεί. 
+- Η εξαγωγή έως 1 εκατομμυρίου προφίλ πελατών στο Snapchat μπορεί να διαρκέσει έως και 15 λεπτά μέχρι να ολοκληρωθεί. 
 
 ## <a name="set-up-connection-to-snapchat"></a>Ρύθμιση σύνδεσης στο Snapchat
 
@@ -63,7 +62,7 @@ ms.locfileid: "6124043"
 
 1. Πληκτρολογήστε το [**αναγνωριστικό κοινού Snapchat**](https://businesshelp.snapchat.com/s/article/custom-audiences).
 
-1. Στην ενότητα **Αντιστοίχιση δεδομένων**, στο πεδίο **Ηλεκτρονικό ταχυδρομείο**, επιλέξτε το πεδίο στο ενοποιημένο προφίλ πελάτη που αντιπροσωπεύει τη διεύθυνση ηλεκτρονικού ταχυδρομείου ενός πελάτη. Απαιτείται η εξαγωγή τμημάτων στο Snapchat.
+1. Στην ενότητα **Δεδομένα που αντιστοιχούν**, στο πεδίο **Ηλεκτρονικό ταχυδρομείο**, επιλέξτε το πεδίο που αντιπροσωπεύει τη διεύθυνση ηλεκτρονικού ταχυδρομείου ενός πελάτη. Απαιτείται η εξαγωγή τμημάτων στο Snapchat.
 
 1. Επιλέξτε τα τμήματα που θέλετε να εξαγάγετε. 
 

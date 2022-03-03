@@ -3,20 +3,19 @@ title: Πρόβλεψη απώλειας συνδρομής (περιέχει β
 description: Προβλέψτε εάν ένας πελάτης κινδυνεύει να μην χρησιμοποιεί πλέον τη συνδρομή στα προϊόντα ή τις υπηρεσίες της εταιρείας σας.
 ms.date: 08/19/2020
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 52ef7a8584cbae5dff0c800650b0238cc09fd6d5
-ms.sourcegitcommit: 15b1521041149716f8031cfa6d0dc61a56a5e2ff
+ms.openlocfilehash: b61e87ad833dd7a8e51c6619945a9e216d85f221
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7967701"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354693"
 ---
-# <a name="subscription-churn-prediction-preview"></a>Πρόβλεψη απώλειας συνδρομών (Προεπισκόπηση)
+# <a name="subscription-churn-prediction"></a>Πρόβλεψη απώλειας συνδρομής
 
 Η πρόβλεψη απώλειας συνδρομών βοηθά να προβλέψτε εάν ένας πελάτης κινδυνεύει να μην χρησιμοποιεί πλέον τη συνδρομή στα προϊόντα ή τις υπηρεσίες της εταιρείας σας. Μπορείτε να δημιουργήσετε νέα πρόβλεψη απώλειας συνδρομών στη σελίδα **Πληροφορίες** > **Προβλέψεις**. Επιλέξτε **Οι προβλέψεις μου** για να δείτε άλλες προβλέψεις που έχετε δημιουργήσει.
 
@@ -63,7 +62,7 @@ ms.locfileid: "7967701"
 ## <a name="create-a-subscription-churn-prediction"></a>Δημιουργία πρόβλεψης απώλειας συνδρομών
 
 1. Στις πληροφορίες κοινού, μεταβείτε στην **Ευφυΐα** > **Προβλέψεις**.
-1. Επιλέξτε το πλακίδιο **Μοντέλο απώλειας συνδρομών (προεπισκόπηση)** και επιλέξτε **Χρήση αυτού του μοντέλου**.
+1. Επιλέξτε το πλακίδιο **Μοντέλο απώλειας συνδρομής** και επιλέξτε **Χρήση αυτού του μοντέλου**.
    > [!div class="mx-imgBorder"]
    > ![Πλακίδιο μοντέλου απώλειας συνδρομών με χρήση αυτού του κουμπιού μοντέλου.](media/subscription-churn-usethismodel.PNG "Πλακίδιο μοντέλου απώλειας συνδρομών με χρήση αυτού του κουμπιού μοντέλου")
 

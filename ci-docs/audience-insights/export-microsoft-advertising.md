@@ -1,20 +1,19 @@
 ---
 title: Εξαγωγή δεδομένων Customer Insights στο Microsoft Advertising
 description: Μάθετε πώς να ρυθμίσετε τις παραμέτρους της σύνδεσης και της εξαγωγής στο Microsoft Advertising.
-ms.date: 05/12/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: c2ac92de2718cf7f0622b407bf198a7a7e50a37b
-ms.sourcegitcommit: 831765a55775d358447cb7ffa56f2c3b85459084
+ms.openlocfilehash: 8f009ed0258ded424340061e5320dd7df68c199f
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6124492"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8226891"
 ---
 # <a name="export-segments-to-microsoft-advertising-preview"></a>Εξαγωγή τμημάτων στο Microsoft Advertising (έκδοση προεπισκόπησης)
 
@@ -29,9 +28,9 @@ ms.locfileid: "6124492"
 
 ## <a name="known-limitations"></a>Γνωστοί περιορισμοί
 
-- Μπορείτε να εξαγάγετε έως και 500 χιλιάδες προφίλ ανά εξαγωγή στο Microsoft Advertising.
+- Μπορείτε να εξαγάγετε έως και 500.000 προφίλ πελατών ανά εξαγωγή στο Microsoft Advertising.
 - Η εξαγωγή στο Microsoft Advertising περιορίζεται σε τμήματα.
-- Η εξαγωγή έως 500 χιλιάδων προφίλ στο Microsoft Advertising μπορεί να χρειαστεί έως και 10 λεπτά για να ολοκληρωθεί. 
+- Η εξαγωγή έως 500.000 προφίλ πελατών στο Microsoft Advertising μπορεί να διαρκέσει έως και 10 λεπτά μέχρι να ολοκληρωθεί. 
 
 
 ## <a name="set-up-the-connection-to-microsoft-advertising"></a>Ρυθμίστε τη σύνδεση στο Microsoft Advertising
@@ -68,7 +67,7 @@ ms.locfileid: "6124492"
 
 1. Πληκτρολογήστε το **Αναγνωριστικό πελάτη Microsoft Αdvertising και το αναγνωριστικό λογαριασμού**. Μπορείτε να βρείτε το αναγνωριστικό πελάτη (`cid`) και το αναγνωριστικό λογαριασμού (`aid`) στις παραμέτρους της διεύθυνσης URL όταν είστε συνδεδεμένοι στο Microsoft Advertising.
 
-1. Στην ενότητα **Αντιστοίχιση δεδομένων**, στο πεδίο **Email**, επιλέξτε το πεδίο στο ενοποιημένο προφίλ πελάτη με τη διεύθυνση email ενός πελάτη. Απαιτείται η εξαγωγή τμημάτων στο Microsoft Advertising.
+1. Στην ενότητα **Δεδομένα που αντιστοιχούν**, στο πεδίο **Ηλεκτρονικό ταχυδρομείο**, επιλέξτε το πεδίο με τη διεύθυνση ηλεκτρονικού ταχυδρομείου ενός πελάτη. Απαιτείται η εξαγωγή τμημάτων στο Microsoft Advertising.
 
 1. Επιλέξτε **Αποθήκευση**.
 

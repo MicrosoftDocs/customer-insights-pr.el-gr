@@ -2,21 +2,23 @@
 title: Ενοποίηση δεδομένων web από πληροφορίες δέσμευσης με πληροφορίες κοινού
 description: Προσκόμιση πληροφοριών web σχετικά με τους πελάτες, από πληροφορίες δέσμευσης σε πληροφορίες κοινού.
 ms.date: 06/24/2021
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c2789a7d1379e0cf56511b272a763c904d8a3d347058ea9e029aaff0f723a028
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 037e264658bc354618cff56a89645ef7552aeb13
+ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033769"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8350545"
 ---
 # <a name="integrate-web-data-from-engagement-insights-with-audience-insights"></a>Ενοποίηση δεδομένων web από πληροφορίες δέσμευσης με πληροφορίες κοινού
+
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../engagement-insights/includes/cc-beta-prerelease-disclaimer.md)]
 
 Οι πελάτες κάνουν συχνά τις καθημερινές συναλλαγές τους ηλεκτρονικά, χρησιμοποιώντας τοποθεσίες web. Η δυνατότητα (έκδοση προεπισκόπησης) στατιστικών στοιχείων αφοσίωσης στο Dynamics 365 Customer Insights είναι μια χρήσιμη λύση για την ενσωμάτωση δεδομένων web ως προέλευσης. Εκτός από τα δεδομένα συναλλαγών, τα δημογραφικά στοιχεία ή τα στοιχεία συμπεριφοράς, μπορούμε να δούμε δραστηριότητες στο Web σε ενοποιημένα προφίλ πελατών. Μπορούμε να χρησιμοποιήσουμε αυτά τα προφίλ για να αποκτήσουμε πρόσθετες πληροφορίες, όπως τμήματα, μέτρα ή προβλέψεις για ενεργοποίηση κοινού.
 
