@@ -4,17 +4,18 @@ summary: Πρόσληψη, ενοποίηση και οργάνωση δεδομ
 metadata:
   title: Τεκμηρίωση πληροφοριών κοινού
   description: Κέντρο βοήθειας με βασικές συνδέσεις για πληροφορίες κοινού.
+  ms.service: customer-insights
   ms.subservice: audience-insights
   ms.topic: hub-page
   author: m-hartmann
   ms.author: mhart
-  ms.date: 03/02/2022
-  ms.openlocfilehash: 44fac5d82313c491cf838404d9641e2d14261366
-  ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+  ms.date: 07/30/2021
+  ms.openlocfilehash: 3764ed7c7fc4bd0dfa89e8a574617a1eb6273c2e36f6e5daa5aeca2c919ba7b8
+  ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
   ms.translationtype: HT
   ms.contentlocale: el-GR
-  ms.lasthandoff: 02/16/2022
-  ms.locfileid: "8231837"
+  ms.lasthandoff: 08/10/2021
+  ms.locfileid: "7031381"
 landingContent:
 - title: Σχετικά με τις πληροφορίες κοινού
   linkLists:
@@ -26,10 +27,6 @@ landingContent:
       url: whats-new-audience-insights.md
     - text: Ανακαλύψτε πληροφορίες κοινού
       url: https://dynamics.microsoft.com/ai/customer-insights/audience-insights-capability/
-  - linkListType: learn
-    links:
-    - text: Διαδρομή εκμάθησης Customer Insights
-      url: /learn/paths/build-customer-insights/
 - title: Ενοποίηση δεδομένων
   linkLists:
   - linkListType: how-to-guide
@@ -40,11 +37,7 @@ landingContent:
       url: data-unification.md
     - text: Κατανόηση οντοτήτων
       url: entities.md
-  - linkListType: learn
-    links:
-    - text: Δημιουργία ενοποιημένου προφίλ
-      url: /learn/modules/unified-customer-profile/
-- title: Λήψη πληροφοριών
+- title: Εμπλουτισμός και περιορισμός δεδομένων
   linkLists:
   - linkListType: how-to-guide
     links:
@@ -52,13 +45,9 @@ landingContent:
       url: enrichment-hub.md
     - text: Διαμόρφωση σχέσεων
       url: relationships.md
-    - text: Ολοκλήρωση δεδομένων με προβλέψεις
-      url: predictions.md
-  - linkListType: learn
-    links:
-    - text: Εμπλουτισμός και πρόβλεψη δεδομένων
-      url: /learn/modules/enrich-data/
-- title: Δομή στα δεδομένα σας
+    - text: Λίστα δραστηριοτήτων πελάτη
+      url: activities.md
+- title: Λήψη πληροφοριών
   linkLists:
   - linkListType: how-to-guide
     links:
@@ -66,12 +55,8 @@ landingContent:
       url: segments.md
     - text: Δημιουργία μέτρων
       url: measures.md
-    - text: Λίστα δραστηριοτήτων πελάτη
-      url: activities.md
-  - linkListType: learn
-    links:
-    - text: Εργασία με την εφαρμογή
-      url: /learn/modules/working-with-customer-insights/
+    - text: Ολοκλήρωση δεδομένων με προβλέψεις
+      url: predictions.md
 - title: Εξαγωγή δεδομένων πελατών
   linkLists:
   - linkListType: how-to-guide
@@ -82,10 +67,6 @@ landingContent:
       url: customer-card-add-in.md
     - text: Σύνδεσμος Power BI
       url: export-power-bi.md
-  - linkListType: learn
-    links:
-    - text: Διαχείριση εξωτερικών συνδέσεων
-      url: /learn/modules/configure-third-party-connections/
 - title: Διαχείριση της εφαρμογής
   linkLists:
   - linkListType: how-to-guide
@@ -96,7 +77,3 @@ landingContent:
       url: permissions.md
     - text: Διαχείριση πολλών περιβαλλόντων
       url: manage-environments.md
-  - linkListType: learn
-    links:
-    - text: Διαχείριση του Customer Insights
-      url: /learn/modules/administer-customer-data-platform/

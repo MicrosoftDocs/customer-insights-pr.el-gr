@@ -2,18 +2,19 @@
 title: Όρια εξυπηρέτησης στο Dynamics 365 Customer Insights
 description: Κατανοήστε τα όρια και τους περιορισμούς.
 ms.date: 09/03/2021
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 9bf8f03b785fb3035e3fc979a3304d4e98fd8d28
-ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
+ms.openlocfilehash: eba7871faf304d5945191b5b9bc215243b4f8a05
+ms.sourcegitcommit: 5704002484cdf85ebbcf4e7e4fd12470fd8e259f
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8350407"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483669"
 ---
 # <a name="service-limits-in-customer-insights-capabilities"></a>Δυνατότητες ορίων εξυπηρέτησης στο Customer Insights
 
@@ -21,25 +22,27 @@ ms.locfileid: "8350407"
 
 ## <a name="audience-insights"></a>Πληροφορίες κοινού
 
-| Area  | Όρια  | Σημειώσεις |
+### <a name="service-limits-in-dynamics-365-customer-insights-audience-insights-capability"></a>Όρια εξυπηρέτησης στη δυνατότητα πληροφοριών κοινού του Dynamics 365 Customer Insights
+
+| Περιοχή  | Όρια  | Σημειώσεις |
 |-------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
-| Τμήματα αγοράς, μέτρα και προβλέψεις | 300  | Ο συνολικός αριθμός των [τμημάτων](audience-insights/segments.md), των [μέτρων](audience-insights/measures.md) και των [προβλέψεων](audience-insights/predictions.md) σε συνδυασμό, δεν μπορεί να υπερβαίνει τα 300.  |
+| Τμήματα και μετρήσεις | 100 τμήματα ή μετρήσεις. | Ο συνολικός αριθμός ενεργών [τμημάτων](audience-insights/segments.md) και [μετρήσεων](audience-insights/measures.md) σε συνδυασμό δεν μπορεί να υπερβαίνει το 100.  |
 | Σχέσεις | 20 επίπεδα βάθους στις σχέσεις μεταξύ των διαδρομών οντοτήτων. | Όταν δημιουργείτε [τμήματα](audience-insights/segments.md) ή [μέτρα](audience-insights/measures.md) χρησιμοποιώντας το περιβάλλον εργασίας του προγράμματος δημιουργίας, οι διαδρομές οντοτήτων μπορούν να έχουν έως και 20 μεταπηδήσεις σχέσης μεταξύ της οντότητας έναρξης και της οντότητας προορισμού.  |
 
-<!--
-## Engagement insights
 
-### Workspace and event quotas
+## <a name="engagement-insights"></a>Πληροφορίες δέσμευσης
 
-Engagement insights is a highly scalable application that can support millions of events per second. During public preview, events have a volume threshold. There's also a limit to the number of workspaces in an organization.
+### <a name="workspace-and-event-quotas"></a>Χώρος εργασίας και στόχοι συμβάντων
 
-### Engagement insights limits
+Οι πληροφορίες δέσμευσης είναι μια εφαρμογή με υψηλή δυνατότητα κλιμάκωσης, η οποία μπορεί να υποστηρίξει εκατομμύρια συμβάντα ανά δευτερόλεπτο. Κατά τη δημόσια προεπισκόπηση, τα συμβάντα έχουν ένα όριο όγκου. Υπάρχει επίσης ένα όριο για τον αριθμό των χώρων εργασίας σε έναν οργανισμό.
 
-- Maximum event volume per workspace  = 100 events per second
+### <a name="engagement-insights-limits"></a>Όρια πληροφοριών δέσμευσης
 
-- Maximum number of workspaces per organization = 100
+- Μέγιστος όγκος συμβάντων ανά χώρο εργασίας = 100 συμβάντα ανά δευτερόλεπτο
 
-When events exceed the threshold, it can lead to loss of data in reports based on those events. You can [contact support](https://go.microsoft.com/fwlink/?linkid=2145734) to request a volume increase before you exceed limits. We'll work with you to determine your need for a volume increase and support your request.
--->
+- Μέγιστος αριθμός χώρων εργασίας ανά οργανισμό = 100
+
+Όταν τα συμβάντα ξεπερνούν το όριο, αυτό μπορεί να οδηγήσει σε απώλεια δεδομένων σε αναφορές που βασίζονται σε αυτά τα συμβάντα. Μπορείτε να [επικοινωνήσετε με την υποστήριξη](https://go.microsoft.com/fwlink/?linkid=2145734) για να ζητήσετε αύξηση του όγκου πριν υπερβείτε τα όρια. Θα συνεργαστούμε μαζί σας για να προσδιορίσουμε τις ανάγκες σας για αύξηση του όγκου και να υποστηρίξουμε το αίτημα σας.
+
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
