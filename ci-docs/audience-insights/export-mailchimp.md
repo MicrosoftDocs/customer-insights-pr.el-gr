@@ -1,20 +1,19 @@
 ---
 title: Εξαγωγή δεδομένων Customer Insights στο Mailchimp
 description: Μάθετε πώς να ρυθμίσετε τις παραμέτρους της σύνδεσης και της εξαγωγής στο Mailchimp.
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: ac6642c0ce02f1a92458a16250fd3b4cdef5fd1c
-ms.sourcegitcommit: adb9c43ddaba25e511535d78a4bcf8815f154a7b
+ms.openlocfilehash: f7a33f2eddb6b625ddb8663b97103de75beab44c
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6362509"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8226846"
 ---
 # <a name="export-segments-to-mailchimp-preview"></a>Εξαγωγή τμημάτων στο Mailchimp (έκδοση προεπισκόπησης)
 
@@ -29,10 +28,10 @@ ms.locfileid: "6362509"
 
 ## <a name="known-limitations"></a>Γνωστοί περιορισμοί
 
-- Έως 1000000 προφίλ ανά εξαγωγή σε Mailchimp.
+- Έως 1 εκατομμύριο πελατών ανά εξαγωγή στο Mailchimp.
 - Η εξαγωγή στο Mailchimp περιορίζεται σε τμήματα.
-- Η εξαγωγή τμημάτων με 1 εκ. προφίλ μπορεί να διαρκέσει έως τρεις ώρες. 
-- Ο αριθμός των προφίλ που μπορείτε να εξαγάγετε στο Mailchimp εξαρτάται και περιορίζεται στη σύμβασή σας με το Mailchimp.
+- Η εξαγωγή τμημάτων με 1 εκατομμύριο προφίλ πελατών μπορεί να διαρκέσει έως και τρεις ώρες. 
+- Ο αριθμός των προφίλ πελατών που μπορείτε να εξαγάγετε στο Mailchimp εξαρτάται και περιορίζεται από τη σύμβαση με το Mailchimp.
 
 ## <a name="set-up-connection-to-mailchimp"></a>Ρύθμιση σύνδεσης στο Mailchimp
 
@@ -66,7 +65,7 @@ ms.locfileid: "6362509"
 
 1. Εισαγάγετε το **[Αναγνωριστικό κοινού Mailchimp](https://mailchimp.com/help/find-audience-id/)**
 
-3. Στην ενότητα **Αντιστοίχιση δεδομένων**, στο πεδίο **Ηλεκτρονικό ταχυδρομείο**, επιλέξτε το πεδίο στο ενοποιημένο προφίλ πελάτη που αντιπροσωπεύει τη διεύθυνση ηλεκτρονικού ταχυδρομείου ενός πελάτη. 
+1. Στην ενότητα **Δεδομένα που αντιστοιχούν**, στο πεδίο **Ηλεκτρονικό ταχυδρομείο**, επιλέξτε το πεδίο που αντιπροσωπεύει τη διεύθυνση ηλεκτρονικού ταχυδρομείου ενός πελάτη. 
 
 1. Προαιρετικά, μπορείτε να εξαγάγετε μηνύματα **Όνομα** και **Επώνυμο** για να δημιουργήσετε πιο προσαρμοσμένα μηνύματα ηλεκτρονικού ταχυδρομείου. Επιλέξτε **Προσθήκη χαρακτηριστικού** για να αντιστοιχίσετε αυτά τα πεδία.
 

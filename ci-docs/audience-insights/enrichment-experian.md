@@ -3,18 +3,17 @@ title: Εμπλουτισμός με το Experian εμπλουτισμού τρ
 description: Γενικές πληροφορίες σχετικά με τον εμπλουτισμό τρίτων Experian.
 ms.date: 04/09/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: abe9ee447745081e3c462d44e5901b6dac919adf
-ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
+ms.openlocfilehash: ad1023135516ca9c49818d19aa84df68d16b2e3c
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6555353"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8229964"
 ---
 # <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>Εμπλουτισμός προφίλ πελατών με δημογραφικά στοιχεία από το Experian (έκδοση προεπισκόπησης)
 
@@ -91,7 +90,7 @@ H Experian είναι μια παγκοσμίως κορυφαία εταιρε�
 
 ## <a name="next-steps"></a>Επόμενα βήματα
 
-Δημιουργήστε τα εμπλουτισμένα δεδομένα των πελατών σας. Δημιουργήστε [τμήματα](segments.md) και [μέτρα](measures.md) και, επιπλέον, [εξαγάγετε τα δεδομένα](export-destinations.md) για να παραδώσετε εξατομικευμένες εμπειρίες στους πελάτες σας.
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
 ## <a name="data-privacy-and-compliance"></a>Απόρρητο δεδομένων και συμμόρφωση
 

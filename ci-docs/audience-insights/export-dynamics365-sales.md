@@ -3,18 +3,20 @@ title: Εξαγωγή δεδομένων Customer Insights στο Dynamics 365 S
 description: Μάθετε πώς να ρυθμίσετε τις παραμέτρους της σύνδεσης και της εξαγωγής στο Dynamics 365 Sales.
 ms.date: 03/03/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: d8a35424f4271b350b8d84e72a01deb6d69652a0
-ms.sourcegitcommit: 08a5dfcc4f9d293c8e7ac4fef604bc52985b1b78
+searchScope:
+- ci-export
+- customerInsights
+ms.openlocfilehash: cf680c21c55c71d99728be79fe68111dc89a79ec
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090923"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355017"
 ---
 # <a name="use-segments-in-dynamics-365-sales-preview"></a>Χρήση τμημάτων στο Dynamics 365 Sales (έκδοση προεπισκόπησης)
 
