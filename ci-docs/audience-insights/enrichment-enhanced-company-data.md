@@ -8,16 +8,18 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 7a576621c71b925bd1563827aca10cad4ef9b4eb
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: e9cf93f28ba6918c72039670e42d26c8aaa7f922
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8229403"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376322"
 ---
 # <a name="enrichment-of-company-profiles-with-enhanced-company-data"></a>Εμπλουτισμός των προφίλ της εταιρείας με βελτιωμένα δεδομένα της εταιρείας
 
 Χρησιμοποιήστε τα μοντέλα της Microsoft και έχουμε συγκεντρώσει δεδομένα εταιρείας για να διορθώσετε, να συμπληρώσετε και να τυποποιημένετε τα προφίλ της εταιρείας σας. Θα χρησιμοποιήσουμε τη [μορφή κοινού μοντέλου δεδομένων](/common-data-model/schema/core/applicationcommon/account) για μεγαλύτερη ακρίβεια και πληροφορίες.
+
+Μπορείτε επίσης να [εμπλουτίσετε τα εταιρικά δεδομένα στις προελεύσεις](data-sources-enrichment.md) δεδομένων, για να βελτιώσετε την ακρίβεια αντιστοίχισης στη διεργασία αντιστοίχισης δεδομένων. 
 
 ## <a name="how-we-enhance-company-data"></a>Πως να κάνετε βελτίωση εταιρικών δεδομένων
 

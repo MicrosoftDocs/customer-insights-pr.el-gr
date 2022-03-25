@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: 5b22c1464b3f089551f485f98d6d93840ff77136
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 418575f724090628da8bd01e2569a4cb9e646337
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355891"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376508"
 ---
 # <a name="bring-your-own-azure-key-vault-preview"></a>Προσκομίστε το δικό σας Azure Key Vault (έκδοση προεπισκόπησης)
 
@@ -31,7 +31,7 @@ ms.locfileid: "8355891"
 
 - Έχετε ενεργή συνδρομή στο Azure.
 
-- Έχετε τον ρόλο [Διαχειριστή](permissions.md#administrator) στις πληροφορίες κοινού. Μάθετε περισσότερα σχετικά με τα [δικαιώματα χρηστών σε πληροφορίες κοινού](permissions.md#assign-roles-and-permissions).
+- Έχετε τον ρόλο [Διαχειριστή](permissions.md#admin) στις πληροφορίες κοινού. Μάθετε περισσότερα σχετικά με τα [δικαιώματα χρηστών σε πληροφορίες κοινού](permissions.md#assign-roles-and-permissions).
 
 - Έχετε τους ρόλους [Συμμετέχων](/azure/role-based-access-control/built-in-roles#contributor) και [Διαχειριστής πρόσβασης χρήστη](/azure/role-based-access-control/built-in-roles#user-access-administrator) στο Key Vault ή στην ομάδα πόρων στην οποία ανήκει το Key Vault. Για περισσότερες πληροφορίες, μεταβείτε στην επιλογή [Προσθήκη ή κατάργηση αντιστοιχίσεων ρόλων Azure χρησιμοποιώντας την πύλη Azure](/azure/role-based-access-control/role-assignments-portal). Εάν δεν έχετε το ρόλο Διαχειριστή πρόσβασης χρήστη στο Key Vault, πρέπει να ορίσετε τα δικαιώματα ελέγχου πρόσβασης που βασίζονται σε ρόλους για την αρχή υπηρεσίας Azure για το Dynamics 365 Customer Insights ξεχωριστά. Ακολουθήστε τα βήματα για να [χρησιμοποιήσετε μια αρχή υπηρεσίας Azure](connect-service-principal.md) για το Key Vault που πρέπει να συνδεθεί.
 

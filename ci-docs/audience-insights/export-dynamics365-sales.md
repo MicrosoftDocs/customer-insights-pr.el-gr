@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-export
 - customerInsights
-ms.openlocfilehash: cf680c21c55c71d99728be79fe68111dc89a79ec
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 4c1b5eaa3568b5c73013024d2da7e65276142f72
+ms.sourcegitcommit: d168a738a08adb8b4b2e410bdaa3716d7b63cc9b
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355017"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "8455838"
 ---
 # <a name="use-segments-in-dynamics-365-sales-preview"></a>Χρήση τμημάτων στο Dynamics 365 Sales (έκδοση προεπισκόπησης)
 
@@ -31,7 +31,7 @@ ms.locfileid: "8355017"
 
 ## <a name="prerequisite-for-connection"></a>Προϋπόθεση για σύνδεση
 
-1. Οι καρτέλες επαφών πρέπει να υπάρχουν στο Dynamics 365 Sales για να μπορείτε να εξαγάγετε ένα τμήμα από το Customer Insights στις Πωλήσεις. Διαβάστε περισσότερα σχετικά με το πώς μπορείτε να χρησιμοποιήσετε τις επαφές στο [Dynamics 365 Sales χρησιμοποιώντας το Microsoft Dataverse](connect-power-query.md).
+1. Οι καρτέλες επαφών πρέπει να υπάρχουν στο Dynamics 365 Sales για να μπορείτε να εξαγάγετε ένα τμήμα από το Customer Insights στις Πωλήσεις. Μάθετε περισσότερα για το πώς μπορείτε να χρησιμοποιήσετε τις επαφές που προέρχονται από το [Dynamics 365 Sales χρησιμοποιώντας το Microsoft Dataverse](connect-dataverse-managed-lake.md).
 
    > [!NOTE]
    > Η εξαγωγή τμημάτων από τις πληροφορίες κοινού στις Πωλήσεις δεν θα δημιουργήσει νέες καρτέλες επαφών στις παρουσίες των Πωλήσεων. Οι καρτέλες επαφών από τις Πωλήσεις πρέπει να ενοποιηθούν με τις πληροφορίες κοινού και να χρησιμοποιούνται ως προέλευση δεδομένων. Πρέπει επίσης να συμπεριληφθούν στην ενοποιημένη οντότητα πελάτη για να αντιστοιχίσετε τα αναγνωριστικά των πελατών σε αναγνωριστικά επαφών πριν είναι δυνατή η εξαγωγή τμημάτων.

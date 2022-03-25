@@ -58,6 +58,8 @@
           href: audience-insights/connect-dataverse-managed-lake.md
         - name: Προσθήκη Azure Synapse Analytics
           href: audience-insights/connect-synapse.md
+        - name: Εμπλουτισμός για προελεύσεις δεδομένων
+          href: audience-insights/data-sources-enrichment.md
         - name: Σταδιακή ανανέωση για προελεύσεις δεδομένων
           href: audience-insights/incremental-refresh-data-sources.md
         - name: Συγκέντρωση δεδομένων σε πραγματικό χρόνο
@@ -100,6 +102,8 @@
           href: audience-insights/enrichment-here.md
         - name: Εμπλουτισμός με Leadspace
           href: audience-insights/enrichment-leadspace.md
+        - name: Εμπλουτισμός με LiveRamp
+          href: audience-insights/enrichment-liveramp.md
         - name: Εμπλουτισμός με Experian
           href: audience-insights/enrichment-experian.md
         - name: Εμπλουτισμός με δεδομένα του Office 365

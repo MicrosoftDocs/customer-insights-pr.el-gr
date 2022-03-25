@@ -1,7 +1,7 @@
 ---
 title: Διαχείριση δικαιωμάτων χρηστών
 description: Μάθετε σχετικά με τα δικαιώματα και τους ρόλους χρήστη.
-ms.date: 03/25/2021
+ms.date: 02/09/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -12,12 +12,12 @@ searchScope:
 - ci-permissions
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: a3d21d55d86950953611967bb66712312eb42b4b
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 85e1f4f93ac0e99ce6634dfc8fceab0c9a14885e
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355937"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376738"
 ---
 # <a name="user-permissions"></a>Δικαιώματα χρήστη
 
@@ -48,7 +48,7 @@ ms.locfileid: "8355937"
 - Διαχειριστείτε τη ρύθμιση παραμέτρων και εμπλουτίστε τα προφίλ πελατών από τη σελίδα **Εμπλουτισμός** (μόνο για εμπλουτισμούς πρώτων μερών).
 - Διαχειριστείτε και δημιουργήστε εξαγωγές με βάση συνδέσεις που είναι κοινόχρηστες με συμβάλλοντες. [Μάθετε περισσότερα σχετικά με το πώς οι διαχειριστές επιτρέπουν στους συμβάλλοντες να χρησιμοποιούν μια σύνδεση για εξαγωγές](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-## <a name="administrator"></a>Διαχειριστής
+## <a name="admin"></a>Διαχείριση
 
 - Όλα τα δικαιώματα που είναι διαθέσιμα στο Συμβάλλοντα.
 - Αλλάξτε τις ρυθμίσεις στη σελίδα **Σύστημα** συμπεριλαμβανομένης της γλώσσας εργασίας και ανανεώστε χρονοδιαγράμματα για τις διεργασίες του συστήματός σας.
@@ -60,6 +60,12 @@ ms.locfileid: "8355937"
 - Εγκαταστήσετε και χρησιμοποιήστε το **Πρόσθετο κάρτας πελάτη**.
 - Προσθέστε και χρησιμοποιήστε τη **Σύνδεση Power Apps**.
 - Ενεργοποίηση χρήσης [API Customer Insights](apis.md).
+- [Ανάθεση κυριότητας περιβάλλοντος](manage-environments.md#change-the-owner-of-an-environment) σε άλλο διαχειριστή.
+
+## <a name="admin-owner"></a>Διαχειριστής (κάτοχος)
+
+- Όλα τα δικαιώματα που είναι διαθέσιμα στο διαχειριστή.
+- [Επαναφορά και διαγραφή](manage-environments.md#reset-an-existing-environment) του περιβάλλοντος.
 
 ## <a name="assign-roles-and-permissions"></a>Ανάθεση ρόλων και δικαιωμάτων
 

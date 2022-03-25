@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 2e0801c2b6af591e48a7df485a8523903c07617c
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: d84ae8301bdf384c2484cdb1e7dd8eb75d406769
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354408"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376416"
 ---
 # <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>Καταχώρηση προώθησης στο Dynamics 365 Customer Insights με Παρακολούθηση Azure (Έκδοση προεπισκόπησης)
 
@@ -37,7 +37,7 @@ ms.locfileid: "8354408"
 Για να ρυθμίσετε διαγνώσεις στο Customer Insights, πρέπει να πληρούνται οι παρακάτω προϋποθέσεις:
 
 - Έχετε ενεργή [συνδρομή στο Azure](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/).
-- Έχετε δικαιώματα [Διαχειριστή](permissions.md#administrator) στο Customer Insights.
+- Έχετε δικαιώματα [Διαχειριστή](permissions.md#admin) στο Customer Insights.
 - Έχετε το ρόλο **Συμμετέχοντα** και **Διαχειριστή πρόσβασης χρήστη** στον πόρο προορισμού στο Azure. Ο πόρος μπορεί να είναι ένας λογαριασμός Υπηρεσίας αποθήκευσης Azure, ένα Κέντρο συμβάντων Azure ή ένας χώρος εργασίας ανάλυσης αρχείων καταγραφής Azure. Για περισσότερες πληροφορίες, δείτε [Προσθήκη ή κατάργηση αντιστοιχίσεων ρόλων Azure χρησιμοποιώντας την πύλη Azure](/azure/role-based-access-control/role-assignments-portal).
 - [Απαιτήσεις προορισμού](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) για την Υπηρεσία αποθήκευσης Azure, το Κέντρο συμβάντων Azure ή την Ανάλυση αρχείου καταγραφής Azure πληρούνται.
 - Έχετε τουλάχιστον τον ρόλο **Αναγνώστης** στην ομάδα πόρων στην οποία ανήκει ο πόρος.
@@ -132,7 +132,7 @@ ms.locfileid: "8354408"
 | `resultSignature` | String    | Προαιρετικές          | Κατάσταση αποτελέσματος του συμβάντος. Εάν η λειτουργία αντιστοιχεί σε μια κλήση REST API, είναι ο κωδικός κατάστασης HTTP.        | `200`             |
 | `durationMs`      | Μεγάλου μήκους      | Προαιρετικές          | Διάρκεια της λειτουργίας σε χιλιοστά του δευτερολέπτου.     | `133`     |
 | `callerIpAddress` | String    | Προαιρετικές          | Διεύθυνση IP καλούντα, εάν η λειτουργία αντιστοιχεί σε μια κλήση API που προέρχεται από μια δημοσίως διαθέσιμη διεύθυνση IP.                                                 | `144.318.99.233`         |
-| `identity`        | String    | Προαιρετικές          | Αντικείμενο JSON που περιγράφει την ταυτότητα του χρήστη ή της εφαρμογής που έκανε τη λειτουργία.       | Ανατρέξτε στην ενότητα [Ταυτότητα](#identity-schema).     |  |
+| `identity`        | String    | Προαιρετικές          | Αντικείμενο JSON που περιγράφει την ταυτότητα του χρήστη ή της εφαρμογής που έκανε τη λειτουργία.       | Ανατρέξτε στην ενότητα [Ταυτότητα](#identity-schema).     |  
 | `properties`      | String    | Προαιρετικές          | Αντικείμενο JSON με περισσότερες ιδιότητες για τη συγκεκριμένη κατηγορία συμβάντων.      | Δείτε την ενότητα [Ιδιότητες](#api-properties-schema).    |
 | `level`           | String    | Απαραίτητο          | Επίπεδο ασφάλειας του συμβάντος.    | `Informational`, `Warning`, `Error` ή `Critical`.           |
 | `uri`             | String    | Προαιρετικές          | URI απόλυτης αίτησης.    |               |
@@ -230,7 +230,7 @@ ms.locfileid: "8354408"
 | ------------------------------- | -------- | ---- | ----------- |
 | `properties.eventType`                       | Ναι      | Ναι  | Πάντα `WorkflowEvent`, σημειώνοντας το συμβάν ως συμβάν ροής εργασίας.                                                                                                                                                                                                |
 | `properties.workflowJobId`                   | Ναι      | Ναι  | Αναγνωριστικό της εκτέλεσης ροής εργασιών. Όλα τα συμβάντα ροής εργασιών και εργασιών εντός της εκτέλεσης ροής εργασιών έχουν το ίδιο `workflowJobId`.                                                                                                                                   |
-| `properties.operationType`                   | Ναι      | Ναι  | Αναγνωριστικό της λειτουργίας, ανατρέξτε στην ενότητα [Τύποι λειτουργίας]. (#operation-types)                                                                                                                                                                                       |
+| `properties.operationType`                   | Ναι      | Ναι  | Αναγνωριστικό της λειτουργίας, ανατρέξτε στην ενότητα [Τύποι λειτουργίας].(#operation-types)                                                                                                                                                                                       |
 | `properties.tasksCount`                      | Ναι      | No   | Μόνο ροή εργασιών. Αριθμός των εργασιών που ενεργοποιεί η ροή εργασιών.                                                                                                                                                                                                       |
 | `properties.submittedBy`                     | Ναι      | No   | Προαιρετικό. Μόνο συμβάντα ροής εργασίας. Το Azure Active Directory [objectId του χρήστη](/azure/marketplace/find-tenant-object-id#find-user-object-id) που ενεργοποίησε τη ροή εργασιών, ανατρέξτε επίσης στο `properties.workflowSubmissionKind`.                                   |
 | `properties.workflowType`                    | Ναι      | No   | ανανέωση `full` ή `incremental`.                                                                                                                                                                                                                            |
@@ -239,7 +239,7 @@ ms.locfileid: "8354408"
 | `properties.startTimestamp`                  | Ναι      | Ναι  | Χρονική σήμανση UTC `yyyy-MM-ddThh:mm:ss.SSSSSZ`                                                                                                                                                                                                                  |
 | `properties.endTimestamp`                    | Ναι      | Ναι  | Χρονική σήμανση UTC `yyyy-MM-ddThh:mm:ss.SSSSSZ`                                                                                                                                                                                                                  |
 | `properties.submittedTimestamp`              | Ναι      | Ναι  | Χρονική σήμανση UTC `yyyy-MM-ddThh:mm:ss.SSSSSZ`                                                                                                                                                                                                                  |
-| `properties.instanceId`                      | Ναι      | Ναι  | Customer Insights `instanceId`                                                                                                                                                                                                                              |  |
+| `properties.instanceId`                      | Ναι      | Ναι  | Customer Insights `instanceId`                                                                                                                                                                                                                              |  
 | `properties.identifier`                      | No       | Ναι  | - Για OperationType = `Export`, το αναγνωριστικό είναι το guid της ρύθμισης παραμέτρων εξαγωγής. <br> - Για OperationType = `Enrichment`, είναι το guid του εμπλουτισμού <br> - Για OperationType `Measures`και `Segmentation`, το αναγνωριστικό είναι το όνομα της οντότητας. |
 | `properties.friendlyName`                    | No       | Ναι  | Το φιλικό για το χρήστη όνομα της εξαγωγής ή η οντότητα που επεξεργάζεται.                                                                                                                                                                                           |
 | `properties.error`                           | No       | Ναι  | Προαιρετικό. Μήνυμα σφάλματος με περισσότερες λεπτομέρειες.                                                                                                                                                                                                                  |

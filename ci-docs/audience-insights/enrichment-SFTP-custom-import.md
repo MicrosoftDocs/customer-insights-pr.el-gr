@@ -8,12 +8,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: e4b9a65eb50f75e0243fabfc10b501cf7acf4490
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 042558af801a1d1fc365939d9aa42c09b98b2679
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8229638"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376554"
 ---
 # <a name="enrich-customer-profiles-with-custom-data-preview"></a>Εμπλουτισμός προφίλ πελατών με προσαρμοσμένα δεδομένα (προεπισκόπηση)
 
@@ -25,7 +25,7 @@ ms.locfileid: "8229638"
 
 - Έχετε το όνομα αρχείου και τη θέση (διαδρομή) του αρχείου που θα εισαχθεί στον κεντρικό υπολογιστή SFTP.
 - Υπάρχει ένα αρχείο *model.json* που καθορίζει [το σχήμα του κοινού μοντέλου δεδομένων](/common-data-model/) για τα δεδομένα που θα εισαχθούν. Αυτό το αρχείο πρέπει να βρίσκεται στον ίδιο κατάλογο με το αρχείο προς εισαγωγή.
-- Μια σύνδεση SFTP έχει ήδη ρυθμιστεί από έναν διαχειριστή *ή* έχετε δικαιώματα [διαχειριστή](permissions.md#administrator). Θα χρειαστείτε τα διαπιστευτήρια χρήστη, τη διεύθυνση URL και τον αριθμό θύρας για τη θέση SFTP από την οποία θέλετε να εισαγάγετε δεδομένα.
+- Μια σύνδεση SFTP έχει ήδη ρυθμιστεί από έναν διαχειριστή *ή* έχετε δικαιώματα [διαχειριστή](permissions.md#admin). Θα χρειαστείτε τα διαπιστευτήρια χρήστη, τη διεύθυνση URL και τον αριθμό θύρας για τη θέση SFTP από την οποία θέλετε να εισαγάγετε δεδομένα.
 
 
 ## <a name="configure-the-import"></a>Ρύθμιση παραμέτρων της εισαγωγής

@@ -1,7 +1,7 @@
 ---
 title: Εμπλουτισμός ενοποιημένων προφίλ πελάτη
 description: Χρησιμοποιήστε τις δυνατότητες για να εμπλουτίσετε τα δεδομένα των πελατών σας.
-ms.date: 02/07/2022
+ms.date: 02/18/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -14,12 +14,12 @@ searchScope:
 - ci-enrichment-details
 - ci-enrichment-wizard
 - customerInsights
-ms.openlocfilehash: e8cac35ccf7012524dc22cb4a499dc605dd66346
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: b44f5a4b74c63629811837b853b4e069dea63504
+ms.sourcegitcommit: bb1f9e96023490ab340c114f54200ab4dd48da78
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355383"
+ms.lasthandoff: 03/02/2022
+ms.locfileid: "8372715"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>Εμπλουτισμός για προφίλ πελατών (προεπισκόπηση)
 
@@ -42,6 +42,7 @@ ms.locfileid: "8355383"
 - [Προσαρμοσμένα δεδομένα](enrichment-SFTP-custom-import.md) μέσω πρωτοκόλλου ασφαλούς μεταφοράς αρχείων (SFTP) 
 - [Χάρτες Azure](enrichment-azure-maps.md) παρέχονται από την Microsoft
 - [Δεδομένα θέσης](enrichment-here.md) παρέχονται από τις τεχνολογίες HERE 
+- [Ταυτότητα](enrichment-liveramp.md) που παρέχεται από το LiveRamp Abtec
 
 # <a name="business-accounts-b-to-b"></a>[Λογαριασμοί επιχειρήσεων (B2B)](#tab/b2b)
 
@@ -80,6 +81,10 @@ ms.locfileid: "8355383"
 ## <a name="multiple-enrichments-of-the-same-type"></a>Πολλαπλοί εμπλουτισμοί του ίδιου τύπου
 
 Η οντότητα που θα εμπλουτιστεί καθορίζεται κατά τη διάρκεια της ρύθμισης παραμέτρων εμπλουτισμού, γεγονός που σας επιτρέπει να εμπλουτίσετε μόνο ένα υποσύνολο των προφίλ σας. Για παράδειγμα, εμπλουτίτε δεδομένα μόνο για ένα συγκεκριμένο τμήμα. Μπορείτε να ρυθμίσετε διάφορες παραμέτρους εμπλουτισμών του ίδιου τύπου και να χρησιμοποιήσετε ξανά την ίδια σύνδεση. Ορισμένοι εμπλουτισμοί έχουν όρια στον αριθμό εμπλουτισμών του ίδιου τύπου που μπορεί να δημιουργηθεί. Μπορείτε να δείτε τα όρια και την τρέχουσα χρήση στη σελίδα **Εμπλουτισμός**.
+
+## <a name="enrich-data-sources-before-unification"></a>Εμπλουτισμός προέλευσης δεδομένων πριν την επεξεργασία
+
+Μπορείτε να εμπλουτίσετε τα δεδομένα των πελατών σας πριν την επεξεργασία των δεδομένων, για να αυξήσετε την ποιότητα μιας αντιστοίχισης δεδομένων. Για περισσότερες πληροφορίες δείτε το [εμπλουτισμός προελεύσεων δεδομένων](data-sources-enrichment.md).
 
 ## <a name="see-the-progress-of-the-enrichment-process"></a>Δείτε την πρόοδο της διεργασίας εμπλουτισμού
 

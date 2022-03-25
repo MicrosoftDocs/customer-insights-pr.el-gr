@@ -7,12 +7,12 @@ ms.date: 10/05/2021
 ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: c9517ed2b50ff37e361a27538dfb9f9ccbf3df8f
-ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
+ms.openlocfilehash: fa6ea6e96de3d382c1426b383a057c8ce4f67ccf
+ms.sourcegitcommit: d168a738a08adb8b4b2e410bdaa3716d7b63cc9b
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8350131"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "8455998"
 ---
 # <a name="get-started-after-purchasing-customer-insights"></a>Έναρξη μετά την αγορά του Customer Insights
 
@@ -39,7 +39,4 @@ ms.locfileid: "8350131"
 
 ## <a name="create-your-own-environment"></a>Δημιουργήστε το δικό σας περιβάλλον
 
-Μετά την πρώτη σας είσοδο, θα δείτε ένα περιβάλλον με δείγματα δεδομένων. Μπορείτε να χρησιμοποιήσετε αυτά τα δεδομένα για να εξερευνήσετε τις δυνατότητες και να εξοικειωθείτε με την εφαρμογή. Για να χρησιμοποιήσετε τα δικά σας δεδομένα, πρέπει να [δημιουργήσετε ένα περιβάλλον](audience-insights/get-started-paid.md).
-
-
-
+Μετά την πρώτη σας είσοδο, θα δείτε ένα περιβάλλον με δείγματα δεδομένων. Μπορείτε να χρησιμοποιήσετε αυτά τα δεδομένα για να εξερευνήσετε τις δυνατότητες και να εξοικειωθείτε με την εφαρμογή. Για να χρησιμοποιήσετε τα δικά σας δεδομένα, πρέπει να [δημιουργήσετε ένα περιβάλλον](/dynamics365/customer-insights/audience-insights/create-environment).

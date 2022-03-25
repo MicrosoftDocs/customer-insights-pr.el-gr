@@ -8,12 +8,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 1b46e8913c6d288b93cdf32e195b5e9387916e70
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 1cbbad9bfe559bcb15b23894fc7475507aae8add
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8230382"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376280"
 ---
 # <a name="enrichment-of-customer-profiles-with-here-technologies-preview"></a>Εμπλουτισμός προφίλ πελατών με την HERE Technologies (προεπισκόπηση)
 
@@ -25,7 +25,7 @@ ms.locfileid: "8230382"
 
 - Έχετε ενεργή συνδρομή HERE Technologies. Για να αποκτήσετε μια συνδρομή, μπορείτε να [εγγραφείτε εδώ](https://developer.here.com/sign-up?utm_medium=referral&utm_source=Microsoft-Dynamics-CI&create=Freemium-Basic) ή να [επικοινωνήσετε με τη HERE Technologies](https://developer.here.com/help?utm_medium=referral&utm_source=Microsoft-Dynamics-CI#how-can-we-help-you). [Μάθετε περισσότερα σχετικά με τον εμπλουτισμό τοποθεσίας της HERE Technologies.](https://developer.here.com/location-enrichment?cid=Dev-MicrosoftDynamics-DB-0-Dev-&utm_source=MicrosoftDynamics&utm_medium=referral&utm_campaign=Online_Dev_ReferralMicrosoft)
 
-- Διατίθεται μια [σύνδεση](connections.md) HERE *ή* έχετε have δικαιώματα [διαχειριστή](permissions.md#administrator) και το κλειδί API HERE Technologies.
+- Διατίθεται μια [σύνδεση](connections.md) HERE *ή* έχετε have δικαιώματα [διαχειριστή](permissions.md#admin) και το κλειδί API HERE Technologies.
 
 ## <a name="configure-the-enrichment"></a>Ρύθμιση παραμέτρων του εμπλουτισμού
 

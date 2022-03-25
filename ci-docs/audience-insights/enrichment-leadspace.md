@@ -8,12 +8,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: f89ef6842c21cf6b78154586f818beffbcdcffb9
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 0db0c984f6bf9f7ded0704b6fa0caf39c7dace3a
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8230634"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376784"
 ---
 # <a name="enrichment-of-company-profiles-with-leadspace-preview"></a>Εμπλουτισμός εταιρικών προφίλ με Leadspace (προεπισκόπηση)
 
@@ -25,7 +25,7 @@ ms.locfileid: "8230634"
 
 - Έχετε μια ενεργή άδεια χρήσης χώρου υποψήφιου πελάτη.
 - Έχετε [ενοποιημένα προφίλ πελατών](customer-profiles.md) με βάση τους λογαριασμούς.
-- Μια σύνδεση χώρου υποψήφιου πελάτη έχει ήδη ρυθμιστεί από έναν διαχειριστή ή έχετε δικαιώματα [διαχειριστής](permissions.md#administrator) και το "παντοτινό κλιεδί" (αναφέρεται ως **διακριτικό χώρου υποψήφιου πελάτη**). Επικοινωνήστε απευθείας με τον [χώρο υποψήφιου πελάτη](https://www.leadspace.com/leadspace-microsoft-dynamics-365/) για λεπτομέρειες σχετικά με το προϊόν τους.
+- Μια σύνδεση χώρου υποψήφιου πελάτη έχει ήδη ρυθμιστεί από έναν διαχειριστή ή έχετε δικαιώματα [διαχειριστής](permissions.md#admin) και το "παντοτινό κλιεδί" (αναφέρεται ως **διακριτικό χώρου υποψήφιου πελάτη**). Επικοινωνήστε απευθείας με τον [χώρο υποψήφιου πελάτη](https://www.leadspace.com/leadspace-microsoft-dynamics-365/) για λεπτομέρειες σχετικά με το προϊόν τους.
 
 ## <a name="configure-the-enrichment"></a>Ρύθμιση παραμέτρων του εμπλουτισμού
 

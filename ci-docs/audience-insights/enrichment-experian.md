@@ -8,12 +8,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: ad1023135516ca9c49818d19aa84df68d16b2e3c
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: efa26fa82a950063e074a4ab930ed95383c55334
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8229964"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376692"
 ---
 # <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>Εμπλουτισμός προφίλ πελατών με δημογραφικά στοιχεία από το Experian (έκδοση προεπισκόπησης)
 
@@ -25,7 +25,7 @@ H Experian είναι μια παγκοσμίως κορυφαία εταιρε�
 
 - Πρέπει να έχετε ενεργή συνδρομή στο Experian. Για να αποκτήσετε μια συνδρομή, [επικοινωνήστε απευθείας με την Experian](https://www.experian.com/marketing-services/contact). [Μάθετε περισσότερα σχετικά με τον εμπλουτισμό δεδομένων της Experian](https://www.experian.com/marketing-services/microsoft?cmpid=ems_web_mci_cdppage).
 
-- Μια σύνδεση Experian έχει ήδη ρυθμιστεί από έναν διαχειριστή *ή* έχετε δικαιώματα [διαχειριστή](permissions.md#administrator). Χρειάζεστε επίσης το αναγνωριστικό χρήστη, το αναγνωριστικό μέρους και τον αριθμό μοντέλου για το λογαριασμό σας Secure Transport (ST) με δυνατότητα SSH που δημιούγησε η Experian για εσάς.
+- Μια σύνδεση Experian έχει ήδη ρυθμιστεί από έναν διαχειριστή *ή* έχετε δικαιώματα [διαχειριστή](permissions.md#admin). Χρειάζεστε επίσης το αναγνωριστικό χρήστη, το αναγνωριστικό μέρους και τον αριθμό μοντέλου για το λογαριασμό σας Secure Transport (ST) με δυνατότητα SSH που δημιούγησε η Experian για εσάς.
 
 ## <a name="supported-countriesregions"></a>Υποστηριζόμενες χώρες/περιοχές
 
