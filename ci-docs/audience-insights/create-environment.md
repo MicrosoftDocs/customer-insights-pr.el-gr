@@ -1,24 +1,19 @@
 ---
 title: Δημιουργία περιβαλλόντων στο Customer Insights
 description: Βήματα για τη δημιουργία περιβαλλόντων με συνδρομή με άδεια χρήσης για Dynamics 365 Customer Insights.
-ms.date: 02/24/2022
+ms.date: 03/28/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
-author: MichelleDevaney
-ms.author: midevane
+author: adkuppa
+ms.author: adkuppa
 manager: shellyha
 ms.custom: intro-internal
 searchScope:
-- ci-home
-- customerInsights
-ms.openlocfilehash: c37afd5649f8cf40d5379f3d39d0cbd96cde3bd3
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
-ms.translationtype: HT
-ms.contentlocale: el-GR
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354095"
+  - ci-home
+  - customerInsights
 ---
+
 # <a name="create-an-environment-in-audience-insights"></a>Δημιουργία περιβάλλοντος στις πληροφορίες κοινού
 
 Αυτό το άρθρο εξηγεί τον τρόπο δημιουργίας ενός νέου περιβάλλοντος μετά την αγορά μιας συνδρομής Dynamics 365 Customer Insights από τον οργανισμό σας. 
@@ -83,14 +78,16 @@ ms.locfileid: "8354095"
 Η σύνδεση στο περιβάλλον σας Dataverse σάς επιτρέπει επίσης να [προσλαμβάνετε δεδομένα από προελεύσεις δεδομένων εσωτερικής εγκατάστασης χρησιμοποιώντας ροές δεδομένων και πύλες Power Platform](data-sources.md#add-data-from-on-premises-data-sources). Μπορείτε επίσης να χρησιμοποιήσετε [έτοιμα μοντέλα πρόβλεψης](predictions-overview.md?tabs=b2c#out-of-box-models) συνδεόμενοι σε ένα περιβάλλον Dataverse.
 
 > [!IMPORTANT]
-> Τα Customer Insights και Dataverse πρέπει να βρίσκονται στην ίδια περιοχή για να είναι δυνατή η κοινή χρήση δεδομένων.
+> 1. Τα Customer Insights και Dataverse πρέπει να βρίσκονται στην ίδια περιοχή για να είναι δυνατή η κοινή χρήση δεδομένων.
+> 1. Πρέπει να έχετε ρόλο καθολικού διαχειριστή στο περιβάλλον Dataverse. Επαληθεύστε ότι αυτό το [Dataverse περιβάλλον σχετίζεται](/power-platform/admin/control-user-access#associate-a-security-group-with-a-dataverse-environment) με ορισμένες ομάδες ασφαλείας και βεβαιωθείτε ότι έχετε προστεθεί σε αυτές τις ομάδες ασφαλείας.
+> 1. Δεν υπάρχει ήδη περιβάλλον Customer Insights που να συσχετίζεται με αυτό το Dataverse περιβάλλον. Μάθετε πώς να [καταργήσετε μια υπάρχουσα σύνδεση σε ένα Dataverse περιβάλλον](manage-environments.md#remove-an-existing-connection-to-a-dataverse-environment).
 
 :::image type="content" source="media/dataverse-provisioning.png" alt-text="κοινή χρήση δεδομένων με Microsoft Dataverse που ενεργοποιείται αυτόματα για νέες παρουσίες δικτύου.":::
 
-> [!NOTE]
-> Το περιβάλλον Customer Insights δεν υποστηρίζει τα παρακάτω σενάρια κοινής χρήσης δεδομένων:
-> - Εάν αποθηκεύσετε όλα τα δεδομένα στο δικό σας Azure Data Lake Storage, δεν θα μπορείτε να ενεργοποιήσετε την κοινή χρήση δεδομένων με μια διαχειριζόμενη λίμνη δεδομένων Dataverse.
-> - Αν ενεργοποιήσετε την κοινή χρήση δεδομένων με μια διαχειριζόμενη λίμνη δεδομένων Dataverse δεν θα μπορείτε να [δημιουργήσετε τιμές που προβλέπονται ή λείπουν σε μια οντότητα](predictions.md).
+Για περισσότερες πληροφορίες σχετικά με την ενεργοποίηση της κοινής χρήσης δεδομένων με το Microsoft Dataverse από το δικό σας Azure Data Lake Storage, ανατρέξτε στο θέμα [Σύνδεση στο Microsoft Dataverse](manage-environments.md#connect-to-microsoft-dataverse).
+
+Το περιβάλλον Customer Insights δεν υποστηρίζει τα παρακάτω σενάρια κοινής χρήσης δεδομένων:
+- Αν ενεργοποιήσετε την κοινή χρήση δεδομένων με μια διαχειριζόμενη λίμνη δεδομένων Dataverse δεν θα μπορείτε να [δημιουργήσετε τιμές που προβλέπονται ή λείπουν σε μια οντότητα](predictions.md).
 
 ### <a name="step-4-finalize-the-settings"></a>Βήμα 4: Ολοκλήρωση των ρυθμίσεων
 

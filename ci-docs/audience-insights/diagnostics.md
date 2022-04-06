@@ -9,15 +9,10 @@ author: brndkfr
 ms.author: bkief
 manager: shellyha
 searchScope:
-- ci-system-diagnostic
-- customerInsights
-ms.openlocfilehash: d84ae8301bdf384c2484cdb1e7dd8eb75d406769
-ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
-ms.translationtype: HT
-ms.contentlocale: el-GR
-ms.lasthandoff: 03/03/2022
-ms.locfileid: "8376416"
+  - ci-system-diagnostic
+  - customerInsights
 ---
+
 # <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>Καταχώρηση προώθησης στο Dynamics 365 Customer Insights με Παρακολούθηση Azure (Έκδοση προεπισκόπησης)
 
 Το Dynamics 365 Customer Insights παρέχει μια άμεση ενοποίηση με την Παρακολούθηση Azure. Τα αρχεία καταγραφής πόρων Παρακολούθησης Azure σάς επιτρέπουν να παρακολουθείτε και να στέλνετε αρχεία καταγραφής στον [Χώρο αποθήκευσης Azure](https://azure.microsoft.com/services/storage/), στην [Ανάλυση αρχείων καταγραφής Azure](/azure/azure-monitor/logs/log-analytics-overview) ή να τα διοχετεύετε στα [Κέντρα συμβάντων Azure](https://azure.microsoft.com/services/event-hubs/).
@@ -230,7 +225,7 @@ ms.locfileid: "8376416"
 | ------------------------------- | -------- | ---- | ----------- |
 | `properties.eventType`                       | Ναι      | Ναι  | Πάντα `WorkflowEvent`, σημειώνοντας το συμβάν ως συμβάν ροής εργασίας.                                                                                                                                                                                                |
 | `properties.workflowJobId`                   | Ναι      | Ναι  | Αναγνωριστικό της εκτέλεσης ροής εργασιών. Όλα τα συμβάντα ροής εργασιών και εργασιών εντός της εκτέλεσης ροής εργασιών έχουν το ίδιο `workflowJobId`.                                                                                                                                   |
-| `properties.operationType`                   | Ναι      | Ναι  | Αναγνωριστικό της λειτουργίας, ανατρέξτε στην ενότητα [Τύποι λειτουργίας].(#operation-types)                                                                                                                                                                                       |
+| `properties.operationType`                   | Ναι      | Ναι  | Αναγνωριστικό της λειτουργίας, ανατρέξτε στην ενότητα [Τύποι λειτουργίας](#operation-types).                                                                                                                                                                               |
 | `properties.tasksCount`                      | Ναι      | No   | Μόνο ροή εργασιών. Αριθμός των εργασιών που ενεργοποιεί η ροή εργασιών.                                                                                                                                                                                                       |
 | `properties.submittedBy`                     | Ναι      | No   | Προαιρετικό. Μόνο συμβάντα ροής εργασίας. Το Azure Active Directory [objectId του χρήστη](/azure/marketplace/find-tenant-object-id#find-user-object-id) που ενεργοποίησε τη ροή εργασιών, ανατρέξτε επίσης στο `properties.workflowSubmissionKind`.                                   |
 | `properties.workflowType`                    | Ναι      | No   | ανανέωση `full` ή `incremental`.                                                                                                                                                                                                                            |

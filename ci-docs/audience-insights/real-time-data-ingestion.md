@@ -1,5 +1,5 @@
 ---
-title: Λήψη και περιορισμοί δεδομένων σε πραγματικό χρόνο
+title: Συγκέντρωση δεδομένων σε πραγματικό χρόνο (έκδοση προεπισκόπησης)
 description: Γενικές πληροφορίες σχετικά με τις δυνατότητες σε πραγματικό χρόνο σε πληροφορίες κοινού.
 ms.date: 10/27/2020
 ms.reviewer: mhart
@@ -9,15 +9,10 @@ author: Nils-2m
 ms.author: nikeller
 manager: shellyha
 searchScope:
-- ci-system-api-usage
-- customerInsights
-ms.openlocfilehash: 2fe5279eee1b3b30f5bc21464c85fe5f86d342a0
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
-ms.translationtype: HT
-ms.contentlocale: el-GR
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355475"
+  - ci-system-api-usage
+  - customerInsights
 ---
+
 # <a name="real-time-data-ingestion-preview"></a>Συγκέντρωση δεδομένων σε πραγματικό χρόνο (προεπισκόπηση)
 
 Η λειτουργικότητα σε σχεδόν πραγματικό χρόνο σάς δίνει τη δυνατότητα να βλέπετε, εντός δευτερολέπτων, τις πιο πρόσφατες αλληλεπιδράσεις που έχουν πραγματοποιήσει οι πελάτες σας με τα προϊόντα ή τις υπηρεσίες σας.

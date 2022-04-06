@@ -1,7 +1,7 @@
 ---
 title: Σύνδεση σε πίνακες στο Microsoft Dataverse
 description: Εισαγωγή δεδομένων από ένα Microsoft Dataverse διαχειριζόμενο data lake.
-ms.date: 12/06/2021
+ms.date: 03/18/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
@@ -9,18 +9,11 @@ ms.author: adkuppa
 manager: shellyha
 ms.reviewer: mhart
 searchScope:
-- ci-dataverse
-- customerInsights
-ms.openlocfilehash: 8e11b60295fa5c187b1ac4877fb347e2d9bb41a1
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
-ms.translationtype: HT
-ms.contentlocale: el-GR
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354141"
+  - ci-dataverse
+  - customerInsights
 ---
+
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>Σύνδεση με δεδομένα σε μια διαχειριζόμενη λίμνη δεδομένων του Microsoft Dataverse
-
-
 
 Αυτό το άρθρο παρέχει πληροφορίες σχετικά με τον τρόπο με τον οποίο οι χρήστες Dataverse μπορούν γρήγορα να συνδεθούν σε αναλυτικές οντότητες σε μια διαχειριζόμενη λίμνη Microsoft Dataverse. 
 
@@ -29,7 +22,8 @@ ms.locfileid: "8354141"
 
 ## <a name="important-considerations"></a>Σημαντικές επισημάνσεις
 
-Τα δεδομένα που είναι αποθηκευμένα σε ηλεκτρονικές υπηρεσίες όπως η Azure Data Lake Storage, είναι δυνατό να αποθηκευτούν σε μια διαφορετική θέση από αυτήν όπου τα δεδομένα τίθενται σε επεξεργασία ή αποθηκεύονται στο Dynamics 365 Customer Insights. Με την εισαγωγή ή τη σύνδεση των δεδομένων που είναι αποθηκευμένα σε ηλεκτρονικές υπηρεσίες συμφωνείτε ότι τα δεδομένα μπορούν να μεταφερθούν και να αποθηκευτούν στο Dynamics 365 Customer Insights. [Μάθετε περισσότερα στο Κέντρο αξιοπιστίας της Microsoft](https://www.microsoft.com/trust-center).
+1. Τα δεδομένα που είναι αποθηκευμένα σε ηλεκτρονικές υπηρεσίες όπως η Azure Data Lake Storage, είναι δυνατό να αποθηκευτούν σε μια διαφορετική θέση από αυτήν όπου τα δεδομένα τίθενται σε επεξεργασία ή αποθηκεύονται στο Dynamics 365 Customer Insights. Με την εισαγωγή ή τη σύνδεση των δεδομένων που είναι αποθηκευμένα σε ηλεκτρονικές υπηρεσίες συμφωνείτε ότι τα δεδομένα μπορούν να μεταφερθούν και να αποθηκευτούν στο Dynamics 365 Customer Insights. [Μάθετε περισσότερα στο Κέντρο αξιοπιστίας της Microsoft](https://www.microsoft.com/trust-center).
+2. Μόνο Dataverse οντότητες με ενεργοποιημένη την [παρακολούθηση αλλαγών](/power-platform/admin/enable-change-tracking-control-data-synchronization) είναι ορατές. Αυτές οι οντότητες μπορούν να εξαχθούν στο data lake που το διαχείρίζεται το Dataverse και να χρησιμοποιηθούν στο Customer Insights. Οι έτοιμοι Dataverse πίνακες έχουν ενεργοποιημένη την παρακολούθηση αλλαγών από προεπιλογή. Θα πρέπει να ενεργοποιήσετε την παρακολούθηση αλλαγών για προσαρμοσμένους πίνακες. Για να ελέγξετε αν ένας πίνακας Dataverse έχει ενεργοποιηθεί για παρακολούθηση αλλαγών, μεταβείτε στα [Power Apps](https://make.powerapps.com) > **Δεδομένα** > **Πίνακες**. Βρείτε τον πίνακα που σας ενδιαφέρει και επιλέξτε τον. Μεταβείτε στις **Ρυθμίσεις** > **Επιλογές για προχωρημένους** και ελέγξτε τη ρύθμιση **Παρακολούθηση αλλαγών**.
 
 ## <a name="connect-to-a-dataverse-managed-lake"></a>Σύνδεση σε διαχειριζόμενο lake Dataverse
 
