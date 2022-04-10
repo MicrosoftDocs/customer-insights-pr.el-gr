@@ -9,10 +9,15 @@ author: brndkfr
 ms.author: bkief
 manager: shellyha
 searchScope:
-  - ci-system-diagnostic
-  - customerInsights
+- ci-system-diagnostic
+- customerInsights
+ms.openlocfilehash: 18fc072d129be6b4fc5470b1057f592dc2638216
+ms.sourcegitcommit: 5bd07f3a1288f003704acd576741cf6aedc1ac33
+ms.translationtype: HT
+ms.contentlocale: el-GR
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8523669"
 ---
-
 # <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>Καταχώρηση προώθησης στο Dynamics 365 Customer Insights με Παρακολούθηση Azure (Έκδοση προεπισκόπησης)
 
 Το Dynamics 365 Customer Insights παρέχει μια άμεση ενοποίηση με την Παρακολούθηση Azure. Τα αρχεία καταγραφής πόρων Παρακολούθησης Azure σάς επιτρέπουν να παρακολουθείτε και να στέλνετε αρχεία καταγραφής στον [Χώρο αποθήκευσης Azure](https://azure.microsoft.com/services/storage/), στην [Ανάλυση αρχείων καταγραφής Azure](/azure/azure-monitor/logs/log-analytics-overview) ή να τα διοχετεύετε στα [Κέντρα συμβάντων Azure](https://azure.microsoft.com/services/event-hubs/).

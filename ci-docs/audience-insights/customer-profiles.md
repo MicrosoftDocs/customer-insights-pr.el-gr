@@ -9,13 +9,18 @@ author: Nils-2m
 ms.author: nikeller
 manager: shellyha
 searchScope:
-  - ci-customers-page
-  - ci-customer-card
-  - ci-activities
-  - ci-activities-wizard
-  - customerInsights
+- ci-customers-page
+- ci-customer-card
+- ci-activities
+- ci-activities-wizard
+- customerInsights
+ms.openlocfilehash: 074d84eff65d52b083fff6c161282d4fafa1af85
+ms.sourcegitcommit: 5bd07f3a1288f003704acd576741cf6aedc1ac33
+ms.translationtype: HT
+ms.contentlocale: el-GR
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8523726"
 ---
-
 # <a name="customer-profiles"></a>Προφίλ πελατών
 
 Η σελίδα **Πελάτες** εμφανίζει μια συνδυασμένη προβολή των ενοποιημένων προφίλ πελατών σας. Τα προφίλ πελατών είναι διαθέσιμα μόλις [δημιουργήσετε την ενοποιημένη οντότητα Πελάτη](data-unification.md). Η σελίδα σάς επιτρέπει να αναζητάτε πελάτες και να καθορίζετε το ευρετήριο για αυτήν την αναζήτηση.

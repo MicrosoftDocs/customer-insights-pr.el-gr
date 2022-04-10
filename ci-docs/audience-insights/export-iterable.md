@@ -8,8 +8,13 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
+ms.openlocfilehash: 4de499fcc4a5a0dcc2dfd3bae02913c81a59647b
+ms.sourcegitcommit: 5bd07f3a1288f003704acd576741cf6aedc1ac33
+ms.translationtype: HT
+ms.contentlocale: el-GR
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8524148"
 ---
-
 # <a name="export-segment-lists-to-iterable-preview"></a>Εξαγωγή λιστών τμημάτων στο Iterable (έκδοση προεπισκόπησης)
 
 Εξαγάγετε τμήματα των ενοποιημένων προφίλ πελατών στο Iterable και χρησιμοποιήστε τα για δραστηριότητες μάρκετινγκ.

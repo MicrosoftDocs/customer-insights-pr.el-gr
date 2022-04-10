@@ -8,8 +8,13 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
+ms.openlocfilehash: d56ed779c342bb0855ee84d949f8d3ca604b92c1
+ms.sourcegitcommit: a5e4503cf9ce0cea562bab9389748d8ca1451f9d
+ms.translationtype: HT
+ms.contentlocale: el-GR
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487515"
 ---
-
 # <a name="export-segments-to-marketo-preview"></a>Εξαγωγή τμημάτων στο Marketo (έκδοση προεπισκόπησης)
 
 Εξαγάγετε τμήματα ενοποιημένων προφίλ πελατών για τη δημιουργία εκστρατειών, την παροχή μάρκετινγκ μέσω ηλεκτρονικού ταχυδρομείου και τη χρήση συγκεκριμένων ομάδων πελατών με το Marketo.
