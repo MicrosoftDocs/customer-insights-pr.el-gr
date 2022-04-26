@@ -8,12 +8,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: dccc069a355725bae09c1fece9292b9aee374e6d
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 06c5bed74b82f9ae2a764a2eb363348e0edab531
+ms.sourcegitcommit: 4b2ad63aa7a4d4f31b573870bccbc40befe5f8fd
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8225515"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "8552056"
 ---
 # <a name="connector-for-power-bi-preview"></a>Σύνδεση για το Power BI (προεπισκόπηση)
 
@@ -72,6 +72,6 @@ ms.locfileid: "8225515"
 
 Κατά τη φόρτωση οντοτήτων που περιέχουν πεδία με μορφή ημερομηνίας όπως η ΜΜ/ΗΗ/ΕΕΕΕ, μπορείτε να βρείτε σφάλματα λόγω ασυμφωνίας των μορφών τοπικών ρυθμίσεων. Αυτή η αναντιστοιχία προκύπτει όταν το αρχείο σας Power BI Desktop έχει διαφορετικές τοπικές ρυθμίσεις από τα Αγγλικά (Ηνωμένων Πολιτειών), επειδή τα πεδία ημερομηνίας στις πληροφορίες κοινού αποθηκεύονται σε μορφή ΗΠΑ.
 
-Το αρχείο Power BI Desktop έχει μια τοπική ρύθμιση, η οποία εφαρμόζεται κατά την ανάκτηση δεδομένων. Εάν αυτά τα πεδία ημερομηνίας ερμηνεύονται σωστά, ορίστε τις τοπικές ρυθμίσεις στο αρχείο .BPI στα Αγγλικά (Ηνωμένων Πολιτειών). [Μάθετε πώς να αλλάζετε τις τοπικές ρυθμίσεις ενός αρχείου Power BI desktop](/power-bi/fundamentals/supported-languages-countries-regions.md#choose-the-locale-for-importing-data-into-power-bi-desktop).
+Το αρχείο Power BI Desktop έχει μια τοπική ρύθμιση, η οποία εφαρμόζεται κατά την ανάκτηση δεδομένων. Εάν αυτά τα πεδία ημερομηνίας ερμηνεύονται σωστά, ορίστε τις τοπικές ρυθμίσεις στο αρχείο .BPI στα Αγγλικά (Ηνωμένων Πολιτειών). [Μάθετε πώς να αλλάζετε τις τοπικές ρυθμίσεις ενός αρχείου Power BI desktop](/power-bi/fundamentals/supported-languages-countries-regions#choose-the-language-or-locale-of-power-bi-desktop).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

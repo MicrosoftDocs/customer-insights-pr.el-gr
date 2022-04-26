@@ -1,19 +1,19 @@
 ---
 title: Εξαγωγή δεδομένων Customer Insights στο Azure Synapse Analytics
 description: Μάθετε πώς να ρυθμίσετε τη σύνδεση στο Azure Synapse Analytics.
-ms.date: 01/05/2022
+ms.date: 04/11/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 289c8d545f057b3f70679b485cf4350545c0587b
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 8ace9fbee4fbd8822629a39d5902e176f8511cb5
+ms.sourcegitcommit: 9f6733b2f2c273748c1e7b77f871e9b4e5a8666e
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8231312"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "8560387"
 ---
 # <a name="export-data-to-azure-synapse-analytics-preview"></a>Εξαγωγή δεδομένων στο Azure Synapse Analytics (έκδοση προεπισκόπησης)
 
@@ -28,21 +28,21 @@ ms.locfileid: "8231312"
 
 ## <a name="prerequisites-in-customer-insights"></a>Προϋποθέσεις στο Customer Insights
 
-* Έχετε τον ρόλο **Διαχειριστή** στις πληροφορίες κοινού. Μάθετε περισσότερα σχετικά με τον [ορισμό δικαιωμάτων χρήστη σε πληροφορίες κοινού](permissions.md#assign-roles-and-permissions)
+* Ο λογαριασμός χρήστη σας Azure Active Directory (AD) έχει ρόλο χρήστη **Διαχειριστή** στο Customer Insights. Μάθετε περισσότερα σχετικά με τον [ορισμό δικαιωμάτων χρήστη σε πληροφορίες κοινού](permissions.md#assign-roles-and-permissions)
 
 Στο Azure: 
 
 - Μια ενεργή συνδρομή Azure.
 
-- Εάν χρησιμοποιείτε ένα νέο λογαριασμό Azure Data Lake Storage Gen2, η *κύρια υπηρεσία για πληροφορίες κοινού* χρειάζεται δικαιώματα **συμβαλλόντος δεδομένων BLOB αποθήκευσης**. Μάθετε περισσότερα σχετικά με τη [σύνδεση σε λογαριασμό Azure Data Lake Storage Gen2 με την κύρια υπηρεσία Azure για πληροφορίες κοινού](connect-service-principal.md). Το Data Lake Storage Gen2 **πρέπει να έχει ενεργοποιημένο τον** [ιεραρχικό χώρο ονομάτων](/azure/storage/blobs/data-lake-storage-namespace).
+- Εάν χρησιμοποιείτε έναν νέο λογαριασμό Azure Data Lake Storage Gen2, η *αρχή υπηρεσίας για το Customer Insights* χρειάζεται δικαιώματα **συμβαλλόντος δεδομένων BLOB αποθήκευσης**. Μάθετε περισσότερα σχετικά με τη [σύνδεση σε λογαριασμό Azure Data Lake Storage Gen2 με την κύρια υπηρεσία Azure για πληροφορίες κοινού](connect-service-principal.md). Το Data Lake Storage Gen2 **πρέπει να έχει ενεργοποιημένο τον** [ιεραρχικό χώρο ονομάτων](/azure/storage/blobs/data-lake-storage-namespace).
 
-- Στην ομάδα πόρων βρίσκεται ο χώρος εργασίας Azure Synapse, στην *κύρια υπηρεσία* και στον *χρήστη για πληροφορίες κοινού* πρέπει να εκχωρηθούν τουλάχιστον δικαιώματα **Αναγνώστη**. Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Εκχώρηση ρόλων Azure χρησιμοποιώντας την πύλη Azure](/azure/role-based-access-control/role-assignments-portal).
+- Στην ομάδα πόρων όπου βρίσκεται το Azure Synapse workspace, η *αρχή υπηρεσίας* και ο λογαριασμός χρήστη *Azure AD με δικαιώματα Διαχειριστή στο Customer Insights* χρειάζονται ανάθεση τουλάχιστον δικαιωμάτων **Αναγνώστη**. Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Εκχώρηση ρόλων Azure χρησιμοποιώντας την πύλη Azure](/azure/role-based-access-control/role-assignments-portal).
 
-- Ο *χρήστης* χρειάζεται δικαιώματα **Συμβαλλόντος δεδομένων BLOB αποθήκευσης** στον λογαριασμό Azure Data Lake Storage Gen2 όπου τα δεδομένα βρίσκονται και συνδέονται με τον χώρο εργασίας Azure Synapse. Μάθετε περισσότερα σχετικά με [τη χρήση της πύλης Azure για την εκχώρηση ενός ρόλου Azure για πρόσβαση σε δεδομένα blob και ουράς](/azure/storage/common/storage-auth-aad-rbac-portal) και [δικαιώματα συμμετέχοντα δεδομένων blob αποθήκευσης](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
+- Ο *Azure AD χρήστης με δικαιώματα διαχειριστή στο Customer Insights* χρειάζεται δικαιώματα **συμβαλλόντος δεδομένων Blob αποθήκευσης** στο Azure Data Lake Storage Gen2 όπου βρίσκονται τα δεδομένα και συνδέονται με το Azure Synapse workspace. Μάθετε περισσότερα σχετικά με [τη χρήση της πύλης Azure για την εκχώρηση ενός ρόλου Azure για πρόσβαση σε δεδομένα blob και ουράς](/azure/storage/common/storage-auth-aad-rbac-portal) και [δικαιώματα συμμετέχοντα δεδομένων blob αποθήκευσης](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
 
 - Η *[διαχειριζόμενη ταυτότητα χώρου εργασίας Azure Synapse](/azure/synapse-analytics/security/synapse-workspace-managed-identity)* χρειάζεται δικαιώματα **χρειάζεται δικαιώματα** στο λογαριασμό Azure Data Lake Storage Gen2όπου τα δεδομένα βρίσκονται και συνδέονται με τον χώρο εργασίας Azure Synapse. Μάθετε περισσότερα σχετικά για τη [χρήση της πύλης Azure για την εκχώρηση ενός ρόλου Azure για πρόσβαση σε δεδομένα blob και ουράς](/azure/storage/common/storage-auth-aad-rbac-portal) και [δικαιώματα συμμετέχοντα δεδομένων blob αποθήκευσης ](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
 
-- Στον χώρο εργασίας Azure Synapse, η *κύρια υπηρεσία για πληροφορίες κοινού* χρειάζεται να ανατεθεί ο ρόλος **Διαχειριστής Synapse**. Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Τρόπος ρύθμισης ελέγχου πρόσβασης για το χώρο εργασίας Synapse](/azure/synapse-analytics/security/how-to-set-up-access-control).
+- Στο Azure Synapse workspace, η *αρχή υπηρεσίας για το Customer Insights* χρειάζεται την ανάθεση του ρόλου του **Διαχειριστή Synapse**. Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Τρόπος ρύθμισης ελέγχου πρόσβασης για το χώρο εργασίας Synapse](/azure/synapse-analytics/security/how-to-set-up-access-control).
 
 ## <a name="set-up-the-connection-and-export-to-azure-synapse"></a>Ρυθμίστε τη σύνδεση και κάντε εξαγωγή στο Azure Synapse
 

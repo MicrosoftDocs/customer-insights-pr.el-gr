@@ -1,22 +1,22 @@
 ---
 title: Δημιουργία μετρήσεων από πρότυπα
 description: Καθορίστε μετρήσεις χρησιμοποιώντας πρότυπα για υποθέσεις κοινής χρήσης.
-ms.date: 02/28/2022
+ms.date: 03/25/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
+author: v-wendysmith
 ms.author: wameng
-ms.reviewer: mhart
+ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope:
 - ci-measure-template
 - customerInsights
-ms.openlocfilehash: 0fe846691825b93732cbbe6d1c942a79e4a3934f
-ms.sourcegitcommit: cf6a0ed44915908a44c70889a2dd199a9d0d4798
+ms.openlocfilehash: eeabd889f7b694f8d809894169a3cdc068acc340
+ms.sourcegitcommit: 9ef2cf99b847e7bd8f890f83d84b3a4045aaf8cc
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 02/28/2022
-ms.locfileid: "8359914"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "8529401"
 ---
 # <a name="use-a-template-to-build-a-measure"></a>Χρήση προτύπου για τη δημιουργία μέτρησης
 
@@ -51,7 +51,9 @@ ms.locfileid: "8359914"
 
 1. Εξετάστε τα απαιτούμενα δεδομένα και επιλέξτε **Έναρξη**, εάν έχετε όλα τα δεδομένα στη θέση τους.
 
-1. Στο τμήμα παραθύρου **Επεξεργασία ονόματος**, ορίστε το όνομα για τη μέτρηση και την οντότητα εξόδου. 
+1. Επιλέξτε **Επεξεργασία λεπτομερειών** δίπλα στο όνομα της μέτρησης. Πληκτρολογήστε ένα όνομα για τη μέτρηση. Προαιρετικά, προσθέστε [ετικέτες](work-with-tags-columns.md#manage-tags) στη μέτρηση.
+
+   :::image type="content" source="media/measures_edit_details.png" alt-text="Παράθυρο διαλόγου επεξεργασίας στοιχείων.":::
 
 1. Επιλέξτε **Τέλος**.
 

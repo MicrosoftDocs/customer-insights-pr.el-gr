@@ -6,12 +6,12 @@ ms.author: mhart
 ms.date: 07/30/2021
 ms.topic: overview
 ms.manager: shellyha
-ms.openlocfilehash: 82b335388002158885fa55b61562db6c8370dc9d
-ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
+ms.openlocfilehash: ff3d23d00a565bf9e5693e7cd5db644ddfe4887e
+ms.sourcegitcommit: 9f6733b2f2c273748c1e7b77f871e9b4e5a8666e
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8350177"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "8560433"
 ---
 # <a name="product-overview-for-dynamics-365-customer-insights"></a>Επισκόπηση προϊόντος για το Dynamics 365 Customer Insights
 
@@ -19,7 +19,7 @@ ms.locfileid: "8350177"
 
 Οι [πληροφορίες κοινού](audience-insights/overview.md) σάς βοηθούν να μετατρέψετε την επιχείρησή σας σε έναν οργανισμό με επίκεντρο τον πελάτη. Οι επαγγελματίες μάρκετινγκ, πωλήσεων και εξυπηρέτησης έχουν τις πληροφορίες που χρειάζονται για να εξατομικεύουν τις εμπειρίες. Συνδέστε δεδομένα από πηγές συναλλαγών, συμπεριφοράς και παρατήρησης, για να δημιουργήσετε μια σφαιρική προβολή πελατών. Δείτε τα αποτελέσματα πιο γρήγορα με ένα CDP σχεδιασμένο για να παρέχει πληροφορίες που μπορούν να εφαρμοστούν. 
 
-[Οι πληροφορίες δέσμευσης](engagement-insights/overview.md) ήταν μια δυνατότητα προεπισκόπησης στο Customer Insights που εστιάζει στη συγκέντρωση συμβάντων web και κινητής συσκευής για πρόσθετες πληροφορίες. Η προεπισκόπηση έληξε στις 15 Φεβρουαρίου 2022.
+[Οι πληροφορίες δέσμευσης](engagement-insights/overview.md) ήταν μια δυνατότητα προεπισκόπησης στο Customer Insights που εστιάζει στη συγκέντρωση συμβάντων web και κινητής συσκευής για πρόσθετες πληροφορίες. Η έκδοση προεπισκόπησης έληξε στις 15 Φεβρουαρίου 2022.
  
 ## <a name="choose-a-capability"></a>Επιλογή ικανότητας
 
