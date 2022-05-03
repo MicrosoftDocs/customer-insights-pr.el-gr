@@ -3,17 +3,17 @@ title: Εγγραφή για δωρεάν δοκιμή - Dynamics 365 Customer I
 description: Μάθετε πώς να εγγραφείτε γρήγορα και να ξεκινήσετε μια δωρεάν δοκιμαστική έκδοση του Customer Insights. Εξερευνήστε την εφαρμογή και βρείτε επιπλέον πόρους εκμάθησης.
 author: m-hartmann
 ms.author: mhart
-ms.date: 09/30/2021
+ms.date: 04/12/2022
 ms.topic: get-started
 ms.custom: template-trial-setup
 ms.reviewer: jeffhar
 manager: shellyha
-ms.openlocfilehash: 1b50da077cb0584ca9f277b276d0e9ebb46b2c5d
-ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
+ms.openlocfilehash: 2f27dd4fd9df679696d72f2eccde262de3e4afc4
+ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8350223"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8641716"
 ---
 # <a name="sign-up-for-a-free-dynamics-365-customer-insights-trial"></a>Εγγραφή για δωρεάν δοκιμαστική έκδοση του Dynamics 365 Customer Insights
 
@@ -21,7 +21,7 @@ ms.locfileid: "8350223"
 
 **Για να κάνετε εγγραφή για τη δοκιμαστική έκδοση**:
 
-1. Μεταβείτε στη [σελίδα επισκόπησης δοκιμαστικής έκδοσης](https://dynamics.microsoft.com/get-started/?appname=customerinsights) και επιλέξτε **Εγγραφή τώρα**.
+1. Μεταβείτε στη [σελίδα επισκόπησης της δοκιμαστικής έκδοσης](https://dynamics.microsoft.com/ai/customer-insights/) και επιλέξτε **Δωρεάν δοκιμή Customer Insights**.
 1. Ακολουθήστε τις οδηγίες στην οθόνη για να εισαγάγετε το [email που σχετίζεται με το λογαριασμό Microsoft](https://support.microsoft.com/windows/what-is-a-microsoft-account-4a7c48e9-ff5a-e9c6-5a5c-1a57d66c3bfa) και τα στοιχεία επικοινωνίας σας.
 1. Κάντε επιλογές και επιλέξτε την εστίασή σας μέχρι να λάβετε τη σελίδα έναρξης για την επιλεγμένη δυνατότητα.
 
@@ -31,12 +31,12 @@ ms.locfileid: "8350223"
 
 Το περιβάλλον της δοκιμαστικής έκδοσης περιλαμβάνει τις ίδιες δυνατότητες όπως η έκδοση επί πληρωμή. Οι παρακάτω συνδέσεις σας καθοδηγούν σε ορισμένες από τις βασικές δυνατότητες.
 
-- [Γρήγορη εκκίνηση για πληροφορίες κοινού.](audience-insights/get-started.md)
-- [Προσθήκη περισσότερων χρηστών και ανάθεση δικαιωμάτων.](audience-insights/permissions.md)
-- Πραγματοποιήστε [Λήψη των προελεύσεων δεδομένων σας](audience-insights/data-sources.md) και εκτελέστε τες με τη [διαδικασία ενοποίησης δεδομένων](audience-insights/data-unification.md) για να λάβετε [ενοποιημένα προφίλ πελατών](audience-insights/customer-profiles.md).
-- [Εμπλουτίστε τα ενοποιημένα προφίλ πελατών](audience-insights/enrichment-hub.md) ή [εκτελέστε μοντέλα πρόβλεψης](audience-insights/predictions-overview.md).
-- Δημιουργήστε [τμήματα](audience-insights/segments.md) για την ομαδοποίηση πελατών και [μέτρα](audience-insights/measures.md) για κριτική KPI.
-- Ρυθμίστε τις [συνδέσεις](audience-insights/connections.md) και τις [εξαγωγές](audience-insights/export-destinations.md) για να επεξεργαστείτε υποσύνολα των δεδομένων σας σε άλλες εφαρμογές.
+- [Έναρξη με το Customer Insights.](get-started.md)
+- [Προσθήκη περισσότερων χρηστών και ανάθεση δικαιωμάτων.](permissions.md)
+- Πραγματοποιήστε [Λήψη των προελεύσεων δεδομένων σας](data-sources.md) και εκτελέστε τες με τη [διαδικασία ενοποίησης δεδομένων](data-unification.md) για να λάβετε [ενοποιημένα προφίλ πελατών](customer-profiles.md).
+- [Εμπλουτίστε τα ενοποιημένα προφίλ πελατών](enrichment-hub.md) ή [εκτελέστε μοντέλα πρόβλεψης](predictions-overview.md).
+- Δημιουργήστε [τμήματα](segments.md) για την ομαδοποίηση πελατών και [μέτρα](measures.md) για κριτική KPI.
+- Ρυθμίστε τις [συνδέσεις](connections.md) και τις [εξαγωγές](export-destinations.md) για να επεξεργαστείτε υποσύνολα των δεδομένων σας σε άλλες εφαρμογές.
 
 ## <a name="additional-resources"></a>Πρόσθετοι πόροι
 

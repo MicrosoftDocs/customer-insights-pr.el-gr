@@ -7,12 +7,12 @@ ms.date: 10/05/2021
 ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: fa6ea6e96de3d382c1426b383a057c8ce4f67ccf
-ms.sourcegitcommit: d168a738a08adb8b4b2e410bdaa3716d7b63cc9b
+ms.openlocfilehash: 8fcc1c97be87afe942aa3b5e23d1eb68008aa873
+ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "8455998"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8641854"
 ---
 # <a name="get-started-after-purchasing-customer-insights"></a>Έναρξη μετά την αγορά του Customer Insights
 
@@ -34,9 +34,8 @@ ms.locfileid: "8455998"
 
 1. Μετάβαση στη διεύθυνση [URL της εφαρμογής Customer Insights](https://home.ci.ai.dynamics.com).
 1. Πραγματοποιήστε είσοδο με τον εταιρικό ή σχολικό λογαριασμό σας. 
-1. Συμφωνήσετε με τους όρους παροχής υπηρεσίας και ορίστε τις προτιμήσεις περιεχομένου για την παρουσία του Customer Insights.
-1. Επιλέξτε τη δυνατότητα εστίασης μέχρι να λάβετε τη σελίδα έναρξης για την επιλεγμένη δυνατότητα.
+1. Συμφωνήσετε με τους όρους παροχής υπηρεσίας και ορίστε τις προτιμήσεις περιεχομένου για το περιβάλλον Customer Insights.
 
 ## <a name="create-your-own-environment"></a>Δημιουργήστε το δικό σας περιβάλλον
 
-Μετά την πρώτη σας είσοδο, θα δείτε ένα περιβάλλον με δείγματα δεδομένων. Μπορείτε να χρησιμοποιήσετε αυτά τα δεδομένα για να εξερευνήσετε τις δυνατότητες και να εξοικειωθείτε με την εφαρμογή. Για να χρησιμοποιήσετε τα δικά σας δεδομένα, πρέπει να [δημιουργήσετε ένα περιβάλλον](/dynamics365/customer-insights/audience-insights/create-environment).
+Μετά την πρώτη σας είσοδο, θα δείτε ένα περιβάλλον με δείγματα δεδομένων. Μπορείτε να χρησιμοποιήσετε αυτά τα δεδομένα για να εξερευνήσετε τις δυνατότητες και να εξοικειωθείτε με την εφαρμογή. Για να χρησιμοποιήσετε τα δικά σας δεδομένα, πρέπει να [δημιουργήσετε ένα περιβάλλον](create-environment.md).
