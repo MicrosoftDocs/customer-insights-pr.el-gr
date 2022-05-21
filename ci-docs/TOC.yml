@@ -66,12 +66,18 @@
   items:
     - name: Επισκόπηση ενοποίησης δεδομένων
       href: data-unification.md
-    - name: Αντιστοίχιση οντοτήτων και χαρακτηριστικών
+    - name: Επιλογή πεδίων προέλευσης
       href: map-entities.md
-    - name: Αντιστοίχιση οντοτήτων
+    - name: Κατάργηση διπλότυπων καρτελών
+      href: remove-duplicates.md
+    - name: Συνθήκες αντιστοίχισης
       href: match-entities.md
-    - name: Συγχώνευση οντοτήτων
+    - name: Ενοποίηση πεδίων πελατών
       href: merge-entities.md
+    - name: Έλεγοχς της ενοποίησης δεδομένων
+      href: review-unification.md
+    - name: Ενημέρωση των ρυθμίσεων ενοποίησης
+      href: data-unification-update.md
 - name: Εμπλουτισμός δεδομένων
   items:
     - name: Εμπλουτισμός προφίλ πελατών
@@ -282,6 +288,8 @@
       href: apis.md
     - name: Αναφορές API
       href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
+    - name: Ερωτήματα δειγμάτων OData
+      href: odata-examples.md
 - name: Διαχείριση συναίνεσης (Έκδοση προεπισκόπησης)
   items:
     - name: Κέντρο βοήθειας

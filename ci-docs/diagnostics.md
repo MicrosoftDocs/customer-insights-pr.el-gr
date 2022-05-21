@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 18fc072d129be6b4fc5470b1057f592dc2638216
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 03169f0218dfad55cf20ecaf1c1596c652e5f601
+ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646557"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755262"
 ---
 # <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>Καταχώρηση προώθησης στο Dynamics 365 Customer Insights με Παρακολούθηση Azure (Έκδοση προεπισκόπησης)
 
@@ -27,8 +27,8 @@ ms.locfileid: "8646557"
 - **Συμβάντα ελέγχου**
   - **APIEvent** - επιτρέπει την παρακολούθηση αλλαγών που γίνεται μέσω του περιβάλλοντος εργασίας χρήστη Dynamics 365 Customer Insights.
 - **Συμβάντα λειτουργίας**
-  - **WorkflowEvent** - Η ροή εργασιών επιτρέπει σε κάποιον να ρυθμίσει [προελεύσεις δεδομένων](data-sources.md), [να ενοποιήσει](data-unification.md) και [να εμπλουτίσει](enrichment-hub.md) και, τέλος, [να εξαγάγει](export-destinations.md) δεδομένα σε άλλα συστήματα. Όλα αυτά τα βήματα μπορούν να γίνουν μεμονωμένα (π.χ. να ενεργοποιούν μια μεμονωμένη εξαγωγή) ή να ενορχηστρωμένα (π.χ. ανανέωση δεδομένων από πηγές δεδομένων που ενεργοποιούν τη διεργασία ενοποίηση, η οποία θα τραβήξει επιπλέον εμπλουτισμούς και αφού γίνει θα εξαγάγει τα δεδομένα σε άλλο σύστημα). Για περισσότερες λεπτομέρειες, ανατρέξτε στο [Σχήμα WorkflowEvent](#workflow-event-schema).
-  - **APIEvent** - όλες οι κλήσεις API στην παρουσία των πελατών στο Dynamics 365 Customer Insights. Για περισσότερες λεπτομέρειες, ανατρέξτε στο [Σχήμα APIEvent](#api-event-schema).
+  - **WorkflowEvent** - Η ροή εργασιών σας επιτρέπει να ρυθμίσετε [προελεύσεις δεδομένων](data-sources.md), [να ενοποιήσετε](data-unification.md), [να εμπλουτίσετε](enrichment-hub.md) και τέλος, [να εξαγάγετε](export-destinations.md) δεδομένα σε άλλα συστήματα. Όλα αυτά τα βήματα μπορούν να γίνουν μεμονωμένα (για παράδειγμα, ενεργοποιήστε μια μεμονωμένη εξαγωγή). Μπορούν επίσης να εκτελεστούν ενορχηστρωμένα (για παράδειγμα, η ανανέωση δεδομένων από προελεύσεις δεδομένων που ενεργοποιούν τη διεργασία ενοποίησης, η οποία θα προσελκύσει εμπλουτισμούς και αφού γίνει αυτό, η εξαγωγή των δεδομένων σε άλλο σύστημα). Για περισσότερες πληροφορίες, ανατρέξτε στο [Σχήμα WorkflowEvent](#workflow-event-schema).
+  - **APIEvent** - όλες οι κλήσεις API στην παρουσία των πελατών στο Dynamics 365 Customer Insights. Για περισσότερες πληροφορίες, ανατρέξτε στο [Σχήμα APIEvent](#api-event-schema).
 
 ## <a name="set-up-the-diagnostic-settings"></a>Ρύθμιση των διαγνωστικών ρυθμίσεων
 
@@ -55,7 +55,7 @@ ms.locfileid: "8646557"
 
 1. Επιλέξτε τον **Μισθωτή** της συνδρομής Azure με τον πόρο προορισμού και επιλέξτε **Σύνδεση**.
 
-1. Επιλέξτε τον **Τύπο πόρου** (Λογαριασμός υπηρεσίας αποθήκευσης, Κέντρο συμβάντων ή ανάλυση αρχείου καταγραφής).
+1. Επιλέξτε τον **Τύπο πόρου** (Λογαριασμός υπηρεσίας αποθήκευσης, κέντρο συμβάντων ή ανάλυση αρχείου καταγραφής).
 
 1. Επιλέξτε τη **Συνδρομή** για τον πόρο προορισμού.
 
@@ -182,7 +182,7 @@ ms.locfileid: "8646557"
 
 ### <a name="workflow-event-schema"></a>Σχήμα συμβάντος ροής εργασιών
 
-Η ροή εργασιών περιέχει πολλά βήματα. [Κατάργηση προελεύσεων δεδομένων](data-sources.md), [ενοποίηση](data-unification.md), [εμπλουτισμός](enrichment-hub.md) και [εξαγωγή](export-destinations.md) δεδομένων. Όλα αυτά τα βήματα μπορούν να εκτελούνται μεμονωμένα ή να ενορχηστρωμένα με τις ακόλουθες διαδικασίες. 
+Η ροή εργασιών περιέχει πολλά βήματα. [Κατάργηση προελεύσεων δεδομένων](data-sources.md), [ενοποίηση](data-unification.md), [εμπλουτισμός](enrichment-hub.md) και [εξαγωγή](export-destinations.md) δεδομένων. Όλα αυτά τα βήματα μπορούν να εκτελούνται μεμονωμένα ή να ενορχηστρωμένα με τις ακόλουθες διαδικασίες.
 
 #### <a name="operation-types"></a>Τύποι λειτουργιών
 
@@ -215,7 +215,7 @@ ms.locfileid: "8646557"
 | `time`          | Χρονική σήμανση | Απαραίτητο          | Χρονική σήμανση του συμβάντος (UTC).                                                                                                                                 | `2020-09-08T09:48:14.8050869Z`                                                                                                                                           |
 | `resourceId`    | String    | Απαραίτητο          | ResourceId της παρουσίας που εξέπεμψε το συμβάν.                                                                                                            | `/SUBSCRIPTIONS/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX/RESOURCEGROUPS/<RESOURCEGROUPNAME>/`<br>`PROVIDERS/MICROSOFT.D365CUSTOMERINSIGHTS/`<br>`INSTANCES/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX` |
 | `operationName` | String    | Απαραίτητο          | Το όνομα της λειτουργίας που αντιπροσωπεύει αυτό το συμβάν. `{OperationType}.[WorkFlow|Task][Started|Completed]`. Ανατρέξτε στο [Τύποι κειτουργίας](#operation-types) για αναφορά. | `Segmentation.WorkflowStarted`,<br> `Segmentation.TaskStarted`, <br> `Segmentation.TaskCompleted`, <br> `Segmentation.WorkflowCompleted`                                 |
-| `category`      | String    | Απαραίτητο          | Κατηγορία αρχείου καταγραφής του συμβάντος. Πάντα `Operational` για συμβάντα ροής εργασιών                                                                                           | `Operational`                                                                                                                                                            | 
+| `category`      | String    | Απαραίτητο          | Κατηγορία αρχείου καταγραφής του συμβάντος. Πάντα `Operational` για συμβάντα ροής εργασιών                                                                                           | `Operational`                                                                                                                                                            |
 | `resultType`    | String    | Απαραίτητο          | Κατάσταση του συμβάντος. `Running`, `Skipped`, `Successful`, `Failure`                                                                                            |                                                                                                                                                                          |
 | `durationMs`    | Μεγάλου μήκους      | Προαιρετικές          | Διάρκεια της λειτουργίας σε χιλιοστά του δευτερολέπτου.                                                                                                                    | `133`                                                                                                                                                                    |
 | `properties`    | String    | Προαιρετικές          | Αντικείμενο JSON με περισσότερες ιδιότητες για τη συγκεκριμένη κατηγορία συμβάντων.                                                                                        | Δείτε δευτερεύουσα ενότητα [Ιδιότητες ροής εργασίας](#workflow-properties-schema)                                                                                                       |

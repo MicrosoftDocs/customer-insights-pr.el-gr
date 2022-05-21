@@ -8,12 +8,12 @@ author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: v-wendysmith
 manager: shellyha
-ms.openlocfilehash: 56f6a8ad20224922f9968f0ad3b6a0e0a400214b
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: d1e14d2d4e718d71ccbd2afd259a350ad5c9e69a
+ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646577"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755686"
 ---
 # <a name="enrichment-for-data-sources-preview"></a>Εμπλουτισμός για προελεύσεις δεδομένων (έκδοση προεπισκόπησης)
 
@@ -26,7 +26,7 @@ ms.locfileid: "8646577"
 1. Μετάβαση στα **Δεδομένα** > **Ενοποίηση**. Επιλέξτε την οντότητα που θέλετε να εμπλουτίσετε και επιλέξτε ένα χαρακτηριστικό ως πρωτεύον κλειδί για την οντότητα. Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Επιλογή κύριου κλειδιού](map-entities.md#select-primary-key-and-semantic-type-for-attributes).
 
 1. Μεταβείτε στα **Δεδομένα** > **Προελεύσεις δεδομένων**.
- 
+
 1. Επιλέξτε τα κατακόρυφα αποσιωπητίσεις δίπλα στην προέλευση δεδομένων θέλετε να εμπλουτίσετε και να επιλέξετε **Εμπλουτισμός**.
 
    :::image type="content" source="media/data_sources_enrich_discover.png" alt-text="Σελίδα εμπλουτισμών για προελεύσεις δεδομένων":::

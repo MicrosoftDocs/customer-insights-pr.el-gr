@@ -1,23 +1,22 @@
 ---
 title: Ενεργοποίηση κανόνων συγκατάθεσης για τμήματα αγοράς
 description: Ακολουθήστε αυτά τα βήματα για τη σύνδεση δεδομένων συγκατάθεσης και την ενεργοποίηση ελέγχων συγκατάθεσης στο Dynamics 365 Customer Insights. Ένας διαχειριστής μπορεί επίσης να απενεργοποιήσει τους ελέγχους συγκατάθεσης.
-ms.date: 11/12/2021
-ms.subservice: audience-insights
+ms.date: 04/27/2022
 ms.topic: how-to
-author: smithy7
-ms.author: smithc
+author: anubhav-t
+ms.author: antando
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: bfa03f4b7b56b300a74ebd04721cd64b893879f1
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: f82e3a4031fee8bcaa88575cbd68b37385a7fffb
+ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646635"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755170"
 ---
 # <a name="activate-consent-rules"></a>Ενεργοποίηση κανόνων συγκατάθεσης
 
-Το [Κέντρο συναινέσεις (προεπισκόπηση)](consent-management/overview.md) σάς βοηθάει να εναρμονίζετε τα δεδομένα συγκατάθεσης από διάφορες πηγές. Χρησιμοποιήστε την ενοποιημένη οντότητα *Συγκατάθεση* για να εφαρμόσετε προεπιλεγμένους ελέγχους συγκατάθεσης. Μετά την εισαγωγή δεδομένων συγκατάθεσής στο Κέντρο συγκατάθεσης και τη ρύθμιση παραμέτρων των κανόνων για τα δεδομένα, η οντότητα *Συγκατάθεση* συγχρονίζεται αυτόματα με το Dynamics 365 Customer Insights.
+Το [Κέντρο συναινέσεις (προεπισκόπηση)](consent-management/overview.md) σάς βοηθάει να εναρμονίζετε τα δεδομένα συγκατάθεσης από διάφορες πηγές. Χρησιμοποιήστε την ενοποιημένη οντότητα *Συγκατάθεση* για να εφαρμόσετε προεπιλεγμένους ελέγχους συγκατάθεσης. Μετά την εισαγωγή δεδομένων συγκατάθεσης και τη ρύθμιση κανόνων αντιστοίχισης, η οντότητα *Συγκατάθεση* συγχρονίζεται αυτόματα με το Dynamics 365 Customer Insights.
 
 ## <a name="enable-consent-checks"></a>Ενεργοποίηση ελέγχων συγκατάθεσης
 

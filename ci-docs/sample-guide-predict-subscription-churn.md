@@ -1,8 +1,8 @@
 ---
 title: Δείγμα οδηγού πρόβλεψης απώλειας συνδρομών
 description: Χρησιμοποιήστε αυτό το δείγμα οδηγού για να δοκιμάσετε το έτοιμο μοντέλο πρόβλεψης απώλειας συνδρομών.
-ms.date: 11/19/2020
-ms.reviewer: mhart
+ms.date: 03/31/2022
+ms.reviewer: v-wendysmith
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: m-hartmann
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-create-prediction
 - customerInsights
-ms.openlocfilehash: 2aea6c62421b308705899e4f8af64f64bfcb2d3d
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 5a8eeafecacef3d0bb4a798b698cf490423ca98d
+ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647092"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8741411"
 ---
 # <a name="subscription-churn-prediction-sample-guide"></a>Δείγμα οδηγού πρόβλεψης απώλειας συνδρομών
 
@@ -112,61 +112,7 @@ ms.locfileid: "8647092"
 
 ## <a name="task-2---data-unification"></a>Εργασία 2 - Ενοποίηση δεδομένων
 
-Αφού ληφθούν τα δεδομένα, ξεκινάμε τώρα τη διαδικασία **Χάρτης, Αντιστοίχιση, Συγχώνευση** για να δημιουργήσουμε ένα ενοποιημένο προφίλ πελάτη. Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Ενοποίηση δεδομένων](data-unification.md).
-
-### <a name="map"></a>Αντιστ.
-
-1. Μετά τη λήψη των δεδομένων, αντιστοιχίστε επαφές από το eCommerce και δεδομένα πίστης σε κοινούς τύπους δεδομένων. Μετάβαση στα **Δεδομένα** > **Ενοποίηση** > **Αντιστοίχιση**.
-
-1. Επιλέξτε τις οντότητες που αντιπροσωπεύουν το προφίλ πελάτη – **eCommerceContacts** και **loyCustomers**. 
-
-   :::image type="content" source="media/unify-ecommerce-loyalty.PNG" alt-text="ενοποίηση προελεύσεις δεδομένων ecommerce και πίστης.":::
-
-1. Επιλέξτε **ContactId** ως πρωτεύον κλειδί για **eCommerceContacts** και **LoyaltyID** ως προωτεύον κλειδί για **loyCustomers**.
-
-   :::image type="content" source="media/unify-loyaltyid.PNG" alt-text="Ενοποίηση του LoyaltyId ως πρωτεύοντος κλειδιού.":::
-
-### <a name="match"></a>Αντιστοίχιση
-
-1. Μετάβαση στην καρτέλα **Αντιστοίχιση** κι επιλέξτε **Ορισμός σειράς**.
-
-1. Στην αναπτυσσόμενη λίστα **Κύρια**, επιλέξτε **eCommerceContacts : eCommerce** ως κύρια προέλευσης και συμπεριλάβετε όλες τις καρτέλες.
-
-1. Στην αναπτυσσόμενη λίστα **Οντότητα 2**, επιλέξτε **loyCustomers : LoyaltyScheme** και συμπεριλάβετε όλες τις καρτέλες.
-
-   :::image type="content" source="media/unify-match-order.PNG" alt-text="Ενοποίηση αντιστοίχισης eCommerce και πίστης.":::
-
-1. Επιλέξτε **Δημιουργία νέου κανόνα**
-
-1. Προσθέστε την πρώτη σας συνθήκη χρησιμοποιώντας το ονοματεπώνυμο.
-
-   * Για το eCommerceContacts, επιλέξτε **FullName** στην αναπτυσσόμενη λίστα.
-   * Για το loyCustomers, επιλέξτε **FullName** στην αναπτυσσόμενη λίστα.
-   * Επιλέξτε την αναπτυσσόμενη λίστα **Ομαλοποίηση** και επιλέξτε **Τύπος (τηλέφωνο, όνομα, διεύθυνση,...)**.
-   * Ορίστε **Επίπεδο ακριβείας**: **Βασικό** και **Αξία**: **Υψηλή**.
-
-1. Εισαγάγετε το όνομα **Ονοματεπώνυμο, ηλεκτρονικό ταχυδρομείο** για τον νέο κανόνα.
-
-   * Προσθέστε μια δεύτερη συνθήκη για τη διεύθυνση ηλεκτρονικού ταχυδρομείου επιλέγοντας **Προσθήκη συνθήκης**
-   * Για το eCommerceContacts της οντότητας, επιλέξτε **Ηλεκτρονικό ταχυδρομείο** στην αναπτυσσόμενη λίστα.
-   * Για το loyCustomers της οντότητας, επιλέξτε **Ηλεκτρονικό ταχυδρομείο** στην αναπτυσσόμενη λίστα. 
-   * Αφήστε την «Κανονικοποίηση» κενή. 
-   * Ορίστε **Επίπεδο ακριβείας**: **Βασικό** και **Αξία**: **Υψηλή**.
-
-   :::image type="content" source="media/unify-match-rule.PNG" alt-text="Ενοποίηση του κανόνα αντιστοίχισης για όνομα και μήνυμα ηλεκτρονικού ταχυδρομείου.":::
-
-7. Επιλέξτε **Αποθήκευση** και **Εκτέλεση**.
-
-### <a name="merge"></a>Συγχώνευση
-
-1. Μεταβείτε στην καρτέλα **Συγχώνευση**.
-
-1. Στην οντότητα **ContactId** για **loyCustomers**, αλλάξτε τα εμφανιζόμενο όνομα σε **ContactIdLOYALTY** για να το διαφοροποιήσετε από τα υπόλοιπα αναγνωριστικά που έχουν ληφθεί.
-
-   :::image type="content" source="media/unify-merge-contactid.PNG" alt-text="μετονομάστε το contactid από αναγνωριστικό πίστης.":::
-
-1. Επιλέξτε **Αποθήκευση** και **Εκτέλεση** για να αρχίσετε τη διαδικασία συγχώνευσης.
-
+[!INCLUDE [sample-guide-unification](includes/sample-guide-unification.md)]
 
 ## <a name="task-3---configure-the-subscription-churn-prediction"></a>Εργασία 3 - Ρύθμιση παραμέτρων της πρόβλεψης απώλειας συνδρομών
 

@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: 1dd99edc327bd41b0442b390f2e4f8664269f553
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 776eee79c25edbd40ed119510a314f5126933c3e
+ms.sourcegitcommit: a50c5e70d2baf4db41a349162fd1b1f84c3e03b6
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646869"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8739162"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-account-by-using-an-azure-service-principal"></a>Σύνδεση σε έναν λογαριασμό Azure Data Lake Storage χρησιμοποιώντας μια αρχή υπηρεσίας Azure
 
@@ -40,7 +40,7 @@ ms.locfileid: "8646869"
 
 3. Στην περιοχή **Διαχείριση**, επιλέξτε **Εταιρικές εφαρμογές**.
 
-4. Αναζητήστε το αναγνωριστικό της εφαρμογής Microsoft `0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff` με το όνομα `Dynamics 365 AI for Customer Insights`.
+4. Προσθέστε ένα φίλτρο για **την εκκίνηση του αναγνωριστικού εφαρμογής με** `0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff` ή αναζητήστε το όνομα `Dynamics 365 AI for Customer Insights`.
 
 5. Εάν βρείτε μια καρτέλα που ταιριάζει, αυτό σημαίνει ότι η αρχή υπηρεσίας υπάρχει ήδη. 
    

@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 42095f369c47553e5ddf5fada54e559202c943a9
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 3d573a6c83b7f0b0c33e656eb383e20a96856b0b
+ms.sourcegitcommit: d45c00a5f6cb106714366af81e8070e7f53654b3
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646958"
+ms.lasthandoff: 05/15/2022
+ms.locfileid: "8757386"
 ---
 # <a name="export-segment-list-and-other-data-to-azure-blob-storage-preview"></a>Εξαγωγή λίστας τμημάτων και άλλων δεδομένων στον χώρο αποθήκευσης αντικειμένων blob Azure (έκδοση προεπισκόπησης)
 
@@ -44,7 +44,7 @@ ms.locfileid: "8646958"
 Μπορείτε να ρυθμίσετε τις παραμέτρους αυτής της εξαγωγής, εάν έχετε πρόσβαση σε μια σύνδεση αυτού του τύπου. Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Δικαιώματα που απαιτούνται για τη ρύθμιση των παραμέτρων μιας εξαγωγής](export-destinations.md#set-up-a-new-export).
 
 > [!IMPORTANT]
-> Αν ενεργοποιήσατε τη ρύθμιση διαγραφής για το λογαριασμό χώρου αποθήκευσης αντικειμένων Azure Blob, οι εξαγωγές θα αποτύχουν. Απενεργοποιήστε τη διαγραφή για να εξαγάγετε δεδομένα στα blob. Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Ενεργοποίηση διαγραφής αντικειμένου blob](/azure/storage/blobs/soft-delete-blob-enable.md)
+> Αν ενεργοποιήσατε τη ρύθμιση διαγραφής για το λογαριασμό χώρου αποθήκευσης αντικειμένων Azure Blob, οι εξαγωγές θα αποτύχουν. Απενεργοποιήστε τη διαγραφή για να εξαγάγετε δεδομένα στα blob. Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Ενεργοποίηση διαγραφής αντικειμένου blob](/azure/storage/blobs/soft-delete-blob-enable)
 
 1. Μεταβείτε στα **Δεδομένα** > **Εξαγωγές**.
 

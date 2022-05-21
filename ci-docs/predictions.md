@@ -12,12 +12,12 @@ searchScope:
 - ci-predictions
 - ci-custom-models
 - customerInsights
-ms.openlocfilehash: cca91f2bbe2fc64554199082a79c1b388a01ab52
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: e2cace3547a0b584dbf26ae5eecf86f3b256649f
+ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647131"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8740719"
 ---
 # <a name="complete-your-partial-data-with-predictions-deprecated"></a>Ολοκληρώστε τα μερικά δεδομένα σας με προβλέψεις (υπό απόσυρση)
 
@@ -37,7 +37,7 @@ ms.locfileid: "8647131"
 
 1. Ο οργανισμός σας διαθέτει μια παρουσία [που έχει ρυθμιστεί στο Microsoft Dataverse](/ai-builder/build-model#prerequisites) και βρίσκεται στον ίδιο οργανισμό με το Customer Insights.
 
-2. Οι πληροφορίες κοινού σας επισυνάπτονται στην παρουσία του Dataverse σας.
+2. Το περιβάλλον του Customer Insights επισυνάπτεται στην παρουσία του Dataverse.
 
 Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Δημιουργία νέου περιβάλλοντος](create-environment.md).
 

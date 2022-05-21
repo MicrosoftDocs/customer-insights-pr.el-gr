@@ -12,12 +12,12 @@ ms.custom: intro-internal
 searchScope:
 - ci-home
 - customerInsights
-ms.openlocfilehash: 0efda9d2997bcfd069b6d2445b69d159d7d3e59b
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: c64ac94a7e0e743d3c13e32e394cc5d409420622
+ms.sourcegitcommit: c00441bc60b978e25f930b06c9d97b46fe462538
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646617"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8712902"
 ---
 # <a name="create-an-environment-in-customer-insights"></a>Δημιουργία περιβάλλοντος στο Customer Insights
 
@@ -63,8 +63,7 @@ ms.locfileid: "8646617"
 Αποθηκεύοντας δεδομένα στο Azure Data Lake Storage, συμφωνείτε ότι τα δεδομένα θα μεταφέρονται και θα αποθηκεύονται στην κατάλληλη γεωγραφική θέση για τον λογαριασμό χώρου αποθήκευσης Azure. Αυτή η θέση μπορεί να διαφέρει από το σημείο αποθήκευσης των δεδομένων στο Dynamics 365 Customer Insights. Μάθετε περισσότερα στο [Κέντρο αξιοπιστίας της Microsoft](https://www.microsoft.com/trust-center).
 
 > [!NOTE]
-> Προς το παρόν, το Customer Insights υποστηρίζει τα εξής:
-> - Οντότητες που έχουν αφομοιωθεί από ροές δεδομένων Power BI που αποθηκεύονται σε μια διαχειριζόμενη από Microsoft Dataverse λίμνη δεδομένων.  
+> Προς το παρόν, το Customer Insights υποστηρίζει τα εξής:  
 > - Λογαριασμοί Azure Data Lake Storage από την ίδια περιοχή Azure που επιλέξατε κατά τη δημιουργία του περιβάλλοντος.
 > - Λογαριασμοί Azure Data Lake Storage που είναι Gen2 και έχουν ενεργοποιημένο τον *ιεραρχικό χώρο ονομάτων*. Οι λογαριασμοί αποθήκευσης Azure Data Lake Gen1 δεν υποστηρίζονται.
 
@@ -80,7 +79,7 @@ ms.locfileid: "8646617"
 
 Παρέχετε το δικό σας περιβάλλον Microsoft Dataverse για κοινή χρήση δεδομένων (προφίλ και πληροφορίες) με επιχειρηματικές εφαρμογές που βασίζονται στο Dataverse, όπως εφαρμογές Dynamics 365 Marketing ή εφαρμογές βάσει μοντέλου στο Power Apps. Αφήστε αυτό το πεδίο κενό, εάν δεν έχετε το δικό σας περιβάλλον Dataverse και εμείς θα σας προσφέρουμε ένα.
 
-Η σύνδεση στο περιβάλλον σας Dataverse σάς επιτρέπει επίσης να [προσλαμβάνετε δεδομένα από προελεύσεις δεδομένων εσωτερικής εγκατάστασης χρησιμοποιώντας ροές δεδομένων και πύλες Power Platform](data-sources.md#add-data-from-on-premises-data-sources). Μπορείτε επίσης να χρησιμοποιήσετε [έτοιμα μοντέλα πρόβλεψης](predictions-overview.md?tabs=b2c#out-of-box-models) συνδεόμενοι σε ένα περιβάλλον Dataverse.
+Η σύνδεση στο περιβάλλον σας Dataverse σάς επιτρέπει επίσης να [προσλαμβάνετε δεδομένα από προελεύσεις δεδομένων εσωτερικής εγκατάστασης χρησιμοποιώντας ροές δεδομένων και πύλες Power Platform](data-sources.md#add-data-from-on-premises-data-sources).
 
 > [!IMPORTANT]
 > 1. Τα Customer Insights και Dataverse πρέπει να βρίσκονται στην ίδια περιοχή για να είναι δυνατή η κοινή χρήση δεδομένων.

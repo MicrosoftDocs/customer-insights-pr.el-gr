@@ -8,12 +8,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: e77227e1e353c02cfb13e26a8ecbe0768ba6c0fa
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 772fe0978362ccd829077a8133e2a3e74043f3f8
+ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646688"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8741503"
 ---
 # <a name="export-data-to-azure-synapse-analytics-preview"></a>Εξαγωγή δεδομένων στο Azure Synapse Analytics (έκδοση προεπισκόπησης)
 
@@ -34,7 +34,7 @@ ms.locfileid: "8646688"
 
 - Μια ενεργή συνδρομή Azure.
 
-- Εάν χρησιμοποιείτε έναν νέο λογαριασμό Azure Data Lake Storage Gen2, η *αρχή υπηρεσίας για το Customer Insights* χρειάζεται δικαιώματα **συμβαλλόντος δεδομένων BLOB αποθήκευσης**. Μάθετε περισσότερα σχετικά με τη [σύνδεση σε λογαριασμό Azure Data Lake Storage Gen2 με την κύρια υπηρεσία Azure για πληροφορίες κοινού](connect-service-principal.md). Το Data Lake Storage Gen2 **πρέπει να έχει ενεργοποιημένο τον** [ιεραρχικό χώρο ονομάτων](/azure/storage/blobs/data-lake-storage-namespace).
+- Εάν χρησιμοποιείτε έναν νέο λογαριασμό Azure Data Lake Storage Gen2, η *αρχή υπηρεσίας για το Customer Insights* χρειάζεται δικαιώματα **συμβαλλόντος δεδομένων BLOB αποθήκευσης**. Μάθετε περισσότερα για [τη σύνδεση σε ένα Azure Data Lake Storage για λογαριασμό Gen2 με μια αρχή εξυπηρέτησης Azure για το Customer Insights](connect-service-principal.md). Το Data Lake Storage Gen2 **πρέπει να έχει ενεργοποιημένο τον** [ιεραρχικό χώρο ονομάτων](/azure/storage/blobs/data-lake-storage-namespace).
 
 - Στην ομάδα πόρων όπου βρίσκεται το Azure Synapse workspace, η *αρχή υπηρεσίας* και ο λογαριασμός χρήστη *Azure AD με δικαιώματα Διαχειριστή στο Customer Insights* χρειάζονται ανάθεση τουλάχιστον δικαιωμάτων **Αναγνώστη**. Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Εκχώρηση ρόλων Azure χρησιμοποιώντας την πύλη Azure](/azure/role-based-access-control/role-assignments-portal).
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: e155f75ffbc2c1bb228bece1b3e34846df794543
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 33a0562854e97b9ac5218e060f965996305627fd
+ms.sourcegitcommit: d45c00a5f6cb106714366af81e8070e7f53654b3
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646887"
+ms.lasthandoff: 05/15/2022
+ms.locfileid: "8757432"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>Σχήματα οντοτήτων σε Common Data Model
 
@@ -23,7 +23,7 @@ ms.locfileid: "8646887"
 
 Πρόκειται για ένα μοντέλο κοινόχρηστων δεδομένων που επιτρέπει την ευκολότερη συνεργασία των εφαρμογών και των ολοκληρωμένων δεδομένων, παρέχοντας έναν ενοποιημένο ορισμό των δεδομένων. Το Common Data Model περιλαμβάνει ένα εμπλουτισμένο σύστημα μεταδεδομένων με τυπικές οντότητες, σχέσεις, ιεραρχίες, χαρακτηριστικά και πολλά άλλα. Προήλθε από εφαρμογές Dynamics 365 και είναι ανοιχτού κώδικα στο GitHub με πάνω από 260 τυπικές οντότητες. Ένα μεγάλο σύστημα εσωτερικών και εξωτερικών συνεργατών συμβάλλει στις συγκεκριμένες έννοιες της βιομηχανίας στο Common Data Model.
 
-Πολλά συστήματα και πλατφόρμες υλοποιούν σήμερα το Common Data Model, συμπεριλαμβανομένων ροών δεδομένων Power BI και υπηρεσιών δεδομένων Azure. Υποστηρίζεται ήδη στις υπηρεσίες δεδομένων Microsoft Dataverse, Dynamics 365, Power Apps, Power BI και στις επερχόμενες υπηρεσίες δεδομένων Azure, οι οποίες θα παρέχονται απευθείας στην [Πρωτοβουλία ανοιχτών δεδομένων](https://www.microsoft.com/open-data-initiative).
+Πολλά συστήματα και πλατφόρμες υλοποιούν σήμερα το Common Data Model, συμπεριλαμβανομένων ροών δεδομένων Power BI και υπηρεσιών δεδομένων Azure. Υποστηρίζεται ήδη στις υπηρεσίες δεδομένων Microsoft Dataverse, Dynamics 365, Power Apps, Power BI και στις επερχόμενες υπηρεσίες δεδομένων Azure, οι οποίες θα παρέχονται απευθείας στην [Πρωτοβουλία ανοιχτών δεδομένων](https://dynamics.microsoft.com/en-us/open-data-initiative/).
 
 ## <a name="customer-insights-entity-schemas"></a>Σχήματα οντοτήτων Customer Insights
 
