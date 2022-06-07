@@ -6,7 +6,9 @@
   href: whats-new-customer-insights.md
 - name: Κατάλογος εκμάθησης
   items:
-    - name: Έναρξη
+    - name: Πιστοποιείστε ως Ειδικός Πλατφόρμας Δεδομένων Πελατών της Microsoft
+      href: /learn/certifications/exams/mb-260?tab=tab-instructor-led
+    - name: Έναρξη με το Customer Insights
       href: /learn/modules/get-started-customer-data-platform/
     - name: Λήψη δεδομένων
       href: /learn/modules/ingest-data-customer-insights/
@@ -34,8 +36,6 @@
       href: get-started.md
     - name: Ξεκινήστε με μια άδεια χρήσης επί πληρωμή
       href: paid-license.md
-    - name: Δημιουργία νέου περιβάλλοντος
-      href: create-environment.md
     - name: Εξερεύνηση του Customer Insights
       href: home.md
     - name: Εργασία με ετικέτες και στήλες
@@ -198,6 +198,8 @@
           href: export-campaign-monitor.md
         - name: Constant Contact
           href: export-constant-contact.md
+        - name: Criteo
+          href: export-criteo.md
         - name: DotDigital
           href: export-dotdigital.md
         - name: Dynamics 365 Marketing
@@ -254,12 +256,22 @@
       href: entities.md
     - name: Δείτε τα σχήματα οντοτήτων στο Common Data Model
       href: entity-schemas.md
-    - name: Δεδομένα Customer Insights στο Dataverse
-      href: customer-insights-dataverse.md
     - name: Δημιουργία σχέσεων και συνδεδεμένων οντοτήτων
       href: relationships.md
     - name: Ορισμός σημασιολογικών αντιστοιχίσεων
       href: semantic-mappings.md
+- name: Περιβάλλοντα
+  items:
+    - name: Δημιουργία νέου περιβάλλοντος
+      href: create-environment.md
+    - name: Σύνδεση στο Microsoft Dataverse
+      href: customer-insights-dataverse.md
+    - name: Χρησιμοποιήστε το δικό σας Azure Data Lake Storage
+      href: own-data-lake-storage.md
+    - name: Διαχείρισης ρυθμίσεων περιβάλλοντος
+      href: manage-environments.md
+    - name: Σύνδεση σε έναν λογαριασμό αποθήκευσης χρησιμοποιώντας μια αρχή υπηρεσίας
+      href: connect-service-principal.md
 - name: Διαχείριση
   items:
     - name: Ρύθμιση παραμέτρων συστήματος
@@ -268,20 +280,12 @@
       href: security-overview.md
     - name: Ανάθεση δικαιωμάτων χρήστη
       href: permissions.md
-    - name: Επισκόπηση συνδέσεων
-      href: connections.md
-    - name: Διαχείριση πολλών περιβαλλόντων
-      href: manage-environments.md
     - name: Φέρετε τον δικό σας Θάλαμο κλειδιών
       href: use-azure-key-vault.md
-    - name: Σύνδεση σε έναν λογαριασμό αποθήκευσης χρησιμοποιώντας μια αρχή υπηρεσίας
-      href: connect-service-principal.md
     - name: Εξαγωγή αρχείων καταγραφής διαγνωστικών
       href: diagnostics.md
-    - name: Όρια εξυπηρέτησης
-      href: service-limits.md
-    - name: Δικαιώματα και αιτήσεις DSR
-      href: dsr-rights-requests.md
+    - name: Επισκόπηση συνδέσεων
+      href: connections.md
 - name: APIs
   items:
     - name: Εργασία με API
@@ -324,5 +328,9 @@
       items:
         - name: Δημιουργία προγνωσών με δεδομένα συγκατάθεσης
           href: consent-management/predictions-consent-data.md
+- name: Όρια εξυπηρέτησης
+  href: service-limits.md
+- name: Δικαιώματα και αιτήσεις DSR
+  href: dsr-rights-requests.md
 - name: Λήψη υποστήριξης
   href: /power-platform/admin/get-help-support

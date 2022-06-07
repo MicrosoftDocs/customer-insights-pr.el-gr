@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 03169f0218dfad55cf20ecaf1c1596c652e5f601
-ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
+ms.openlocfilehash: 15ae772617efa4c64cf79d0bac10a0c3cb28ca30
+ms.sourcegitcommit: a92bf5985263240fd07bad98d8e119b88cf2c9d9
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8755262"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "8807581"
 ---
 # <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>Καταχώρηση προώθησης στο Dynamics 365 Customer Insights με Παρακολούθηση Azure (Έκδοση προεπισκόπησης)
 
@@ -38,7 +38,7 @@ ms.locfileid: "8755262"
 
 - Έχετε ενεργή [συνδρομή στο Azure](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/).
 - Έχετε δικαιώματα [Διαχειριστή](permissions.md#admin) στο Customer Insights.
-- Έχετε το ρόλο **Συμμετέχοντα** και **Διαχειριστή πρόσβασης χρήστη** στον πόρο προορισμού στο Azure. Ο πόρος μπορεί να είναι ένας λογαριασμός Υπηρεσίας αποθήκευσης Azure, ένα Κέντρο συμβάντων Azure ή ένας χώρος εργασίας ανάλυσης αρχείων καταγραφής Azure. Για περισσότερες πληροφορίες, δείτε [Προσθήκη ή κατάργηση αντιστοιχίσεων ρόλων Azure χρησιμοποιώντας την πύλη Azure](/azure/role-based-access-control/role-assignments-portal).
+- Έχετε το ρόλο **Συμμετέχοντα** και **Διαχειριστή πρόσβασης χρήστη** στον πόρο προορισμού στο Azure. Ο πόρος μπορεί να είναι ένας λογαριασμός Azure Data Lake Storage, ένα Κέντρο συμβάντων Azure ή ένας χώρος εργασίας ανάλυσης αρχείων καταγραφής Azure. Για περισσότερες πληροφορίες, δείτε [Προσθήκη ή κατάργηση αντιστοιχίσεων ρόλων Azure χρησιμοποιώντας την πύλη Azure](/azure/role-based-access-control/role-assignments-portal). Αυτό το δικαίωμα είναι απαραίτητο κατά τη ρύθμιση των παραμέτρων διαγνωστικών στο Customer Insights, μπορεί να αλλάξει μετά από μια επιτυχή εγκατάσταση.
 - [Απαιτήσεις προορισμού](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) για την Υπηρεσία αποθήκευσης Azure, το Κέντρο συμβάντων Azure ή την Ανάλυση αρχείου καταγραφής Azure πληρούνται.
 - Έχετε τουλάχιστον τον ρόλο **Αναγνώστης** στην ομάδα πόρων στην οποία ανήκει ο πόρος.
 

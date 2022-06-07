@@ -11,12 +11,12 @@ ms.reviewer: mhart
 searchScope:
 - ci-dataverse
 - customerInsights
-ms.openlocfilehash: e8a294a4bad1581539b5905160cddcd625699d90
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 7140e9254108bc6f0d518b3ccf4b10fc33cde115
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646634"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800173"
 ---
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>Σύνδεση με δεδομένα σε μια διαχειριζόμενη λίμνη δεδομένων του Microsoft Dataverse
 
@@ -62,7 +62,7 @@ ms.locfileid: "8646634"
 
 1. Μεταβείτε στα **Δεδομένα** > **Προελεύσεις δεδομένων**.
 
-2. Δίπλα στην προέλευση δεδομένων που θα θέλατε να ενημερώσετε, επιλέξτε τα αποσιωπητικά.
+2. Δίπλα στο προέλευση δεδομένων θέλετε να ενημερώσετε, επιλέξτε τα κατακόρυφα αποσιωπητικά (&vellip;).
 
 3. Επιλέξτε **Επεξεργασία** από τη λίστα.
 

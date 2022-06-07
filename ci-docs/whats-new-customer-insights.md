@@ -8,12 +8,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: 386198c838929a20e136288fffb1015707654d8d
-ms.sourcegitcommit: 9f256af5c4f7e99305bf09087f7ec05eebeae6a0
+ms.openlocfilehash: af79c8369dd608e8ce1c14c50bb9aef3a79b9029
+ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8700937"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "8833630"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>Τι νέο υπάρχει στο Dynamics 365 Customer Insights
 
@@ -58,6 +58,7 @@ ms.locfileid: "8700937"
 Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Εμπλουτισμός προφίλ πελατών με δεδομένα ταυτότητας από το LiveRamp (Έκδοση προεπισκόπησης)](enrichment-liveramp.md).
 
 ### <a name="organize-segments-and-measures-with-tags-and-filters"></a>Οργάνωση τμημάτων και μετρήσεων με ετικέτες και φίλτρα
+
 Εάν ο οργανισμός σας διατηρεί πολλά τμήματα της αγοράς ή μετρήσεις, μερικές φορές η εύρεση του σωστού μπορεί να σας κάνει να νιώσετε πρόκληση. Αυτή η νέα δυνατότητα σάς επιτρέπει να οργανώνετε λίστες χρησιμοποιώντας ετικέτες και στήλες. Σας βοηθά να βρείτε δεδομένα γρήγορα και εύκολα και να προσαρμόσετε τις προβολές.
 
 Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Εργασία με ετικέτες και στήλες](work-with-tags-columns.md).
@@ -65,9 +66,9 @@ ms.locfileid: "8700937"
 ### <a name="enable-data-sharing-with-dataverse-when-using-your-own-storage-account"></a>Ενεργοποίηση κοινής χρήσης δεδομένων με Dataverse όταν χρησιμοποιείτε το δικό σας λογαριασμό αποθήκευσης
 
 Εάν το περιβάλλον σας χρησιμοποιεί το Azure Data Lake Storage για την αποθήκευση δεδομένων Customer Insights, με κοινή χρήση του Microsoft Dataverse χρειάζονται επιπλέον ρυθμίσεις παραμέτρων.
-Νωρίτερα, θα μπορούσατε να ενεργοποιήσετε την κοινή χρήση δεδομένων με το Dataverse μόνο όταν τα δεδομένα σας είχαν αποθηκευτεί στη διαχειριζόμενη περιοχή δεδομένων μας. 
+Νωρίτερα, θα μπορούσατε να ενεργοποιήσετε την κοινή χρήση δεδομένων με το Dataverse μόνο όταν τα δεδομένα σας είχαν αποθηκευτεί στη διαχειριζόμενη περιοχή δεδομένων μας.
 
-Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Ενεργοποίηση της κοινής χρήσης δεδομένων με το Dataverse από το δικό σας Azure Data Lake Storage (Έκδοση προεπισκόπησης)](manage-environments.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview).
+Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Ενεργοποίηση της κοινής χρήσης δεδομένων με το Dataverse από το δικό σας Azure Data Lake Storage (Έκδοση προεπισκόπησης)](customer-insights-dataverse.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview).
 
 ### <a name="new-export-destinations-iterable-and-braze"></a>Νέοι προορισμοί εξαγωγής: Iterable και Braze
 
@@ -81,7 +82,6 @@ ms.locfileid: "8700937"
 
 - Google Ads: Η νέα έκδοση του συνδέσμου εξαγωγής του Google Ads απλοποιεί την εμπειρία ελέγχου ταυτότητας και σας επιτρέπει πλέον να δημιουργείτε αυτόματα νέα κοινά στο Google Ads. 
 - Marketo: Η νέα έκδοση του συνδέσμου εξαγωγής Marketo παρέχει υποστήριξη για το αναγνωριστικό Marketo, δίνοντάς σας τη δυνατότητα να αποφεύγετε την επικάλυψη δεδομένων, να ενημερώνετε υπάρχουσες καρτέλες και να δημιουργείτε νέες καρτέλες στο Marketo. 
-
 
 ## <a name="february-2022-updates"></a>Ενημερώσεις Φεβρουαρίου 2022
 
