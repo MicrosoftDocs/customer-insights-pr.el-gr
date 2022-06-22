@@ -11,18 +11,18 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 3848e143bc7cb2f345bc698a274b92148ef00669
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: 252723b8c174cb1ec488388c26fd2a1d398e9002
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833676"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011520"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>Εργασία με δεδομένα Customer Insights στο Microsoft Dataverse
 
 Το Customer Insights παρέχει την επιλογή ώστε οι οντότητες εξόδου να είναι διαθέσιμες ως [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro). Αυτή η ενοποίηση επιτρέπει την εύκολη κοινοποίηση δεδομένων και την προσαρμοσμένη ανάπτυξη μέσω προσέγγισης με χαμηλό περιεχόμενο κώδικα / χωρίς κώδικα. Οι [οντότητες εξόδου](#output-entities) είναι διαθέσιμες ως πίνακες σε ένα Dataverse περιβάλλον. Μπορείτε να χρησιμοποιήσετε τα δεδομένα για οποιαδήποτε άλλη εφαρμογή βάσει πινάκων Dataverse. Αυτοί οι πίνακες επιτρέπουν σενάρια, όπως αυτοματοποιημένες ροές εργασιών μέσω Power Automate ή δημιουργία εφαρμογών με το Power Apps.
 
-Η σύνδεση στο περιβάλλον σας Dataverse σάς επιτρέπει επίσης να [προσλαμβάνετε δεδομένα από προελεύσεις δεδομένων εσωτερικής εγκατάστασης χρησιμοποιώντας ροές δεδομένων και πύλες Power Platform](data-sources.md#add-data-from-on-premises-data-sources).
+Η σύνδεση στο περιβάλλον σας Dataverse σάς επιτρέπει επίσης να [προσλαμβάνετε δεδομένα από προελεύσεις δεδομένων εσωτερικής εγκατάστασης χρησιμοποιώντας ροές δεδομένων και πύλες Power Platform](connect-power-query.md#add-data-from-on-premises-data-sources).
 
 ## <a name="prerequisites"></a>Προϋποθέσεις
 

@@ -8,12 +8,12 @@ author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: v-wendysmith
 manager: shellyha
-ms.openlocfilehash: 1225482c4bf432ed747537b2c9bec9ab0e692a51
-ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
+ms.openlocfilehash: b34b83d7a73dbdf21984f626174524188f0f1dc1
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "8800281"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011473"
 ---
 # <a name="enrichment-for-data-sources-preview"></a>Εμπλουτισμός για προελεύσεις δεδομένων (έκδοση προεπισκόπησης)
 
@@ -29,9 +29,11 @@ ms.locfileid: "8800281"
 
 1. Επιλέξτε τα κατακόρυφα αποσιωπητικά (&vellip;) δίπλα στην προέλευση δεδομένων θέλετε να εμπλουτίσετε και να επιλέξετε **Εμπλουτισμός**.
 
-   :::image type="content" source="media/data_sources_enrich_discover.png" alt-text="Σελίδα εμπλουτισμών για προελεύσεις δεδομένων":::
+   :::image type="content" source="media/data_sources_enrich.png" alt-text="Σελίδα Προελεύσεις δεδομένων με τονισμένο τον Εμπλουτισμό":::
 
    Η καρτέλα **Ανακαλύψτε** τις [υποστηριζόμενες προέλευση δεδομένων εμπλουτισμού](#supported-data-source-enrichments).
+
+   :::image type="content" source="media/data_sources_enrich_discover.png" alt-text="Σελίδα εμπλουτισμών για προελεύσεις δεδομένων":::
 
 1. Επιλέξτε **Εμπλουτίτε τα δεδομένα μου** για να προέλευση δεδομένων εμπλουτισμό. Το όνομα οντότητας εξόδου συμπληρώνεται αυτόματα.
 

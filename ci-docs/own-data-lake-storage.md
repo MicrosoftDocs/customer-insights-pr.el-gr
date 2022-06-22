@@ -3,17 +3,17 @@ title: Χρήση του δικού σας λογαριασμού Azure Data Lak
 author: mukeshpo
 description: Ενημερωθείτε σχετικά με τις απαιτήσεις για χρήση του δικού σας λογαριασμού Azure Data Lake Storage για την αποθήκευση δεδομένων Customer Insights.
 ms.author: mukeshpo
-ms.date: 05/30/2022
+ms.date: 06/08/2022
 ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
 ms.reviewer: mhart
-ms.openlocfilehash: 9fcd7645e34bf310ac3a1b98a0dd9a60598b19dc
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: 5acb58906c1a9db54337f3b4dc2ab7891db7954e
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833922"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011933"
 ---
 # <a name="use-your-own-azure-data-lake-storage-gen2-account"></a>Χρήση του δικού σας λογαριασμού Azure Data Lake Storage Gen2
 
@@ -37,6 +37,7 @@ ms.locfileid: "8833922"
 1. Επιλέξτε τον τρόπο **Σύνδεσης του χώρου αποθήκευσης**. Μπορείτε να επιλέξετε μεταξύ μιας επιλογής που βασίζεται σε πόρους και μιας επιλογής που βασίζεται σε συνδρομή για έλεγχο ταυτότητας. Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Σύνδεση σε ένα λογαριασμό Azure Data Lake Storage χρησιμοποιώντας μια αρχή υπηρεσίας Azure](connect-service-principal.md).
    - Για τη **συνδρομή Azure**, επιλέξτε **Συνδρομή**, **Ομάδα πόρων** και **Λογαριασμός χώρου αποθήκευσης** που περιέχει το κοντέινερ `customerinsights`.
    - Για το **κλειδί λογαριασμού**, δώστε το **Όνομα λογαριασμού** και το **κλειδί λογαριασμού** για τον λογαριασμό Data Lake Storage. Η χρήση αυτής της μεθόδου ελέγχου ταυτότητας υποδηλώνει ότι είστε ενημερωμένοι εάν ο οργανισμός σας χρησιμοποιεί τα κλειδιά. Πρέπει [να ενημερώσετε τη ρύθμιση παραμέτρων του περιβάλλοντος](manage-environments.md#edit-an-existing-environment) με το νέο κλειδί όταν περιστραφεί.
+1. Επιλέξτε αν θέλετε να χρησιμοποιήσετε την Ιδιωτική σύνδεση Azure για να συνδεθείτε στο λογαριασμό χώρου αποθήκευσης και [δημιουργήστε τη σύνδεση σε ιδιωτική σύνδεση](security-overview.md#private-links-tab) με μια διεργασία δύο βημάτων.
 
 Όταν ολοκληρωθούν οι διαδικασίες συστήματος όπως η πρόσληψη δεδομένων, το σύστημα δημιουργεί τους αντίστοιχους φακέλους στο λογαριασμό χώρου αποθήκευσης. Τα αρχεία δεδομένων και τα αρχεία *model.json* δημιουργούνται και προστίθενται σε φακέλους με βάση το όνομα της διεργασίας.
 

@@ -1,30 +1,33 @@
 ---
-title: Ρυθμίσεις ασφάλειας στο Dynamics 365 Customer Insights
+title: Ρυθμίσεις ασφαλείας στο Customer Insights
 description: Ενημερωθείτε σχετικά με τις ρυθμίσεις ασφαλείας στο Dynamics 365 Customer Insights.
-ms.date: 04/28/2022
+ms.date: 06/08/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 5d73bacccadc9193d76d8dfafd0365dabc911e00
-ms.sourcegitcommit: cf74b8c20d88eb96e1ac86e18cd44fe27aad5ab9
+ms.openlocfilehash: 163deb9bed4f82d742c46cace27dd128f0aca18b
+ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "8653742"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "8947415"
 ---
-# <a name="security-overview-page"></a>Επισκόπηση σελίδας ασφαλείας
+# <a name="security-settings-in-customer-insights"></a>Ρυθμίσεις ασφαλείας στο Customer Insights
 
-Η σελίδα **"Ασφάλεια** παραθέτει επιλογές για τη ρύθμιση των δικαιωμάτων και των δυνατοτήτων του χρήστη που βοηθούν στο να είναι το Dynamics 365 Customer Insights πιο ασφαλές. Μόνο οι διαχειριστές μπορούν να έχουν πρόσβαση σε αυτήν τη σελίδα. 
+Η σελίδα **"Ασφάλεια** παραθέτει επιλογές για τη ρύθμιση των δικαιωμάτων και των δυνατοτήτων του χρήστη που βοηθούν στο να είναι το Dynamics 365 Customer Insights πιο ασφαλές. Μόνο οι διαχειριστές μπορούν να έχουν πρόσβαση σε αυτήν τη σελίδα.
 
 Μεταβείτε στην επιλογή **Διαχειριστής** > **Ασφάλεια** να ρυθμίσετε τις παραμέτρους.
 
 Η σελίδα **Ασφάλεια** περιλαμβάνει τις ακόλουθες καρτέλες:
+
 - [Χρήστες](#users-tab)
 - [APIs](#apis-tab)
+- [Ιδιωτικές συνδέσεις](#private-links-tab)
 - [Θάλαμος κλειδιών](#key-vault-tab)
+- [Ασφαλής πρόσβαση στα δεδομένα πελατών με το Customer Lockbox (έκδοση προεπισκόπησης)](#securely-access-customer-data-with-customer-lockbox-preview)
 
 ## <a name="users-tab"></a>Καρτέλα Χρήστες
 
@@ -38,6 +41,22 @@ ms.locfileid: "8653742"
 
 Για να αποκλείσετε την πρόσβαση μέσω API στο περιβάλλον, επιλέξτε **Απενεργοποίηση**. Εάν τα API είναι απενεργοποιημένα, μπορείτε να επιλέξετε **Ενεργοποίηση** για εκ νέου εκχώρηση πρόσβασης.
 
+## <a name="private-links-tab"></a>Καρτέλα Ιδιωτικών συνδέσεων
+
+Η [Ιδιωτική σύνδεση Azure](/azure/private-link/private-link-overview) επιτρέπει στο Customer Insights να συνδέεται στο λογαριασμό Azure Data Lake Storage μέσω ιδιωτικού τελικού σημείου στο εικονικό δίκτυό σας. Για τα δεδομένα σε ένα λογαριασμό χώρου αποθήκευσης που δεν εκτίθεται στο δημόσιο internet, η Ιδιωτική σύνδεση ενεργοποιεί τη σύνδεση στο εν λόγω περιορισμένο δίκτυο.
+
+> [!IMPORTANT]
+> Ελάχιστη απαίτηση ρόλου για τη ρύθμιση μιας σύνδεσης Ιδιωτικής σύνδεσης:
+>
+> - Customer Insights: Διαχειριστής
+> - Ενσωματωμένος ρόλος Azure: [Συμβάλλων λογαριασμών αποθήκευσης](/azure/role-based-access-control/built-in-roles#storage-account-contributor)
+> - Δικαιώματα για προσαρμοσμένο ρόλο Azure: [Microsoft.Storage/storageAccounts/read και Microsoft.Storage/storageAccounts/PrivateEndpointConnectionsApproval/action](/azure/role-based-access-control/resource-provider-operations#microsoftstorage)
+>
+
+Η ρύθμιση της ιδιωτικής σύνδεσης στο Customer Insights είναι μια διαδικασία δύο βημάτων. Αρχικά, ξεκινάτε τη δημιουργία μιας ιδιωτικής σύνδεσης **Διαχειριστής** > **Ασφάλεια** > **Ιδιωτικές συνδέσεις** στο Customer Insights. Το τμήμα παραθύρου **Προσθήκη ιδιωτικής σύνδεσης** παραθέτει τους λογαριασμούς χώρου αποθήκευσης από τον μισθωτή σας, τους οποίους έχετε δικαιώματα να δείτε. Επιλέξτε το λογαριασμό χώρου αποθήκευσης και δώστε τη συγκατάθεσή σας για τη δημιουργία της Ιδιωτικής σύνδεσης.
+
+Στη συνέχεια, θα πρέπει να εγκρίνετε την Ιδιωτική σύνδεση στην πλευρά του λογαριασμού Data Lake Storage. Ανοίξτε τη σύνδεση που εμφανίζεται στην οθόνη για να εγκρίνετε τη νέα Ιδιωτική σύνδεση.
+
 ## <a name="key-vault-tab"></a>Καρτέλα Key Vault
 
 Η καρτέλα **Key Vault** σάς επιτρέπει να συνδέετε και να διαχειρίζεστε το δικό σας [χώρο αποθήκευσης κλειδιών Azure](/azure/key-vault/general/basic-concepts) στο περιβάλλον.
@@ -45,5 +64,13 @@ ms.locfileid: "8653742"
 
 Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Φέρετε το δικό σας χώρο αποθήκευσης κλειδιών Azure](use-azure-key-vault.md).
 
+## <a name="securely-access-customer-data-with-customer-lockbox-preview"></a>Ασφαλής πρόσβαση στα δεδομένα πελατών με το Customer Lockbox (έκδοση προεπισκόπησης)
+
+Το Customer Insights χρησιμοποιεί τη δυνατότητα Κιβώτιο ασφαλείας πελατών Power Platform. Το Κιβώτιο ασφαλείας πελατών παρέχει ένα περιβάλλον εργασίας χρήστη για την εξέταση και την έγκριση (ή απόρριψη) των αιτήσεων πρόσβασης σε δεδομένα. Αυτές οι αιτήσεις προκύπτουν όταν απαιτείται η πρόσβαση δεδομένων στα δεδομένα των πελατών για την επίλυση μιας υπόθεσης υποστήριξης. Για να χρησιμοποιήσετε αυτήν τη δυνατότητα, το Customer Insights πρέπει να έχει μια υπάρχουσα σύνδεση σε ένα περιβάλλον Microsoft Dataverse στον μισθωτή σας.
+
+Για περισσότερες πληροφορίες σχετικά με το Κιβώτιο ασφαλείας πελατών δείτε τη [σύνοψη](/power-platform/admin/about-lockbox#summary) του κιβωτίου ασφαλείας πελατών Power Platform. Το άρθρο περιγράφει επίσης τη [ροή εργασιών](/power-platform/admin/about-lockbox#workflow) και την απαιτούμενη [ρύθμιση](/power-platform/admin/about-lockbox#enable-the-lockbox-policy) για να ενεργοποιήσετε το Κιβώτιο ασφαλείας πελατών.
+
+> [!IMPORTANT]
+> Οι καθολικοί διαχειριστές για Power Platform ή Power Platform μπορούν να εγκρίνουν αιτήσεις κιβωτίου ασφαλείας πελατών που εκδίδονται για το Customer Insights.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

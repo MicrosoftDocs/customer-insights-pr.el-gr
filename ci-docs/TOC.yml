@@ -48,14 +48,14 @@
   items:
     - name: Επισκόπηση προελεύσεων δεδομένων
       href: data-sources.md
+    - name: Σύνδεση σε δεδομένα στο Azure Data Lake Storage
+      href: connect-common-data-model.md
+    - name: Σύνδεση στο Azure Synapse Analytics
+      href: connect-synapse.md
+    - name: Σύνδεση με δεδομένα σε μια διαχειριζόμενη λίμνη δεδομένων του Microsoft Dataverse
+      href: connect-dataverse-managed-lake.md
     - name: Προσθήκη προελεύσεων δεδομένων μέσω συνδέσμων Power Query
       href: connect-power-query.md
-    - name: Προσθήκη φακέλου Common Data Model ως προέλευση δεδομένων
-      href: connect-common-data-model.md
-    - name: Προσθήκη διαχειριζόμενου data lake του Dataverse
-      href: connect-dataverse-managed-lake.md
-    - name: Προσθήκη Azure Synapse Analytics
-      href: connect-synapse.md
     - name: Εμπλουτισμός για προελεύσεις δεδομένων
       href: data-sources-enrichment.md
     - name: Σταδιακή ανανέωση για προελεύσεις δεδομένων
@@ -82,27 +82,27 @@
   items:
     - name: Εμπλουτισμός προφίλ πελατών
       href: enrichment-hub.md
+    - name: Λογαριασμοί από δεδομένα Office 365
+      href: enrichment-office.md
     - name: Επωνυμίες και ενδιαφέροντα
       href: enrichment-microsoft.md
+    - name: Εταιρικά δεδομένα από το Dun & Bradstreet
+      href: enrichment-dnb.md
+    - name: Εταιρικά δεδομένα από το Leadspace
+      href: enrichment-leadspace.md
+    - name: Δημογραφικά στοιχεία με Experian
+      href: enrichment-experian.md
     - name: Βελτιωμένες διευθύνσεις
       href: enrichment-enhanced-addresses.md
     - name: Βελτιωμένα εταιρικά δεδομένα
       href: enrichment-enhanced-company-data.md
-    - name: Εμπλουτισμός με Χάρτες Azure
-      href: enrichment-azure-maps.md
-    - name: Εμπλουτισμός με Dun & Bradstreet
-      href: enrichment-dnb.md
-    - name: Εμπλουτισμός με το HERE Technologies
-      href: enrichment-here.md
-    - name: Εμπλουτισμός με Leadspace
-      href: enrichment-leadspace.md
-    - name: Εμπλουτισμός με LiveRamp
+    - name: Ταυτότητα με LiveRamp
       href: enrichment-liveramp.md
-    - name: Εμπλουτισμός με Experian
-      href: enrichment-experian.md
-    - name: Εμπλουτισμός με δεδομένα του Office 365
-      href: enrichment-office.md
-    - name: Εμπλουτισμός με προσαρμοσμένη εισαγωγή SFTP
+    - name: Τοποθεσία από τους Χάρτες Azure
+      href: enrichment-azure-maps.md
+    - name: Τοποθεσία από την HERE Technologies
+      href: enrichment-here.md
+    - name: Προσαρμοσμένη εισαγωγή SFTP
       href: enrichment-SFTP-custom-import.md
 - name: Ενοποιημένα προφίλ
   items:
@@ -112,6 +112,8 @@
       href: search-filter-index.md
     - name: Ορισμός δραστηριοτήτων πελάτη
       href: activities.md
+    - name: Διαχείριση συναίνεσης για το Customer Insights
+      href: consent-management.md
 - name: Τμήματα
   items:
     - name: Επισκόπηση τμημάτων
@@ -294,40 +296,6 @@
       href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
     - name: Ερωτήματα δειγμάτων OData
       href: odata-examples.md
-- name: Διαχείριση συναίνεσης (Έκδοση προεπισκόπησης)
-  items:
-    - name: Κέντρο βοήθειας
-      href: consent-management/index.yml
-    - name: Επισκόπηση δυνατοτήτων
-      href: consent-management/overview.md
-    - name: Έναρξη
-      items:
-        - name: Έναρξη
-          href: consent-management/get-started.md
-        - name: Έννοιες και ορολογία
-          href: consent-management/glossary.md
-    - name: Εισαγωγή δεδομένων συγκατάθεσης
-      items:
-        - name: Εισαγωγή δεδομένων συγκατάθεσης
-          href: consent-management/import-consent-data.md
-        - name: Καθορισμός δεδομένων συγκατάθεσης και εφαρμογή προτιμήσεων συγκατάθεσης
-          href: consent-management/set-consent-rules.md
-    - name: Διαχείριση δεδομένων συγκατάθεσης
-      items:
-        - name: Ενεργοποίηση κανόνων συγκατάθεσης στο Customer Insights
-          href: activate-consent.md
-        - name: Διαχείριση προεπιλεγμένων κανόνων συγκατάθεσης σε τμήματα Customer Insights
-          href: change-default-consent-rules.md
-    - name: Διαχείριση ρυθμίσεων και χρηστών
-      items:
-        - name: Ρύθμιση παραμέτρων ρυθμίσεων συστήματος
-          href: consent-management/system-settings.md
-        - name: Διαχείριση χρηστών και δικαιωμάτων
-          href: consent-management/manage-users.md
-    - name: Χρήση δεδομένων συγκατάθεσης
-      items:
-        - name: Δημιουργία προγνωσών με δεδομένα συγκατάθεσης
-          href: consent-management/predictions-consent-data.md
 - name: Όρια εξυπηρέτησης
   href: service-limits.md
 - name: Δικαιώματα και αιτήσεις DSR

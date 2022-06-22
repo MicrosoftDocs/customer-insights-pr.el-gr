@@ -12,12 +12,12 @@ ms.custom: intro-internal
 searchScope:
 - ci-home
 - customerInsights
-ms.openlocfilehash: 68c26eb0ad0da787a9f594b4aebe679588b0d6bf
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: 1c925110f40319df77940d1c32f24a99504d6ec6
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833539"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011979"
 ---
 # <a name="get-started-with-dynamics-365-customer-insights"></a>Γρήγορα αποτελέσματα με το Dynamics 365 Customer Insights
 
@@ -39,7 +39,7 @@ ms.locfileid: "8833539"
 
 Τα ενοποιημένα προφίλ αποτελούν τη βάση για τη λήψη πληροφοριών και την ανάληψη ενεργειών σχετικά με τα δεδομένα. Εισαγωγή δεδομένων από διάφορες προελεύσεις και εκτέλεση της διαδικασίας έγκρισης δεδομένων για συνδυασμό ενοποιημένων προφίλ. Καθορίστε σχέσεις μεταξύ των οντοτήτων που έχουν ληφθεί και χρησιμοποιήστε δυνατότητες εμπλουτισμού για να προσθέσετε πληροφορίες στα προφίλ.
 
-1. Κάντε εισαγωγή δεδομένων δημιουργώντας προελεύσεις δεδομένων από πολλές επιλογές. Επιλέξτε μεταξύ [συνδέσεων Power Query](connect-power-query.md), ενός [φακέλου Common Data Model](connect-common-data-model.md) ή ενός [Microsoft Dataverse](connect-dataverse-managed-lake.md).
+1. Κάντε εισαγωγή δεδομένων δημιουργώντας προελεύσεις δεδομένων από πολλές επιλογές. Επιλέξτε μεταξύ [Azure Data Lake Storage, συμπεριλαμβανομένου του Common Data Model](connect-common-data-model.md), [Azure Synapse Analytics](connect-synapse.md), [Microsoft Dataverse](connect-dataverse-managed-lake.md) ή [συνδέσμων Power Query](connect-power-query.md).
 
 1. Εκτελέστε τη [διεργασία ενοποίησης δεδομένων](data-unification.md) προσδιορίζοντας τα [πεδία προέλευσης](map-entities.md), καταργώντας [διπλότυπα](remove-duplicates.md), [αντιστοιχίζοντας συνθήκες](match-entities.md) και [ενοποιώντας πεδία](merge-entities.md).
 

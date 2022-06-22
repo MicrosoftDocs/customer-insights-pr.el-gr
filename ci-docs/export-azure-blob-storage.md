@@ -1,19 +1,19 @@
 ---
 title: Εξαγωγή δεδομένων Customer Insights σε έναν χώρο αποθήκευσης αντικειμένων blob Azure
 description: Μάθετε πώς να ρυθμίσετε τις παραμέτρους της σύνδεσης και της εξαγωγής σε χώρο αποθήκευσης blob.
-ms.date: 10/06/2021
+ms.date: 06/09/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
-author: pkieffer
-ms.author: philk
+author: stefanie-msft
+ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 3d573a6c83b7f0b0c33e656eb383e20a96856b0b
-ms.sourcegitcommit: d45c00a5f6cb106714366af81e8070e7f53654b3
+ms.openlocfilehash: 623926bf520b19ee4156b7a05e953241cd819e9e
+ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 05/15/2022
-ms.locfileid: "8757386"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "8947138"
 ---
 # <a name="export-segment-list-and-other-data-to-azure-blob-storage-preview"></a>Εξαγωγή λίστας τμημάτων και άλλων δεδομένων στον χώρο αποθήκευσης αντικειμένων blob Azure (έκδοση προεπισκόπησης)
 
@@ -58,16 +58,19 @@ ms.locfileid: "8757386"
 
 Η αποθήκευση μιας εξαγωγής δεν εκτελεί αμέσως την εξαγωγή.
 
-Η εξαγωγή εκτελείται με κάθε [προγραμματισμένη ανανέωση](system.md#schedule-tab).     
+Η εξαγωγή εκτελείται με κάθε [προγραμματισμένη ανανέωση](system.md#schedule-tab).
 
-Μπορείτε επίσης να [εξαγάγετε δεδομένα κατ' απαίτηση](export-destinations.md#run-exports-on-demand). 
+Μπορείτε επίσης να [εξαγάγετε δεδομένα κατ' απαίτηση](export-destinations.md#run-exports-on-demand).
 
 Τα δεδομένα που έχουν εξαχθεί αποθηκεύονται στο κοντέινερ του χώρου αποθήκευσης αντικειμένων Blob που διαμορφώσατε. Οι παρακάτω διαδρομές φακέλων δημιουργούνται αυτόματα στο κοντέινερ που διαθέτετε:
 
 - Για τις οντότητες προέλευσης και τις οντότητες που δημιουργούνται από το σύστημα:  
   `%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv`  
   - Παράδειγμα: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/HighValueSegment/2020/08/24/1433/HighValueSegment_1.csv`
- 
+  
+  > [!TIP]
+  > Η εξαγωγή οντοτήτων που περιέχουν μεγάλη ποσότητα δεδομένων μπορεί να οδηγήσει σε πολλά αρχεία CSV στον ίδιο φάκελο για κάθε εξαγωγή. Ο διαχωρισμός των εξαγωγής συμβαίνει για λόγους επιδόσεων ώστε να ελαχιστοποιηθεί ο χρόνος που απαιτείται για την ολοκλήρωση μιας εξαγωγής.
+
 - Το model.json για τις οντότητες που έχουν εξαχθεί θα βρίσκεται στο επίπεδο %ExportDestinationName%.  
   - Παράδειγμα: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/model.json`
 

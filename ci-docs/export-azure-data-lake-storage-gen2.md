@@ -8,12 +8,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 8b14992f8312d333d8a12501e8a28496c8434779
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 22eee11666752459a1750d728c4e254ab0c59e58
+ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646778"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "8947230"
 ---
 # <a name="export-segment-list-and-other-data-to-azure-data-lake-storage-gen2-preview"></a>Εξαγωγή λίστας τμήματος αγοράς και άλλων δεδομένων στο Azure Data Lake Storage Gen2 (προεπισκόπηση)
 
@@ -21,11 +21,9 @@ ms.locfileid: "8646778"
 
 ## <a name="known-limitations"></a>Γνωστοί περιορισμοί
 
-1. Για Azure Data Lake Storage Gen2 μπορείτε να επιλέξετε μεταξύ [βασικής απόδοσης και επιπέδου απόδοσης Premium](/azure/storage/blobs/create-data-lake-storage-account) όταν δημιουργείτε ένα λογαριασμό αποθήκευσης για τη λίμνη δεδομένων σας. Εάν επιλέξετε το επίπεδο απόδοσης Premium, επιλέξτε τα blob premium συνόλου ως τύπο λογαριασμού. 
+1. Για Azure Data Lake Storage Gen2 μπορείτε να επιλέξετε μεταξύ [βασικής απόδοσης και επιπέδου απόδοσης Premium](/azure/storage/blobs/create-data-lake-storage-account) όταν δημιουργείτε ένα λογαριασμό αποθήκευσης για τη λίμνη δεδομένων σας. Εάν επιλέξετε το επίπεδο απόδοσης Premium, επιλέξτε τα blob premium συνόλου ως τύπο λογαριασμού.
 
-
-## <a name="set-up-the-connection-to-azure-data-lake-storage-gen2"></a>Ρυθμίστε τη σύνδεση με το Azure Data Lake Storage Gen2 
-
+## <a name="set-up-the-connection-to-azure-data-lake-storage-gen2"></a>Ρυθμίστε τη σύνδεση με το Azure Data Lake Storage Gen2
 
 1. Μετάβαση στον **Διαχειριστή** > **Συνδέσεις**.
 
@@ -39,7 +37,7 @@ ms.locfileid: "8646778"
     - Για να μάθετε πώς να δημιουργείτε ένα λογαριασμό χώρου αποθήκευσης για χρήση με το Azure Data Lake Storage Gen2, ανατρέξτε στο θέμα [Δημιουργία λογαριασμού χώρου αποθήκευσης](/azure/storage/blobs/create-data-lake-storage-account). 
     - Για να μάθετε περισσότερα σχετικά με το όνομα λογαριασμού και το κλειδί λογαριασμού χώρου αποθήκευσης Azure Data Lake Gen 2, ανατρέξτε στο θέμα [Διαχείριση ρυθμίσεων λογαριασμών χώρου αποθήκευσης στην πύλη Azure](/azure/storage/common/storage-account-manage).
 
-1. Επιλέξτε **Αποθήκευση** για να ολοκληρώσετε τη σύνδεση. 
+1. Επιλέξτε **Αποθήκευση** για να ολοκληρώσετε τη σύνδεση.
 
 ## <a name="configure-an-export"></a>Ρύθμιση παραμέτρων εξαγωγής
 
@@ -57,8 +55,12 @@ ms.locfileid: "8646778"
 
 Η αποθήκευση μιας εξαγωγής δεν εκτελεί αμέσως την εξαγωγή.
 
-Η εξαγωγή εκτελείται με κάθε [προγραμματισμένη ανανέωση](system.md#schedule-tab). Μπορείτε επίσης να [εξαγάγετε δεδομένα κατ' απαίτηση](export-destinations.md#run-exports-on-demand). 
+Η εξαγωγή εκτελείται με κάθε [προγραμματισμένη ανανέωση](system.md#schedule-tab).
+Μπορείτε επίσης να [εξαγάγετε δεδομένα κατ' απαίτηση](export-destinations.md#run-exports-on-demand).
 
-Τα δεδομένα που έχουν εξαχθεί αποθηκεύονται στο κοντέινερ χώρου αποθήκευσης Azure Data Lake Gen 2 που ρυθμίσατε. 
+Τα δεδομένα που έχουν εξαχθεί αποθηκεύονται στο κοντέινερ χώρου αποθήκευσης Azure Data Lake Gen 2 που ρυθμίσατε.
+
+> [!TIP]
+> Η εξαγωγή οντοτήτων που περιέχουν μεγάλη ποσότητα δεδομένων μπορεί να οδηγήσει σε πολλά αρχεία CSV στον ίδιο φάκελο για κάθε εξαγωγή. Ο διαχωρισμός των εξαγωγής συμβαίνει για λόγους επιδόσεων ώστε να ελαχιστοποιηθεί ο χρόνος που απαιτείται για την ολοκλήρωση μιας εξαγωγής.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

@@ -1,19 +1,19 @@
 ---
 title: Εξαγωγή δεδομένων του Customer Insights στο Snapchat
 description: Μάθετε πώς να ρυθμίσετε τις παραμέτρους της σύνδεσης και της εξαγωγής στο Snapchat.
-ms.date: 10/08/2021
+ms.date: 06/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 171b8bf0f4a034c78e872b671602ae7653271da7
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: d64b482c322af8632e29ec41d6e34c390c5e646c
+ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647151"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "8947276"
 ---
 # <a name="export-segments-to-snapchat-preview"></a>Εξαγωγή τμημάτων στο Snapchat (έκδοση προεπισκόπησης)
 
@@ -21,7 +21,8 @@ ms.locfileid: "8647151"
 
 ## <a name="prerequisites-for-a-connection"></a>Προϋποθέσεις για μια σύνδεση
 
--   Έχετε έναν [επιχειρηματικό λογαριασμό Snapchat](https://business.snapchat.com/), έναν [διαφημιστικό λογαριασμό Snapchat ](https://ads.snapchat.com/) και αντίστοιχα διαπιστευτήρια διαχειριστή.
+-   Έχετε έναν [επιχειρηματικό λογαριασμό Snapchat](https://business.snapchat.com/), έναν [διαφημιστικό λογαριασμό Snapchat ](https://ads.snapchat.com/) και αντίστοιχα διαπιστευτήρια διαχειριστή. Πρέπει τουλάχιστον να είστε μέλος ενός Λογαριασμού Οργανισμού και Υπεύθυνος δεδομένων συγκεκριμένου διαφημιστικού λογαριασμού. 
+-   Έχετε τουλάχιστον έναν κοινό στον υπεύθυνο κοινού Snapchat του τύπου SAM (Snap Audience Match). 
 -   Έχετε [διαμορφώσει τμήματα](segments.md) στο Customer Insights.
 -   Τα ενοποιημένα προφίλ πελατών στα εξαγόμενα τμήματα περιέχουν ένα πεδίο που αντιπροσωπεύει μια διεύθυνση ηλεκτρονικού ταχυδρομείου.
 
@@ -60,7 +61,7 @@ ms.locfileid: "8647151"
 
 1. Στο πεδίο **Σύνδεση για εξαγωγή**, επιλέξτε μια σύνδεση από την ενότητα Snapchat. Εάν δεν βλέπετε αυτό το όνομα ενότητας, δεν υπάρχουν διαθέσιμες συνδέσεις αυτού του τύπου.
 
-1. Πληκτρολογήστε το [**αναγνωριστικό κοινού Snapchat**](https://businesshelp.snapchat.com/s/article/custom-audiences).
+1. Εισαγάγετε το [**Αναγνωριστικό τμήματος / κοινού Snapchat**](https://businesshelp.snapchat.com/s/article/custom-audiences). Το αναγνωριστικό του κοινού μπορείτε να το βρείτε στη διεύθυνση URL αφού επιλέξετε το κοινό στον υπεύθυνο κοινού Snapchat. 
 
 1. Στην ενότητα **Δεδομένα που αντιστοιχούν**, στο πεδίο **Ηλεκτρονικό ταχυδρομείο**, επιλέξτε το πεδίο που αντιπροσωπεύει τη διεύθυνση ηλεκτρονικού ταχυδρομείου ενός πελάτη. Απαιτείται η εξαγωγή τμημάτων στο Snapchat.
 

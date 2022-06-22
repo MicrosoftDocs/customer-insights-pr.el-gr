@@ -8,12 +8,12 @@ ms.topic: get-started
 ms.custom: template-trial-faq
 ms.reviewer: jeffhar
 manager: shellyha
-ms.openlocfilehash: c0db75afdde91bbd60fbece77eb2660a38b84860
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: 46a67e58f79029246029e2d06789525c2131f100
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833768"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011887"
 ---
 # <a name="dynamics-365-customer-insights-trial-faq"></a>Συνήθεις ερωτήσεις δοκιμαστικής έκδοσης του Dynamics 365 Customer Insights
 
@@ -66,9 +66,9 @@ ms.locfileid: "8833768"
 
 Αφού συνδεθείτε για πρώτη φορά στην έκδοση επί πληρωμή του Customer Insights, θα σας ζητηθεί να δημιουργήσετε ένα νέο περιβάλλον. Σε αυτήν τη διαδικασία, μπορείτε να επιλέξετε να αντιγράψετε τη διαμόρφωση από ένα υπάρχον περιβάλλον και να μετεγκαταστήσετε τις περισσότερες από τις ρυθμίσεις. Εάν έχετε τα δικαιώματα που αναφέρθηκαν παραπάνω, το δοκιμαστικό περιβάλλον θα εμφανιστεί σε αυτήν τη λίστα. Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Αντιγραφή της διαμόρφωσης περιβάλλοντος](create-environment.md#copy-the-environment-configuration).
 
-### <a name="what-are-the-trial-limits-and-quotas"></a>Ποια είναι τα όρια και οι περιορισμοί της δοκιμαστικής έκδοσης;
+### <a name="what-are-the-trial-limits-and-quotas"></a>Ποια είναι τα όρια και οι στόχοι πωλήσεων της δοκιμαστικής έκδοσης;
 
-- Δεν μπορείτε να χρησιμοποιήσετε το δικό σας λογαριασμό Azure Data Lake Storage για να αποθηκεύσετε δεδομένα εξόδου κατά τη διάρκεια μιας δοκιμαστικής έκδοσης Customer Insights. Ωστόσο, μπορείτε να προσλάβετε δεδομένα από ένα λογαριασμό Data Lake Storage.
+- Δεν μπορείτε να χρησιμοποιήσετε το δικό σας λογαριασμό Azure Data Lake Storage για να αποθηκεύσετε δεδομένα εξόδου κατά τη διάρκεια μιας δοκιμαστικής έκδοσης Customer Insights. Ωστόσο, μπορείτε να προσλάβετε δεδομένα από έναν λογαριασμό Data Lake Storage.
 - Μπορείτε να αποθηκεύσετε έως και 3 GB δεδομένων στο περιβάλλον του Dataverse που παρέχεται αυτόματα όταν ξεκινάτε μια δοκιμαστική έκδοση του Customer Insights.
 
 ## <a name="customer-insights-specific-questions"></a>Ερωτήσεις ειδικά για το Customer Insights
@@ -83,7 +83,7 @@ ms.locfileid: "8833768"
 
 Οι ακόλουθες λειτουργίες **δεν είναι διαθέσιμες**:
 
-- Δεν μπορείτε να δημιουργήσετε νέα περιβάλλοντα που χρησιμοποιούν το δικό σας λογαριασμό αποθήκευσης Azure Data Lake.
+- Δεν μπορείτε να δημιουργήσετε νέα περιβάλλοντα που χρησιμοποιούν το δικό σας λογαριασμό Azure Data Lake Storage.
 - Δεν μπορείτε να διαγράψετε το περιβάλλον της δοκιμαστικής έκδοσης.
 
 ### <a name="how-long-does-the-trial-last"></a>Πόσο διαρκεί η δοκιμαστική έκδοση;
