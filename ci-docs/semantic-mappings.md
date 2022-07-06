@@ -1,5 +1,5 @@
 ---
-title: Σημασιολογικές αντιστοιχίσεις (Έκδοση προεπισκόπησης)
+title: Σημασιολογικές αντιστοιχίσεις (έκδοση προεπισκόπησης)
 description: Επισκόπηση των σημασιολογικών αντιστοιχίσεων και τρόπος χρήσης τους.
 ms.date: 12/01/2021
 ms.subservice: audience-insights
@@ -11,14 +11,14 @@ manager: shellyha
 searchScope:
 - ci-semantic-mapping
 - customerInsights
-ms.openlocfilehash: a60855f6d5616ca9b958752836d1071ae3433db0
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: b3a0643ab71c98ce212f4e4581a584d8382c67eb
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647052"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081716"
 ---
-# <a name="semantic-mappings-preview"></a>Σημασιολογικές αντιστοιχίσεις (Έκδοση προεπισκόπησης)
+# <a name="semantic-mappings-preview"></a>Σημασιολογικές αντιστοιχίσεις (έκδοση προεπισκόπησης)
 
 Οι σημασιολογικές αντιστοιχίσεις σας επιτρέπουν να αντιστοιχίσετε τα δεδομένα που δεν είναι δραστηριότητες σε προκαθορισμένα σχήματα. Αυτά τα σχήματα βοηθούν το Customer Insights να κατανοήσει καλύτερα τα χαρακτηριστικά των δεδομένων σας. Η σημασιολογική χαρτογράφηση και τα παρεχόμενα δεδομένα επιτρέπουν νέες πληροφορίες και δυνατότητες στο Customer Insights. Για να αντιστοιχίσετε τα δεδομένα δραστηριότητας στα σχήματα, εξετάστε την τεκμηρίωση [δραστηριοτήτων](activities.md).
 

@@ -1,5 +1,5 @@
 ---
-title: Εμπλουτισμός με εμπλουτισμό τρίτου μέρους της HERE Technologies
+title: Εμπλουτισμός προφίλ πελατών με τη HERE Technologies (έκδοση προεπισκόπησης)
 description: Γενικές πληροφορίες σχετικά με τον εμπλουτισμό τρίτου μέρους της HERE Technologies.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 171ead92427924083a13e2a3d52e7a7da417c801
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: d88085b6be156dd1c895e9e5b38cc9d77acbdb95
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953673"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9052051"
 ---
-# <a name="enrichment-of-customer-profiles-with-here-technologies-preview"></a>Εμπλουτισμός προφίλ πελατών με την HERE Technologies (προεπισκόπηση)
+# <a name="enrich-customer-profiles-with-here-technologies-preview"></a>Εμπλουτισμός προφίλ πελατών με τη HERE Technologies (έκδοση προεπισκόπησης)
 
 Η HERE Technologies είναι μια εταιρεία πλατφόρμας θέσης η οποία παρέχει δεδομένα και υπηρεσίες με επίκεντρο την τοποθεσία. Οι υπηρεσίες εμπλουτισμού δεδομένων της HERE Technologies βελτιώνουν την ακρίβεια των πληροφοριών θέσης για τους πελάτες σας. Παρέχει ομαλοποίηση διευθύνσεων, εξαγωγή γεωγραφικού πλάτους και γεωγραφικού μήκους και πολλά άλλα.
 
@@ -72,7 +72,7 @@ ms.locfileid: "8953673"
 
 1. Επιλέξτε **Εκτέλεση** για να ξεκινήσει η διεργασία εμπλουτισμού ή κλείσιμο για επιστροφή στη σελίδα **Εμπλουτισμός**.
 
-## <a name="enrichment-results"></a>Αποτελέσματα εμπλουτισμού
+## <a name="view-enrichment-results"></a>Προβολή αποτελεσμάτων εμπλουτισμού
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

@@ -80,7 +80,7 @@
       href: data-unification-update.md
 - name: Εμπλουτισμός δεδομένων
   items:
-    - name: Εμπλουτισμός προφίλ πελατών
+    - name: Επισκόπηση εμπλουτισμού δεδομένων
       href: enrichment-hub.md
     - name: Λογαριασμοί από δεδομένα Office 365
       href: enrichment-office.md
@@ -112,7 +112,7 @@
       href: search-filter-index.md
     - name: Ορισμός δραστηριοτήτων πελάτη
       href: activities.md
-    - name: Διαχείριση συναίνεσης για το Customer Insights
+    - name: Χρήση διαχείρισης συναίνεσης
       href: consent-management.md
 - name: Τμήματα
   items:
@@ -212,6 +212,8 @@
           href: export-facebook.md
         - name: Google Ads
           href: export-google-ads.md
+        - name: InMobi
+          href: export-inmobi.md
         - name: Iterable
           href: export-iterable.md
         - name: Klaviyo

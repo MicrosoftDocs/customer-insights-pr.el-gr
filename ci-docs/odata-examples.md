@@ -1,5 +1,5 @@
 ---
-title: Παραδείγματα OData για τα API Dynamics 365 Customer Insights
+title: Παραδείγματα ερωτήματος Odata για API του Customer Insights
 description: Συχνά χρησιμοποιούνται παραδείγματα για το Πρωτόκολλο ανοιχτών δεδομένων (OData) για την υποβολή ερωτημάτων στα API του Customer Insights για τον έλεγχο δεδομένων.
 ms.date: 05/25/2022
 ms.subservice: audience-insights
@@ -8,14 +8,14 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: cdadd72bfe4272d8d83d923baaa6fd40d008473b
-ms.sourcegitcommit: bf65bc0a54cdab71680e658e1617bee7b2c2bb68
+ms.openlocfilehash: 54ba9f4e9baeb4b7021bb8c20a706bbb6eb1529f
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8808461"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081717"
 ---
-# <a name="odata-query-examples"></a>Παραδείγματα ερωτήματος OData
+# <a name="odata-query-examples-for-customer-insights-apis"></a>Παραδείγματα ερωτήματος Odata για API του Customer Insights
 
 Το Πρωτόκολλο ανοιχτών δεδομένων (OData) είναι ένα πρωτόκολλο πρόσβασης σε δεδομένα, το οποίο είναι ενσωματωμένο σε κύρια πρωτόκολλα, όπως το HTTP. Χρησιμοποιεί συχνά αποδεκτές μεθοδολογίες όπως το REST για το web. Υπάρχουν διάφορων ειδών βιβλιοθήκες και εργαλεία που μπορούν να χρησιμοποιηθούν για την κατανάλωση των υπηρεσιών OData.
 

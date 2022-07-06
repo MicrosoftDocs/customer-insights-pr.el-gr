@@ -1,5 +1,5 @@
 ---
-title: Εμπλουτίστε τα προφίλ πελατών με δεδομένα θέσης από τους Χάρτες Azure
+title: Εμπλουτίστε τα προφίλ πελατών με δεδομένα θέσης από τους Χάρτες Azure (έκδοση προεπισκόπησης)
 description: Γενικές πληροφορίες σχετικά με τον εμπλουτισμό Χαρτών Azure πρώτα.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: a806b2d0c791972c967c90694527608b4def9f3f
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: dfadc08f67beac3fded1a97e557ee9e1880664e0
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953628"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9052607"
 ---
-# <a name="enrichment-of-customer-profiles-with-azure-maps-preview"></a>Εμπλουτισμός των προφίλ πελατών με τους Χάρτες Azure (προεπισκόπηση)
+# <a name="enrich-customer-profiles-with-location-data-from-azure-maps-preview"></a>Εμπλουτίστε τα προφίλ πελατών με δεδομένα θέσης από τους Χάρτες Azure (έκδοση προεπισκόπησης)
 
 Οι Χάρτες Azure παρέχουν δεδομένα και υπηρεσίες με βάση την τοποθεσία, για την παροχή εμπειρίας βάσει γεωγραφικών δεδομένων με ενσωματωμένη ευφυΐα θέσης. Οι υπηρεσίες εμπλουτισμού δεδομένων των Χαρτών Azure βελτιώνουν την ακρίβεια των πληροφοριών θέσης για τους πελάτες σας. Παρέχει δυνατότητες όπως η ομαλοποίηση διευθύνσεων και το γεωγραφικό πλάτος και γεωγραφικό μήκος στο Dynamics 365 Customer Insights.
 
@@ -82,7 +82,7 @@ ms.locfileid: "8953628"
 
 1. Επιλέξτε **Εκτέλεση** για να ξεκινήσει η διεργασία εμπλουτισμού ή κλείσιμο για επιστροφή στη σελίδα **Εμπλουτισμός**.
 
-## <a name="enrichment-results"></a>Αποτελέσματα εμπλουτισμού
+## <a name="view-enrichment-results"></a>Προβολή αποτελεσμάτων εμπλουτισμού
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

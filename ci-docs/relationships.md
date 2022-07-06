@@ -21,14 +21,14 @@ searchScope:
 - ci-measure-template
 - ci-permissions
 - customerInsights
-ms.openlocfilehash: a7b10d985d5cba64b25595a3d7c101d6cb5c62a5
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 5477798a8b9e0771d390e403379b7447eb7baddd
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647331"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081439"
 ---
-# <a name="relationships-between-entities"></a>Σχέσεις μεταξύ οντοτήτων
+# <a name="relationships-between-entities-and-entity-paths"></a>Σχέσεις μεταξύ οντοτήτων και διαδρομές οντοτήτων
 
 Οι σχέσεις συνδέουν οντότητες και ορίζουν ένα γράφημα των δεδομένων σας όταν οι οντότητες έχουν ένα κοινό αναγνωριστικό, ένα ξένο κλειδί. Αυτό το ξένο κλειδί μπορεί να παραπέμπεται από τη μία οντότητα σε μια άλλη. Οι συνδεδεμένες οντότητες επιτρέπουν τον καθορισμό τμημάτων και μετρήσεων με βάση πολλαπλές προελεύσεις δεδομένων.
 

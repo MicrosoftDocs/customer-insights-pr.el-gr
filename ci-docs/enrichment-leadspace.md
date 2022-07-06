@@ -1,5 +1,5 @@
 ---
-title: Εμπλουτισμός εταιρικών προφίλ με τον εμπλουτισμό τρίτου μέρους Leadspace
+title: Εμπλουτισμός προφίλ εταιρείας με Leadspace (έκδοση προεπισκόπησης)
 description: Γενικές πληροφορίες σχετικά με τον εμπλουτισμό τρίτου μέρους Leadspace.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: ca53f15bd7c71b3b4acb396c4daf52d7c7aff9eb
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: b58532a541ee22a5e34d0af1a3334ccbd53627b2
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954179"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081349"
 ---
-# <a name="enrichment-of-company-profiles-with-leadspace-preview"></a>Εμπλουτισμός εταιρικών προφίλ με Leadspace (προεπισκόπηση)
+# <a name="enrich-company-profiles-with-leadspace-preview"></a>Εμπλουτισμός προφίλ εταιρείας με Leadspace (έκδοση προεπισκόπησης)
 
 Ο χώρος υποψήφιων πελατών είναι μια εταιρεία τεχνολογίας δεδομένων, η οποία παρέχει μια πλατφόρμα δεδομένων πελατών B2B. Επιτρέπει σε περιβάλλοντα με ενοποιημένα προφίλ πελατών βάσει λογαριασμών να εμπλουτίζουν τα δεδομένα τους. Εμπλουτίστε τα *προφίλ πελατών* με χαρακτηριστικά όπως το μέγεθος, η τοποθεσία ή το τμήμα αγοράς μιας εταιρείας. Εμπλουτίστε τα *προφίλ επαφών* με χαρακτηριστικά όπως ο τίτλος, η persona ή η επαλήθευση ηλεκτρονικού ταχυδρομείου.
 
@@ -82,7 +82,7 @@ ms.locfileid: "8954179"
 
 1. Επιλέξτε **Εκτέλεση** για να ξεκινήσει η διεργασία εμπλουτισμού ή κλείσιμο για επιστροφή στη σελίδα **Εμπλουτισμός**.
 
-## <a name="enrichment-results"></a>Αποτελέσματα εμπλουτισμού
+## <a name="view-enrichment-results"></a>Προβολή αποτελεσμάτων εμπλουτισμού
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

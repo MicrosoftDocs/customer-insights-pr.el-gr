@@ -1,5 +1,5 @@
 ---
-title: Εξαγωγή δεδομένων Customer Insights στο AdRoll
+title: Εξαγωγή τμημάτων στο AdRoll (έκδοση προεπισκόπησης)
 description: Μάθετε πώς να ρυθμίσετε τις παραμέτρους της σύνδεσης και της εξαγωγής στο AdRoll.
 ms.date: 10/08/2021
 ms.reviewer: mhart
@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: ec7d2d4d137f2f0e3e1ff2ec0d09bff8ac4f28ea
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 13c7dd3b8556ad807fba6c537525b463480e860b
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646706"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081559"
 ---
 # <a name="export-segments-to-adroll-preview"></a>Εξαγωγή τμημάτων στο AdRoll (έκδοση προεπισκόπησης)
 
@@ -21,9 +21,9 @@ ms.locfileid: "8646706"
 
 ## <a name="prerequisites-for-a-connection"></a>Προϋποθέσεις για μια σύνδεση
 
--   Έχετε έναν [λογαριασμό AdRoll](https://www.adroll.com/) και αντίστοιχα διαπιστευτήρια διαχειριστή.
--   Έχετε [διαμορφώσει τμήματα](segments.md) στο Customer Insights.
--   Τα ενοποιημένα προφίλ πελατών στα εξαγόμενα τμήματα περιέχουν ένα πεδίο που αντιπροσωπεύει μια διεύθυνση ηλεκτρονικού ταχυδρομείου.
+- Έχετε έναν [λογαριασμό AdRoll](https://www.adroll.com/) και αντίστοιχα διαπιστευτήρια διαχειριστή.
+- Έχετε [διαμορφώσει τμήματα](segments.md) στο Customer Insights.
+- Τα ενοποιημένα προφίλ πελατών στα εξαγόμενα τμήματα περιέχουν ένα πεδίο που αντιπροσωπεύει μια διεύθυνση ηλεκτρονικού ταχυδρομείου.
 
 ## <a name="known-limitations"></a>Γνωστοί περιορισμοί
 

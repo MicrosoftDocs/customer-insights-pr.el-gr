@@ -1,5 +1,5 @@
 ---
-title: Σύνδεσμος Power Apps
+title: Σύνδεση Power Apps (προεπισκόπηση)
 description: Συνδεθείτε με το Power Apps και το Power Automate.
 ms.date: 10/01/2021
 ms.reviewer: mhart
@@ -8,16 +8,16 @@ ms.topic: how-to
 author: Nils-2m
 ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: e99d7d4f231eb2ade67f27c9e52c61af3a21b99d
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 0b71f723d1e491d422d24b1be6616d2f33c95d40
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647471"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9055260"
 ---
-# <a name="microsoft-power-apps-connector-preview"></a>Σύνδεση Microsoft Power Apps (προεπισκόπηση)
+# <a name="power-apps-connector-preview"></a>Σύνδεση Power Apps (προεπισκόπηση)
 
-Φέρτε τα ενοποιημένα προφίλ πελατών στις προσωπικές σας εφαρμογές με το Power Apps.
+Φέρτε τα ενοποιημένα προφίλ πελατών στις προσωπικές σας εφαρμογές με το Microsoft Power Apps.
 
 ## <a name="connect-power-apps-and-dynamics-365-customer-insights"></a>Σύνδεση Power Apps και Dynamics 365 Customer Insights
 

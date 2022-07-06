@@ -1,5 +1,5 @@
 ---
-title: Έλεγχος Dynamics 365 Customer Insights με παρακολούθηση Azure
+title: Καταχώρηση προώθησης στο Dynamics 365 Customer Insights με Παρακολούθηση Azure (έκδοση προεπισκόπησης)
 description: Μάθετε πώς να στέλνετε αρχεία καταγραφής στην Παρακολούθηση Microsoft Azure.
 ms.date: 12/14/2021
 ms.reviewer: mhart
@@ -11,14 +11,14 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 15ae772617efa4c64cf79d0bac10a0c3cb28ca30
-ms.sourcegitcommit: a92bf5985263240fd07bad98d8e119b88cf2c9d9
+ms.openlocfilehash: 8c72df7054a682244215bbee54968d6aef4bbf59
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "8807581"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9052653"
 ---
-# <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>Καταχώρηση προώθησης στο Dynamics 365 Customer Insights με Παρακολούθηση Azure (Έκδοση προεπισκόπησης)
+# <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>Καταχώρηση προώθησης στο Dynamics 365 Customer Insights με Παρακολούθηση Azure (έκδοση προεπισκόπησης)
 
 Το Dynamics 365 Customer Insights παρέχει μια άμεση ενοποίηση με την Παρακολούθηση Azure. Τα αρχεία καταγραφής πόρων Παρακολούθησης Azure σάς επιτρέπουν να παρακολουθείτε και να στέλνετε αρχεία καταγραφής στον [Χώρο αποθήκευσης Azure](https://azure.microsoft.com/services/storage/), στην [Ανάλυση αρχείων καταγραφής Azure](/azure/azure-monitor/logs/log-analytics-overview) ή να τα διοχετεύετε στα [Κέντρα συμβάντων Azure](https://azure.microsoft.com/services/event-hubs/).
 

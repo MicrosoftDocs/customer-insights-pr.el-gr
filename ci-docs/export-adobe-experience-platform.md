@@ -1,5 +1,5 @@
 ---
-title: Εξαγωγή δεδομένων Customer Insights στο Adobe Experience Platform
+title: Εξαγωγή τμημάτων στο Adobe Experience Platform (έκδοση προεπισκόπησης)
 description: Μάθετε πώς να χρησιμοποιείτε τα τμήματα του Customer Insights στο Adobe Experience Platform.
 ms.date: 03/29/2021
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: 42a4e0c6bce67a63b449a541299620ef2f4a3259
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: c29b8264019669ffd954a298ce3a633c852477fa
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647252"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9052511"
 ---
-# <a name="use-customer-insights-segments-in-adobe-experience-platform-preview"></a>Χρήση τμημάτων του Customer Insights στο Adobe Experience Platform (έκδοση προεπισκόπησης)
+# <a name="export-segments-to-adobe-experience-platform-preview"></a>Εξαγωγή τμημάτων στο Adobe Experience Platform (έκδοση προεπισκόπησης)
 
 Ως χρήστης του Dynamics 365 Customer Insights ενδέχεται να έχετε δημιουργήσει τμήματα αγοράς για να κάνετε τις εκστρατείες μάρκετινγκ πιο αποτελεσματικές στοχεύοντας στα σχετικά κοινά. Για να χρησιμοποιήσετε ένα τμήμα της αγοράς από το Customer Insights στο Adobe Experience Platform και εφαρμογές 'οπως Adobe Campaign Standard, πρέπει να ακολουθήσετε μερικά βήματα που περιγράφονται σε αυτό το άρθρο.
 

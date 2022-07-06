@@ -1,5 +1,5 @@
 ---
-title: Εξαγωγή δεδομένων του Customer Insights στο Adobe Campaign Standard
+title: Εξαγάγετε τμήματα του Customer Insights στο Adobe Campaign Standard (έκδοση προεπισκόπησης)
 description: Μάθετε πώς να χρησιμοποιείτε τα τμήματα του Customer Insights στο Adobe Campaign Standard.
 ms.date: 03/29/2021
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: 2a62d2f889f199222eeb8cc969fce62fa89fa6f0
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 9915591cd969bf825f5d1669de43ed4f9953f898
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8646976"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081348"
 ---
-# <a name="use-customer-insights-segments-in-adobe-campaign-standard-preview"></a>Χρήση τμημάτων του Customer Insights στο Adobe Campaign Standard (έκδοση προεπισκόπησης)
+# <a name="export-customer-insights-segments-to-adobe-campaign-standard-preview"></a>Εξαγάγετε τμήματα του Customer Insights στο Adobe Campaign Standard (έκδοση προεπισκόπησης)
 
 Ως χρήστης του Dynamics 365 Customer Insights ενδέχεται να έχετε δημιουργήσει τμήματα αγοράς για να κάνετε τις εκστρατείες μάρκετινγκ πιο αποτελεσματικές στοχεύοντας στα σχετικά κοινά. Για να χρησιμοποιήσετε ένα τμήμα της αγοράς από το Customer Insights στο Adobe Experience Platform και εφαρμογές 'οπως Adobe Campaign Standard, πρέπει να ακολουθήσετε μερικά βήματα που περιγράφονται σε αυτό το άρθρο.
 
@@ -23,9 +23,9 @@ ms.locfileid: "8646976"
 
 ## <a name="prerequisites"></a>Προϋποθέσεις
 
--   Άδεια χρήσης του Dynamics 365 Customer Insights
--   Άδεια χρήσης Adobe Campaign Standard
--   Λογαριασμό χώρου αποθήκευσης αντικειμένων Blob Azure
+- Άδεια χρήσης του Dynamics 365 Customer Insights
+- Άδεια χρήσης Adobe Campaign Standard
+- Λογαριασμό χώρου αποθήκευσης αντικειμένων Blob Azure
 
 ## <a name="campaign-overview"></a>Επισκόπηση εκστρατείας
 

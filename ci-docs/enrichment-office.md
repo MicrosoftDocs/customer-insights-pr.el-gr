@@ -1,5 +1,5 @@
 ---
-title: Εμπλουτισμός προφίλ πελατών με δεδομένα από τη Microsoft Office 365
+title: Εμπλουτισμός προφίλ πελατών με δεδομένα από τη Microsoft Office 365 (έκδοση προεπισκόπησης)
 description: Χρησιμοποιήστε ιδιόκτητα δεδομένα από το Microsoft Office για να εμπλουτίσετε τα προφίλ πελατών σας με δεδομένα δέσμευσης.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: jodahl
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 7192b7680e73a581dd603de174c57b20bec996dd
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: 75762afb70814c8a81c1574ee7ea1553a2048737
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954133"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9055674"
 ---
-# <a name="enrich-customer-profiles-with-engagement-data-preview"></a>Εμπλουτισμός προφίλ πελατών με δεδομένα δέσμευσης (έκδοση προεπισκόπησης)
+# <a name="enrich-customer-profiles-with-data-from-microsoft-office-365-preview"></a>Εμπλουτισμός προφίλ πελατών με δεδομένα από τη Microsoft Office 365 (έκδοση προεπισκόπησης)
 
 Χρησιμοποιήστε δεδομένα από το Microsoft Office 365 για να εμπλουτίσετε τα προφίλ λογαριασμών πελατών σας με πληροφορίες σχετικά με τις δεσμεύσεις μέσω εφαρμογών Office 365. Τα δεδομένα δέσμευσης αποτελούνται από δραστηριότητα ηλεκτρονικού ταχυδρομείου και σύσκεψης, η οποία συγκεντρώνεται σε επίπεδο λογαριασμού. Για παράδειγμα, ο αριθμός μηνυμάτων ηλεκτρονικού ταχυδρομείου από έναν επιχειρηματικό λογαριασμό ή ο αριθμός των συσκέψεων με το λογαριασμό. Δεν διατίθενται δεδομένα σχετικά με μεμονωμένους χρήστες.
 
@@ -75,7 +75,7 @@ ms.locfileid: "8954133"
 
 [!INCLUDE [progress-details-pane](includes/progress-details-pane.md)]
 
-## <a name="enrichment-results"></a>Αποτελέσματα εμπλουτισμού
+## <a name="view-enrichment-results"></a>Προβολή αποτελεσμάτων εμπλουτισμού
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)] Αυτή είναι η οντότητα *του Office*. Το *Office_UserEntity* περιέχει τα αναγνωριστικά Active Directory για τις διευθύνσεις ηλεκτρονικού ταχυδρομείου που έχουν επιλεγεί κατά τη ρύθμιση παραμέτρων εμπλουτισμού.
 

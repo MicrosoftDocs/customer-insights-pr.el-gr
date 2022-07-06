@@ -1,5 +1,5 @@
 ---
-title: Εξαγωγή δεδομένων Customer Insights στο Azure Data Lake Storage Gen2
+title: Εξαγωγή δεδομένων στο Azure Data Lake Storage Gen2 (έκδοση προεπισκόπησης)
 description: Μάθετε πώς μπορείτε να ρυθμίσετε τις παραμέτρους της σύνδεσης στο Azure Data Lake Storage Gen2.
 ms.date: 10/06/2021
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 22eee11666752459a1750d728c4e254ab0c59e58
-ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
+ms.openlocfilehash: c2446fba425203d2910b82134b73543a73c7ecf8
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "8947230"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081479"
 ---
-# <a name="export-segment-list-and-other-data-to-azure-data-lake-storage-gen2-preview"></a>Εξαγωγή λίστας τμήματος αγοράς και άλλων δεδομένων στο Azure Data Lake Storage Gen2 (προεπισκόπηση)
+# <a name="export-data-to-azure-data-lake-storage-gen2-preview"></a>Εξαγωγή δεδομένων στο Azure Data Lake Storage Gen2 (έκδοση προεπισκόπησης)
 
 Αποθηκεύστε τα δεδομένα του Customer Insights σε λογαριασμό Azure Data Lake Storage Gen2 ή χρησιμοποιήστε τα για να μεταφέρετε τα δεδομένα σας σε άλλες εφαρμογές.
 

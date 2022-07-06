@@ -1,5 +1,5 @@
 ---
-title: Εμπλουτισμός των εταιρικών προφίλ με την Dun & Bradstreet
+title: Εμπλουτισμός εταιρικών προφίλ με την Dun & Bradstreet (έκδοση προεπισκόπησης)
 description: Γενικές πληροφορίες σχετικά με τον εμπλουτισμό τρίτων από την Dun & Bradstreet.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -9,14 +9,14 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: b1038970b6aee3bbdd7f79cc457f79aaf1c38222
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: 51f2e4e46aa25d10502d0feb5ea42eb7d2d637b9
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953891"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081438"
 ---
-# <a name="enrichment-of-company-profiles-with-dun--bradstreet-preview"></a>Εμπλουτισμός των εταιρικών προφίλ με την Dun & Bradstreet (Προεπισκόπησης)
+# <a name="enrich-company-profiles-with-dun--bradstreet-preview"></a>Εμπλουτισμός εταιρικών προφίλ με την Dun & Bradstreet (έκδοση προεπισκόπησης)
 
 Η Dun & Bradstreet παρέχει εμπορικά δεδομένα, αναλύσεις και πληροφορίες για επιχειρήσεις. Δίνει τη δυνατότητα στους πελάτες με ενοποιημένα προφίλ πελατών για τις εταιρείες να εμπλουτίσουν τα δεδομένα τους. Οι εμπλουτισμοί περιλαμβάνουν χαρακτηριστικά όπως αριθμός DUNS, το μέγεθος της εταιρείας, η τοποθεσία, ο κλάδος και άλλα.
 
@@ -102,7 +102,7 @@ ms.locfileid: "8953891"
 
 1. Επιλέξτε **Εκτέλεση** για να ξεκινήσει η διεργασία εμπλουτισμού ή κλείσιμο για επιστροφή στη σελίδα **Εμπλουτισμός**.
 
-## <a name="enrichment-results"></a>Αποτελέσματα εμπλουτισμού
+## <a name="view-enrichment-results"></a>Προβολή αποτελεσμάτων εμπλουτισμού
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

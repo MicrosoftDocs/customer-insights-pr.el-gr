@@ -1,5 +1,5 @@
 ---
-title: Πρόσθετο κάρτας πελάτη για εφαρμογές Dynamics 365 (περιέχει βίντεο)
+title: Πρόσθετο κάρτας πελάτη για εφαρμογές Dynamics 365 (έκδοση προεπισκόπησης) (περιέχει βίντεο)
 description: Εμφάνιση δεδομένων προφίλ πελατών από το Customer Insights σε εφαρμογές Dynamics 365 με αυτό το πρόσθετο.
 ms.date: 02/02/2022
 ms.reviewer: mhart
@@ -13,14 +13,14 @@ searchScope:
 - ci-search-filter
 - ci-customer-card
 - customerInsights
-ms.openlocfilehash: 8508880bb3274bb491a314a043a5222d4d381073
-ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
+ms.openlocfilehash: ead18963959f94fd07912384cf61802f83523e2f
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8755636"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081258"
 ---
-# <a name="customer-card-add-in-preview"></a>Πρόσθετο κάρτας πελάτη (προεπισκόπηση)
+# <a name="customer-card-add-in-for-dynamics-365-apps-preview"></a>Πρόσθετο κάρτας πελάτη για εφαρμογές Dynamics 365 (έκδοση προεπισκόπησης)
 
 Αποκτήστε μια προβολή 360 μοιρών των πελατών σας απευθείας στις εφαρμογές Dynamics 365. Με το Πρόσθετο κάρτας πελάτη εγκατεστημένο σε μια υποστηριζόμενη εφαρμογή Dynamics 365, μπορείτε να επιλέξετε να εμφανίζονται πεδία προφίλ πελατών, πληροφορίες και λωρίδα χρόνου δραστηριοτήτων. Το πρόσθετο θα ανακτήσει δεδομένα από το Customer Insights χωρίς να επηρεάζονται τα δεδομένα στην συνδεδεμένη εφαρμογή Dynamics 365.
 

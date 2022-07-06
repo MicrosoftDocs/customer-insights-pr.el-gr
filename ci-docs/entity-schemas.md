@@ -1,5 +1,5 @@
 ---
-title: Σχήματα οντότητας Customer Insights στο Common Data Model
+title: Σχήματα οντοτήτων σε Common Data Model
 description: Εργασία με οντότητες στο Common Data Model.
 ms.date: 08/13/2021
 ms.reviewer: mhart
@@ -8,16 +8,14 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 33a0562854e97b9ac5218e060f965996305627fd
-ms.sourcegitcommit: d45c00a5f6cb106714366af81e8070e7f53654b3
+ms.openlocfilehash: 92d37fc0950fefcb5c2a5d26214a469d3693980d
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 05/15/2022
-ms.locfileid: "8757432"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9054754"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>Σχήματα οντοτήτων σε Common Data Model
-
-
 
 Το [Common Data Model](/common-data-model/) (CDM) είναι μια προδιαγραφή σε δήλωση και ένας ορισμός τυπικών οντοτήτων που αντιπροσωπεύουν κοινώς χρησιμοποιούμενες έννοιες και δραστηριότητες για διάφορους τομείς επιχειρήσεων και παραγωγικότητας. Αυτό το μοντέλο επεκτείνεται σε δεδομένα παρατήρησης και ανάλυσης επίσης. Το Common Data Model προσφέρει καλά ορισμένες, αρθρωτές και επεκτάσιμες επιχειρηματικές οντότητες, όπως Λογαριασμός, Επιχειρηματική μονάδα, Υπόμνημα, Επαφή, Υποψήφιος πελάτης, Ευκαιρία, και Προϊόν, καθώς και αλληλεπιδράσεις και σχέσεις μεταξύ προμηθευτών, εργαζόμενων και πελατών, όπως οι δραστηριότητες και οι συμβάσεις παροχής υπηρεσιών. Ο καθένας μπορεί να αναπτύξει και να επεκτείνει ορισμούς Common Data Model για να αποτυπώσει πρόσθετες ιδέες για συγκεκριμένες επιχειρήσεις.
 

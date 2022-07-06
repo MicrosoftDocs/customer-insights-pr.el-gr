@@ -1,5 +1,5 @@
 ---
-title: Εμπλουτισμός με προσαρμοσμένη εισαγωγή SFTP
+title: Εμπλουτισμός προφίλ πελατών με προσαρμοσμένη εισαγωγή SFTP (έκδοση προεπισκόπησης)
 description: Γενικές πληροφορίες σχετικά με τον εμπλουτισμό προσαρμοσμένων εισαγωγών SFTP.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 657afb6fcb68429680eb677734b4115e69769008
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: 88fc366ab9478c3b67034af794e237ff4573da7c
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953719"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081331"
 ---
-# <a name="enrich-customer-profiles-with-custom-data-preview"></a>Εμπλουτισμός προφίλ πελατών με προσαρμοσμένα δεδομένα (προεπισκόπηση)
+# <a name="enrich-customer-profiles-with-sftp-custom-import-preview"></a>Εμπλουτισμός προφίλ πελατών με προσαρμοσμένη εισαγωγή SFTP (έκδοση προεπισκόπησης)
 
 Η προσαρμοσμένη εισαγωγή πρωτοκόλλου ασφαλούς μεταφοράς αρχείων (SFTP) σάς δίνει τη δυνατότητα να εισαγάγετε δεδομένα τα οποία δεν χρειάζεται να περάσουν από τη διεργασία ενοποίησης δεδομένων. Πρόκειται για έναν ευέλικτο, ασφαλή και εύκολο τρόπο για να μεταφέρετε τα δεδομένα σας. Η προσαρμοσμένη εισαγωγή SFTP μπορεί να χρησιμοποιηθεί σε συνδυασμό με την [εξαγωγή SFTP](export-sftp.md) που σας δίνει τη δυνατότητα να εξαγάγετε τα δεδομένα προφίλ πελατών που απαιτούνται για τον εμπλουτισμό. Στη συνέχεια, είναι δυνατό να γίνει επεξεργασία και εμπλουτισμός των δεδομένων και η προσαρμοσμένη εισαγωγή SFTP μπορεί να χρησιμοποιηθεί για την επιστροφή των εμπλουτισμένων δεδομένων στο Dynamics 365 Customer Insights.
 
@@ -120,7 +120,7 @@ ms.locfileid: "8953719"
 
 1. Επιλέξτε **Εκτέλεση** για να ξεκινήσει η διεργασία εμπλουτισμού ή κλείσιμο για επιστροφή στη σελίδα **Εμπλουτισμός**.
 
-## <a name="enrichment-results"></a>Αποτελέσματα εμπλουτισμού
+## <a name="view-enrichment-results"></a>Προβολή αποτελεσμάτων εμπλουτισμού
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

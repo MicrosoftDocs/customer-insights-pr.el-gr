@@ -1,11 +1,11 @@
 ---
-ms.openlocfilehash: 326c6b70f41c1c5b90bafca88681eadc6610cf59
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: 3fcc70aca85a49d3882feffe934eeed70e403c43
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954218"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9052097"
 ---
-Μετά από μια ολοκληρωμένη [εκτέλεση εμπλουτισμού](../enrichment-hub.md#run-or-refresh-enrichments), επιλέξτε τον εμπλουτισμό για να αναθεωρήσετε τα [αποτελέσματα](../enrichment-hub.md#enrichment-results). 
+Μετά από μια ολοκληρωμένη [εκτέλεση εμπλουτισμού](../enrichment-hub.md#run-or-refresh-enrichments), επιλέξτε τον εμπλουτισμό για να αναθεωρήσετε τα [αποτελέσματα](../enrichment-hub.md#view-enrichment-results). 
 
 Τα αποτελέσματα δείχνουν τον αριθμό των εμπλουτισμένων προφίλ και τον αριθμό των εμπλουτισμένων προφίλ με την πάροδο του χρόνου. Η καρτέλα **Προεπισκόπησης εμπλουτισμένων πελατών** εμφανίζει ένα δείγμα της οντότητας εμπλουτισμού που δημιουργείται. Για να δείτε μια λεπτομερή προβολή επιλέξτε **Δείτε περισσότερα** και επιλέξτε την καρτέλα **Δεδομένα**.

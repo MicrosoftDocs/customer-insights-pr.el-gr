@@ -1,5 +1,5 @@
 ---
-title: Κατανάλωση δεδομένων από το Azure Synapse Analytics
+title: Συνδέστε μια προέλευση δεδομένων του Azure Synapse (έκδοση προεπισκόπησης)
 description: Χρησιμοποιήστε μια βάση δεδομένων στο Azure Synapse ως αρχείο προέλευσης δεδομένων στο Dynamics 365 Customer Insights.
 ms.date: 03/25/2022
 ms.reviewer: v-wendysmith
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 6f94cdbcc203fc4518544f7a945bd80e871b36c1
-ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
+ms.openlocfilehash: c4ae65613a02df38a30f907dae72d413bf1a702f
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "9011427"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9052699"
 ---
 # <a name="connect-an-azure-synapse-analytics-data-source-preview"></a>Συνδέστε μια προέλευση δεδομένων του Azure Synapse Analytics (έκδοση προεπισκόπησης)
 
@@ -59,7 +59,7 @@ ms.locfileid: "9011427"
 
 1. Επιλέξτε μια [διαθέσιμη σύνδεση](connections.md) to Azure Synapse Analytics ή δημιουργήστε μια νέα.
 
-1. Επιλέξτε μια **Βάση δεδομένων** από το χώρο εργασίας που είναι συνδεδεμένος στην επιλεγμένη σύνδεση του Azure Synapse Analytics και επιλέξτε **Επόμενο**.
+1. Επιλέξτε μια **Βάση δεδομένων** από το χώρο εργασίας που είναι συνδεδεμένος στην επιλεγμένη σύνδεση του Azure Synapse Analytics και επιλέξτε **Επόμενο**. Προς το παρόν, υποστηρίζουμε μόνο τον τύπο βάσης δεδομένων *Βάση δεδομένων λίμνης*.
 
 1. Επιλέξτε τις οντότητες προς πρόσληψη από τη συνδεδεμένη βάση δεδομένων και επιλέξτε **Επόμενο**.
 

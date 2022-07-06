@@ -1,5 +1,5 @@
 ---
-title: Αναζήτηση και φιλτράρισμα προφίλ πελατών
+title: 'Προφίλ πελατών: Αναζήτηση και φιλτράρισμα ευρετηρίου'
 description: Βρείτε γρήγορα πληροφορίες σχετικά με τα ενοποιημένα προφίλ πελατών και φιλτράρετε με βάση συγκεκριμένα χαρακτηριστικά.
 ms.date: 11/01/2021
 ms.reviewer: mhart
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-search-filter
 - customerInsights
-ms.openlocfilehash: 35bfd6530b9b80a4b0ec8ff992d9014534721907
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: fc076e341f744ac2922dcacdf5f20ae8ecbdbaa0
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8647091"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9050809"
 ---
 # <a name="customer-profiles-search--filter-index"></a>Προφίλ πελατών: Αναζήτηση και φιλτράρισμα ευρετηρίου
 

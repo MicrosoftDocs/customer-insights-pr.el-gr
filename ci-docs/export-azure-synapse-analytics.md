@@ -1,19 +1,19 @@
 ---
-title: Εξαγωγή δεδομένων Customer Insights στο Azure Synapse Analytics
+title: Εξαγωγή δεδομένων στο Azure Synapse Analytics (έκδοση προεπισκόπησης)
 description: Μάθετε πώς να ρυθμίσετε τη σύνδεση στο Azure Synapse Analytics.
-ms.date: 04/11/2022
+ms.date: 06/29/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 772fe0978362ccd829077a8133e2a3e74043f3f8
-ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
+ms.openlocfilehash: 60bacb313e0426564310f3c1339bf3b732e17489
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8741503"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9081579"
 ---
 # <a name="export-data-to-azure-synapse-analytics-preview"></a>Εξαγωγή δεδομένων στο Azure Synapse Analytics (έκδοση προεπισκόπησης)
 
@@ -72,13 +72,13 @@ ms.locfileid: "8741503"
 
 1. Στο πεδίο **Σύνδεση για εξαγωγή**, επιλέξτε μια σύνδεση από την ενότητα **Azure Synapse Analytics**. Εάν δεν βλέπετε αυτό το όνομα ενότητας, δεν υπάρχουν διαθέσιμες [συνδέσεις](connections.md) αυτού του τύπου.
 
-1. Παράσχετε ένα αναγνωρίσιμο **εμφανιζόμενο όνομα** για την εξαγωγή σας και ένα **όνομα βάσης δεδομένων**.
+1. Παράσχετε ένα αναγνωρίσιμο **εμφανιζόμενο όνομα** για την εξαγωγή σας και ένα **όνομα βάσης δεδομένων**. Η εξαγωγή θα δημιουργήσει μια νέα [βάση δεδομένων Azure Synapse](/azure/synapse-analytics/database-designer/concepts-lake-database) στον χώρο εργασίας που καθορίζεται στη σύνδεση.
 
 1. Επιλέξτε ποιες οντότητες θέλετε να εξαγάγετε στο Azure Synapse Analytics.
    > [!NOTE]
    > Οι προελεύσεις δεδομένων που βασίζονται σε έναν [φάκελο Common Data Model](connect-common-data-model.md) δεν υποστηρίζονται.
 
-2. Επιλέξτε **Αποθήκευση**.
+1. Επιλέξτε **Αποθήκευση**.
 
 Η αποθήκευση μιας εξαγωγής δεν εκτελεί αμέσως την εξαγωγή.
 
