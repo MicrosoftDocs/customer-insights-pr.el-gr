@@ -14,16 +14,14 @@ searchScope:
 - ci-match
 - ci-relationships
 - customerInsights
-ms.openlocfilehash: ceb2724ad490c1ba44fd9b7ff2be04721892fca4
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 4a19b753e7a5979fe72d7e96bc4452d7795c2d48
+ms.sourcegitcommit: 3c5b0b40b2b45e420015bbdd228ce0e610245e6f
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081619"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "9139657"
 ---
 # <a name="unify-customer-fields-for-data-unification"></a>Ενοποίηση πεδίων πελατών για επεξεργασία δεδομένων
-
-[!INCLUDE [m3-prod-trial-note](includes/m3-prod-trial-note.md)]
 
 Σε αυτό το βήμα της διεργασίας ενοποίησης, επιλέξτε και αποκλείστε χαρακτηριστικά για συγχώνευση εντός της οντότητας ενοποιημένου προφίλ. Για παράδειγμα, εάν τρεις οντότητες είχαν δεδομένα email, μπορεί να θέλετε να διατηρήσετε και τα τρία ξεχωριστά πεδία email ή να τα συγχωνεύσετε σε ένα μοναδικό πεδίο email για το ενοποιημένο προφίλ. Ορισμένα χαρακτηριστικά συνδυάζονται αυτόματα από το σύστημα. Μπορείτε να δημιουργήσετε σταθερά και μοναδικά αναγνωριστικά πελατών και να ομαδοποιήσετε τα σχετικά προφίλ σε ένα σύμπλεγμα.
 

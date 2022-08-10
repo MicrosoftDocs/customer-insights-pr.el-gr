@@ -8,12 +8,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 54ba9f4e9baeb4b7021bb8c20a706bbb6eb1529f
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 8843fc04e4e6eaba0019d932c54f62561ffbdb92
+ms.sourcegitcommit: f3c12ad445d5f91a88f91a7bbc40790ebcfaa826
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081717"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "9121562"
 ---
 # <a name="odata-query-examples-for-customer-insights-apis"></a>Παραδείγματα ερωτήματος Odata για API του Customer Insights
 
@@ -23,7 +23,7 @@ ms.locfileid: "9081717"
 
 Πρέπει να τροποποιήσετε τα δείγματα ερωτημάτων για να λειτουργούν στα περιβάλλοντα προορισμού: 
 
-- {serviceRoot}: `https://api.ci.ai.dynamics.com/v1/instances/{instanceId}` όπου {instanceId} βρίσκεται το GUID του περιβάλλοντος Customer Insights που θέλετε να υποβάλετε ερώτημα. Η [λειτουργία ListAllInstances](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances) σάς επιτρέπει να βρείτε το {InstanceId} στο οποίο έχετε πρόσβαση.
+- {serviceRoot}: `https://api.ci.ai.dynamics.com/v1/instances/{instanceId}/data` όπου {instanceId} βρίσκεται το GUID του περιβάλλοντος Customer Insights που θέλετε να υποβάλετε ερώτημα. Η [λειτουργία ListAllInstances](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances) σάς επιτρέπει να βρείτε το {InstanceId} στο οποίο έχετε πρόσβαση.
 - {CID}: GUID μιας ενοποιημένης καρτέλας πελάτη. Παράδειγμα: `ce759201f786d590bf2134bff576c369`.
 - {AlternateKey}: Αναγνωριστικό του πρωτεύοντος κλειδιού μιας καρτέλας πελάτη σε μια προέλευση δεδομένων. Παράδειγμα: `CNTID_1002`
 - {DSname}: Συμβολοσειρά με το όνομα οντότητας μιας προέλευσης δεδομένων που αποκτά πρόσβαση στο Customer Insights. Παράδειγμα: `Website_contacts`.
@@ -39,9 +39,10 @@ ms.locfileid: "9081717"
 |Εναλλακτικό κλειδί    | `{serviceRoot}/Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} eq '{AlternateKey}'`         |  Τα εναλλακτικά κλειδιά διατηρούνται στην ενοποιημένη οντότητα πελάτη       |
 |Επιλέξτε   | `{serviceRoot}/Customer?$select=CustomerId,FullName&$filter=customerid eq '1'`        |         |
 |σε    | `{serviceRoot}/Customer?$filter=CustomerId in ('{CID1}',’{CID2}’)`        |         |
-|Εναλλακτικό κλειδί + σε   | `Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} in ('{AlternateKey}','{AlternateKey}')`         |         |
+|Εναλλακτικό κλειδί + σε   | `{serviceRoot}/Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} in ('{AlternateKey}','{AlternateKey}')`         |         |
 |Αναζήτηση  | `{serviceRoot}/Customer?$top=10&$skip=0&$search="string"`        |   Επιστρέφει τα 10 πρώτα αποτελέσματα για μια συμβολοσειρά αναζήτησης      |
 |Ιδιότητα μέλους τμήματος  | `{serviceRoot}/Customer?select=*&$filter=IsMemberOfSegment('{SegmentName}')&$top=10`     | Επιστρέφει έναν προκαθορισμένο αριθμό γραμμών από την οντότητα τμηματοποίησης      |
+|Τμήμα ιδιότητας μέλους για έναν πελάτη | `{serviceRoot}/Customer?$filter=CustomerId eq '{CID}'&IsMemberOfSegment('{SegmentName}')`     | Επιστρέφει το προφίλ πελάτη εάν είναι μέλος του συγκεκριμένου τμήματος     |
 
 ## <a name="unified-activity"></a>Ενοποιημένη δραστηριότητα
 

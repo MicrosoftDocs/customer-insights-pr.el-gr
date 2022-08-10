@@ -8,12 +8,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 334440493c50448005ec90d0cfac11358d677b73
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 49bf558209ca91ab9d8db945862a57adccee1f6b
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081277"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9196348"
 ---
 # <a name="enrich-customer-profiles-with-identity-data-from-liveramp-preview"></a>Εμπλουτισμός προφίλ πελατών με δεδομένα ταυτότητας από το LiveRamp (έκδοση προεπισκόπισης)
 
@@ -59,7 +59,7 @@ ms.locfileid: "9081277"
 
 1. Επισκοπήστε τη σύνοψη και έπειτα επιλέξτε **Επόμενο**.
 
-1. Επιλέξτε τη σύνδεση. Επικοινωνήστε με διαχειριστή, εάν δεν υπάρχει τέτοια διαθέσιμη.
+1. Επιλέξτε τη σύνδεση. Επικοινωνήστε με έναν διαχειριστή εάν δεν υπάρχει διαθέσιμη σύνδεση.
 
 1. Επιλέξτε **Επόμενο**.
 

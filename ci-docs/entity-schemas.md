@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 92d37fc0950fefcb5c2a5d26214a469d3693980d
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: cc65314f1b083694b60ac0a2625bea906be7272b
+ms.sourcegitcommit: ad74ace653db9a25fce4343adef7db1c9b0d8904
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9054754"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "9183493"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>Σχήματα οντοτήτων σε Common Data Model
 
@@ -39,9 +39,8 @@ ms.locfileid: "9054754"
 
 ## <a name="view-entities-using-the-common-data-model-entity-navigator"></a>Προβολή οντοτήτων χρησιμοποιώντας τον πλοηγό οντότητας του Common Data Model
 
-Μπορείτε να προβάλετε οντότητες στον [Πλοηγό οντοτήτων του Common Data Model](https://microsoft.github.io/CDM/). Επιλέξτε μια οντότητα από την ενότητα "Πληροφορίες εφαρμογής" για να λάβετε τη λίστα των οντοτήτων στο Customer Insights και τους ορισμούς τους.
-> [!div class="mx-imgBorder"]
-> ![Πλοηγός οντότητας CDM που δείχνει την οντότητα CustomerActivity.](media/CDM-entity-navigator.png "Πλοηγός οντότητας CDM που δείχνει οντότητα CustomerActivity")
+Προβολή οντοτήτων στο [Common Data Model Entity Navigator](https://microsoft.github.io/CDM/). Επιλέξτε μια οντότητα από την ενότητα "Πληροφορίες εφαρμογής" για να λάβετε τη λίστα των οντοτήτων στο Customer Insights και τους ορισμούς τους.
 
+:::image type="content" source="media/CDM-entity-navigator.png" alt-text="Πλοηγός οντότητας CDM που δείχνει την οντότητα CustomerActivity.":::
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

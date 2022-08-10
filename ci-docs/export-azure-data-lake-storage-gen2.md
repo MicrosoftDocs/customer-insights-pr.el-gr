@@ -1,62 +1,70 @@
 ---
 title: Εξαγωγή δεδομένων στο Azure Data Lake Storage Gen2 (έκδοση προεπισκόπησης)
 description: Μάθετε πώς μπορείτε να ρυθμίσετε τις παραμέτρους της σύνδεσης στο Azure Data Lake Storage Gen2.
-ms.date: 10/06/2021
+ms.date: 07/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: c2446fba425203d2910b82134b73543a73c7ecf8
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 55a61e4d9166df7809a64aeb1168a730402aaed6
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081479"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9196440"
 ---
 # <a name="export-data-to-azure-data-lake-storage-gen2-preview"></a>Εξαγωγή δεδομένων στο Azure Data Lake Storage Gen2 (έκδοση προεπισκόπησης)
 
 Αποθηκεύστε τα δεδομένα του Customer Insights σε λογαριασμό Azure Data Lake Storage Gen2 ή χρησιμοποιήστε τα για να μεταφέρετε τα δεδομένα σας σε άλλες εφαρμογές.
 
+## <a name="prerequisites"></a>Προϋποθέσεις
+
+- Ένας [λογαριασμός αποθήκευσης για χρήση με το Azure Data Lake Gen2](/azure/storage/blobs/create-data-lake-storage-account). Για να βρείτε το όνομα και το κλειδί του λογαριασμού αποθήκευσης, βλ [Διαχειριστείτε τις ρυθμίσεις λογαριασμού αποθήκευσης στην πύλη Azure](/azure/storage/common/storage-account-manage).
+- Ένα [Κοντέινερ Azure Blob Storage](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
+
 ## <a name="known-limitations"></a>Γνωστοί περιορισμοί
 
-1. Για Azure Data Lake Storage Gen2 μπορείτε να επιλέξετε μεταξύ [βασικής απόδοσης και επιπέδου απόδοσης Premium](/azure/storage/blobs/create-data-lake-storage-account) όταν δημιουργείτε ένα λογαριασμό αποθήκευσης για τη λίμνη δεδομένων σας. Εάν επιλέξετε το επίπεδο απόδοσης Premium, επιλέξτε τα blob premium συνόλου ως τύπο λογαριασμού.
+- Για Azure Data Lake Storage Gen2, επιλέξτε μεταξύ [Τυπική απόδοση και επίπεδο απόδοσης Premium](/azure/storage/blobs/create-data-lake-storage-account). Εάν επιλέξετε το επίπεδο απόδοσης Premium, επιλέξτε τα [blob premium συνόλου ως τύπο λογαριασμού](/azure/storage/common/storage-account-overview#types-of-storage-accounts).
 
-## <a name="set-up-the-connection-to-azure-data-lake-storage-gen2"></a>Ρυθμίστε τη σύνδεση με το Azure Data Lake Storage Gen2
+## <a name="set-up-connection-to-azure-data-lake-storage-gen2"></a>Ρύθμιση σύνδεσης σε Azure Data Lake Storage Gen2
+
+[!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
 1. Μετάβαση στον **Διαχειριστή** > **Συνδέσεις**.
 
-1. Επιλέξτε **Προσθήκη σύνδεσης** και επιλέξτε **Azure Data Lake Gen 2** για να ρυθμίσετε τις παραμέτρους της σύνδεσης.
+1. Επιλέξτε **Προσθήκη σύνδεσης** και επιλέξτε **Azure Data Lake Gen 2**.
 
 1. Δώστε στη σύνδεσή σας ένα αναγνωρίσιμο όνομα στο πεδίο **Εμφανιζόμενο όνομα**. Το όνομα και ο τύπος της σύνδεσης περιγράφουν αυην τη σύνδεση. Συνιστούμε να επιλέξετε ένα όνομα που να εξηγεί τον σκοπό και τον προορισμό της σύνδεσης.
 
-1. Επιλέξτε κάποιον που μπορεί να χρησιμοποιήσει αυτήν τη σύνδεση. Εάν δεν κάνετε καμία ενέργεια, η προεπιλογή θα είναι οι Διαχειριστές. Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Να επιτρέπεται στους συμβαλλόντων η χρήση σύνδεσης για εξαγωγές](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. Επιλέξτε κάποιον που μπορεί να χρησιμοποιήσει αυτήν τη σύνδεση. Ως προεπιλογή, είναι μόνο διαχειριστές. Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Να επιτρέπεται στους συμβαλλόντων η χρήση σύνδεσης για εξαγωγές](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Καταχωρήστε τα **Όνομα λογαριασμού**, **Κλειδί λογαριασμού** και **Περιέκτης** για το δικό σας Azure Data Lake Storage Gen2.
-    - Για να μάθετε πώς να δημιουργείτε ένα λογαριασμό χώρου αποθήκευσης για χρήση με το Azure Data Lake Storage Gen2, ανατρέξτε στο θέμα [Δημιουργία λογαριασμού χώρου αποθήκευσης](/azure/storage/blobs/create-data-lake-storage-account). 
-    - Για να μάθετε περισσότερα σχετικά με το όνομα λογαριασμού και το κλειδί λογαριασμού χώρου αποθήκευσης Azure Data Lake Gen 2, ανατρέξτε στο θέμα [Διαχείριση ρυθμίσεων λογαριασμών χώρου αποθήκευσης στην πύλη Azure](/azure/storage/common/storage-account-manage).
+
+1. Εξετάστε το [απόρρητο και συμμόρφωση δεδομένων](connections.md#data-privacy-and-compliance) και επιλέξτε **συμφωνώ**.
 
 1. Επιλέξτε **Αποθήκευση** για να ολοκληρώσετε τη σύνδεση.
 
 ## <a name="configure-an-export"></a>Ρύθμιση παραμέτρων εξαγωγής
 
-Μπορείτε να ρυθμίσετε τις παραμέτρους αυτής της εξαγωγής, εάν έχετε πρόσβαση σε μια σύνδεση αυτού του τύπου. Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Δικαιώματα που απαιτούνται για τη ρύθμιση των παραμέτρων μιας εξαγωγής](export-destinations.md#set-up-a-new-export).
+[!INCLUDE [export-permission-include](includes/export-permission.md)]
 
 1. Μεταβείτε στα **Δεδομένα** > **Εξαγωγές**.
 
-1. Για να δημιουργήσετε μια νέα εξαγωγή, επιλέξτε **Προσθήκη εξαγωγής**.
+1. Επιλέξτε **Προσθήκη εξαγωγής**.
 
-1. Στο πεδίο **Σύνδεση για εξαγωγή**, επιλέξτε μια σύνδεση από την ενότητα **Azure Data Lake**. Εάν δεν βλέπετε αυτό το όνομα ενότητας, δεν υπάρχουν διαθέσιμες συνδέσεις αυτού του τύπου.
+1. Στο πεδίο **Σύνδεση για εξαγωγή**, επιλέξτε μια σύνδεση από την ενότητα Azure Data Lake. Επικοινωνήστε με έναν διαχειριστή εάν δεν υπάρχει διαθέσιμη σύνδεση.
+
+1. Εισαγάγετε ένα όνομα για την εξαγωγή.
+
+1. Εισαγάγετε το όνομα φακέλου για το αποθήκευση Azure Data Lake Storage Gen2.
 
 1. Επιλέξτε το πλαίσιο δίπλα σε κάθε μία από τις οντότητες που θέλετε να εξαγάγετε σε αυτόν τον προορισμό.
 
 1. Επιλέξτε **Αποθήκευση**.
 
-Η αποθήκευση μιας εξαγωγής δεν εκτελεί αμέσως την εξαγωγή.
-
-Η εξαγωγή εκτελείται με κάθε [προγραμματισμένη ανανέωση](system.md#schedule-tab).
-Μπορείτε επίσης να [εξαγάγετε δεδομένα κατ' απαίτηση](export-destinations.md#run-exports-on-demand).
+[!INCLUDE [export-saving-include](includes/export-saving.md)]
 
 Τα δεδομένα που έχουν εξαχθεί αποθηκεύονται στο κοντέινερ χώρου αποθήκευσης Azure Data Lake Gen 2 που ρυθμίσατε.
 

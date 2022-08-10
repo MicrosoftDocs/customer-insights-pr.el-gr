@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 51f2e4e46aa25d10502d0feb5ea42eb7d2d637b9
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 71b35e4295e19c13edadc6548ac79715555e8183
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081438"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9196026"
 ---
 # <a name="enrich-company-profiles-with-dun--bradstreet-preview"></a>Εμπλουτισμός εταιρικών προφίλ με την Dun & Bradstreet (έκδοση προεπισκόπησης)
 
@@ -80,7 +80,7 @@ ms.locfileid: "9081438"
 
 1. Επισκοπήστε τη σύνοψη και έπειτα επιλέξτε **Επόμενο**.
 
-1. Επιλέξτε τη σύνδεση και επιβεβαιώστε. Επικοινωνήστε με διαχειριστή, εάν δεν υπάρχει τέτοια διαθέσιμη.
+1. Επιλέξτε τη σύνδεση και επιβεβαιώστε. Επικοινωνήστε με έναν διαχειριστή εάν δεν υπάρχει διαθέσιμη σύνδεση.
 
 1. Επιλέξτε **Επόμενο**.
 

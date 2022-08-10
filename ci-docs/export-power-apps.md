@@ -1,19 +1,19 @@
 ---
 title: Σύνδεση Power Apps (προεπισκόπηση)
 description: Συνδεθείτε με το Power Apps και το Power Automate.
-ms.date: 10/01/2021
+ms.date: 07/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: Nils-2m
 ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: 0b71f723d1e491d422d24b1be6616d2f33c95d40
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: 8807e82e65ea20d1a7f7dc07552229f377927eed
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9055260"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9196900"
 ---
 # <a name="power-apps-connector-preview"></a>Σύνδεση Power Apps (προεπισκόπηση)
 
@@ -27,7 +27,7 @@ ms.locfileid: "9055260"
 
 ## <a name="available-entities"></a>Διαθέσιμες οντότητες
 
-Αφού προσθέσετε το Customer Insights ως σύνδεση δεδομένων, μπορείτε να επιλέξετε τις ακόλουθες οντότητες στο Power Apps:
+Αφού προσθέσετε το Customer Insights ως σύνδεση δεδομένων, επιλέξτε τις ακόλουθες οντότητες Power Apps:
 
 - **Πελάτης**: για να χρησιμοποιήσετε δεδομένα από το [ενοποιημένο προφίλ πελάτη](customer-profiles.md).
 - **UnifiedActivity**: για εμφάνιση του [χρονοδιαγράμματος δραστηριοτήτων](activities.md) στην εφαρμογή.
@@ -37,41 +37,38 @@ ms.locfileid: "9055260"
 
 ### <a name="retrievable-entities"></a>Οντότητες με δυνατότητα ανάκτησης
 
-Μπορείτε να ανακτήσετε μόνο τις οντότητες **Πελάτης**, **UnifiedActivity**, **Τμήματα** και **ContactProfile** μέσω της σύνδεσης Power Apps. Το ContactProfile είναι διαθέσιμο μόνο σε παρουσία Customer Insights για επιχειρηματικούς λογαριασμούς. Εμφανίζονται άλλες οντότητες επειδή τις υποστηρίζει η υποκείμενη σύνδεση μέσω εναυσμάτων στο Power Automate.
+Μπορείτε να ανακτήσετε μόνο τις οντότητες **Πελάτης**, **UnifiedActivity**, **Τμήματα** και **ContactProfile** μέσω της σύνδεσης Power Apps. Το ContactProfile είναι διαθέσιμο μόνο σε περιβάλλοντα Customer Insights για επιχειρηματικούς λογαριασμούς. Εμφανίζονται άλλες οντότητες επειδή τις υποστηρίζει η υποκείμενη σύνδεση μέσω εναυσμάτων στο Power Automate.
 
 Μπορείτε να κάνετε το πολύ 100 κλήσεις ανά 60 δευτερόλεπτα. Μπορείτε να καλέσετε το τελικό σημείο api πολλές φορές χρησιμοποιώντας την $skip λογαριασμού. [Μάθετε περισσότερα σχετικά με την $skip επιλογής](/connectors/customerinsights/#get-items-from-an-entity).
 
 ### <a name="delegation"></a>Ανάθεση
 
-Η ανάθεση λειτουργεί για την οντότητα **Πελάτης** και την οντότητα **UnifiedActivity**. 
+Η ανάθεση λειτουργεί για την οντότητα **Πελάτης** και την οντότητα **UnifiedActivity**.
 
-- Ανάθεση για την οντότητα **Πελάτης**: για να χρησιμοποιήσετε την ανάθεση για αυτήν την οντότητα, τα πεδία πρέπει να καταχωρούνται σε ευρετήριο στην [Αναζήτηση και ευρετήριο φίλτρων](search-filter-index.md).  
+- Αντιπροσωπεία για την οντότητα **Πελάτης**: Για να χρησιμοποιήσετε την ανάθεση για αυτήν την οντότητα, τα πεδία πρέπει να καταχωρηθούν στο ευρετήριο στο [ευρετήριο αναζήτησης και φιλτραρίσματος](search-filter-index.md).  
 - Ανάθεση για **UnifiedActivity**: Η ανάθεση για αυτή την οντότητα λειτουργεί μόνο για τα πεδία **ActivityId** και **CustomerId**.  
 - Ανάθεση για **ContactProfile**: Η ανάθεση για αυτήν την οντότητα λειτουργεί μόνο για τα πεδία **ContactId** και **CustomerId**. Το ContactProfile είναι διαθέσιμο μόνο σε περιβάλλοντα Customer Insights για επιχειρηματικούς λογαριασμούς.
 
-Για περισσότερες πληροφορίες σχετικά με την ανάθεση, μεταβείτε σε [λειτουργίες με δυνατότητα ανάθεσης Power Apps και εργασίες](/powerapps/maker/canvas-apps/delegation-overview). 
+Για περισσότερες πληροφορίες σχετικά με την ανάθεση, μεταβείτε σε [λειτουργίες με δυνατότητα ανάθεσης Power Apps και εργασίες](/powerapps/maker/canvas-apps/delegation-overview).
 
 ## <a name="example-gallery-control"></a>Δείγμα στοιχείου ελέγχου συλλογής
 
-Μπορείτε να προσθέσετε προφίλ πελατών σε ένα [στοιχείο ελέγχου συλλογής](/powerapps/maker/canvas-apps/add-gallery).
+Προαιρετικά, προσθέστε προφίλ πελατών στον [έλεγχο συλλογής](/powerapps/maker/canvas-apps/add-gallery).
 
 1. Προσθέστε ένα στοιχείο ελέγχου **συλλογή** σε μια εφαρμογή που δημιουργείτε.
+  
+   :::image type="content" source="media/connector-powerapps9.png" alt-text="Προσθήκη στοιχείου συλλογής.":::
 
-    > [!div class="mx-imgBorder"]
-    > ![Προσθήκη στοιχείου συλλογής.](media/connector-powerapps9.png "Προσθήκη στοιχείου συλλογής.")
+1. Επιλέξτε **Πελάτης** ως προέλευση δεδομένων για τα στοιχεία.
 
-2. Επιλέξτε **Πελάτης** ως προέλευση δεδομένων για τα στοιχεία.
+   :::image type="content" source="media/choose-datasource-powerapps.png" alt-text="Επιλογή μιας προέλευσης δεδομένων.":::
 
-    > [!div class="mx-imgBorder"]
-    > ![Επιλογή μιας προέλευσης δεδομένων.](media/choose-datasource-powerapps.png "Επιλογή μιας προέλευσης δεδομένων.")
+1. Αλλάξτε τον πίνακα δεδομένων στα δεξιά για να επιλέξετε ποιο πεδίο θα εμφανίζεται η οντότητα πελάτη στη συλλογή.
 
-3. Μπορείτε να αλλάξετε τον πίνακα δεδομένων στα δεξιά για να επιλέξετε το πεδίο για την οντότητα Πελάτη που θα εμφανίζεται στη συλλογή.
-
-4. Εάν θέλετε να εμφανίσετε οποιοδήποτε πεδίο από τον επιλεγμένο πελάτη στη συλλογή, συμπληρώστε την ιδιότητα **Κείμενο** μιας ετικέτας χρησιμοποιώντας το **{Name_of_the_gallery}.Selected.{property_name}**  
+1. Εάν θέλετε να εμφανίσετε οποιοδήποτε πεδίο από τον επιλεγμένο πελάτη στη συλλογή, συμπληρώστε την ιδιότητα **Κείμενο** μιας ετικέτας χρησιμοποιώντας το **{Name_of_the_gallery}.Selected.{property_name}**  
     - Για παράδειγμα: _Gallery1.Selected.address1_city_
 
-5. Για να εμφανίσετε την ενοποιημένη λωρίδα χρόνου για έναν πελάτη, προσθέστε ένα στοιχείο συλλογής και προσθέστε την ιδιότητα **Στοιχεία** χρησιμοποιώντας το **Filter('UnifiedActivity', CustomerId = {Customer_Id})**  
+1. Για να εμφανίσετε την ενοποιημένη λωρίδα χρόνου για έναν πελάτη, προσθέστε ένα στοιχείο συλλογής και προσθέστε την ιδιότητα **Στοιχεία** χρησιμοποιώντας το **Filter('UnifiedActivity', CustomerId = {Customer_Id})**  
     - Για παράδειγμα: _Filter('UnifiedActivity', CustomerId = Gallery1.Selected.CustomerId)_
-
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

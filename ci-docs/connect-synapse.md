@@ -1,7 +1,7 @@
 ---
 title: Συνδέστε μια προέλευση δεδομένων του Azure Synapse (έκδοση προεπισκόπησης)
 description: Χρησιμοποιήστε μια βάση δεδομένων στο Azure Synapse ως αρχείο προέλευσης δεδομένων στο Dynamics 365 Customer Insights.
-ms.date: 03/25/2022
+ms.date: 07/26/2022
 ms.reviewer: v-wendysmith
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: c4ae65613a02df38a30f907dae72d413bf1a702f
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: 54247fbcdc27f6ed8314e0755164083eb461aa64
+ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9052699"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206907"
 ---
 # <a name="connect-an-azure-synapse-analytics-data-source-preview"></a>Συνδέστε μια προέλευση δεδομένων του Azure Synapse Analytics (έκδοση προεπισκόπησης)
 
@@ -66,3 +66,9 @@ ms.locfileid: "9052699"
 1. Προαιρετικά, επιλέξτε τις οντότητες δεδομένων για να επιτρέψετε τη δημιουργία προφίλ δεδομένων.
 
 1. Επιλέξτε **Αποθήκευση** για να εφαρμόσετε την επιλογή σας και ξεκινήστε την πρόσληψη των δεδομένων από την προέλευση δεδομένων που μόλις δημιουργήσατε και που συνδέεται με τους πίνακες βάσης δεδομένων λίμνης στο Azure Synapse Analytics. Ανοίγει η σελίδα **Προελεύσεις δεδομένων** που εμφανίζει τη νέα προέλευση δεδομένων σε κατάσταση **Ανανέωσης**.
+
+   [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+Η φόρτωση των δεδομένων μπορεί να διαρκέσει πολύ. Μετά από μια επιτυχημένη ανανέωση, τα δεδομένα που απορροφήθηκαν μπορούν να ελεγχθούν από τη σελίδα [**Οντότητες**](entities.md).
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]
