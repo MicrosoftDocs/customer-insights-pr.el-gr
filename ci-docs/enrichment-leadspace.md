@@ -1,19 +1,19 @@
 ---
 title: Εμπλουτισμός προφίλ εταιρείας με Leadspace (έκδοση προεπισκόπησης)
 description: Γενικές πληροφορίες σχετικά με τον εμπλουτισμό τρίτου μέρους Leadspace.
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 3f23fe7177f931db3e3179970915d0cd3c736f87
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: f45fabc036775e11fc439f69513678d0607729d0
+ms.sourcegitcommit: b1d06fe26934f12f0c5ed13e8ef1d37e52e67cc7
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196210"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "9237950"
 ---
 # <a name="enrich-company-profiles-with-leadspace-preview"></a>Εμπλουτισμός προφίλ εταιρείας με Leadspace (έκδοση προεπισκόπησης)
 
@@ -35,14 +35,9 @@ ms.locfileid: "9196210"
 
 1. Πληκτρολογήστε ένα όνομα για τη σύνδεση και ένα έγκυρο διακριτικό Leadspace.
 
-1. Ελέγξτε και δώστε τη συγκατάθεσή σας για το [Απόρρητο δεδομένων και συμμόρφωση](#data-privacy-and-compliance) επιλέγοντας **Συμφωνώ**.
+1. Εξετάστε το [απόρρητο και συμμόρφωση δεδομένων](connections.md#data-privacy-and-compliance) και επιλέξτε **συμφωνώ**.
 
 1. Επιλέξτε **Επαλήθευση** για να επικυρώσετε τη ρύθμιση παραμέτρων και, στη συνέχεια, επιλέξτε **Αποθήκευση**.
-
-### <a name="data-privacy-and-compliance"></a>Απόρρητο δεδομένων και συμμόρφωση
-
-Όταν ενεργοποιείτε το Dynamics 365 Customer Insights για να μεταδίδετε δεδομένα στο Leadspace, επιτρέπετε τη μεταφορά δεδομένων εκτός του ορίου συμμόρφωσης για το Dynamics 365 Customer Insights, συμπεριλαμβανομένων των δυνητικά ευαίσθητων δεδομένων, όπως τα προσωπικά δεδομένα. Η Microsoft θα μεταβιβάσει τα εν λόγω δεδομένα με τη δική σας οδηγία, αλλά εσείς είστε υπεύθυνοι για να διασφαλίσετε ότι το Leadspace πληροί τυχόν υποχρεώσεις προστασίας προσωπικών δεδομένων ή ασφάλειας που ενδεχομένως διαθέτετε. Για περισσότερες πληροφορίες, ανατρέξτε στη [Δήλωση προστασίας προσωπικών δεδομένων της Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
-Ο διαχειριστής σας για το Dynamics 365 Customer Insights μπορεί να καταργήσει αυτόν τον εμπλουτισό ανά πάσα στιγμή, ώστε να διακοπεί η χρήση αυτής της λειτουργικότητας.
 
 ## <a name="configure-the-enrichment"></a>Ρύθμιση παραμέτρων του εμπλουτισμού
 

@@ -1,19 +1,19 @@
 ---
 title: Εμπλουτίστε τα προφίλ πελατών με δεδομένα θέσης από τους Χάρτες Azure (έκδοση προεπισκόπησης)
 description: Γενικές πληροφορίες σχετικά με τον εμπλουτισμό Χαρτών Azure πρώτα.
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: dfadc08f67beac3fded1a97e557ee9e1880664e0
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: f14b4fc20a9a1d8842f42f9e0e656b3d8dcddcf4
+ms.sourcegitcommit: b1d06fe26934f12f0c5ed13e8ef1d37e52e67cc7
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9052607"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "9238042"
 ---
 # <a name="enrich-customer-profiles-with-location-data-from-azure-maps-preview"></a>Εμπλουτίστε τα προφίλ πελατών με δεδομένα θέσης από τους Χάρτες Azure (έκδοση προεπισκόπησης)
 
@@ -35,14 +35,9 @@ ms.locfileid: "9052607"
 
 1. Πληκτρολογήστε ένα όνομα για τη σύνδεση και ένα έγκυρο κλειδί API Χαρτών Azure.
 
-1. Ελέγξτε και δώστε τη συγκατάθεσή σας για το [Απόρρητο δεδομένων και συμμόρφωση](#data-privacy-and-compliance) επιλέγοντας **Συμφωνώ**.
+1. Εξετάστε το [απόρρητο και συμμόρφωση δεδομένων](connections.md#data-privacy-and-compliance) και επιλέξτε **συμφωνώ**.
 
 1. Επιλέξτε **Επαλήθευση** για να επικυρώσετε τη ρύθμιση παραμέτρων και, στη συνέχεια, επιλέξτε **Αποθήκευση**.
-
-### <a name="data-privacy-and-compliance"></a>Απόρρητο δεδομένων και συμμόρφωση
-
-Όταν ενεργοποιείτε τη δυνατότητα του Dynamics 365 Customer Insights για μεταβίβαση δεδομένων στους Χάρτες Azure, επιτρέπετε τη μεταφορά δεδομένων εκτός του ορίου συμμόρφωσης για το Dynamics 365 Customer Insights, συμπεριλαμβανομένων πιθανώς ευαίσθητων δεδομένων, όπως τα προσωπικά δεδομένα. Η Microsoft θα μεταφέρει αυτά τα δεδομένα ειπ'ς οδηγίες σας, αλλά είστε υπεύθυνοι για τη διασφάλιση ότι οι Χάρτες Azure θα πληρούν οποιεσδήποτε υποχρεώσεις προστασίας προσωπικών δεδομένων ή ασφάλειας που ίσως έχετε. Για περισσότερες πληροφορίες, μεταβείτε στη [Δήλωση προστασίας προσωπικών δεδομένων της Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
-Ο διαχειριστής Dynamics 365 Customer Insights μπορεί να καταργήσει αυτόν τον εμπλουτισό οποιαδήποτε στιγμή, για να διακόψετε τη χρήση αυτής της λειτουργίας.
 
 ## <a name="configure-the-enrichment"></a>Ρύθμιση παραμέτρων του εμπλουτισμού
 

@@ -1,19 +1,19 @@
 ---
 title: Εμπλουτισμός προφίλ πελατών με δεδομένα ταυτότητας από το LiveRamp (έκδοση προεπισκόπισης)
 description: Εμπλουτισμός προφίλ πελατών με δεδομένα LiveRamp.
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 49bf558209ca91ab9d8db945862a57adccee1f6b
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 0aa6dc144602741b87843a5373779855ee3e334c
+ms.sourcegitcommit: b1d06fe26934f12f0c5ed13e8ef1d37e52e67cc7
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196348"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "9237812"
 ---
 # <a name="enrich-customer-profiles-with-identity-data-from-liveramp-preview"></a>Εμπλουτισμός προφίλ πελατών με δεδομένα ταυτότητας από το LiveRamp (έκδοση προεπισκόπισης)
 
@@ -41,13 +41,9 @@ ms.locfileid: "9196348"
 
 1. Πληκτρολογήστε ένα όνομα για τη σύνδεση και ένα έγκυρο αναγνωριστικό προγράμματος-πελάτη LiveRamp και ένα μυστικό.
 
-1. Ελέγξτε και δώστε τη συγκατάθεσή σας για το [Απόρρητο δεδομένων και συμμόρφωση](#data-privacy-and-compliance) επιλέγοντας **Συμφωνώ**.
+1. Εξετάστε το [απόρρητο και συμμόρφωση δεδομένων](connections.md#data-privacy-and-compliance) και επιλέξτε **συμφωνώ**.
 
 1. Επιλέξτε **Επαλήθευση** για να επικυρώσετε τη ρύθμιση παραμέτρων και, στη συνέχεια, επιλέξτε **Αποθήκευση**.
-
-### <a name="data-privacy-and-compliance"></a>Απόρρητο δεδομένων και συμμόρφωση
-
-Όταν ενεργοποιείτε το Dynamics 365 Customer Insights για να μεταδίδετε δεδομένα στο Liveramp, επιτρέπετε τη μεταφορά δεδομένων εκτός του ορίου συμμόρφωσης για το Dynamics 365 Customer Insights, συμπεριλαμβανομένων των δυνητικά ευαίσθητων δεδομένων, όπως τα προσωπικά δεδομένα. Η Microsoft θα μεταφέρει αυτά τα δεδομένα ειπ'ς οδηγίες σας, αλλά είστε υπεύθυνοι για τη διασφάλιση ότι το LiveRamp θα πληροί οποιεσδήποτε υποχρεώσεις προστασίας προσωπικών δεδομένων ή ασφάλειας που ίσως έχετε. Επανεξέταση της [Δήλωσης προστασίας προσωπικών δεδομένων της Microsoft](https://go.microsoft.com/fwlink/?linkid=396732), για περισσότερες πληροφορίες. Ο διαχειριστής Dynamics 365 Customer Insights μπορεί να καταργήσει αυτόν τον εμπλουτισό οποιαδήποτε στιγμή, για να διακόψετε τη χρήση αυτής της λειτουργίας.
 
 ## <a name="configure-the-enrichment"></a>Ρύθμιση παραμέτρων του εμπλουτισμού
 

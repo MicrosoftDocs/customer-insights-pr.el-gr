@@ -1,7 +1,7 @@
 ---
 title: Προσκομίστε το δικό σας Azure Key Vault (έκδοση προεπισκόπησης)
 description: Μάθετε πώς να ρυθμίσετε τις παραμέτρους του Customer Insights ώστε να χρησιμοποιείτε το δικό σας Azure Key Vault για να διαχειρίζεστε μυστικούς κωδικούς.
-ms.date: 10/06/2021
+ms.date: 08/02/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -11,58 +11,63 @@ manager: shellyha
 searchScope:
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: 8fdb131de35c7d936d2921265f03faa5682db6f6
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 229fb5698a02d1d73c30442f61c7b1b5fce918bf
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081478"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9246155"
 ---
 # <a name="bring-your-own-azure-key-vault-preview"></a>Προσκομίστε το δικό σας Azure Key Vault (έκδοση προεπισκόπησης)
 
 Η σύνδεση ενός αποκλειστικού [Azure Key Vault](/azure/key-vault/general/basic-concepts) σε ένα περιβάλλον Customer Insights βοηθά τους οργανισμούς να ανταποκριθούν στις απαιτήσεις συμμόρφωσης.
-Το αποκλειστικό Key Vault μπορεί να χρησιμοποιηθεί για προεργασία και χρήση μυστικών στο όριο συμμόρφωσης ενός οργανισμού. Το Customer Insights μπορεί να χρησιμοποιεί τα μυστικά του Azure Key Vault για τη [ρύθμιση συνδέσεων](connections.md) σε συστήματα τρίτων.
 
 ## <a name="link-the-key-vault-to-the-customer-insights-environment"></a>Συνδέστε το Key Vault με το περιβάλλον Customer Insights
 
+Ρυθμίστε το αποκλειστικό Key Vault για δημιουργία σταδίων και χρήση μυστικών στο όριο συμμόρφωσης ενός οργανισμού.
+
 ### <a name="prerequisites"></a>Προϋποθέσεις
 
-Για να ρυθμίσετε τις παραμέτρους του Key Vault στο Customer Insights, πρέπει να πληρούνται οι παρακάτω προϋποθέσεις:
+- Μια ενεργή συνδρομή Azure.
 
-- Έχετε ενεργή συνδρομή στο Azure.
+- Ένας ρόλος [Διαχειριστή](permissions.md#admin) [ανατέθηκε](permissions.md#add-users) στο Customer Insights.
 
-- Έχετε ρόλο [Διαχειριστή](permissions.md#admin) στο Customer Insights. Μάθετε περισσότερα σχετικά με τα [δικαιώματα χρηστών στο Customer Insights](permissions.md#assign-roles-and-permissions).
+- Ρόλοι [Συμβάλλων](/azure/role-based-access-control/built-in-roles#contributor) και [Διαχειριστής πρόσβασης χρήστη](/azure/role-based-access-control/built-in-roles#user-access-administrator) στο Key Vault ή στην ομάδα πόρων στην οποία ανήκει το Key Vault. Για περισσότερες πληροφορίες, μεταβείτε στην επιλογή [Προσθήκη ή κατάργηση αντιστοιχίσεων ρόλων Azure χρησιμοποιώντας την πύλη Azure](/azure/role-based-access-control/role-assignments-portal). Εάν δεν έχετε το ρόλο Διαχειριστή πρόσβασης χρήστη στο Key Vault, ορίστε τα δικαιώματα ελέγχου πρόσβασης που βασίζονται σε ρόλους για την αρχή υπηρεσίας Azure για το Dynamics 365 Customer Insights ξεχωριστά. Ακολουθήστε τα βήματα για να [χρησιμοποιήσετε μια αρχή υπηρεσίας Azure](connect-service-principal.md) για το Key Vault που πρέπει να συνδεθεί.
 
-- Έχετε τους ρόλους [Συμμετέχων](/azure/role-based-access-control/built-in-roles#contributor) και [Διαχειριστής πρόσβασης χρήστη](/azure/role-based-access-control/built-in-roles#user-access-administrator) στο Key Vault ή στην ομάδα πόρων στην οποία ανήκει το Key Vault. Για περισσότερες πληροφορίες, μεταβείτε στην επιλογή [Προσθήκη ή κατάργηση αντιστοιχίσεων ρόλων Azure χρησιμοποιώντας την πύλη Azure](/azure/role-based-access-control/role-assignments-portal). Εάν δεν έχετε το ρόλο Διαχειριστή πρόσβασης χρήστη στο Key Vault, πρέπει να ορίσετε τα δικαιώματα ελέγχου πρόσβασης που βασίζονται σε ρόλους για την αρχή υπηρεσίας Azure για το Dynamics 365 Customer Insights ξεχωριστά. Ακολουθήστε τα βήματα για να [χρησιμοποιήσετε μια αρχή υπηρεσίας Azure](connect-service-principal.md) για το Key Vault που πρέπει να συνδεθεί.
+- Το Key Vault πρέπει να έχει **απενεργοποιήσει** το τείχος προστασίας Key Vault.
 
-- Το key vault πρέπει να έχει **απενεργοποιήσει** το τείχος προστασίας Key Vault.
+- Το Key Vault βρίσκεται στην ίδια [θέση Azure](https://azure.microsoft.com/global-infrastructure/geographies/#overview) με το περιβάλλον Customer Insights. Στο Customer Insights, μεταβείτε στην καρτέλα **Διαχείριση** > **Σύστημα** και **Σχετικά με** για να δείτε την περιοχή του περιβάλλοντος.
 
-- Το key vault βρίσκεται στην ίδια [θέση Azure](https://azure.microsoft.com/global-infrastructure/geographies/#overview) με το περιβάλλον Customer Insights. Η περιοχή του περιβάλλοντος στο Customer Insights παρατίθεται στην περιοχή **Διαχειριστής** > **Σύστημα** > **Σχετικά με** > **Περιοχή**.
+### <a name="recommendations"></a>Προτάσεις
+
+- [Χρησιμοποιήστε ένα ξεχωριστό ή αποκλειστικό Key Vault](/azure/key-vault/general/best-practices#why-we-recommend-separate-key-vaults) που περιέχει μόνο τα μυστικά που απαιτούνται για Customer Insights.
+
+- Ακολουθήστε τις [βέλτιστες πρακτικές για να χρησιμοποιήσετε το Key Vault](/azure/key-vault/general/best-practices#turn-on-logging) για πρόσβαση ελέγχου, δημιουργία αντιγράφων ασφαλείας, έλεγχο και επιλογές ανάκτησης.
 
 ### <a name="link-a-key-vault-to-the-environment"></a>Σύνδεση ενός key vault με το περιβάλλον
 
 1. Μεταβείτε στο **Διαχειριστής** > **Ασφάλεια**, και κατόπιν επιλέξτε την καρτέλα **Key Vault**.
 1. Στο πλακίδιο **Key Vault**, επιλέξτε **Ρύθμιση**.
 1. Επιλέξτε μια **συνδρομή**.
-1. Επιλέξτε ένα key vault από την αναπτυσσόμενη λίστα **Key Vault**. Εάν εμφανίζονται υπερβολικά πολλά key vault, επιλέξτε μια ομάδα πόρων για να περιορίσετε τα αποτελέσματα αναζήτησης.
-1. Αποδεχτείτε τη δήλωση **προστασίας προσωπικών δεδομένων και συμμόρφωσης**.
+1. Επιλέξτε ένα key vault από την αναπτυσσόμενη λίστα **Key Vault**. Εάν υπάρχουν υπερβολικά πολλά Key Vault, επιλέξτε μια ομάδα πόρων για να περιορίσετε τα αποτελέσματα αναζήτησης.
+1. Ελέγξτε την [Προστασία προσωπικών δεδομένων και τη συμμόρφωση](connections.md#data-privacy-and-compliance) και επιλέξτε **Συμφωνώ**.
 1. Επιλέξτε **Αποθήκευση**.
 
-:::image type="content" source="media/set-up-azure-key-vault.png" alt-text="Βήματα για να ρυθμίσετε ένα συνδεδεμένο key vault στο Customer Insights.":::
-
-Το πλακίδιο **Key Vault** εμφανίζει τώρα το όνομα του συνδεδεμένου κλειδιού, την ομάδα πόρων και τη συνδρομή. Είναι έτοιμο για χρήση στην εγκατάσταση σύνδεσης.
-Για λεπτομέρειες σχετικά με τα δικαιώματα επί του key vault που εκχωρούνται στο Customer Insights, μεταβείτε στην επιλογή [Δικαιώματα που εκχωρούνται στο key vault](#permissions-granted-on-the-key-vault), στη συνέχεια αυτού του άρθρου.
+Το πλακίδιο **Key Vault** εμφανίζει τώρα το όνομα του συνδεδεμένου Key Vault, τη συνδρομή και την ομάδα πόρων. Είναι έτοιμο για χρήση στην εγκατάσταση σύνδεσης.
+Για λεπτομέρειες σχετικά με τα δικαιώματα επί του Key Vault που εκχωρούνται στο Customer Insights, μεταβείτε στην επιλογή [Δικαιώματα που εκχωρούνται στο Key Vault](#permissions-granted-on-the-key-vault).
 
 ## <a name="use-the-key-vault-in-the-connection-setup"></a>Χρησιμοποιήστε το key vault στη ρύθμιση σύνδεσης
 
-Κατά [ρύθμιση συνδέσεων](connections.md) σε συστήματα τρίτων, μπορούν να χρησιμοποιηθούν τα μυστικά του συνδεδεμένου Key Vault για τη ρύθμιση των συνδέσεων.
+Κατά [ρύθμιση συνδέσεων](connections.md) σε [υποστηριζόμενα συστήματα τρίτων](#supported-connection-types), χρησιμοποιήστε τα μυστικά του συνδεδεμένου Key Vault για τη ρύθμιση των συνδέσεων.
 
 1. Μετάβαση στον **Διαχειριστή** > **Συνδέσεις**.
 1. Επιλέξτε **Προσθήκη σύνδεσης**.
 1. Για τους υποστηριζόμενους τύπους σύνδεσης, διατίθεται στοιχείο εναλλαγής **Χρήση του Key Vault** αν έχετε συνδέσει ένα key vault.
 1. Αντί να καταχωρήσετε το όνομα χρήστη με μη αυτόματο τρόπο, μπορείτε να επιλέξετε το όνομα του μυστικού που κατευθύνει στην τιμή του μυστικού στο key vault.
 
-:::image type="content" source="media/use-key-vault-secret.png" alt-text="Τμήμα παραθύρου σύνδεσης με μια σύνδεση SFTP που χρησιμοποιεί ένα μυστικό Key Vault.":::
+   :::image type="content" source="media/use-key-vault-secret.png" alt-text="Τμήμα παραθύρου σύνδεσης με μια σύνδεση SFTP που χρησιμοποιεί ένα μυστικό Key Vault.":::
+
+1. Για να δημιουργήσετε τη σύνδεση, επιλέξτε **Αποθήκευση**.
 
 ## <a name="supported-connection-types"></a>Υποστηριζόμενοι τύποι σύνδεσης
 
@@ -97,19 +102,13 @@ ms.locfileid: "9081478"
 
 ### <a name="azure-role-based-access-control"></a>Στοιχείο ελέγχου πρόσβασης βάσει ρόλων Azure
 
-Οι ρόλοι χρήστη Αναγνώστη Key Vault και Χρήστη μυστικών Key Vault θα προστεθούν για Customer Insights. Για λεπτομέρειες σχετικά με αυτούς τους ρόλους, μεταβείτε στους [ενσωματωμένους ρόλους Azure για τις λειτουργίες αποθήκευσης δεδομένων Key Vault](/azure/key-vault/general/rbac-guide?tabs=azure-cli).
-
-## <a name="recommendations"></a>Προτάσεις
-
-- Χρησιμοποιήστε ένα ξεχωριστό ή αποκλειστικό key vault που περιέχει μόνο τα μυστικά που απαιτούνται για Customer Insights. Μάθετε περισσότερα για τους λόγους [για τους οποίους συνιστώνται ξεχωριστοί χώροι αποθήκευσης κλειδιών](/azure/key-vault/general/best-practices#why-we-recommend-separate-key-vaults).
-
-- Ακολουθήστε τις [βέλτιστες πρακτικές για να χρησιμοποιήσετε το Key Vault](/azure/key-vault/general/best-practices#turn-on-logging) για πρόσβαση ελέγχου, δημιουργία αντιγράφων ασφαλείας, έλεγχο και επιλογές ανάκτησης.
+Οι ρόλοι χρήστη [Αναγνώστη Key Vault και Χρήστη μυστικών Key Vault](/azure/key-vault/general/rbac-guide?tabs=azure-cli) θα προστεθούν για το Customer Insights.
 
 ## <a name="frequently-asked-questions"></a>Συνήθεις ερωτήσεις
 
 ### <a name="can-customer-insights-write-secrets-or-overwrite-secrets-into-the-key-vault"></a>Μπορεί το Customer Insights να γράφει μυστικά ή να αντικαταστήσει μυστικά στο key vault;
 
-Αρ. Μόνο τα δικαιώματα ανάγνωσης και παράθεσης που περιγράφονται στην ενότητα [εκχωρούνται δικαιώματα](#permissions-granted-on-the-key-vault) νωρίτερα σε αυτό το άρθρο εκχωρούνται σε Customer Insights. Το σύστημα δεν μπορεί να προσθέσει, να διαγράψει ή να αντικαταστήσει μυστικά στο key vault. Αυτός είναι και ο λόγος για τον οποίο δεν μπορείτε να καταχωρήσετε διαπιστευτήρια όταν μια σύνδεση χρησιμοποιεί το Key Vault.
+Όχι. Μόνο τα δικαιώματα ανάγνωσης και παράθεσης που περιγράφονται στην ενότητα [δικαιώματα που εκχωρήθηκαν](#permissions-granted-on-the-key-vault) εκχωρούνται στο Customer Insights. Το σύστημα δεν μπορεί να προσθέσει, να διαγράψει ή να αντικαταστήσει μυστικά στο key vault. Αυτός είναι και ο λόγος για τον οποίο δεν μπορείτε να καταχωρήσετε διαπιστευτήρια όταν μια σύνδεση χρησιμοποιεί το Key Vault.
 
 ### <a name="can-i-change-a-connection-from-using-key-vault-secrets-to-default-authentication"></a>Μπορώ να αλλάξω μια σύνδεση από τη χρήση των μυστικών Key Vault στον προεπιλεγμένο έλεγχο ταυτότητας;
 
@@ -117,7 +116,7 @@ ms.locfileid: "9081478"
 
 ### <a name="how-can-i-revoke-access-to-a-key-vault-for-customer-insights"></a>Πώς μπορώ να ανακαλέσω την πρόσβαση σε ένα key vault για Customer Insights;
 
-Ανάλογα με το εάν έχει ενεργοποιηθεί η [πολιτική πρόσβασης Key Vault](/azure/key-vault/general/assign-access-policy?tabs=azure-portal) ή το [στοιχείο ελέγχου πρόσβασης που βασίζεται σε ρόλους στο Azure](/azure/key-vault/general/rbac-guide?tabs=azure-cli), πρέπει να καταργήσετε τα δικαιώματα για την αρχή υπηρεσίας `0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff` με το όνομα `Dynamics 365 AI for Customer Insights`. Όλες οι συνδέσεις που χρησιμοποιούν το key vault θα σταματήσουν να λειτουργούν.
+Αν η [πολιτική πρόσβασης Key Vault](/azure/key-vault/general/assign-access-policy?tabs=azure-portal) ή το [στοιχείο ελέγχου πρόσβασης που βασίζεται σε ρόλους στο Azure](/azure/key-vault/general/rbac-guide?tabs=azure-cli), πρέπει να καταργήσετε τα δικαιώματα για την αρχή υπηρεσίας `0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff` με το όνομα `Dynamics 365 AI for Customer Insights`. Όλες οι συνδέσεις που χρησιμοποιούν το key vault θα σταματήσουν να λειτουργούν.
 
 ### <a name="a-secret-thats-used-in-a-connection-got-removed-from-the-key-vault-what-can-i-do"></a>Ένα μυστικό που χρησιμοποιείται σε μια σύνδεση καταργήθηκε από το key vault. Τι μπορώ να κάνω;
 

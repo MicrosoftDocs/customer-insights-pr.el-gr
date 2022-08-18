@@ -8,12 +8,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: f9c9ee55f2874ae1dcaf82f2ff17ed0fbbb7804d
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 0e953cfff12df433d033717d58b28c2834468916
+ms.sourcegitcommit: 086f75136132d561cd78a4c2cb1e1933e2301f32
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196394"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "9259844"
 ---
 # <a name="export-data-to-azure-synapse-analytics-preview"></a>Εξαγωγή δεδομένων στο Azure Synapse Analytics (έκδοση προεπισκόπησης)
 
@@ -24,7 +24,7 @@ ms.locfileid: "9196394"
 > [!NOTE]
 > Φροντίστε να ορίσετε όλες τις **αντιστοιχίσεις ρόλων** όπως περιγράφεται.
 
-- Στο Customer Insights, σας Azure Active Directory (AD) ο λογαριασμός χρήστη πρέπει να έχει ένα [Ρόλο διαχειριστή](permissions.md#assign-roles-and-permissions).
+- Στο Customer Insights, σας Azure Active Directory (AD) ο λογαριασμός χρήστη πρέπει να έχει ένα [Ρόλο διαχειριστή](permissions.md#add-users).
 
 Στο Azure:
 
@@ -39,6 +39,8 @@ ms.locfileid: "9196394"
 - Η *[Azure Synapse διαχειριζόμενη ταυτότητα χώρου εργασίας](/azure/synapse-analytics/security/synapse-workspace-managed-identity)* έχει άδειες **Storage Blob Data Contributor** στον Λογαριασμό Gen2 Azure Data Lake Storage όπου βρίσκονται τα δεδομένα και συνδέονται με τον Azure Synapse workspace. Μάθετε περισσότερα σχετικά για τη [χρήση της πύλης Azure για την εκχώρηση ενός ρόλου Azure για πρόσβαση σε δεδομένα blob και ουράς](/azure/storage/common/storage-auth-aad-rbac-portal) και [δικαιώματα συμμετέχοντα δεδομένων blob αποθήκευσης ](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
 
 - Στον Azure Synapse workspace, η *κύρια υπηρεσία για το Customer Insights* έχει ανατεθημένο ρόλο **Διαχειριστή**[Synapse](/azure/synapse-analytics/security/how-to-set-up-access-control).
+
+- Εάν το περιβάλλον Customer Insights αποθηκεύει δεδομένα στο [δικό σας Azure Data Lake Storage](own-data-lake-storage.md), ο χρήστης που ρυθμίζει τη σύνεση στο Azure Synapse Analytics χρειάζεται τουλάχιστον τον ενσωματωμένο ρόλο **Αναγνώστης** στον χώρο αποθήκευσης Data Lake. Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Εκχώρηση ρόλων Azure χρησιμοποιώντας την πύλη Azure](/azure/role-based-access-control/role-assignments-portal).
 
 ## <a name="set-up-connection-to-azure-synapse"></a>Ρύθμιση σύνδεσης σε Azure Synapse
 

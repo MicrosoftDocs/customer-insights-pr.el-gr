@@ -1,19 +1,19 @@
 ---
 title: Εμπλουτισμός προφίλ πελατών με δημογραφικά στοιχεία από το Experian (έκδοση προεπισκόπησης)
 description: Γενικές πληροφορίες σχετικά με τον εμπλουτισμό τρίτων Experian.
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 876853ab42e8c08ad1abacb8d8a205c0aadabcf7
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: fccb37cde3f05a70009c18b6c52db01a5ede094d
+ms.sourcegitcommit: b1d06fe26934f12f0c5ed13e8ef1d37e52e67cc7
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195936"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "9237996"
 ---
 # <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>Εμπλουτισμός προφίλ πελατών με δημογραφικά στοιχεία από το Experian (έκδοση προεπισκόπησης)
 
@@ -41,13 +41,9 @@ H Experian είναι μια παγκοσμίως κορυφαία εταιρε�
 
 1. Πληκτρολογήστε ένα όνομα για τη σύνδεση και ένα έγκυρο αναγνωριστικό χρήστη, αναγνωριστικό μέρους και αριθμό μοντέλου για το λογαριασμό ασφαλούς μεταφοράς Experian.
 
-1. Ελέγξτε και δώστε τη συγκατάθεσή σας για το [Απόρρητο δεδομένων και συμμόρφωση](#data-privacy-and-compliance) επιλέγοντας **Συμφωνώ**.
+1. Εξετάστε το [απόρρητο και συμμόρφωση δεδομένων](connections.md#data-privacy-and-compliance) και επιλέξτε **συμφωνώ**.
 
 1. Επιλέξτε **Επαλήθευση** για να επικυρώσετε τη ρύθμιση παραμέτρων και, στη συνέχεια, επιλέξτε **Αποθήκευση**.
-
-### <a name="data-privacy-and-compliance"></a>Απόρρητο δεδομένων και συμμόρφωση
-
-Όταν ενεργοποιείτε τη δυνατότητα μεταβίβασης δεδομένων από το Dynamics 365 Customer Insights προς το Experian, επιτρέπετε τη μεταφορά δεδομένων εκτός του ορίου συμμόρφωσης για το Dynamics 365 Customer Insights, συμπεριλαμβάνων πιθανώς ευαίσθητων δεδομένων, όπως τα προσωπικά δεδομένα. Η Microsoft θα μεταφέρει τέτοιου είδους δεδομένα κατόπιν οδηγιών σας, αλλά εσείς φέρετε την ευθύνη για τη διασφάλιση ότι το Experian ανταποκρίνεται σε οποιεσδήποτε υποχρεώσεις ιδιωτικού απορρήτου ή ασφάλειας που ενδεχομένως έχετε. Για περισσότερες πληροφορίες, ανατρέξτε στη [Δήλωση προστασίας προσωπικών δεδομένων της Microsoft](https://go.microsoft.com/fwlink/?linkid=396732). Ο διαχειριστής σας για το Dynamics 365 Customer Insights μπορεί να καταργήσει αυτόν τον εμπλουτισό ανά πάσα στιγμή, ώστε να διακοπεί η χρήση αυτής της λειτουργικότητας.
 
 ## <a name="configure-the-enrichment"></a>Ρύθμιση παραμέτρων του εμπλουτισμού
 

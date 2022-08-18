@@ -284,18 +284,20 @@
       href: connect-service-principal.md
 - name: Διαχείριση
   items:
-    - name: Ρύθμιση παραμέτρων συστήματος
-      href: system.md
-    - name: 'Ρύθμιση παραμέτρων ασφαλείας '
-      href: security-overview.md
     - name: Ανάθεση δικαιωμάτων χρήστη
       href: permissions.md
     - name: Φέρετε τον δικό σας Θάλαμο κλειδιών
       href: use-azure-key-vault.md
+    - name: 'Ρύθμιση παραμέτρων ασφαλείας '
+      href: security-overview.md
     - name: Εξαγωγή αρχείων καταγραφής διαγνωστικών
       href: diagnostics.md
-    - name: Επισκόπηση συνδέσεων
+    - name: Διαχείριση συνδέσεων
       href: connections.md
+    - name: Προγραμματισμός ανανέωσης συστήματος
+      href: schedule-refresh.md
+    - name: Προβολή ρυθμίσεων παραμέτρων συστήματος
+      href: system.md
 - name: APIs
   items:
     - name: Εργασία με API

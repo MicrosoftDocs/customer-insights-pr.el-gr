@@ -1,7 +1,7 @@
 ---
 title: Εμπλουτισμός εταιρικών προφίλ με την Dun & Bradstreet (έκδοση προεπισκόπησης)
 description: Γενικές πληροφορίες σχετικά με τον εμπλουτισμό τρίτων από την Dun & Bradstreet.
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 71b35e4295e19c13edadc6548ac79715555e8183
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: e89b64774dcb519a071dd3d403473807a50e7f33
+ms.sourcegitcommit: b1d06fe26934f12f0c5ed13e8ef1d37e52e67cc7
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196026"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "9237904"
 ---
 # <a name="enrich-company-profiles-with-dun--bradstreet-preview"></a>Εμπλουτισμός εταιρικών προφίλ με την Dun & Bradstreet (έκδοση προεπισκόπησης)
 
@@ -55,16 +55,11 @@ ms.locfileid: "9196026"
 
 1. Δώστε έγκυρα διαπιστευτήρια Dun & Bradstreet και λεπτομέρειες έργου Dun & Bradstreet *Περιοχή, Απόθεση διαδρομής φακέλου και Όνομα φακέλου απόθεσης*. Αυτές [οι πληροφορίες προέρχονται](#set-up-your-dun--bradstreet-project) από το έργο Dun & Bradstreet.
 
-1. Ελέγξτε και δώστε τη συγκατάθεσή σας για το [Απόρρητο δεδομένων και συμμόρφωση](#data-privacy-and-compliance) επιλέγοντας **Συμφωνώ**.
+1. Εξετάστε το [απόρρητο και συμμόρφωση δεδομένων](connections.md#data-privacy-and-compliance) και επιλέξτε **συμφωνώ**.
 
 1. Επιλέξτε **Επαλήθευση** για να επικυρώσετε τη ρύθμιση παραμέτρων και, στη συνέχεια, επιλέξτε **Αποθήκευση**.
 
    :::image type="content" source="media/enrichment-dnb-connection.png" alt-text="Σελίδα ρύθμισης παραμέτρων σύνδεσης για Dun & Bradstreet.":::
-
-### <a name="data-privacy-and-compliance"></a>Απόρρητο δεδομένων και συμμόρφωση
-
-Όταν ενεργοποιείτε το Dynamics 365 Customer Insights για να μεταδίδετε δεδομένα σε Dun & Bradstreet, επιτρέπετε τη μεταφορά δεδομένων εκτός του ορίου συμμόρφωσης για το Dynamics 365 Customer Insights, συμπεριλαμβανομένων των δυνητικά ευαίσθητων δεδομένων, όπως τα προσωπικά δεδομένα. Η Microsoft θα μεταφέρει αυτά τα δεδομένα με βάση τις οδηγίες σας, αλλά είστε υπεύθυνοι για τη διασφάλιση ότι η Dun & Bradstreet πληροί οποιεσδήποτε υποχρεώσεις προστασίας προσωπικών δεδομένων ή ασφάλειας που ίσως έχετε. Για περισσότερες πληροφορίες, ανατρέξτε στη [Δήλωση προστασίας προσωπικών δεδομένων της Microsoft](https://go.microsoft.com/fwlink/?linkid=396732).
-Ο διαχειριστής σας για το Dynamics 365 Customer Insights μπορεί να καταργήσει αυτόν τον εμπλουτισό ανά πάσα στιγμή, ώστε να διακοπεί η χρήση αυτής της λειτουργικότητας.
 
 ## <a name="supported-countries-or-regions"></a>Υποστηριζόμενες χώρες ή περιφέρειες
 

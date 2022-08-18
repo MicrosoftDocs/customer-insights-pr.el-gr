@@ -9,12 +9,12 @@ ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 54247fbcdc27f6ed8314e0755164083eb461aa64
-ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
+ms.openlocfilehash: 7bc0c3614e6dd39fbd65ae098ed679d95d09de9d
+ms.sourcegitcommit: 086f75136132d561cd78a4c2cb1e1933e2301f32
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9206907"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "9259798"
 ---
 # <a name="connect-an-azure-synapse-analytics-data-source-preview"></a>Συνδέστε μια προέλευση δεδομένων του Azure Synapse Analytics (έκδοση προεπισκόπησης)
 
@@ -24,26 +24,30 @@ ms.locfileid: "9206907"
 
 ## <a name="prerequisites"></a>Προϋποθέσεις
 
+> [!NOTE]
+> Οι Synapse Workspaces που έχουν [ενεργοποιημένο το τείχος προστασίας](/azure/synapse-analytics/security/synapse-workspace-ip-firewall) δεν υποστηρίζονται αυτή τη στιγμή.
 > [!IMPORTANT]
 > Φροντίστε να ορίσετε όλες τις **αντιστοιχίσεις ρόλων** όπως περιγράφεται.  
 
 **Στο Customer Insights**:
 
-* Έχετε ρόλο **Διαχειριστή** στο Customer Insights. Μάθετε περισσότερα σχετικά με τα [δικαιώματα χρηστών στο Customer Insights](permissions.md#assign-roles-and-permissions).
+* Έχετε ρόλο **Διαχειριστή** στο Customer Insights. Μάθετε περισσότερα σχετικά με τα [δικαιώματα χρηστών στο Customer Insights](permissions.md#add-users).
 
 **Στο Azure**:
 
 - Μια ενεργή συνδρομή Azure.
 
-- Εάν χρησιμοποιείτε έναν νέο λογαριασμό Azure Data Lake Storage Gen2, η *αρχή υπηρεσίας για το Customer Insights* χρειάζεται δικαιώματα **συμβαλλόντος δεδομένων BLOB αποθήκευσης**. Μάθετε περισσότερα σχετικά με [τη σύνδεση σε ένα Azure Data Lake Storage με μια αρχή εξυπηρέτησης για το Customer Insights](connect-service-principal.md). Το Data Lake Storage Gen2 **πρέπει να έχει ενεργοποιημένο τον** [ιεραρχικό χώρο ονομάτων](/azure/storage/blobs/data-lake-storage-namespace).
+- Εάν χρησιμοποιείτε έναν νέο λογαριασμό Azure Data Lake Storage Gen2, η *αρχή υπηρεσίας για το Customer Insights* που είναι Dynamics 365 AI για Customer Insights" χρειάζεται δικαιώματα **συμβαλλόντος δεδομένων BLOB αποθήκευσης**. Μάθετε περισσότερα σχετικά με [τη σύνδεση σε ένα Azure Data Lake Storage με μια αρχή εξυπηρέτησης για το Customer Insights](connect-service-principal.md). Το Data Lake Storage Gen2 **πρέπει να έχει ενεργοποιημένο τον** [ιεραρχικό χώρο ονομάτων](/azure/storage/blobs/data-lake-storage-namespace).
 
-- Στην ομάδα πόρων όπου βρίσκεται ο Azure Synapse workspace, η *αρχή υπηρεσίας* και ο *χρήστης για Customer Insights* χρειάζονται ανάθεση τουλάχιστον δικαιωμάτων **Αναγνώστη**. Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Εκχώρηση ρόλων Azure χρησιμοποιώντας την πύλη Azure](/azure/role-based-access-control/role-assignments-portal).
+- Στην ομάδα πόρων όπου βρίσκεται το Azure Synapse workspace, η *αρχή υπηρεσίας* που είναι Dynamics 365 AI για Customer Insights" και ο *χρήστης για Customer Insights* χρειάζονται ανάθεση τουλάχιστον δικαιωμάτων **Αναγνώστη**. Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Εκχώρηση ρόλων Azure χρησιμοποιώντας την πύλη Azure](/azure/role-based-access-control/role-assignments-portal).
 
 - Ο *χρήστης* χρειάζεται δικαιώματα **Συμβαλλόντος δεδομένων BLOB αποθήκευσης** στον λογαριασμό Azure Data Lake Storage Gen2 όπου τα δεδομένα βρίσκονται και συνδέονται με τον χώρο εργασίας Azure Synapse. Μάθετε περισσότερα σχετικά με [τη χρήση της πύλης Azure για την εκχώρηση ενός ρόλου Azure για πρόσβαση σε δεδομένα blob και ουράς](/azure/storage/common/storage-auth-aad-rbac-portal) και [δικαιώματα συμμετέχοντα δεδομένων blob αποθήκευσης](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
 
 - Η *[διαχειριζόμενη ταυτότητα χώρου εργασίας Azure Synapse](/azure/synapse-analytics/security/synapse-workspace-managed-identity)* χρειάζεται δικαιώματα **χρειάζεται δικαιώματα** στο λογαριασμό Azure Data Lake Storage Gen2όπου τα δεδομένα βρίσκονται και συνδέονται με τον χώρο εργασίας Azure Synapse. Μάθετε περισσότερα σχετικά για τη [χρήση της πύλης Azure για την εκχώρηση ενός ρόλου Azure για πρόσβαση σε δεδομένα blob και ουράς](/azure/storage/common/storage-auth-aad-rbac-portal) και [δικαιώματα συμμετέχοντα δεδομένων blob αποθήκευσης ](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
 
-- Στο Azure Synapse workspace, η *αρχή υπηρεσίας για το Customer Insights* χρειάζεται την ανάθεση του ρόλου του **Διαχειριστή Synapse**. Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Τρόπος ρύθμισης ελέγχου πρόσβασης για το χώρο εργασίας Synapse](/azure/synapse-analytics/security/how-to-set-up-access-control).
+- Στο Azure Synapse workspace, η *αρχή υπηρεσίας για το Customer Insights* που είναι Dynamics 365 AI για Customer Insights" χρειάζεται την ανάθεση του ρόλου του **Διαχειριστή Synapse**. Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Τρόπος ρύθμισης ελέγχου πρόσβασης για το χώρο εργασίας Synapse](/azure/synapse-analytics/security/how-to-set-up-access-control).
+
+- Εάν το περιβάλλον Customer Insights αποθηκεύει δεδομένα στο [δικό σας Azure Data Lake Storage](own-data-lake-storage.md), ο χρήστης που ρυθμίζει τη σύνεση στο Azure Synapse Analytics χρειάζεται τουλάχιστον τον ενσωματωμένο ρόλο **Αναγνώστης** στον χώρο αποθήκευσης Data Lake. Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Εκχώρηση ρόλων Azure χρησιμοποιώντας την πύλη Azure](/azure/role-based-access-control/role-assignments-portal).
 
 ## <a name="connect-to-the-data-lake-database-in-azure-synapse-analytics"></a>Σύνδεση στη βάση δεδομένων λίμνης δεδομένων στο Azure Synapse Analytics
 
@@ -57,7 +61,7 @@ ms.locfileid: "9206907"
   
 1. Καταχωρήστε ένα **Όνομα** για την προέλευση δεδομένων και μια προαιρετική **Περιγραφή**.
 
-1. Επιλέξτε μια [διαθέσιμη σύνδεση](connections.md) to Azure Synapse Analytics ή δημιουργήστε μια νέα.
+1. Επιλέξτε μια [διαθέσιμη σύνδεση](connections.md) στο Azure Synapse Analytics ή [δημιουργήστε μια νέα](export-azure-synapse-analytics.md#set-up-connection-to-azure-synapse).
 
 1. Επιλέξτε μια **Βάση δεδομένων** από το χώρο εργασίας που είναι συνδεδεμένος στην επιλεγμένη σύνδεση του Azure Synapse Analytics και επιλέξτε **Επόμενο**. Προς το παρόν, υποστηρίζουμε μόνο τον τύπο βάσης δεδομένων *Βάση δεδομένων λίμνης*.
 

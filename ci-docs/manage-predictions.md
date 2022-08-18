@@ -8,12 +8,12 @@ ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: a180f6462452d9830d0daa150a35a9d0acad925a
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 42abfb305efaccaeef48e32f2cc69f3d36fbe73d
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081578"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245465"
 ---
 # <a name="manage-predictions"></a>Διαχείριση προβλέψεων
 
@@ -58,7 +58,7 @@ ms.locfileid: "9081578"
 
 ## <a name="refresh-a-prediction"></a>Ανανέωση πρόβλεψης
 
-Οι προβλέψεις θα ανανεώνονται αυτόματα στο ίδιο [χρονοδιάγραμμα που θα ανανεώνονται τα δεδομένα σας](system.md#schedule-tab) όπως έχουν ρυθμιστεί στις ρυθμίσεις. Μπορείτε να τα ανανεώσετε και με μη αυτόματο τρόπο.
+Οι προβλέψεις θα ανανεώνονται αυτόματα στο ίδιο [χρονοδιάγραμμα που θα ανανεώνονται τα δεδομένα σας](schedule-refresh.md) όπως έχουν ρυθμιστεί στις ρυθμίσεις. Μπορείτε να τα ανανεώσετε και με μη αυτόματο τρόπο.
 
 1. Μεταβείτε στην **Ευφυΐα** > **Προβλέψεις** και επιλέξτε την καρτέλα **Οι προβλέψεις μου**.
 
