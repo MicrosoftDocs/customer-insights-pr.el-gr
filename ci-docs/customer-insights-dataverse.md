@@ -1,7 +1,7 @@
 ---
 title: Εργασία με δεδομένα Customer Insights στο Microsoft Dataverse
 description: Μάθετε πώς να συνδέσετε το Customer Insights και το Microsoft Dataverse και κατανοήστε τις οντότητες εξόδου που εξάγονται στο Dataverse.
-ms.date: 07/15/2022
+ms.date: 08/15/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -11,25 +11,25 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 89ff629033230de3c6252b6a3a16816d9b3c1287
-ms.sourcegitcommit: 85b198de71ff2916fee5500ed7c37c823c889bbb
+ms.openlocfilehash: 0d536259f310b41fe12922baeebdc4569937db08
+ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "9153404"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "9303829"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>Εργασία με δεδομένα Customer Insights στο Microsoft Dataverse
 
-Το Customer Insights παρέχει την επιλογή ώστε οι οντότητες εξόδου να είναι διαθέσιμες ως [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro). Αυτή η ενοποίηση επιτρέπει την εύκολη κοινοποίηση δεδομένων και την προσαρμοσμένη ανάπτυξη μέσω προσέγγισης με χαμηλό περιεχόμενο κώδικα / χωρίς κώδικα. Οι [οντότητες εξόδου](#output-entities) είναι διαθέσιμες ως πίνακες σε ένα Dataverse περιβάλλον. Μπορείτε να χρησιμοποιήσετε τα δεδομένα για οποιαδήποτε άλλη εφαρμογή βάσει πινάκων Dataverse. Αυτοί οι πίνακες επιτρέπουν σενάρια, όπως αυτοματοποιημένες ροές εργασιών μέσω Power Automate ή δημιουργία εφαρμογών με το Power Apps.
+Το Customer Insights παρέχει την επιλογή να είναι διαθέσιμες οι οντότητες εξόδου στο [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro). Αυτή η ενοποίηση επιτρέπει την εύκολη κοινοποίηση δεδομένων και την προσαρμοσμένη ανάπτυξη μέσω προσέγγισης με χαμηλό περιεχόμενο κώδικα / χωρίς κώδικα. Οι [οντότητες εξόδου](#output-entities) είναι διαθέσιμες ως πίνακες σε ένα Dataverse περιβάλλον. Μπορείτε να χρησιμοποιήσετε τα δεδομένα για οποιαδήποτε άλλη εφαρμογή βάσει πινάκων Dataverse. Αυτοί οι πίνακες επιτρέπουν σενάρια, όπως αυτοματοποιημένες ροές εργασιών μέσω Power Automate ή δημιουργία εφαρμογών με το Power Apps.
 
 Η σύνδεση στο περιβάλλον σας Dataverse σάς επιτρέπει επίσης να [προσλαμβάνετε δεδομένα από προελεύσεις δεδομένων εσωτερικής εγκατάστασης χρησιμοποιώντας ροές δεδομένων και πύλες Power Platform](connect-power-query.md#add-data-from-on-premises-data-sources).
 
 ## <a name="prerequisites"></a>Προϋποθέσεις
 
 - Τα περιβάλλοντα Customer Insights και Dataverse πρέπει να φιλοξενούνται στην ίδια περιοχή.
-- Πρέπει να έχετε ρόλο καθολικού διαχειριστή στο περιβάλλον Dataverse. Επαληθεύστε ότι αυτό το [Dataverse περιβάλλον σχετίζεται](/power-platform/admin/control-user-access#associate-a-security-group-with-a-dataverse-environment) με ορισμένες ομάδες ασφαλείας και βεβαιωθείτε ότι έχετε προστεθεί σε αυτές τις ομάδες ασφαλείας.
+- Ρύθμιση παραμέτρων ρόλου καθολικού διαχειριστή στο περιβάλλον Dataverse. Επαληθεύστε ότι αυτό το [Dataverse περιβάλλον σχετίζεται](/power-platform/admin/control-user-access#associate-a-security-group-with-a-dataverse-environment) με ορισμένες ομάδες ασφαλείας και βεβαιωθείτε ότι έχετε προστεθεί σε αυτές τις ομάδες ασφαλείας.
 - Κανένα άλλο περιβάλλον Customer Insights δεν συσχετίζεται ήδη με το περιβάλλον Dataverse που θέλετε να συνδέσετε. Μάθετε πώς να [καταργήσετε μια υπάρχουσα σύνδεση σε ένα Dataverse περιβάλλον](#remove-an-existing-connection-to-a-dataverse-environment).
-- Ένα περιβάλλον Microsoft Dataverse μπορεί να συνδεθεί μόνο σε ένα λογαριασμό χώρου αποθήκευσης. Εφαρμόζεται μόνο εάν ρυθμίσετε τις παραμέτρους του περιβάλλοντος για να [χρησιμοποιήσετε το Azure Data Lake Storage](own-data-lake-storage.md).
+- Ένα περιβάλλον Microsoft Dataverse που συνδέεται σε έναν λογαριασμό χώρου αποθήκευσης, εάν ρυθμίσετε τις παραμέτρους του περιβάλλοντος για να [χρησιμοποιηθεί το Azure Data Lake Storage](own-data-lake-storage.md).
 
 ## <a name="dataverse-storage-capacity-entitlement"></a>Dataverse δικαίωμα αποθήκευσης εμπλουτισμού
 
@@ -37,7 +37,7 @@ ms.locfileid: "9153404"
 
 **Παράδειγμα:**
 
-Υποθέτοντας ότι έχετε 15 GB αποθηκευτικό χώρο βάσης δεδομένων και 20 GB αποθήκευσης αρχείων ανά 100.000 προφίλ πελατών. Εάν η συνδρομή σας περιλαμβάνει 300.000 προφίλ πελατών, η συνολική χωρητικότητα αποθήκευσης θα είναι 45 GB (3 x 15 GB) αποθήκευσης βάσης δεδομένων και 60 GB αποθήκευσης αρχείων (3 x 20 GB). Ομοίως, εάν έχετε συνδρομή B2B με 30.000 λογαριασμούς, η συνολική χωρητικότητα αποθήκευσης θα είναι 45 GB (3 x 15 GB) αποθήκευσης βάσης δεδομένων και 60 GB αποθήκευσης αρχείων (3 x 20 GB).
+Υποθέτοντας ότι έχετε 15 GB αποθηκευτικό χώρο βάσης δεδομένων και 20 GB αποθήκευσης αρχείων ανά 100.000 προφίλ πελατών. Αν η συνδρομή σας περιλαμβάνει 300.000 προφίλ πελατών, ο συνολικός χώρος αποθήκευσης είναι 45 GB (3 x 15 GB) χώρος αποθήκευσης βάσης δεδομένων και χώρος αποθήκευσης αρχείων 60 GB (3 x 20 GB). Ομοίως, εάν έχετε μια συνδρομή B προς B με λογαριασμούς 30K, ο συνολικός χώρος αποθήκευσης είναι 45 GB (3 x 15 GB) χώρος αποθήκευσης βάσης δεδομένων και χώρος αποθήκευσης αρχείων 60 GB (3 x 20 GB).
 
 Η χωρητικότητα καταγραφής δεν είναι σταδιακή και σταθερή για τον οργανισμό σας.
 
@@ -49,68 +49,78 @@ ms.locfileid: "9153404"
 
 :::image type="content" source="media/dataverse-provisioning.png" alt-text="κοινή χρήση δεδομένων με Microsoft Dataverse που ενεργοποιείται αυτόματα για νέα περιβάλλοντα.":::
 
-Οι διαχειριστές μπορούν να ρυθμίσουν τις παραμέτρους του Customer Insights ώστε να συνδέουν ένα υπάρχον περιβάλλον Dataverse. Παρέχοντας τη διεύθυνση URL στο περιβάλλον Dataverse, συνδέεται με το νέο περιβάλλον Customer Insights. Αφού δημιουργηθεί η σύνδεση μεταξύ του Customer Insights και του Dataverse, μην αλλάξετε το όνομα του οργανισμού για το περιβάλλον Dataverse. Το όνομα του οργανισμού χρησιμοποιείται στο Dataverse URL και ένα αλλαγμένο όνομα διακόπτει τη σύνδεση με το Customer Insights.
+1. Δώστε τη διεύθυνση URL στο περιβάλλον σας Dataverse ή αφήστε την κενή για να δημιουργηθεί μια για εσάς.
 
-Εάν δεν θέλετε να χρησιμοποιήσετε ένα υπάρχον Dataverse περιβάλλον, το σύστημα δημιουργεί ένα νέο περιβάλλον για τα δεδομένα Customer Insights στον μισθωτή σας. [Οι διαχειριστές του Power Platform μπορεί να ελέγχει ποιος μπορεί να δημιουργήσει περιβάλλοντα](/power-platform/admin/control-environment-creation). Όταν ρυθμίζετε ένα νέο περιβάλλον Customer Insights και ο διαχειριστής έχει απενεργοποιήσει τη δημιουργία περιβαλλόντων Dataverse για όλους εκτός από διαχειριστές, ενδεχομένως να μην μπορείτε να δημιουργήσετε ένα νέο περιβάλλον.
+   > [!NOTE]
+   > Αφού δημιουργηθεί η σύνδεση μεταξύ του Customer Insights και του Dataverse, μην αλλάξετε το όνομα του οργανισμού για το περιβάλλον Dataverse. Το όνομα του οργανισμού χρησιμοποιείται στο Dataverse URL και ένα αλλαγμένο όνομα διακόπτει τη σύνδεση με το Customer Insights.
 
-**Ενεργοποιήστε την κοινή χρήση δεδομένων** με το Dataverse επιλέγοντας το πλαίσιο ελέγχου κοινής χρήσης δεδομένων.
+   [Οι διαχειριστές του Power Platform μπορούν να ελέγχουν ποιος μπορεί να δημιουργεί νέα περιβάλλοντα Dataverse](/power-platform/admin/control-environment-creation). Όταν προσπαθείτε να ρυθμίσετε τις παραμέτρους ενός νέου περιβάλλοντος Customer Insights και δεν μπορείτε, ο διαχειριστής μπορεί να έχει απενεργοποιήσει τη δημιουργία περιβαλλόντων Dataverse για όλους εκτός από διαχειριστές.
 
-Αν χρησιμοποιείτε το δικό σας λογαριασμό χώρου αποθήκευσης Data Lake, χρειάζεστε επίσης το **αναγνωριστικό δικαιωμάτων**. Για περισσότερες πληροφορίες σχετικά με τον τρόπο λήψης του αναγνωριστικού δικαιωμάτων, ανατρέξτε στην παρακάτω ενότητα.
+1. Αν χρησιμοποιείτε το δικό σας λογαριασμό Data Lake Storage:
+   1. Επιλέξτε **Ενεργοποίηση κοινής χρήσης δεδομένων** με το Dataverse.
+   1. Καταχωρίστε το **Αναγνωριστικό δικαιωμάτων**. Για να λάβετε το αναγνωριστικό δικαιωμάτων, [ενεργοποιήστε την κοινή χρήση δεδομένων με το Dataverse από το δικό σας Azure Data Lake Storage](#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview).
 
-## <a name="enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview"></a>Ενεργοποίηση κοινής χρήσης δεδομένων με το Dataverse από το δικό σας Azure Data Lake Storage (εκδοση προεπισκόπησης)
+## <a name="enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview"></a>Ενεργοποίηση κοινής χρήσης δεδομένων με το Dataverse από το δικό σας Azure Data Lake Storage (έκδοση προεπισκόπησης)
 
-Η ενεργοποίηση της κοινής χρήσης δεδομένων με το Microsoft Dataverse όταν το περιβάλλον σας [χρησιμοποιεί τον δικό σας λογαριασμό Azure Data Lake Storage](own-data-lake-storage.md) χρειάζεται επιπλέον ρύθμιση παραμέτρων. Ο χρήστης που ρυθμίζει το περιβάλλον Customer Insights πρέπει να έχει τουλάχιστον δικαιώματα **αναγνώστη δεδομένων αντικειμένου Blob χώρου αποθήκευσης** στο κοντέινερ *CustomerInsights* στον λογαριασμό Azure Data Lake Storage.
-
-1. Δημιουργήστε δύο ομάδες ασφαλείας στη συνδρομή σας στο Azure - μία ομάδα ασφαλείας **Αναγνώστης** και μία ομάδα ασφαλείας **Συμβάλλων** και ορίστε την υπηρεσία Microsoft Dataverse ως κάτοχο και για τις δύο ομάδες ασφαλείας.
-2. Διαχειριστείτε τη Λίστα ελέγχου πρόσβασης (ACL) στο κοντέινερ CustomerInsights στο λογαριασμό χώρου αποθήκευσης μέσω αυτών των ομάδων ασφαλείας. Προσθέστε την Microsoft Dataverse υπηρεσία και οποιεσδήποτε Dataverseε πιχειρηματικές εφαρμογές βασισμένες σε αυτήν, όπως το Dynamics 365 Marketing στην ομάδα ασφαλείας **Αναγνώστης** με δικαιώματα **μόνο για ανάγνωση**. Προσθέστε *μόνο* την εφαρμογή Customers Insights στην ομάδα ασφαλείας **Συμβάλλων** για να χορηγήσετε δικαιώματα **ανάγνωσης και εγγραφής** για τη σύνταξη προφίλ και πληροφοριών.
+Στον [δικό σας λογαριασμό Azure Data Lake Storage](own-data-lake-storage.md), επαληθεύστε ότι η ρύθμιση παραμέτρων του περιβάλλοντος Customer Insights έχει τουλάχιστον δικαιώματα **αναγνώστη δεδομένων αντικειμένου Blob χώρου αποθήκευσης** στο κοντέινερ `customerinsights` στον λογαριασμό υπηρεσίας αποθήκευσης.
 
 ### <a name="limitations"></a>Περιορισμοί
 
-Υπάρχουν δύο περιορισμοί κατά τη χρήση του Dataverse με τον δικό σας λογαριασμό Azure Data Lake Storage:
-
-- Υπάρχει αντιστοίχιση 1 προς 1 μεταξύ ενός οργανισμού Dataverse και ενός λογαριασμού Azure Data Lake Storage. Αφού ένας οργανισμός Dataverse συνδεθεί σε έναν λογαριασμό χώρου αποθήκευσης, δεν μπορεί να συνδεθεί σε άλλο λογαριασμό χώρου αποθήκευσης. Αυτός ο περιορισμός αποτρέπει τη μη συμπλήρωση πολλών λογαριασμών χώρου αποθήκευσης από Dataverse.
+- Υπάρχει μόνο αντιστοίχιση 1 προς 1 μεταξύ ενός οργανισμού Dataverse και ενός λογαριασμού Azure Data Lake Storage. Αφού ένας οργανισμός Dataverse συνδεθεί σε έναν λογαριασμό χώρου αποθήκευσης, δεν μπορεί να συνδεθεί σε άλλο λογαριασμό χώρου αποθήκευσης. Αυτός ο περιορισμός αποτρέπει το Dataverse από τη συμπλήρωση πολλών λογαριασμών χώρου αποθήκευσης.
 - Η κοινή χρήση δεδομένων δεν θα λειτουργήσει αν απαιτείται μια ρύθμιση Azure Private Link για πρόσβαση στο λογαριασμό Azure Data Lake Storage επειδή βρίσκεται πίσω από ένα τείχος προστασίας. Το Dataverse προς το παρόν δεν υποστηρίζει τη σύνδεση σε ιδιωτικά τελικά σημεία μέσω ιδιωτικής σύνδεσης.
+
+### <a name="set-up-security-groups-on-your-own-azure-data-lake-storage"></a>Ρύθμιση ομάδων ασφαλείας στο δικό σας Azure Data Lake Storage
+
+1. Δημιουργήστε δύο ομάδες ασφαλείας στη συνδρομή σας στο Azure - μία ομάδα ασφαλείας **Αναγνώστης** και μία ομάδα ασφαλείας **Συμβάλλων** και ορίστε την υπηρεσία Microsoft Dataverse ως κάτοχο και για τις δύο ομάδες ασφαλείας.
+
+1. Διαχειριστείτε τη Λίστα ελέγχου πρόσβασης (ACL) στο κοντέινερ `customerinsights` στο λογαριασμό χώρου αποθήκευσης μέσω αυτών των ομάδων ασφαλείας.
+   1. Προσθέστε την Microsoft Dataverse υπηρεσία και οποιεσδήποτε Dataverseε πιχειρηματικές εφαρμογές βασισμένες σε αυτήν, όπως το Dynamics 365 Marketing στην ομάδα ασφαλείας **Αναγνώστης** με δικαιώματα **μόνο για ανάγνωση**.
+   1. Προσθέστε *μόνο* την εφαρμογή Customers Insights στην ομάδα ασφαλείας **Συμβάλλων** για να χορηγήσετε δικαιώματα **ανάγνωσης και εγγραφής** για τη σύνταξη προφίλ και πληροφοριών.
 
 ### <a name="set-up-powershell"></a>Ρύθμιση PowerShell
 
-Για να εκτελέσετε τις δέσμες ενεργειών PowerShell, πρέπει πρώτα να ρυθμίσετε το PowerShell αντίστοιχα.
+Ρυθμίστε το PowerShell για την εκτέλεση δεσμών ενεργειών PowerShell.
 
 1. Εγκαταστήστε την πιο πρόσφατη έκδοση του [Azure Active Directory PowerShell για Graph](/powershell/azure/active-directory/install-adv2).
    1. Στον υπολογιστή σας, επιλέξτε το πλήκτρο των Windows στο πληκτρολόγιό σας και αναζητήστε το **Windows PowerShell** και επιλέξτε **Εκτέλεση ως Διαχειριστής**.
    1. Στο παράθυρο PowerShell που ανοίγει, καταχωρείστε `Install-Module AzureAD`.
-2. Εισαγάγετε τρεις μονάδες.
-    1. Στο παράθυρο PowerShell, εισέλθετε στο `Install-Module -Name Az.Accounts` και ακολουθήστε τα βήματα.
-    1. Επαναλάβετε για τα `Install-Module -Name Az.Resources` και `Install-Module -Name Az.Storage`.
 
-### <a name="configuration-steps"></a>Βήματα ρύθμισης παραμέτρων
+1. Εισαγάγετε τρεις μονάδες.
+   1. Στο παράθυρο PowerShell, εισέλθετε στο `Install-Module -Name Az.Accounts` και ακολουθήστε τα βήματα.
+   1. Επαναλάβετε για τα `Install-Module -Name Az.Resources` και `Install-Module -Name Az.Storage`.
+
+### <a name="execute-powershell-scripts-and-obtain-the-permission-identifier"></a>Εκτέλεση δεσμών ενεργειών PowerShell και λήψη του αναγνωριστικού δικαιωμάτων
 
 1. Πραγματοποιήστε λήψη των δύο δεσμών ενεργειών PowerShell που πρέπει να εκτελέσετε από το [αποθετήριο GitHub](https://github.com/trin-msft/byol) του τεχνικού μας.
-    1. `CreateSecurityGroups.ps1`
-       - Για να εκτελέσετε τη δέσμη ενεργειών PowerShell, χρειάζετε άδειες *διαχειριστή μισθωτών*.
-       - Αυτή η δέσμη ενεργειών PowerShell δημιουργεί δύο ομάδες ασφαλείας στη συνδρομή σας στο Azure. Μία για την ομάδα αναγνώστη και μία για την ομάδα συμβαοντα και θα κάνετε την υπηρεσία Microsoft Dataverse κάτοχο αυτών των δύο ομάδων ασφαλείας.
-       - Εκτελέστε αυτήν τη δέσμη ενεργειών PowerShell στο Windows PowerShell παρέχοντας το αναγνωριστικό συνδρομής Azure που περιέχει το δικό σας Azure Data Lake Storage. Ανοίξτε τη δέσμη ενεργειών PowerShell σε ένα πρόγραμμα επεξεργασίας για να εξετάσετε τις πρόσθετες πληροφορίες και τη λογική που υλοποιείται.
-       - Αποθηκεύστε και τις δύο τιμές αναγνωριστικών ομάδας ασφαλείας που δημιουργούνται από αυτήν τη δέσμη ενεργειών, επειδή θα τις χρησιμοποιήσουμε στη δέσμη ενεργειών `ByolSetup.ps1`.
+   - `CreateSecurityGroups.ps1`: Απαιτεί δικαιώματα διαχειριστή μισθωτή.
+   - `ByolSetup.ps1`: Απαιτεί δικαιώματα κατόχου δεδομένων αντικειμένου blob χώρου αποθήκευσης σε επίπεδο λογαριασμού/κοντέινερ χώρου αποθήκευσης. Αυτή η δέσμη ενεργειών θα σας δημιουργήσει το δικαίωμα. Η ανάθεση ρόλου σας μπορεί να καταργηθεί με μη αυτόματο τρόπο μετά την επιτυχημένη εκτέλεση της δέσμης ενεργειών.
 
-        > [!NOTE]
-        > Η δημιουργία ομάδας ασφαλείας μπορεί να απενεργοποιηθεί στον μισθωτή σας. Σε αυτή την περίπτωση, θα ήταν απαραίτητη μια μη αυτόματη ρύθμιση και ο διαχειριστής του Azure AD θα πρέπει να[ ενεργοποιήσει τη δημιουργία ομάδας ασφαλείας](/azure/active-directory/enterprise-users/groups-self-service-management).
+1. Εκτελέστε το `CreateSecurityGroups.ps1` στο Windows PowerShell παρέχοντας το αναγνωριστικό συνδρομής Azure που περιέχει το δικό σας Azure Data Lake Storage. Ανοίξτε τη δέσμη ενεργειών PowerShell σε ένα πρόγραμμα επεξεργασίας για να εξετάσετε τις πρόσθετες πληροφορίες και τη λογική που υλοποιείται.
 
-    2. `ByolSetup.ps1`
-        - Χρειάζεστε δικαιώματα *κατόχου δεδομένων αντικειμένου blob χώρου αποθήκευσης* σε επίπεδο λογαριασμού/κοντέινερ χώρου αποθήκευσης για να εκτελέσετε αυτήν τη δέσμη ενεργειών ή αυτή η δέσμη ενεργειών θα δημιουργήσει μία για εσάς. Η ανάθεση ρόλου σας μπορεί να καταργηθεί με μη αυτόματο τρόπο μετά την επιτυχημένη εκτέλεση της δέσμης ενεργειών.
-        - Αυτό το σενάριο PowerShell προσθέτει τον απαιτούμενο έλεγχο πρόσβασης βάσει ρόλων για την υπηρεσία Microsoft Dataverse και οποιαδήποτε βασισμένες σε Dataverse επιχειρηματικές εφαρμογές. Επίσης, ενημερώνει τη Λίστα ελέγχου πρόσβασης (ACL) στο κοντέινερ CustomerInsights για τις ομάδες ασφαλείας που δημιουργήθηκαν με τη δέσμη ενεργειών `CreateSecurityGroups.ps1`. Η ομάδα συμβάλλοντος θα έχει *rwx* δικαίωμα και η ομάδα αναγνώστη θα έχει *r-x* δικαιώματα μόνο.
-        - Εκτελέστε αυτήν τη δέσμη ενεργειών PowerShell στο Windows PowerShell παρέχοντας το αναγνωριστικό συνδρομής Azure που περιέχει το όνομα λογαριασμού χώρου αποθήκευσης Azure Data Lake Storage, το όνομα ομάδας πόρων και τις τιμές αναγνωριστικών της ομάδας ασφαλείας αναγνώστη και συμβάλλοντος. Ανοίξτε τη δέσμη ενεργειών PowerShell σε ένα πρόγραμμα επεξεργασίας για να εξετάσετε τις πρόσθετες πληροφορίες και τη λογική που υλοποιείται.
-        - Αντιγράψτε τη συμβολοσειρά εξόδου αφού ολοκληρωθεί με επιτυχία η εκτέλεση της δέσμης ενεργειών. Η συμβολοσειρά εξόδου έχει την εξής εμφάνιση: `https://DVBYODLDemo/customerinsights?rg=285f5727-a2ae-4afd-9549-64343a0gbabc&cg=720d2dae-4ac8-59f8-9e96-2fa675dbdabc`
+   Αυτή η δέσμη ενεργειών δημιουργεί δύο ομάδες ασφαλείας στη συνδρομή σας στο Azure: μία για την ομάδα Αναγνώστης και μία για την ομάδα Συμμετέχων. Η υπηρεσία Microsoft Dataverse είναι ο κάτοχος και των δύο ομάδων ασφαλείας.
 
-2. Εισαγάγετε τη συμβολοσειρά εξόδου που αντιγράψατε από παραπάνω στο πεδίο **Αναγνωριστικό δικαιωμάτων** του βήματος ρύθμισης παραμέτρων περιβάλλοντος για το Microsoft Dataverse.
+1. Αποθηκεύστε και τις δύο τιμές αναγνωριστικών ομάδας ασφαλείας που δημιουργούνται από αυτήν τη δέσμη ενεργειών για να χρησιμοποιήσετε τη δέσμη ενεργειών `ByolSetup.ps1`.
 
-:::image type="content" source="media/dataverse-enable-datasharing-BYODL.png" alt-text="Επιλογές ρύθμισης παραμέτρων για να ενεργοποιήσετε την κοινή χρήση δεδομένων από δικό σας Azure Data Lake Storage με το Microsoft Dataverse.":::
+   > [!NOTE]
+   > Η δημιουργία ομάδας ασφαλείας μπορεί να απενεργοποιηθεί στον μισθωτή σας. Σε αυτή την περίπτωση, θα ήταν απαραίτητη μια μη αυτόματη ρύθμιση και ο διαχειριστής του Azure AD θα πρέπει να[ ενεργοποιήσει τη δημιουργία ομάδας ασφαλείας](/azure/active-directory/enterprise-users/groups-self-service-management).
 
-### <a name="remove-an-existing-connection-to-a-dataverse-environment"></a>Καταργήστε μια υφιστάμενη σύνδεση σε ένα περιβάλλον Dataverse
+1. Εκτελέστε το `ByolSetup.ps1` στο Windows PowerShell παρέχοντας το αναγνωριστικό συνδρομής Azure που περιέχει το όνομα λογαριασμού χώρου αποθήκευσης Azure Data Lake Storage, το όνομα ομάδας πόρων και τις τιμές αναγνωριστικών της ομάδας ασφαλείας αναγνώστη και συμβάλλοντος. Ανοίξτε τη δέσμη ενεργειών PowerShell σε ένα πρόγραμμα επεξεργασίας για να εξετάσετε τις πρόσθετες πληροφορίες και τη λογική που υλοποιείται.
+
+   Αυτή η δέσμη ενεργειών προσθέτει το απαιτούμενο στοιχείο ελέγχου πρόσβασης βάσει ρόλου για την υπηρεσία Microsoft Dataverse και για οποιεσδήποτε επιχειρηματικές που βασίζονται στο Dataverse. Επίσης, ενημερώνει τη Λίστα ελέγχου πρόσβασης (ACL) στο κοντέινερ `customerinsights` για τις ομάδες ασφαλείας που δημιουργήθηκαν με τη δέσμη ενεργειών `CreateSecurityGroups.ps1`. Η ομάδα συμβάλλοντος θα έχει *rwx* δικαίωμα και η ομάδα αναγνώστη θα έχει *r-x* δικαιώματα μόνο.
+
+1. Αντιγράψτε τη συμβολοσειρά αποτελέσματος που είναι ως εξής: `https://DVBYODLDemo/customerinsights?rg=285f5727-a2ae-4afd-9549-64343a0gbabc&cg=720d2dae-4ac8-59f8-9e96-2fa675dbdabc`
+
+1. Εισαγάγετε τη συμβολοσειρά εξόδου που αντιγράψατε από παραπάνω στο πεδίο **Αναγνωριστικό δικαιωμάτων** του βήματος ρύθμισης παραμέτρων περιβάλλοντος για το Microsoft Dataverse.
+
+   :::image type="content" source="media/dataverse-enable-datasharing-BYODL.png" alt-text="Επιλογές ρύθμισης παραμέτρων για να ενεργοποιήσετε την κοινή χρήση δεδομένων από δικό σας Azure Data Lake Storage με το Microsoft Dataverse.":::
+
+## <a name="remove-an-existing-connection-to-a-dataverse-environment"></a>Καταργήστε μια υφιστάμενη σύνδεση σε ένα περιβάλλον Dataverse
 
 Όταν συνδέεστε σε ένα Dataverse περιβάλλον, το μήνυμα σφάλματος **Αυτός ο οργανισμός CDS είναι ήδη συνδεδεμένος με μια άλλη παρουσία Customer Insights** σημαίνει ότι το περιβάλλον Dataverse χρησιμοποιείται ήδη σε ένα περιβάλλον Customer Insights. Μπορείτε να καταργήσετε την υπάρχουσα σύνδεση ως καθολικός διαχειριστής στο Dataverse περιβάλλον. Η συμπλήρωση των αλλαγών μπορεί να διαρκέσει μερικές ώρες.
 
 1. Μετάβαση στο [Power Apps](https://make.powerapps.com).
 1. Επιλέξτε το περιβάλλον από τον επιλογέα περιβάλλοντος.
-1. Μεταβείτε στις **Λύσεις**
+1. Μεταβείτε στις **Λύσεις**.
 1. Καταργήστε ή διαγράψτε τη λύση με το όνομα **Πρόσθετο κάρτας πελάτη Dynamics 365 Customer Insights (έκδοση προεπισκόπησης)**.
 
 Ή
@@ -155,16 +165,16 @@ ms.locfileid: "9153404"
 
 Αυτός ο πίνακας περιέχει δραστηριότητες από χρήστες, οι οποίες είναι διαθέσιμοι στο Customer Insights.
 
-| Column            | Τύπος        | Περιγραφή                                                                              |
+| Column            | Type        | Description                                                                              |
 |-------------------|-------------|------------------------------------------------------------------------------------------|
-| CustomerId        | String      | Αναγνωριστικό προφίλ πελάτη                                                                      |
-| ActivityId        | String      | Εσωτερικό αναγνωριστικό της δραστηριότητας του πελάτη (πρωτεύον κλειδί)                                       |
+| CustomerId        | Συμβλοσειρά      | Αναγνωριστικό προφίλ πελάτη                                                                      |
+| ActivityId        | Συμβλοσειρά      | Εσωτερικό αναγνωριστικό της δραστηριότητας του πελάτη (πρωτεύον κλειδί)                                       |
 | SourceEntityName  | String      | Όνομα της οντότητας προέλευσης                                                                |
 | SourceActivityId  | String      | Πρωτεύον κλειδί από την οντότητα προέλευσης                                                       |
 | ActivityType      | String      | Σημασιολογικός τύπος δραστηριότητας ή όνομα προσαρμοσμένης δραστηριότητας                                        |
 | ActivityTimeStamp | DATETIME    | Χρονική σήμανση δραστηριότητας                                                                      |
-| Τίτλος             | String      | Τίτλος ή όνομα της δραστηριότητας                                                               |
-| Περιγραφή       | String      | Περιγραφή δραστηριότητας                                                                     |
+| Τϊτλος             | Συμβλοσειρά      | Τίτλος ή όνομα της δραστηριότητας                                                               |
+| Description       | String      | Περιγραφή δραστηριότητας                                                                     |
 | Διεύθυνση URL               | String      | Σύνδεση σε εξωτερική διεύθυνση URL ειδικά για τη δραστηριότητα                                         |
 | SemanticData      | Συμβολοσειρά JSON | Περιλαμβάνει μια λίστα ζευγών κλειδιών τιμών για πεδία αντιστοίχισης σημασιών ειδικά για τον τύπο δραστηριότητας |
 | RangeIndex        | String      | Χρονική σήμανση Unix που χρησιμοποιείται για την ταξινόμηση του χρονοδιαγράμματος δραστηριοτήτων και των ερωτημάτων αποτελεσματικού εύρους |
@@ -199,10 +209,10 @@ ms.locfileid: "9153404"
 
 Ο πίνακας αυτός περιέχει την έξοδο των προβλέψεων του μοντέλου.
 
-| Column               | Τύπος        | Περιγραφή                                          |
+| Column               | Type        | Description                                          |
 |----------------------|-------------|------------------------------------------------------|
-| CustomerId           | String      | Αναγνωριστικό προφίλ πελάτη                                  |
-| ModelProvider        | String      | Το όνομα παρόχου του μοντέλου                                      |
+| CustomerId           | Συμβλοσειρά      | Αναγνωριστικό προφίλ πελάτη                                  |
+| ModelProvider        | Συμβλοσειρά      | Το όνομα παρόχου του μοντέλου                                      |
 | Μοντέλο                | String      | Όνομα μοντέλου                                                |
 | Τιμές               | Συμβολοσειρά JSON | Λίστα χαρακτηριστικών που δημιουργήθηκε από το μοντέλο |
 | msdynci_predictionid | GUID        | Προσδιοριστικό GUID που δημιουργήθηκε από το msdynci_identifier | 
@@ -216,38 +226,10 @@ ms.locfileid: "9153404"
 |--------------------|--------------|-----------------------------|
 | CustomerId        | String       | Αναγνωριστικό προφίλ πελάτη        |
 | SegmentProvider      | String       | Εφαρμογή που δημοσιεύει τα τμήματα.      |
-| SegmentMembershipType | String       | Τύπος του πελάτη για αυτήν την καρτέλα ιδιότητας μέλους τμήματος. Υποστηρίζει πολλούς τύπους, όπως Πελάτης, Επαφή ή Λογαριασμός. Προεπιλογή: Πελάτης  |
+| SegmentMembershipType | Συμβλοσειρά       | Τύπος του πελάτη για αυτήν την καρτέλα ιδιότητας μέλους τμήματος. Υποστηρίζει πολλούς τύπους, όπως Πελάτης, Επαφή ή Λογαριασμός. Προεπιλογή: Πελάτης  |
 | Τμήματα       | Συμβολοσειρά JSON  | Λίστα μοναδικών τμημάτων, στα οποία είναι μέλος το προφίλ πελάτη      |
 | msdynci_identifier  | String   | Μοναδικό αναγνωριστικό της καρτέλας ιδιότητας μέλους τμήματος. `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
 | msdynci_segmentmembershipid | GUID      | Προσδιοριστικό GUID που δημιουργείται από `msdynci_identifier`          |
 
-<!--
-## FAQ: Update existing environments to use Microsoft Dataverse
 
-Between mid-May 2022 and June 13, 2022, administrators can update the environment settings with a Dataverse environment that Customer Insights can use. On June 13, 2022, your environment will be updated automatically and we'll create a Dataverse environment on your tenant for you.
-
-1. My environment uses my own Azure Data Lake Storage account. Do I still need to update?
-
-   If there's already a Dataverse environment configured in your environment, the update isn't required. If no Dataverse is environment configured, the **Update now** button will create a Dataverse environment and update from the Customer Insights database to a Dataverse database.
-
-1. Will we get extra Dataverse capacity, or will the update use my existing Dataverse capacity?
-
-   - If there's already a Dataverse environment configured in your Customer Insights environment, or connected with other Dynamics 365 or Power Apps applications, the capacity remains unchanged.
-   - If the Dataverse environment is new, it will add new storage and database capacity. The capacity added varies per environment and entitlements. You'll get 3 GB for trial and sandbox environment. Production environments get 15 GB.
-
-1. I proceeded with the update and it seems like nothing happened. Is the update complete?
-
-   If the notification in Customer Insights doesn't show anymore, the update is complete. You can check the status of the update by reviewing your environment settings.
-
-1. Why do I still see the banner after completing the update steps?
-
-   It can happen due to an upgrade or refresh failure. Contact support.
-
-1. I received a "Failed to provision Dataverse environment" error after starting the update. What happened?
-
-   It can happen due to an upgrade or refresh failure. Contact support.
-   Common causes:
-    - Insufficient capacity. There's no more capacity to create more environments. For more information, see [Manage capacity action](/power-platform/admin/capacity-storage#actions-to-take-for-a-storage-capacity-deficit).
-    - Region mismatch between tenant region and Customer Insights environment region in the Australia and India regions.
-    - Insufficient privileges to provision Dataverse. The users starting the update needs a Dynamics 365 admin role.
-    - -->
+[!INCLUDE [footer-include](includes/footer-banner.md)]

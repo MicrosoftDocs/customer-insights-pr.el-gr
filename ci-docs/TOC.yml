@@ -76,6 +76,8 @@
       href: merge-entities.md
     - name: Έλεγοχς της ενοποίησης δεδομένων
       href: review-unification.md
+    - name: Δημιουργία ενοποιημένου προφίλ επαφής
+      href: data-unification-contacts.md
     - name: Ενημέρωση των ρυθμίσεων ενοποίησης
       href: data-unification-update.md
 - name: Εμπλουτισμός δεδομένων

@@ -1,7 +1,7 @@
 ---
 title: Σύνδεση σε έναν λογαριασμό Azure Data Lake Storage χρησιμοποιώντας μια αρχή υπηρεσίας Azure
 description: Χρησιμοποιήστε μια αρχή υπηρεσίας Azure για να συνδεθείτε στη δική σας λίμνη δεδομένων.
-ms.date: 05/31/2022
+ms.date: 08/12/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
@@ -11,27 +11,28 @@ manager: shellyha
 searchScope:
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: 949caa73578dbe0a511726ec045c0fd5f4621de4
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: eba10068c48db5c147100c25a397bcc13b014784
+ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9081295"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "9304197"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-account-by-using-an-azure-service-principal"></a>Σύνδεση σε έναν λογαριασμό Azure Data Lake Storage χρησιμοποιώντας μια αρχή υπηρεσίας Azure
 
-Αυτό το άρθρο ασχολείται με το πώς να συνδέσετε το Dynamics 365 Customer Insights με έναν λογαριασμό Azure Data Lake Storage χρησιμοποιώντας μια αρχή υπηρεσίας Azure αντί για κλειδιά λογαριασμού υπηρεσίας αποθήκευσης.
+Το Dynamics 365 Customer Insights παρέχει την επιλογή σύνδεσης με έναν λογαριασμό Azure Data Lake Storage χρησιμοποιώντας μια αρχή υπηρεσίας Azure αντί για κλειδιά λογαριασμού χώρου αποθήκευσης.
 
-Τα αυτοματοποιημένα εργαλεία που χρησιμοποιούν υπηρεσίες Azure θα πρέπει να έχουν πάντοτε περιορισμένα δικαιώματα. Αντί να συνδέεστε με εφαρμογές ως πλήρως προνομιούχος χρήστης, το Azure προσφέρει τις αρχές εξυπηρέτησης. Μπορείτε να χρησιμοποιήσετε τις αρχές εξυπηρέτησης για να [προσθέσετε ή να επεξεργαστείτε με ασφάλεια ένα φάκελο του Common Data Model ως προέλευση δεδομένων](connect-common-data-model.md) ή [να δημιουργήσετε ή να ενημερώσετε ένα περιβάλλον](create-environment.md).
+Τα αυτοματοποιημένα εργαλεία που χρησιμοποιούν υπηρεσίες Azure θα πρέπει να έχουν πάντοτε περιορισμένα δικαιώματα. Αντί να συνδέεστε με εφαρμογές ως πλήρως προνομιούχος χρήστης, το Azure προσφέρει τις αρχές εξυπηρέτησης. Χρησιμοποιήστε τις αρχές εξυπηρέτησης για να [προσθέσετε ή να επεξεργαστείτε με ασφάλεια ένα φάκελο του Common Data Model ως προέλευση δεδομένων](connect-common-data-model.md) ή [να δημιουργήσετε ή να ενημερώσετε ένα περιβάλλον](create-environment.md).
 
-> [!IMPORTANT]
->
-> - Ο λογαριασμός αποθήκευσης Data Lake που θα χρησιμοποιήσει την αρχή υπηρεσίας πρέπει να είναι Gen2 και να έχει [ενεργοποιημένο τον ιεραρχικό χώρο ονομάτων](/azure/storage/blobs/data-lake-storage-namespace). Οι λογαριασμοί αποθήκευσης Azure Data Lake Gen1 δεν υποστηρίζονται.
-> - Χρειάζεστε δικαιώματα διαχειριστή για τον μισθωτή σας στο Azure για να δημιουργήσετε μια αρχή υπηρεσίας.
+## <a name="prerequisites"></a>Προϋποθέσεις
+
+- Ο λογαριασμός Data Lake Storage που θα χρησιμοποιήσει την αρχή υπηρεσίας πρέπει να είναι Gen2. Οι λογαριασμοί αποθήκευσης Azure Data Lake Gen1 δεν υποστηρίζονται.
+- Ο λογαριασμός Data Lake Storage πρέπει να έχει [ενεργοποιημένο ιεραρχικό χώρο ονομάτων](/azure/storage/blobs/data-lake-storage-namespace).
+- Δικαιώματα διαχειριστή για τον μισθωτή σας στο Azure, αν πρέπει να δημιουργήσετε μια νέα αρχή υπηρεσίας.
 
 ## <a name="create-an-azure-service-principal-for-customer-insights"></a>Δημιουργία μιας αρχής υπηρεσίας Azure για Customer Insights
 
-Πριν δημιουργήσετε μια νέα αρχή εξυπηρέτησης για το Customer Insights, ελέγξτε εάν υπάρχει ήδη στον οργανισμό σας.
+Πριν δημιουργήσετε μια νέα αρχή εξυπηρέτησης για το Customer Insights, ελέγξτε εάν υπάρχει ήδη στον οργανισμό σας. Στις περισσότερες περιπτώσεις, υπάρχει ήδη.
 
 ### <a name="look-for-an-existing-service-principal"></a>Αναζήτηση υπάρχουσας αρχής εξυπηρέτησης
 
@@ -43,15 +44,29 @@ ms.locfileid: "9081295"
 
 4. Προσθέστε ένα φίλτρο για **την εκκίνηση του αναγνωριστικού εφαρμογής με** `0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff` ή αναζητήστε το όνομα `Dynamics 365 AI for Customer Insights`.
 
-5. Εάν βρείτε μια καρτέλα που ταιριάζει, αυτό σημαίνει ότι η αρχή υπηρεσίας υπάρχει ήδη.
+5. Εάν βρείτε μια καρτέλα που ταιριάζει, αυτό σημαίνει ότι η αρχή υπηρεσίας υπάρχει ήδη. [Εκχώρηση δικαιωμάτων](#grant-permissions-to-the-service-principal-to-access-the-storage-account) για να έχει πρόσβαση η αρχή υπήρεσίας στον λογαριασμό αποθήκευσης.
 
    :::image type="content" source="media/ADLS-SP-AlreadyProvisioned.png" alt-text="Στιγμιότυπο οθόνης που δείχνει μια υπάρχουσα αρχή υπηρεσίας.":::
 
-6. Εάν δεν επιστραφούν αποτελέσματα, μπορείτε [να δημιουργήσετε μια νέα αρχή εξυπηρέτησης](#create-a-new-service-principal). Στις περισσότερες περιπτώσεις, υπάρχει ήδη και το μόνο που χρειάζεται είναι να εκχωρήσετε δικαιώματα στην αρχή υπηρεσίας για να αποκτήσετε πρόσβαση στο λογαριασμό χώρου αποθήκευσης.
+6. Εάν δεν επιστραφούν αποτελέσματα, [δημιουργήστε μια νέα αρχή υπηρεσίας](#create-a-new-service-principal).
+
+### <a name="create-a-new-service-principal"></a>Δημιουργία μιας νέας αρχής εξυπηρέτησης
+
+1. Εγκαταστήστε την πιο πρόσφατη έκδοση του Azure Active Directory PowerShell for Graph. Για περισσότερες πληροφορίες, μεταβείτε στην [Eγκατάσταση του Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
+
+   1. Στον υπολογιστή σας, πατήστε το πλήκτρο των Windows στο πληκτρολόγιό σας και αναζητήστε το **Windows PowerShell** και επιλέξτε **Εκτέλεση ως διαχειριστής**.
+
+   1. Στο παράθυρο PowerShell που ανοίγει, καταχωρείστε `Install-Module AzureAD`.
+
+2. Δημιουργήστε την αρχή υπηρεσίας για Customer Insights με τη λειτουργική μονάδα Azure AD PowerShell.
+
+   1. Στο παράθυρο PowerShell, καταχωρείστε `Connect-AzureAD -TenantId "[your Directory ID]" -AzureEnvironmentName Azure`. Αντικαταστήστε το *[δικό σας αναγνωριστικό καταλόγου]* με το πραγματικό αναγνωριστικό καταλόγου της συνδρομής σας στο Azure, όπου θέλετε να δημιουργήσετε τον κύριο υπηρεσίας. Η παράμετρος ονόματος περιβάλλοντος, `AzureEnvironmentName`, είναι προαιρετική.
+  
+   1. Εισαγάγετε `New-AzureADServicePrincipal -AppId "0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff" -DisplayName "Dynamics 365 AI for Customer Insights"`. Αυτή η εντολή δημιουργεί τον κύριο υπηρεσίας για το Customer Insights στην επιλεγμένη συνδρομή Azure.
 
 ## <a name="grant-permissions-to-the-service-principal-to-access-the-storage-account"></a>Εκχώρηση δικαιωμάτων στον διευθυντή εξυπηρέτησης για πρόσβαση στον λογαριασμό αποθήκευσης
 
-Μεταβείτε στην πύλη Azure για να εκχωρήσετε δικαιώματα στον κύριο υπηρεσίας για το λογαριασμό χώρου αποθήκευσης που θέλετε να χρησιμοποιήσετε στο Customer Insights. Ένας από τους παρακάτω ρόλους πρέπει να εκχωρείται στο λογαριασμό χώρου αποθήκευσης ή στο κοντέινερ:
+Για να εκχωρήσετε δικαιώματα στην αρχή υπηρεσίας για τον λογαριασμό χώρου αποθήκευσης που θέλετε να χρησιμοποιήσετε στο Customer Insights, ένας από τους παρακάτω ρόλους πρέπει να ανατεθεί στο λογαριασμό χώρου αποθήκευσης ή στο κοντέινερ:
 
 |Διαπιστευτήρια|Απαιτήσεις|
 |----------|------------|
@@ -68,9 +83,9 @@ ms.locfileid: "9081295"
    :::image type="content" source="media/ADLS-SP-AddRoleAssignment.png" alt-text="Στιγμιότυπο οθόνης που δείχνει την πύλη Azure κατά την προσθήκη μιας ανάθεσης ρόλου.":::
 
 1. Στο τμήμα παραθύρου **Προσθήκη ανάθεσης ρόλων**, ορίστε τις ακόλουθες ιδιότητες:
-   - Ρόλος: Αναγνώστης χώρου αποθήκευσης δεδομένων blob, συμμετέχων χώρου αποθήκευσης blob ή κάτοχος χώρου αποθήκευσης blob με βάση τα διαπιστευτήρια που παρατίθενται παραπάνω.
-   - Ανάθεση πρόσβασης σε: **Χρήστη, ομάδα ή διευθυντή εξυπηρέτησης**
-   - Επιλέξτε μέλη: **Dynamics 365 AI για Customer Insights** (ο [κύριος εξυπηρέτησης](#create-a-new-service-principal) που είδατε νωρίτερα σε αυτήν τη διαδικασία)
+   - **Ρόλος**: Αναγνώστης χώρου αποθήκευσης δεδομένων blob, συμμετέχων χώρου αποθήκευσης blob ή κάτοχος χώρου αποθήκευσης blob με βάση τα διαπιστευτήρια που παρατίθενται παραπάνω.
+   - **Ανάθεση πρόσβασης σε**: **Χρήστη, ομάδα ή διευθυντή εξυπηρέτησης**
+   - **Επιλέξτε** μέλη: **Dynamics 365 AI για Customer Insights** (η [αρχή υπηρεσίας](#create-a-new-service-principal) που είδατε νωρίτερα σε αυτήν τη διαδικασία)
 
 1. Επιλέξτε **Έλεγχος + αντιστοίχιση**.
 
@@ -78,7 +93,7 @@ ms.locfileid: "9081295"
 
 ## <a name="enter-the-azure-resource-id-or-the-azure-subscription-details-in-the-storage-account-attachment-to-customer-insights"></a>Εισαγάγετε το αναγνωριστικό πόρου Azure ή τις λεπτομέρειες της συνδρομής Azure στο συνημμένο λογαριασμό αποθήκευσης στο Customer Insights
 
-Μπορείτε να επισυνάψετε ένα λογαριασμό Data Lake Storage στο Customer Insights [για να αποθηκεύσετε δεδομένα εξόδου](manage-environments.md) ή να [ τα χρησιμοποιήσετε ως προέλευση δεδομένων](connect-dataverse-managed-lake.md). Αυτή η επιλογή σάς επιτρέπει να επιλέξετε μεταξύ μιας προσέγγισης που βασίζεται σε πόρους ή μιας προσέγγισης που βασίζεται σε συνδρομή. Ανάλογα με την προσέγγιση που επιλέγετε, ακολουθήστε τη διαδικασία σε μία από τις ακόλουθες ενότητες.
+Επισυνάψτε έναν λογαριασμό Data Lake Storage στο Customer Insights για να [αποθηκεύσετε δεδομένα αποτελέσματος](manage-environments.md) ή [για να τα χρησιμοποιήσετε ως προέλευση δεδομένων](connect-dataverse-managed-lake.md). Επιλέξτε μεταξύ μιας προσέγγισης [βάσει πόρων](#resource-based-storage-account-connection) ή [βάσει συνδρομής](#subscription-based-storage-account-connection) και ακολουθήστε αυτά τα βήματα.
 
 ### <a name="resource-based-storage-account-connection"></a>Σύνδεση λογαριασμού χώρου αποθήκευσης βάσει πόρων
 
@@ -92,7 +107,7 @@ ms.locfileid: "9081295"
 
 1. Στο Customer Insights, εισαγάγετε το αναγνωριστικό πόρου στο πεδίο πόρου που εμφανίζεται στην οθόνη σύνδεσης λογαριασμού χώρου αποθήκευσης.
 
-   :::image type="content" source="media/ADLS-SP-ResourceIdConnection.png" alt-text="Εισαγάγετε τις πληροφορίες αναγνωριστικού πόρου του λογαριασμού αποθήκευσης.":::   
+   :::image type="content" source="media/ADLS-SP-ResourceIdConnection.png" alt-text="Εισαγάγετε τις πληροφορίες αναγνωριστικού πόρου του λογαριασμού αποθήκευσης.":::
 
 1. Συνεχίστε με τα υπόλοιπα βήματα στο Customer Insights για να επισυνάψετε τον λογαριασμό χώρου αποθήκευσης.
 
@@ -107,19 +122,5 @@ ms.locfileid: "9081295"
 1. Στο Customer Insights, επιλέξτε τις τιμές για τα αντίστοιχα πεδία κατά την επισύναψη του λογαριασμού χώρου αποθήκευσης.
 
 1. Συνεχίστε με τα υπόλοιπα βήματα στο Customer Insights για να επισυνάψετε τον λογαριασμό χώρου αποθήκευσης.
-
-### <a name="create-a-new-service-principal"></a>Δημιουργία μιας νέας αρχής εξυπηρέτησης
-
-1. Εγκαταστήστε την πιο πρόσφατη έκδοση του Azure Active Directory PowerShell for Graph. Για περισσότερες πληροφορίες, μεταβείτε στην [Eγκατάσταση του Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
-
-   1. Στον υπολογιστή σας, πατήστε το πλήκτρο των Windows στο πληκτρολόγιό σας και αναζητήστε το **Windows PowerShell** και επιλέξτε **Εκτέλεση ως διαχειριστής**.
-
-   1. Στο παράθυρο PowerShell που ανοίγει, καταχωρείστε `Install-Module AzureAD`.
-
-2. Δημιουργήστε την αρχή υπηρεσίας για Customer Insights με τη λειτουργική μονάδα Azure AD PowerShell.
-
-   1. Στο παράθυρο PowerShell, καταχωρείστε `Connect-AzureAD -TenantId "[your Directory ID]" -AzureEnvironmentName Azure`. Αντικαταστήστε το *[δικό σας αναγνωριστικό καταλόγου]* με το πραγματικό αναγνωριστικό καταλόγου της συνδρομής σας στο Azure, όπου θέλετε να δημιουργήσετε τον κύριο υπηρεσίας. Η παράμετρος ονόματος περιβάλλοντος, `AzureEnvironmentName`, είναι προαιρετική.
-  
-   1. Εισαγάγετε `New-AzureADServicePrincipal -AppId "0bfc4568-a4ba-4c58-bd3e-5d3e76bd7fff" -DisplayName "Dynamics 365 AI for Customer Insights"`. Αυτή η εντολή δημιουργεί τον κύριο υπηρεσίας για το Customer Insights στην επιλεγμένη συνδρομή Azure.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
