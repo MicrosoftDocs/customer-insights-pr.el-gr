@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 60b039173fd938482c782c7394420d4951c222a7
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: c573c46fda895d36d29712e75fe28b261c9b399a
+ms.sourcegitcommit: 0b5bfe0145dbd325fa518df4561d6a0a9a352264
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9245925"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "9352801"
 ---
 # <a name="export-diagnostic-logs-preview"></a>Εξαγωγή αρχείων καταγραφής διαγνωστικών (έκδοση προεπισκόπησης)
 
@@ -36,8 +36,8 @@ ms.locfileid: "9245925"
 
 - Μια ενεργή [συνδρομή Azure](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/).
 - Δικαιώματα [Διαχειριστή](permissions.md#admin) στο Customer Insights.
+- Ένας έγκυρος πόρος στο Azure που ακολουθεί τις [απαιτήσεις προορισμού](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) για τον χώρο αποθήκευσης Azure, το Κέντρο συμβάντων Azure ή την Ανάλυση αρχείων καταγραφής Azure.
 - [Ρόλος Συμμετέχοντα και Διαχειριστή πρόσβασης χρήστη](/azure/role-based-access-control/role-assignments-portal) στον πόρο προορισμού στο Azure. Ο πόρος μπορεί να είναι ένας λογαριασμός Azure Data Lake Storage, ένα Κέντρο συμβάντων Azure ή ένας χώρος εργασίας ανάλυσης αρχείων καταγραφής Azure. Αυτό το δικαίωμα είναι απαραίτητο κατά τη ρύθμιση των παραμέτρων διαγνωστικών στο Customer Insights, μπορεί να αλλάξει μετά από μια επιτυχή εγκατάσταση.
-- [Απαιτήσεις προορισμού](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) για την Υπηρεσία αποθήκευσης Azure, το Κέντρο συμβάντων Azure ή την Ανάλυση αρχείου καταγραφής Azure πληρούνται.
 - Έχετε τουλάχιστον τον ρόλο **Αναγνώστης** στην ομάδα πόρων στην οποία ανήκει ο πόρος.
 
 ### <a name="set-up-diagnostics-with-azure-monitor"></a>Ρύθμιση διαγνωστικών με την Παρακολούθηση Azure

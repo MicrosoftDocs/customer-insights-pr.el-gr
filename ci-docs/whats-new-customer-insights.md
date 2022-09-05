@@ -1,19 +1,19 @@
 ---
 title: Τι νέο υπάρχει στο Dynamics 365 Customer Insights
 description: Πληροφορίες σχετικά με τις νέες δυνατότητες, τις βελτιώσεις και τις επιδιορθώσεις σφαλμάτων.
-ms.date: 08/03/2022
+ms.date: 08/31/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: a9bb254736ae70589afb267bf0a60206a18a3385
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: 1e734464cec1f66428c3a2a2e403437a2a9d8500
+ms.sourcegitcommit: 624b27bb65a0de1970dc1ac436643b493f0a31cf
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9246011"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "9387294"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>Τι νέο υπάρχει στο Dynamics 365 Customer Insights
 
@@ -23,6 +23,24 @@ ms.locfileid: "9246011"
 
 > [!TIP]
 > Για υποβολή και ψήφο σε αιτήματα δυνατοτήτων και προτάσεις προϊόντων, μεταβείτε στην [πύλη ιδεών εφαρμογής Dynamics 365](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## <a name="august-2022-updates"></a>Ενημερώσεις Αυγούστου 2022
+
+Οι ενημερώσεις του Αυγούστου 2022 περιλαμβάνουν νέες δυνατότητες, αναβαθμίσεις επιδόσεων και επιδιορθώσεις σφαλμάτων.
+
+### <a name="contact-unification-in-b-to-b-environments"></a>Επικοινωνία σε περιβάλλοντα B2B
+
+Τα περιβάλλοντα B2B στο Customer Insights υποστηρίζουν πλέον μια βελτιωμένη εμπειρία συλλογής δεδομένων.
+
+Τώρα μπορείτε να ενοποιήστε τις επαφές εκτός από τους λογαριασμούς για να έχετε μια πλήρη προβολή των επιχειρηματικών επαφών σας. Οι ενοποιημένες επαφές συσχετίζονται με ενοποιημένους λογαριασμούς και εμφανίζονται πλέον στις κάρτες πελατών. 
+
+Για περισσότερες πληροφορίες, ανατρέξτε στην ενότητα [Δημιουργία ενοποιημένου προφίλ επαφής](data-unification-contacts.md).
+
+### <a name="create-and-export-of-segments-based-on-unified-contacts"></a>Δημιουργία και εξαγωγή τμημάτων με βάση ενοποιημένες επαφές
+
+Μέσω της ενοποίησης νέας επαφής, μπορείτε να δημιουργήσετε τμήματα επαφών χρησιμοποιώντας κριτήρια είτε από τις επαφές, τους λογαριασμούς είτε και τα δύο. Αυτά τα τμήματα μπορούν να εξαχθούν για ενεργοποίηση σε άλλες υπηρεσίες.
+
+Για περισσότερες πληροφορίες, βλ [Επισκόπηση εξαγωγών](export-destinations.md).
 
 ## <a name="july-2022-updates"></a>Ενημερώσεις Ιουλίου 2022
 

@@ -1,27 +1,27 @@
 ---
 title: Παραδείγματα ερωτήματος Odata για API του Customer Insights
 description: Συχνά χρησιμοποιούνται παραδείγματα για το Πρωτόκολλο ανοιχτών δεδομένων (OData) για την υποβολή ερωτημάτων στα API του Customer Insights για τον έλεγχο δεδομένων.
-ms.date: 05/25/2022
+ms.date: 08/30/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 8843fc04e4e6eaba0019d932c54f62561ffbdb92
-ms.sourcegitcommit: f3c12ad445d5f91a88f91a7bbc40790ebcfaa826
+ms.openlocfilehash: 26e56a3bab01ba55284a52e72efbcbfbaadaad6f
+ms.sourcegitcommit: 624b27bb65a0de1970dc1ac436643b493f0a31cf
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9121562"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "9387202"
 ---
 # <a name="odata-query-examples-for-customer-insights-apis"></a>Παραδείγματα ερωτήματος Odata για API του Customer Insights
 
 Το Πρωτόκολλο ανοιχτών δεδομένων (OData) είναι ένα πρωτόκολλο πρόσβασης σε δεδομένα, το οποίο είναι ενσωματωμένο σε κύρια πρωτόκολλα, όπως το HTTP. Χρησιμοποιεί συχνά αποδεκτές μεθοδολογίες όπως το REST για το web. Υπάρχουν διάφορων ειδών βιβλιοθήκες και εργαλεία που μπορούν να χρησιμοποιηθούν για την κατανάλωση των υπηρεσιών OData.
 
-Αυτό το άρθρο παραθέτει ορισμένα παραδείγματα ερωτημάτων που ζητούνται συχνά και σας βοηθούν να δημιουργήσετε τις δικές σας υλοποιήσεις με βάση τα [API του Customer Insights](apis.md).
+Δείτε ορισμένα παραδείγματα ερωτημάτων που ζητούνται συχνά και σας βοηθούν να δημιουργήσετε τις δικές σας υλοποιήσεις με βάση τα [API του Customer Insights](apis.md).
 
-Πρέπει να τροποποιήσετε τα δείγματα ερωτημάτων για να λειτουργούν στα περιβάλλοντα προορισμού: 
+Τροποποιήστε τα δείγματα ερωτημάτων για να λειτουργούν στα περιβάλλοντα προορισμού:
 
 - {serviceRoot}: `https://api.ci.ai.dynamics.com/v1/instances/{instanceId}/data` όπου {instanceId} βρίσκεται το GUID του περιβάλλοντος Customer Insights που θέλετε να υποβάλετε ερώτημα. Η [λειτουργία ListAllInstances](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances) σάς επιτρέπει να βρείτε το {InstanceId} στο οποίο έχετε πρόσβαση.
 - {CID}: GUID μιας ενοποιημένης καρτέλας πελάτη. Παράδειγμα: `ce759201f786d590bf2134bff576c369`.
@@ -31,7 +31,7 @@ ms.locfileid: "9121562"
 
 ## <a name="customer"></a>Πελάτη
 
-Ο παρακάτω πίνακας περιέχει ένα σύνολο δειγμάτων ερωτημάτων για την οντότητα *Πελάτης*.
+Ερωτήματα-δείγματα για την οντότητα *Πελάτης*.
 
 |Τύπος ερωτήματος |Παράδειγμα  | Σημείωμα  |
 |---------|---------|---------|
@@ -46,7 +46,7 @@ ms.locfileid: "9121562"
 
 ## <a name="unified-activity"></a>Ενοποιημένη δραστηριότητα
 
-Ο παρακάτω πίνακας περιέχει ένα σύνολο δειγμάτων ερωτημάτων για την οντότητα *UnifiedActivity*.
+Ερωτήματα-δείγματα για την οντότητα *UnifiedActivity*.
 
 |Τύπος ερωτήματος |Παράδειγμα  | Σημείωμα  |
 |---------|---------|---------|
@@ -59,7 +59,7 @@ ms.locfileid: "9121562"
 
 ## <a name="other-examples"></a>Άλλα παραδείγματα
 
-Ο παρακάτω πίνακας περιέχει ένα σύνολο δειγμάτων ερωτημάτων για άλλες οντότητες.
+Δείγματα ερωτημάτων για άλλες οντότητες.
 
 |Τύπος ερωτήματος |Παράδειγμα  | Σημείωμα  |
 |---------|---------|---------|
