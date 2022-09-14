@@ -160,8 +160,6 @@
           href: sentiment-analysis.md
         - name: Χρήση προσαρμοσμένων μοντέλων από το Azure Machine Learning
           href: custom-models.md
-        - name: Συμπλήρωση ημιτελών δεδομένων
-          href: predictions.md
     - name: Οδηγοί δειγμάτων
       items:
         - name: Οδηγός δείγματος για την πρόβλεψη CLV

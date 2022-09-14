@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-api-usage
 - customerInsights
-ms.openlocfilehash: 2652e0868f5cc514ab6df9c150a9183cf95ae589
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: dd433b57e8695891a08d6f7fdb8c87befd2e1cfa
+ms.sourcegitcommit: d7054a900f8c316804b6751e855e0fba4364914b
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9246108"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9396061"
 ---
 # <a name="real-time-data-ingestion-preview"></a>Συγκέντρωση δεδομένων σε πραγματικό χρόνο (προεπισκόπηση)
 
@@ -82,10 +82,5 @@ ms.locfileid: "9246108"
 Μπορείτε να καταχωρήσετε μια δραστηριότητα με τη μορφή του συστήματος προέλευσής σας ή σε μορφή UnifiedActivity. Λάβετε τη μορφή κάνοντας μια κλήση API στο /api/instances/{instanceId}/manage/entities/UnifiedActivity.
 
 Λεπτομέρειες αυτού του API, συμπεριλαμβανομένων των παραμέτρων και των αποκρίσεων, μπορείτε να βρείτε στην ενότητα **EntityData** στην [αναφορά API Customer Insights](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights). Για περισσότερες πληροφορίες, ανατρέξτε στο [Εργασία με API Customer Insights](apis.md).
-
-## <a name="understand-your-real-time-usage-with-telemetry"></a>Κατανόηση της χρήσης σε πραγματικό χρόνο με τηλεμετρία
-
-Δείτε μια επισκόπηση του όγκου των αιτήσεων στο API πραγματικού χρόνου και των πληροφοριών σχετικά με τα ζητήματα που ενδέχεται να αντιμετωπίσει το σύστημα. Μπορείτε να έχετε [πρόσβαση στην τηλεμετρία σε πραγματικό χρόνο](system.md#view-api-usage). 
-
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

@@ -8,12 +8,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 421e1aa41a54a4b8c34ac27fc7c02e510d2bb588
-ms.sourcegitcommit: 624b27bb65a0de1970dc1ac436643b493f0a31cf
+ms.openlocfilehash: 7f38b7d9985368fc38107f1f360f0603a7fcc8e6
+ms.sourcegitcommit: 3c7cdfc8bd83ca236e4777240e08a541dc955d34
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "9387156"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9411740"
 ---
 # <a name="service-limits-in-customer-insights"></a>Όρια εξυπηρέτησης στο Customer Insights
 
@@ -23,7 +23,7 @@ ms.locfileid: "9387156"
 
 | Area  | Όρια  | Σημειώσεις |
 |-------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
-| Τμήματα αγοράς, μέτρα και προβλέψεις | 300  | Ο συνολικός αριθμός των [τμημάτων](segments.md), των [μέτρων](measures.md) και των [προβλέψεων](predictions.md) σε συνδυασμό, δεν μπορεί να υπερβαίνει τα 300.  |
+| Τμήματα αγοράς, μέτρα και προβλέψεις | 300  | Ο συνολικός αριθμός των [τμημάτων](segments.md), των [μέτρων](measures.md) και των [προβλέψεων](predictions-overview.md) σε συνδυασμό, δεν μπορεί να υπερβαίνει τα 300.  |
 | Σχέσεις | 20 επίπεδα βάθους στις σχέσεις μεταξύ των διαδρομών οντοτήτων. | Όταν δημιουργείτε [τμήματα](segments.md) ή [μέτρα](measures.md) χρησιμοποιώντας το περιβάλλον εργασίας του προγράμματος δημιουργίας, οι διαδρομές οντοτήτων μπορούν να έχουν έως και 20 μεταπηδήσεις σχέσης μεταξύ της οντότητας έναρξης και της οντότητας προορισμού.  |
 
 ## <a name="fair-scheduling-of-jobs"></a>Ικανοποιητικός προγραμματισμός εργασιών

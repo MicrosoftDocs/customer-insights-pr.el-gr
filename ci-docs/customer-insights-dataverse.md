@@ -1,7 +1,7 @@
 ---
 title: Εργασία με δεδομένα Customer Insights στο Microsoft Dataverse
 description: Μάθετε πώς να συνδέσετε το Customer Insights και το Microsoft Dataverse και κατανοήστε τις οντότητες εξόδου που εξάγονται στο Dataverse.
-ms.date: 08/15/2022
+ms.date: 08/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 0d536259f310b41fe12922baeebdc4569937db08
-ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
+ms.openlocfilehash: dfa63110fc5291f2b63aebf588d6fdd20ed4ab67
+ms.sourcegitcommit: 134aac66e3e0b77b2e96a595d6acbb91bf9afda2
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "9303829"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9424309"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>Εργασία με δεδομένα Customer Insights στο Microsoft Dataverse
 
@@ -136,6 +136,7 @@ ms.locfileid: "9303829"
 Ορισμένες οντότητες εξόδου από το Customer Insights είναι διαθέσιμες ως πίνακες στο Dataverse. Οι παρακάτω ενότητες περιγράφουν το αναμενόμενο σχήμα αυτών των πινάκων.
 
 - [CustomerProfile](#customerprofile)
+- [ContactProfile](#contactprofile)
 - [AlternateKey](#alternatekey)
 - [UnifiedActivity](#unifiedactivity)
 - [CustomerMeasure](#customermeasure)
@@ -145,21 +146,46 @@ ms.locfileid: "9303829"
 
 ### <a name="customerprofile"></a>CustomerProfile
 
-Αυτός ο πίνακας περιέχει το ενοποιημένο προφίλ πελάτη από το Customer Insights. Το σχήμα για ένα ενοποιημένο προφίλ πελάτη εξαρτάται από τις οντότητες και τα χαρακτηριστικά που χρησιμοποιούνται στη διεργασία ενοποίησης δεδομένων. Ένα σχήμα προφίλ πελάτη περιέχει συνήθως ένα υποσύνολο των χαρακτηριστικών από τον [Ορισμό κοινού μοντέλου δεδομένων του προφίλ πελάτη](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile).
+Αυτός ο πίνακας περιέχει το ενοποιημένο προφίλ πελάτη από το Customer Insights. Το σχήμα για ένα ενοποιημένο προφίλ πελάτη εξαρτάται από τις οντότητες και τα χαρακτηριστικά που χρησιμοποιούνται στη διεργασία ενοποίησης δεδομένων. Ένα σχήμα προφίλ πελάτη περιέχει συνήθως ένα υποσύνολο των χαρακτηριστικών από τον [Ορισμό κοινού μοντέλου δεδομένων του προφίλ πελάτη](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile). Για το σενάριο B2B, το προφίλ πελάτη περιέχει ενοποιημένους λογαριασμούς και το σχήμα περιέχει συνήθως ένα υποσύνολο των χαρακτηριστικών από τον [ορισμό του Common Data Model του Λογαριασμού](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/account).
+
+### <a name="contactprofile"></a>ContactProfile
+
+Ένα ContactProfile περιέχει ενοποιημένες πληροφορίες σχετικά με μια επαφή. Οι επαφές είναι [άτομα που αντιστοιχίζονται σε ένα λογαριασμό](data-unification-contacts.md) σε ένα σενάριο B2B.
+
+| Column                       | Type                | Description     |
+| ---------------------------- | ------------------- | --------------- |
+|  BirthDate            | Ημερομηνία/ώρα       |  Ημερομηνία γέννησης της σύμβασης               |
+|  City                 | Μήνυμα κειμένου |  Πόλη της διεύθυνσης της επαφης               |
+|  ContactId            | Μήνυμα κειμένου |  Αναγνωριστικό του προφίλ επαφής               |
+|  ContactProfileId     | Μοναδικό αναγνωριστικό   |  GUID για την επαφή               |
+|  CountryOrRegion      | Μήνυμα κειμένου |  Χώρα/περιοχή της διεύθυνσης της επαφης               |
+|  CustomerId           | Μήνυμα κειμένου |  Το αναγνωριστικό του λογαριασμού στον οποίο έχει αντιστοιχιστεί η επαφή               |
+|  EntityName           | Μήνυμα κειμένου |  Οντότητα από την οποία προέρχονται τα δεδομένα                |
+|  FirstName            | Μήνυμα κειμένου |  Όνομα της επαφής               |
+|  Φύλο               | Μήνυμα κειμένου |  Φύλο της επαφής               |
+|  Id                   | Μήνυμα κειμένου |  Προσδιοριστικό GUID που βασίζεται σε `Identifier`               |
+|  Αναγνωριστικό           | Μήνυμα κειμένου |  Εσωτερικό αναγνωριστικό του προφίλ επαφής: `ContactProfile|CustomerId|ContactId`               |
+|  JobTitle             | Μήνυμα κειμένου |  Η θέση εργασίας της επαφής               |
+|  LastName             | Μήνυμα κειμένου |  Το επώνυμο της επαφής               |
+|  PostalCode           | Μήνυμα κειμένου |  Τ.Κ. της διεύθυνσης της επαφης               |
+|  PrimaryEmail         | Μήνυμα κειμένου |  Διεύθυνση ηλεκτρονικού ταχυδρομείου της επαφής               |
+|  PrimaryPhone         | Μήνυμα κειμένου |  Ο αριθμός τηλεφώνου της επαφής               |
+|  StateOrProvince      | Μήνυμα κειμένου |  Νομός ή επαρχία της διεύθυνσης της επαφης               |
+|  StreetAddress        | Μήνυμα κειμένου |  Οδός της διεύθυνσης της επαφής               |
 
 ### <a name="alternatekey"></a>AlternateKey
 
 Ο πίνακας AlternateKey περιέχει τα κλειδιά των οντοτήτων, οι οποίες συμμετέχουν στη διεργασία ενοποίησης.
 
-|Column  |Τύπος  |Περιγραφή  |
+|Column  |Type  |Description  |
 |---------|---------|---------|
-|DataSourceName    |String         | Όνομα της προέλευσης δεδομένων. Για παράδειγμα: `datasource5`        |
-|EntityName        | String        | Το όνομα της οντότητας στο Customer Insights. Για παράδειγμα: `contact1`        |
-|AlternateValue    |String         |Το εναλλακτικό αναγνωριστικό που αντιστοιχίζεται στο αναγνωριστικό πελάτη. Παράδειγμα: `cntid_1078`         |
-|KeyRing           | Κείμενο πολλών γραμμών        | Τιμή JSON  </br> Δείγμα: [{"dataSourceName":" datasource5 ",</br>"entityName":" contact1",</br>"preferredKey":" cntid_1078",</br>"keys":[" cntid_1078"]}]       |
-|CustomerId         | String        | Αναγνωριστικό του ενοποιημένου προφίλ πελάτη.         |
-|AlternateKeyId     | GUID         |  Προσδιοριστικό AlternateKey GUID βάσει του msdynci_identifier       |
-|msdynci_identifier |   String      |   `DataSourceName|EntityName|AlternateValue`  </br> Δείγμα: `testdatasource|contact1|cntid_1078`    |
+|DataSourceName    |Μήνυμα κειμένου         | Όνομα της προέλευσης δεδομένων. Για παράδειγμα: `datasource5`        |
+|EntityName        | Μήνυμα κειμένου        | Το όνομα της οντότητας στο Customer Insights. Για παράδειγμα: `contact1`        |
+|AlternateValue    |Μήνυμα κειμένου         |Το εναλλακτικό αναγνωριστικό που αντιστοιχίζεται στο αναγνωριστικό πελάτη. Παράδειγμα: `cntid_1078`         |
+|KeyRing           | Μήνυμα κειμένου        | Τιμή JSON  </br> Δείγμα: [{"dataSourceName":" datasource5 ",</br>"entityName":" contact1",</br>"preferredKey":" cntid_1078",</br>"keys":[" cntid_1078"]}]       |
+|CustomerId         | Μήνυμα κειμένου        | Αναγνωριστικό του ενοποιημένου προφίλ πελάτη.         |
+|AlternateKeyId     | Μοναδικό αναγνωριστικό        |  Προσδιοριστικό GUID AlternateKey που βασίζεται σε `Identifier`      |
+|Αναγνωριστικό |   Μήνυμα κειμένου      |   `DataSourceName|EntityName|AlternateValue`  </br> Δείγμα: `testdatasource|contact1|cntid_1078`    |
 
 ### <a name="unifiedactivity"></a>UnifiedActivity
 
@@ -167,43 +193,42 @@ ms.locfileid: "9303829"
 
 | Column            | Type        | Description                                                                              |
 |-------------------|-------------|------------------------------------------------------------------------------------------|
-| CustomerId        | Συμβλοσειρά      | Αναγνωριστικό προφίλ πελάτη                                                                      |
-| ActivityId        | Συμβλοσειρά      | Εσωτερικό αναγνωριστικό της δραστηριότητας του πελάτη (πρωτεύον κλειδί)                                       |
-| SourceEntityName  | String      | Όνομα της οντότητας προέλευσης                                                                |
-| SourceActivityId  | String      | Πρωτεύον κλειδί από την οντότητα προέλευσης                                                       |
-| ActivityType      | String      | Σημασιολογικός τύπος δραστηριότητας ή όνομα προσαρμοσμένης δραστηριότητας                                        |
-| ActivityTimeStamp | DATETIME    | Χρονική σήμανση δραστηριότητας                                                                      |
-| Τϊτλος             | Συμβλοσειρά      | Τίτλος ή όνομα της δραστηριότητας                                                               |
-| Description       | String      | Περιγραφή δραστηριότητας                                                                     |
-| Διεύθυνση URL               | String      | Σύνδεση σε εξωτερική διεύθυνση URL ειδικά για τη δραστηριότητα                                         |
-| SemanticData      | Συμβολοσειρά JSON | Περιλαμβάνει μια λίστα ζευγών κλειδιών τιμών για πεδία αντιστοίχισης σημασιών ειδικά για τον τύπο δραστηριότητας |
-| RangeIndex        | String      | Χρονική σήμανση Unix που χρησιμοποιείται για την ταξινόμηση του χρονοδιαγράμματος δραστηριοτήτων και των ερωτημάτων αποτελεσματικού εύρους |
-| mydynci_unifiedactivityid   | GUID | Εσωτερικό αναγνωριστικό της δραστηριότητας του πελάτη (ActivityId) |
+| CustomerId        | Μήνυμα κειμένου      | Αναγνωριστικό προφίλ πελάτη                                                                      |
+| ActivityId        | Μήνυμα κειμένου      | Εσωτερικό αναγνωριστικό της δραστηριότητας του πελάτη (πρωτεύον κλειδί)                                       |
+| SourceEntityName  | Μήνυμα κειμένου      | Όνομα της οντότητας προέλευσης                                                                |
+| SourceActivityId  | Μήνυμα κειμένου      | Πρωτεύον κλειδί από την οντότητα προέλευσης                                                       |
+| ActivityType      | Μήνυμα κειμένου      | Σημασιολογικός τύπος δραστηριότητας ή όνομα προσαρμοσμένης δραστηριότητας                                        |
+| ActivityTimeStamp | Ημερομηνία/ώρα    | Χρονική σήμανση δραστηριότητας                                                                      |
+| Τϊτλος             | Μήνυμα κειμένου      | Τίτλος ή όνομα της δραστηριότητας                                                               |
+| Description       | Μήνυμα κειμένου      | Περιγραφή δραστηριότητας                                                                     |
+| URL               | Μήνυμα κειμένου      | Σύνδεση σε εξωτερική διεύθυνση URL ειδικά για τη δραστηριότητα                                         |
+| SemanticData      | Μήνυμα κειμένου | Περιλαμβάνει μια λίστα ζευγών κλειδιών τιμών για πεδία αντιστοίχισης σημασιών ειδικά για τον τύπο δραστηριότητας |
+| RangeIndex        | Μήνυμα κειμένου      | Χρονική σήμανση Unix που χρησιμοποιείται για την ταξινόμηση του χρονοδιαγράμματος δραστηριοτήτων και των ερωτημάτων αποτελεσματικού εύρους |
+| UnifiedActivityId   | Μοναδικό αναγνωριστικό | Εσωτερικό αναγνωριστικό της δραστηριότητας του πελάτη (ActivityId) |
 
 ### <a name="customermeasure"></a>CustomerMeasure
 
 Αυτός ο πίνακας περιέχει τα δεδομένα εξόδου των ενεργειών που βασίζονται σε χαρακτηριστικό του πελάτη.
 
-| Column             | Τύπος             | Περιγραφή                 |
+| Column             | Type             | Description                 |
 |--------------------|------------------|-----------------------------|
-| CustomerId         | String           | Αναγνωριστικό προφίλ πελάτη        |
-| Μετρήσεις           | Συμβολοσειρά JSON      | Περιλαμβάνει μια λίστα ζευγών κλειδιών τιμών για το όνομα μέτρησης και τις τιμές για τον δεδομένο πελάτη | 
-| msdynci_identifier | String           | `Customer_Measure|CustomerId` |
-| msdynci_customermeasureid | GUID      | Αναγνωριστικό προφίλ πελάτη |
-
+| CustomerId         | Μήνυμα κειμένου           | Αναγνωριστικό προφίλ πελάτη        |
+| Μετρήσεις           | Μήνυμα κειμένου      | Περιλαμβάνει μια λίστα ζευγών κλειδιών τιμών για το όνομα μέτρησης και τις τιμές για τον δεδομένο πελάτη |
+| Αναγνωριστικό | Μήνυμα κειμένου           | `Customer_Measure|CustomerId` |
+| CustomerMeasureId | Μοναδικό αναγνωριστικό     | Αναγνωριστικό προφίλ πελάτη |
 
 ### <a name="enrichment"></a>Εμπλουτισμός
 
 Ο πίνακας αυτός περιέχει την έξοδο της διεργασίας εμπλουτισμού.
 
-| Column               | Τύπος             |  Περιγραφή                                          |
+| Column               | Type             |  Description                                          |
 |----------------------|------------------|------------------------------------------------------|
-| CustomerId           | String           | Αναγνωριστικό προφίλ πελάτη                                 |
-| EnrichmentProvider   | String           | Το όνομα παρόχου για τον εμπλουτισμό                                  |
-| EnrichmentType       | String           | Τύπος εμπλουτισμού                                      |
-| Τιμές               | Συμβολοσειρά JSON      | Λίστα χαρακτηριστικών που δημιουργήθηκε από τη διεργασία εμπλουτισμού |
-| msdynci_enrichmentid | GUID             | Προσδιοριστικό GUID που δημιουργήθηκε από το msdynci_identifier |
-| msdynci_identifier   | String           | `EnrichmentProvider|EnrichmentType|CustomerId`         |
+| CustomerId           | Μήνυμα κειμένου           | Αναγνωριστικό προφίλ πελάτη                                 |
+| EnrichmentProvider   | Μήνυμα κειμένου           | Το όνομα παρόχου για τον εμπλουτισμό                                  |
+| EnrichmentType       | Μήνυμα κειμένου           | Τύπος εμπλουτισμού                                      |
+| Τιμές               | Μήνυμα κειμένου      | Λίστα χαρακτηριστικών που δημιουργήθηκε από τη διεργασία εμπλουτισμού |
+| EnrichmentId | Μοναδικό αναγνωριστικό            | Προσδιοριστικό GUID που δημιουργείται από `Identifier` |
+| Αναγνωριστικό   | Μήνυμα κειμένου           | `EnrichmentProvider|EnrichmentType|CustomerId`         |
 
 ### <a name="prediction"></a>Πρόβλεψη
 
@@ -211,12 +236,12 @@ ms.locfileid: "9303829"
 
 | Column               | Type        | Description                                          |
 |----------------------|-------------|------------------------------------------------------|
-| CustomerId           | Συμβλοσειρά      | Αναγνωριστικό προφίλ πελάτη                                  |
-| ModelProvider        | Συμβλοσειρά      | Το όνομα παρόχου του μοντέλου                                      |
-| Μοντέλο                | String      | Όνομα μοντέλου                                                |
-| Τιμές               | Συμβολοσειρά JSON | Λίστα χαρακτηριστικών που δημιουργήθηκε από το μοντέλο |
-| msdynci_predictionid | GUID        | Προσδιοριστικό GUID που δημιουργήθηκε από το msdynci_identifier | 
-| msdynci_identifier   | String      |  `Model|ModelProvider|CustomerId`                      |
+| CustomerId           | Μήνυμα κειμένου      | Αναγνωριστικό προφίλ πελάτη                                  |
+| ModelProvider        | Μήνυμα κειμένου      | Το όνομα παρόχου του μοντέλου                                      |
+| Μοντέλο                | Μήνυμα κειμένου      | Όνομα μοντέλου                                                |
+| Τιμές               | Μήνυμα κειμένου | Λίστα χαρακτηριστικών που δημιουργήθηκε από το μοντέλο |
+| PredictionId | Μοναδικό αναγνωριστικό       | Προσδιοριστικό GUID που δημιουργείται από `Identifier` |
+| Αναγνωριστικό   | Μήνυμα κειμένου      |  `Model|ModelProvider|CustomerId`                      |
 
 ### <a name="segment-membership"></a>Ιδιότητα μέλους τμήματος
 
@@ -224,12 +249,11 @@ ms.locfileid: "9303829"
 
 | Column        | Type | Description                        |
 |--------------------|--------------|-----------------------------|
-| CustomerId        | String       | Αναγνωριστικό προφίλ πελάτη        |
-| SegmentProvider      | String       | Εφαρμογή που δημοσιεύει τα τμήματα.      |
-| SegmentMembershipType | Συμβλοσειρά       | Τύπος του πελάτη για αυτήν την καρτέλα ιδιότητας μέλους τμήματος. Υποστηρίζει πολλούς τύπους, όπως Πελάτης, Επαφή ή Λογαριασμός. Προεπιλογή: Πελάτης  |
-| Τμήματα       | Συμβολοσειρά JSON  | Λίστα μοναδικών τμημάτων, στα οποία είναι μέλος το προφίλ πελάτη      |
-| msdynci_identifier  | String   | Μοναδικό αναγνωριστικό της καρτέλας ιδιότητας μέλους τμήματος. `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
-| msdynci_segmentmembershipid | GUID      | Προσδιοριστικό GUID που δημιουργείται από `msdynci_identifier`          |
-
+| CustomerId        | Μήνυμα κειμένου       | Αναγνωριστικό προφίλ πελάτη        |
+| SegmentProvider      | Μήνυμα κειμένου       | Εφαρμογή που δημοσιεύει τα τμήματα.      |
+| SegmentMembershipType | Μήνυμα κειμένου       | Τύπος του πελάτη για αυτήν την καρτέλα ιδιότητας μέλους τμήματος. Υποστηρίζει πολλούς τύπους, όπως Πελάτης, Επαφή ή Λογαριασμός. Προεπιλογή: Πελάτης  |
+| Τμήματα       | Μήνυμα κειμένου  | Λίστα μοναδικών τμημάτων, στα οποία είναι μέλος το προφίλ πελάτη      |
+| Αναγνωριστικό  | Μήνυμα κειμένου   | Μοναδικό αναγνωριστικό της καρτέλας ιδιότητας μέλους τμήματος. `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
+| SegmentMembershipId | Μοναδικό αναγνωριστικό      | Προσδιοριστικό GUID που δημιουργείται από `Identifier`          |
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

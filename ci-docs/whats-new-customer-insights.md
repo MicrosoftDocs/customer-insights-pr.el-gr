@@ -8,12 +8,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: 1e734464cec1f66428c3a2a2e403437a2a9d8500
-ms.sourcegitcommit: 624b27bb65a0de1970dc1ac436643b493f0a31cf
+ms.openlocfilehash: acba06cba5fb5cbf0bca5aeb30b603003555fc32
+ms.sourcegitcommit: 3ab8f1c0ba5874095a19f0b6367b9a4432f72ed1
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "9387294"
+ms.lasthandoff: 09/06/2022
+ms.locfileid: "9409357"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>Τι νέο υπάρχει στο Dynamics 365 Customer Insights
 
@@ -41,6 +41,14 @@ ms.locfileid: "9387294"
 Μέσω της ενοποίησης νέας επαφής, μπορείτε να δημιουργήσετε τμήματα επαφών χρησιμοποιώντας κριτήρια είτε από τις επαφές, τους λογαριασμούς είτε και τα δύο. Αυτά τα τμήματα μπορούν να εξαχθούν για ενεργοποίηση σε άλλες υπηρεσίες.
 
 Για περισσότερες πληροφορίες, βλ [Επισκόπηση εξαγωγών](export-destinations.md).
+
+### <a name="deployment-regions-aligned-with-microsoft-dataverse"></a>Περιοχές ανάπτυξης στοιχισμένες με το Microsoft Dataverse
+
+Όταν δημιουργείτε ένα νέο περιβάλλον Customer Insights, μπορείτε να επιλέξετε την περιοχή όπου θέλετε να αναπτυχθεί και να φιλοξενείται η υπηρεσία. Έχουμε ενημερώσει την επιλογή περιοχής ώστε να γίνει στοίχιση με το Microsoft Dataverse και το Power Platform.
+
+Τώρα μπορείτε να επιλέξετε εύκολα την ίδια περιοχή με το υπάρχον περιβάλλον Microsoft Dataverse σας ή με τον λογαριασμό Azure Data Lake Storage (αν κάνετε αυτήν την επιλογή), ανάλογα με τη διαθεσιμότητα του Customer Insights σε αυτήν την περιοχή.
+
+Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Δημιουργία νέου περιβάλλοντος](create-environment.md) και [Διαθεσιμότητα προϊόντων κατά γεωγραφία](https://dynamics.microsoft.com/availability-reports/).
 
 ## <a name="july-2022-updates"></a>Ενημερώσεις Ιουλίου 2022
 
