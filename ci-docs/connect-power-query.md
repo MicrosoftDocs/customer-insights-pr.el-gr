@@ -5,19 +5,19 @@ ms.date: 07/26/2022
 ms.reviewer: v-wendysmith
 ms.subservice: audience-insights
 ms.topic: how-to
-author: adkuppa
-ms.author: matgos
+author: mukeshpo
+ms.author: mukeshpo
 manager: shellyha
 searchScope:
 - ci-data-sources
 - ci-create-data-source
 - customerInsights
-ms.openlocfilehash: 7af51ed04fbd28149ea501c58e6fe71b5fa6d4b6
-ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
+ms.openlocfilehash: 6a25e332bafab414c9def4e1e6b461139dd24ea6
+ms.sourcegitcommit: dfba60e17ae6dc1e2e3830e6365e2c1f87230afd
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9207045"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9463265"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>Σύνδεση σε μια προέλευση δεδομένων Power Query
 
@@ -63,7 +63,9 @@ ms.locfileid: "9207045"
 Η φόρτωση των δεδομένων μπορεί να διαρκέσει πολύ. Μετά από μια επιτυχημένη ανανέωση, τα δεδομένα που απορροφήθηκαν μπορούν να ελεγχθούν από τη σελίδα [**Οντότητες**](entities.md).
 
 > [!CAUTION]
-> Μια πηγή δεδομένων που βασίζεται σε Power Query δημιουργεί [μια ροή δεδομένων μέσα σε Dataverse](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365). Μην αλλάξετε το όνομα μιας ροής δεδομένων στο κέντρο διαχείρισης Power Platform που χρησιμοποιείται στο Customer Insights. Η μετονομασία μιας ροής δεδομένων προκαλεί προβλήματα με τις αναφορές μεταξύ της πηγής δεδομένων Customer Insights και της ροής δεδομένων Dataverse.
+>
+> - Μια πηγή δεδομένων που βασίζεται σε Power Query δημιουργεί [μια ροή δεδομένων μέσα σε Dataverse](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365). Μην αλλάξετε το όνομα μιας ροής δεδομένων στο κέντρο διαχείρισης Power Platform που χρησιμοποιείται στο Customer Insights. Η μετονομασία μιας ροής δεδομένων προκαλεί προβλήματα με τις αναφορές μεταξύ της πηγής δεδομένων Customer Insights και της ροής δεδομένων Dataverse.
+> - Οι ταυτόχρονες αξιολογήσεων για προελεύσεις δεδομένων Power Query στο Customer Insights έχουν τα ίδια [όρια ανανέωσης, όπως οι ροές δεδομένων στο PowerBI.com](/power-query/power-query-online-limits#refresh-limits). Εάν μια ανανέωση δεδομένων αποτύχει επειδή έφτασε το όριο αξιολόγησης, συνιστούμε να προσαρμόσετε το χρονοδιάγραμμα ανανέωσης για κάθε ροή δεδομένων, για να εξασφαλίσετε ότι δεν θα γίνεται ταυτόχρονα επεξεργασία των προελεύσεων δεδομένων.
 
 ### <a name="available-power-query-data-sources"></a>Διαθέσιμες προελεύσεις δεδομένων Power Query
 
@@ -77,7 +79,7 @@ ms.locfileid: "9207045"
 
 Οι προελεύσεις δεδομένων που δημιουργούνται μετά τη συσχέτιση ενός περιβάλλοντος Dataverse με το Customer Insights χρησιμοποιούν [ροές δεδομένων Power Platform](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) από προεπιλογή. Οι ροές δεδομένων υποστηρίζουν τη σύνδεση εσωτερικής εγκατάστασης, χρησιμοποιώντας την πύλη δεδομένων. Μπορείτε να καταργήσετε και να δημιουργήσετε εκ νέου προελεύσεις δεδομένων που υπήρχαν πριν συσχετιστεί ένα περιβάλλον Dataverse [χρησιμοποιώντας πύλες δεδομένων εσωτερικής εγκατάστασης](/data-integration/gateway/service-gateway-app).
 
-Πύλες δεδομένων από ένα υπάρχον περιβάλλον Power BI ή Power Apps θα είναι ορατές και μπορείτε να τα χρησιμοποιήσετε ξανά στο Customer Insights. Η σελίδα προέλευσης δεδομένων εμφανίζει τις συνδέσεις για μετάβαση στο περιβάλλον του Microsoft Power Platform όπου μπορείτε να προβάλετε και να διαμορφώσετε τις πύλες δεδομένων εσωτερικής εγκατάστασης.
+Οι πύλες δεδομένων από ένα υπάρχον περιβάλλον Power BI ή Power Apps θα είναι ορατές και μπορείτε να τις χρησιμοποιήσετε ξανά στο Customer Insights εάν η πύλη δεδομένων και το περιβάλλον Customer Insights βρίσκονται στην ίδια περιοχή Azure. Η σελίδα προέλευσης δεδομένων εμφανίζει τις συνδέσεις για μετάβαση στο περιβάλλον του Microsoft Power Platform όπου μπορείτε να προβάλετε και να διαμορφώσετε τις πύλες δεδομένων εσωτερικής εγκατάστασης.
 
 > [!IMPORTANT]
 > Βεβαιωθείτε ότι οι πύλες σας έχουν ενημερωθεί στην πιο πρόσφατη έκδοση. Μπορείτε να εγκαταστήσετε μια ενημέρωση και να ρυθμίσετε εκ νέου μια πύλη από μια προτροπή που εμφανίζεται στην οθόνη πύλης απευθείας ή να [κάνετε λήψη της πιο πρόσφατης έκδοσης](https://powerapps.microsoft.com/downloads/). Εάν δεν χρησιμοποιήσετε την πιο πρόσφατη έκδοση πύλης, η ανανέωση της ροής δεδομένων αποτυγχάνει με μηνύματα σφάλματος όπως **Η λέξη-κλειδί δεν υποστηρίζεται: ιδιότητες ρύθμισης παραμέτρων. Όνομα παραμέτρου: λέξη-κλειδί**.

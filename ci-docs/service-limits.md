@@ -8,12 +8,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 7f38b7d9985368fc38107f1f360f0603a7fcc8e6
-ms.sourcegitcommit: 3c7cdfc8bd83ca236e4777240e08a541dc955d34
+ms.openlocfilehash: c3863b1a72fd92ddc87755699feda11371ec9214
+ms.sourcegitcommit: dfba60e17ae6dc1e2e3830e6365e2c1f87230afd
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "9411740"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9463219"
 ---
 # <a name="service-limits-in-customer-insights"></a>Όρια εξυπηρέτησης στο Customer Insights
 
@@ -25,6 +25,7 @@ ms.locfileid: "9411740"
 |-------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
 | Τμήματα αγοράς, μέτρα και προβλέψεις | 300  | Ο συνολικός αριθμός των [τμημάτων](segments.md), των [μέτρων](measures.md) και των [προβλέψεων](predictions-overview.md) σε συνδυασμό, δεν μπορεί να υπερβαίνει τα 300.  |
 | Σχέσεις | 20 επίπεδα βάθους στις σχέσεις μεταξύ των διαδρομών οντοτήτων. | Όταν δημιουργείτε [τμήματα](segments.md) ή [μέτρα](measures.md) χρησιμοποιώντας το περιβάλλον εργασίας του προγράμματος δημιουργίας, οι διαδρομές οντοτήτων μπορούν να έχουν έως και 20 μεταπηδήσεις σχέσης μεταξύ της οντότητας έναρξης και της οντότητας προορισμού.  |
+|Κατάποση δεδομένων| Οι ταυτόχρονες αξιολογήσεων για τις προελεύσεις δεδομένων του Power Query είναι περιορισμένες. | Το Customer Insights έχει τα ίδια [όρια ανανέωσης, όπως οι ροές δεδομένων PowerBI.com](/power-query/power-query-online-limits#refresh-limits). |
 
 ## <a name="fair-scheduling-of-jobs"></a>Ικανοποιητικός προγραμματισμός εργασιών
 
