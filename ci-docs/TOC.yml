@@ -7,21 +7,21 @@
 - name: Κατάλογος εκμάθησης
   items:
     - name: Πιστοποιείστε ως Ειδικός Πλατφόρμας Δεδομένων Πελατών της Microsoft
-      href: /learn/certifications/exams/mb-260?tab=tab-instructor-led
+      href: /certifications/exams/mb-260?tab=tab-instructor-led
     - name: Έναρξη με το Customer Insights
-      href: /learn/modules/get-started-customer-data-platform/
+      href: /training/modules/get-started-customer-data-platform/
     - name: Λήψη δεδομένων
-      href: /learn/modules/ingest-data-customer-insights/
+      href: /training/modules/ingest-data-customer-insights/
     - name: Δημιουργία ενοποιημένου προφίλ πελάτη
-      href: /learn/modules/unified-customer-profile/
+      href: /training/modules/unified-customer-profile/
     - name: Εργασία με το Customer Insights
-      href: /learn/modules/working-with-customer-insights/
+      href: /training/modules/working-with-customer-insights/
     - name: Εμπλουτισμός δεδομένων και εκτέλεση προβλέψεων
-      href: /learn/modules/enrich-data/
+      href: /training/modules/enrich-data/
     - name: Διαχείριση εξωτερικών συνδέσεων
-      href: /learn/modules/configure-third-party-connections/
+      href: /training/modules/configure-third-party-connections/
     - name: Διαχείριση του Customer Insights
-      href: /learn/modules/administer-customer-data-platform/
+      href: /training/modules/administer-customer-data-platform/
 - name: Δωρεάν δοκιμαστική έκδοση
   items:
     - name: Εγγραφή για δωρεάν δοκιμή
@@ -118,6 +118,8 @@
       href: consent-management.md
     - name: Χρησιμοποιήστε δεδομένα ιστού για εξατομίκευση
       href: unknown-to-known.md
+    - name: Διαχείριση άγνωστων προφίλ πελατών
+      href: manage-unknown-profiles.md
 - name: Τμήματα
   items:
     - name: Επισκόπηση τμημάτων
