@@ -162,6 +162,8 @@
           href: sentiment-analysis.md
         - name: Χρήση προσαρμοσμένων μοντέλων από το Azure Machine Learning
           href: custom-models.md
+        - name: Δημιουργία τμημάτων βάσει προβλέψεων
+          href: prediction-based-segment.md
     - name: Οδηγοί δειγμάτων
       items:
         - name: Οδηγός δείγματος για την πρόβλεψη CLV
@@ -174,10 +176,6 @@
           href: sample-guide-predict-product-recommendation.md
         - name: Πειράματα με εκμάθηση μηχανής Azure
           href: azure-machine-learning-experiments.md
-    - name: Διαχείριση προβλέψεων
-      href: manage-predictions.md
-    - name: Δημιουργία τμημάτων βάσει προβλέψεων
-      href: prediction-based-segment.md
 - name: Επιλογές εξαγωγής
   items:
     - name: Εξαγωγές

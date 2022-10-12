@@ -1,7 +1,7 @@
 ---
 title: Σύνδεση με δεδομένα σε μια διαχειριζόμενη λίμνη δεδομένων του Microsoft Dataverse
 description: Εισαγωγή δεδομένων από ένα Microsoft Dataverse διαχειριζόμενο data lake.
-ms.date: 07/26/2022
+ms.date: 08/18/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
@@ -11,12 +11,12 @@ ms.reviewer: v-wendysmith
 searchScope:
 - ci-dataverse
 - customerInsights
-ms.openlocfilehash: b21150a1c51bdad35250cae7fde7f38a014ec876
-ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
+ms.openlocfilehash: 0d9612525344c8ac99b6e3edfe33a426dc0a474b
+ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9206953"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9609795"
 ---
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>Σύνδεση με δεδομένα σε μια διαχειριζόμενη λίμνη δεδομένων του Microsoft Dataverse
 
@@ -70,5 +70,93 @@ ms.locfileid: "9206953"
 1. Κάντε κλικ στο **Αποθήκευση** για να εφαρμόσετε τις αλλαγές σας και να επιστρέψετε στη σελίδα **Προελεύσεις δεδομένων**.
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+## <a name="common-reasons-for-ingestion-errors-or-corrupted-data"></a>Κοινοί λόγοι για σφάλματα πρόσληψης ή κατεστραμμένα δεδομένα
+
+Οι παρακάτω έλεγχοι εκτελούνται στα δεδομένα πρόσληψης για την έκθεση κατεστραμμένων καρτελών:
+
+- Η τιμή ενός πεδίου δεν ταιριάζει με τον τύπο δεδομένων της στήλης του.
+- Τα πεδία περιέχουν χαρακτήρες που έχουν ως αποτέλεσμα οι στήλες να μην ταιριάζουν με το αναμενόμενο σχήμα. Για παράδειγμα: παραθέσεις με εσφαλμένη μορφή, παραθέσεις εντός παρενθέσεων ή χαρακτήρες νέας γραμμής.
+- Εάν υπάρχουν στήλες datetime/date/datetimeoffset, η μορφή τους πρέπει να καθοριστεί στο μοντέλο εάν δεν ακολουθεί την τυπική μορφή ISO.
+
+### <a name="schema-or-data-type-mismatch"></a>Αναντιστοιχία σχήματος ή τύπου δεδομένων
+
+Εάν τα δεδομένα δεν συμμορφώνονται με το σχήμα, οι καρτέλες ταξινομούνται ως κατεστραμμένες. Διορθώστε είτε τα δεδομένα προέλευσης είτε το σχήμα και προσλάβετε εκ νέου τα δεδομένα.
+
+### <a name="datetime-fields-in-the-wrong-format"></a>Πεδία ημερομηνίας ώρας σε λάθος μορφή
+
+Τα πεδία ημερομηνίας και ώρας στην οντότητα δεν είναι σε μορφές ISO ή en-US. Η προεπιλεγμένη μορφή ημερομηνίας και ώρας στο Customer Insights είναι μορφή en-US. Όλα τα πεδία ημερομηνίας και ώρας σε μια οντότητα θα πρέπει να έχουν την ίδια μορφή. Το Customer Insights υποστηρίζει άλλες μορφές, εφόσον τα σχόλια ή τα χαρακτηριστικά πραγματοποιούνται στο επίπεδο προέλευσης ή οντότητας στο μοντέλο ή το manifest.json. Για παράδειγμα: 
+
+**Model.json**
+
+   ```json
+      "annotations": [
+        {
+          "name": "ci:CustomTimestampFormat",
+          "value": "yyyy-MM-dd'T'HH:mm:ss:SSS"
+        },
+        {
+          "name": "ci:CustomDateFormat",
+          "value": "yyyy-MM-dd"
+        }
+      ]   
+   ```
+
+  Σε ένα manifest.json, η μορφή ημερομηνίας και ώρας μπορεί να καθοριστεί στο επίπεδο οντότητας ή στο επίπεδο χαρακτηριστικού. Στο επίπεδο οντότητας, χρησιμοποιήστε τη λέξη "exhibitsTraits" στην οντότητα στο *.manifest.cdm.json για να καθορίσετε τη μορφή ημερομηνίας και ώρας. Στο επίπεδο χαρακτηριστικού, χρησιμοποιήστε το χαρακτηριστικό "appliedTraits" στο χαρακτηριστικό entityname.cdm.json.
+
+**Manifest.json σε επίπεδο οντότητας**
+
+```json
+"exhibitsTraits": [
+    {
+        "traitReference": "is.formatted.dateTime",
+        "arguments": [
+            {
+                "name": "format",
+                "value": "yyyy-MM-dd'T'HH:mm:ss"
+            }
+        ]
+    },
+    {
+        "traitReference": "is.formatted.date",
+        "arguments": [
+            {
+                "name": "format",
+                "value": "yyyy-MM-dd"
+            }
+        ]
+    }
+]
+```
+
+**Entity.json σε επίπεδο χαρακτηριστικού**
+
+```json
+   {
+      "name": "PurchasedOn",
+      "appliedTraits": [
+        {
+          "traitReference": "is.formatted.date",
+          "arguments" : [
+            {
+              "name": "format",
+              "value": "yyyy-MM-dd"
+            }
+          ]
+        },
+        {
+          "traitReference": "is.formatted.dateTime",
+          "arguments" : [
+            {
+              "name": "format",
+              "value": "yyyy-MM-ddTHH:mm:ss"
+            }
+          ]
+        }
+      ],
+      "attributeContext": "POSPurchases/attributeContext/POSPurchases/PurchasedOn",
+      "dataFormat": "DateTime"
+    }
+```
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
