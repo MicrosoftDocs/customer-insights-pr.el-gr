@@ -1,19 +1,19 @@
 ---
 title: Εξαγωγή τμημάτων στο Braze (έκδοση προεπισκόπησης)
 description: Μάθετε πώς να ρυθμίσετε τη σύνδεση και την εξαγωγή στο Braze.
-ms.date: 07/25/2022
+ms.date: 10/06/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 84dc7f13f30e0334d431fe5b5866c7f87e82ab27
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 2f52eb8196e057f934c8d2b5ac0518ce121606b6
+ms.sourcegitcommit: 003c1929f730d7d505c108aba84f6269f4c98978
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195107"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9655274"
 ---
 # <a name="export-segments-to-braze-preview"></a>Εξαγωγή τμημάτων στο Braze (έκδοση προεπισκόπησης)
 
@@ -23,6 +23,7 @@ ms.locfileid: "9195107"
 
 - Ένας [λογαριασμός Braze](https://www.braze.com/) και τα αντίστοιχα διαπιστευτήρια διαχειριστή σας.
 - Ένα [Κλειδί API Braze](https://www.braze.com/docs/api/basics/)
+- Το [τελικό σημείο Braze REST](https://www.braze.com/docs/api/basics/#api-definitions) σας 
 - [Διαμορφωμένα τμήματα](segments.md) στο Customer Insights.
 - Τα ενοποιημένα προφίλ πελατών στα τμήματα που έχουν εξαχθεί περιέχουν ένα πεδίο που αντιπροσωπεύει μια διεύθυνση ηλεκτρονικού ταχυδρομείου και ένα αναγνωριστικό πελάτη Braze.
 
@@ -30,6 +31,7 @@ ms.locfileid: "9195107"
 
 - Έως και 1 εκατομμύριο προφίλ πελατών στο Braze, τα οποία μπορεί να χρειαστούν έως και 40 λεπτά για να ολοκληρωθούν. Ο αριθμός των προφίλ πελατών που μπορείτε να εξαγάγετε στο Braze εξαρτάται από το συμβόλαιό σας με την Braze.
 - Μόνο τμήματα.
+- Η Ιδιωτική σύνδεση Azure δεν υποστηρίζεται για εξαγωγή Braze.
 
 ## <a name="set-up-connection-to-braze"></a>Ρυθμίστε τη σύνδεση στο Braze
 
@@ -62,6 +64,8 @@ ms.locfileid: "9195107"
 1. Επιλέξτε **Προσθήκη εξαγωγής**.
 
 1. Στο πεδίο **Σύνδεση για εξαγωγή**, επιλέξτε μια σύνδεση από την ενότητα Braze. Επικοινωνήστε με έναν διαχειριστή εάν δεν υπάρχει διαθέσιμη σύνδεση.
+
+1. Εισαγάγετε το τελικό σημείο REST στο πεδίο **Όνομα κεντρικού υπολογιστή** με την ακόλουθη μορφή: `rest.iad-03.braze.com`.
 
 1. Εισαγάγετε ένα όνομα για την εξαγωγή.
 

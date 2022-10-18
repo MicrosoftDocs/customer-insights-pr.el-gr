@@ -8,12 +8,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: 2a386d65a5e285d471e9cafc45f247e7b4ae23bb
-ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
+ms.openlocfilehash: dcee60a73e0c32278553253040478c31e45237ae
+ms.sourcegitcommit: 618ef15b434de0a68213383b6521ce2a60753afb
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "9609592"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "9638351"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>Τι νέο υπάρχει στο Dynamics 365 Customer Insights
 
@@ -23,6 +23,28 @@ ms.locfileid: "9609592"
 
 > [!TIP]
 > Για υποβολή και ψήφο σε αιτήματα δυνατοτήτων και προτάσεις προϊόντων, μεταβείτε στην [πύλη ιδεών εφαρμογής Dynamics 365](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## <a name="september-2022-updates"></a>Ενημερώσεις Σεπτεμβρίου 2022
+
+Οι ενημερώσεις του Σεπτεμβρίου 2022 περιλαμβάνουν νέες δυνατότητες, αναβαθμίσεις επιδόσεων και επιδιορθώσεις σφαλμάτων.
+
+### <a name="export-data-to-hubspot"></a>Εξαγωγή δεδομένων στο HubSpot
+
+Εξαγάγετε τμήματα των ενοποιημένων προφίλ πελατών στο HubSpot και χρησιμοποιήστε τα για μάρκετινγκ μέσω ηλεκτρονικού ταχυδρομείου.
+
+Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Εξαγωγή τμημάτων στο HubSpot](export-hubspot.md).
+
+### <a name="remove-a-unified-field-or-entity-from-data-unification"></a>Κατάργηση ενός ενοποιημένου πεδίου ή οντότητας από την ενοποίηση δεδομένων
+
+Μπορείτε να καταργήσετε πεδία και οντότητες από τη διεργασία ενοποίησης δεδομένων.
+
+Για περισσότερες πληροφορίες δείτε [Κατάργηση ενός ενοποιημένου πεδίου](data-unification-update.md#remove-a-unified-field).
+
+### <a name="manage-unknown-customer-profiles"></a>Διαχείριση άγνωστων προφίλ πελατών
+
+Η εξατομίκευση που απομνημονεύεται εύκολα βάσει εμπλουτισμένων και ολοκληρωμένων δεδομένων των πελατών σας και το Customer Insights σάς βοηθάει να επιτύχετε αυτούς τους στόχους. Μπορείτε να διαχειριστείτε προφίλ πελατών για χρήστες για τους οποίους δεν έχετε άλλες πληροφορίες εκτός από ένα αναγνωριστικό.
+
+Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Διαχείριση άγνωστων προφίλ με το Customer Insights](manage-unknown-profiles.md).
 
 ## <a name="august-2022-updates"></a>Ενημερώσεις Αυγούστου 2022
 
