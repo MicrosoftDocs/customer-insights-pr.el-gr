@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: dfa63110fc5291f2b63aebf588d6fdd20ed4ab67
-ms.sourcegitcommit: 134aac66e3e0b77b2e96a595d6acbb91bf9afda2
+ms.openlocfilehash: 9433c411a2c7eb0db137c6392578993d47be82a2
+ms.sourcegitcommit: 8559ca47a22d1d7cd9be13531c2eaf0c1083942b
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "9424309"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9671251"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>Εργασία με δεδομένα Customer Insights στο Microsoft Dataverse
 
@@ -63,6 +63,9 @@ ms.locfileid: "9424309"
 ## <a name="enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview"></a>Ενεργοποίηση κοινής χρήσης δεδομένων με το Dataverse από το δικό σας Azure Data Lake Storage (έκδοση προεπισκόπησης)
 
 Στον [δικό σας λογαριασμό Azure Data Lake Storage](own-data-lake-storage.md), επαληθεύστε ότι η ρύθμιση παραμέτρων του περιβάλλοντος Customer Insights έχει τουλάχιστον δικαιώματα **αναγνώστη δεδομένων αντικειμένου Blob χώρου αποθήκευσης** στο κοντέινερ `customerinsights` στον λογαριασμό υπηρεσίας αποθήκευσης.
+
+> [!NOTE]
+> Η κοινή χρήση δεδομένων ισχύει μόνο εάν χρησιμοποιείτε το δικό σας λογαριασμό Azure Data Lake Storage. Αυτή η ρύθμιση δεν είναι διαθέσιμη αν το περιβάλλον Customer Insights χρησιμοποιεί τον προεπιλεγμένο χώρο αποθήκευσης Dataverse.
 
 ### <a name="limitations"></a>Περιορισμοί
 
