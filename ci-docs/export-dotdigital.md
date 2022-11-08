@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: cabaea84e31f8fe97bc558a8dca8d93bc40f43b7
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 8f3e3378dce9177c6645b91140884ae135540243
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196072"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9724986"
 ---
 # <a name="export-segments-to-dotdigital-preview"></a>Εξαγωγή τμημάτων στο DotDigital (έκδοση προεπισκόπησης)
 
@@ -28,6 +28,7 @@ ms.locfileid: "9196072"
 
 ## <a name="known-limitations"></a>Γνωστοί περιορισμοί
 
+- Η ιδιωτική σύνδεση σε συνδυασμό με το Φέρτε τον δικό σας χώρο αποθήκευσης (BYOS) δεν υποστηρίζεται.
 - Έως 1 εκατομμύριο προφίλ πελατών ανά εξαγωγή στο DotDigital, η ολοκλήρωση των οποίων μπορεί να διαρκέσουν έως και τρεις ώρες λόγω περιορισμών από την πλευρά του παρόχου. Ο αριθμός των προφίλ πελατών που μπορείτε να εξαγάγετε στο DotDigital εξαρτάται από τη σύμβασή σας με την DotDigital.
 - Μόνο τμήματα.
 

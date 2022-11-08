@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: f2990ad410dda0cbf952f82f3fc30b3a53a7bcd4
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 855e77055eeb24a2c6cff0d45cd23edf93cc0581
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196992"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9724848"
 ---
 # <a name="export-segments-to-sendgrid-preview"></a>Εξαγωγή τμημάτων στο SendGrid (έκδοση προεπισκόπησης)
 
@@ -29,6 +29,7 @@ ms.locfileid: "9196992"
 
 ## <a name="known-limitations"></a>Γνωστοί περιορισμοί
 
+- Η ιδιωτική σύνδεση σε συνδυασμό με το Φέρτε τον δικό σας χώρο αποθήκευσης (BYOS) δεν υποστηρίζεται.
 - Έως και 100.000 προφίλ πελατών συνολικά στο SendGrid, τα οποία μπορεί να χρειαστούν έως και μερικές ώρες για να ολοκληρωθούν. Ο αριθμός των προφίλ πελατών που μπορείτε να εξαγάγετε στο SendGrid εξαρτάται από το συμβόλαιό σας με το SendGrid.
 - Μόνο τμήματα.
 

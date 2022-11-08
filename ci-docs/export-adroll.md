@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 8110eab199920ab8fc2ea15678139faf264a242a
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 81adad4caf2d4c6f792bf920b29fc7c67eef42b0
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195750"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9724678"
 ---
 # <a name="export-segments-to-adroll-preview"></a>Εξαγωγή τμημάτων στο AdRoll (έκδοση προεπισκόπησης)
 
@@ -28,6 +28,7 @@ ms.locfileid: "9195750"
 
 ## <a name="known-limitations"></a>Γνωστοί περιορισμοί
 
+- Η ιδιωτική σύνδεση σε συνδυασμό με το Φέρτε τον δικό σας χώρο αποθήκευσης (BYOS) δεν υποστηρίζεται.
 - Έως 250.000 προφίλ πελατών ανά εξαγωγή στο AdRoll, η ολοκλήρωση των οποίων μπορεί να διαρκέσει έως και 10 λεπτά. Ο αριθμός των προφίλ πελατών που μπορείτε να εξαγάγετε στο AdRoll εξαρτάται από το συμβόλαιό σας με το AdRoll.
 - Μόνο τμήματα. Ένα τμήμα πρέπει να περιέχει τουλάχιστον 100 προφίλ πελατών.
 

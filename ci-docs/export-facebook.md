@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 01be1a075db0da05dc5536aea8a33093f9a2ea13
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: c7a4b1be1c959d70fad929b56452169b40e5b592
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195014"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9724595"
 ---
 # <a name="export-segments-to-facebook-ads-manager-preview"></a>Εξαγωγή τμημάτων στη Διαχείριση διαφημίσεων του Facebook (έκδοση προεπισκόπησης)
 
@@ -25,11 +25,13 @@ ms.locfileid: "9195014"
 
 - Ένας [Facebook λογαριασμός διαφημίσεων](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account) που περιλαμβάνει έναν [Facebook Επαγγελματικό λογαριασμό](https://business.facebook.com/).
 - Προνόμια διαχειριστή στο [Facebook Λογαριασμός διαφημίσεων](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account).
+- Οι όροι προσαρμοσμένου κοινού πρέπει να γίνουν αποδεκτοί από το χρήστη για να ρυθμίσει τη σύνδεση στο Customer Insights.
 
 ## <a name="known-limitations"></a>Γνωστοί περιορισμοί
 
 - Έως και 10 εκατομμύρια προφίλ πελατών ανά εξαγωγή σε Facebook Διαχειριστής διαφημίσεων, τα οποία μπορεί να διαρκέσουν έως και 90 λεπτά.
 - Μόνο τμήματα.
+- Η ενοποίηση διαφημίσεων Facebook δεν υποστηρίζει χρήστες με περισσότερους από 25 διαφημιστικούς λογαριασμούς.
 - Facebook *λίστα πελατών* πληκτρολογήστε [προσαρμοσμένα είδη κοινού](https://www.facebook.com/business/help/744354708981227?id=2469097953376494) μόνο.
   > [!NOTE]
   > Σε ορισμένες περιπτώσεις, ενδέχεται να δείτε προσαρμοσμένα είδη κοινού διαφορετικών τύπων στην αναπτυσσόμενη λίστα. Εάν επιλέξετε διαφορετικό τύπο εκτός από *λίστα πελατών*, η εξαγωγή αποτυγχάνει.

@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: f57cdfbb24df8a8ffa1670b426d50dbba2c5f40f
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: cba40b74b86a40fc41db856760c9361b755a8864
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195244"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9724940"
 ---
 # <a name="export-segments-to-marketo-preview"></a>Εξαγωγή τμημάτων στο Marketo (έκδοση προεπισκόπησης)
 
@@ -29,6 +29,7 @@ ms.locfileid: "9195244"
 
 ## <a name="known-limitations"></a>Γνωστοί περιορισμοί
 
+- Η ιδιωτική σύνδεση σε συνδυασμό με το Φέρτε τον δικό σας χώρο αποθήκευσης (BYOS) δεν υποστηρίζεται.
 - Έως 1 εκατομμύριο προφίλ πελατών ανά εξαγωγή στο Marketo, κάτι που μπορεί να διαρκέσουν έως και 3 ώρες. Ο αριθμός των προφίλ πελατών που μπορείτε να εξαγάγετε στο Marketo εξαρτάται από το συμβόλαιό σας με το Marketo.
 - Μόνο τμήματα.
 

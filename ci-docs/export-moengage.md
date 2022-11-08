@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: ffc591c01a5a9434cde41f2da25fa930a515b8c1
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: df38e9e88a9c116252fba26983b5f3711b46f051
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9199118"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725266"
 ---
 # <a name="export-segments-to-moengage-preview"></a>Εξαγωγή τμημάτων στο MoEngage (προεπισκόπηση)
 
@@ -27,6 +27,7 @@ ms.locfileid: "9199118"
 
 ## <a name="known-limitations"></a>Γνωστοί περιορισμοί
 
+- Η ιδιωτική σύνδεση σε συνδυασμό με το Φέρτε τον δικό σας χώρο αποθήκευσης (BYOS) δεν υποστηρίζεται.
 - Έως 100.000 προφίλ πελατών ανά εξαγωγή στο MoEngage, τα οποία μπορεί να διαρκέσουν έως και 15 λεπτά. Ο αριθμός των προφίλ πελατών που μπορείτε να εξαγάγετε στο MoEngage εξαρτάται από το συμβόλαιό σας με το MoEngage.
 - Μόνο τμήματα.
 

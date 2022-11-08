@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 2f52eb8196e057f934c8d2b5ac0518ce121606b6
-ms.sourcegitcommit: 003c1929f730d7d505c108aba84f6269f4c98978
+ms.openlocfilehash: a3967008ec166cb6f099659b0791f1318126c0da
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "9655274"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725216"
 ---
 # <a name="export-segments-to-braze-preview"></a>Εξαγωγή τμημάτων στο Braze (έκδοση προεπισκόπησης)
 
@@ -29,6 +29,7 @@ ms.locfileid: "9655274"
 
 ## <a name="known-limitations"></a>Γνωστοί περιορισμοί
 
+- Η ιδιωτική σύνδεση σε συνδυασμό με το Φέρτε τον δικό σας χώρο αποθήκευσης (BYOS) δεν υποστηρίζεται.
 - Έως και 1 εκατομμύριο προφίλ πελατών στο Braze, τα οποία μπορεί να χρειαστούν έως και 40 λεπτά για να ολοκληρωθούν. Ο αριθμός των προφίλ πελατών που μπορείτε να εξαγάγετε στο Braze εξαρτάται από το συμβόλαιό σας με την Braze.
 - Μόνο τμήματα.
 - Η Ιδιωτική σύνδεση Azure δεν υποστηρίζεται για εξαγωγή Braze.

@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: c23d6d3538c4df6006c14064f95379169af06622
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: fb57e2bd70592f4ce4e1a13e21901dc69734f6bf
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196164"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725170"
 ---
 # <a name="export-segments-to-omnisend-preview"></a>Εξαγωγή τμημάτων στο Omnisend (έκδοση προεπισκόπησης)
 
@@ -28,6 +28,7 @@ ms.locfileid: "9196164"
 
 ## <a name="known-limitations"></a>Γνωστοί περιορισμοί
 
+- Η ιδιωτική σύνδεση σε συνδυασμό με το Φέρτε τον δικό σας χώρο αποθήκευσης (BYOS) δεν υποστηρίζεται.
 - Έως 1 εκατομμύριο προφίλ πελατών ανά εξαγωγή στο Omnisend, η ολοκλήρωση των οποίων μπορεί να διαρκέσει έως και τέσσερις ώρες. Ο αριθμός των προφίλ πελατών που μπορείτε να εξαγάγετε στο Omnisend εξαρτάται από τη σύμβασή σας με το Omnisend.
 - Μόνο τμήματα.
 
