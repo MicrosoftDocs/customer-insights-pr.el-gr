@@ -9,12 +9,12 @@ ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 7bc0c3614e6dd39fbd65ae098ed679d95d09de9d
-ms.sourcegitcommit: 086f75136132d561cd78a4c2cb1e1933e2301f32
+ms.openlocfilehash: 675fd03c44a7a7a492b111895d79c2e77f93a5b5
+ms.sourcegitcommit: 4ba74816ebfa46412c64c40a61e1f31c4ccc40f2
 ms.translationtype: HT
 ms.contentlocale: el-GR
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "9259798"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9738156"
 ---
 # <a name="connect-an-azure-synapse-analytics-data-source-preview"></a>Συνδέστε μια προέλευση δεδομένων του Azure Synapse Analytics (έκδοση προεπισκόπησης)
 
@@ -45,7 +45,7 @@ ms.locfileid: "9259798"
 
 - Η *[διαχειριζόμενη ταυτότητα χώρου εργασίας Azure Synapse](/azure/synapse-analytics/security/synapse-workspace-managed-identity)* χρειάζεται δικαιώματα **χρειάζεται δικαιώματα** στο λογαριασμό Azure Data Lake Storage Gen2όπου τα δεδομένα βρίσκονται και συνδέονται με τον χώρο εργασίας Azure Synapse. Μάθετε περισσότερα σχετικά για τη [χρήση της πύλης Azure για την εκχώρηση ενός ρόλου Azure για πρόσβαση σε δεδομένα blob και ουράς](/azure/storage/common/storage-auth-aad-rbac-portal) και [δικαιώματα συμμετέχοντα δεδομένων blob αποθήκευσης ](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
 
-- Στο Azure Synapse workspace, η *αρχή υπηρεσίας για το Customer Insights* που είναι Dynamics 365 AI για Customer Insights" χρειάζεται την ανάθεση του ρόλου του **Διαχειριστή Synapse**. Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Τρόπος ρύθμισης ελέγχου πρόσβασης για το χώρο εργασίας Synapse](/azure/synapse-analytics/security/how-to-set-up-access-control).
+- Στο Azure Synapse workspace, η *αρχή υπηρεσίας για το Customer Insights* που είναι Dynamics 365 AI για Customer Insights" χρειάζεται την ανάθεση του ρόλου του **Διαχειριστή Synapse**. Ο **χρήστης** χρειάζεται τουλάχιστον ένα ρόλο **Συμμετέχων Synapse**. που έχει ανατεθεί για το χώρο εργασίας. Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Τρόπος ρύθμισης ελέγχου πρόσβασης για το χώρο εργασίας Synapse](/azure/synapse-analytics/security/how-to-set-up-access-control).
 
 - Εάν το περιβάλλον Customer Insights αποθηκεύει δεδομένα στο [δικό σας Azure Data Lake Storage](own-data-lake-storage.md), ο χρήστης που ρυθμίζει τη σύνεση στο Azure Synapse Analytics χρειάζεται τουλάχιστον τον ενσωματωμένο ρόλο **Αναγνώστης** στον χώρο αποθήκευσης Data Lake. Για περισσότερες πληροφορίες, ανατρέξτε στο θέμα [Εκχώρηση ρόλων Azure χρησιμοποιώντας την πύλη Azure](/azure/role-based-access-control/role-assignments-portal).
 
